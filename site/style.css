@@ -73,8 +73,8 @@ body {
 .chart-ctl .ctl-lbl { color: var(--muted); font-size: 11px; width: 52px; flex: none; }
 .chart-ctl button { flex: none; }
 
-/* 긴 기간 차트 가로 스크롤 */
-.chart-scroll { overflow-x: auto; overflow-y: hidden; }
+/* 긴 기간 차트: 차트창 폭은 유지하고 내부에서만 가로 스크롤 */
+.chart-scroll { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 .chart-scroll .chart-inner { min-width: 100%; }
 .chart-scroll canvas { display: block; }
 .chart-ctl button {
@@ -87,6 +87,7 @@ body {
 .summary-charts {
   display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-top: 16px;
 }
+.summary-charts > * { min-width: 0; }
 @media (max-width: 760px) { .summary-charts { grid-template-columns: 1fr; } }
 .chart-box {
   background: var(--panel); border: 1px solid var(--line);
@@ -151,10 +152,13 @@ tr.lvl-account td.neg { color: var(--down); }
 .panel-grid {
   display: grid; grid-template-columns: 2fr 1fr; gap: 16px;
 }
+/* 그리드/플렉스 자식이 내용 폭 때문에 트랙을 밀어내지 않도록 */
+.panel-grid > div { min-width: 0; }
 @media (max-width: 900px) { .panel-grid { grid-template-columns: 1fr; } }
 .block {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 14px; margin-bottom: 16px;
+  min-width: 0; overflow: hidden;
 }
 .block h3 { margin: 0 0 10px; font-size: 13px; color: var(--muted); font-weight: 600; }
 .block canvas { width: 100% !important; display: block; }

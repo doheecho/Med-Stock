@@ -499,13 +499,18 @@ function onChartCtl(e) {
   drawMacdChart(state.prices[h.ticker]);
 }
 
-/* 데이터 포인트가 많으면 차트 내부 폭을 늘려 가로 스크롤되게 한다 */
+/* 데이터 포인트가 많으면 차트 내부 폭만 늘려 .chart-scroll 안에서 가로 스크롤되게 한다.
+   (차트창 자체 폭은 컨테이너에 고정) */
 function fitScroll(canvasId, points) {
   const cv = document.getElementById(canvasId);
   const inner = cv && cv.closest(".chart-inner");
-  if (!inner) return;
-  const avail = inner.parentElement.clientWidth || 600;
-  inner.style.width = Math.max(avail, Math.min(16000, points * 3)) + "px";
+  const scroll = inner && inner.parentElement; // .chart-scroll
+  if (!inner || !scroll) return;
+  inner.style.width = "";                       // 먼저 리셋해야 실제 가용 폭을 잰다
+  const avail = scroll.clientWidth || 600;
+  const want = Math.min(14000, Math.round(points * 3));
+  // 필요할 때만 폭을 키운다. 그 외에는 CSS(min-width:100%)에 맡겨 유동적으로.
+  inner.style.width = want > avail ? want + "px" : "";
 }
 
 /* state.chartRange 에 맞는 시작 인덱스 */
