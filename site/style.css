@@ -201,11 +201,14 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 #flowChart { height: 190px !important; }
 #weightChart { width: 100% !important; height: 100% !important; }
 
-.kv { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; font-size: 13px; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }
 .kv dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
-/* 기본지표·목표주가 갭: 항목마다 줄 구분 */
-#fundBox .kv > *, #targetBox .kv > * { border-bottom: 1px solid var(--line); padding: 5px 0; }
+/* 기본지표·목표주가 갭: 항목마다 끊김 없는 가로 구분선 (열 간격 0 + 셀 내부 패딩) */
+#fundBox .kv, #targetBox .kv { column-gap: 0; row-gap: 0; }
+#fundBox .kv > *, #targetBox .kv > * { border-bottom: 1px solid var(--line); padding: 6px 0; }
+#fundBox .kv > dt, #targetBox .kv > dt { padding-right: 12px; }
+#fundBox .kv > dd, #targetBox .kv > dd { padding-left: 12px; }
 #fundBox .kv > dt:last-of-type, #fundBox .kv > dd:last-of-type,
 #targetBox .kv > dt:last-of-type, #targetBox .kv > dd:last-of-type { border-bottom: none; }
 

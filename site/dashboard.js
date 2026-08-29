@@ -1072,6 +1072,9 @@ function drawFlowChart(flow) {
         label,
         data: rows.map((r) => toEok(r[key] ?? r[key + "_corp"])),
         backgroundColor: color,
+        // 하루(=한 칸) 안에 3막대를 붙여 넣고, 칸 사이는 벌린다
+        categoryPercentage: 0.62,
+        barPercentage: 0.95,
       })),
     },
     options: {
@@ -1083,7 +1086,6 @@ function drawFlowChart(flow) {
           position: "right",
           ticks: { color: "#8b95a1" },
           grid: {
-            // 0선을 파란 굵은 선으로
             color: (c) => (c.tick.value === 0 ? "#1d4ed8" : "#2b333d40"),
             lineWidth: (c) => (c.tick.value === 0 ? 2 : 1),
           },
@@ -1095,21 +1097,23 @@ function drawFlowChart(flow) {
   });
 }
 
-/* 수급 막대: 일자별 세로 점선 구분선 */
+/* 수급 막대: 매 칸(하루) 경계마다 세로 점선 */
 const dayDividers = {
   id: "dayDividers",
   afterDatasetsDraw(chart) {
-    const x = chart.scales.x;
-    if (!x || !x.ticks || x.ticks.length < 2) return;
+    const x = chart.scales && chart.scales.x;
+    const n = ((chart.data && chart.data.labels) || []).length;
+    if (!x || n < 2 || !chart.chartArea) return;
     const { top, bottom } = chart.chartArea;
-    const band = x.getPixelForTick(1) - x.getPixelForTick(0);
+    const half = (x.getPixelForValue(1) - x.getPixelForValue(0)) / 2;
     const ctx = chart.ctx;
     ctx.save();
-    ctx.strokeStyle = "#8b95a155";
+    ctx.strokeStyle = "#8b95a166";
     ctx.lineWidth = 1;
-    ctx.setLineDash([3, 3]);
-    for (let i = 0; i <= x.ticks.length; i++) {
-      const px = x.getPixelForTick(Math.min(i, x.ticks.length - 1)) + (i === x.ticks.length ? band / 2 : -band / 2);
+    ctx.setLineDash([2, 3]);
+    for (let i = 0; i <= n; i++) {
+      const px = (i < n ? x.getPixelForValue(i) : x.getPixelForValue(n - 1) + 2 * half) - half;
+      if (px < x.left - 1 || px > x.right + 1) continue;
       ctx.beginPath();
       ctx.moveTo(px, top);
       ctx.lineTo(px, bottom);
