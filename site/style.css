@@ -92,7 +92,11 @@ tbody tr:last-child td { border-bottom: none; }
   border-radius: 10px; padding: 14px; margin-bottom: 16px;
 }
 .block h3 { margin: 0 0 10px; font-size: 13px; color: var(--muted); font-weight: 600; }
-.block canvas { width: 100% !important; }
+.block canvas { width: 100% !important; display: block; }
+#priceChart { height: 340px !important; }
+#rsiChart { height: 130px !important; }
+#flowChart { height: 190px !important; }
+#weightChart { height: 220px !important; }
 
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }

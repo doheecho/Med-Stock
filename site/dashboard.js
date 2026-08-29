@@ -251,7 +251,6 @@ async function renderDetail(ticker) {
       </div>
     </div>`;
 
-  drawPriceChart(h);
   drawRsiChart(state.prices[h.ticker]);
 
   const [fund, flow, target, news] = await Promise.all([
@@ -263,8 +262,9 @@ async function renderDetail(ticker) {
 
   renderFundamentals(h, fund);
   drawFlowChart(flow);
-  renderTarget(h, target);
+  renderTarget(h, target);      // state._targets 캐시 → 시나리오 앵커에 사용
   renderNews(news);
+  drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
 }
 
 /* ---- 가격 차트 (캔들 or 라인) + MA + 시나리오 점선 ---- */
