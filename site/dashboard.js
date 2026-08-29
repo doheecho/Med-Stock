@@ -589,7 +589,7 @@ async function renderDetail(ticker) {
           <h3 class="h3-row">RSI (14)<span class="tf-btns" id="rsiTf">${rsiTfBtns()}</span></h3>
           <canvas id="rsiChart"></canvas>
         </div>
-        <div class="block"><h3>수급 (개인·기관·외국인 순매수 · 억원 · 최근 4주)</h3><canvas id="flowChart" height="90"></canvas></div>
+        <div class="block"><h3 class="h3-row">수급 (최근 4주)<span class="unit-tag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
       <div class="pg-metrics">
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
@@ -1262,11 +1262,19 @@ function drawFlowChart(flow) {
             color: "#8b95a1",
             autoSkip: false,
             maxRotation: 0,
-            // 월이 처음 나오거나 바뀔 때만 "MM-DD", 그 외엔 "DD" (예: 07-31 08-01 02 03)
+            // 월이 처음 나오거나 바뀔 때만 "MM-DD", 그 외엔 "DD" (예: 07-31 08-01 02 03).
+            // 칸이 좁아 라벨이 넘칠 것 같으면 2칸마다 하나씩만 표기(월 경계는 항상 표기).
             callback(value, index) {
               const lbl = this.getLabelForValue(value); // "MM-DD"
               const prev = index > 0 ? this.getLabelForValue(index - 1) : null;
-              return !prev || lbl.slice(0, 2) !== prev.slice(0, 2) ? lbl : lbl.slice(3);
+              const monthEdge = !prev || lbl.slice(0, 2) !== prev.slice(0, 2);
+              const chart = this.chart || {};
+              const area = chart.chartArea;
+              const w = area ? area.right - area.left : chart.width || 0;
+              const labels = (this.getLabels && this.getLabels()) || (chart.data && chart.data.labels) || [];
+              const dense = w > 0 && w / (labels.length || 1) < 24;
+              if (dense && !monthEdge && index % 2 !== 0) return "";
+              return monthEdge ? lbl : lbl.slice(3);
             },
           },
         },

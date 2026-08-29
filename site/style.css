@@ -192,6 +192,7 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .block h3 { margin: 0 0 10px; font-size: 13px; color: var(--muted); font-weight: 600; }
 .block h3.h3-row { display: flex; justify-content: space-between; align-items: center; }
 .tf-btns { display: inline-flex; gap: 4px; }
+.unit-tag { color: var(--muted); font-size: 11px; font-weight: 400; }
 .tf-btns button {
   background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
   border-radius: 6px; padding: 2px 8px; font-size: 10px; cursor: pointer;
