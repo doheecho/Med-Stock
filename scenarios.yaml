@@ -1,18 +1,10 @@
 # (선택) 종목별 커스텀 목표가 시나리오
-# key = ticker, value = 시나리오 목록
-# target_price: 목표 주가, horizon_months: 도달 예상 개월 수, label: 차트 범례 표시명
+#   label: 차트 범례 표시명, target_price: 목표 주가, horizon_months: 도달 예상 개월 수
 #
-# 여기에 항목이 없어도 증권사 컨센서스(최고/평균/최저) 오버레이는 자동 표시된다.
-
-"005930":
-  - label: "내 목표가(상승)"
-    target_price: 95000
-    horizon_months: 6
-  - label: "내 목표가(보수적)"
-    target_price: 75000
-    horizon_months: 6
-
-"MU":
-  - label: "내 목표가(상승)"
-    target_price: 140
-    horizon_months: 12
+# 비워두면 차트에는 증권사 컨센서스(낙관/중립/비관) 점선만 표시된다.
+# 내 목표가를 차트에 그리고 싶을 때만 아래 형식으로 추가:
+#
+# "005930":
+#   - label: "내 목표가"
+#     target_price: 400000
+#     horizon_months: 12

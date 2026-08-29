@@ -1,43 +1,254 @@
 {
-  "updated_at": "2026-08-29T02:40:07+00:00",
+  "updated_at": "2026-08-29T11:52:33+09:00",
   "rows": [
     {
+      "t": "2026-07-02",
+      "institution": -31847136370,
+      "foreign": -817171125,
+      "individual": 32664307495
+    },
+    {
+      "t": "2026-07-03",
+      "institution": 9340737250,
+      "foreign": 4118980550,
+      "individual": -13459717800
+    },
+    {
+      "t": "2026-07-06",
+      "institution": 12933678030,
+      "foreign": -5207826750,
+      "individual": -7725851280
+    },
+    {
+      "t": "2026-07-07",
+      "institution": -7052528560,
+      "foreign": 6279601520,
+      "individual": 772927040
+    },
+    {
+      "t": "2026-07-08",
+      "institution": 12571522180,
+      "foreign": -1414585620,
+      "individual": -11156936560
+    },
+    {
+      "t": "2026-07-09",
+      "institution": 12909610800,
+      "foreign": -1848608800,
+      "individual": -11061002000
+    },
+    {
+      "t": "2026-07-10",
+      "institution": 5650707140,
+      "foreign": 699550020,
+      "individual": -6350257160
+    },
+    {
+      "t": "2026-07-13",
+      "institution": -6006849240,
+      "foreign": 1405065200,
+      "individual": 4601784040
+    },
+    {
+      "t": "2026-07-14",
+      "institution": 17186529600,
+      "foreign": -30636000,
+      "individual": -17155893600
+    },
+    {
+      "t": "2026-07-15",
+      "institution": 14453234700,
+      "foreign": -4663804200,
+      "individual": -9789430500
+    },
+    {
+      "t": "2026-07-16",
+      "institution": -21371673750,
+      "foreign": 3310642510,
+      "individual": 18061031240
+    },
+    {
+      "t": "2026-07-20",
+      "institution": 7458098510,
+      "foreign": -4892050460,
+      "individual": -2566048050
+    },
+    {
+      "t": "2026-07-21",
+      "institution": -6188600475,
+      "foreign": 6626061900,
+      "individual": -437461425
+    },
+    {
+      "t": "2026-07-22",
+      "institution": 1985565990,
+      "foreign": -185571660,
+      "individual": -1799994330
+    },
+    {
+      "t": "2026-07-23",
+      "institution": 4102032000,
+      "foreign": 448932000,
+      "individual": -4550964000
+    },
+    {
+      "t": "2026-07-24",
+      "institution": -17007013445,
+      "foreign": 5045023145,
+      "individual": 11961990300
+    },
+    {
+      "t": "2026-07-27",
+      "institution": 5583973140,
+      "foreign": -936138870,
+      "individual": -4647834270
+    },
+    {
+      "t": "2026-07-28",
+      "institution": -11545883020,
+      "foreign": -153338900,
+      "individual": 11699221920
+    },
+    {
+      "t": "2026-07-29",
+      "institution": 6236602370,
+      "foreign": -4401966275,
+      "individual": -1834636095
+    },
+    {
+      "t": "2026-07-30",
+      "institution": -2976148425,
+      "foreign": 336948975,
+      "individual": 2639199450
+    },
+    {
+      "t": "2026-07-31",
+      "institution": 34743699860,
+      "foreign": -5253446740,
+      "individual": -29490253120
+    },
+    {
+      "t": "2026-08-03",
+      "institution": -17645516115,
+      "foreign": 7759492700,
+      "individual": 9886023415
+    },
+    {
+      "t": "2026-08-04",
+      "institution": 244768930,
+      "foreign": -122498950,
+      "individual": -122269980
+    },
+    {
+      "t": "2026-08-05",
+      "institution": 6889837590,
+      "foreign": -3297029510,
+      "individual": -3592808080
+    },
+    {
+      "t": "2026-08-06",
+      "institution": -9787950480,
+      "foreign": 2096418555,
+      "individual": 7691531925
+    },
+    {
+      "t": "2026-08-07",
+      "institution": 1922367750,
+      "foreign": -1595993000,
+      "individual": -326374750
+    },
+    {
+      "t": "2026-08-10",
+      "institution": 3219325200,
+      "foreign": 2407546800,
+      "individual": -5626872000
+    },
+    {
+      "t": "2026-08-11",
+      "institution": -627651680,
+      "foreign": -2399414880,
+      "individual": 3027066560
+    },
+    {
+      "t": "2026-08-12",
+      "institution": 3045248000,
+      "foreign": -525305280,
+      "individual": -2519942720
+    },
+    {
+      "t": "2026-08-13",
+      "institution": 4975623800,
+      "foreign": 1879081450,
+      "individual": -6854705250
+    },
+    {
+      "t": "2026-08-14",
+      "institution": 3290706250,
+      "foreign": -2438771250,
+      "individual": 314867500
+    },
+    {
+      "t": "2026-08-18",
+      "institution": 308496300,
+      "foreign": 4975694185,
+      "individual": -5740790090
+    },
+    {
+      "t": "2026-08-19",
+      "institution": -169029720,
+      "foreign": -5189365960,
+      "individual": 3890045960
+    },
+    {
+      "t": "2026-08-20",
+      "institution": 8521441270,
+      "foreign": -30878010,
+      "individual": -7150355970
+    },
+    {
+      "t": "2026-08-21",
+      "institution": 5749310055,
+      "foreign": -3492762720,
+      "individual": -2023255995
+    },
+    {
       "t": "2026-08-24",
-      "foreign": -2766422520,
       "institution": 3649937100,
+      "foreign": -2766422520,
       "individual": -1336395255
     },
     {
       "t": "2026-08-25",
-      "foreign": 5132507520,
       "institution": -6446738235,
+      "foreign": 5132507520,
       "individual": 1796652445
     },
     {
       "t": "2026-08-26",
-      "foreign": 1158463000,
       "institution": 2370671700,
+      "foreign": 1158463000,
       "individual": -3305921700
     },
     {
       "t": "2026-08-27",
-      "foreign": -3599378400,
       "institution": 10300656000,
+      "foreign": -3599378400,
       "individual": -6224786400
     },
     {
       "t": "2026-08-28",
-      "foreign": -3145763835,
       "institution": 3569721895,
+      "foreign": -3145763835,
       "individual": -283798420
     }
   ],
   "summary": {
-    "foreign_5d": -3220594235,
-    "institution_5d": 13444248460
+    "foreign_20d": -8447826845,
+    "institution_20d": 58124925470,
+    "individual_20d": -47992341925
   },
-  "source": "naver(dealTrend)",
-  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "source": "naver(frgn)",
+  "note": "기관·외국인 순매매 수량을 종가로 환산한 근사치. 개인은 -(기관+외국인) 근사(최근일은 실측). 기타법인 미제공.",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX"

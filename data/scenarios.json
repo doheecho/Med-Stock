@@ -1,24 +1,4 @@
 {
-  "updated_at": "2026-08-29T02:40:23+00:00",
-  "scenarios": {
-    "005930": [
-      {
-        "label": "내 목표가(상승)",
-        "target_price": 95000,
-        "horizon_months": 6
-      },
-      {
-        "label": "내 목표가(보수적)",
-        "target_price": 75000,
-        "horizon_months": 6
-      }
-    ],
-    "MU": [
-      {
-        "label": "내 목표가(상승)",
-        "target_price": 140,
-        "horizon_months": 12
-      }
-    ]
-  }
+  "updated_at": "2026-08-29T11:52:39+09:00",
+  "scenarios": {}
 }

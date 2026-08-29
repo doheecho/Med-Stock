@@ -42,17 +42,19 @@ body {
 .meta button:hover { border-color: var(--accent); }
 
 .summary { padding: 16px 20px; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
 .card {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 12px 14px;
 }
 .card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
 .card .label em { font-style: normal; color: var(--accent); font-size: 11px; }
-.card .value { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
-.card .delta { margin-top: 4px; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--muted); }
-.card .delta.pos { color: var(--up); }
-.card .delta.neg { color: var(--down); }
+.card .value {
+  font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.card .value.pos { color: var(--up); }
+.card .value.neg { color: var(--down); }
 
 /* AI Advisor 코멘트 (data/advisor.json) */
 .advisor {
@@ -66,8 +68,15 @@ body {
 
 /* 차트 컨트롤 버튼 */
 .chart-ctl { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
-.chart-ctl .ctl-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.chart-ctl .ctl-row { display: flex; align-items: center; gap: 4px; overflow-x: auto; padding-bottom: 2px; }
+.chart-ctl .ctl-row::-webkit-scrollbar { height: 4px; }
 .chart-ctl .ctl-lbl { color: var(--muted); font-size: 11px; width: 52px; flex: none; }
+.chart-ctl button { flex: none; }
+
+/* 긴 기간 차트 가로 스크롤 */
+.chart-scroll { overflow-x: auto; overflow-y: hidden; }
+.chart-scroll .chart-inner { min-width: 100%; }
+.chart-scroll canvas { display: block; }
 .chart-ctl button {
   background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
   border-radius: 6px; padding: 3px 9px; font-size: 11px; cursor: pointer;

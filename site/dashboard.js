@@ -29,7 +29,10 @@ const state = {
   panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
 };
 
-const RANGE_DAYS = { "1M": 31, "3M": 92, "1Y": 366, "3Y": 1096, "5Y": 1827 };
+const RANGE_DAYS = {
+  "1W": 8, "1M": 31, "3M": 92, "6M": 184, "1Y": 366,
+  "3Y": 1096, "5Y": 1827, "10Y": 3653,
+};
 
 /* USD→KRW 환율 (오늘 기준). 실패 시 대체값. */
 function fxRate() {
@@ -291,12 +294,14 @@ function renderSummary() {
 
   setText("sumCost", fmt.won(cost));
   setText("sumValue", haveAll ? fmt.won(value) : "—");
-  const plEl = setText("sumPl", pl == null ? "—" : fmt.wonSigned(pl));
+  // 총 평가손익: 금액 (수익률%) 한 칸에
+  const plEl = setText(
+    "sumPl",
+    pl == null ? "—" : `${fmt.wonSigned(pl)} (${fmt.pct(plPct)})`
+  );
   plEl.className = "value " + (pl == null ? "" : pl < 0 ? "neg" : "pos");
-  const pctEl = setText("sumPlPct", fmt.pct(plPct));
-  pctEl.className = "value " + (plPct == null ? "" : plPct < 0 ? "neg" : "pos");
 
-  // 전일대비: (오늘 평가액 − 전일 종가 기준 평가액), 전부 원화 환산
+  // 전일대비: (오늘 평가액 − 전일 종가 기준 평가액), 금액 (변동%) 한 칸에
   let vToday = 0, vPrev = 0, dayOk = true;
   for (const r of rows) {
     const p = state.prices[r.h.ticker];
@@ -308,15 +313,11 @@ function renderSummary() {
   }
   const dayChg = dayOk ? vToday - vPrev : null;
   const dayPct = dayOk && vPrev ? (dayChg / vPrev) * 100 : null;
-  const deltaStr =
-    dayChg == null ? "" : `전일대비 ${fmt.wonSigned(dayChg)} (${fmt.pct(dayPct)})`;
-  for (const id of ["sumPlDelta", "sumPctDelta"]) {
-    const d = document.getElementById(id);
-    if (d) {
-      d.textContent = deltaStr;
-      d.className = "delta " + (dayChg == null ? "" : dayChg < 0 ? "neg" : "pos");
-    }
-  }
+  const dayEl = setText(
+    "sumDay",
+    dayChg == null ? "—" : `${fmt.wonSigned(dayChg)} (${fmt.pct(dayPct)})`
+  );
+  dayEl.className = "value " + (dayChg == null ? "" : dayChg < 0 ? "neg" : "pos");
 
   markSortHeader();
   if (state.viewMode === "byAccount") renderByAccount(applySort(rows));
@@ -417,7 +418,10 @@ function selectTicker(ticker) {
 }
 
 /* ------------------------------------------------------------------ 종목 상세 */
-const RANGE_BTNS = [["1M", "1개월"], ["3M", "3개월"], ["1Y", "1년"], ["3Y", "3년"], ["5Y", "5년"], ["MAX", "최대"]];
+const RANGE_BTNS = [
+  ["1W", "1주"], ["1M", "1개월"], ["3M", "3개월"], ["6M", "6개월"], ["1Y", "1년"],
+  ["3Y", "3년"], ["5Y", "5년"], ["10Y", "10년"], ["MAX", "최대"],
+];
 const MA_BTNS = [["ma5", "MA5"], ["ma20", "MA20"], ["ma60", "MA60"], ["ma120", "MA120"]];
 const OV_BTNS = [["bbands", "볼린저밴드"], ["volume", "거래량"], ["buyprice", "내 매수가"]];
 
@@ -442,11 +446,11 @@ async function renderDetail(ticker) {
         <div class="block">
           <h3>가격 · 이동평균 · 시나리오 · 보조지표</h3>
           <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
-          <canvas id="priceChart" height="150"></canvas>
+          <div class="chart-scroll"><div class="chart-inner"><canvas id="priceChart"></canvas></div></div>
         </div>
-        <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><canvas id="macdChart" height="70"></canvas></div>
-        <div class="block"><h3>RSI (14)</h3><canvas id="rsiChart" height="70"></canvas></div>
-        <div class="block"><h3>수급 (외국인/기관 순매수 · 억원)</h3><canvas id="flowChart" height="90"></canvas></div>
+        <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="macdChart"></canvas></div></div></div>
+        <div class="block"><h3>RSI (14)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div></div>
+        <div class="block"><h3>수급 (개인·기관·외국인 순매수 · 억원 · 최근 4주)</h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
       <div>
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
@@ -495,6 +499,15 @@ function onChartCtl(e) {
   drawMacdChart(state.prices[h.ticker]);
 }
 
+/* 데이터 포인트가 많으면 차트 내부 폭을 늘려 가로 스크롤되게 한다 */
+function fitScroll(canvasId, points) {
+  const cv = document.getElementById(canvasId);
+  const inner = cv && cv.closest(".chart-inner");
+  if (!inner) return;
+  const avail = inner.parentElement.clientWidth || 600;
+  inner.style.width = Math.max(avail, Math.min(16000, points * 3)) + "px";
+}
+
 /* state.chartRange 에 맞는 시작 인덱스 */
 function rangeStartIdx(dates) {
   if (!dates || !dates.length || state.chartRange === "MAX") return 0;
@@ -539,6 +552,7 @@ function drawPriceChart(h) {
 
   const si = rangeStartIdx(p.dates);
   const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  fitScroll("priceChart", xs.length);
   const slice = (arr) => (arr ? arr.slice(si) : []);
   const line = (label, arr, color, w = 1) => ({
     type: "line", label, borderColor: color, borderWidth: w, pointRadius: 0, spanGaps: true, order: 5,
@@ -579,8 +593,8 @@ function drawPriceChart(h) {
   };
   let xMax = xs[xs.length - 1];
 
-  // ---- 시나리오 점선 (장기 구간에서만) ----
-  const showScenario = ["1Y", "3Y", "5Y", "MAX"].includes(state.chartRange);
+  // ---- 시나리오 점선 (6개월 이상 구간에서만) ----
+  const showScenario = ["6M", "1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
   const cur = priceOf(h.ticker) ?? p.last_close;
   if (showScenario) {
     const anchor = xs[xs.length - 1];
@@ -641,6 +655,7 @@ function drawMacdChart(p) {
   }
   const si = rangeStartIdx(p.dates);
   const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  fitScroll("macdChart", xs.length);
   const S = (a) => a.slice(si);
   makeChart("macdChart", {
     data: {
@@ -696,6 +711,7 @@ function drawRsiChart(p) {
   }
   const start = rangeStartIdx(p.dates);
   const xs = p.dates.slice(start).map((d) => new Date(d).valueOf());
+  fitScroll("rsiChart", xs.length);
   const ys = p.rsi.slice(start);
   makeChart("rsiChart", {
     data: {
@@ -710,7 +726,7 @@ function drawRsiChart(p) {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: { type: "time", time: { unit: "month" }, ticks: { color: "#8b95a1", maxTicksLimit: 8 }, grid: { display: false } },
+        x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, ticks: { color: "#8b95a1", maxTicksLimit: 8 }, grid: { display: false } },
         y: { position: "right", min: 0, max: 100, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { display: false } },
@@ -748,30 +764,48 @@ function renderFundamentals(h, f) {
     <div class="src" style="margin-top:8px">기준일 ${f.as_of || f.updated_at || "—"}${f.source ? " · " + f.source : ""}</div>`;
 }
 
-/* ---- 수급 막대 ---- */
+/* ---- 수급 막대 (개인·기관·외국인[·기타] 순매수, 억원, 최근 4주) ---- */
 function drawFlowChart(flow) {
   const el = document.getElementById("flowChart");
   if (!flow || !flow.rows || !flow.rows.length) {
-    el.parentElement.innerHTML = "<h3>수급</h3><div class='error'>수급 데이터 없음 (해외 종목은 미제공)</div>";
+    el.parentElement.innerHTML =
+      "<h3>수급</h3><div class='error'>수급 데이터 없음 (해외 종목·ETF 일부는 미제공)</div>";
     return;
   }
-  const rows = flow.rows.slice(-30);
+  const rows = flow.rows.slice(-20); // 최근 약 4주(영업일 기준)
   const toEok = (v) => (v == null ? null : Math.round(v / 1e8));
+  const hasEtc = rows.some((r) => r.etc != null || r.etc_corp != null);
+  const series = [
+    ["individual", "개인", "#a855f7"],
+    ["institution", "기관", "#f59e0b"],
+    ["foreign", "외국인", "#22d3ee"],
+  ];
+  if (hasEtc) series.push(["etc", "기타", "#8b95a1"]);
+
   makeChart("flowChart", {
+    type: "bar",
     data: {
       labels: rows.map((r) => r.t.slice(5)),
-      datasets: [
-        { label: "외국인", data: rows.map((r) => toEok(r.foreign)), backgroundColor: "#22d3ee" },
-        { label: "기관", data: rows.map((r) => toEok(r.institution)), backgroundColor: "#f59e0b" },
-      ],
+      datasets: series.map(([key, label, color]) => ({
+        label,
+        data: rows.map((r) => toEok(r[key] ?? r[key + "_corp"])),
+        backgroundColor: color,
+      })),
     },
-    type: "bar",
     options: {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: { stacked: false, ticks: { color: "#8b95a1", maxTicksLimit: 10 }, grid: { display: false } },
-        y: { position: "right", ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
+        x: { stacked: false, ticks: { color: "#8b95a1", maxTicksLimit: 12 }, grid: { display: false } },
+        y: {
+          position: "right",
+          ticks: { color: "#8b95a1" },
+          grid: {
+            // 0선을 파란 굵은 선으로
+            color: (c) => (c.tick.value === 0 ? "#1d4ed8" : "#2b333d40"),
+            lineWidth: (c) => (c.tick.value === 0 ? 2 : 1),
+          },
+        },
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
@@ -884,6 +918,11 @@ function drawPie(id, items) {
         datalabels: {
           display: "auto",
           color: "#0f1216",
+          backgroundColor: "rgba(255,255,255,0.92)", // 조각색과 글자색이 겹쳐도 보이도록 흰 배경
+          borderColor: "rgba(255,255,255,0.95)",
+          borderWidth: 1,
+          borderRadius: 4,
+          padding: { top: 1, bottom: 1, left: 4, right: 4 },
           font: { size: 11, weight: "600" },
           // 마우스오버 전에는 종목명(비중)만. 상세(금액)는 툴팁에서.
           formatter: (v, ctx) =>
