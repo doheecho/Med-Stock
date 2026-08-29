@@ -1,68 +1,23 @@
 {
-  "updated_at": "2026-08-29T12:30:05+09:00",
+  "updated_at": "2026-08-29T12:51:33+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3317917.0,
-  "target_high": 3200000,
-  "target_low": 2800000,
+  "target_high": 4200000,
+  "target_low": 2000000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
   "as_of": "2026-08-27",
   "analyst_targets": [
-    {
-      "firm": "대신증권",
-      "target": 3200000,
-      "date": "2026-07-30"
-    },
-    {
-      "firm": "미래에셋증권",
-      "target": 2800000,
-      "date": "2026-08-26"
-    },
-    {
-      "firm": "한화투자증권",
-      "target": null,
-      "date": "2026-08-20"
-    },
-    {
-      "firm": "하나증권",
-      "target": null,
-      "date": "2026-08-20"
-    },
-    {
-      "firm": "현대차증권",
-      "target": null,
-      "date": "2026-08-05"
-    },
-    {
-      "firm": "SK증권",
-      "target": null,
-      "date": "2026-08-03"
-    },
-    {
-      "firm": "유진투자증권",
-      "target": null,
-      "date": "2026-07-31"
-    },
-    {
-      "firm": "DS투자증권",
-      "target": null,
-      "date": "2026-07-30"
-    },
-    {
-      "firm": "교보증권",
-      "target": null,
-      "date": "2026-07-30"
-    },
-    {
-      "firm": "신한투자증권",
-      "target": null,
-      "date": "2026-07-30"
-    }
+    4200000,
+    3800000,
+    3200000,
+    2800000,
+    2700000,
+    2000000
   ],
   "covering_firms": [
-    "대신증권",
     "미래에셋증권",
     "한화투자증권",
     "하나증권",
@@ -71,7 +26,10 @@
     "유진투자증권",
     "DS투자증권",
     "교보증권",
-    "신한투자증권"
+    "대신증권",
+    "신한투자증권",
+    "IBK투자증권",
+    "키움증권"
   ],
   "ticker": "000660",
   "name": "SK하이닉스",

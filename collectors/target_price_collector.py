@@ -47,40 +47,62 @@ def _opinion_text(mean):
     return "매도"
 
 
-def _analyst_targets(ticker: str) -> list[dict]:
-    """네이버 리서치 리포트 목록의 미리보기 텍스트에서 '목표주가 XX만원' 을 추출.
-    증권사별 최신(목표가가 파싱된) 1건만 남긴다 — 근사치."""
+def _parse_target(txt: str):
+    """리포트 텍스트에서 목표가 추출. 'XX만원' / 'XXX,XXX원' 등."""
+    if not txt:
+        return None
+    for pat, mul in (
+        (r"목표주가[^0-9]{0,8}([0-9][0-9,\.]*)\s*만", 10000),
+        (r"목표가[^0-9]{0,8}([0-9][0-9,\.]*)\s*만", 10000),
+        (r"(?:목표주가|목표가|T\.?P|적정주가)[^0-9]{0,10}([0-9]{2,3},[0-9]{3})\s*원?", 1),
+        (r"목표주가[^0-9]{0,8}([0-9]{4,7})\s*원", 1),
+    ):
+        m = re.search(pat, txt)
+        if m:
+            try:
+                return int(round(float(m.group(1).replace(",", "")) * mul))
+            except ValueError:
+                pass
+    return None
+
+
+def _report_content(rid) -> str:
+    try:
+        d = requests.get(
+            f"https://m.stock.naver.com/api/research/company/{rid}",
+            headers=_NAVER_HEADERS, timeout=8,
+        ).json()
+        return (d.get("researchContent") or {}).get("content", "") or ""
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def _analyst_targets(ticker: str) -> dict:
+    """네이버 리서치 리포트에서 목표가 추출(미리보기 → 본문 순).
+    화면에는 목표가만 표시하므로 {targets: 정렬된 고유값 목록, firms: 커버 증권사} 반환."""
     try:
         rows = requests.get(
-            f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=30",
+            f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=40",
             headers=_NAVER_HEADERS, timeout=12,
         ).json()
     except Exception:  # noqa: BLE001
-        return []
-    by_firm: dict[str, dict] = {}
+        return {"targets": [], "firms": []}
+    vals: list[int] = []
+    firms: list[str] = []
+    detail_budget = 12
     for x in rows if isinstance(rows, list) else []:
         firm = (x.get("brokerName") or "").strip()
-        if not firm:
-            continue
-        txt = f"{x.get('title', '')} {x.get('previewContent', '')}"
-        tgt = None
-        m = re.search(r"목표주가[^0-9]{0,6}([0-9][0-9,\.]*)\s*만", txt)
-        if m:
-            tgt = int(round(float(m.group(1).replace(",", "")) * 10000))
-        else:
-            m = re.search(r"목표주가[^0-9]{0,8}([0-9]{2,3},[0-9]{3})\s*원", txt)
-            if m:
-                tgt = int(m.group(1).replace(",", ""))
-        date = x.get("writeDate")
-        # 증권사별 첫 등장(=최신) 우선, 단 목표가 파싱된 건이 있으면 그것으로 갱신
-        cur = by_firm.get(firm)
-        if cur is None:
-            by_firm[firm] = {"firm": firm, "target": tgt, "date": date}
-        elif cur.get("target") is None and tgt is not None:
-            by_firm[firm] = {"firm": firm, "target": tgt, "date": date}
-    out = [v for v in by_firm.values()]
-    out.sort(key=lambda v: (v["target"] is None, -(v["target"] or 0)))
-    return out[:10]
+        if firm and firm not in firms:
+            firms.append(firm)
+        tgt = _parse_target(f"{x.get('title', '')} {x.get('previewContent', '')}")
+        if tgt is None and detail_budget > 0 and x.get("researchId"):
+            detail_budget -= 1
+            tgt = _parse_target(_report_content(x["researchId"]))
+        # 상식적 범위(현재가의 0.3~5배)만 채택 — 오탐 방지용 하드 클램프는 생략, 중복만 제거
+        if tgt and tgt not in vals:
+            vals.append(tgt)
+    vals.sort(reverse=True)
+    return {"targets": vals, "firms": firms[:12]}
 
 
 def _naver_target(ticker: str) -> dict:
@@ -91,8 +113,8 @@ def _naver_target(ticker: str) -> dict:
     if not avg:
         return {}
     mean = _to_num(c.get("recommMean"))
-    firms = safe(lambda: _analyst_targets(ticker), default=[], label=f"analyst {ticker}") or []
-    priced = [f["target"] for f in firms if f.get("target")]
+    at = safe(lambda: _analyst_targets(ticker), default={}, label=f"analyst {ticker}") or {}
+    priced = at.get("targets") or []
     return {
         "source": "naver(consensus)",
         "url": f"https://m.stock.naver.com/domestic/stock/{ticker}/total",
@@ -103,8 +125,8 @@ def _naver_target(ticker: str) -> dict:
         "opinion": _opinion_text(mean),
         "opinion_score": mean,
         "as_of": c.get("createDate"),
-        "analyst_targets": firms,
-        "covering_firms": [f["firm"] for f in firms],
+        "analyst_targets": priced,          # 목표가 값 목록(내림차순)
+        "covering_firms": at.get("firms") or [],
     }
 
 

@@ -3,6 +3,7 @@
 # ticker : KRX 는 6자리 종목코드(문자열, ETF 는 숫자+영문 혼합 가능), 미국은 야후 심볼
 # name   : 화면 표시명
 # market : KRX | US
+# type   : (선택) "ETF" 로 두면 목표주가·주가전망 패널을 숨긴다. 생략 시 개별주.
 # lots   : 계좌별 매수 내역. buy_price 는 "매수 평단가"(1주당), quantity 는 보유 수량.
 #          같은 종목을 여러 계좌로 보유하면 lots 에 계좌별로 나눠 적는다.
 #          - 종목별 조회: 계좌 무관, (Σ 평단가×수량) / (Σ 수량) 로 통합 평단가 표시
@@ -46,6 +47,7 @@
       quantity: 9
 
 - ticker: "0183J0"
+  type: ETF
   name: "TIGER 미국우주테크"
   market: KRX
   lots:
@@ -54,6 +56,7 @@
       quantity: 37
 
 - ticker: "069500"
+  type: ETF
   name: "KODEX 200"
   market: KRX
   lots:
@@ -62,6 +65,7 @@
       quantity: 130
 
 - ticker: "091160"
+  type: ETF
   name: "KODEX 반도체"
   market: KRX
   lots:
@@ -70,6 +74,7 @@
       quantity: 250
 
 - ticker: "278540"
+  type: ETF
   name: "KODEX MSCI Korea TR"
   market: KRX
   lots:

@@ -436,8 +436,13 @@ function chartCtlHtml() {
     <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}<button data-sub="macd"${state.sub.macd ? ' class="on"' : ""}>MACD</button></div>`;
 }
 
+function isEtf(h) {
+  return h && (h.type === "ETF" || /^(KODEX|TIGER|KBSTAR|ARIRANG|HANARO|KOSEF|KINDEX|ACE|PLUS|RISE|SOL|TIMEFOLIO)\b/i.test(h.name || ""));
+}
+
 async function renderDetail(ticker) {
   const h = state.holdings.find((x) => x.ticker === ticker);
+  const etf = isEtf(h);
   const main = document.getElementById("detail");
   main.innerHTML = `
     ${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}
@@ -454,8 +459,8 @@ async function renderDetail(ticker) {
       </div>
       <div>
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
-        <div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
-        <div class="block"><h3>주가전망 (증권사)</h3><div id="forecastBox">로딩…</div></div>
+        ${etf ? "" : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
+        <div class="block"><h3>주가전망</h3><div id="forecastBox">로딩…</div></div>`}
         <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li>로딩…</li></ul></div>
       </div>
     </div>`;
@@ -465,15 +470,17 @@ async function renderDetail(ticker) {
   const [fund, flow, target, news] = await Promise.all([
     getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
     getJSON(`${state.dataBase}/flows/${ticker}.json`).catch(() => null),
-    getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
+    etf ? Promise.resolve(null) : getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
     getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
   ]);
   state.panel = { h, fund, flow, target, news };
 
   renderFundamentals(h, fund);
   drawFlowChart(flow);
-  renderTarget(h, target);      // state._targets 캐시 → 시나리오 앵커에 사용
-  renderForecast(h, target);
+  if (!etf) {
+    renderTarget(h, target);    // state._targets 캐시 → 시나리오 앵커에 사용
+    renderForecast(h, target);
+  }
   renderNews(news);
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
   drawRsiChart(state.prices[h.ticker]);
@@ -644,14 +651,16 @@ function drawPriceChart(h) {
   };
   let xMax = xs[xs.length - 1];
 
-  // ---- 시나리오 점선 (6개월 이상 구간에서만) ----
-  const showScenario = ["6M", "1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
+  // ---- 목표주가 점선 (ETF 제외). 실제 목표시점(12M)과 무관하게
+  //      과거 구간을 넓히려고 x축은 2개월분만 사용 ----
+  const showScenario =
+    !isEtf(h) && ["3M", "6M", "1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
   const cur = priceOf(h.ticker) ?? p.last_close;
   if (showScenario) {
     const anchor = xs[xs.length - 1];
+    const horizon = anchor + 60 * 864e5; // 약 2개월
+    xMax = Math.max(xMax, horizon);
     for (const sc of scenarioAnchors(h)) {
-      const horizon = anchor + sc.months * 30 * 864e5;
-      xMax = Math.max(xMax, horizon);
       datasets.push({
         type: "line", label: sc.label, borderColor: sc.color, borderDash: [5, 5], borderWidth: 1.5,
         pointRadius: 3, pointBackgroundColor: sc.color, order: 1,
@@ -930,52 +939,45 @@ function renderTarget(h, t) {
     <div class="src">막대=최저~평균 구간, 세로선=현재가 · 출처 ${t.source || "—"}</div>`;
 }
 
-/* ---- 주가전망: 증권사별 목표가를 상단/중간/하단으로 나눠 회사명 버블 표기 ---- */
+/* ---- 주가전망: 목표가만 상단/중간/하단 3구간, 각 상위 3개를 가로로 (증권사명 없음) ---- */
 function renderForecast(h, t) {
   const box = document.getElementById("forecastBox");
   if (!box) return;
   const m = h.market;
-  const list = ((t && t.analyst_targets) || []).filter((x) => x && x.target != null);
+  const vals = ((t && t.analyst_targets) || [])
+    .map((x) => (typeof x === "object" && x ? x.target : x))
+    .filter((v) => v != null)
+    .sort((a, b) => b - a);
 
-  if (!list.length) {
-    const firms = (t && t.covering_firms) || [];
-    box.innerHTML = firms.length
-      ? `<div class="src" style="margin-bottom:6px">개별 목표가 미확인 · 최근 커버 증권사</div>
-         <div class="firm-bubbles">${firms.map((f) => `<span class="bubble">${escapeHtml(f)}</span>`).join("")}</div>`
-      : "<div class='error'>증권사 전망 정보 없음</div>";
+  if (!vals.length) {
+    const blk = box.closest(".block");
+    if (blk) blk.hidden = true;           // 목표가 없으면 박스 자체를 숨김
+    else box.innerHTML = "<div class='error'>주가전망 정보 없음</div>";
     return;
   }
 
-  const sorted = [...list].sort((a, b) => b.target - a.target);
-  const n = sorted.length;
-  const cut = Math.max(1, Math.round(n / 3));
+  const n = vals.length;
+  const third = Math.max(1, Math.ceil(n / 3));
   const tiers = [
-    ["상단", sorted.slice(0, cut), "pos"],
-    ["중간", sorted.slice(cut, n - cut), ""],
-    ["하단", sorted.slice(n - cut), "neg"],
+    ["상단", vals.slice(0, third).slice(0, 3), "pos"],
+    ["중간", vals.slice(third, n - third).slice(0, 3), ""],
+    ["하단", vals.slice(-third).slice(0, 3), "neg"],
   ];
 
-  const tierHtml = tiers
-    .filter(([, arr]) => arr.length)
-    .map(
-      ([name, arr, klass]) => `
+  box.innerHTML =
+    tiers
+      .filter(([, arr]) => arr.length)
+      .map(
+        ([name, arr, klass]) => `
       <div class="fc-tier">
         <div class="fc-tier-h ${klass}">${name}</div>
         <div class="firm-bubbles">
-          ${arr
-            .map(
-              (x) =>
-                `<span class="bubble">${escapeHtml(x.firm)} <b>${fmt.price(x.target, m)}</b></span>`
-            )
-            .join("")}
+          ${arr.map((v) => `<span class="bubble"><b>${fmt.price(v, m)}</b></span>`).join("")}
         </div>
       </div>`
-    )
-    .join("");
-
-  box.innerHTML =
-    tierHtml +
-    `<div class="src" style="margin-top:8px">리포트 미리보기에서 추출한 근사치 · 증권사별 최신 1건</div>`;
+      )
+      .join("") +
+    `<div class="src" style="margin-top:8px">애널리스트 리포트에서 추출한 목표가 근사치 (${n}건)</div>`;
 }
 
 /* ---- 뉴스 ---- */

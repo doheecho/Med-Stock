@@ -81,6 +81,7 @@ def load_holdings() -> list[dict[str, Any]]:
                 "ticker": ticker,
                 "name": r.get("name"),
                 "market": r.get("market", "KRX"),
+                "type": (r.get("type") or "").upper() or None,
                 "quantity": tot_qty,
                 "buy_price": (tot_amount / tot_qty) if tot_qty else 0.0,
                 "buy_date": _norm_date(r.get("buy_date")) or (min(lot_dates) if lot_dates else None),
