@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-08-29T02:40:20+00:00",
+  "updated_at": "2026-08-29T05:11:04+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Jim Cramer Shared Why Micron Technology, Inc. (NASDAQ:MU)’s Shares Didn’t Rise On Shortage News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shared-why-micron-033253032.html",
+      "source": "Insider Monkey",
+      "date": "2026-08-29T03:32:53Z"
+    },
     {
       "title": "Nvidia Quietly Became Its Own Market Category",
       "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-quietly-became-own-market-222531285.html",
@@ -57,12 +63,6 @@
       "url": "https://finance.yahoo.com/technology/ai/articles/micron-mu-ceo-ai-shift-161424175.html",
       "source": "Insider Monkey",
       "date": "2026-08-28T16:14:24Z"
-    },
-    {
-      "title": "Warsh Is Asking the Right Questions About AI. The Answers Will Have to Wait.",
-      "url": "https://www.barrons.com/articles/kevin-warsh-federal-reserve-ai-61ece992?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-08-28T16:02:00Z"
     }
   ]
 }

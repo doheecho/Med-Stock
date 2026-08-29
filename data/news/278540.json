@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T02:40:23+00:00",
+  "updated_at": "2026-08-29T05:11:09+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -59,6 +59,12 @@
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
+      "title": "22일, 기관 거래소에서 TIGER MSCI Korea TR(+0.55%), SK하이닉스(-0.08%) 등 순매도",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sZmdzS0RxTDlkUEFTVTlEekVuZXdWeDFVR2g5NmNoMHZNSV9IdW1lc1U3aWdqOVp1YzZRb2Y5ODFzZ25jUzA2VDBRRFZkRUVFZmFj?oc=5",
+      "source": "네이트",
+      "date": "Wed, 22 Apr 2026 07:00:00 GMT"
+    },
+    {
       "title": "외국인 투자자, MSCI코리아 ETF에 올해 7000억원 순매수",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xUlIwSUZsQzJ4VE9PNThBVFV4V1hSNlJBSl93VFBQZGVZMEpHNkRIbjFjanFyQkNoV1l6dzdrd0NSZU5FZ3U1TFljNmV1ZGJwd3FxTkZacGVCd9IBWEFVX3lxTE1OaDVQaXZmUlhmTTdscXJnMVBQLXNxQ0d5dE1VUTZjZmZPTmVPcGZOQjBpeGVpaFRYVFp0d1M4c3A5Nlg5a3JEeUFNbk9pWHBFSEU1N2ZZQXM?oc=5",
       "source": "아주경제",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBuNXYtUmNjM1NLNHJ1VXZRMEJUUTIzTWt6Rl84bWt3U2VRQnJkdUZDdmlKSUJHLXNlOXRwd1hZTHRoV2lSZmNKdUdORmZsY3M?oc=5",
       "source": "매일경제 마켓",
       "date": "Mon, 03 Apr 2023 07:00:00 GMT"
-    },
-    {
-      "title": "​과세 피하자 外人 KODEX 200 ETF 팔고 KODEX 200TR 사고",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
-      "source": "아주경제",
-      "date": "Wed, 23 Mar 2022 07:00:00 GMT"
     }
   ]
 }

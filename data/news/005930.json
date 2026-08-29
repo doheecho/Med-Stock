@@ -1,9 +1,51 @@
 {
-  "updated_at": "2026-08-29T02:40:18+00:00",
+  "updated_at": "2026-08-29T05:11:02+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼성전자 자체 AI칩용 HBM4 빅테크 공급 잇달아, 전영현 내년 HBM 출하량 2배 늘린다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42UUd2ZnRWdXNIZEp1dlZQU0RIa0puNkljNXp5Z3RqOENrOXpOUkpEa2V6M0I2cWh0OFkwSWpnV1k1N1AwTUlnSWJ0a2F6S2xLTDM4RDF5Ynd6X1NRdVN2M20ydjBZS09HNTJDTGI4eldueHc?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 27 Aug 2026 06:19:26 GMT"
+    },
+    {
+      "title": "[단독] ‘갤럭시 성능 제한’ 삼성전자 GOS 사태 4년 만에 심판대… 10월 공정위 첫 심의 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSTFLOXpNMldzSm8tTV9GR2NUbFoyR1hzdmhfdkRpeVRNeWZsU192d2h3WkVmaHhfbVlDME9aUGhrRnVHT05lMmJSZE5wWmxycktGTHIxYzRfN1lJNDZOYS1rNVZkY210bnRHUW9ZNUJjZ3lCb2RKaFJuLWxRWHlrTlFR0gGWAUFVX3lxTE1JWS1XQld0emhqU2VhZkNfWGl0S1ZnUHJnVG5oMHUxZUVUVUFONDlBY0R0Y0NQem82djRoUG0wRzdiWGZURFpIRldrc1Y1SUJWRG9wSkJWN0xTRGlfaVVyWmNsajJ2Wk51dUNIMTZBc2YzQkdNa2RvNzM4TEQtU3pBcjY3STF5bWhYTTZ6ekZza2ZyMDNmdw?oc=5",
+      "source": "Chosunbiz",
+      "date": "Thu, 27 Aug 2026 02:23:00 GMT"
+    },
+    {
+      "title": "삼성전자",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb3d6eUs0UU5LdGw2RmtnVmo5SDN0RzFIVGJTSE9QeE5mNlV5NEd1OVg1TjFHZVE4cFFBa2lyUVZFWDdyWDZmUmFBdWdTNUtKRGxZV2lKQ2VfRzZ6eWRFLVVBUjd4b0RoYlpRVkNTaWE0WDhrVWFfXzBMakRSZlZJZ1RyMFQwakl1YkFhYlgtS2tScm1BVlpr?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Fri, 28 Aug 2026 02:18:16 GMT"
+    },
+    {
+      "title": "트럼프 반도체 들어간 완제품에도 관세 부과 압박, 삼성전자·SK하이닉스 메모리 호황 '불안불안'",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAwaThWeFBGMkVDZ0FuZFVOVkdIOTBqSUctRFFRZVB2YWs0QmlKc0tIdEVxZ1ZyaUpFdGJnbEFMN2tZUEZyZERvZ0tDUjRTQlBtRFp4bTNaTDNXYlZwT3BkT2JXUFBkYXN5eHU3Mm5heHZ2azA?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Fri, 28 Aug 2026 07:14:45 GMT"
+    },
+    {
+      "title": "잭슨홀 미팅 앞두고 코스피 하락 마감‥삼성전자 3%↓·SK하이닉스 4%↓",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04TGw1a2ZOaTNKbU5ycTlSdUVkLTFfUExULWJFZktLdnBFbnVNYl90X3BEc2x0ZmpqdXBMS3VoQU1FcWc1eV8zcnh6aVBGMTlHdFVkbDd3eXZjUmJ3SDBGRC1fZ0l0b1p3dUFkdW9uNHZLaWRU0gF0QVVfeXFMTndxY2ZPX0tUWEUxcVZaWjhMdjFUNmYwU0NXY1F4ay01NFM2ZTlibHV1MHVxZG51a3ZoQXhBbnYwUi1aQlJvRHBhZDdDNWcyel9aMjYwTGdQdTB6YWtiYU1PWnJUSVJnRWdzaXB0UTVVQk5sbzQ?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Fri, 28 Aug 2026 06:51:40 GMT"
+    },
+    {
+      "title": "삼성전자",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbThRZVVXYkxRNmxaNnNvd3RXTFNkQ0lDRUJpNnhiMGZSZS1xWVRvSmNlbnI5ZWNMZlBqMEo5MHRIdGNpVTZ5bU0wZ3B3OGRmSnNTekVWemx6T1o2V2htRmpMcFRxQWlKY2ZkbUNDQ1pTMUpvcDFXZEdDR1FFUFVlSHYwRFpuUUg5T3VleFl4OWxENVJ4Y3lN?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Fri, 28 Aug 2026 15:04:33 GMT"
+    },
+    {
+      "title": "삼성 보급형 맞아?…104만원 '갤S26 FE' 관심 폭발한 까닭 [영상]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BUldhemhRczdsNHR3NjNOQ2l6cGJjVFRkaVNRNzZaeTlaX1VoWmJwSWdZMHBNa0NUZWw4TVFEcm03a1JHYVg0TzVsdHJHN0d1Z1Fpdm9VVmdDUQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 27 Aug 2026 12:00:07 GMT"
+    },
     {
       "title": "삼성전자, 갤럭시 프리미엄 기능을 담은 ‘갤럭시 S26 FE’ 공개",
       "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQY2VqdmpsUUFGYUJSMzQ4b1B4dGN6MmtkeDhwM3p0XzJQNWc2bWJNVmZETFp1WUtuNldOQWp1ZXBFT202cmhkMmdXdDlNUkFNUEFEcmpDUVF2VnNhcW5hZ093QUx1b3dNamJyZmp6NVRCTnliWDhJV3Z3TVF5T1FHQXlMR1RjR2l4c1RTTml5bjJEc29iU0pRbkpFQk9RTDBnUXpPNWw0TDVEM1ZZSm5KNHFDVjJrUFVZMUxXOVFnVWplcHpERkVwVlFQeWxpV3d3RWd1N0xZajBNT3NxU3AtbWlEdG5Ld284aXBENEsyOXpmV2piaTlnbGItQ1V2ZVRaa3ZJTjBaa2NveFhYd2xqSTBEZnZFUWNJc0Fjd3IxR3FRQmFud1lidE1ILXFGN1VURUkwWXJPSmxfeHUzaFVJblphNA?oc=5",
@@ -17,40 +59,28 @@
       "date": "Thu, 27 Aug 2026 12:01:00 GMT"
     },
     {
-      "title": "[단독] ‘갤럭시 성능 제한’ 삼성전자 GOS 사태 4년 만에 심판대… 10월 공정위 첫 심의 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSTFLOXpNMldzSm8tTV9GR2NUbFoyR1hzdmhfdkRpeVRNeWZsU192d2h3WkVmaHhfbVlDME9aUGhrRnVHT05lMmJSZE5wWmxycktGTHIxYzRfN1lJNDZOYS1rNVZkY210bnRHUW9ZNUJjZ3lCb2RKaFJuLWxRWHlrTlFR0gGWAUFVX3lxTE1JWS1XQld0emhqU2VhZkNfWGl0S1ZnUHJnVG5oMHUxZUVUVUFONDlBY0R0Y0NQem82djRoUG0wRzdiWGZURFpIRldrc1Y1SUJWRG9wSkJWN0xTRGlfaVVyWmNsajJ2Wk51dUNIMTZBc2YzQkdNa2RvNzM4TEQtU3pBcjY3STF5bWhYTTZ6ekZza2ZyMDNmdw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Thu, 27 Aug 2026 02:23:00 GMT"
-    },
-    {
-      "title": "‘스와치 상표권 침해’ 삼성전자에 161억원 배상 판결",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWFBiUDVEOXpVT19EdkNSZHMtTG51MTVURjdhb2J6RlVhYTNjdEpSRVJGNlNWbXE5RkxUaUxmc0tvNVNqZ1VKWWlvM2pnSV9HQjBkQ3UwdWpScXBrTTY5eGJ1SWpyOWvSAWxBVV95cUxOa0lEVXpTSUhNTkJ6WTdVSkVzb2VObGg1ZGIzeG5tV1pHUHM3S2dqeUwtMDVyeWtlUTFuRG16OVR6bFZ5VE5LcEJhdU4tUlRHNjNvM0FDN3FYTkVObDM3cXVFWERtSTAzMy1jc0M?oc=5",
-      "source": "국민일보",
-      "date": "Thu, 27 Aug 2026 15:21:00 GMT"
-    },
-    {
-      "title": "[이 시각 세계] 영국 법원 \"삼성전자, 스와치에 160억 원 배상\"",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBJNXROYjVxcTE2am5LbEhNdE1ZUzJsd1dSRFI1OHlyM0J6eDZTenp1Wm45bE9CdUFiZHFSQ3JHM2hJT2VsaUxyMXluZ1c1QWR0ekpSa0t1NVZKXzRmbG9HN2J5ZGVSSjBxRk50azFTV0JpLVdYbTlHUXRR0gF6QVVfeXFMUHZ5X0FwU1pJWHRreVhvVUZKaGxHaFZaNmZvLUVVR2J0WEZoYktTMy02Uk9fVUxkckQzbHN2RWMtQXlTa2t1WVBOZXE2Znlrc1hiWUx6Sm1jV19Hel9xRFZ5ZzFrUFVMUUdLbFpYdnJ5Z2szam9oRU4zdWc?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Wed, 26 Aug 2026 22:15:16 GMT"
-    },
-    {
-      "title": "\"300달러밖에 못 벌었는데\"…삼성전자, 161억 배상 '날벼락'",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9nUk54cHdWZGxWT1hVM3RvUjN3b0pSUUdmZldfT0h4TW81NUhiZlBSdGpVQnR5Yi1FYjE0WlpveFJoSmdqTG5ucjlORTdtWWltMmhWVEg5OWtDQQ?oc=5",
-      "source": "한국경제",
-      "date": "Wed, 26 Aug 2026 23:06:47 GMT"
-    },
-    {
       "title": "\"37만원 간다더니 왜 25만원?\"…삼성전자 '최대 110조'에도 주저앉은 이유 [숫자 뒤의 진실]",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlU3pvMDZmN1l1SkItaThMZ0Q2YXNWM1o5YS00bHdMSjdhXzB3OEFnNjdVdjdzbGFzU1cwa3ZfdXpaS0hUZWx3UXhadDZpZUVhN1VF?oc=5",
       "source": "네이트",
       "date": "Fri, 28 Aug 2026 20:02:00 GMT"
     },
     {
-      "title": "삼성전자",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbThRZVVXYkxRNmxaNnNvd3RXTFNkQ0lDRUJpNnhiMGZSZS1xWVRvSmNlbnI5ZWNMZlBqMEo5MHRIdGNpVTZ5bU0wZ3B3OGRmSnNTekVWemx6T1o2V2htRmpMcFRxQWlKY2ZkbUNDQ1pTMUpvcDFXZEdDR1FFUFVlSHYwRFpuUUg5T3VleFl4OWxENVJ4Y3lN?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 28 Aug 2026 15:04:33 GMT"
+      "title": "삼성, 韓기업 최대 주주환원…30조 이어 40조 추가 배당 전망[주주환원시대①]",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9LcDhYc3Q0eE1jcTAyWHUxRlRNdllBMkFqZTdRN1Fhajd1Z3RPS09rWkg1XzN3aFZmS0RpYlhLSnFRLUNxWmptdHl0YXRsSWtRelFQX045bWtYMEpIUDNKVtIBeEFVX3lxTE5tQmx3X21XZmtuMDl2SDFoc2Rra3MzQ0JoemFVY2lNWTh3WkNoZUw2ejhSRTVqRE5wNXpkSnJ2bURncHdzN1FUbzY1TThWa3JmOG9CRnRMLTItNGFJRmJhSV9wZGM3YklwNUZzcm5iaFNrTXRjOVRvUw?oc=5",
+      "source": "뉴시스",
+      "date": "Fri, 28 Aug 2026 21:00:00 GMT"
+    },
+    {
+      "title": "800만 소액주주 보유한 삼성전자… 주주환원, 어떤 방식 택해야 할까",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOek5zSkZKNjdPMkJ2aGhUSDBCUTRZbkNqS0ZlbzJONWNFaG1HVjVjdUxlcERwSnQ5WXRmMmIzU1JGa3Jldy1VRVhCckt0dWZZT194QW82SExJYmJCZFFyTkMzVV9xMEdqMXBTd1JMNFp3Si1YaDdfME1iUkVqekZySk13dkUtUQ?oc=5",
+      "source": "조선일보",
+      "date": "Thu, 27 Aug 2026 18:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 256메가 D램 세계 최초 개발 [김정한의 역사&오늘]",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jeTRoQzVpTlk2aU1pSFJ0YnFHVWhZUDNYSExJbG1oNUstaHVjV2NWUFoyN1Zveml0NUNGUGctRUJkWXpaaW1UWUNmMC1UdU16UDBKX2txaVFKaHJBQVRaZFZsRTJPM3FGb0HSAW9BVV95cUxOanlHMGg4Y2F1ZVRwRDRwWDFaQXNvYW5zSEw0R1RYdVZoY2NMaG14dUZSWUkzbW96NkE0Mmo0MWNGV2lZcS1iV0ktUU1HelhlS0pEdFlBdEFPaVNWbUI3TTNnWmNKM1ptajlLaElxaVE?oc=5",
+      "source": "뉴스1",
+      "date": "Fri, 28 Aug 2026 21:00:00 GMT"
     },
     {
       "title": "엔비디아 AI 투자 확대…삼성전자·SK하이닉스 수혜 이어질까",
@@ -63,36 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02cTVuY3dXMjZpOFVySzJBcFdNTDJFWnJvaTViT0JLOVZaMFdQdUZrR1RTUTdnZk81S2VVRkhMMm5CNGQ0NVlHMjBjVjlUNzQ4NFE?oc=5",
       "source": "서울경제",
       "date": "Fri, 28 Aug 2026 05:57:09 GMT"
-    },
-    {
-      "title": "엔비디아 HBM 가격 상승 감수하고 재고 확보 공격적, 삼성전자와 SK하이닉스 수혜 지속",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1HMGtxSXZ4ZXNwNjhEVC1pYXpRVEptNTBvQTJEMEFuSEpKY1hxdHRfQjByenVJb1BWVkFiQzc5THVEb0hrUkZlWHJvU1EwMzR0NkVld0l4LTVKUHF3YnpZd2hrN2gxLWtOcXJxSHl6QWY5SE0?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Fri, 28 Aug 2026 02:22:15 GMT"
-    },
-    {
-      "title": "삼성전자",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb3d6eUs0UU5LdGw2RmtnVmo5SDN0RzFIVGJTSE9QeE5mNlV5NEd1OVg1TjFHZVE4cFFBa2lyUVZFWDdyWDZmUmFBdWdTNUtKRGxZV2lKQ2VfRzZ6eWRFLVVBUjd4b0RoYlpRVkNTaWE0WDhrVWFfXzBMakRSZlZJZ1RyMFQwakl1YkFhYlgtS2tScm1BVlpr?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 28 Aug 2026 02:18:16 GMT"
-    },
-    {
-      "title": "[위클리 PICK 3] 삼성전자 주주환원 실망에 주가 급락부터 SK하이닉스 美 HBM 팹 기공식까지",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IdDI3VUpiVkQ5VWItVkFXV1lGcC1XeXN1dHBGNnE3QWxJcl8xelhjNTZmaWNMdmVmdE5KQk11U1JVbEdXc0tYWEl4cl9mSDUwalBkTUk3akl2VFVzTFducHBTOHJHeTNQSEVZNUR6em8?oc=5",
-      "source": "오피니언뉴스",
-      "date": "Sat, 29 Aug 2026 00:10:00 GMT"
-    },
-    {
-      "title": "잭슨홀 미팅 앞두고 코스피 하락 마감‥삼성전자 3%↓·SK하이닉스 4%↓",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04TGw1a2ZOaTNKbU5ycTlSdUVkLTFfUExULWJFZktLdnBFbnVNYl90X3BEc2x0ZmpqdXBMS3VoQU1FcWc1eV8zcnh6aVBGMTlHdFVkbDd3eXZjUmJ3SDBGRC1fZ0l0b1p3dUFkdW9uNHZLaWRU0gF0QVVfeXFMTndxY2ZPX0tUWEUxcVZaWjhMdjFUNmYwU0NXY1F4ay01NFM2ZTlibHV1MHVxZG51a3ZoQXhBbnYwUi1aQlJvRHBhZDdDNWcyel9aMjYwTGdQdTB6YWtiYU1PWnJUSVJnRWdzaXB0UTVVQk5sbzQ?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Fri, 28 Aug 2026 06:51:40 GMT"
-    },
-    {
-      "title": "삼성전자, '디지털고객경험지수' 종합가전 4년 연속 1위",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB1c0xjbkJhU1RGb2gydWFPMTF6dzZETHZrX2ZJYl8yc0RTWTg0MlNxZE1RVlljc2VmcTNyUTdERjcxdGVLWFZJNVBOV0Jadw?oc=5",
-      "source": "전자신문",
-      "date": "Fri, 28 Aug 2026 00:02:08 GMT"
     }
   ]
 }

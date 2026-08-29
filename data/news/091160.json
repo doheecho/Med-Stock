@@ -1,26 +1,20 @@
 {
-  "updated_at": "2026-08-29T02:40:23+00:00",
+  "updated_at": "2026-08-29T05:11:08+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
     {
-      "title": "KODEX 반도체타겟위클리커버드콜(0190G0)",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Bd2pST1FvdHBSVW4xUm9oYVJvOFJJNlBBNkxiUVJSZmYzSlpjTy01a3hYS05jQmk2WVJuNDJWaW02V0FHeUdpR2ZPODZGZ0szc0ZlQWNINUYxUQ?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 12 May 2026 02:41:08 GMT"
-    },
-    {
-      "title": "반도체 랠리에 월배당 더했다…삼성운용 ’KODEX 반도체커버드콜’ 출격 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYcXQtMGEtNzJzYmU4d1VmSmZFckhCc3RqeDdfb20zaXRseVd3dm9DWEtmWFdRODF3TEpWVjZxY2Y3Tmp1blZxUHFKc3RwTkJXYmFVQWNoX1V3MnF3LVNiMmc2bUpMamdjbjZpYlo2R3E?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Mon, 11 May 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼성운용 \"KODEX 미국CPU반도체TOP10, 상장 일주일 수익률 10.35%\"",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tZ2NnX0VaQS1uSm50OGM0TVQ2V3gtaENHYjc1dnZsVnFUOGhRTUhfWGV1TGwzMl9HTXdFWFdoVkMySmxWR3Z1YUhfYWhIT1ZuWGMyNG8zZnVBS0nSAWBBVV95cUxNa0N5aWJEVGY4T3ZVZGVocjh1el9NUldhSFpPSl9vREZjN2sycDEtQldheTQ2a1JFeVZVRl93RHBMa3VuaG5LLTZTMndCVXBBb0xhcWtORXMwdFpuYmllS1U?oc=5",
       "source": "연합뉴스",
       "date": "Tue, 11 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 반도체타겟위클리커버드콜(0190G0)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Bd2pST1FvdHBSVW4xUm9oYVJvOFJJNlBBNkxiUVJSZmYzSlpjTy01a3hYS05jQmk2WVJuNDJWaW02V0FHeUdpR2ZPODZGZ0szc0ZlQWNINUYxUQ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 12 May 2026 02:41:08 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스 담고 월배당까지…삼성운용, ‘KODEX 반도체타겟위클리커버드콜’ 출시",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
       "source": "연합인포맥스",
       "date": "Fri, 29 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "반도체 독주 꺾이자…코스닥 시장으로 돈 몰린다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NaWprUHpXQTc2OHdXY09aQ0U1OWdvRjJmaGRrYWNERjV3RGUxWXJaUW1ySFd6UmUzTHY2WlBQOHF6d3JmVUJCLU5NenBPU0p0RlA4bjVkLWhoUktCczFSRnEwVU0?oc=5",
+      "source": "MTN 머니투데이방송",
+      "date": "Wed, 05 Aug 2026 07:00:00 GMT"
     }
   ]
 }

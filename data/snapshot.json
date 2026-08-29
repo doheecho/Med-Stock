@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-29T14:07:15+09:00",
+  "updated_at": "2026-08-29T05:11:58+00:00",
   "as_of": "2026-08-29",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 253464225.74,
-  "total_pl_close": 123199015.46,
-  "total_pl_pct_close": 94.58,
+  "total_value_close": 253455830.0,
+  "total_pl_close": 123190619.72,
+  "total_pl_pct_close": 94.57,
   "positions": [
     {
       "ticker": "005930",
@@ -119,16 +119,16 @@
           "quantity": 9.0,
           "buy_date": null,
           "cost_basis": 2456.28,
-          "eval_value_close": 8395.74,
-          "pl_close": 5939.46,
-          "pl_pct_close": 241.81
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
         }
       ],
-      "last_close": 932.86,
+      "last_close": null,
       "cost_basis": 2456.28,
-      "eval_value_close": 8395.74,
-      "pl_close": 5939.46,
-      "pl_pct_close": 241.81,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
       "target_avg": 1513.409,
       "target_high": 2200.0,
       "target_low": 361.0,
