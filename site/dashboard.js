@@ -277,21 +277,21 @@ function compute(buy_price, quantity, ticker) {
   return { cur, cost, value, pl, plPct };
 }
 
-/* 해당 종목/수량의 전일대비 평가액 변동 (원화 환산) + % */
-function dayChangeOf(ticker, quantity, market) {
+/* 해당 종목 '주가'의 전일대비 변동 (1주당, 환종 유지) + % */
+function dayChangeOf(ticker) {
   const p = state.prices[ticker];
   const cur = priceOf(ticker);
   const prev = p ? (p.prev_close ?? (p.close && p.close[p.close.length - 2])) : null;
-  if (cur == null || prev == null) return { amt: null, pct: null };
-  return { amt: toKRW((cur - prev) * quantity, market), pct: prev ? ((cur - prev) / prev) * 100 : null };
+  if (cur == null || prev == null) return { px: null, pct: null };
+  return { px: cur - prev, pct: prev ? ((cur - prev) / prev) * 100 : null };
 }
 
-/* ▲/▼ 전일대비 셀 HTML */
-function dayCell(ticker, quantity, market) {
-  const { amt, pct } = dayChangeOf(ticker, quantity, market);
-  if (amt == null || amt === 0) return `<td class="dim">-</td>`;
-  const up = amt > 0;
-  return `<td class="${up ? "pos" : "neg"}">${up ? "▲" : "▼"} ${fmt.won(Math.abs(amt))} (${fmt.pct(pct)})</td>`;
+/* ▲/▼ 전일대비 셀 HTML — 주가 변동(1주당) */
+function dayCell(ticker, market) {
+  const { px, pct } = dayChangeOf(ticker);
+  if (px == null || px === 0) return `<td class="dim">-</td>`;
+  const up = px > 0;
+  return `<td class="${up ? "pos" : "neg"}">${up ? "▲" : "▼"} ${fmt.price(Math.abs(px), market)} (${fmt.pct(pct)})</td>`;
 }
 
 function computePosition(h) {
@@ -310,7 +310,7 @@ function sortValue(r, key) {
     case "value": return toKRW(r.value, m) ?? toKRW(r.cost, m);
     case "pl": return toKRW(r.pl, m);
     case "plPct": return r.plPct;
-    case "day": return dayChangeOf(r.h.ticker, r.h.quantity, m).amt;
+    case "day": return dayChangeOf(r.h.ticker).pct;
     case "weight": return toKRW(r.value, m) ?? toKRW(r.cost, m);
     default: return 0;
   }
@@ -394,7 +394,7 @@ function posCells({ h, cur, cost, value, pl, plPct }, weightPct) {
     <td>${fmt.num(h.quantity, 4)}</td>
     <td>${fmt.price(h.buy_price, m)}</td>
     <td>${fmt.price(cur, m)}</td>
-    ${dayCell(h.ticker, h.quantity, m)}
+    ${dayCell(h.ticker, m)}
     <td>${fmt.won(toKRW(cost, m))}</td>
     <td>${value == null ? "—" : fmt.won(toKRW(value, m))}</td>
     <td class="${cls(pl)}">${pl == null ? "—" : fmt.wonSigned(toKRW(pl, m))}</td>
