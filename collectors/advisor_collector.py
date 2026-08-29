@@ -99,20 +99,22 @@ def build_comment() -> str | None:
     )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 700},
+        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 700},
     }
+    print(f"[gemini] model={model} key={key[:6]}… prompt {len(prompt)}자 요청")
     r = requests.post(
         url, params={"key": key}, json=body,
         headers={"Content-Type": "application/json"}, timeout=60,
     )
-    r.raise_for_status()
+    if r.status_code != 200:
+        print(f"[gemini] HTTP {r.status_code}: {r.text[:500]}")
+        r.raise_for_status()
     data = r.json()
-    parts = (
-        data.get("candidates", [{}])[0]
-        .get("content", {})
-        .get("parts", [])
-    )
+    cand = (data.get("candidates") or [{}])[0]
+    parts = cand.get("content", {}).get("parts", [])
     text = "".join(p.get("text", "") for p in parts).strip()
+    if not text:
+        print(f"[gemini] 빈 응답: finishReason={cand.get('finishReason')} raw={str(data)[:400]}")
     return text or None
 
 
@@ -127,7 +129,7 @@ def main() -> int:
     write_json(
         DATA / "advisor.json",
         {
-            "updated_at": now_iso()[:10],
+            "updated_at": now_iso(),
             "comment": comment,
             "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"),
             "source": "gemini",

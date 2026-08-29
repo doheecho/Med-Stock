@@ -162,12 +162,20 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
 
 .detail { padding: 16px 20px 40px; }
+/* 태블릿+ : 차트(2) · 지표(1) · 시장(1) 3열. 좁으면 세로로 쌓임 */
 .panel-grid {
-  display: grid; grid-template-columns: 2fr 1fr; gap: 16px;
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px;
 }
 /* 그리드/플렉스 자식이 내용 폭 때문에 트랙을 밀어내지 않도록 */
 .panel-grid > div { min-width: 0; }
-@media (max-width: 900px) { .panel-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) {
+  .panel-grid { grid-template-columns: 1fr 1fr; }
+  .panel-grid > .pg-charts { grid-column: 1 / -1; } /* 차트는 전체 폭 */
+}
+@media (max-width: 720px) {
+  .panel-grid { grid-template-columns: 1fr; }
+  .panel-grid > .pg-charts { grid-column: auto; }
+}
 .block {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 14px; margin-bottom: 16px;

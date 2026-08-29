@@ -1,0 +1,49 @@
+name: Refresh AI Advisor
+
+# Gemini 로 AI Advisor 코멘트만 갱신. 시세 스크래핑은 하지 않고
+# 리포에 커밋돼 있는 data/*.json(snapshot·indices·news)만 참고한다.
+
+on:
+  schedule:
+    - cron: "10 22 * * *"   # KST 07:10
+    - cron: "10 5 * * 1-5"  # KST 14:10 평일
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: advisor
+  cancel-in-progress: false
+
+jobs:
+  advisor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install "requests>=2.31" "pyyaml>=6"
+
+      - name: Generate advisor comment
+        working-directory: collectors
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: python advisor_collector.py
+
+      - name: Commit advisor.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/advisor.json
+          if git diff --cached --quiet; then
+            echo "변경 없음 (키 미설정이거나 동일 결과)"
+          else
+            git commit -m "chore: refresh AI advisor ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main
+            git push
+          fi

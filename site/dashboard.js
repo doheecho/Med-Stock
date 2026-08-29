@@ -160,10 +160,13 @@ function renderAdvisor() {
     return;
   }
   el.hidden = false;
+  const tag = a.source === "gemini" ? `AI Advisor (${escapeHtml(a.model || "gemini")}) :` : "AI Advisor :";
+  const meta = [a.source === "gemini" ? null : "예시", a.updated_at ? shortDate(a.updated_at) : null]
+    .filter(Boolean).join(" · ");
   el.innerHTML =
-    `<span class="tag">AI Advisor :</span> ` +
+    `<span class="tag">${tag}</span> ` +
     escapeHtml(a.comment) +
-    (a.updated_at ? ` <span class="src">(${escapeHtml(a.updated_at)})</span>` : "");
+    (meta ? ` <span class="src">(${meta})</span>` : "");
 }
 
 /* ------------------------------------------------------------------ 실시간 현재가 */
@@ -468,7 +471,7 @@ async function renderDetail(ticker) {
   main.innerHTML = `
     ${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}
     <div class="panel-grid">
-      <div>
+      <div class="pg-charts">
         <div class="block">
           <h3>가격 · 이동평균 · 시나리오 · 보조지표</h3>
           <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
@@ -478,11 +481,13 @@ async function renderDetail(ticker) {
         <div class="block"><h3>RSI (14)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div></div>
         <div class="block"><h3>수급 (개인·기관·외국인 순매수 · 억원 · 최근 4주)</h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
-      <div>
+      <div class="pg-metrics">
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
-        <div class="block"><h3>주요 지수</h3><div id="indicesBox">로딩…</div></div>
         ${etf ? "" : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
         <div class="block"><h3>주가전망</h3><div id="forecastBox">로딩…</div></div>`}
+      </div>
+      <div class="pg-market">
+        <div class="block"><h3>주요 지수</h3><div id="indicesBox">로딩…</div></div>
         <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li>로딩…</li></ul></div>
       </div>
     </div>`;
@@ -566,10 +571,12 @@ function sampleIdx(si, len) {
   return out;
 }
 
-/* 기간별 x축 시간축 설정. '월/연 표기는 처음 한 번 + 바뀔 때만' 규칙 적용 */
-function xTimeScale(kind) {
+/* 기간별 x축 시간축 설정. '월/연 표기는 처음 한 번 + 바뀔 때만' 규칙 적용.
+   lastRealTs 이후(전망 구간)의 눈금 라벨은 숨긴다. */
+function xTimeScale(kind, lastRealTs) {
   // kind: "day" | "month" | "quarter"
   const cb = function (value, index, ticks) {
+    if (lastRealTs && value > lastRealTs) return ""; // 전망 구간: 라벨 없음
     const d = new Date(value);
     const prev = index > 0 && ticks[index - 1] ? new Date(ticks[index - 1].value) : null;
     if (kind === "day") {
@@ -668,20 +675,21 @@ function drawPriceChart(h) {
     datasets.push(line("BB 하단", p.bbands.lower, "#8b95a180"));
   }
 
+  const lastRealTs = xs[xs.length - 1];
   const scales = {
-    x: xTimeScale(xKind()),
+    x: xTimeScale(xKind(), lastRealTs),
     y: { position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
   };
-  let xMax = xs[xs.length - 1];
+  let xMax = lastRealTs;
 
   // ---- 목표주가 점선 (ETF 제외, 1년 이상 구간에서만). 실제 목표시점(12M)과
-  //      무관하게 과거 구간을 넓히려고 x축은 2개월분만 사용 ----
+  //      무관하게 과거 구간을 넓히려고 x축은 약 1개월분만 사용, 전망 구간 라벨은 숨김 ----
   const showScenario =
     !isEtf(h) && ["1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
   const cur = priceOf(h.ticker) ?? p.last_close;
   if (showScenario) {
-    const anchor = xs[xs.length - 1];
-    const horizon = anchor + 60 * 864e5; // 약 2개월
+    const anchor = lastRealTs;
+    const horizon = anchor + 30 * 864e5; // 약 1개월
     xMax = Math.max(xMax, horizon);
     for (const sc of scenarioAnchors(h)) {
       datasets.push({
