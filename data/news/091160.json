@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T11:05:21+09:00",
+  "updated_at": "2026-08-29T02:20:01+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -9,6 +9,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Bd2pST1FvdHBSVW4xUm9oYVJvOFJJNlBBNkxiUVJSZmYzSlpjTy01a3hYS05jQmk2WVJuNDJWaW02V0FHeUdpR2ZPODZGZ0szc0ZlQWNINUYxUQ?oc=5",
       "source": "매일경제 마켓",
       "date": "Tue, 12 May 2026 02:41:08 GMT"
+    },
+    {
+      "title": "반도체 랠리에 월배당 더했다…삼성운용 ’KODEX 반도체커버드콜’ 출격 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYcXQtMGEtNzJzYmU4d1VmSmZFckhCc3RqeDdfb20zaXRseVd3dm9DWEtmWFdRODF3TEpWVjZxY2Y3Tmp1blZxUHFKc3RwTkJXYmFVQWNoX1V3MnF3LVNiMmc2bUpMamdjbjZpYlo2R3E?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
       "title": "삼성운용 \"KODEX 미국CPU반도체TOP10, 상장 일주일 수익률 10.35%\"",
@@ -77,22 +83,16 @@
       "date": "Tue, 04 Aug 2026 07:00:00 GMT"
     },
     {
-      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합)",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
-      "source": "연합인포맥스",
-      "date": "Fri, 29 May 2026 07:00:00 GMT"
-    },
-    {
       "title": "“반도체 주가 상승도 먹고 월말엔 배당까지”…KODEX 반도체타겟위클리커버드콜 상장",
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zSDNzUVNQajRuZ3FIMnRnVnpTOGw5WUJ2dWtTTHUzTkVtTzdYU1dVQVd2akJJVFFCWE9lZmtmUXFUaWRaQ2c?oc=5",
       "source": "v.daum.net",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 독주 꺾이자…코스닥 시장으로 돈 몰린다",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NaWprUHpXQTc2OHdXY09aQ0U1OWdvRjJmaGRrYWNERjV3RGUxWXJaUW1ySFd6UmUzTHY2WlBQOHF6d3JmVUJCLU5NenBPU0p0RlA4bjVkLWhoUktCczFSRnEwVU0?oc=5",
-      "source": "MTN 머니투데이방송",
-      "date": "Wed, 05 Aug 2026 07:00:00 GMT"
+      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합)",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
+      "source": "연합인포맥스",
+      "date": "Fri, 29 May 2026 07:00:00 GMT"
     }
   ]
 }

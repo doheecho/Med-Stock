@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-08-29T11:05:17+09:00",
+  "updated_at": "2026-08-29T02:19:59+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
-    {
-      "title": "18일, 기관 거래소에서 삼성전자(+4.62%), KODEX 레버리지(+7.04%) 등 순매수",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5scERMbDBNVEtlbTUwbVJpOW1rTy1zY3JOMTNHMmtoa2c1bFRlVkppUXZEUnhEd1hXLUJfX0VmM3lIbzZhU2ZEdkhKNHFpTWZaa1c3SXVFZXZCS1ozQ2ZtNnBLMVZ6NXhs?oc=5",
-      "source": "씽크풀 AI",
-      "date": "Thu, 27 Aug 2026 03:43:12 GMT"
-    },
     {
       "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVT3F0N2EtcG5jNHR4ZmlvR2F5UkFSQlJvM3lNUVRRS290WXQySFpTQkRISmdIbHl4NXFEb2prb2lISV9YUUZrcEVrSUVfWE43d0NWLVNSMzczN1XSAWBBVV95cUxQZUNJZGJHNy1ZNHQzQVZDRjg4S2JtVnc5cG9fUG9jMzJfWERHSDV0cVdwZmdDNVIwVTUtTFhQUWZVb1N2bTMtdTh1dE5sdGpnWHZZRVZoV3VpOTd0SXVZRk8?oc=5",
@@ -27,6 +21,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Gd2dXaVhOT1JOSnNCTWd3Yjlzbm80Q3Rla3JIcXZOV0puWlJtRk9HYXFwWWctMzR6R0RnWHpLLXBNWU1NOVVtSUVXZVR5eVhLOW8xRDBlZU9lZw?oc=5",
       "source": "한국경제",
       "date": "Thu, 13 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "코스피 200보다 더 빠진 ’KODEX 200’…전 거래일 착시 영향 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE56cUNIZmlOZnpuU09pWDVXbnhTWFBEV2tYcG9pUFFublFXOWtnTU1oOVBWUUJZUXBXb0JDXzBxSHU5TENsbG54SlV3TTBMR2lpMzl3dWdfR1dmQTJsNkpKUlJnZEwzTU5rQW1CeUNSdkk?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 03 Aug 2026 07:00:00 GMT"
     },
     {
       "title": "'KODEX 200커버드콜액티브', 상장 1개월 만에 순자산 5000억원",
@@ -59,16 +59,16 @@
       "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     },
     {
-      "title": "KODEX 200커버드콜액티브, 한 달 만에 순자산 5300억…개인 자금 몰렸다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wMllkZmJod1Q5MnB2dWdmTm9QR3cwX0tRSTZ4S2FTbzJJaklfejJYNXMxTEVHYTBTUWJjTkJqaEQzMV9LeXRqTm1MVXg2ZWZBUjVucVNqdUZkUQ?oc=5",
-      "source": "브릿지경제",
-      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼성운용 'KODEX 200커버드콜액티브', 상장 한달만에 순자산 5천억",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaUpRX0FHUjBUNUphM21SR3d2cDMtbGlMTHRhVVE2N3ZhWHQ1RlAzWkhDeUtFYnBGdVlqX0ZwSFhUUWxBc1J4NG80RDZ5WTJ3dnpMRDlvWmFOY1ZrX1pMRDI2T251bmVZNWxHSS1rencwdFBEbTNnUWVZQXV0V1MwQm9oTV9keTJQ?oc=5",
       "source": "글로벌이코노믹",
       "date": "Thu, 13 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 200커버드콜액티브, 한 달 만에 순자산 5300억…개인 자금 몰렸다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wMllkZmJod1Q5MnB2dWdmTm9QR3cwX0tRSTZ4S2FTbzJJaklfejJYNXMxTEVHYTBTUWJjTkJqaEQzMV9LeXRqTm1MVXg2ZWZBUjVucVNqdUZkUQ?oc=5",
+      "source": "브릿지경제",
+      "date": "Thu, 13 Aug 2026 00:26:00 GMT"
     },
     {
       "title": "삼성운용, KODEX 200커버드콜액티브 개인순매수 2000억 돌파",
