@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:30:51+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": 1075129090,
+      "institution": -2073411440,
+      "individual": 978979010
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": -377673430,
+      "institution": 75961240,
+      "individual": 395498980
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": -65625420,
+      "institution": -968382870,
+      "individual": 1366533210
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": -728248785,
+      "institution": -694723920,
+      "individual": 1422802095
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": 582259580,
+      "institution": -1828342420,
+      "individual": 1259288680
+    }
+  ],
+  "summary": {
+    "foreign_5d": 485841035,
+    "institution_5d": -5488899410
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "0183J0",
+  "name": "TIGER 미국우주테크",
+  "market": "KRX"
+}

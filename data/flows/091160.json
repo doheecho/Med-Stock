@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:31:02+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": -2766422520,
+      "institution": 3649937100,
+      "individual": -1336395255
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": 5132507520,
+      "institution": -6446738235,
+      "individual": 1796652445
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": 1158463000,
+      "institution": 2370671700,
+      "individual": -3305921700
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": -3599378400,
+      "institution": 10300656000,
+      "individual": -6224786400
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": -3145763835,
+      "institution": 3569721895,
+      "individual": -283798420
+    }
+  ],
+  "summary": {
+    "foreign_5d": -3220594235,
+    "institution_5d": 13444248460
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "091160",
+  "name": "KODEX 반도체",
+  "market": "KRX"
+}

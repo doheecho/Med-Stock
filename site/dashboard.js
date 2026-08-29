@@ -21,7 +21,15 @@ const state = {
   viewMode: "byTicker",              // "byTicker" | "byAccount"
   fx: null,                          // { USDKRW, date }
   sort: { key: null, dir: "desc" },  // 표 정렬 상태
+  advisor: null,                     // data/advisor.json
+  chartRange: "1Y",                  // 1M 3M 1Y 3Y 5Y MAX
+  ma: { ma5: false, ma20: true, ma60: true, ma120: false },
+  overlay: { bbands: false, volume: false, buyprice: false },
+  sub: { macd: false },
+  panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
 };
+
+const RANGE_DAYS = { "1M": 31, "3M": 92, "1Y": 366, "3Y": 1096, "5Y": 1827 };
 
 /* USD→KRW 환율 (오늘 기준). 실패 시 대체값. */
 function fxRate() {
@@ -55,10 +63,12 @@ const cls = (v) => (v == null ? "" : v >= 0 ? "pos" : "neg");
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  if (window.Chart && window.ChartDataLabels) {
-    Chart.register(window.ChartDataLabels);
-    Chart.defaults.plugins.datalabels = { display: false }; // 도넛에서만 켠다
-  }
+  try {
+    if (window.Chart && window.ChartDataLabels) {
+      Chart.register(window.ChartDataLabels);
+      Chart.defaults.set("plugins.datalabels", { display: false }); // 도넛에서만 켠다
+    }
+  } catch (_) {}
   document.getElementById("refreshBtn").addEventListener("click", refreshLive);
   document.querySelectorAll("#viewToggle button").forEach((b) => {
     b.addEventListener("click", () => setViewMode(b.dataset.mode));
@@ -68,16 +78,19 @@ async function init() {
   });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, scenarios, snapshot, fx] = await Promise.all([
+    const [holdings, scenarios, snapshot, advisor, fx] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
       getJSON(`${state.dataBase}/scenarios.json`).catch(() => ({ scenarios: {} })),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
+      getJSON(`${state.dataBase}/advisor.json`).catch(() => null),
       getJSON("https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW")
         .catch(() => getJSON("https://api.frankfurter.app/latest?from=USD&to=KRW"))
         .catch(() => null),
     ]);
 
     if (fx && fx.rates && fx.rates.KRW) state.fx = { USDKRW: fx.rates.KRW, date: fx.date };
+    state.advisor = advisor;
+    renderAdvisor();
 
     state.snapshot = snapshot;
     state.scenarios = (scenarios && scenarios.scenarios) || {};
@@ -131,6 +144,21 @@ async function getJSON(url) {
 
 function fail(msg) {
   document.getElementById("detail").innerHTML = `<div class="error">${msg}</div>`;
+}
+
+function renderAdvisor() {
+  const el = document.getElementById("advisor");
+  if (!el) return;
+  const a = state.advisor;
+  if (!a || !a.comment) {
+    el.hidden = true;
+    return;
+  }
+  el.hidden = false;
+  el.innerHTML =
+    `<span class="tag">AI Advisor :</span> ` +
+    escapeHtml(a.comment) +
+    (a.updated_at ? ` <span class="src">(${escapeHtml(a.updated_at)})</span>` : "");
 }
 
 /* ------------------------------------------------------------------ 실시간 현재가 */
@@ -268,6 +296,28 @@ function renderSummary() {
   const pctEl = setText("sumPlPct", fmt.pct(plPct));
   pctEl.className = "value " + (plPct == null ? "" : plPct < 0 ? "neg" : "pos");
 
+  // 전일대비: (오늘 평가액 − 전일 종가 기준 평가액), 전부 원화 환산
+  let vToday = 0, vPrev = 0, dayOk = true;
+  for (const r of rows) {
+    const p = state.prices[r.h.ticker];
+    const cur = priceOf(r.h.ticker);
+    const prev = p ? (p.prev_close ?? (p.close && p.close[p.close.length - 2])) : null;
+    if (cur == null || prev == null) { dayOk = false; break; }
+    vToday += toKRW(cur * r.h.quantity, r.h.market);
+    vPrev += toKRW(prev * r.h.quantity, r.h.market);
+  }
+  const dayChg = dayOk ? vToday - vPrev : null;
+  const dayPct = dayOk && vPrev ? (dayChg / vPrev) * 100 : null;
+  const deltaStr =
+    dayChg == null ? "" : `전일대비 ${fmt.wonSigned(dayChg)} (${fmt.pct(dayPct)})`;
+  for (const id of ["sumPlDelta", "sumPctDelta"]) {
+    const d = document.getElementById(id);
+    if (d) {
+      d.textContent = deltaStr;
+      d.className = "delta " + (dayChg == null ? "" : dayChg < 0 ? "neg" : "pos");
+    }
+  }
+
   markSortHeader();
   if (state.viewMode === "byAccount") renderByAccount(applySort(rows));
   else renderByTicker(applySort(rows));
@@ -367,6 +417,21 @@ function selectTicker(ticker) {
 }
 
 /* ------------------------------------------------------------------ 종목 상세 */
+const RANGE_BTNS = [["1M", "1개월"], ["3M", "3개월"], ["1Y", "1년"], ["3Y", "3년"], ["5Y", "5년"], ["MAX", "최대"]];
+const MA_BTNS = [["ma5", "MA5"], ["ma20", "MA20"], ["ma60", "MA60"], ["ma120", "MA120"]];
+const OV_BTNS = [["bbands", "볼린저밴드"], ["volume", "거래량"], ["buyprice", "내 매수가"]];
+
+function chartCtlHtml() {
+  const g = (arr, attr, on) =>
+    arr
+      .map(([k, label]) => `<button data-${attr}="${k}"${on(k) ? ' class="on"' : ""}>${label}</button>`)
+      .join("");
+  return `
+    <div class="ctl-row"><span class="ctl-lbl">기간</span>${g(RANGE_BTNS, "range", (k) => state.chartRange === k)}</div>
+    <div class="ctl-row"><span class="ctl-lbl">이동평균</span>${g(MA_BTNS, "ma", (k) => state.ma[k])}</div>
+    <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}<button data-sub="macd"${state.sub.macd ? ' class="on"' : ""}>MACD</button></div>`;
+}
+
 async function renderDetail(ticker) {
   const h = state.holdings.find((x) => x.ticker === ticker);
   const main = document.getElementById("detail");
@@ -374,7 +439,12 @@ async function renderDetail(ticker) {
     ${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}
     <div class="panel-grid">
       <div>
-        <div class="block"><h3>가격 · 이동평균 · 시나리오 점선</h3><canvas id="priceChart" height="150"></canvas></div>
+        <div class="block">
+          <h3>가격 · 이동평균 · 시나리오 · 보조지표</h3>
+          <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
+          <canvas id="priceChart" height="150"></canvas>
+        </div>
+        <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><canvas id="macdChart" height="70"></canvas></div>
         <div class="block"><h3>RSI (14)</h3><canvas id="rsiChart" height="70"></canvas></div>
         <div class="block"><h3>수급 (외국인/기관 순매수 · 억원)</h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
@@ -385,7 +455,7 @@ async function renderDetail(ticker) {
       </div>
     </div>`;
 
-  drawRsiChart(state.prices[h.ticker]);
+  document.getElementById("chartCtl").addEventListener("click", onChartCtl);
 
   const [fund, flow, target, news] = await Promise.all([
     getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
@@ -393,12 +463,45 @@ async function renderDetail(ticker) {
     getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
     getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
   ]);
+  state.panel = { h, fund, flow, target, news };
 
   renderFundamentals(h, fund);
   drawFlowChart(flow);
   renderTarget(h, target);      // state._targets 캐시 → 시나리오 앵커에 사용
   renderNews(news);
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
+  drawRsiChart(state.prices[h.ticker]);
+  drawMacdChart(state.prices[h.ticker]);
+}
+
+/* 차트 컨트롤 버튼 (기간/이동평균/보조지표) */
+function onChartCtl(e) {
+  const b = e.target.closest("button");
+  if (!b) return;
+  if (b.dataset.range) state.chartRange = b.dataset.range;
+  else if (b.dataset.ma) state.ma[b.dataset.ma] = !state.ma[b.dataset.ma];
+  else if (b.dataset.ov) state.overlay[b.dataset.ov] = !state.overlay[b.dataset.ov];
+  else if (b.dataset.sub) state.sub.macd = !state.sub.macd;
+  else return;
+
+  document.getElementById("chartCtl").innerHTML = chartCtlHtml();
+  const mb = document.getElementById("macdBlock");
+  if (mb) mb.hidden = !state.sub.macd;
+
+  const h = state.panel && state.panel.h;
+  if (!h) return;
+  drawPriceChart(h);
+  drawRsiChart(state.prices[h.ticker]);
+  drawMacdChart(state.prices[h.ticker]);
+}
+
+/* state.chartRange 에 맞는 시작 인덱스 */
+function rangeStartIdx(dates) {
+  if (!dates || !dates.length || state.chartRange === "MAX") return 0;
+  const days = RANGE_DAYS[state.chartRange] || 366;
+  const cutoff = new Date(dates[dates.length - 1]).valueOf() - days * 864e5;
+  const i = dates.findIndex((d) => new Date(d).valueOf() >= cutoff);
+  return i < 0 ? 0 : i;
 }
 
 /* 회사별 조회 시 종목 상세 상단에 계좌 버블 스트립 */
@@ -423,73 +526,94 @@ function acctStripHtml(h) {
   return `<div class="block acct-strip"><h3>계좌별 내역 — ${h.name || h.ticker}</h3><div class="acct-cards">${cards}</div></div>`;
 }
 
-/* ---- 가격 차트 (캔들 or 라인) + MA + 시나리오 점선 ---- */
+/* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/시나리오 ---- */
 function drawPriceChart(h) {
   const p = state.prices[h.ticker];
   const box = document.getElementById("priceChart");
+  if (!box) return;
   if (!p || !p.dates || !p.dates.length) {
-    box.parentElement.innerHTML = "<h3>가격</h3><div class='error'>가격 데이터 없음</div>";
+    box.parentElement.innerHTML =
+      "<h3>가격</h3><div class='error'>가격 데이터 없음 (price_collector 미실행)</div>";
     return;
   }
 
+  const si = rangeStartIdx(p.dates);
+  const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  const slice = (arr) => (arr ? arr.slice(si) : []);
+  const line = (label, arr, color, w = 1) => ({
+    type: "line", label, borderColor: color, borderWidth: w, pointRadius: 0, spanGaps: true, order: 5,
+    data: xs.map((x, i) => ({ x, y: slice(arr)[i] })),
+  });
+
   const hasFinancial = !!(window.Chart && Chart.registry.controllers.get("candlestick"));
+  const useCandle = hasFinancial && p.candles && xs.length <= 400;
   const datasets = [];
 
-  if (hasFinancial && p.candles) {
+  if (useCandle) {
     datasets.push({
       type: "candlestick",
       label: h.name || h.ticker,
-      data: p.candles.map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
+      data: slice(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
       color: { up: "#ef4444", down: "#3b82f6", unchanged: "#8b95a1" },
       order: 10,
     });
   } else {
-    datasets.push({
-      type: "line",
-      label: "종가",
-      data: p.dates.map((d, i) => ({ x: new Date(d).valueOf(), y: p.close[i] })),
-      borderColor: "#e6e9ee",
-      borderWidth: 1.4,
-      pointRadius: 0,
-      order: 10,
-    });
+    datasets.push({ ...line("종가", p.close, "#e6e9ee", 1.4), order: 10 });
   }
 
   const maColors = { ma5: "#f59e0b", ma20: "#22d3ee", ma60: "#22c55e", ma120: "#a855f7" };
   for (const key of ["ma5", "ma20", "ma60", "ma120"]) {
-    if (!p.ma || !p.ma[key]) continue;
+    if (state.ma[key] && p.ma && p.ma[key]) datasets.push(line(key.toUpperCase(), p.ma[key], maColors[key]));
+  }
+
+  if (state.overlay.bbands && p.bbands) {
+    datasets.push(line("BB 상단", p.bbands.upper, "#8b95a180"));
+    datasets.push(line("BB 중심", p.bbands.mid, "#8b95a160"));
+    datasets.push(line("BB 하단", p.bbands.lower, "#8b95a180"));
+  }
+
+  // 내 매수가 (통합 평단가) — 빨간 수평선
+  const scales = {
+    x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
+    y: { position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
+  };
+  let xMax = xs[xs.length - 1];
+
+  // ---- 시나리오 점선 (장기 구간에서만) ----
+  const showScenario = ["1Y", "3Y", "5Y", "MAX"].includes(state.chartRange);
+  const cur = priceOf(h.ticker) ?? p.last_close;
+  if (showScenario) {
+    const anchor = xs[xs.length - 1];
+    for (const sc of scenarioAnchors(h)) {
+      const horizon = anchor + sc.months * 30 * 864e5;
+      xMax = Math.max(xMax, horizon);
+      datasets.push({
+        type: "line", label: sc.label, borderColor: sc.color, borderDash: [5, 5], borderWidth: 1.5,
+        pointRadius: 3, pointBackgroundColor: sc.color, order: 1,
+        data: [{ x: anchor, y: cur }, { x: horizon, y: sc.target }],
+      });
+    }
+  }
+
+  if (state.overlay.buyprice && h.buy_price != null) {
     datasets.push({
-      type: "line",
-      label: key.toUpperCase(),
-      data: p.dates.map((d, i) => ({ x: new Date(d).valueOf(), y: p.ma[key][i] })),
-      borderColor: maColors[key],
-      borderWidth: 1,
-      pointRadius: 0,
-      spanGaps: true,
-      order: 5,
+      type: "line", label: "내 매수가", borderColor: "#ef4444", borderWidth: 1.6, pointRadius: 0, order: 2,
+      data: [{ x: xs[0], y: h.buy_price }, { x: xMax, y: h.buy_price }],
     });
   }
 
-  // ---- 시나리오 점선 오버레이 ----
-  const lastDate = new Date(p.dates[p.dates.length - 1]).valueOf();
-  const cur = priceOf(h.ticker) ?? p.last_close;
-  for (const sc of scenarioAnchors(h)) {
-    const horizon = lastDate + sc.months * 30 * 864e5;
+  if (state.overlay.volume && p.volume) {
+    const vol = slice(p.volume);
+    const vmax = Math.max(1, ...vol.filter((v) => v != null));
     datasets.push({
-      type: "line",
-      label: sc.label,
-      data: [
-        { x: lastDate, y: cur },
-        { x: horizon, y: sc.target },
-      ],
-      borderColor: sc.color,
-      borderDash: [5, 5],
-      borderWidth: 1.5,
-      pointRadius: 3,
-      pointBackgroundColor: sc.color,
-      order: 1,
+      type: "bar", label: "거래량", yAxisID: "vol", order: 20,
+      backgroundColor: "#8b95a140",
+      data: xs.map((x, i) => ({ x, y: vol[i] })),
     });
+    scales.vol = { display: false, position: "left", min: 0, max: vmax * 4 };
   }
+
+  scales.x.max = xMax;
 
   makeChart("priceChart", {
     data: { datasets },
@@ -498,14 +622,42 @@ function drawPriceChart(h) {
       responsive: true,
       maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
-      scales: {
-        x: { type: "time", time: { unit: "month" }, grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
-        y: { position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
-      },
+      scales,
       plugins: {
         legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
         tooltip: { callbacks: {} },
       },
+    },
+  });
+}
+
+/* ---- MACD 서브차트 ---- */
+function drawMacdChart(p) {
+  const el = document.getElementById("macdChart");
+  if (!el || !state.sub.macd) return;
+  if (!p || !p.macd || !p.dates) {
+    el.parentElement.innerHTML = "<h3>MACD (12·26·9)</h3><div class='error'>MACD 데이터 없음</div>";
+    return;
+  }
+  const si = rangeStartIdx(p.dates);
+  const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  const S = (a) => a.slice(si);
+  makeChart("macdChart", {
+    data: {
+      datasets: [
+        { type: "bar", label: "히스토그램", data: xs.map((x, i) => ({ x, y: S(p.macd.hist)[i] })),
+          backgroundColor: xs.map((_, i) => (S(p.macd.hist)[i] >= 0 ? "#ef444455" : "#3b82f655")) },
+        { type: "line", label: "MACD", data: xs.map((x, i) => ({ x, y: S(p.macd.macd)[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0 },
+        { type: "line", label: "시그널", data: xs.map((x, i) => ({ x, y: S(p.macd.signal)[i] })), borderColor: "#f59e0b", borderWidth: 1.2, pointRadius: 0 },
+      ],
+    },
+    options: {
+      parsing: false, responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, ticks: { color: "#8b95a1", maxTicksLimit: 8 }, grid: { display: false } },
+        y: { position: "right", ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
+      },
+      plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
   });
 }
@@ -542,7 +694,7 @@ function drawRsiChart(p) {
     el.parentElement.innerHTML = "<h3>RSI (14)</h3><div class='error'>RSI 데이터 없음</div>";
     return;
   }
-  const start = Math.max(0, p.dates.length - 180);
+  const start = rangeStartIdx(p.dates);
   const xs = p.dates.slice(start).map((d) => new Date(d).valueOf());
   const ys = p.rsi.slice(start);
   makeChart("rsiChart", {
@@ -586,10 +738,14 @@ function renderFundamentals(h, f) {
   add("부채비율", f.debt_ratio ?? f.debt_to_equity, "%");
   add("배당수익률", f.div_yield, "%");
   add("영업이익률", f.profit_margin, "%");
+  add("외국인 비율", f.foreign_rate, "%");
   add("시가총액", f.market_cap ? Math.round(f.market_cap / 1e8) : null, f.market_cap ? "억" : "");
+  if (f.high_52w != null || f.low_52w != null) {
+    rows.push(`<dt>52주 최고/최저</dt><dd>${fmt.num(f.high_52w)} / ${fmt.num(f.low_52w)}</dd>`);
+  }
   add("베타", f.beta);
   box.innerHTML = `<dl class="kv">${rows.join("") || "<dt>—</dt><dd>—</dd>"}</dl>
-    <div class="src" style="margin-top:8px">기준일 ${f.as_of || f.updated_at || "—"}</div>`;
+    <div class="src" style="margin-top:8px">기준일 ${f.as_of || f.updated_at || "—"}${f.source ? " · " + f.source : ""}</div>`;
 }
 
 /* ---- 수급 막대 ---- */
@@ -729,7 +885,9 @@ function drawPie(id, items) {
           display: "auto",
           color: "#0f1216",
           font: { size: 11, weight: "600" },
-          formatter: (v) => `${fmt.man(v)}(${Math.round((v / total) * 100)}%)`,
+          // 마우스오버 전에는 종목명(비중)만. 상세(금액)는 툴팁에서.
+          formatter: (v, ctx) =>
+            `${ctx.chart.data.labels[ctx.dataIndex]}(${Math.round((v / total) * 100)}%)`,
         },
       },
     },

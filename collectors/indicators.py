@@ -19,6 +19,28 @@ def moving_averages(close: pd.Series, windows=MA_WINDOWS) -> dict[str, list]:
     return out
 
 
+def bollinger(close: pd.Series, window: int = 20, mult: float = 2.0) -> dict[str, list]:
+    mid = close.rolling(window=window, min_periods=window).mean()
+    sd = close.rolling(window=window, min_periods=window).std(ddof=0)
+    return {
+        "mid": [_round(v) for v in mid.tolist()],
+        "upper": [_round(v) for v in (mid + mult * sd).tolist()],
+        "lower": [_round(v) for v in (mid - mult * sd).tolist()],
+    }
+
+
+def macd(close: pd.Series, fast: int = 12, slow: int = 26, signal: int = 9) -> dict[str, list]:
+    ema_fast = close.ewm(span=fast, adjust=False).mean()
+    ema_slow = close.ewm(span=slow, adjust=False).mean()
+    line = ema_fast - ema_slow
+    sig = line.ewm(span=signal, adjust=False).mean()
+    return {
+        "macd": [_round(v, 3) for v in line.tolist()],
+        "signal": [_round(v, 3) for v in sig.tolist()],
+        "hist": [_round(v, 3) for v in (line - sig).tolist()],
+    }
+
+
 def rsi(close: pd.Series, period: int = RSI_PERIOD) -> list:
     try:
         from ta.momentum import RSIIndicator
@@ -60,13 +82,21 @@ def build_price_series(df: pd.DataFrame) -> dict:
         for i in range(len(df))
     ]
 
+    volume = (
+        [_int(v) for v in df["volume"].tolist()] if "volume" in df else [None] * len(df)
+    )
+
     return {
         "dates": dates,
         "candles": candles,
         "close": [_round(v) for v in close.tolist()],
+        "volume": volume,
         "ma": moving_averages(close),
+        "bbands": bollinger(close),
+        "macd": macd(close),
         "rsi": rsi(close),
         "last_close": _round(close.iloc[-1]) if len(close) else None,
+        "prev_close": _round(close.iloc[-2]) if len(close) > 1 else None,
         "last_date": dates[-1] if dates else None,
     }
 

@@ -50,6 +50,30 @@ body {
 .card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
 .card .label em { font-style: normal; color: var(--accent); font-size: 11px; }
 .card .value { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.card .delta { margin-top: 4px; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.card .delta.pos { color: var(--up); }
+.card .delta.neg { color: var(--down); }
+
+/* AI Advisor 코멘트 (data/advisor.json) */
+.advisor {
+  margin-top: 14px; padding: 10px 14px; border-radius: 8px;
+  background: color-mix(in srgb, var(--amber) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+  color: var(--amber); font-size: 13px; line-height: 1.6;
+}
+.advisor .tag { font-weight: 700; margin-right: 4px; }
+.advisor .src { color: var(--muted); }
+
+/* 차트 컨트롤 버튼 */
+.chart-ctl { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+.chart-ctl .ctl-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.chart-ctl .ctl-lbl { color: var(--muted); font-size: 11px; width: 52px; flex: none; }
+.chart-ctl button {
+  background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
+  border-radius: 6px; padding: 3px 9px; font-size: 11px; cursor: pointer;
+}
+.chart-ctl button:hover { border-color: var(--accent); }
+.chart-ctl button.on { color: var(--text); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel-2)); }
 
 .summary-charts {
   display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-top: 16px;
@@ -126,6 +150,7 @@ tr.lvl-account td.neg { color: var(--down); }
 .block h3 { margin: 0 0 10px; font-size: 13px; color: var(--muted); font-weight: 600; }
 .block canvas { width: 100% !important; display: block; }
 #priceChart { height: 340px !important; }
+#macdChart { height: 150px !important; }
 #rsiChart { height: 130px !important; }
 #flowChart { height: 190px !important; }
 #weightChart { width: 100% !important; height: 100% !important; }

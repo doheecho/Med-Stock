@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-08-29T11:30:23+09:00",
+  "source": "naver(consensus)",
+  "url": "https://m.stock.naver.com/domestic/stock/000660/total",
+  "target_avg": 3317917.0,
+  "target_high": 3815604.55,
+  "target_low": 2820229.45,
+  "approx_band": true,
+  "opinion": "매수",
+  "opinion_score": 4.0,
+  "as_of": "2026-08-27",
+  "ticker": "000660",
+  "name": "SK하이닉스",
+  "market": "KRX"
+}

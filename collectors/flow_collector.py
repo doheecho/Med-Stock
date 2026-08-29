@@ -55,9 +55,63 @@ def _fetch(ticker: str) -> dict:
     return {"rows": rows, "summary": summary}
 
 
+def _naver_flow(ticker: str) -> dict:
+    """pykrx 실패 시 폴백 — 네이버 모바일 API 의 최근 매매동향(수일치, 수량 기준)."""
+    import requests
+
+    d = requests.get(
+        f"https://m.stock.naver.com/api/stock/{ticker}/integration",
+        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://m.stock.naver.com/"},
+        timeout=10,
+    ).json()
+    trend = d.get("dealTrendInfos") or []
+    if not trend:
+        return {}
+
+    def _n(s):
+        try:
+            return float(str(s).replace(",", "").replace("+", "").replace("%", ""))
+        except (TypeError, ValueError):
+            return None
+
+    rows = []
+    for x in reversed(trend):  # 오래된 날짜 → 최신
+        close = _n(x.get("closePrice"))
+        fq, oq, iq = (
+            _n(x.get("foreignerPureBuyQuant")),
+            _n(x.get("organPureBuyQuant")),
+            _n(x.get("individualPureBuyQuant")),
+        )
+        bd = str(x.get("bizdate", ""))
+        rows.append(
+            {
+                "t": f"{bd[:4]}-{bd[4:6]}-{bd[6:8]}" if len(bd) == 8 else bd,
+                # 수량 → 대략 금액(원) 환산 (pykrx 금액 기준과 단위 맞춤)
+                "foreign": int(fq * close) if fq is not None and close else None,
+                "institution": int(oq * close) if oq is not None and close else None,
+                "individual": int(iq * close) if iq is not None and close else None,
+            }
+        )
+
+    def _cum(key, n):
+        return int(sum(x.get(key, 0) or 0 for x in rows[-n:]))
+
+    return {
+        "rows": rows,
+        "summary": {
+            "foreign_5d": _cum("foreign", 5),
+            "institution_5d": _cum("institution", 5),
+        },
+        "source": "naver(dealTrend)",
+        "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+    }
+
+
 def collect(h: dict) -> None:
     ticker = h["ticker"]
     data = safe(lambda: _fetch(ticker), label=f"flow {ticker}")
+    if not data or not data.get("rows"):
+        data = safe(lambda: _naver_flow(ticker), label=f"naver flow {ticker}")
     if not data or not data.get("rows"):
         print(f"[skip] {ticker}: 수급 데이터 없음")
         return

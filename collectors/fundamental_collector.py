@@ -20,31 +20,78 @@ from common import (
 
 
 # ---------------------------------------------------------------- KRX
-def _pykrx_fundamental(ticker: str) -> dict:
-    from pykrx import stock
+_NAVER_HEADERS = {"User-Agent": "Mozilla/5.0", "Referer": "https://m.stock.naver.com/"}
 
-    # 최근 영업일로 소급하며 조회
-    import datetime as dt
 
-    for back in range(0, 12):
-        day = (today_kst() - dt.timedelta(days=back)).strftime("%Y%m%d")
-        try:
-            df = stock.get_market_fundamental_by_ticker(day, market="ALL")
-        except Exception as e:  # noqa: BLE001 — 주말/휴장/일시적 응답오류는 다음 날짜로
-            print(f"[warn] pykrx fnd {ticker} {day}: {e!r}")
-            continue
-        if df is not None and ticker in df.index:
-            r = df.loc[ticker]
-            return {
-                "as_of": day,
-                "per": _f(r.get("PER")),
-                "pbr": _f(r.get("PBR")),
-                "eps": _f(r.get("EPS")),
-                "bps": _f(r.get("BPS")),
-                "div_yield": _f(r.get("DIV")),
-                "dps": _f(r.get("DPS")),
-            }
-    return {}
+def _naver_num(s):
+    """'11.53배' '22,292원' '0.65%' '491,875' → float. 실패 시 None."""
+    if s is None:
+        return None
+    t = str(s).replace(",", "")
+    for suf in ("배", "원", "%", "주", "P", "pt"):
+        t = t.replace(suf, "")
+    t = t.strip()
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def _naver_won(s):
+    """'1,502조 4,936억' → 원 단위 float."""
+    if s is None:
+        return None
+    import re
+
+    txt = str(s).replace(",", "").replace(" ", "")
+    total = 0.0
+    hit = False
+    m = re.search(r"([\d.]+)조", txt)
+    if m:
+        total += float(m.group(1)) * 1e12
+        hit = True
+    m = re.search(r"([\d.]+)억", txt)
+    if m:
+        total += float(m.group(1)) * 1e8
+        hit = True
+    if hit:
+        return total
+    return _naver_num(s)
+
+
+def _naver_integration(ticker: str) -> dict:
+    import requests
+
+    r = requests.get(
+        f"https://m.stock.naver.com/api/stock/{ticker}/integration",
+        headers=_NAVER_HEADERS,
+        timeout=10,
+    )
+    r.raise_for_status()
+    return r.json()
+
+
+def _naver_fundamental(ticker: str) -> dict:
+    d = _naver_integration(ticker)
+    ti = {x["code"]: x.get("value") for x in (d.get("totalInfos") or [])}
+    if not ti:
+        return {}
+    out = {
+        "as_of": today_kst().isoformat(),
+        "per": _naver_num(ti.get("per")),
+        "forward_per": _naver_num(ti.get("cnsPer")),
+        "pbr": _naver_num(ti.get("pbr")),
+        "eps": _naver_num(ti.get("eps")),
+        "bps": _naver_num(ti.get("bps")),
+        "div_yield": _naver_num(ti.get("dividendYieldRatio")),
+        "dps": _naver_num(ti.get("dividend")),
+        "market_cap": _naver_won(ti.get("marketValue")),
+        "foreign_rate": _naver_num(ti.get("foreignRate")),
+        "high_52w": _naver_num(ti.get("highPriceOf52Weeks")),
+        "low_52w": _naver_num(ti.get("lowPriceOf52Weeks")),
+        "source": "naver",
+    }
+    return {k: v for k, v in out.items() if v is not None}
 
 
 def _dart_enrich(ticker: str, corp_name: str | None) -> dict:
@@ -93,7 +140,7 @@ def _dart_enrich(ticker: str, corp_name: str | None) -> dict:
 
 def collect_krx(h: dict) -> None:
     ticker = h["ticker"]
-    base = safe(lambda: _pykrx_fundamental(ticker), default={}, label=f"pykrx fnd {ticker}") or {}
+    base = safe(lambda: _naver_fundamental(ticker), default={}, label=f"naver fnd {ticker}") or {}
     extra = safe(
         lambda: _dart_enrich(ticker, h.get("name")), default={}, label=f"dart {ticker}"
     ) or {}

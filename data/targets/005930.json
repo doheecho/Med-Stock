@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-08-29T11:30:22+09:00",
+  "source": "naver(consensus)",
+  "url": "https://m.stock.naver.com/domestic/stock/005930/total",
+  "target_avg": 491875.0,
+  "target_high": 565656.25,
+  "target_low": 418093.75,
+  "approx_band": true,
+  "opinion": "매수",
+  "opinion_score": 4.04,
+  "as_of": "2026-08-27",
+  "ticker": "005930",
+  "name": "삼성전자",
+  "market": "KRX"
+}

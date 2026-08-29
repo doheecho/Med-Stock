@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:30:46+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": -1526065815000,
+      "institution": -289631088000,
+      "individual": 735853257000
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": -2071170502000,
+      "institution": 330607950000,
+      "individual": 649144368000
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": -384462256000,
+      "institution": 3865520000,
+      "individual": -696328696000
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": -275736050000,
+      "institution": -242769170000,
+      "individual": -580954760000
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": -314458455000,
+      "institution": -1315788000000,
+      "individual": 561198459000
+    }
+  ],
+  "summary": {
+    "foreign_5d": -4571893078000,
+    "institution_5d": -1513714788000
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "000660",
+  "name": "SK하이닉스",
+  "market": "KRX"
+}

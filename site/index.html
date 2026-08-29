@@ -21,9 +21,19 @@
     <div class="cards">
       <div class="card"><div class="label">총 매수금액</div><div class="value" id="sumCost">—</div></div>
       <div class="card"><div class="label">총 평가금액 <em>(실시간)</em></div><div class="value" id="sumValue">—</div></div>
-      <div class="card"><div class="label">총 평가손익 <em>(실시간)</em></div><div class="value" id="sumPl">—</div></div>
-      <div class="card"><div class="label">총 수익률 <em>(실시간)</em></div><div class="value" id="sumPlPct">—</div></div>
+      <div class="card">
+        <div class="label">총 평가손익 <em>(실시간)</em></div>
+        <div class="value" id="sumPl">—</div>
+        <div class="delta" id="sumPlDelta"></div>
+      </div>
+      <div class="card">
+        <div class="label">총 수익률 <em>(실시간)</em></div>
+        <div class="value" id="sumPlPct">—</div>
+        <div class="delta" id="sumPctDelta"></div>
+      </div>
     </div>
+
+    <div id="advisor" class="advisor" hidden></div>
     <div id="viewToggle" class="view-toggle">
       <button type="button" data-mode="byTicker" class="active">종목별 조회</button>
       <button type="button" data-mode="byAccount">회사별 조회</button>

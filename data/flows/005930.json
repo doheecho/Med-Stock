@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:30:40+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": -1768771403000,
+      "institution": -1611194680000,
+      "individual": 2859254785000
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": -1285852469000,
+      "institution": 52295388000,
+      "individual": 715700025000
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": 658542249000,
+      "institution": 131673618000,
+      "individual": -1271634229000
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": 367555076000,
+      "institution": -25917178000,
+      "individual": -857431582000
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": -495278835000,
+      "institution": -424676309000,
+      "individual": 408416433000
+    }
+  ],
+  "summary": {
+    "foreign_5d": -2523805382000,
+    "institution_5d": -1877819161000
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "005930",
+  "name": "삼성전자",
+  "market": "KRX"
+}

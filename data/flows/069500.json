@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:30:57+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": -16336479375,
+      "institution": -15638290310,
+      "individual": 31235666550
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": -850942560,
+      "institution": -4440322510,
+      "individual": 7245399980
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": 2408611020,
+      "institution": 140430143800,
+      "individual": -134035724230
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": -5778261710,
+      "institution": 49498943195,
+      "individual": -42150992780
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": -3143160680,
+      "institution": -18409987060,
+      "individual": 23144234840
+    }
+  ],
+  "summary": {
+    "foreign_5d": -23700233305,
+    "institution_5d": 151440487115
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "069500",
+  "name": "KODEX 200",
+  "market": "KRX"
+}

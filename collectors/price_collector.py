@@ -22,12 +22,15 @@ from common import (
 from indicators import build_price_series
 
 _COLS = ["open", "high", "low", "close", "volume"]
+_HISTORY_DAYS = 2400  # 약 6.5년 — 차트 기간 버튼(최대 5년)까지 커버
 
 
 def _fdr(ticker: str) -> pd.DataFrame:
     import FinanceDataReader as fdr
 
-    df = fdr.DataReader(ticker, lookback_start().isoformat(), today_kst().isoformat())
+    df = fdr.DataReader(
+        ticker, lookback_start(_HISTORY_DAYS).isoformat(), today_kst().isoformat()
+    )
     df = df.rename(columns=str.lower)[_COLS]
     return df
 
@@ -36,7 +39,7 @@ def _pykrx(ticker: str) -> pd.DataFrame:
     from pykrx import stock
 
     raw = stock.get_market_ohlcv(
-        lookback_start().strftime("%Y%m%d"),
+        lookback_start(_HISTORY_DAYS).strftime("%Y%m%d"),
         today_kst().strftime("%Y%m%d"),
         ticker,
     )
@@ -49,7 +52,7 @@ def _pykrx(ticker: str) -> pd.DataFrame:
 def _yf(ticker: str) -> pd.DataFrame:
     import yfinance as yf
 
-    df = yf.Ticker(ticker).history(period="2y", auto_adjust=False)
+    df = yf.Ticker(ticker).history(period="10y", auto_adjust=False)
     df = df.rename(columns=str.lower)[_COLS]
     df.index = pd.to_datetime(df.index).tz_localize(None)
     return df

@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-08-29T11:31:07+09:00",
+  "rows": [
+    {
+      "t": "2026-08-24",
+      "foreign": -99550300,
+      "institution": 83078220,
+      "individual": 10351720
+    },
+    {
+      "t": "2026-08-25",
+      "foreign": 29222000,
+      "institution": -75772000,
+      "individual": 40394000
+    },
+    {
+      "t": "2026-08-26",
+      "foreign": 37343740,
+      "institution": -39262740,
+      "individual": -26904380
+    },
+    {
+      "t": "2026-08-27",
+      "foreign": -271285,
+      "institution": 66464825,
+      "individual": -24531915
+    },
+    {
+      "t": "2026-08-28",
+      "foreign": 24155280,
+      "institution": 76985460,
+      "individual": -101140740
+    }
+  ],
+  "summary": {
+    "foreign_5d": -9100565,
+    "institution_5d": 111493765
+  },
+  "source": "naver(dealTrend)",
+  "note": "수량 기준을 종가로 환산한 근사치 (pykrx 미가용 시 폴백)",
+  "ticker": "278540",
+  "name": "KODEX MSCI Korea TR",
+  "market": "KRX"
+}
