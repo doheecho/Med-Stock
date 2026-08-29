@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-29T14:47:09+09:00",
+  "updated_at": "2026-08-29T15:13:00+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
-  "target_high": 491875,
+  "target_high": 565656,
   "target_low": 370000,
   "approx_band": false,
   "opinion": "매수",

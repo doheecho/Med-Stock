@@ -171,15 +171,22 @@ def _naver_target(ticker: str) -> dict:
             "url": consensus_url,
         })
     at.sort(key=lambda v: -v["target"])
-    priced = [x["target"] for x in at]
+
+    # 차트 시나리오 점선용 최고/평균/최저 — 낙관>중립(평균)>비관 이 항상 뚜렷이 벌어지게.
+    # (컨센서스 평균 항목은 밴드 계산에서 제외)
+    firm_t = [x["target"] for x in at if x.get("firm") != "컨센서스 평균"]
+    hi = max(firm_t) if firm_t else None
+    lo = min(firm_t) if firm_t else None
+    target_high = hi if (hi and hi > avg * 1.03) else round(avg * 1.15)
+    target_low = lo if (lo and lo < avg * 0.97) else round(avg * 0.85)
 
     return {
         "source": "naver(consensus)",
         "url": f"https://m.stock.naver.com/domestic/stock/{ticker}/total",
         "target_avg": avg,
-        "target_high": max(priced) if priced else round(avg * 1.15, 2),
-        "target_low": min(priced) if priced else round(avg * 0.85, 2),
-        "approx_band": not priced,
+        "target_high": target_high,
+        "target_low": target_low,
+        "approx_band": not firm_t,
         "opinion": _opinion_text(mean),
         "opinion_score": mean,
         "as_of": c.get("createDate"),

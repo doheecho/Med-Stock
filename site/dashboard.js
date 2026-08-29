@@ -25,7 +25,8 @@ const state = {
   chartRange: "1Y",                  // 1M 3M 1Y 3Y 5Y MAX
   ma: { ma5: false, ma20: true, ma60: true, ma120: false },
   overlay: { bbands: false, volume: false, buyprice: false },
-  sub: { macd: false },
+  sub: { macd: false, stoch: false },
+  rsiTf: "D", // RSI 봉 단위: D 일봉 | W 주봉 | M 월봉
   panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
 };
 
@@ -302,8 +303,15 @@ function syncViewToggleBtn() {
 function setViewMode(mode) {
   state.viewMode = mode === "byAccount" ? "byAccount" : "byTicker";
   syncViewToggleBtn();
-  renderSummary();
-  if (state.active) renderDetail(state.active);
+  renderSummary(); // 도넛 + 표 갱신
+  updateAcctStrip(); // 상세는 계좌 스트립만 토글 (지수/뉴스/차트 재렌더 안 함)
+}
+
+/* 회사별↔종목별 시 상세 상단 계좌 스트립만 갱신 */
+function updateAcctStrip() {
+  const el = document.getElementById("acctStrip");
+  if (!el || !state.panel) return;
+  el.innerHTML = state.viewMode === "byAccount" ? acctStripHtml(state.panel.h) : "";
 }
 
 /* holdings.json 에 lots 가 없던(구버전) 경우 단일 계좌로 취급 */
@@ -375,7 +383,7 @@ function onSort(key) {
   if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
   else state.sort = { key, dir: "desc" };
   markSortHeader();
-  renderSummary();
+  renderSummary(false); // 정렬은 표만 다시 그리고 도넛은 그대로
 }
 
 function markSortHeader() {
@@ -386,7 +394,7 @@ function markSortHeader() {
   });
 }
 
-function renderSummary() {
+function renderSummary(withPie = true) {
   const rows = state.holdings.map((h) => ({ h, ...computePosition(h) }));
 
   // 총합은 전부 원화 환산 (미국 종목은 오늘 환율로). 종목별/회사별 동일.
@@ -427,8 +435,8 @@ function renderSummary() {
   dayEl.className = "value " + (dayChg == null ? "" : dayChg < 0 ? "neg" : "pos");
 
   markSortHeader();
-  if (state.viewMode === "byAccount") renderByAccount(applySort(rows));
-  else renderByTicker(applySort(rows));
+  if (state.viewMode === "byAccount") renderByAccount(applySort(rows), withPie);
+  else renderByTicker(applySort(rows), withPie);
 }
 
 /* 한 포지션 행 <td> 묶음. 단가/현재가는 환종 유지, 금액류는 원화 환산. */
@@ -447,12 +455,12 @@ function posCells({ h, cur, cost, value, pl, plPct }, weightPct) {
 }
 
 /* ---- 종목별 조회: 계좌 무관, 통합 평단가 한 줄 ---- */
-function renderByTicker(rows) {
+function renderByTicker(rows, withPie = true) {
   const items = rows.map((r) => ({
     label: r.h.name || r.h.ticker,
     value: toKRW(r.value, r.h.market) ?? toKRW(r.cost, r.h.market),
   }));
-  drawPie("weightChart", items);
+  if (withPie) drawPie("weightChart", items);
   const sumW = items.reduce((a, b) => a + b.value, 0) || 1;
 
   document.querySelector("#posTable tbody").innerHTML = rows
@@ -464,7 +472,7 @@ function renderByTicker(rows) {
 }
 
 /* ---- 회사별 조회: 종목별로 나오되 계좌 버블 + 계좌별 매수금액/수량/평가액 ---- */
-function renderByAccount(rows) {
+function renderByAccount(rows, withPie = true) {
   const pieItems = [];
   for (const r of rows) {
     for (const lot of lotsOf(r.h)) {
@@ -475,7 +483,7 @@ function renderByAccount(rows) {
       });
     }
   }
-  drawPie("weightChart", pieItems);
+  if (withPie) drawPie("weightChart", pieItems);
   const sumW = pieItems.reduce((a, b) => a + b.value, 0) || 1;
 
   const html = [];
@@ -538,10 +546,11 @@ function chartCtlHtml() {
     arr
       .map(([k, label]) => `<button data-${attr}="${k}"${on(k) ? ' class="on"' : ""}>${label}</button>`)
       .join("");
+  const subBtn = (k, label) => `<button data-sub="${k}"${state.sub[k] ? ' class="on"' : ""}>${label}</button>`;
   return `
     <div class="ctl-row"><span class="ctl-lbl">기간</span>${g(RANGE_BTNS, "range", (k) => state.chartRange === k)}</div>
     <div class="ctl-row"><span class="ctl-lbl">이동평균</span>${g(MA_BTNS, "ma", (k) => state.ma[k])}</div>
-    <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}<button data-sub="macd"${state.sub.macd ? ' class="on"' : ""}>MACD</button></div>`;
+    <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}${subBtn("macd", "MACD")}${subBtn("stoch", "스토캐스틱")}</div>`;
 }
 
 function isEtf(h) {
@@ -553,7 +562,7 @@ async function renderDetail(ticker) {
   const etf = isEtf(h);
   const main = document.getElementById("detail");
   main.innerHTML = `
-    ${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}
+    <div id="acctStrip">${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}</div>
     <div class="panel-grid">
       <div class="pg-charts">
         <div class="block">
@@ -562,7 +571,11 @@ async function renderDetail(ticker) {
           <div class="chart-scroll"><div class="chart-inner"><canvas id="priceChart"></canvas></div></div>
         </div>
         <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="macdChart"></canvas></div></div></div>
-        <div class="block"><h3>RSI (14)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div></div>
+        <div class="block" id="stochBlock"${state.sub.stoch ? "" : " hidden"}><h3>스토캐스틱 (14·3·3)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="stochChart"></canvas></div></div></div>
+        <div class="block">
+          <h3 class="h3-row">RSI (14)<span class="tf-btns" id="rsiTf">${rsiTfBtns()}</span></h3>
+          <div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div>
+        </div>
         <div class="block"><h3>수급 (개인·기관·외국인 순매수 · 억원 · 최근 4주)</h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
       <div class="pg-metrics">
@@ -599,9 +612,23 @@ async function renderDetail(ticker) {
     renderForecast(h, target);
   }
   renderNews(news);
+  document.getElementById("rsiTf").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    state.rsiTf = b.dataset.tf;
+    document.getElementById("rsiTf").innerHTML = rsiTfBtns();
+    drawRsiChart(state.prices[h.ticker]);
+  });
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
   drawRsiChart(state.prices[h.ticker]);
   drawMacdChart(state.prices[h.ticker]);
+  drawStochChart(state.prices[h.ticker]);
+}
+
+function rsiTfBtns() {
+  return [["D", "일봉"], ["W", "주봉"], ["M", "월봉"]]
+    .map(([k, l]) => `<button data-tf="${k}"${state.rsiTf === k ? ' class="on"' : ""}>${l}</button>`)
+    .join("");
 }
 
 /* 차트 컨트롤 버튼 (기간/이동평균/보조지표) */
@@ -611,18 +638,21 @@ function onChartCtl(e) {
   if (b.dataset.range) state.chartRange = b.dataset.range;
   else if (b.dataset.ma) state.ma[b.dataset.ma] = !state.ma[b.dataset.ma];
   else if (b.dataset.ov) state.overlay[b.dataset.ov] = !state.overlay[b.dataset.ov];
-  else if (b.dataset.sub) state.sub.macd = !state.sub.macd;
+  else if (b.dataset.sub) state.sub[b.dataset.sub] = !state.sub[b.dataset.sub];
   else return;
 
   document.getElementById("chartCtl").innerHTML = chartCtlHtml();
   const mb = document.getElementById("macdBlock");
   if (mb) mb.hidden = !state.sub.macd;
+  const sb = document.getElementById("stochBlock");
+  if (sb) sb.hidden = !state.sub.stoch;
 
   const h = state.panel && state.panel.h;
   if (!h) return;
   drawPriceChart(h);
   drawRsiChart(state.prices[h.ticker]);
   drawMacdChart(state.prices[h.ticker]);
+  drawStochChart(state.prices[h.ticker]);
 }
 
 /* 데이터 포인트가 많으면 차트 내부 폭만 늘려 .chart-scroll 안에서 가로 스크롤되게 한다.
@@ -884,24 +914,96 @@ function scenarioAnchors(h) {
   return out;
 }
 
-/* ---- RSI ---- */
+/* 일봉 close/dates → 주봉(W)/월봉(M) 마지막 종가 시리즈 */
+function resampleClose(dates, close, tf) {
+  if (tf !== "W" && tf !== "M") return { dates: dates.slice(), close: close.slice() };
+  const key = (d) => {
+    const x = new Date(d);
+    if (tf === "M") return x.getFullYear() * 12 + x.getMonth();
+    const t = new Date(Date.UTC(x.getFullYear(), x.getMonth(), x.getDate()));
+    const day = (t.getUTCDay() + 6) % 7;
+    t.setUTCDate(t.getUTCDate() - day + 3); // ISO 주 목요일
+    return Math.floor(t / 6048e5);
+  };
+  const outD = [], outC = [];
+  let cur = null;
+  for (let i = 0; i < dates.length; i++) {
+    if (close[i] == null) continue;
+    const k = key(dates[i]);
+    if (k !== cur) { outD.push(dates[i]); outC.push(close[i]); cur = k; }
+    else { outD[outD.length - 1] = dates[i]; outC[outC.length - 1] = close[i]; }
+  }
+  return { dates: outD, close: outC };
+}
+
+/* Wilder RSI */
+function rsiFrom(close, period = 14) {
+  const n = close.length, out = new Array(n).fill(null);
+  if (n <= period) return out;
+  let gain = 0, loss = 0;
+  for (let i = 1; i <= period; i++) {
+    const d = close[i] - close[i - 1];
+    if (d >= 0) gain += d; else loss -= d;
+  }
+  gain /= period; loss /= period;
+  out[period] = loss === 0 ? 100 : 100 - 100 / (1 + gain / loss);
+  for (let i = period + 1; i < n; i++) {
+    const d = close[i] - close[i - 1];
+    gain = (gain * (period - 1) + Math.max(d, 0)) / period;
+    loss = (loss * (period - 1) + Math.max(-d, 0)) / period;
+    out[i] = loss === 0 ? 100 : 100 - 100 / (1 + gain / loss);
+  }
+  return out;
+}
+
+/* Stochastic %K(slow)/%D from candles [{h,l,c}] */
+function stochFrom(candles, kP = 14, dP = 3) {
+  const n = candles.length, kRaw = new Array(n).fill(null);
+  for (let i = kP - 1; i < n; i++) {
+    let hi = -Infinity, lo = Infinity;
+    for (let j = i - kP + 1; j <= i; j++) {
+      const c = candles[j]; if (!c) continue;
+      if (c.h > hi) hi = c.h;
+      if (c.l < lo) lo = c.l;
+    }
+    const c = candles[i];
+    kRaw[i] = hi === lo || !c ? null : ((c.c - lo) / (hi - lo)) * 100;
+  }
+  const sma = (arr, p) =>
+    arr.map((_, i) => {
+      if (i < p - 1) return null;
+      let s = 0;
+      for (let j = i - p + 1; j <= i; j++) {
+        if (arr[j] == null) return null;
+        s += arr[j];
+      }
+      return s / p;
+    });
+  const k = sma(kRaw, dP);
+  return { k, d: sma(k, dP) };
+}
+
+/* ---- RSI (일/주/월봉) ---- */
 function drawRsiChart(p) {
   const el = document.getElementById("rsiChart");
   if (!el) return;
-  if (!p || !p.rsi || !p.dates) {
-    el.parentElement.innerHTML = "<h3>RSI (14)</h3><div class='error'>RSI 데이터 없음</div>";
+  if (!p || !p.dates || !p.close) {
+    el.closest(".block").querySelector(".chart-scroll").innerHTML = "<div class='error'>RSI 데이터 없음</div>";
     return;
   }
-  const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
-  const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
+  const tf = state.rsiTf || "D";
+  const rs = resampleClose(p.dates, p.close, tf);
+  const rsi = tf === "D" && Array.isArray(p.rsi) ? p.rsi : rsiFrom(rs.close, 14);
+  const idxs = sampleIdx(rangeStartIdx(rs.dates), rs.dates.length);
+  const xs = idxs.map((k) => new Date(rs.dates[k]).valueOf());
   fitScroll("rsiChart", xs.length);
-  const ys = idxs.map((k) => p.rsi[k]);
+  const ys = idxs.map((k) => rsi[k]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
   makeChart("rsiChart", {
     data: {
       datasets: [
-        { type: "line", label: "RSI", data: xs.map((x, i) => ({ x, y: ys[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
+        { type: "line", label: `RSI ${tf === "W" ? "주봉" : tf === "M" ? "월봉" : "일봉"}`, data: xs.map((x, i) => ({ x, y: ys[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
         { type: "line", label: "70", data: [{ x: xs[0], y: 70 }, { x: xs[xs.length - 1], y: 70 }], borderColor: "#ef444488", borderWidth: 1, borderDash: [4, 4], pointRadius: 0 },
         { type: "line", label: "30", data: [{ x: xs[0], y: 30 }, { x: xs[xs.length - 1], y: 30 }], borderColor: "#3b82f688", borderWidth: 1, borderDash: [4, 4], pointRadius: 0 },
       ],
@@ -917,6 +1019,43 @@ function drawRsiChart(p) {
       plugins: { legend: { display: false } },
     },
     plugins: [rsiZoneLabels],
+  });
+}
+
+/* ---- 스토캐스틱 서브차트 (14·3·3) ---- */
+function drawStochChart(p) {
+  const el = document.getElementById("stochChart");
+  if (!el || !state.sub.stoch) return;
+  if (!p || !p.candles || !p.dates) {
+    el.closest(".block").querySelector(".chart-scroll").innerHTML = "<div class='error'>스토캐스틱 데이터 없음</div>";
+    return;
+  }
+  const { k, d } = stochFrom(p.candles, 14, 3);
+  const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
+  const xs = idxs.map((i) => new Date(p.dates[i]).valueOf());
+  fitScroll("stochChart", xs.length);
+  const S = (a) => idxs.map((i) => a[i]);
+  const xg = xTimeScale(xKind());
+  xg.grid = { display: false };
+  makeChart("stochChart", {
+    data: {
+      datasets: [
+        { type: "line", label: "%K", data: xs.map((x, i) => ({ x, y: S(k)[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
+        { type: "line", label: "%D", data: xs.map((x, i) => ({ x, y: S(d)[i] })), borderColor: "#f59e0b", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
+        { type: "line", label: "80", data: [{ x: xs[0], y: 80 }, { x: xs[xs.length - 1], y: 80 }], borderColor: "#ef444488", borderWidth: 1, borderDash: [4, 4], pointRadius: 0 },
+        { type: "line", label: "20", data: [{ x: xs[0], y: 20 }, { x: xs[xs.length - 1], y: 20 }], borderColor: "#3b82f688", borderWidth: 1, borderDash: [4, 4], pointRadius: 0 },
+      ],
+    },
+    options: {
+      parsing: false,
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: xg,
+        y: { position: "right", min: 0, max: 100, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
+      },
+      plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
+    },
   });
 }
 
