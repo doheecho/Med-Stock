@@ -221,9 +221,9 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 #fundBox .kv > dt:last-of-type, #fundBox .kv > dd:last-of-type,
 #targetBox .kv > dt:last-of-type, #targetBox .kv > dd:last-of-type { border-bottom: none; }
 
-/* 주요 지수 / ETF 구성종목 표 — 넓으면 가로 스크롤 */
+/* 주요 지수 / ETF 구성종목 표 — 넓으면 가로 스크롤. 폰트는 기본지표(.kv)와 동일 13px */
 .tbl-scroll { max-width: 100%; overflow-x: auto; }
-.idx-table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.idx-table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
 .idx-table th, .idx-table td { padding: 5px 6px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
 .idx-table th { color: var(--muted); font-weight: 500; font-size: 11px; }
 .idx-table th:first-child, .idx-table td:first-child { text-align: left; }

@@ -329,11 +329,24 @@ function compute(buy_price, quantity, ticker) {
   return { cur, cost, value, pl, plPct };
 }
 
-/* 해당 종목 '주가'의 전일대비 변동 (1주당, 환종 유지) + % */
+/* 해당 종목 '주가'의 전일대비 변동 (1주당, 환종 유지) + %.
+   마지막 봉이 결측이어도 유효한 최근 2개 종가로 계산 */
 function dayChangeOf(ticker) {
+  const l = state.live[ticker];
   const p = state.prices[ticker];
-  const cur = priceOf(ticker);
-  const prev = p ? (p.prev_close ?? (p.close && p.close[p.close.length - 2])) : null;
+  let c2 = null, c1 = null; // 최근 유효 종가, 그 직전
+  if (p && Array.isArray(p.close)) {
+    for (let i = p.close.length - 1; i >= 0 && c1 == null; i--) {
+      if (p.close[i] == null) continue;
+      if (c2 == null) c2 = p.close[i];
+      else c1 = p.close[i];
+    }
+  }
+  const cur = l && l.price != null ? l.price : p && p.last_close != null ? p.last_close : c2;
+  const prev =
+    l && l.prevClose != null ? l.prevClose
+    : p && p.prev_close != null && p.prev_close !== cur ? p.prev_close
+    : c1;
   if (cur == null || prev == null) return { px: null, pct: null };
   return { px: cur - prev, pct: prev ? ((cur - prev) / prev) * 100 : null };
 }
@@ -614,10 +627,11 @@ async function renderDetail(ticker) {
   renderNews(news);
   document.getElementById("rsiTf").addEventListener("click", (e) => {
     const b = e.target.closest("button");
-    if (!b) return;
+    if (!b || b.dataset.tf === state.rsiTf) return;
     state.rsiTf = b.dataset.tf;
-    document.getElementById("rsiTf").innerHTML = rsiTfBtns();
-    drawRsiChart(state.prices[h.ticker]);
+    document.querySelectorAll("#rsiTf button").forEach((x) => x.classList.toggle("on", x === b));
+    state._noAnim = true;
+    try { drawRsiChart(state.prices[h.ticker]); } finally { state._noAnim = false; }
   });
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
   drawRsiChart(state.prices[h.ticker]);
@@ -631,28 +645,48 @@ function rsiTfBtns() {
     .join("");
 }
 
-/* 차트 컨트롤 버튼 (기간/이동평균/보조지표) */
+/* 차트 컨트롤 버튼 — 바뀐 항목이 영향 주는 차트만, 애니메이션 없이 다시 그린다 */
 function onChartCtl(e) {
   const b = e.target.closest("button");
   if (!b) return;
-  if (b.dataset.range) state.chartRange = b.dataset.range;
-  else if (b.dataset.ma) state.ma[b.dataset.ma] = !state.ma[b.dataset.ma];
-  else if (b.dataset.ov) state.overlay[b.dataset.ov] = !state.overlay[b.dataset.ov];
-  else if (b.dataset.sub) state.sub[b.dataset.sub] = !state.sub[b.dataset.sub];
+  let scope; // "all"(기간) | "price"(이평·오버레이) | "macd" | "stoch" | "rsi"
+  if (b.dataset.range) { state.chartRange = b.dataset.range; scope = "all"; }
+  else if (b.dataset.ma) { state.ma[b.dataset.ma] = !state.ma[b.dataset.ma]; scope = "price"; }
+  else if (b.dataset.ov) { state.overlay[b.dataset.ov] = !state.overlay[b.dataset.ov]; scope = "price"; }
+  else if (b.dataset.sub) { state.sub[b.dataset.sub] = !state.sub[b.dataset.sub]; scope = b.dataset.sub; }
   else return;
 
-  document.getElementById("chartCtl").innerHTML = chartCtlHtml();
-  const setHidden = (id, on) => { const el = document.getElementById(id); if (el) el.hidden = !on; };
-  setHidden("rsiBlock", state.sub.rsi);
-  setHidden("macdBlock", state.sub.macd);
-  setHidden("stochBlock", state.sub.stoch);
+  // 버튼 활성표시만 갱신 (innerHTML 전체 교체 X)
+  if (b.dataset.range) {
+    b.parentElement.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+  } else {
+    const st = b.dataset.ma ? state.ma[b.dataset.ma]
+      : b.dataset.ov ? state.overlay[b.dataset.ov]
+      : state.sub[b.dataset.sub];
+    b.classList.toggle("on", !!st);
+  }
 
+  const setHidden = (id, on) => { const el = document.getElementById(id); if (el) el.hidden = !on; };
   const h = state.panel && state.panel.h;
   if (!h) return;
-  drawPriceChart(h);
-  drawRsiChart(state.prices[h.ticker]);
-  drawMacdChart(state.prices[h.ticker]);
-  drawStochChart(state.prices[h.ticker]);
+  const p = state.prices[h.ticker];
+
+  state._noAnim = true;
+  try {
+    if (scope === "all") {
+      drawPriceChart(h); drawRsiChart(p); drawMacdChart(p); drawStochChart(p);
+    } else if (scope === "price") {
+      drawPriceChart(h);
+    } else if (scope === "macd") {
+      setHidden("macdBlock", state.sub.macd); drawMacdChart(p);
+    } else if (scope === "stoch") {
+      setHidden("stochBlock", state.sub.stoch); drawStochChart(p);
+    } else if (scope === "rsi") {
+      setHidden("rsiBlock", state.sub.rsi); drawRsiChart(p);
+    }
+  } finally {
+    state._noAnim = false;
+  }
 }
 
 /* 데이터 포인트가 많으면 차트 내부 폭만 늘려 .chart-scroll 안에서 가로 스크롤되게 한다.
@@ -1404,6 +1438,7 @@ function makeChart(id, cfg) {
   if (!el) return;
   if (state.charts[id]) state.charts[id].destroy();
   cfg.options = cfg.options || {};
+  if (state._noAnim) cfg.options.animation = false; // 버튼 토글 시 즉시 반영(떠오름 방지)
   state.charts[id] = new Chart(el.getContext("2d"), cfg);
 }
 
