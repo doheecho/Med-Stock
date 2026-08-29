@@ -234,6 +234,23 @@ function compute(buy_price, quantity, ticker) {
   return { cur, cost, value, pl, plPct };
 }
 
+/* 해당 종목/수량의 전일대비 평가액 변동 (원화 환산) + % */
+function dayChangeOf(ticker, quantity, market) {
+  const p = state.prices[ticker];
+  const cur = priceOf(ticker);
+  const prev = p ? (p.prev_close ?? (p.close && p.close[p.close.length - 2])) : null;
+  if (cur == null || prev == null) return { amt: null, pct: null };
+  return { amt: toKRW((cur - prev) * quantity, market), pct: prev ? ((cur - prev) / prev) * 100 : null };
+}
+
+/* ▲/▼ 전일대비 셀 HTML */
+function dayCell(ticker, quantity, market) {
+  const { amt, pct } = dayChangeOf(ticker, quantity, market);
+  if (amt == null || amt === 0) return `<td class="dim">-</td>`;
+  const up = amt > 0;
+  return `<td class="${up ? "pos" : "neg"}">${up ? "▲" : "▼"} ${fmt.won(Math.abs(amt))} (${fmt.pct(pct)})</td>`;
+}
+
 function computePosition(h) {
   return compute(h.buy_price, h.quantity, h.ticker);
 }
@@ -250,6 +267,7 @@ function sortValue(r, key) {
     case "value": return toKRW(r.value, m) ?? toKRW(r.cost, m);
     case "pl": return toKRW(r.pl, m);
     case "plPct": return r.plPct;
+    case "day": return dayChangeOf(r.h.ticker, r.h.quantity, m).amt;
     case "weight": return toKRW(r.value, m) ?? toKRW(r.cost, m);
     default: return 0;
   }
@@ -333,6 +351,7 @@ function posCells({ h, cur, cost, value, pl, plPct }, weightPct) {
     <td>${fmt.num(h.quantity, 4)}</td>
     <td>${fmt.price(h.buy_price, m)}</td>
     <td>${fmt.price(cur, m)}</td>
+    ${dayCell(h.ticker, h.quantity, m)}
     <td>${fmt.won(toKRW(cost, m))}</td>
     <td>${value == null ? "—" : fmt.won(toKRW(value, m))}</td>
     <td class="${cls(pl)}">${pl == null ? "—" : fmt.wonSigned(toKRW(pl, m))}</td>
@@ -351,7 +370,7 @@ function renderByTicker(rows) {
 
   document.querySelector("#posTable tbody").innerHTML = rows
     .map((r, i) => `<tr class="lvl-ticker">
-        <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span></td>
+        <td>${escapeHtml(r.h.name || r.h.ticker)}</td>
         ${posCells(r, (items[i].value / sumW) * 100)}
       </tr>`)
     .join("");
@@ -377,7 +396,7 @@ function renderByAccount(rows) {
     const lots = lotsOf(r.h);
     const tW = (toKRW(r.value, r.h.market) ?? toKRW(r.cost, r.h.market)) / sumW * 100;
     html.push(`<tr class="lvl-ticker">
-      <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span> <span class="src">${lots.length}개 계좌</span></td>
+      <td>${escapeHtml(r.h.name || r.h.ticker)} <span class="src">${lots.length}개 계좌</span></td>
       ${posCells(r, tW)}
     </tr>`);
     for (const lot of lots) {

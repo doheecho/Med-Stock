@@ -2,7 +2,7 @@
 
 환경변수:
   GEMINI_API_KEY  (필수 - 없으면 기존 data/advisor.json 유지하고 종료)
-  GEMINI_MODEL    (선택, 기본 gemini-2.5-flash)
+  GEMINI_MODEL    (선택, 기본 gemini-2.5-flash-lite - 토큰 최소화)
 
 입력: data/snapshot.json, data/indices.json, data/targets/*.json, data/news/*.json
 출력: data/advisor.json  { updated_at, comment, model, source }
@@ -83,7 +83,7 @@ def build_comment() -> str | None:
     if not key:
         print("[skip] GEMINI_API_KEY 없음 - advisor.json 유지")
         return None
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
 
     snap = _load("snapshot.json") or {}
     idx = _load("indices.json") or {}
@@ -99,7 +99,7 @@ def build_comment() -> str | None:
     )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 900},
+        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 700},
     }
     r = requests.post(
         url, params={"key": key}, json=body,
@@ -129,7 +129,7 @@ def main() -> int:
         {
             "updated_at": now_iso()[:10],
             "comment": comment,
-            "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"),
             "source": "gemini",
         },
     )

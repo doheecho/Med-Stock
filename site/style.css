@@ -109,6 +109,7 @@ tbody tr:last-child td { border-bottom: none; }
 
 .pos { color: var(--up); }
 .neg { color: var(--down); }
+td.dim { color: var(--muted); }
 
 /* 종목별 / 회사별 조회 토글 */
 .view-toggle { display: flex; gap: 6px; margin-top: 16px; }
