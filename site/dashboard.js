@@ -1346,6 +1346,8 @@ function renderForecast(h, t) {
     `<div class="src" style="margin-top:8px">${
       t && t.source === "yfinance"
         ? "야후 파이낸스 애널리스트 목표가 (최고/평균/중앙값/최저)"
+        : items.some((x) => x.src === "yahoo")
+        ? `최근 1개월 국내 리포트 + 야후 파이낸스 (${items.length}건)`
         : `최근 1개월 리포트 목표가 (${items.length}건)`
     } · 클릭 시 출처</div>`;
 }

@@ -151,6 +151,33 @@ def _analyst_targets(ticker: str) -> list[dict]:
     return out[:12]
 
 
+def _yf_krx_targets(ticker: str) -> list[dict]:
+    """국내 종목의 야후 파이낸스 애널리스트 목표가(상단/중간/하단). .KS → .KQ 순 시도."""
+    try:
+        import yfinance as yf
+    except Exception:  # noqa: BLE001
+        return []
+    for suf in (".KS", ".KQ"):
+        try:
+            info = yf.Ticker(ticker + suf).info or {}
+        except Exception:  # noqa: BLE001
+            continue
+        hi, mid, lo = (
+            _n(info.get("targetHighPrice")),
+            _n(info.get("targetMeanPrice")),
+            _n(info.get("targetLowPrice")),
+        )
+        if not mid:
+            continue
+        yurl = f"https://finance.yahoo.com/quote/{ticker}{suf}/analysis"
+        return [
+            {"firm": name, "target": int(round(v)), "url": yurl, "src": "yahoo"}
+            for name, v in (("야후 상단", hi), ("야후 평균", mid), ("야후 하단", lo))
+            if v
+        ]
+    return []
+
+
 def _naver_target(ticker: str) -> dict:
     url = f"https://m.stock.naver.com/api/stock/{ticker}/integration"
     d = requests.get(url, headers=_NAVER_HEADERS, timeout=10).json()
@@ -160,6 +187,11 @@ def _naver_target(ticker: str) -> dict:
         return {}
     mean = _to_num(c.get("recommMean"))
     at = safe(lambda: _analyst_targets(ticker), default=[], label=f"analyst {ticker}") or []
+
+    # 야후 파이낸스 애널리스트 목표가(상단/중간/하단)도 병기
+    for y in safe(lambda: _yf_krx_targets(ticker), default=[], label=f"yf krx {ticker}") or []:
+        if not any(x.get("firm") == y["firm"] for x in at):
+            at.append(y)
 
     # 컨센서스 평균을 항상 한 줄 포함(개별 리포트가 적어도 상/중/하 구성되도록)
     consensus_url = f"https://finance.naver.com/item/coinfo.naver?code={ticker}"
@@ -173,8 +205,11 @@ def _naver_target(ticker: str) -> dict:
     at.sort(key=lambda v: -v["target"])
 
     # 차트 시나리오 점선용 최고/평균/최저 — 낙관>중립(평균)>비관 이 항상 뚜렷이 벌어지게.
-    # (컨센서스 평균 항목은 밴드 계산에서 제외)
-    firm_t = [x["target"] for x in at if x.get("firm") != "컨센서스 평균"]
+    # (컨센서스 평균 / 야후 병기 항목은 밴드 계산에서 제외 — 국내 리포트 목표가 기준)
+    firm_t = [
+        x["target"] for x in at
+        if x.get("firm") != "컨센서스 평균" and x.get("src") != "yahoo"
+    ]
     hi = max(firm_t) if firm_t else None
     lo = min(firm_t) if firm_t else None
     target_high = hi if (hi and hi > avg * 1.03) else round(avg * 1.15)

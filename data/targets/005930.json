@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T15:13:00+09:00",
+  "updated_at": "2026-08-29T15:18:52+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
@@ -11,10 +11,22 @@
   "as_of": "2026-08-27",
   "analyst_targets": [
     {
+      "firm": "야후 상단",
+      "target": 725000,
+      "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
+      "src": "yahoo"
+    },
+    {
       "firm": "컨센서스 평균",
       "target": 491875,
       "date": "2026-08-27",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
+    },
+    {
+      "firm": "야후 평균",
+      "target": 470156,
+      "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
+      "src": "yahoo"
     },
     {
       "firm": "현대차증권",
@@ -27,6 +39,12 @@
       "target": 370000,
       "date": "2026-08-26",
       "url": "https://finance.naver.com/research/company_read.naver?nid=95868"
+    },
+    {
+      "firm": "야후 하단",
+      "target": 210000,
+      "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
+      "src": "yahoo"
     }
   ],
   "ticker": "005930",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T15:13:13+09:00",
+  "updated_at": "2026-08-29T15:19:10+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3317917.0,
@@ -10,6 +10,12 @@
   "opinion_score": 4.0,
   "as_of": "2026-08-27",
   "analyst_targets": [
+    {
+      "firm": "야후 상단",
+      "target": 5300000,
+      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
+      "src": "yahoo"
+    },
     {
       "firm": "컨센서스 평균",
       "target": 3317917,
@@ -23,10 +29,22 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=94760"
     },
     {
+      "firm": "야후 평균",
+      "target": 3164332,
+      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
+      "src": "yahoo"
+    },
+    {
       "firm": "미래에셋증권",
       "target": 2800000,
       "date": "2026-08-26",
       "url": "https://finance.naver.com/research/company_read.naver?nid=95869"
+    },
+    {
+      "firm": "야후 하단",
+      "target": 1200000,
+      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
+      "src": "yahoo"
     }
   ],
   "ticker": "000660",
