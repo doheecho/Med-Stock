@@ -62,6 +62,7 @@ body {
   background: color-mix(in srgb, var(--amber) 12%, transparent);
   border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
   color: var(--amber); font-size: 13px; line-height: 1.6;
+  white-space: pre-line;
 }
 .advisor .tag { font-weight: 700; margin-right: 4px; }
 .advisor .src { color: var(--muted); }
@@ -146,6 +147,8 @@ tr.lvl-account td.neg { color: var(--down); }
 .firm-bubbles { display: flex; flex-wrap: wrap; gap: 5px; }
 .firm-bubbles .bubble { font-size: 11px; }
 .firm-bubbles .bubble b { font-weight: 700; color: var(--text); }
+a.fc-chip { text-decoration: none; }
+a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 
 .tabs {
   display: flex; gap: 6px; padding: 0 20px; margin-top: 8px;
@@ -180,6 +183,13 @@ tr.lvl-account td.neg { color: var(--down); }
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }
 .kv dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* 주요 지수 표 */
+.idx-table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.idx-table th, .idx-table td { padding: 5px 6px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.idx-table th { color: var(--muted); font-weight: 500; font-size: 11px; }
+.idx-table th:first-child, .idx-table td:first-child { text-align: left; }
+.idx-table tbody tr:last-child td { border-bottom: none; }
 
 .target-gap { font-size: 13px; }
 .bar-track { background: var(--panel-2); border-radius: 6px; height: 10px; position: relative; margin: 8px 0; }

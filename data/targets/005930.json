@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T12:50:54+09:00",
+  "updated_at": "2026-08-29T13:14:27+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
@@ -10,26 +10,42 @@
   "opinion_score": 4.04,
   "as_of": "2026-08-27",
   "analyst_targets": [
-    560000,
-    550000,
-    480000,
-    440000,
-    400000,
-    370000
-  ],
-  "covering_firms": [
-    "미래에셋증권",
-    "현대차증권",
-    "교보증권",
-    "DS투자증권",
-    "한화투자증권",
-    "하나증권",
-    "대신증권",
-    "IBK투자증권",
-    "신한투자증권",
-    "유진투자증권",
-    "키움증권",
-    "iM증권"
+    {
+      "firm": "대신증권",
+      "target": 560000,
+      "date": "2026-06-26",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=93712"
+    },
+    {
+      "firm": "미래에셋증권",
+      "target": 550000,
+      "date": "2026-07-08",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=93953"
+    },
+    {
+      "firm": "미래에셋증권",
+      "target": 480000,
+      "date": "2026-05-21",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=93177"
+    },
+    {
+      "firm": "현대차증권",
+      "target": 440000,
+      "date": "2026-08-05",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=95044"
+    },
+    {
+      "firm": "미래에셋증권",
+      "target": 400000,
+      "date": "2026-05-11",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=92720"
+    },
+    {
+      "firm": "미래에셋증권",
+      "target": 370000,
+      "date": "2026-08-26",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=95868"
+    }
   ],
   "ticker": "005930",
   "name": "삼성전자",

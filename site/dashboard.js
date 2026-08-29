@@ -81,11 +81,12 @@ async function init() {
   });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, scenarios, snapshot, advisor, fx] = await Promise.all([
+    const [holdings, scenarios, snapshot, advisor, indices, fx] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
       getJSON(`${state.dataBase}/scenarios.json`).catch(() => ({ scenarios: {} })),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
       getJSON(`${state.dataBase}/advisor.json`).catch(() => null),
+      getJSON(`${state.dataBase}/indices.json`).catch(() => null),
       getJSON("https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW")
         .catch(() => getJSON("https://api.frankfurter.app/latest?from=USD&to=KRW"))
         .catch(() => null),
@@ -93,6 +94,7 @@ async function init() {
 
     if (fx && fx.rates && fx.rates.KRW) state.fx = { USDKRW: fx.rates.KRW, date: fx.date };
     state.advisor = advisor;
+    state.indices = indices;
     renderAdvisor();
 
     state.snapshot = snapshot;
@@ -459,6 +461,7 @@ async function renderDetail(ticker) {
       </div>
       <div>
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
+        <div class="block"><h3>주요 지수</h3><div id="indicesBox">로딩…</div></div>
         ${etf ? "" : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
         <div class="block"><h3>주가전망</h3><div id="forecastBox">로딩…</div></div>`}
         <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li>로딩…</li></ul></div>
@@ -476,6 +479,7 @@ async function renderDetail(ticker) {
   state.panel = { h, fund, flow, target, news };
 
   renderFundamentals(h, fund);
+  renderIndices();
   drawFlowChart(flow);
   if (!etf) {
     renderTarget(h, target);    // state._targets 캐시 → 시나리오 앵커에 사용
@@ -651,10 +655,10 @@ function drawPriceChart(h) {
   };
   let xMax = xs[xs.length - 1];
 
-  // ---- 목표주가 점선 (ETF 제외). 실제 목표시점(12M)과 무관하게
-  //      과거 구간을 넓히려고 x축은 2개월분만 사용 ----
+  // ---- 목표주가 점선 (ETF 제외, 1년 이상 구간에서만). 실제 목표시점(12M)과
+  //      무관하게 과거 구간을 넓히려고 x축은 2개월분만 사용 ----
   const showScenario =
-    !isEtf(h) && ["3M", "6M", "1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
+    !isEtf(h) && ["1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
   const cur = priceOf(h.ticker) ?? p.last_close;
   if (showScenario) {
     const anchor = xs[xs.length - 1];
@@ -857,6 +861,44 @@ function renderFundamentals(h, f) {
     <div class="src" style="margin-top:8px">기준일 ${f.as_of || f.updated_at || "—"}${f.source ? " · " + f.source : ""}</div>`;
 }
 
+/* ---- 주요 지수 / 환율 / 원자재 / 코인 ---- */
+function renderIndices() {
+  const box = document.getElementById("indicesBox");
+  if (!box) return;
+  const d = state.indices;
+  if (!d || !d.items || !d.items.length) {
+    box.innerHTML = "<div class='error'>지수 데이터 없음 (indices_collector 미실행)</div>";
+    return;
+  }
+  const fmtPrice = (v, kind) => {
+    if (v == null) return "—";
+    if (kind === "usd") return "$" + Number(v).toLocaleString("en-US", { maximumFractionDigits: 2 });
+    if (kind === "krw0") return "₩" + Math.round(v).toLocaleString("ko-KR");
+    return Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+  };
+  const rows = d.items
+    .map((x) => {
+      const chgAbs =
+        x.change == null
+          ? "—"
+          : (x.change >= 0 ? "▲ " : "▼ ") +
+            Math.abs(x.change).toLocaleString("ko-KR", { maximumFractionDigits: x.fmt === "krw0" ? 0 : 2 });
+      return `<tr>
+        <td>${escapeHtml(x.name)}</td>
+        <td>${fmtPrice(x.price, x.fmt)}</td>
+        <td class="${cls(x.change)}">${chgAbs}</td>
+        <td class="${cls(x.change_pct)}">${fmt.pct(x.change_pct)}</td>
+      </tr>`;
+    })
+    .join("");
+  box.innerHTML = `
+    <table class="idx-table">
+      <thead><tr><th>지수</th><th>현재가</th><th>전일대비</th><th>등락율</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="src" style="margin-top:6px">전일 종가 기준 · ${shortDate(d.updated_at)}</div>`;
+}
+
 /* ---- 수급 막대 (개인·기관·외국인[·기타] 순매수, 억원, 최근 4주) ---- */
 function drawFlowChart(flow) {
   const el = document.getElementById("flowChart");
@@ -939,30 +981,39 @@ function renderTarget(h, t) {
     <div class="src">막대=최저~평균 구간, 세로선=현재가 · 출처 ${t.source || "—"}</div>`;
 }
 
-/* ---- 주가전망: 목표가만 상단/중간/하단 3구간, 각 상위 3개를 가로로 (증권사명 없음) ---- */
+/* ---- 주가전망: "목표가 (증권사)" 버블. 상단/중간/하단 각 3개(합 9). 클릭 시 리포트 ---- */
 function renderForecast(h, t) {
   const box = document.getElementById("forecastBox");
   if (!box) return;
   const m = h.market;
-  const vals = ((t && t.analyst_targets) || [])
-    .map((x) => (typeof x === "object" && x ? x.target : x))
-    .filter((v) => v != null)
-    .sort((a, b) => b - a);
+  const items = ((t && t.analyst_targets) || [])
+    .filter((x) => x && x.target != null)
+    .sort((a, b) => b.target - a.target);
 
-  if (!vals.length) {
+  if (!items.length) {
     const blk = box.closest(".block");
-    if (blk) blk.hidden = true;           // 목표가 없으면 박스 자체를 숨김
+    if (blk) blk.hidden = true;
     else box.innerHTML = "<div class='error'>주가전망 정보 없음</div>";
     return;
   }
 
-  const n = vals.length;
-  const third = Math.max(1, Math.ceil(n / 3));
-  const tiers = [
-    ["상단", vals.slice(0, third).slice(0, 3), "pos"],
-    ["중간", vals.slice(third, n - third).slice(0, 3), ""],
-    ["하단", vals.slice(-third).slice(0, 3), "neg"],
-  ];
+  // 정렬된 목록을 상/중/하로 고르게 나눔 (각 최대 3, 합 최대 9)
+  const n = items.length;
+  const per = Math.min(3, Math.ceil(n / 3));
+  const tiers =
+    n < 3
+      ? [["전망", items, ""]]
+      : [
+          ["상단", items.slice(0, per), "pos"],
+          ["중간", items.slice(per, n - per).slice(0, 3), ""],
+          ["하단", items.slice(n - per), "neg"],
+        ];
+  const chip = (x) => {
+    const label = `${fmt.price(x.target, m)}${x.firm ? ` (${escapeHtml(x.firm)})` : ""}`;
+    return x.url
+      ? `<a class="bubble fc-chip" href="${x.url}" target="_blank" rel="noopener">${label}</a>`
+      : `<span class="bubble fc-chip">${label}</span>`;
+  };
 
   box.innerHTML =
     tiers
@@ -971,13 +1022,11 @@ function renderForecast(h, t) {
         ([name, arr, klass]) => `
       <div class="fc-tier">
         <div class="fc-tier-h ${klass}">${name}</div>
-        <div class="firm-bubbles">
-          ${arr.map((v) => `<span class="bubble"><b>${fmt.price(v, m)}</b></span>`).join("")}
-        </div>
+        <div class="firm-bubbles">${arr.map(chip).join("")}</div>
       </div>`
       )
       .join("") +
-    `<div class="src" style="margin-top:8px">애널리스트 리포트에서 추출한 목표가 근사치 (${n}건)</div>`;
+    `<div class="src" style="margin-top:8px">리포트에서 추출한 목표가 근사치 (${items.length}건) · 클릭 시 리포트</div>`;
 }
 
 /* ---- 뉴스 ---- */

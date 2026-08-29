@@ -1,0 +1,141 @@
+"""AI Advisor 코멘트 생성 (Gemini API).
+
+환경변수:
+  GEMINI_API_KEY  (필수 - 없으면 기존 data/advisor.json 유지하고 종료)
+  GEMINI_MODEL    (선택, 기본 gemini-2.5-flash)
+
+입력: data/snapshot.json, data/indices.json, data/targets/*.json, data/news/*.json
+출력: data/advisor.json  { updated_at, comment, model, source }
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+
+import requests
+
+from common import DATA, now_iso, write_json
+
+
+def _load(path):
+    try:
+        return json.loads((DATA / path).read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _positions_summary(snap: dict) -> str:
+    lines = []
+    for p in (snap or {}).get("positions", []):
+        cur = p.get("last_close")
+        buy = p.get("buy_price")
+        pl_pct = p.get("pl_pct_close")
+        lines.append(
+            f"- {p.get('name')} ({p.get('ticker')}): 평단 {buy}, 종가 {cur}, "
+            f"수익률 {pl_pct}%, 수량 {p.get('quantity')}"
+            + (f", 컨센 목표 {p.get('target_avg')}" if p.get("target_avg") else "")
+        )
+    return "\n".join(lines)
+
+
+def _indices_summary(idx: dict) -> str:
+    out = []
+    for x in (idx or {}).get("items", []):
+        out.append(f"- {x['name']}: {x['price']} ({x.get('change_pct')}%)")
+    return "\n".join(out)
+
+
+def _news_summary(tickers: list[str], per: int = 3) -> str:
+    out = []
+    for t in tickers:
+        d = _load(f"news/{t}.json") or {}
+        heads = [n.get("title", "") for n in (d.get("items") or [])[:per]]
+        if heads:
+            out.append(f"[{t}] " + " / ".join(heads))
+    return "\n".join(out)
+
+
+_PROMPT = """당신은 한국 개인투자자를 돕는 애널리스트다. 아래 포트폴리오와 시장 데이터를 바탕으로
+한국어 종합 분석을 작성하라. 6~9문장, 3~4개 문단, 불릿 없이 평서문.
+
+포함할 내용:
+1) 보유종목 현황 - 수익/손실 기여가 큰 종목과 그 이유(업황·수급·실적 등 추정)
+2) 연관 시장 움직임 - 지수·환율·원자재·금리·반도체 업황 중 포트폴리오와 관련된 흐름
+3) 지금 주시해야 할 사항 (이벤트, 지표, 리스크)
+4) 향후 대응 방향과 시장 전망 (비중 조절/헤지/관망 등 일반적 관점)
+
+투자 권유가 아닌 참고용 분석임을 마지막에 짧게 명시. 숫자는 데이터 범위 내에서만 사용.
+
+## 포트폴리오(종가 기준)
+{positions}
+
+## 주요 지수/환율/원자재/코인
+{indices}
+
+## 최근 뉴스 헤드라인
+{news}
+"""
+
+
+def build_comment() -> str | None:
+    key = os.getenv("GEMINI_API_KEY")
+    if not key:
+        print("[skip] GEMINI_API_KEY 없음 - advisor.json 유지")
+        return None
+    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+
+    snap = _load("snapshot.json") or {}
+    idx = _load("indices.json") or {}
+    tickers = [p["ticker"] for p in snap.get("positions", [])]
+    prompt = _PROMPT.format(
+        positions=_positions_summary(snap) or "(데이터 없음)",
+        indices=_indices_summary(idx) or "(데이터 없음)",
+        news=_news_summary(tickers) or "(데이터 없음)",
+    )
+
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    )
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.6, "maxOutputTokens": 900},
+    }
+    r = requests.post(
+        url, params={"key": key}, json=body,
+        headers={"Content-Type": "application/json"}, timeout=60,
+    )
+    r.raise_for_status()
+    data = r.json()
+    parts = (
+        data.get("candidates", [{}])[0]
+        .get("content", {})
+        .get("parts", [])
+    )
+    text = "".join(p.get("text", "") for p in parts).strip()
+    return text or None
+
+
+def main() -> int:
+    try:
+        comment = build_comment()
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] Gemini 호출 실패: {e!r} - advisor.json 유지")
+        return 0
+    if not comment:
+        return 0
+    write_json(
+        DATA / "advisor.json",
+        {
+            "updated_at": now_iso()[:10],
+            "comment": comment,
+            "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            "source": "gemini",
+        },
+    )
+    print(f"[write] advisor.json ({len(comment)}자)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -77,32 +77,40 @@ def _report_content(rid) -> str:
         return ""
 
 
-def _analyst_targets(ticker: str) -> dict:
-    """네이버 리서치 리포트에서 목표가 추출(미리보기 → 본문 순).
-    화면에는 목표가만 표시하므로 {targets: 정렬된 고유값 목록, firms: 커버 증권사} 반환."""
+def _analyst_targets(ticker: str) -> list[dict]:
+    """네이버 리서치 리포트에서 (증권사, 목표가, 리포트링크) 추출. 미리보기 → 본문 순.
+    리포트 1건 = 전망 1건. (증권사, 목표가) 중복만 제거. 목표가 내림차순, 최대 12건."""
     try:
         rows = requests.get(
             f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=40",
             headers=_NAVER_HEADERS, timeout=12,
         ).json()
     except Exception:  # noqa: BLE001
-        return {"targets": [], "firms": []}
-    vals: list[int] = []
-    firms: list[str] = []
-    detail_budget = 12
+        return []
+    out: list[dict] = []
+    seen: set = set()
+    detail_budget = 16
     for x in rows if isinstance(rows, list) else []:
         firm = (x.get("brokerName") or "").strip()
-        if firm and firm not in firms:
-            firms.append(firm)
+        rid = x.get("researchId")
         tgt = _parse_target(f"{x.get('title', '')} {x.get('previewContent', '')}")
-        if tgt is None and detail_budget > 0 and x.get("researchId"):
+        if tgt is None and detail_budget > 0 and rid:
             detail_budget -= 1
-            tgt = _parse_target(_report_content(x["researchId"]))
-        # 상식적 범위(현재가의 0.3~5배)만 채택 — 오탐 방지용 하드 클램프는 생략, 중복만 제거
-        if tgt and tgt not in vals:
-            vals.append(tgt)
-    vals.sort(reverse=True)
-    return {"targets": vals, "firms": firms[:12]}
+            tgt = _parse_target(_report_content(rid))
+        if not tgt:
+            continue
+        k = (firm, tgt)
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append({
+            "firm": firm or None,
+            "target": tgt,
+            "date": x.get("writeDate"),
+            "url": f"https://finance.naver.com/research/company_read.naver?nid={rid}" if rid else None,
+        })
+    out.sort(key=lambda v: -v["target"])
+    return out[:12]
 
 
 def _naver_target(ticker: str) -> dict:
@@ -113,8 +121,8 @@ def _naver_target(ticker: str) -> dict:
     if not avg:
         return {}
     mean = _to_num(c.get("recommMean"))
-    at = safe(lambda: _analyst_targets(ticker), default={}, label=f"analyst {ticker}") or {}
-    priced = at.get("targets") or []
+    at = safe(lambda: _analyst_targets(ticker), default=[], label=f"analyst {ticker}") or []
+    priced = [x["target"] for x in at]
     return {
         "source": "naver(consensus)",
         "url": f"https://m.stock.naver.com/domestic/stock/{ticker}/total",
@@ -125,8 +133,7 @@ def _naver_target(ticker: str) -> dict:
         "opinion": _opinion_text(mean),
         "opinion_score": mean,
         "as_of": c.get("createDate"),
-        "analyst_targets": priced,          # 목표가 값 목록(내림차순)
-        "covering_firms": at.get("firms") or [],
+        "analyst_targets": at,  # [{firm, target, date, url}] 내림차순
     }
 
 

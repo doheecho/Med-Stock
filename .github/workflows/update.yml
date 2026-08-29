@@ -31,6 +31,8 @@ jobs:
         working-directory: collectors
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: |
           set +e
           python price_collector.py
@@ -38,7 +40,9 @@ jobs:
           python fundamental_collector.py
           python target_price_collector.py
           python news_collector.py
+          python indices_collector.py
           python snapshot_builder.py
+          python advisor_collector.py
           exit 0
 
       - name: Commit data
