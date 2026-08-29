@@ -35,6 +35,10 @@ const RANGE_DAYS = {
   "3Y": 1096, "5Y": 1827,
 };
 
+/* 가격 차트와 보조지표(MACD·RSI·스토캐스틱)의 세로축 폭을 고정해
+   플롯 영역 좌우 끝을 일치시킨다 → 같은 날짜가 항상 같은 x 위치에 온다. */
+const AXIS_Y_W = 64;
+
 /* USD→KRW 환율 (오늘 기준). 실패 시 대체값. */
 function fxRate() {
   return (state.fx && state.fx.USDKRW) || FX_FALLBACK;
@@ -821,6 +825,7 @@ function drawPriceChart(h) {
   if (!p || !p.dates || !p.dates.length) {
     box.parentElement.innerHTML =
       "<h3>가격</h3><div class='error'>가격 데이터 없음 (price_collector 미실행)</div>";
+    state._xDomain = null;
     return;
   }
 
@@ -870,7 +875,10 @@ function drawPriceChart(h) {
   const lastRealTs = xs[xs.length - 1];
   const scales = {
     x: xTimeScale(xKind(), lastRealTs),
-    y: { position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
+    y: {
+      position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" },
+      afterFit: (s) => { s.width = AXIS_Y_W; },
+    },
   };
   let xMax = lastRealTs;
 
@@ -910,7 +918,10 @@ function drawPriceChart(h) {
     scales.vol = { display: false, position: "left", min: 0, max: vmax * 4 };
   }
 
+  scales.x.min = xs[0];
   scales.x.max = xMax;
+  // 보조지표들이 같은 x 구간·눈금을 쓰도록 도메인 저장
+  state._xDomain = { min: xs[0], max: xMax };
 
   makeChart("priceChart", {
     data: { datasets },
@@ -942,6 +953,7 @@ function drawMacdChart(p) {
   const S = (a) => idxs.map((k) => a[k]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
+  if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("macdChart", {
     data: {
       datasets: [
@@ -955,7 +967,7 @@ function drawMacdChart(p) {
       parsing: false, responsive: true, maintainAspectRatio: false,
       scales: {
         x: xg,
-        y: { position: "right", ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
+        y: { position: "right", afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
@@ -1072,6 +1084,7 @@ function drawRsiChart(p) {
   const ys = idxs.map((k) => rsi[k]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
+  if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("rsiChart", {
     data: {
       datasets: [
@@ -1086,7 +1099,7 @@ function drawRsiChart(p) {
       maintainAspectRatio: false,
       scales: {
         x: xg,
-        y: { position: "right", min: 0, max: 100, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
+        y: { position: "right", min: 0, max: 100, afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { display: false } },
     },
@@ -1109,6 +1122,7 @@ function drawStochChart(p) {
   const S = (a) => idxs.map((i) => a[i]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
+  if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("stochChart", {
     data: {
       datasets: [
@@ -1124,7 +1138,7 @@ function drawStochChart(p) {
       maintainAspectRatio: false,
       scales: {
         x: xg,
-        y: { position: "right", min: 0, max: 100, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
+        y: { position: "right", min: 0, max: 100, afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
