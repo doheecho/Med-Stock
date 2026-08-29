@@ -74,11 +74,6 @@ body {
 .chart-ctl .ctl-lbl { color: var(--muted); font-size: 11px; width: 52px; flex: none; }
 .chart-ctl button { flex: none; }
 
-/* 긴 기간 차트: 차트창 폭은 유지하고 내부에서만 가로 스크롤 */
-/* 차트는 항상 칸 너비에 맞춤 — 가로 스크롤 없음 */
-.chart-scroll { max-width: 100%; overflow: hidden; }
-.chart-scroll .chart-inner { width: 100%; }
-.chart-scroll canvas { display: block; }
 .chart-ctl button {
   background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
   border-radius: 6px; padding: 3px 9px; font-size: 11px; cursor: pointer;
@@ -210,6 +205,20 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 #rsiChart { height: 130px !important; }
 #flowChart { height: 190px !important; }
 #weightChart { width: 100% !important; height: 100% !important; }
+
+/* 보조지표 블록: 버튼으로 켜고 끌 때 위/아래로 밀려 들어오고 나가게 */
+.sub-block {
+  overflow: hidden;
+  max-height: 520px;
+  transition: max-height .38s ease, opacity .28s ease,
+              padding .38s ease, margin .38s ease, border-width .38s ease;
+}
+.sub-block.collapsed {
+  max-height: 0; opacity: 0;
+  padding-top: 0; padding-bottom: 0;
+  margin-top: 0; margin-bottom: 0;
+  border-width: 0;
+}
 
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }

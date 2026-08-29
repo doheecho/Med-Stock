@@ -22,7 +22,7 @@ const state = {
   fx: null,                          // { USDKRW, date }
   sort: { key: null, dir: "desc" },  // 표 정렬 상태
   advisor: null,                     // data/advisor.json
-  chartRange: "1Y",                  // 1M 3M 1Y 3Y 5Y MAX
+  chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
   ma: { ma5: false, ma20: true, ma60: true, ma120: false },
   overlay: { bbands: false, volume: false, buyprice: false },
   sub: { rsi: true, macd: false, stoch: false },
@@ -32,7 +32,7 @@ const state = {
 
 const RANGE_DAYS = {
   "1W": 8, "1M": 31, "3M": 92, "6M": 184, "1Y": 366,
-  "3Y": 1096, "5Y": 1827, "10Y": 3653,
+  "3Y": 1096, "5Y": 1827,
 };
 
 /* USD→KRW 환율 (오늘 기준). 실패 시 대체값. */
@@ -548,8 +548,8 @@ function selectTicker(ticker) {
 
 /* ------------------------------------------------------------------ 종목 상세 */
 const RANGE_BTNS = [
-  ["1W", "1주"], ["1M", "1개월"], ["3M", "3개월"], ["6M", "6개월"], ["1Y", "1년"],
-  ["3Y", "3년"], ["5Y", "5년"], ["10Y", "10년"], ["MAX", "최대"],
+  ["1W", "1주"], ["1M", "1개월"], ["3M", "3개월"], ["6M", "6개월"],
+  ["1Y", "1년"], ["3Y", "3년"], ["5Y", "5년"],
 ];
 const MA_BTNS = [["ma5", "MA5"], ["ma20", "MA20"], ["ma60", "MA60"], ["ma120", "MA120"]];
 const OV_BTNS = [["bbands", "볼린저밴드"], ["volume", "거래량"], ["buyprice", "내 매수가"]];
@@ -581,13 +581,13 @@ async function renderDetail(ticker) {
         <div class="block">
           <h3>가격 · 이동평균 · 시나리오 · 보조지표</h3>
           <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
-          <div class="chart-scroll"><div class="chart-inner"><canvas id="priceChart"></canvas></div></div>
+          <canvas id="priceChart"></canvas>
         </div>
-        <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="macdChart"></canvas></div></div></div>
-        <div class="block" id="stochBlock"${state.sub.stoch ? "" : " hidden"}><h3>스토캐스틱 (14·3·3)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="stochChart"></canvas></div></div></div>
-        <div class="block" id="rsiBlock"${state.sub.rsi ? "" : " hidden"}>
+        <div class="block sub-block${state.sub.macd ? "" : " collapsed"}" id="macdBlock"><h3>MACD (12·26·9)</h3><canvas id="macdChart"></canvas></div>
+        <div class="block sub-block${state.sub.stoch ? "" : " collapsed"}" id="stochBlock"><h3>스토캐스틱 (14·3·3)</h3><canvas id="stochChart"></canvas></div>
+        <div class="block sub-block${state.sub.rsi ? "" : " collapsed"}" id="rsiBlock">
           <h3 class="h3-row">RSI (14)<span class="tf-btns" id="rsiTf">${rsiTfBtns()}</span></h3>
-          <div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div>
+          <canvas id="rsiChart"></canvas>
         </div>
         <div class="block"><h3>수급 (개인·기관·외국인 순매수 · 억원 · 최근 4주)</h3><canvas id="flowChart" height="90"></canvas></div>
       </div>
@@ -666,38 +666,36 @@ function onChartCtl(e) {
     b.classList.toggle("on", !!st);
   }
 
-  const setHidden = (id, on) => { const el = document.getElementById(id); if (el) el.hidden = !on; };
   const h = state.panel && state.panel.h;
   if (!h) return;
   const p = state.prices[h.ticker];
 
+  // 보조지표 on/off: 해당 블록만 위/아래로 슬라이드. 나머지 차트는 손대지 않는다.
+  const toggleSub = (id, on, draw) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (!on) { el.classList.add("collapsed"); return; }
+    el.classList.remove("collapsed");
+    setTimeout(draw, 420); // 슬라이드가 끝나 레이아웃이 확정된 뒤 그려야 캔버스 높이가 정확
+  };
+  if (scope === "macd") { toggleSub("macdBlock", state.sub.macd, () => drawMacdChart(p)); return; }
+  if (scope === "stoch") { toggleSub("stochBlock", state.sub.stoch, () => drawStochChart(p)); return; }
+  if (scope === "rsi") { toggleSub("rsiBlock", state.sub.rsi, () => drawRsiChart(p)); return; }
+
+  // 기간 변경 → 전 차트 / 이평·오버레이 → 가격 차트만. 애니메이션 없이 다시 그린다.
   state._noAnim = true;
   try {
-    if (scope === "all") {
-      drawPriceChart(h); drawRsiChart(p); drawMacdChart(p); drawStochChart(p);
-    } else if (scope === "price") {
-      drawPriceChart(h);
-    } else if (scope === "macd") {
-      setHidden("macdBlock", state.sub.macd); drawMacdChart(p);
-    } else if (scope === "stoch") {
-      setHidden("stochBlock", state.sub.stoch); drawStochChart(p);
-    } else if (scope === "rsi") {
-      setHidden("rsiBlock", state.sub.rsi); drawRsiChart(p);
-    }
+    if (scope === "all") { drawPriceChart(h); drawRsiChart(p); drawMacdChart(p); drawStochChart(p); }
+    else if (scope === "price") { drawPriceChart(h); }
   } finally {
     state._noAnim = false;
   }
 }
 
-/* 차트는 항상 컨테이너 폭에 맞춘다 (가로 스크롤 없음). */
-function fitScroll(canvasId) {
-  const inner = document.getElementById(canvasId)?.closest(".chart-inner");
-  if (inner) inner.style.width = "";
-}
 
 /* state.chartRange 에 맞는 시작 인덱스 */
 function rangeStartIdx(dates) {
-  if (!dates || !dates.length || state.chartRange === "MAX") return 0;
+  if (!dates || !dates.length) return 0;
   const days = RANGE_DAYS[state.chartRange] || 366;
   const cutoff = new Date(dates[dates.length - 1]).valueOf() - days * 864e5;
   const i = dates.findIndex((d) => new Date(d).valueOf() >= cutoff);
@@ -786,7 +784,6 @@ function drawPriceChart(h) {
   const si = rangeStartIdx(p.dates);
   const idxs = sampleIdx(si, total);            // 표시할 인덱스 (긴 구간은 스트라이드 샘플)
   const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
-  fitScroll("priceChart", xs.length);
   const pick = (arr) => (arr ? idxs.map((k) => arr[k]) : []);
   const line = (label, arr, color, w = 1) => ({
     type: "line", label, borderColor: color, borderWidth: w, pointRadius: 0, spanGaps: true, order: 5,
@@ -836,7 +833,7 @@ function drawPriceChart(h) {
   // ---- 목표주가 점선 (ETF 제외, 1년 이상 구간에서만). 실제 목표시점(12M)과
   //      무관하게 과거 구간을 넓히려고 x축은 약 1개월분만 사용, 전망 구간 라벨은 숨김 ----
   const showScenario =
-    !isEtf(h) && ["1Y", "3Y", "5Y", "10Y", "MAX"].includes(state.chartRange);
+    !isEtf(h) && ["1Y", "3Y", "5Y"].includes(state.chartRange);
   const cur = priceOf(h.ticker) ?? p.last_close;
   if (showScenario) {
     const anchor = lastRealTs;
@@ -898,7 +895,6 @@ function drawMacdChart(p) {
   const total = p.dates.length;
   const idxs = sampleIdx(rangeStartIdx(p.dates), total);
   const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
-  fitScroll("macdChart", xs.length);
   const S = (a) => idxs.map((k) => a[k]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
@@ -1020,7 +1016,8 @@ function drawRsiChart(p) {
   const el = document.getElementById("rsiChart");
   if (!el || !state.sub.rsi) return;
   if (!p || !p.dates || !p.close) {
-    el.closest(".block").querySelector(".chart-scroll").innerHTML = "<div class='error'>RSI 데이터 없음</div>";
+    el.insertAdjacentHTML("afterend", "<div class='error'>RSI 데이터 없음</div>");
+    el.remove();
     return;
   }
   const tf = state.rsiTf || "D";
@@ -1028,7 +1025,6 @@ function drawRsiChart(p) {
   const rsi = tf === "D" && Array.isArray(p.rsi) ? p.rsi : rsiFrom(rs.close, 14);
   const idxs = sampleIdx(rangeStartIdx(rs.dates), rs.dates.length);
   const xs = idxs.map((k) => new Date(rs.dates[k]).valueOf());
-  fitScroll("rsiChart", xs.length);
   const ys = idxs.map((k) => rsi[k]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
@@ -1059,13 +1055,13 @@ function drawStochChart(p) {
   const el = document.getElementById("stochChart");
   if (!el || !state.sub.stoch) return;
   if (!p || !p.candles || !p.dates) {
-    el.closest(".block").querySelector(".chart-scroll").innerHTML = "<div class='error'>스토캐스틱 데이터 없음</div>";
+    el.insertAdjacentHTML("afterend", "<div class='error'>스토캐스틱 데이터 없음</div>");
+    el.remove();
     return;
   }
   const { k, d } = stochFrom(p.candles, 14, 3);
   const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
   const xs = idxs.map((i) => new Date(p.dates[i]).valueOf());
-  fitScroll("stochChart", xs.length);
   const S = (a) => idxs.map((i) => a[i]);
   const xg = xTimeScale(xKind());
   xg.grid = { display: false };
@@ -1170,22 +1166,24 @@ function renderIndices() {
   };
   const rows = d.items
     .map((x) => {
-      const chgAbs =
+      const chg =
         x.change == null
           ? "—"
           : (x.change >= 0 ? "▲ " : "▼ ") +
-            Math.abs(x.change).toLocaleString("ko-KR", { maximumFractionDigits: x.fmt === "krw0" ? 0 : 2 });
+            Math.abs(x.change).toLocaleString("ko-KR", { maximumFractionDigits: x.fmt === "krw0" ? 0 : 2 }) +
+            (x.change_pct == null
+              ? ""
+              : ` (${x.change_pct >= 0 ? "+" : "-"}${Math.abs(x.change_pct).toFixed(2)}%)`);
       return `<tr>
         <td>${escapeHtml(x.name)}</td>
         <td>${fmtPrice(x.price, x.fmt)}</td>
-        <td class="${cls(x.change)}">${chgAbs}</td>
-        <td class="${cls(x.change_pct)}">${fmt.pct(x.change_pct)}</td>
+        <td class="${cls(x.change)}">${chg}</td>
       </tr>`;
     })
     .join("");
   box.innerHTML = `
     <div class="tbl-scroll"><table class="idx-table">
-      <thead><tr><th>지수</th><th>현재가</th><th>전일대비</th><th>등락율</th></tr></thead>
+      <thead><tr><th>지수</th><th>현재가</th><th>전일대비</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
     <div class="src" style="margin-top:6px">전일 종가 기준 · ${shortDate(d.updated_at)}</div>`;
@@ -1257,7 +1255,21 @@ function drawFlowChart(flow) {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: { stacked: false, ticks: { color: "#8b95a1", maxTicksLimit: 12 }, grid: { display: false } },
+        x: {
+          stacked: false,
+          grid: { display: false },
+          ticks: {
+            color: "#8b95a1",
+            autoSkip: false,
+            maxRotation: 0,
+            // 월이 처음 나오거나 바뀔 때만 "MM-DD", 그 외엔 "DD" (예: 07-31 08-01 02 03)
+            callback(value, index) {
+              const lbl = this.getLabelForValue(value); // "MM-DD"
+              const prev = index > 0 ? this.getLabelForValue(index - 1) : null;
+              return !prev || lbl.slice(0, 2) !== prev.slice(0, 2) ? lbl : lbl.slice(3);
+            },
+          },
+        },
         y: {
           position: "right",
           ticks: { color: "#8b95a1" },
