@@ -138,6 +138,15 @@ tr.lvl-account td.neg { color: var(--down); }
 .acct-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
 .acct-card .bubble { margin-bottom: 8px; }
 
+/* 주가전망 박스 */
+.fc-tier { margin-bottom: 10px; }
+.fc-tier-h { font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 5px; }
+.fc-tier-h.pos { color: var(--up); }
+.fc-tier-h.neg { color: var(--down); }
+.firm-bubbles { display: flex; flex-wrap: wrap; gap: 5px; }
+.firm-bubbles .bubble { font-size: 11px; }
+.firm-bubbles .bubble b { font-weight: 700; color: var(--text); }
+
 .tabs {
   display: flex; gap: 6px; padding: 0 20px; margin-top: 8px;
   border-bottom: 1px solid var(--line); flex-wrap: wrap;

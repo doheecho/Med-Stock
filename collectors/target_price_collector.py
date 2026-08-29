@@ -47,6 +47,42 @@ def _opinion_text(mean):
     return "매도"
 
 
+def _analyst_targets(ticker: str) -> list[dict]:
+    """네이버 리서치 리포트 목록의 미리보기 텍스트에서 '목표주가 XX만원' 을 추출.
+    증권사별 최신(목표가가 파싱된) 1건만 남긴다 — 근사치."""
+    try:
+        rows = requests.get(
+            f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=30",
+            headers=_NAVER_HEADERS, timeout=12,
+        ).json()
+    except Exception:  # noqa: BLE001
+        return []
+    by_firm: dict[str, dict] = {}
+    for x in rows if isinstance(rows, list) else []:
+        firm = (x.get("brokerName") or "").strip()
+        if not firm:
+            continue
+        txt = f"{x.get('title', '')} {x.get('previewContent', '')}"
+        tgt = None
+        m = re.search(r"목표주가[^0-9]{0,6}([0-9][0-9,\.]*)\s*만", txt)
+        if m:
+            tgt = int(round(float(m.group(1).replace(",", "")) * 10000))
+        else:
+            m = re.search(r"목표주가[^0-9]{0,8}([0-9]{2,3},[0-9]{3})\s*원", txt)
+            if m:
+                tgt = int(m.group(1).replace(",", ""))
+        date = x.get("writeDate")
+        # 증권사별 첫 등장(=최신) 우선, 단 목표가 파싱된 건이 있으면 그것으로 갱신
+        cur = by_firm.get(firm)
+        if cur is None:
+            by_firm[firm] = {"firm": firm, "target": tgt, "date": date}
+        elif cur.get("target") is None and tgt is not None:
+            by_firm[firm] = {"firm": firm, "target": tgt, "date": date}
+    out = [v for v in by_firm.values()]
+    out.sort(key=lambda v: (v["target"] is None, -(v["target"] or 0)))
+    return out[:10]
+
+
 def _naver_target(ticker: str) -> dict:
     url = f"https://m.stock.naver.com/api/stock/{ticker}/integration"
     d = requests.get(url, headers=_NAVER_HEADERS, timeout=10).json()
@@ -55,16 +91,20 @@ def _naver_target(ticker: str) -> dict:
     if not avg:
         return {}
     mean = _to_num(c.get("recommMean"))
+    firms = safe(lambda: _analyst_targets(ticker), default=[], label=f"analyst {ticker}") or []
+    priced = [f["target"] for f in firms if f.get("target")]
     return {
         "source": "naver(consensus)",
         "url": f"https://m.stock.naver.com/domestic/stock/{ticker}/total",
         "target_avg": avg,
-        "target_high": round(avg * 1.15, 2),   # 네이버 컨센서스 API 는 평균만 제공 → 근사 밴드
-        "target_low": round(avg * 0.85, 2),
-        "approx_band": True,
+        "target_high": max(priced) if priced else round(avg * 1.15, 2),
+        "target_low": min(priced) if priced else round(avg * 0.85, 2),
+        "approx_band": not priced,
         "opinion": _opinion_text(mean),
         "opinion_score": mean,
         "as_of": c.get("createDate"),
+        "analyst_targets": firms,
+        "covering_firms": [f["firm"] for f in firms],
     }
 
 

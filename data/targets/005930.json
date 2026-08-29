@@ -1,14 +1,78 @@
 {
-  "updated_at": "2026-08-29T02:40:13+00:00",
+  "updated_at": "2026-08-29T12:30:05+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
-  "target_high": 565656.25,
-  "target_low": 418093.75,
-  "approx_band": true,
+  "target_high": 560000,
+  "target_low": 370000,
+  "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.04,
   "as_of": "2026-08-27",
+  "analyst_targets": [
+    {
+      "firm": "대신증권",
+      "target": 560000,
+      "date": "2026-06-26"
+    },
+    {
+      "firm": "현대차증권",
+      "target": 440000,
+      "date": "2026-08-05"
+    },
+    {
+      "firm": "미래에셋증권",
+      "target": 370000,
+      "date": "2026-08-26"
+    },
+    {
+      "firm": "교보증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "DS투자증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "한화투자증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "하나증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "IBK투자증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "신한투자증권",
+      "target": null,
+      "date": "2026-07-31"
+    },
+    {
+      "firm": "유진투자증권",
+      "target": null,
+      "date": "2026-07-31"
+    }
+  ],
+  "covering_firms": [
+    "대신증권",
+    "현대차증권",
+    "미래에셋증권",
+    "교보증권",
+    "DS투자증권",
+    "한화투자증권",
+    "하나증권",
+    "IBK투자증권",
+    "신한투자증권",
+    "유진투자증권"
+  ],
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX"

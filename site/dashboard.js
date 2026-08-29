@@ -455,6 +455,7 @@ async function renderDetail(ticker) {
       <div>
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
         <div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
+        <div class="block"><h3>주가전망 (증권사)</h3><div id="forecastBox">로딩…</div></div>
         <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li>로딩…</li></ul></div>
       </div>
     </div>`;
@@ -472,6 +473,7 @@ async function renderDetail(ticker) {
   renderFundamentals(h, fund);
   drawFlowChart(flow);
   renderTarget(h, target);      // state._targets 캐시 → 시나리오 앵커에 사용
+  renderForecast(h, target);
   renderNews(news);
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
   drawRsiChart(state.prices[h.ticker]);
@@ -522,6 +524,49 @@ function rangeStartIdx(dates) {
   return i < 0 ? 0 : i;
 }
 
+/* 구간이 길면 표시 포인트를 ~420개로 스트라이드 샘플링 → 가로 폭 과다 팽창 방지.
+   [si, len) 범위에서 고른 인덱스 배열(마지막 포함) 반환 */
+function sampleIdx(si, len) {
+  const n = len - si;
+  const target = 420;
+  const stride = n > target ? Math.ceil(n / target) : 1;
+  const out = [];
+  for (let i = si; i < len; i += stride) out.push(i);
+  if (out[out.length - 1] !== len - 1) out.push(len - 1);
+  return out;
+}
+
+/* 기간별 x축 시간축 설정. '월/연 표기는 처음 한 번 + 바뀔 때만' 규칙 적용 */
+function xTimeScale(kind) {
+  // kind: "day" | "month" | "quarter"
+  const cb = function (value, index, ticks) {
+    const d = new Date(value);
+    const prev = index > 0 && ticks[index - 1] ? new Date(ticks[index - 1].value) : null;
+    if (kind === "day") {
+      const showM = !prev || prev.getMonth() !== d.getMonth();
+      return showM ? `${d.getMonth() + 1}월${d.getDate()}일` : `${d.getDate()}일`;
+    }
+    const yy = String(d.getFullYear()).slice(2);
+    const showY = !prev || prev.getFullYear() !== d.getFullYear();
+    return showY ? `'${yy}.${d.getMonth() + 1}월` : `${d.getMonth() + 1}월`;
+  };
+  const unit = kind === "day" ? "day" : "month";
+  const stepSize = kind === "quarter" ? 3 : 1;
+  return {
+    type: "time",
+    time: { unit, stepSize, tooltipFormat: "yyyy-MM-dd" },
+    ticks: { color: "#8b95a1", maxRotation: 0, autoSkip: true, autoSkipPadding: 16, callback: cb },
+    grid: { color: "#2b333d40" },
+  };
+}
+
+/* state.chartRange → x축 kind */
+function xKind() {
+  if (["1W", "1M"].includes(state.chartRange)) return "day";
+  if (["3M", "6M"].includes(state.chartRange)) return "month";
+  return "quarter"; // 1Y 이상: 3개월 간격
+}
+
 /* 회사별 조회 시 종목 상세 상단에 계좌 버블 스트립 */
 function acctStripHtml(h) {
   if (!h) return "";
@@ -555,13 +600,15 @@ function drawPriceChart(h) {
     return;
   }
 
+  const total = p.dates.length;
   const si = rangeStartIdx(p.dates);
-  const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  const idxs = sampleIdx(si, total);            // 표시할 인덱스 (긴 구간은 스트라이드 샘플)
+  const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   fitScroll("priceChart", xs.length);
-  const slice = (arr) => (arr ? arr.slice(si) : []);
+  const pick = (arr) => (arr ? idxs.map((k) => arr[k]) : []);
   const line = (label, arr, color, w = 1) => ({
     type: "line", label, borderColor: color, borderWidth: w, pointRadius: 0, spanGaps: true, order: 5,
-    data: xs.map((x, i) => ({ x, y: slice(arr)[i] })),
+    data: xs.map((x, i) => ({ x, y: pick(arr)[i] })),
   });
 
   const hasFinancial = !!(window.Chart && Chart.registry.controllers.get("candlestick"));
@@ -572,7 +619,7 @@ function drawPriceChart(h) {
     datasets.push({
       type: "candlestick",
       label: h.name || h.ticker,
-      data: slice(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
+      data: pick(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
       color: { up: "#ef4444", down: "#3b82f6", unchanged: "#8b95a1" },
       order: 10,
     });
@@ -591,9 +638,8 @@ function drawPriceChart(h) {
     datasets.push(line("BB 하단", p.bbands.lower, "#8b95a180"));
   }
 
-  // 내 매수가 (통합 평단가) — 빨간 수평선
   const scales = {
-    x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
+    x: xTimeScale(xKind()),
     y: { position: "right", grid: { color: "#2b333d40" }, ticks: { color: "#8b95a1" } },
   };
   let xMax = xs[xs.length - 1];
@@ -622,7 +668,7 @@ function drawPriceChart(h) {
   }
 
   if (state.overlay.volume && p.volume) {
-    const vol = slice(p.volume);
+    const vol = pick(p.volume);
     const vmax = Math.max(1, ...vol.filter((v) => v != null));
     datasets.push({
       type: "bar", label: "거래량", yAxisID: "vol", order: 20,
@@ -658,10 +704,13 @@ function drawMacdChart(p) {
     el.parentElement.innerHTML = "<h3>MACD (12·26·9)</h3><div class='error'>MACD 데이터 없음</div>";
     return;
   }
-  const si = rangeStartIdx(p.dates);
-  const xs = p.dates.slice(si).map((d) => new Date(d).valueOf());
+  const total = p.dates.length;
+  const idxs = sampleIdx(rangeStartIdx(p.dates), total);
+  const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   fitScroll("macdChart", xs.length);
-  const S = (a) => a.slice(si);
+  const S = (a) => idxs.map((k) => a[k]);
+  const xg = xTimeScale(xKind());
+  xg.grid = { display: false };
   makeChart("macdChart", {
     data: {
       datasets: [
@@ -674,7 +723,7 @@ function drawMacdChart(p) {
     options: {
       parsing: false, responsive: true, maintainAspectRatio: false,
       scales: {
-        x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, ticks: { color: "#8b95a1", maxTicksLimit: 8 }, grid: { display: false } },
+        x: xg,
         y: { position: "right", ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
@@ -714,10 +763,12 @@ function drawRsiChart(p) {
     el.parentElement.innerHTML = "<h3>RSI (14)</h3><div class='error'>RSI 데이터 없음</div>";
     return;
   }
-  const start = rangeStartIdx(p.dates);
-  const xs = p.dates.slice(start).map((d) => new Date(d).valueOf());
+  const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
+  const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   fitScroll("rsiChart", xs.length);
-  const ys = p.rsi.slice(start);
+  const ys = idxs.map((k) => p.rsi[k]);
+  const xg = xTimeScale(xKind());
+  xg.grid = { display: false };
   makeChart("rsiChart", {
     data: {
       datasets: [
@@ -731,13 +782,41 @@ function drawRsiChart(p) {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        x: { type: "time", time: { unit: xs.length > 400 ? "year" : "month" }, ticks: { color: "#8b95a1", maxTicksLimit: 8 }, grid: { display: false } },
+        x: xg,
         y: { position: "right", min: 0, max: 100, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
       plugins: { legend: { display: false } },
     },
+    plugins: [rsiZoneLabels],
   });
 }
+
+/* RSI 차트: 70 이상 '과매수', 30 이하 '과매도' 버블을 y축 눈금 옆에 그린다 */
+const rsiZoneLabels = {
+  id: "rsiZoneLabels",
+  afterDatasetsDraw(chart) {
+    const { ctx, chartArea, scales } = chart;
+    if (!scales.y) return;
+    const draw = (text, yVal, bg) => {
+      const y = scales.y.getPixelForValue(yVal);
+      ctx.save();
+      ctx.font = "600 10px -apple-system, 'Malgun Gothic', sans-serif";
+      const w = ctx.measureText(text).width + 10;
+      const x = chartArea.right - w - 4;
+      ctx.fillStyle = bg;
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x, y - 9, w, 16, 4);
+      else ctx.rect(x, y - 9, w, 16);
+      ctx.fill();
+      ctx.fillStyle = "#fff";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, x + 5, y);
+      ctx.restore();
+    };
+    draw("과매수", 85, "#ef4444cc");
+    draw("과매도", 15, "#3b82f6cc");
+  },
+};
 
 /* ---- 지표 표 ---- */
 function renderFundamentals(h, f) {
@@ -849,6 +928,54 @@ function renderTarget(h, t) {
       <div class="bar-mark" style="left:${posPct}%" title="현재가"></div>
     </div>
     <div class="src">막대=최저~평균 구간, 세로선=현재가 · 출처 ${t.source || "—"}</div>`;
+}
+
+/* ---- 주가전망: 증권사별 목표가를 상단/중간/하단으로 나눠 회사명 버블 표기 ---- */
+function renderForecast(h, t) {
+  const box = document.getElementById("forecastBox");
+  if (!box) return;
+  const m = h.market;
+  const list = ((t && t.analyst_targets) || []).filter((x) => x && x.target != null);
+
+  if (!list.length) {
+    const firms = (t && t.covering_firms) || [];
+    box.innerHTML = firms.length
+      ? `<div class="src" style="margin-bottom:6px">개별 목표가 미확인 · 최근 커버 증권사</div>
+         <div class="firm-bubbles">${firms.map((f) => `<span class="bubble">${escapeHtml(f)}</span>`).join("")}</div>`
+      : "<div class='error'>증권사 전망 정보 없음</div>";
+    return;
+  }
+
+  const sorted = [...list].sort((a, b) => b.target - a.target);
+  const n = sorted.length;
+  const cut = Math.max(1, Math.round(n / 3));
+  const tiers = [
+    ["상단", sorted.slice(0, cut), "pos"],
+    ["중간", sorted.slice(cut, n - cut), ""],
+    ["하단", sorted.slice(n - cut), "neg"],
+  ];
+
+  const tierHtml = tiers
+    .filter(([, arr]) => arr.length)
+    .map(
+      ([name, arr, klass]) => `
+      <div class="fc-tier">
+        <div class="fc-tier-h ${klass}">${name}</div>
+        <div class="firm-bubbles">
+          ${arr
+            .map(
+              (x) =>
+                `<span class="bubble">${escapeHtml(x.firm)} <b>${fmt.price(x.target, m)}</b></span>`
+            )
+            .join("")}
+        </div>
+      </div>`
+    )
+    .join("");
+
+  box.innerHTML =
+    tierHtml +
+    `<div class="src" style="margin-top:8px">리포트 미리보기에서 추출한 근사치 · 증권사별 최신 1건</div>`;
 }
 
 /* ---- 뉴스 ---- */
