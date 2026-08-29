@@ -1008,10 +1008,10 @@ function renderIndices() {
     })
     .join("");
   box.innerHTML = `
-    <table class="idx-table">
+    <div class="tbl-scroll"><table class="idx-table">
       <thead><tr><th>지수</th><th>현재가</th><th>전일대비</th><th>등락율</th></tr></thead>
       <tbody>${rows}</tbody>
-    </table>
+    </table></div>
     <div class="src" style="margin-top:6px">전일 종가 기준 · ${shortDate(d.updated_at)}</div>`;
 }
 
@@ -1039,10 +1039,10 @@ function renderEtfHoldings(d) {
     })
     .join("");
   box.innerHTML = `
-    <table class="idx-table">
+    <div class="tbl-scroll"><table class="idx-table">
       <thead><tr><th>종목명</th><th>현재가</th><th>전일대비</th><th>등락율</th><th>비중</th></tr></thead>
       <tbody>${rows}</tbody>
-    </table>
+    </table></div>
     <div class="src" style="margin-top:6px">${escapeHtml(d.base_index || "")} 추종 · 상위 ${d.constituents.length}종목 · ${shortDate(d.as_of)}</div>`;
 }
 
@@ -1174,10 +1174,8 @@ function renderForecast(h, t) {
   let tiers;
   if (n === 1) {
     tiers = [["중간", items, ""]];
-  } else if (n === 2) {
-    tiers = [["상단", [items[0]], "pos"], ["하단", [items[1]], "neg"]];
   } else {
-    const per = Math.min(3, Math.ceil(n / 3));
+    const per = Math.max(1, Math.floor(n / 3)); // n=2→1, n=4→1, n=6→2, n=9→3
     tiers = [
       ["상단", items.slice(0, per), "pos"],
       ["중간", items.slice(per, n - per).slice(0, 3), ""],
@@ -1202,7 +1200,11 @@ function renderForecast(h, t) {
       </div>`
       )
       .join("") +
-    `<div class="src" style="margin-top:8px">최근 1개월 리포트 목표가 (${items.length}건) · 클릭 시 리포트</div>`;
+    `<div class="src" style="margin-top:8px">${
+      t && t.source === "yfinance"
+        ? "야후 파이낸스 애널리스트 목표가 (최고/평균/중앙값/최저)"
+        : `최근 1개월 리포트 목표가 (${items.length}건)`
+    } · 클릭 시 출처</div>`;
 }
 
 /* ---- 뉴스 ---- */

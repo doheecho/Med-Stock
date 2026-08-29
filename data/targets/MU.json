@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T14:36:09+09:00",
+  "updated_at": "2026-08-29T14:47:33+09:00",
   "source": "yfinance",
   "target_high": 2200.0,
   "target_low": 361.0,
@@ -9,6 +9,28 @@
   "opinion": "strong_buy",
   "opinion_score": 1.3617,
   "current_price": 932.86,
+  "analyst_targets": [
+    {
+      "firm": "최고",
+      "target": 2200.0,
+      "url": "https://finance.yahoo.com/quote/MU/analysis"
+    },
+    {
+      "firm": "평균",
+      "target": 1513.409,
+      "url": "https://finance.yahoo.com/quote/MU/analysis"
+    },
+    {
+      "firm": "중앙값",
+      "target": 1545.0,
+      "url": "https://finance.yahoo.com/quote/MU/analysis"
+    },
+    {
+      "firm": "최저",
+      "target": 361.0,
+      "url": "https://finance.yahoo.com/quote/MU/analysis"
+    }
+  ],
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US"

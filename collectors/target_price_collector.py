@@ -203,16 +203,28 @@ def _yf_target(ticker: str) -> dict:
 
     t = yf.Ticker(ticker)
     info = t.info or {}
+    hi = _n(info.get("targetHighPrice"))
+    lo = _n(info.get("targetLowPrice"))
+    avg = _n(info.get("targetMeanPrice"))
+    med = _n(info.get("targetMedianPrice"))
+    yurl = f"https://finance.yahoo.com/quote/{ticker}/analysis"
+    # 개별 애널리스트 목표가는 무료로 안 나오므로 최고/평균/중앙값/최저를 전망치로
+    analyst = [
+        {"firm": name, "target": v, "url": yurl}
+        for name, v in (("최고", hi), ("평균", avg), ("중앙값", med), ("최저", lo))
+        if v is not None
+    ]
     out = {
         "source": "yfinance",
-        "target_high": _n(info.get("targetHighPrice")),
-        "target_low": _n(info.get("targetLowPrice")),
-        "target_avg": _n(info.get("targetMeanPrice")),
-        "target_median": _n(info.get("targetMedianPrice")),
+        "target_high": hi,
+        "target_low": lo,
+        "target_avg": avg,
+        "target_median": med,
         "num_analysts": info.get("numberOfAnalystOpinions"),
         "opinion": info.get("recommendationKey"),
         "opinion_score": _n(info.get("recommendationMean")),
         "current_price": _n(info.get("currentPrice")),
+        "analyst_targets": analyst,
     }
     return {k: v for k, v in out.items() if v is not None}
 
