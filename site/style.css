@@ -93,7 +93,17 @@ body {
 .chart-box {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 6px; height: 320px; display: flex;
+  position: relative;
 }
+/* 원그래프 우측 상단 종목별/회사별 토글 (절대배치 → 도넛 크기 영향 없음) */
+.pie-toggle {
+  position: absolute; top: 8px; right: 8px; z-index: 2;
+  background: var(--panel-2); color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 3px 11px; font-size: 11px; cursor: pointer;
+}
+.pie-toggle:hover { border-color: var(--accent); color: var(--text); }
+.pie-toggle.on { color: var(--text); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel-2)); }
 .chart-box canvas { flex: 1 1 auto; }
 .table-wrap {
   background: var(--panel); border: 1px solid var(--line);
@@ -111,14 +121,16 @@ tbody tr:last-child td { border-bottom: none; }
 .neg { color: var(--down); }
 td.dim { color: var(--muted); }
 
-/* 종목별 / 회사별 조회 토글 */
-.view-toggle { display: flex; gap: 6px; margin-top: 16px; }
-.view-toggle button {
-  background: var(--panel); color: var(--muted); border: 1px solid var(--line);
-  border-radius: 999px; padding: 6px 14px; cursor: pointer; font-size: 12px;
+/* 완료 토스트 */
+.toast {
+  position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%) translateY(8px);
+  background: var(--panel-2); color: var(--text);
+  border: 1px solid var(--accent); border-radius: 999px;
+  padding: 8px 18px; font-size: 13px; z-index: 100;
+  opacity: 0; transition: opacity .3s, transform .3s; pointer-events: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,.3);
 }
-.view-toggle button:hover { border-color: var(--accent); }
-.view-toggle button.active { color: var(--text); border-color: var(--accent); background: var(--panel-2); }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 /* 표: 종목 행 vs 계좌 하위 행 */
 tr.lvl-ticker td { font-weight: 600; }
@@ -189,9 +201,13 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 #flowChart { height: 190px !important; }
 #weightChart { width: 100% !important; height: 100% !important; }
 
-.kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }
 .kv dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+/* 기본지표·목표주가 갭: 항목마다 줄 구분 */
+#fundBox .kv > *, #targetBox .kv > * { border-bottom: 1px solid var(--line); padding: 5px 0; }
+#fundBox .kv > dt:last-of-type, #fundBox .kv > dd:last-of-type,
+#targetBox .kv > dt:last-of-type, #targetBox .kv > dd:last-of-type { border-bottom: none; }
 
 /* 주요 지수 표 */
 .idx-table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }

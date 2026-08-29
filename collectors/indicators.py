@@ -85,6 +85,7 @@ def build_price_series(df: pd.DataFrame) -> dict:
     volume = (
         [_int(v) for v in df["volume"].tolist()] if "volume" in df else [None] * len(df)
     )
+    _valid = close.dropna()
 
     return {
         "dates": dates,
@@ -95,8 +96,9 @@ def build_price_series(df: pd.DataFrame) -> dict:
         "bbands": bollinger(close),
         "macd": macd(close),
         "rsi": rsi(close),
-        "last_close": _round(close.iloc[-1]) if len(close) else None,
-        "prev_close": _round(close.iloc[-2]) if len(close) > 1 else None,
+        # 마지막 봉이 NaN 인 경우가 있어 유효값 기준으로
+        "last_close": _round(_valid.iloc[-1]) if len(_valid) else None,
+        "prev_close": _round(_valid.iloc[-2]) if len(_valid) > 1 else None,
         "last_date": dates[-1] if dates else None,
     }
 

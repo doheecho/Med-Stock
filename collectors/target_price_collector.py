@@ -95,12 +95,15 @@ def _last_close(ticker: str):
         return None
 
 
+_RECENT_DAYS = 31  # 주가전망: 최근 1개월 내 리포트만
+
+
 def _analyst_targets(ticker: str) -> list[dict]:
     """네이버 리서치 리포트에서 (증권사, 목표가, 리포트링크) 추출.
-    증권사별 '가장 최신 일자에 목표가가 파싱된 1건'만. 최근 12개월 + 현재가의
-    0.4~4배 범위만 채택(오래된/이상치 제외). 목표가 내림차순."""
+    증권사별 '가장 최신 일자에 목표가가 파싱된 1건'만. 최근 1개월 + 현재가의
+    0.7~4배 범위만 채택(오래된/이상치 제외). 목표가 내림차순."""
     rows = []
-    for pg in (1, 2):
+    for pg in (1,):  # 1개월 필터라 1페이지면 충분
         try:
             r = requests.get(
                 f"https://m.stock.naver.com/api/research/stock/{ticker}?page={pg}&pageSize=50",
@@ -117,16 +120,16 @@ def _analyst_targets(ticker: str) -> list[dict]:
     # 현재가보다 30% 넘게 낮은 목표가는 갱신 안 된 옛 리포트로 보고 제외
     lo = cur * 0.7 if cur else None
     hi = cur * 4 if cur else None
-    cutoff = (today_kst() - _dt.timedelta(days=365)).isoformat()
+    cutoff = (today_kst() - _dt.timedelta(days=_RECENT_DAYS)).isoformat()
 
     by_firm: dict[str, dict] = {}
-    detail_budget = 12
+    detail_budget = 6
     for x in rows:                                    # 목록은 최신순
         firm = (x.get("brokerName") or "").strip() or "(미상)"
         if firm in by_firm:
             continue
         date = str(x.get("writeDate") or "")
-        if date and date < cutoff:                    # 1년 넘은 리포트 제외
+        if date and date < cutoff:                    # 1개월 넘은 리포트 제외
             continue
         rid = x.get("researchId")
         tgt = _parse_target(f"{x.get('title', '')} {x.get('previewContent', '')}")

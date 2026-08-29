@@ -130,6 +130,20 @@ wrangler deploy proxy/worker.js --name med-stock-proxy --compatibility-date 2024
 
 응답은 `{ ticker, price, prevClose, changePct, currency, source, raw }` 로 정규화된다.
 
+### 4-1. (선택) 버튼으로 워크플로 트리거
+
+상단 **↻ AI Advisor** 버튼이 GitHub 의 "Refresh AI Advisor" 워크플로를 바로 실행하게 하려면
+워커에 시크릿 2개를 넣는다 (`PROXY_BASE` 설정 전제):
+
+```powershell
+wrangler secret put GH_DISPATCH_TOKEN   # fine-grained PAT, 이 리포 Actions: Read and write
+wrangler secret put GH_REPO             # 예: doheecho/Med-Stock
+```
+
+- 워커 라우트: `GET {PROXY_BASE}/dispatch?wf=advisor` (또는 `wf=update`) → `workflow_dispatch`
+- 시크릿이 없으면 501 을 돌려주고, 대시보드는 그냥 `advisor.json` 을 다시 불러온다.
+- 토큰은 워커 시크릿에만 있고 정적 사이트/코드에는 없다.
+
 ---
 
 ## 5. GitHub Pages 배포

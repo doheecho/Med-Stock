@@ -74,9 +74,9 @@ async function init() {
   } catch (_) {}
   document.getElementById("refreshBtn").addEventListener("click", refreshData);
   document.getElementById("advisorBtn").addEventListener("click", refreshAdvisor);
-  document.querySelectorAll("#viewToggle button").forEach((b) => {
-    b.addEventListener("click", () => setViewMode(b.dataset.mode));
-  });
+  document.getElementById("viewToggleBtn").addEventListener("click", () =>
+    setViewMode(state.viewMode === "byAccount" ? "byTicker" : "byAccount")
+  );
   document.querySelectorAll("#posTable thead th").forEach((th) => {
     if (th.dataset.key) th.addEventListener("click", () => onSort(th.dataset.key));
   });
@@ -120,6 +120,7 @@ async function init() {
       "배치 기준일 " + ((snapshot && snapshot.as_of) || "—");
 
     buildTabs();
+    syncViewToggleBtn();
     renderSummary();
     selectTicker(state.holdings[0].ticker);
 
@@ -165,18 +166,41 @@ function renderAdvisor() {
     (a.updated_at ? ` <span class="src">(${escapeHtml(shortDate(a.updated_at))})</span>` : "");
 }
 
-/* ↻ 현재가 갱신: 배치 시세 JSON(snapshot·prices)을 다시 받아 재렌더 + 프록시 실시간 조회 */
-async function refreshData() {
-  const btn = document.getElementById("refreshBtn");
+/* 일시적 완료 토스트 */
+let _toastTimer = null;
+function showToast(msg, ms = 2500) {
+  const el = document.getElementById("toast");
+  if (!el || !msg) return;
+  el.textContent = msg;
+  el.hidden = false;
+  el.classList.add("show");
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => {
+    el.classList.remove("show");
+    setTimeout(() => (el.hidden = true), 400);
+  }, ms);
+}
+
+async function _withBusy(btn, fn) {
   btn.disabled = true;
   const label = btn.textContent;
-  btn.textContent = "불러오는 중…";
+  btn.textContent = "…";
   try {
-    const snap = await getJSON(`${state.dataBase}/snapshot.json`).catch(() => null);
+    return await fn();
+  } finally {
+    btn.disabled = false;
+    btn.textContent = label;
+  }
+}
+
+/* ↻ 현재가 갱신: 프록시가 있으면 실시간 시세, 없으면 배치 JSON 재fetch */
+async function refreshData() {
+  await _withBusy(document.getElementById("refreshBtn"), async () => {
+    const snap = await getJSON(`${state.dataBase}/snapshot.json?t=${Date.now()}`).catch(() => null);
     if (snap) state.snapshot = snap;
     await Promise.all(
       state.holdings.map(async (h) => {
-        const p = await getJSON(`${state.dataBase}/prices/${h.ticker}.json`).catch(() => null);
+        const p = await getJSON(`${state.dataBase}/prices/${h.ticker}.json?t=${Date.now()}`).catch(() => null);
         if (p) state.prices[h.ticker] = p;
       })
     );
@@ -184,26 +208,38 @@ async function refreshData() {
     renderSummary();
     await refreshLive();
     if (state.active) renderDetail(state.active);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = label;
-  }
+    showToast(PROXY_BASE ? "현재가 갱신 완료" : "시세 데이터 갱신 완료");
+  });
 }
 
-/* ↻ AI Advisor: advisor.json 만 다시 받아 상단 코멘트 갱신 (재생성은 Actions 담당) */
+/* ↻ AI Advisor: 프록시가 있으면 GitHub 워크플로 트리거, 없으면 advisor.json 재fetch */
 async function refreshAdvisor() {
-  const btn = document.getElementById("advisorBtn");
-  btn.disabled = true;
-  const label = btn.textContent;
-  btn.textContent = "불러오는 중…";
-  try {
+  await _withBusy(document.getElementById("advisorBtn"), async () => {
+    if (PROXY_BASE) {
+      const r = await getJSON(`${PROXY_BASE}/dispatch?wf=advisor`).catch((e) => ({ error: String(e) }));
+      if (r && r.ok) {
+        showToast("AI Advisor 재생성 요청됨 · 1~2분 후 자동 반영", 3500);
+        // 잠시 후부터 몇 차례 advisor.json 을 확인해 갱신되면 반영
+        const before = state.advisor && state.advisor.updated_at;
+        for (let i = 0; i < 12; i++) {
+          await new Promise((s) => setTimeout(s, 12000));
+          const a = await getJSON(`${state.dataBase}/advisor.json?t=${Date.now()}`).catch(() => null);
+          if (a && a.updated_at !== before) {
+            state.advisor = a;
+            renderAdvisor();
+            showToast("AI Advisor 갱신 완료");
+            return;
+          }
+        }
+        return;
+      }
+      showToast("워크플로 트리거 실패 · 최신 코멘트만 불러옵니다");
+    }
     const a = await getJSON(`${state.dataBase}/advisor.json?t=${Date.now()}`).catch(() => null);
     if (a) state.advisor = a;
     renderAdvisor();
-  } finally {
-    btn.disabled = false;
-    btn.textContent = label;
-  }
+    showToast(PROXY_BASE ? "" : "AI Advisor 불러오기 완료");
+  });
 }
 
 /* ------------------------------------------------------------------ 실시간 현재가 */
@@ -241,20 +277,31 @@ async function refreshLive() {
   if (state.active) renderDetail(state.active);
 }
 
-/* live 우선, 없으면 종가 */
+/* live 우선 → last_close → 종가 배열의 마지막 유효값 */
 function priceOf(ticker) {
   const l = state.live[ticker];
   if (l && l.price != null) return l.price;
   const p = state.prices[ticker];
-  return p ? p.last_close : null;
+  if (!p) return null;
+  if (p.last_close != null) return p.last_close;
+  if (Array.isArray(p.close)) {
+    for (let i = p.close.length - 1; i >= 0; i--) if (p.close[i] != null) return p.close[i];
+  }
+  return null;
 }
 
 /* ------------------------------------------------------------------ 요약 */
+function syncViewToggleBtn() {
+  const b = document.getElementById("viewToggleBtn");
+  if (b) {
+    b.textContent = state.viewMode === "byAccount" ? "종목별" : "회사별";
+    b.classList.toggle("on", state.viewMode === "byAccount");
+  }
+}
+
 function setViewMode(mode) {
   state.viewMode = mode === "byAccount" ? "byAccount" : "byTicker";
-  document.querySelectorAll("#viewToggle button").forEach((b) => {
-    b.classList.toggle("active", b.dataset.mode === state.viewMode);
-  });
+  syncViewToggleBtn();
   renderSummary();
   if (state.active) renderDetail(state.active);
 }
@@ -1044,8 +1091,33 @@ function drawFlowChart(flow) {
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
+    plugins: [dayDividers],
   });
 }
+
+/* 수급 막대: 일자별 세로 점선 구분선 */
+const dayDividers = {
+  id: "dayDividers",
+  afterDatasetsDraw(chart) {
+    const x = chart.scales.x;
+    if (!x || !x.ticks || x.ticks.length < 2) return;
+    const { top, bottom } = chart.chartArea;
+    const band = x.getPixelForTick(1) - x.getPixelForTick(0);
+    const ctx = chart.ctx;
+    ctx.save();
+    ctx.strokeStyle = "#8b95a155";
+    ctx.lineWidth = 1;
+    ctx.setLineDash([3, 3]);
+    for (let i = 0; i <= x.ticks.length; i++) {
+      const px = x.getPixelForTick(Math.min(i, x.ticks.length - 1)) + (i === x.ticks.length ? band / 2 : -band / 2);
+      ctx.beginPath();
+      ctx.moveTo(px, top);
+      ctx.lineTo(px, bottom);
+      ctx.stroke();
+    }
+    ctx.restore();
+  },
+};
 
 /* ---- 목표주가 갭 ---- */
 function renderTarget(h, t) {
@@ -1130,7 +1202,7 @@ function renderForecast(h, t) {
       </div>`
       )
       .join("") +
-    `<div class="src" style="margin-top:8px">리포트에서 추출한 목표가 근사치 (${items.length}건) · 클릭 시 리포트</div>`;
+    `<div class="src" style="margin-top:8px">최근 1개월 리포트 목표가 (${items.length}건) · 클릭 시 리포트</div>`;
 }
 
 /* ---- 뉴스 ---- */
@@ -1140,11 +1212,12 @@ function renderNews(news) {
     box.innerHTML = "<li class='error'>뉴스 없음</li>";
     return;
   }
-  box.innerHTML = news.items
-    .slice(0, 12)
+  box.innerHTML = [...news.items]
+    .sort((a, b) => (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0)) // 최신순
+    .slice(0, 10)
     .map(
       (n) => `<li><a href="${n.url}" target="_blank" rel="noopener">${escapeHtml(n.title)}</a>
-        <span class="src">${escapeHtml(n.source || "")} ${escapeHtml(shortDate(n.date))}</span></li>`
+        <span class="src">${escapeHtml(n.source || "")} ${escapeHtml(newsTime(n.date))}</span></li>`
     )
     .join("");
 }
@@ -1154,6 +1227,14 @@ function shortDate(d) {
   const t = Date.parse(d);
   if (!isNaN(t)) return new Date(t).toISOString().slice(0, 10);
   return String(d).slice(0, 16);
+}
+/* 뉴스: 날짜 + 시:분 (있으면) */
+function newsTime(d) {
+  const t = Date.parse(d);
+  if (isNaN(t)) return String(d || "").slice(0, 16);
+  const x = new Date(t);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${x.getFullYear()}-${p(x.getMonth() + 1)}-${p(x.getDate())} ${p(x.getHours())}:${p(x.getMinutes())}`;
 }
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

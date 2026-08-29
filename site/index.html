@@ -27,13 +27,12 @@
     </div>
 
     <div id="advisor" class="advisor" hidden></div>
-    <div id="viewToggle" class="view-toggle">
-      <button type="button" data-mode="byTicker" class="active">종목별 조회</button>
-      <button type="button" data-mode="byAccount">회사별 조회</button>
-    </div>
 
     <div class="summary-charts">
-      <div class="chart-box"><canvas id="weightChart"></canvas></div>
+      <div class="chart-box">
+        <button id="viewToggleBtn" class="pie-toggle" type="button">회사별</button>
+        <canvas id="weightChart"></canvas>
+      </div>
       <div class="table-wrap">
         <table id="posTable">
           <thead>
@@ -61,6 +60,8 @@
   <footer class="foot">
     <span>배치 데이터: GitHub Actions (평일 장마감 후 1회) · 현재가: Cloudflare Worker 프록시</span>
   </footer>
+
+  <div id="toast" class="toast" hidden></div>
 
   <!-- Chart.js v4 + 날짜 어댑터 + 캔들 플러그인 -->
   <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>

@@ -21,12 +21,20 @@ const CORS = {
 };
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: CORS });
     }
 
     const url = new URL(request.url);
+
+    // GET /dispatch?wf=advisor  → GitHub Actions workflow_dispatch 트리거
+    //   필요 Worker 시크릿:  GH_DISPATCH_TOKEN (fine-grained PAT, Actions: read/write)
+    //                        GH_REPO          (예: "doheecho/Med-Stock")
+    if (url.pathname.replace(/\/+$/, "") === "/dispatch") {
+      return dispatchWorkflow(url.searchParams.get("wf") || "advisor", env);
+    }
+
     const ticker = (url.searchParams.get("ticker") || "").trim();
     if (!ticker) {
       return json({ error: "ticker required" }, 400);
@@ -43,6 +51,31 @@ export default {
     }
   },
 };
+
+const _WF_FILE = { advisor: "advisor.yml", update: "update.yml" };
+
+async function dispatchWorkflow(wf, env) {
+  const file = _WF_FILE[wf];
+  if (!file) return json({ error: "unknown workflow" }, 400);
+  if (!env || !env.GH_DISPATCH_TOKEN || !env.GH_REPO) {
+    return json({ error: "worker secrets GH_DISPATCH_TOKEN / GH_REPO 미설정" }, 501);
+  }
+  const res = await fetch(
+    `https://api.github.com/repos/${env.GH_REPO}/actions/workflows/${file}/dispatches`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "med-stock-proxy",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    }
+  );
+  // 성공 시 204 No Content
+  return json({ ok: res.status === 204, status: res.status, workflow: file }, res.status === 204 ? 200 : 502);
+}
 
 function json(obj, status) {
   return new Response(JSON.stringify(obj), {
