@@ -72,6 +72,35 @@ tbody tr:last-child td { border-bottom: none; }
 .pos { color: var(--up); }
 .neg { color: var(--down); }
 
+/* 종목별 / 회사별 조회 토글 */
+.view-toggle { display: flex; gap: 6px; margin-top: 16px; }
+.view-toggle button {
+  background: var(--panel); color: var(--muted); border: 1px solid var(--line);
+  border-radius: 999px; padding: 6px 14px; cursor: pointer; font-size: 12px;
+}
+.view-toggle button:hover { border-color: var(--accent); }
+.view-toggle button.active { color: var(--text); border-color: var(--accent); background: var(--panel-2); }
+
+/* 표: 종목 행 vs 계좌 하위 행 */
+tr.lvl-ticker td { font-weight: 600; }
+tr.lvl-account td { font-weight: 400; color: var(--muted); }
+tr.lvl-account td:first-child { padding-left: 22px; }
+tr.lvl-account .pos, tr.lvl-account .neg { color: inherit; }
+tr.lvl-account td.pos { color: var(--up); }
+tr.lvl-account td.neg { color: var(--down); }
+
+.bubble {
+  display: inline-block; background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 2px 9px; font-size: 11px; color: var(--text);
+}
+
+/* 종목 상세 상단 계좌 스트립 */
+.acct-strip .acct-cards {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+}
+.acct-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.acct-card .bubble { margin-bottom: 8px; }
+
 .tabs {
   display: flex; gap: 6px; padding: 0 20px; margin-top: 8px;
   border-bottom: 1px solid var(--line); flex-wrap: wrap;

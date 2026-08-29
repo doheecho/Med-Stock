@@ -32,7 +32,9 @@ export default {
       return json({ error: "ticker required" }, 400);
     }
 
-    const isKRX = /^\d{6}$/.test(ticker);
+    // KRX 종목/ETF 코드: 6자리, 숫자로 시작(ETF 는 "0183J0" 처럼 영문 혼합 가능).
+    // 미국 심볼은 영문으로 시작(MU, AAPL...) → 야후로 라우팅.
+    const isKRX = /^\d[0-9A-Z]{5}$/.test(ticker);
     try {
       const data = isKRX ? await fetchNaver(ticker) : await fetchYahoo(ticker);
       return json(data, 200);

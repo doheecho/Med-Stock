@@ -1,11 +1,254 @@
 {
-  "updated_at": null,
-  "as_of": null,
+  "updated_at": "2026-08-29T10:46:31+09:00",
+  "as_of": "2026-08-29",
   "basis": "close",
-  "note": "collectors 실행 전 자리표시자. GitHub Actions 'Update dashboard data' 최초 실행 후 실제 값으로 교체됨.",
-  "total_cost": null,
-  "total_value_close": null,
+  "total_cost": 130265210.28,
+  "total_value_close": 0.0,
   "total_pl_close": null,
   "total_pl_pct_close": null,
-  "positions": []
+  "positions": [
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "KRX",
+      "buy_price": 112521.52068965517,
+      "quantity": 290.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 118319.0,
+          "quantity": 181.0,
+          "buy_date": null,
+          "cost_basis": 21415739.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        },
+        {
+          "account": "미래에셋(RIA)",
+          "buy_price": 362094.0,
+          "quantity": 5.0,
+          "buy_date": null,
+          "cost_basis": 1810470.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        },
+        {
+          "account": "NH투자증권",
+          "buy_price": 90433.0,
+          "quantity": 104.0,
+          "buy_date": null,
+          "cost_basis": 9405032.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 32631241.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "market": "KRX",
+      "buy_price": 707299.55,
+      "quantity": 80.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 476436.0,
+          "quantity": 70.0,
+          "buy_date": null,
+          "cost_basis": 33350520.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        },
+        {
+          "account": "미래에셋(RIA)",
+          "buy_price": 2343361.0,
+          "quantity": 4.0,
+          "buy_date": null,
+          "cost_basis": 9373444.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        },
+        {
+          "account": "NH투자증권",
+          "buy_price": 2310000.0,
+          "quantity": 6.0,
+          "buy_date": null,
+          "cost_basis": 13860000.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 56583964.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "MU",
+      "name": "마이크론 테크놀로지",
+      "market": "US",
+      "buy_price": 272.92,
+      "quantity": 9.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 272.92,
+          "quantity": 9.0,
+          "buy_date": null,
+          "cost_basis": 2456.28,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 2456.28,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "0183J0",
+      "name": "TIGER 미국우주테크",
+      "market": "KRX",
+      "buy_price": 14910.0,
+      "quantity": 37.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "NH투자증권",
+          "buy_price": 14910.0,
+          "quantity": 37.0,
+          "buy_date": null,
+          "cost_basis": 551670.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 551670.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "069500",
+      "name": "KODEX 200",
+      "market": "KRX",
+      "buy_price": 94683.0,
+      "quantity": 130.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 94683.0,
+          "quantity": 130.0,
+          "buy_date": null,
+          "cost_basis": 12308790.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 12308790.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "091160",
+      "name": "KODEX 반도체",
+      "market": "KRX",
+      "buy_price": 106296.0,
+      "quantity": 250.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 106296.0,
+          "quantity": 250.0,
+          "buy_date": null,
+          "cost_basis": 26574000.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 26574000.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    },
+    {
+      "ticker": "278540",
+      "name": "KODEX MSCI Korea TR",
+      "market": "KRX",
+      "buy_price": 43597.0,
+      "quantity": 37.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 43597.0,
+          "quantity": 37.0,
+          "buy_date": null,
+          "cost_basis": 1613089.0,
+          "eval_value_close": null,
+          "pl_close": null,
+          "pl_pct_close": null
+        }
+      ],
+      "last_close": null,
+      "cost_basis": 1613089.0,
+      "eval_value_close": null,
+      "pl_close": null,
+      "pl_pct_close": null,
+      "target_avg": null,
+      "target_high": null,
+      "target_low": null,
+      "opinion": null
+    }
+  ]
 }

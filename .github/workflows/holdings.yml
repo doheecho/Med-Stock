@@ -1,0 +1,54 @@
+name: Rebuild holdings
+
+# 보유종목 단방향 업데이트 흐름:
+#   GitHub 웹에서 holdings.yaml (또는 scenarios.yaml) 수정 → main 에 커밋
+#     → 이 워크플로가 data/holdings.json · scenarios.json · snapshot.json 재생성·커밋
+#       → "Deploy dashboard to GitHub Pages" 가 data/** 변경을 받아 자동 재배포
+#
+# 시세/재무/뉴스 스크래핑은 하지 않는다(그건 update.yml 담당). pyyaml 만 있으면 되므로 수초 내 완료.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "holdings.yaml"
+      - "scenarios.yaml"
+      - ".github/workflows/holdings.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-holdings
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pyyaml
+        run: pip install "pyyaml>=6"
+
+      - name: Rebuild data/*.json from holdings.yaml
+        working-directory: collectors
+        run: python snapshot_builder.py
+
+      - name: Commit regenerated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/holdings.json data/scenarios.json data/snapshot.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: rebuild holdings JSON ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main
+            git push
+          fi

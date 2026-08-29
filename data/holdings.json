@@ -1,0 +1,141 @@
+{
+  "updated_at": "2026-08-29T10:46:31+09:00",
+  "holdings": [
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "KRX",
+      "quantity": 290.0,
+      "buy_price": 112521.52068965517,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 118319.0,
+          "quantity": 181.0,
+          "buy_date": null
+        },
+        {
+          "account": "미래에셋(RIA)",
+          "buy_price": 362094.0,
+          "quantity": 5.0,
+          "buy_date": null
+        },
+        {
+          "account": "NH투자증권",
+          "buy_price": 90433.0,
+          "quantity": 104.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "market": "KRX",
+      "quantity": 80.0,
+      "buy_price": 707299.55,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 476436.0,
+          "quantity": 70.0,
+          "buy_date": null
+        },
+        {
+          "account": "미래에셋(RIA)",
+          "buy_price": 2343361.0,
+          "quantity": 4.0,
+          "buy_date": null
+        },
+        {
+          "account": "NH투자증권",
+          "buy_price": 2310000.0,
+          "quantity": 6.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "마이크론 테크놀로지",
+      "market": "US",
+      "quantity": 9.0,
+      "buy_price": 272.92,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "미래에셋",
+          "buy_price": 272.92,
+          "quantity": 9.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "0183J0",
+      "name": "TIGER 미국우주테크",
+      "market": "KRX",
+      "quantity": 37.0,
+      "buy_price": 14910.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "NH투자증권",
+          "buy_price": 14910.0,
+          "quantity": 37.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "069500",
+      "name": "KODEX 200",
+      "market": "KRX",
+      "quantity": 130.0,
+      "buy_price": 94683.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 94683.0,
+          "quantity": 130.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "091160",
+      "name": "KODEX 반도체",
+      "market": "KRX",
+      "quantity": 250.0,
+      "buy_price": 106296.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 106296.0,
+          "quantity": 250.0,
+          "buy_date": null
+        }
+      ]
+    },
+    {
+      "ticker": "278540",
+      "name": "KODEX MSCI Korea TR",
+      "market": "KRX",
+      "quantity": 37.0,
+      "buy_price": 43597.0,
+      "buy_date": null,
+      "lots": [
+        {
+          "account": "삼성증권",
+          "buy_price": 43597.0,
+          "quantity": 37.0,
+          "buy_date": null
+        }
+      ]
+    }
+  ]
+}

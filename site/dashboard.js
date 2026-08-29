@@ -16,6 +16,7 @@ const state = {
   live: {},         // ticker -> {price, prevClose, currency,...}
   active: null,
   charts: {},       // canvasId -> Chart
+  viewMode: "byTicker", // "byTicker" | "byAccount"
 };
 
 const fmt = {
@@ -33,6 +34,9 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   document.getElementById("refreshBtn").addEventListener("click", refreshLive);
+  document.querySelectorAll("#viewToggle button").forEach((b) => {
+    b.addEventListener("click", () => setViewMode(b.dataset.mode));
+  });
   try {
     state.dataBase = await resolveDataBase();
     const [holdings, scenarios, snapshot] = await Promise.all([
@@ -49,7 +53,7 @@ async function init() {
       [];
 
     if (!state.holdings.length) {
-      return fail("holdings 데이터를 찾을 수 없습니다. 먼저 collectors 를 실행해 data/ 를 생성하세요.");
+      return fail("보유종목이 비어 있습니다. GitHub 리포지토리의 holdings.yaml 을 수정하면 'Rebuild holdings' 워크플로가 data/holdings.json 을 재생성합니다.");
     }
 
     // 가격 시계열 로드
@@ -137,19 +141,39 @@ function priceOf(ticker) {
 }
 
 /* ------------------------------------------------------------------ 요약 */
-function computePosition(h) {
-  const cur = priceOf(h.ticker);
-  const cost = h.buy_price * h.quantity;
-  const value = cur == null ? null : cur * h.quantity;
+function setViewMode(mode) {
+  state.viewMode = mode === "byAccount" ? "byAccount" : "byTicker";
+  document.querySelectorAll("#viewToggle button").forEach((b) => {
+    b.classList.toggle("active", b.dataset.mode === state.viewMode);
+  });
+  renderSummary();
+  if (state.active) renderDetail(state.active);
+}
+
+/* holdings.json 에 lots 가 없던(구버전) 경우 단일 계좌로 취급 */
+function lotsOf(h) {
+  if (Array.isArray(h.lots) && h.lots.length) return h.lots;
+  return [{ account: "기본", buy_price: h.buy_price, quantity: h.quantity }];
+}
+
+function compute(buy_price, quantity, ticker) {
+  const cur = priceOf(ticker);
+  const cost = buy_price * quantity;
+  const value = cur == null ? null : cur * quantity;
   const pl = value == null ? null : value - cost;
   const plPct = pl == null || !cost ? null : (pl / cost) * 100;
   return { cur, cost, value, pl, plPct };
+}
+
+function computePosition(h) {
+  return compute(h.buy_price, h.quantity, h.ticker);
 }
 
 function renderSummary() {
   const rows = state.holdings.map((h) => ({ h, ...computePosition(h) }));
 
   // 통화별로 합산 (환율 환산 없음 — 개인용, 통화 섞어 더하지 않는다)
+  // 종목별/회사별 어느 뷰든 총합은 동일하다.
   const byCcy = {};
   for (const r of rows) {
     const ccy = r.h.market === "US" ? "USD" : "KRW";
@@ -159,7 +183,7 @@ function renderSummary() {
     else b.value += r.value;
   }
 
-  const fmtByCcy = (obj, key, signed) => {
+  const fmtByCcy = (key, signed) => {
     const parts = Object.entries(byCcy).map(([ccy, b]) => {
       let v = key === "pl" ? (b.haveAll ? b.value - b.cost : null) : b[key];
       if (key === "plPct") v = b.haveAll && b.cost ? ((b.value - b.cost) / b.cost) * 100 : null;
@@ -171,39 +195,92 @@ function renderSummary() {
     return parts.join("  ·  ");
   };
 
-  setText("sumCost", fmtByCcy(byCcy, "cost"));
-  setText("sumValue", fmtByCcy(byCcy, "value"));
-  const plStr = fmtByCcy(byCcy, "pl", true);
-  const anyNeg = /(-₩|-\$)/.test(plStr);
+  setText("sumCost", fmtByCcy("cost"));
+  setText("sumValue", fmtByCcy("value"));
+  const plStr = fmtByCcy("pl", true);
   const plEl = setText("sumPl", plStr);
-  plEl.className = "value " + (anyNeg ? "neg" : "pos");
-  const pctStr = fmtByCcy(byCcy, "plPct");
+  plEl.className = "value " + (/(-₩|-\$)/.test(plStr) ? "neg" : "pos");
+  const pctStr = fmtByCcy("plPct");
   const pctEl = setText("sumPlPct", pctStr);
   pctEl.className = "value " + (pctStr.includes("-") ? "neg" : "pos");
 
-  // 비중 파이차트 — 종목 간 통화가 다르면 절대 비교가 무의미하므로 매수원가 비중으로 표기
+  if (state.viewMode === "byAccount") renderByAccount(rows);
+  else renderByTicker(rows);
+}
+
+/* ---- 종목별 조회: 계좌 무관, 통합 평단가 한 줄 ---- */
+function renderByTicker(rows) {
   const labels = rows.map((r) => `${r.h.name || r.h.ticker} (${r.h.market === "US" ? "USD" : "KRW"})`);
   const weights = rows.map((r) => r.value || r.cost);
   drawPie("weightChart", labels, weights);
 
-  // 표
-  const tbody = document.querySelector("#posTable tbody");
   const sumW = weights.reduce((a, b) => a + b, 0) || 1;
-  tbody.innerHTML = rows
+  document.querySelector("#posTable tbody").innerHTML = rows
     .map((r) => {
       const m = r.h.market;
       const w = ((r.value || r.cost) / sumW) * 100;
-      return `<tr>
+      return `<tr class="lvl-ticker">
         <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span></td>
         <td>${fmt.num(r.h.quantity, 4)}</td>
         <td>${fmt.money(r.h.buy_price, m)}</td>
         <td>${fmt.money(r.cur, m)}</td>
+        <td>${fmt.money(r.cost, m)}</td>
+        <td>${r.value == null ? "—" : fmt.money(r.value, m)}</td>
         <td class="${cls(r.pl)}">${r.pl == null ? "—" : (r.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(r.pl), m)}</td>
         <td class="${cls(r.plPct)}">${fmt.pct(r.plPct)}</td>
         <td>${w.toFixed(1)}%</td>
       </tr>`;
     })
     .join("");
+}
+
+/* ---- 회사별 조회: 종목별로 나오되 계좌 버블 + 계좌별 매수금액/수량/평가액 ---- */
+function renderByAccount(rows) {
+  // 파이차트: 종목·계좌 조각
+  const pieLabels = [];
+  const pieWeights = [];
+  for (const r of rows) {
+    for (const lot of lotsOf(r.h)) {
+      const c = compute(lot.buy_price, lot.quantity, r.h.ticker);
+      pieLabels.push(`${r.h.name || r.h.ticker} · ${lot.account}`);
+      pieWeights.push(c.value || c.cost);
+    }
+  }
+  drawPie("weightChart", pieLabels, pieWeights);
+  const sumW = pieWeights.reduce((a, b) => a + b, 0) || 1;
+
+  const html = [];
+  for (const r of rows) {
+    const m = r.h.market;
+    const lots = lotsOf(r.h);
+    html.push(`<tr class="lvl-ticker">
+      <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span> <span class="src">${lots.length}개 계좌</span></td>
+      <td>${fmt.num(r.h.quantity, 4)}</td>
+      <td>${fmt.money(r.h.buy_price, m)}</td>
+      <td>${fmt.money(r.cur, m)}</td>
+      <td>${fmt.money(r.cost, m)}</td>
+      <td>${r.value == null ? "—" : fmt.money(r.value, m)}</td>
+      <td class="${cls(r.pl)}">${r.pl == null ? "—" : (r.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(r.pl), m)}</td>
+      <td class="${cls(r.plPct)}">${fmt.pct(r.plPct)}</td>
+      <td>${(((r.value || r.cost) / sumW) * 100).toFixed(1)}%</td>
+    </tr>`);
+    for (const lot of lots) {
+      const c = compute(lot.buy_price, lot.quantity, r.h.ticker);
+      const w = ((c.value || c.cost) / sumW) * 100;
+      html.push(`<tr class="lvl-account">
+        <td><span class="bubble">${escapeHtml(lot.account)}</span></td>
+        <td>${fmt.num(lot.quantity, 4)}</td>
+        <td>${fmt.money(lot.buy_price, m)}</td>
+        <td>${fmt.money(c.cur, m)}</td>
+        <td>${fmt.money(c.cost, m)}</td>
+        <td>${c.value == null ? "—" : fmt.money(c.value, m)}</td>
+        <td class="${cls(c.pl)}">${c.pl == null ? "—" : (c.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(c.pl), m)}</td>
+        <td class="${cls(c.plPct)}">${fmt.pct(c.plPct)}</td>
+        <td>${w.toFixed(1)}%</td>
+      </tr>`);
+    }
+  }
+  document.querySelector("#posTable tbody").innerHTML = html.join("");
 }
 
 function setText(id, text) {
@@ -238,6 +315,7 @@ async function renderDetail(ticker) {
   const h = state.holdings.find((x) => x.ticker === ticker);
   const main = document.getElementById("detail");
   main.innerHTML = `
+    ${state.viewMode === "byAccount" ? acctStripHtml(h) : ""}
     <div class="panel-grid">
       <div>
         <div class="block"><h3>가격 · 이동평균 · 시나리오 점선</h3><canvas id="priceChart" height="150"></canvas></div>
@@ -265,6 +343,28 @@ async function renderDetail(ticker) {
   renderTarget(h, target);      // state._targets 캐시 → 시나리오 앵커에 사용
   renderNews(news);
   drawPriceChart(h);            // 목표주가 로드 후 그려야 컨센서스 점선이 표시됨
+}
+
+/* 회사별 조회 시 종목 상세 상단에 계좌 버블 스트립 */
+function acctStripHtml(h) {
+  if (!h) return "";
+  const m = h.market;
+  const cards = lotsOf(h)
+    .map((lot) => {
+      const c = compute(lot.buy_price, lot.quantity, h.ticker);
+      return `<div class="acct-card">
+        <div class="bubble">${escapeHtml(lot.account)}</div>
+        <dl class="kv">
+          <dt>수량</dt><dd>${fmt.num(lot.quantity, 4)}</dd>
+          <dt>매수단가</dt><dd>${fmt.money(lot.buy_price, m)}</dd>
+          <dt>매수금액</dt><dd>${fmt.money(c.cost, m)}</dd>
+          <dt>평가액</dt><dd>${c.value == null ? "—" : fmt.money(c.value, m)}</dd>
+          <dt>평가손익</dt><dd class="${cls(c.pl)}">${c.pl == null ? "—" : (c.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(c.pl), m)} (${fmt.pct(c.plPct)})</dd>
+        </dl>
+      </div>`;
+    })
+    .join("");
+  return `<div class="block acct-strip"><h3>계좌별 내역 — ${h.name || h.ticker}</h3><div class="acct-cards">${cards}</div></div>`;
 }
 
 /* ---- 가격 차트 (캔들 or 라인) + MA + 시나리오 점선 ---- */
@@ -543,7 +643,10 @@ function drawPie(id, labels, values) {
       datasets: [
         {
           data: values,
-          backgroundColor: ["#22d3ee", "#f59e0b", "#22c55e", "#a855f7", "#ef4444", "#3b82f6"],
+          backgroundColor: [
+            "#22d3ee", "#f59e0b", "#22c55e", "#a855f7", "#ef4444", "#3b82f6",
+            "#14b8a6", "#eab308", "#84cc16", "#ec4899", "#f97316", "#6366f1",
+          ],
           borderWidth: 0,
         },
       ],

@@ -1,20 +1,78 @@
-# 보유 종목 목록
-# ticker: KRX는 6자리 종목코드(문자열), 미국은 야후 심볼
-# market: KRX | US
-# buy_price: 평균 매수 단가 (KRX=원, US=USD)
-# quantity: 보유 수량
-# buy_date: 최초 매수일 (YYYY-MM-DD)
+# 보유 종목 목록 (단방향: 이 파일만 내가 GitHub 에서 수정 → data/*.json 자동 재생성)
+#
+# ticker : KRX 는 6자리 종목코드(문자열, ETF 는 숫자+영문 혼합 가능), 미국은 야후 심볼
+# name   : 화면 표시명
+# market : KRX | US
+# lots   : 계좌별 매수 내역. buy_price 는 "매수 평단가"(1주당), quantity 는 보유 수량.
+#          같은 종목을 여러 계좌로 보유하면 lots 에 계좌별로 나눠 적는다.
+#          - 종목별 조회: 계좌 무관, (Σ 평단가×수량) / (Σ 수량) 로 통합 평단가 표시
+#          - 회사별 조회: 계좌 버블로 계좌별 매수금액/수량/평가액 표시
+# buy_date: (선택) 최초 매수일 YYYY-MM-DD
 
 - ticker: "005930"
   name: "삼성전자"
   market: KRX
-  buy_price: 68000
-  quantity: 30
-  buy_date: 2025-11-03
+  lots:
+    - account: "미래에셋"
+      buy_price: 118319
+      quantity: 181
+    - account: "미래에셋(RIA)"
+      buy_price: 362094
+      quantity: 5
+    - account: "NH투자증권"
+      buy_price: 90433
+      quantity: 104
+
+- ticker: "000660"
+  name: "SK하이닉스"
+  market: KRX
+  lots:
+    - account: "미래에셋"
+      buy_price: 476436
+      quantity: 70
+    - account: "미래에셋(RIA)"
+      buy_price: 2343361
+      quantity: 4
+    - account: "NH투자증권"
+      buy_price: 2310000
+      quantity: 6
 
 - ticker: "MU"
-  name: "Micron Technology"
+  name: "마이크론 테크놀로지"
   market: US
-  buy_price: 95.2
-  quantity: 10
-  buy_date: 2025-08-15
+  lots:
+    - account: "미래에셋"
+      buy_price: 272.92
+      quantity: 9
+
+- ticker: "0183J0"
+  name: "TIGER 미국우주테크"
+  market: KRX
+  lots:
+    - account: "NH투자증권"
+      buy_price: 14910
+      quantity: 37
+
+- ticker: "069500"
+  name: "KODEX 200"
+  market: KRX
+  lots:
+    - account: "삼성증권"
+      buy_price: 94683
+      quantity: 130
+
+- ticker: "091160"
+  name: "KODEX 반도체"
+  market: KRX
+  lots:
+    - account: "삼성증권"
+      buy_price: 106296
+      quantity: 250
+
+- ticker: "278540"
+  name: "KODEX MSCI Korea TR"
+  market: KRX
+  lots:
+    - account: "삼성증권"
+      buy_price: 43597
+      quantity: 37

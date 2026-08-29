@@ -37,15 +37,30 @@ Med-Stock/
 ├── proxy/worker.js               # Cloudflare Worker: 실시간 시세 CORS 프록시
 ├── site/                         # index.html / dashboard.js / style.css
 └── .github/workflows/
-    ├── update.yml                # 배치 파이프라인 (cron + 수동)
+    ├── holdings.yml              # holdings.yaml 변경 시 data/*.json 재생성 (스크래핑 없음, 수초)
+    ├── update.yml                # 배치 파이프라인 — 시세·재무·수급·뉴스·목표주가 (cron + 수동)
     └── pages.yml                 # site/ + data/ → GitHub Pages 배포
 ```
 
 ---
 
-## 1. 보유 종목 설정
+## 1. 보유 종목 설정 (단방향: GitHub → 대시보드)
 
-`holdings.yaml` 를 본인 계좌에 맞게 수정한다.
+보유종목은 **`holdings.yaml` 하나만** 내가 직접 수정한다. 기기간 동기화나
+브라우저 안에서의 편집·저장은 없다. 대시보드는 GitHub 에 올라온 JSON 을
+읽기만 한다.
+
+```
+holdings.yaml 수정 (GitHub 웹 에디터 또는 로컬 커밋)
+  → main 에 push
+  → "Rebuild holdings" 워크플로가 data/holdings.json · scenarios.json · snapshot.json 재생성·커밋 (수초)
+  → "Deploy dashboard to GitHub Pages" 가 data/** 변경을 받아 자동 재배포 (1~2분)
+  → https://doheecho.github.io/Med-Stock/ 에 반영
+```
+
+github.com 에서 `holdings.yaml` 을 열고 연필 아이콘으로 바로 편집 → *Commit changes*
+하면 끝. 나머지(시세·재무·수급·뉴스·목표주가)는 `update.yml` 이 평일 장마감 후
+알아서 채운다.
 
 ```yaml
 - ticker: "005930"      # KRX: 6자리 코드(문자열), 미국: 야후 심볼(MU 등)
@@ -57,6 +72,7 @@ Med-Stock/
 ```
 
 `scenarios.yaml` 는 선택. 없어도 증권사 컨센서스(최고/평균/최저) 점선은 자동 표시된다.
+(`scenarios.yaml` 을 고쳐도 같은 "Rebuild holdings" 워크플로가 돈다.)
 
 ---
 

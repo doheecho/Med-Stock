@@ -59,6 +59,27 @@ def build_snapshot() -> dict:
         if value is not None:
             total_value += value
 
+        # 계좌별 내역 (종가 기준). '실시간' 평가액은 프론트에서 현재가로 재계산.
+        lots_out = []
+        for lot in h.get("lots", []):
+            lq = float(lot["quantity"])
+            lb = float(lot["buy_price"])
+            lcost = lb * lq
+            lvalue = (close * lq) if close is not None else None
+            lpl = (lvalue - lcost) if lvalue is not None else None
+            lots_out.append(
+                {
+                    "account": lot.get("account", "기본"),
+                    "buy_price": lb,
+                    "quantity": lq,
+                    "buy_date": lot.get("buy_date"),
+                    "cost_basis": round(lcost, 2),
+                    "eval_value_close": round(lvalue, 2) if lvalue is not None else None,
+                    "pl_close": round(lpl, 2) if lpl is not None else None,
+                    "pl_pct_close": round(lpl / lcost * 100, 2) if lpl is not None and lcost else None,
+                }
+            )
+
         tg = _targets(ticker)
         positions.append(
             {
@@ -68,6 +89,7 @@ def build_snapshot() -> dict:
                 "buy_price": buy,
                 "quantity": qty,
                 "buy_date": h.get("buy_date"),
+                "lots": lots_out,
                 "last_close": close,
                 "cost_basis": round(cost, 2),
                 "eval_value_close": round(value, 2) if value is not None else None,
