@@ -25,7 +25,7 @@ const state = {
   chartRange: "1Y",                  // 1M 3M 1Y 3Y 5Y MAX
   ma: { ma5: false, ma20: true, ma60: true, ma120: false },
   overlay: { bbands: false, volume: false, buyprice: false },
-  sub: { macd: false, stoch: false },
+  sub: { rsi: true, macd: false, stoch: false },
   rsiTf: "D", // RSI 봉 단위: D 일봉 | W 주봉 | M 월봉
   panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
 };
@@ -550,7 +550,7 @@ function chartCtlHtml() {
   return `
     <div class="ctl-row"><span class="ctl-lbl">기간</span>${g(RANGE_BTNS, "range", (k) => state.chartRange === k)}</div>
     <div class="ctl-row"><span class="ctl-lbl">이동평균</span>${g(MA_BTNS, "ma", (k) => state.ma[k])}</div>
-    <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}${subBtn("macd", "MACD")}${subBtn("stoch", "스토캐스틱")}</div>`;
+    <div class="ctl-row"><span class="ctl-lbl">보조지표</span>${g(OV_BTNS, "ov", (k) => state.overlay[k])}${subBtn("rsi", "RSI")}${subBtn("macd", "MACD")}${subBtn("stoch", "스토캐스틱")}</div>`;
 }
 
 function isEtf(h) {
@@ -572,7 +572,7 @@ async function renderDetail(ticker) {
         </div>
         <div class="block" id="macdBlock"${state.sub.macd ? "" : " hidden"}><h3>MACD (12·26·9)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="macdChart"></canvas></div></div></div>
         <div class="block" id="stochBlock"${state.sub.stoch ? "" : " hidden"}><h3>스토캐스틱 (14·3·3)</h3><div class="chart-scroll"><div class="chart-inner"><canvas id="stochChart"></canvas></div></div></div>
-        <div class="block">
+        <div class="block" id="rsiBlock"${state.sub.rsi ? "" : " hidden"}>
           <h3 class="h3-row">RSI (14)<span class="tf-btns" id="rsiTf">${rsiTfBtns()}</span></h3>
           <div class="chart-scroll"><div class="chart-inner"><canvas id="rsiChart"></canvas></div></div>
         </div>
@@ -642,10 +642,10 @@ function onChartCtl(e) {
   else return;
 
   document.getElementById("chartCtl").innerHTML = chartCtlHtml();
-  const mb = document.getElementById("macdBlock");
-  if (mb) mb.hidden = !state.sub.macd;
-  const sb = document.getElementById("stochBlock");
-  if (sb) sb.hidden = !state.sub.stoch;
+  const setHidden = (id, on) => { const el = document.getElementById(id); if (el) el.hidden = !on; };
+  setHidden("rsiBlock", state.sub.rsi);
+  setHidden("macdBlock", state.sub.macd);
+  setHidden("stochBlock", state.sub.stoch);
 
   const h = state.panel && state.panel.h;
   if (!h) return;
@@ -986,7 +986,7 @@ function stochFrom(candles, kP = 14, dP = 3) {
 /* ---- RSI (일/주/월봉) ---- */
 function drawRsiChart(p) {
   const el = document.getElementById("rsiChart");
-  if (!el) return;
+  if (!el || !state.sub.rsi) return;
   if (!p || !p.dates || !p.close) {
     el.closest(".block").querySelector(".chart-scroll").innerHTML = "<div class='error'>RSI 데이터 없음</div>";
     return;
@@ -1056,35 +1056,40 @@ function drawStochChart(p) {
       },
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
+    plugins: [stochZoneLabels],
   });
 }
 
-/* RSI 차트: 70 이상 '과매수', 30 이하 '과매도' 버블을 y축 눈금 옆에 그린다 */
-const rsiZoneLabels = {
-  id: "rsiZoneLabels",
-  afterDatasetsDraw(chart) {
-    const { ctx, chartArea, scales } = chart;
-    if (!scales.y) return;
-    const draw = (text, yVal, bg) => {
-      const y = scales.y.getPixelForValue(yVal);
-      ctx.save();
-      ctx.font = "600 10px -apple-system, 'Malgun Gothic', sans-serif";
-      const w = ctx.measureText(text).width + 10;
-      const x = chartArea.right - w - 4;
-      ctx.fillStyle = bg;
-      ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(x, y - 9, w, 16, 4);
-      else ctx.rect(x, y - 9, w, 16);
-      ctx.fill();
-      ctx.fillStyle = "#fff";
-      ctx.textBaseline = "middle";
-      ctx.fillText(text, x + 5, y);
-      ctx.restore();
-    };
-    draw("과매수", 85, "#ef4444cc");
-    draw("과매도", 15, "#3b82f6cc");
-  },
-};
+/* 오실레이터 차트: 과매수/과매도 버블을 y축 눈금 옆에 그린다 */
+function zoneLabelsPlugin(id, obY, osY) {
+  return {
+    id,
+    afterDatasetsDraw(chart) {
+      const { ctx, chartArea, scales } = chart;
+      if (!scales || !scales.y || !chartArea || !ctx) return;
+      const draw = (text, yVal, bg) => {
+        const y = scales.y.getPixelForValue(yVal);
+        ctx.save();
+        ctx.font = "600 10px -apple-system, 'Malgun Gothic', sans-serif";
+        const w = ctx.measureText(text).width + 10;
+        const x = chartArea.right - w - 4;
+        ctx.fillStyle = bg;
+        ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(x, y - 9, w, 16, 4);
+        else ctx.rect(x, y - 9, w, 16);
+        ctx.fill();
+        ctx.fillStyle = "#fff";
+        ctx.textBaseline = "middle";
+        ctx.fillText(text, x + 5, y);
+        ctx.restore();
+      };
+      draw("과매수", obY, "#ef4444cc");
+      draw("과매도", osY, "#3b82f6cc");
+    },
+  };
+}
+const rsiZoneLabels = zoneLabelsPlugin("rsiZoneLabels", 85, 15);
+const stochZoneLabels = zoneLabelsPlugin("stochZoneLabels", 90, 10);
 
 /* ---- 지표 표 ---- */
 function renderFundamentals(h, f) {
