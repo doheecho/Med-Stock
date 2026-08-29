@@ -579,7 +579,7 @@ async function renderDetail(ticker) {
     <div class="panel-grid">
       <div class="pg-charts">
         <div class="block">
-          <h3>가격 · 이동평균 · 시나리오 · 보조지표</h3>
+          <h3>차트</h3>
           <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
           <canvas id="priceChart"></canvas>
         </div>
@@ -727,7 +727,8 @@ function xTimeScale(kind, lastRealTs) {
       return showM ? `${d.getMonth() + 1}월${d.getDate()}일` : `${d.getDate()}일`;
     }
     const yy = String(d.getFullYear()).slice(2);
-    const showY = !prev || prev.getFullYear() !== d.getFullYear();
+    // 연이 바뀌는 첫 눈금(또는 1월)은 'YY.M월 — 3년·5년처럼 넓은 구간에서 연도 구분
+    const showY = !prev || prev.getFullYear() !== d.getFullYear() || d.getMonth() === 0;
     return showY ? `'${yy}.${d.getMonth() + 1}월` : `${d.getMonth() + 1}월`;
   };
   const unit = kind === "day" ? "day" : "month";
@@ -735,7 +736,12 @@ function xTimeScale(kind, lastRealTs) {
   return {
     type: "time",
     time: { unit, stepSize, tooltipFormat: "yyyy-MM-dd" },
-    ticks: { color: "#8b95a1", maxRotation: 0, autoSkip: true, autoSkipPadding: 16, callback: cb },
+    ticks: {
+      color: "#8b95a1", maxRotation: 0, autoSkip: true, autoSkipPadding: 16,
+      // 연 경계(1월) 눈금은 autoSkip 대상에서 제외 → 각 연도 첫 달이 항상 보이게
+      major: kind === "day" ? { enabled: false } : { enabled: true },
+      callback: cb,
+    },
     grid: { color: "#2b333d40" },
   };
 }
