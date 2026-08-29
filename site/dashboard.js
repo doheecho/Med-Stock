@@ -718,32 +718,70 @@ function sampleIdx(si, len) {
    lastRealTs 이후(전망 구간)의 눈금 라벨은 숨긴다. */
 function xTimeScale(kind, lastRealTs) {
   // kind: "day" | "month" | "quarter"
+  // 넓은 구간(1·3·5년)은 달력에 고정된 세로선/라벨 규칙(데이터 시작월과 무관).
+  //   1Y : 세로선 매월 · 라벨 1·4·7·10월(1월은 'YY.1월)
+  //   3Y : 세로선 3개월(3·6·9·12월) · 매년 3월 'YY.3월, 그 외 M월
+  //   5Y : 세로선 6개월(6·12월)      · 매년 6월 'YY.6월, 그 외 M월
+  const R = state.chartRange;
+  const spec =
+    R === "1Y" ? { grid: 1, months: [1, 4, 7, 10], prefixMonth: 1 }
+    : R === "3Y" ? { grid: 3, months: [3, 6, 9, 12], prefixMonth: 3 }
+    : R === "5Y" ? { grid: 6, months: [6, 12], prefixMonth: 6 }
+    : null;
+
   const cb = function (value, index, ticks) {
     if (lastRealTs && value > lastRealTs) return ""; // 전망 구간: 라벨 없음
     const d = new Date(value);
+    const m = d.getMonth() + 1;
+    const yy = String(d.getFullYear()).slice(2);
+
+    if (spec) {
+      if (!spec.months.includes(m)) return "";        // 세로선만, 라벨 없음
+      return m === spec.prefixMonth ? `'${yy}.${m}월` : `${m}월`;
+    }
+
     const prev = index > 0 && ticks[index - 1] ? new Date(ticks[index - 1].value) : null;
     if (kind === "day") {
       const showM = !prev || prev.getMonth() !== d.getMonth();
-      return showM ? `${d.getMonth() + 1}월${d.getDate()}일` : `${d.getDate()}일`;
+      return showM ? `${m}월${d.getDate()}일` : `${d.getDate()}일`;
     }
-    const yy = String(d.getFullYear()).slice(2);
-    // 연이 바뀌는 첫 눈금(또는 1월)은 'YY.M월 — 3년·5년처럼 넓은 구간에서 연도 구분
     const showY = !prev || prev.getFullYear() !== d.getFullYear() || d.getMonth() === 0;
-    return showY ? `'${yy}.${d.getMonth() + 1}월` : `${d.getMonth() + 1}월`;
+    return showY ? `'${yy}.${m}월` : `${m}월`;
   };
+
   const unit = kind === "day" ? "day" : "month";
   const stepSize = kind === "quarter" ? 3 : 1;
-  return {
+  const scale = {
     type: "time",
     time: { unit, stepSize, tooltipFormat: "yyyy-MM-dd" },
     ticks: {
-      color: "#8b95a1", maxRotation: 0, autoSkip: true, autoSkipPadding: 16,
-      // 연 경계(1월) 눈금은 autoSkip 대상에서 제외 → 각 연도 첫 달이 항상 보이게
-      major: kind === "day" ? { enabled: false } : { enabled: true },
+      color: "#8b95a1", maxRotation: 0,
+      autoSkip: !spec, autoSkipPadding: 16,
+      major: kind === "day" || spec ? { enabled: false } : { enabled: true },
       callback: cb,
     },
     grid: { color: "#2b333d40" },
   };
+
+  if (spec) {
+    // 달력 고정 눈금 직접 생성 (매월 1일 기준, spec.grid 개월 간격)
+    scale.afterBuildTicks = (sc) => {
+      const min = sc.min, max = sc.max;
+      if (min == null || max == null) return;
+      const s = new Date(min);
+      let d = new Date(s.getFullYear(), s.getMonth(), 1);
+      if (d.getTime() < min) d.setMonth(d.getMonth() + 1);
+      const out = [];
+      while (d.getTime() <= max) {
+        const m = d.getMonth() + 1;
+        if (spec.grid === 1 || m % spec.grid === 0) out.push({ value: d.getTime() });
+        d.setMonth(d.getMonth() + 1);
+      }
+      sc.ticks = out;
+    };
+  }
+
+  return scale;
 }
 
 /* state.chartRange → x축 kind */
