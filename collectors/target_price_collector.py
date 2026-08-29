@@ -6,13 +6,14 @@ US   : yfinance analyst price target 필드
 """
 from __future__ import annotations
 
+import datetime as _dt
 import re
 import sys
 
 import requests
 from bs4 import BeautifulSoup
 
-from common import TARGETS_DIR, krx_holdings, safe, us_holdings, write_json
+from common import TARGETS_DIR, krx_holdings, safe, today_kst, us_holdings, write_json
 
 _UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 _NUM = re.compile(r"-?[\d,]+(?:\.\d+)?")
@@ -47,15 +48,19 @@ def _opinion_text(mean):
     return "매도"
 
 
+_TGT_WORD = r"(?:목표주가|목표가|목표\s*주가|적정주가|적정\s*주가|적정가치|T\.?P)"
+
+
 def _parse_target(txt: str):
-    """리포트 텍스트에서 목표가 추출. 'XX만원' / 'XXX,XXX원' 등."""
+    """리포트 텍스트에서 목표가 추출. 'XX만원' / 'XXX,XXX원' / '→ 32만원' 등."""
     if not txt:
         return None
     for pat, mul in (
-        (r"목표주가[^0-9]{0,8}([0-9][0-9,\.]*)\s*만", 10000),
-        (r"목표가[^0-9]{0,8}([0-9][0-9,\.]*)\s*만", 10000),
-        (r"(?:목표주가|목표가|T\.?P|적정주가)[^0-9]{0,10}([0-9]{2,3},[0-9]{3})\s*원?", 1),
-        (r"목표주가[^0-9]{0,8}([0-9]{4,7})\s*원", 1),
+        (_TGT_WORD + r"[^0-9]{0,14}([0-9][0-9,\.]*)\s*만", 10000),
+        (_TGT_WORD + r"[^0-9]{0,16}([0-9]{2,3},[0-9]{3})\s*원?", 1),
+        (r"([0-9][0-9,\.]*)\s*만\s*원?\s*(?:으로|로)?\s*(?:상향|하향|유지|제시|조정|상승)", 10000),
+        (_TGT_WORD + r"[^0-9]{0,10}([0-9]{5,7})\s*원", 1),
+        (r"(?:→|->)\s*([0-9][0-9,\.]*)\s*만\s*원?", 10000),
     ):
         m = re.search(pat, txt)
         if m:
@@ -77,21 +82,51 @@ def _report_content(rid) -> str:
         return ""
 
 
+def _last_close(ticker: str):
+    from common import PRICES_DIR
+    import json
+
+    p = PRICES_DIR / f"{ticker}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8")).get("last_close")
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def _analyst_targets(ticker: str) -> list[dict]:
     """네이버 리서치 리포트에서 (증권사, 목표가, 리포트링크) 추출.
-    증권사별로 '가장 최신 일자에 목표가가 파싱된 1건'만. 목표가 내림차순."""
-    try:
-        rows = requests.get(
-            f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=40",
-            headers=_NAVER_HEADERS, timeout=12,
-        ).json()
-    except Exception:  # noqa: BLE001
+    증권사별 '가장 최신 일자에 목표가가 파싱된 1건'만. 최근 12개월 + 현재가의
+    0.4~4배 범위만 채택(오래된/이상치 제외). 목표가 내림차순."""
+    rows = []
+    for pg in (1, 2):
+        try:
+            r = requests.get(
+                f"https://m.stock.naver.com/api/research/stock/{ticker}?page={pg}&pageSize=50",
+                headers=_NAVER_HEADERS, timeout=12,
+            ).json()
+            if isinstance(r, list):
+                rows.extend(r)
+        except Exception:  # noqa: BLE001
+            break
+    if not rows:
         return []
+
+    cur = _last_close(ticker)
+    # 현재가보다 30% 넘게 낮은 목표가는 갱신 안 된 옛 리포트로 보고 제외
+    lo = cur * 0.7 if cur else None
+    hi = cur * 4 if cur else None
+    cutoff = (today_kst() - _dt.timedelta(days=365)).isoformat()
+
     by_firm: dict[str, dict] = {}
-    detail_budget = 18
-    for x in rows if isinstance(rows, list) else []:   # 목록은 최신순
+    detail_budget = 12
+    for x in rows:                                    # 목록은 최신순
         firm = (x.get("brokerName") or "").strip() or "(미상)"
-        if firm in by_firm:                            # 이미 최신 1건 확보
+        if firm in by_firm:
+            continue
+        date = str(x.get("writeDate") or "")
+        if date and date < cutoff:                    # 1년 넘은 리포트 제외
             continue
         rid = x.get("researchId")
         tgt = _parse_target(f"{x.get('title', '')} {x.get('previewContent', '')}")
@@ -99,6 +134,8 @@ def _analyst_targets(ticker: str) -> list[dict]:
             detail_budget -= 1
             tgt = _parse_target(_report_content(rid))
         if not tgt:
+            continue
+        if lo and (tgt < lo or tgt > hi):             # 현재가 대비 이상치 제외
             continue
         by_firm[firm] = {
             "firm": None if firm == "(미상)" else firm,
@@ -120,7 +157,19 @@ def _naver_target(ticker: str) -> dict:
         return {}
     mean = _to_num(c.get("recommMean"))
     at = safe(lambda: _analyst_targets(ticker), default=[], label=f"analyst {ticker}") or []
+
+    # 컨센서스 평균을 항상 한 줄 포함(개별 리포트가 적어도 상/중/하 구성되도록)
+    consensus_url = f"https://finance.naver.com/item/coinfo.naver?code={ticker}"
+    if avg and not any(abs(x["target"] - avg) < avg * 0.01 for x in at):
+        at.append({
+            "firm": "컨센서스 평균",
+            "target": int(round(avg)),
+            "date": c.get("createDate"),
+            "url": consensus_url,
+        })
+    at.sort(key=lambda v: -v["target"])
     priced = [x["target"] for x in at]
+
     return {
         "source": "naver(consensus)",
         "url": f"https://m.stock.naver.com/domestic/stock/{ticker}/total",

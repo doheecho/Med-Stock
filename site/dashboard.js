@@ -159,13 +159,10 @@ function renderAdvisor() {
     return;
   }
   el.hidden = false;
-  const tag = a.source === "gemini" ? `AI Advisor (${escapeHtml(a.model || "gemini")}) :` : "AI Advisor :";
-  const meta = [a.source === "gemini" ? null : "예시", a.updated_at ? shortDate(a.updated_at) : null]
-    .filter(Boolean).join(" · ");
   el.innerHTML =
-    `<span class="tag">${tag}</span> ` +
+    `<span class="tag">AI Advisor :</span> ` +
     escapeHtml(a.comment) +
-    (meta ? ` <span class="src">(${meta})</span>` : "");
+    (a.updated_at ? ` <span class="src">(${escapeHtml(shortDate(a.updated_at))})</span>` : "");
 }
 
 /* ↻ 현재가 갱신: 배치 시세 JSON(snapshot·prices)을 다시 받아 재렌더 + 프록시 실시간 조회 */
@@ -1100,17 +1097,21 @@ function renderForecast(h, t) {
     return;
   }
 
-  // 정렬된 목록을 상/중/하로 고르게 나눔 (각 최대 3, 합 최대 9)
+  // 정렬된 목록을 항상 상/중/하로 나눔 (각 최대 3)
   const n = items.length;
-  const per = Math.min(3, Math.ceil(n / 3));
-  const tiers =
-    n < 3
-      ? [["전망", items, ""]]
-      : [
-          ["상단", items.slice(0, per), "pos"],
-          ["중간", items.slice(per, n - per).slice(0, 3), ""],
-          ["하단", items.slice(n - per), "neg"],
-        ];
+  let tiers;
+  if (n === 1) {
+    tiers = [["중간", items, ""]];
+  } else if (n === 2) {
+    tiers = [["상단", [items[0]], "pos"], ["하단", [items[1]], "neg"]];
+  } else {
+    const per = Math.min(3, Math.ceil(n / 3));
+    tiers = [
+      ["상단", items.slice(0, per), "pos"],
+      ["중간", items.slice(per, n - per).slice(0, 3), ""],
+      ["하단", items.slice(n - per), "neg"],
+    ];
+  }
   const chip = (x) => {
     const label = `${fmt.price(x.target, m)}${x.firm ? ` (${escapeHtml(x.firm)})` : ""}`;
     return x.url

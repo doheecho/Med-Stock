@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-29T13:48:39+09:00",
+  "updated_at": "2026-08-29T14:06:14+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
   "target_high": 560000,
-  "target_low": 370000,
+  "target_low": 260000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.04,
@@ -17,6 +17,12 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=93712"
     },
     {
+      "firm": "컨센서스 평균",
+      "target": 491875,
+      "date": "2026-08-27",
+      "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
+    },
+    {
       "firm": "현대차증권",
       "target": 440000,
       "date": "2026-08-05",
@@ -27,6 +33,18 @@
       "target": 370000,
       "date": "2026-08-26",
       "url": "https://finance.naver.com/research/company_read.naver?nid=95868"
+    },
+    {
+      "firm": "iM증권",
+      "target": 300000,
+      "date": "2026-04-08",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=91312"
+    },
+    {
+      "firm": "SK증권",
+      "target": 260000,
+      "date": "2026-01-28",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=89522"
     }
   ],
   "ticker": "005930",
