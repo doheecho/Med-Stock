@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-08-29T11:04:56+09:00",
+  "source": "yfinance",
+  "target_high": 2200.0,
+  "target_low": 361.0,
+  "target_avg": 1513.409,
+  "target_median": 1545.0,
+  "num_analysts": 44,
+  "opinion": "strong_buy",
+  "opinion_score": 1.3617,
+  "current_price": 932.86,
+  "ticker": "MU",
+  "name": "마이크론 테크놀로지",
+  "market": "US"
+}

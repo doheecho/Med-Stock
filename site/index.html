@@ -35,8 +35,10 @@
         <table id="posTable">
           <thead>
             <tr>
-              <th>종목 · 계좌</th><th>수량</th><th>매수단가</th><th>현재가</th>
-              <th>매수금액</th><th>평가액</th><th>평가손익</th><th>수익률</th><th>비중</th>
+              <th data-key="name">종목 · 계좌</th><th data-key="quantity">수량</th>
+              <th data-key="buy_price">매수단가</th><th data-key="cur">현재가</th>
+              <th data-key="cost">매수금액</th><th data-key="value">평가액</th>
+              <th data-key="pl">평가손익</th><th data-key="plPct">수익률</th><th data-key="weight">비중</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -61,6 +63,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   <script src="./dashboard.js"></script>
 </body>
 </html>

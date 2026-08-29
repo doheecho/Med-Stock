@@ -26,9 +26,13 @@ def _pykrx_fundamental(ticker: str) -> dict:
     # 최근 영업일로 소급하며 조회
     import datetime as dt
 
-    for back in range(0, 7):
+    for back in range(0, 12):
         day = (today_kst() - dt.timedelta(days=back)).strftime("%Y%m%d")
-        df = stock.get_market_fundamental_by_ticker(day, market="ALL")
+        try:
+            df = stock.get_market_fundamental_by_ticker(day, market="ALL")
+        except Exception as e:  # noqa: BLE001 — 주말/휴장/일시적 응답오류는 다음 날짜로
+            print(f"[warn] pykrx fnd {ticker} {day}: {e!r}")
+            continue
         if df is not None and ticker in df.index:
             r = df.loc[ticker]
             return {

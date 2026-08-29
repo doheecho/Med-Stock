@@ -7,6 +7,8 @@
  */
 const PROXY_BASE = ""; // 예: "https://med-stock-proxy.your-subdomain.workers.dev"
 
+const FX_FALLBACK = 1350; // frankfurter 조회 실패 시 USD→KRW 대체 환율
+
 const state = {
   dataBase: "./data",
   holdings: [],
@@ -16,15 +18,35 @@ const state = {
   live: {},         // ticker -> {price, prevClose, currency,...}
   active: null,
   charts: {},       // canvasId -> Chart
-  viewMode: "byTicker", // "byTicker" | "byAccount"
+  viewMode: "byTicker",              // "byTicker" | "byAccount"
+  fx: null,                          // { USDKRW, date }
+  sort: { key: null, dir: "desc" },  // 표 정렬 상태
 };
 
+/* USD→KRW 환율 (오늘 기준). 실패 시 대체값. */
+function fxRate() {
+  return (state.fx && state.fx.USDKRW) || FX_FALLBACK;
+}
+/* 외화(미국) 금액을 원화로 환산. KRW 는 그대로. */
+function toKRW(v, market) {
+  if (v == null) return null;
+  return market === "US" ? v * fxRate() : v;
+}
+
 const fmt = {
-  krw: (v) => (v == null ? "—" : "₩" + Math.round(v).toLocaleString("ko-KR")),
-  usd: (v) => (v == null ? "—" : "$" + Number(v).toLocaleString("en-US", { maximumFractionDigits: 2 })),
-  money: (v, market) => (market === "US" ? fmt.usd(v) : fmt.krw(v)),
+  // 금액: 원화, 통화기호 없이 #,###
+  won: (v) => (v == null ? "—" : Math.round(v).toLocaleString("ko-KR")),
+  wonSigned: (v) => (v == null ? "—" : (v < 0 ? "-" : "+") + Math.round(Math.abs(v)).toLocaleString("ko-KR")),
+  // 단가/현재가: 환종 유지 — 미국 종목만 $, 나머지는 기호 없이 원화값
+  price: (v, market) =>
+    v == null
+      ? "—"
+      : market === "US"
+      ? "$" + Number(v).toLocaleString("en-US", { maximumFractionDigits: 2 })
+      : Math.round(v).toLocaleString("ko-KR"),
   pct: (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(2) + "%"),
   num: (v, d = 2) => (v == null ? "—" : Number(v).toLocaleString("ko-KR", { maximumFractionDigits: d })),
+  man: (v) => (v == null ? "—" : Math.round(v / 10000).toLocaleString("ko-KR") + "만"),
 };
 
 const cls = (v) => (v == null ? "" : v >= 0 ? "pos" : "neg");
@@ -33,17 +55,29 @@ const cls = (v) => (v == null ? "" : v >= 0 ? "pos" : "neg");
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+  if (window.Chart && window.ChartDataLabels) {
+    Chart.register(window.ChartDataLabels);
+    Chart.defaults.plugins.datalabels = { display: false }; // 도넛에서만 켠다
+  }
   document.getElementById("refreshBtn").addEventListener("click", refreshLive);
   document.querySelectorAll("#viewToggle button").forEach((b) => {
     b.addEventListener("click", () => setViewMode(b.dataset.mode));
   });
+  document.querySelectorAll("#posTable thead th").forEach((th) => {
+    if (th.dataset.key) th.addEventListener("click", () => onSort(th.dataset.key));
+  });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, scenarios, snapshot] = await Promise.all([
+    const [holdings, scenarios, snapshot, fx] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
       getJSON(`${state.dataBase}/scenarios.json`).catch(() => ({ scenarios: {} })),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
+      getJSON("https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW")
+        .catch(() => getJSON("https://api.frankfurter.app/latest?from=USD&to=KRW"))
+        .catch(() => null),
     ]);
+
+    if (fx && fx.rates && fx.rates.KRW) state.fx = { USDKRW: fx.rates.KRW, date: fx.date };
 
     state.snapshot = snapshot;
     state.scenarios = (scenarios && scenarios.scenarios) || {};
@@ -64,7 +98,9 @@ async function init() {
     );
 
     document.getElementById("asOf").textContent =
-      "배치 기준일 " + ((snapshot && snapshot.as_of) || "—");
+      "배치 기준일 " + ((snapshot && snapshot.as_of) || "—") +
+      "  ·  $1 = ₩" + Math.round(fxRate()).toLocaleString("ko-KR") +
+      (state.fx ? ` (${state.fx.date})` : " (대체값)");
 
     buildTabs();
     renderSummary();
@@ -169,114 +205,134 @@ function computePosition(h) {
   return compute(h.buy_price, h.quantity, h.ticker);
 }
 
+/* 표 정렬용 키 → 행에서 뽑는 값 (금액류는 원화 환산값으로 비교) */
+function sortValue(r, key) {
+  const m = r.h.market;
+  switch (key) {
+    case "name": return (r.h.name || r.h.ticker);
+    case "quantity": return r.h.quantity;
+    case "buy_price": return toKRW(r.h.buy_price, m);
+    case "cur": return toKRW(r.cur, m);
+    case "cost": return toKRW(r.cost, m);
+    case "value": return toKRW(r.value, m) ?? toKRW(r.cost, m);
+    case "pl": return toKRW(r.pl, m);
+    case "plPct": return r.plPct;
+    case "weight": return toKRW(r.value, m) ?? toKRW(r.cost, m);
+    default: return 0;
+  }
+}
+
+function applySort(rows) {
+  const { key, dir } = state.sort;
+  if (!key) return rows;
+  const s = dir === "asc" ? 1 : -1;
+  return [...rows].sort((a, b) => {
+    const va = sortValue(a, key), vb = sortValue(b, key);
+    if (typeof va === "string") return va.localeCompare(vb, "ko") * s;
+    return ((va ?? -Infinity) - (vb ?? -Infinity)) * s;
+  });
+}
+
+function onSort(key) {
+  if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
+  else state.sort = { key, dir: "desc" };
+  markSortHeader();
+  renderSummary();
+}
+
+function markSortHeader() {
+  document.querySelectorAll("#posTable thead th").forEach((th) => {
+    const base = th.dataset.label || th.textContent.replace(/[▲▼]\s*$/, "").trim();
+    th.dataset.label = base;
+    th.textContent = base + (th.dataset.key === state.sort.key ? (state.sort.dir === "asc" ? " ▲" : " ▼") : "");
+  });
+}
+
 function renderSummary() {
   const rows = state.holdings.map((h) => ({ h, ...computePosition(h) }));
 
-  // 통화별로 합산 (환율 환산 없음 — 개인용, 통화 섞어 더하지 않는다)
-  // 종목별/회사별 어느 뷰든 총합은 동일하다.
-  const byCcy = {};
+  // 총합은 전부 원화 환산 (미국 종목은 오늘 환율로). 종목별/회사별 동일.
+  let cost = 0, value = 0, haveAll = true;
   for (const r of rows) {
-    const ccy = r.h.market === "US" ? "USD" : "KRW";
-    const b = (byCcy[ccy] = byCcy[ccy] || { cost: 0, value: 0, haveAll: true });
-    b.cost += r.cost;
-    if (r.value == null) b.haveAll = false;
-    else b.value += r.value;
+    cost += toKRW(r.cost, r.h.market);
+    if (r.value == null) haveAll = false;
+    else value += toKRW(r.value, r.h.market);
   }
+  const pl = haveAll ? value - cost : null;
+  const plPct = pl != null && cost ? (pl / cost) * 100 : null;
 
-  const fmtByCcy = (key, signed) => {
-    const parts = Object.entries(byCcy).map(([ccy, b]) => {
-      let v = key === "pl" ? (b.haveAll ? b.value - b.cost : null) : b[key];
-      if (key === "plPct") v = b.haveAll && b.cost ? ((b.value - b.cost) / b.cost) * 100 : null;
-      if (v == null) return `${ccy} —`;
-      if (key === "plPct") return `${ccy} ${fmt.pct(v)}`;
-      const s = signed && v >= 0 ? "+" : "";
-      return `${ccy} ${s}${(ccy === "USD" ? fmt.usd : fmt.krw)(v)}`;
-    });
-    return parts.join("  ·  ");
-  };
+  setText("sumCost", fmt.won(cost));
+  setText("sumValue", haveAll ? fmt.won(value) : "—");
+  const plEl = setText("sumPl", pl == null ? "—" : fmt.wonSigned(pl));
+  plEl.className = "value " + (pl == null ? "" : pl < 0 ? "neg" : "pos");
+  const pctEl = setText("sumPlPct", fmt.pct(plPct));
+  pctEl.className = "value " + (plPct == null ? "" : plPct < 0 ? "neg" : "pos");
 
-  setText("sumCost", fmtByCcy("cost"));
-  setText("sumValue", fmtByCcy("value"));
-  const plStr = fmtByCcy("pl", true);
-  const plEl = setText("sumPl", plStr);
-  plEl.className = "value " + (/(-₩|-\$)/.test(plStr) ? "neg" : "pos");
-  const pctStr = fmtByCcy("plPct");
-  const pctEl = setText("sumPlPct", pctStr);
-  pctEl.className = "value " + (pctStr.includes("-") ? "neg" : "pos");
+  markSortHeader();
+  if (state.viewMode === "byAccount") renderByAccount(applySort(rows));
+  else renderByTicker(applySort(rows));
+}
 
-  if (state.viewMode === "byAccount") renderByAccount(rows);
-  else renderByTicker(rows);
+/* 한 포지션 행 <td> 묶음. 단가/현재가는 환종 유지, 금액류는 원화 환산. */
+function posCells({ h, cur, cost, value, pl, plPct }, weightPct) {
+  const m = h.market;
+  return `
+    <td>${fmt.num(h.quantity, 4)}</td>
+    <td>${fmt.price(h.buy_price, m)}</td>
+    <td>${fmt.price(cur, m)}</td>
+    <td>${fmt.won(toKRW(cost, m))}</td>
+    <td>${value == null ? "—" : fmt.won(toKRW(value, m))}</td>
+    <td class="${cls(pl)}">${pl == null ? "—" : fmt.wonSigned(toKRW(pl, m))}</td>
+    <td class="${cls(plPct)}">${fmt.pct(plPct)}</td>
+    <td>${weightPct == null ? "—" : weightPct.toFixed(1) + "%"}</td>`;
 }
 
 /* ---- 종목별 조회: 계좌 무관, 통합 평단가 한 줄 ---- */
 function renderByTicker(rows) {
-  const labels = rows.map((r) => `${r.h.name || r.h.ticker} (${r.h.market === "US" ? "USD" : "KRW"})`);
-  const weights = rows.map((r) => r.value || r.cost);
-  drawPie("weightChart", labels, weights);
+  const items = rows.map((r) => ({
+    label: r.h.name || r.h.ticker,
+    value: toKRW(r.value, r.h.market) ?? toKRW(r.cost, r.h.market),
+  }));
+  drawPie("weightChart", items);
+  const sumW = items.reduce((a, b) => a + b.value, 0) || 1;
 
-  const sumW = weights.reduce((a, b) => a + b, 0) || 1;
   document.querySelector("#posTable tbody").innerHTML = rows
-    .map((r) => {
-      const m = r.h.market;
-      const w = ((r.value || r.cost) / sumW) * 100;
-      return `<tr class="lvl-ticker">
+    .map((r, i) => `<tr class="lvl-ticker">
         <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span></td>
-        <td>${fmt.num(r.h.quantity, 4)}</td>
-        <td>${fmt.money(r.h.buy_price, m)}</td>
-        <td>${fmt.money(r.cur, m)}</td>
-        <td>${fmt.money(r.cost, m)}</td>
-        <td>${r.value == null ? "—" : fmt.money(r.value, m)}</td>
-        <td class="${cls(r.pl)}">${r.pl == null ? "—" : (r.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(r.pl), m)}</td>
-        <td class="${cls(r.plPct)}">${fmt.pct(r.plPct)}</td>
-        <td>${w.toFixed(1)}%</td>
-      </tr>`;
-    })
+        ${posCells(r, (items[i].value / sumW) * 100)}
+      </tr>`)
     .join("");
 }
 
 /* ---- 회사별 조회: 종목별로 나오되 계좌 버블 + 계좌별 매수금액/수량/평가액 ---- */
 function renderByAccount(rows) {
-  // 파이차트: 종목·계좌 조각
-  const pieLabels = [];
-  const pieWeights = [];
+  const pieItems = [];
   for (const r of rows) {
     for (const lot of lotsOf(r.h)) {
       const c = compute(lot.buy_price, lot.quantity, r.h.ticker);
-      pieLabels.push(`${r.h.name || r.h.ticker} · ${lot.account}`);
-      pieWeights.push(c.value || c.cost);
+      pieItems.push({
+        label: `${r.h.name || r.h.ticker} · ${lot.account}`,
+        value: toKRW(c.value, r.h.market) ?? toKRW(c.cost, r.h.market),
+      });
     }
   }
-  drawPie("weightChart", pieLabels, pieWeights);
-  const sumW = pieWeights.reduce((a, b) => a + b, 0) || 1;
+  drawPie("weightChart", pieItems);
+  const sumW = pieItems.reduce((a, b) => a + b.value, 0) || 1;
 
   const html = [];
   for (const r of rows) {
-    const m = r.h.market;
     const lots = lotsOf(r.h);
+    const tW = (toKRW(r.value, r.h.market) ?? toKRW(r.cost, r.h.market)) / sumW * 100;
     html.push(`<tr class="lvl-ticker">
       <td>${r.h.name || r.h.ticker} <span class="src">${r.h.ticker}</span> <span class="src">${lots.length}개 계좌</span></td>
-      <td>${fmt.num(r.h.quantity, 4)}</td>
-      <td>${fmt.money(r.h.buy_price, m)}</td>
-      <td>${fmt.money(r.cur, m)}</td>
-      <td>${fmt.money(r.cost, m)}</td>
-      <td>${r.value == null ? "—" : fmt.money(r.value, m)}</td>
-      <td class="${cls(r.pl)}">${r.pl == null ? "—" : (r.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(r.pl), m)}</td>
-      <td class="${cls(r.plPct)}">${fmt.pct(r.plPct)}</td>
-      <td>${(((r.value || r.cost) / sumW) * 100).toFixed(1)}%</td>
+      ${posCells(r, tW)}
     </tr>`);
     for (const lot of lots) {
-      const c = compute(lot.buy_price, lot.quantity, r.h.ticker);
-      const w = ((c.value || c.cost) / sumW) * 100;
+      const c = { h: r.h, ...compute(lot.buy_price, lot.quantity, r.h.ticker) };
+      const w = (toKRW(c.value, r.h.market) ?? toKRW(c.cost, r.h.market)) / sumW * 100;
       html.push(`<tr class="lvl-account">
         <td><span class="bubble">${escapeHtml(lot.account)}</span></td>
-        <td>${fmt.num(lot.quantity, 4)}</td>
-        <td>${fmt.money(lot.buy_price, m)}</td>
-        <td>${fmt.money(c.cur, m)}</td>
-        <td>${fmt.money(c.cost, m)}</td>
-        <td>${c.value == null ? "—" : fmt.money(c.value, m)}</td>
-        <td class="${cls(c.pl)}">${c.pl == null ? "—" : (c.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(c.pl), m)}</td>
-        <td class="${cls(c.plPct)}">${fmt.pct(c.plPct)}</td>
-        <td>${w.toFixed(1)}%</td>
+        ${posCells({ ...c, h: { ...r.h, quantity: lot.quantity, buy_price: lot.buy_price } }, w)}
       </tr>`);
     }
   }
@@ -356,10 +412,10 @@ function acctStripHtml(h) {
         <div class="bubble">${escapeHtml(lot.account)}</div>
         <dl class="kv">
           <dt>수량</dt><dd>${fmt.num(lot.quantity, 4)}</dd>
-          <dt>매수단가</dt><dd>${fmt.money(lot.buy_price, m)}</dd>
-          <dt>매수금액</dt><dd>${fmt.money(c.cost, m)}</dd>
-          <dt>평가액</dt><dd>${c.value == null ? "—" : fmt.money(c.value, m)}</dd>
-          <dt>평가손익</dt><dd class="${cls(c.pl)}">${c.pl == null ? "—" : (c.pl >= 0 ? "+" : "-") + fmt.money(Math.abs(c.pl), m)} (${fmt.pct(c.plPct)})</dd>
+          <dt>매수단가</dt><dd>${fmt.price(lot.buy_price, m)}</dd>
+          <dt>매수금액</dt><dd>${fmt.won(toKRW(c.cost, m))}</dd>
+          <dt>평가액</dt><dd>${c.value == null ? "—" : fmt.won(toKRW(c.value, m))}</dd>
+          <dt>평가손익</dt><dd class="${cls(c.pl)}">${c.pl == null ? "—" : fmt.wonSigned(toKRW(c.pl, m))} (${fmt.pct(c.plPct)})</dd>
         </dl>
       </div>`;
     })
@@ -587,9 +643,9 @@ function renderTarget(h, t) {
 
   box.innerHTML = `
     <dl class="kv">
-      <dt>현재가</dt><dd>${fmt.money(cur, m)}</dd>
-      <dt>평균 목표가</dt><dd>${fmt.money(t.target_avg, m)}</dd>
-      <dt>최고 / 최저</dt><dd>${fmt.money(hi, m)} / ${fmt.money(lo, m)}</dd>
+      <dt>현재가</dt><dd>${fmt.price(cur, m)}</dd>
+      <dt>평균 목표가</dt><dd>${fmt.price(t.target_avg, m)}</dd>
+      <dt>최고 / 최저</dt><dd>${fmt.price(hi, m)} / ${fmt.price(lo, m)}</dd>
       <dt>상승여력</dt><dd class="${cls(gap)}">${fmt.pct(gap)}</dd>
       <dt>투자의견</dt><dd>${t.opinion || "—"}${t.num_analysts ? ` (${t.num_analysts})` : ""}</dd>
     </dl>
@@ -635,14 +691,17 @@ function makeChart(id, cfg) {
   state.charts[id] = new Chart(el.getContext("2d"), cfg);
 }
 
-function drawPie(id, labels, values) {
+/* items: [{label, value(원화)}] — 하단 범례 없이, 조각 위에 "#,###만(#%)",
+   마우스오버 시 종목명 툴팁. 칸을 꽉 채운다. */
+function drawPie(id, items) {
+  const total = items.reduce((a, b) => a + (b.value || 0), 0) || 1;
   makeChart(id, {
     type: "doughnut",
     data: {
-      labels,
+      labels: items.map((x) => x.label),
       datasets: [
         {
-          data: values,
+          data: items.map((x) => x.value || 0),
           backgroundColor: [
             "#22d3ee", "#f59e0b", "#22c55e", "#a855f7", "#ef4444", "#3b82f6",
             "#14b8a6", "#eab308", "#84cc16", "#ec4899", "#f97316", "#6366f1",
@@ -654,7 +713,25 @@ function drawPie(id, labels, values) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: { legend: { position: "bottom", labels: { color: "#8b95a1", boxWidth: 12, font: { size: 11 } } } },
+      layout: { padding: 6 },
+      cutout: "52%",
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const v = ctx.parsed || 0;
+              return `${ctx.label} — ${fmt.man(v)} (${Math.round((v / total) * 100)}%)`;
+            },
+          },
+        },
+        datalabels: {
+          display: "auto",
+          color: "#0f1216",
+          font: { size: 11, weight: "600" },
+          formatter: (v) => `${fmt.man(v)}(${Math.round((v / total) * 100)}%)`,
+        },
+      },
     },
   });
 }

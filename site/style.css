@@ -52,13 +52,14 @@ body {
 .card .value { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
 
 .summary-charts {
-  display: grid; grid-template-columns: 280px 1fr; gap: 16px; margin-top: 16px;
+  display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-top: 16px;
 }
 @media (max-width: 760px) { .summary-charts { grid-template-columns: 1fr; } }
 .chart-box {
   background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; padding: 12px; min-height: 240px;
+  border-radius: 10px; padding: 6px; height: 320px; display: flex;
 }
+.chart-box canvas { flex: 1 1 auto; }
 .table-wrap {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 4px 12px; overflow-x: auto;
@@ -67,6 +68,8 @@ table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nu
 th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; }
 thead th { color: var(--muted); font-weight: 500; font-size: 12px; }
+#posTable thead th { cursor: pointer; user-select: none; white-space: nowrap; }
+#posTable thead th:hover { color: var(--text); }
 tbody tr:last-child td { border-bottom: none; }
 
 .pos { color: var(--up); }
@@ -125,7 +128,7 @@ tr.lvl-account td.neg { color: var(--down); }
 #priceChart { height: 340px !important; }
 #rsiChart { height: 130px !important; }
 #flowChart { height: 190px !important; }
-#weightChart { height: 220px !important; }
+#weightChart { width: 100% !important; height: 100% !important; }
 
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; }
 .kv dt { color: var(--muted); }
