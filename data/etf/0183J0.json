@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-08-29T13:46:36+09:00",
+  "ticker": "0183J0",
+  "name": "TIGER 미국우주테크",
+  "base_index": "Akros U.S. Space Tech 지수(PR)",
+  "as_of": "2026-08-29",
+  "constituents": [
+    {
+      "code": null,
+      "name": "REDWIRE CORP",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "INTUITIVE MACHINES INC",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "PLANET LABS PBC",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "ROCKET LAB CORP",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "SPACE EXPLORATION TECHN-CL A",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "FIREFLY AEROSPACE INC",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "VOYAGER TECHNOLOGIES INC-A",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "AST SPACEMOBILE INC",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "MDA SPACE LTD",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "ECHOSTAR CORP-A",
+      "weight": null
+    }
+  ]
+}

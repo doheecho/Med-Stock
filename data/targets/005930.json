@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T13:14:27+09:00",
+  "updated_at": "2026-08-29T13:48:39+09:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
@@ -17,28 +17,10 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=93712"
     },
     {
-      "firm": "미래에셋증권",
-      "target": 550000,
-      "date": "2026-07-08",
-      "url": "https://finance.naver.com/research/company_read.naver?nid=93953"
-    },
-    {
-      "firm": "미래에셋증권",
-      "target": 480000,
-      "date": "2026-05-21",
-      "url": "https://finance.naver.com/research/company_read.naver?nid=93177"
-    },
-    {
       "firm": "현대차증권",
       "target": 440000,
       "date": "2026-08-05",
       "url": "https://finance.naver.com/research/company_read.naver?nid=95044"
-    },
-    {
-      "firm": "미래에셋증권",
-      "target": 400000,
-      "date": "2026-05-11",
-      "url": "https://finance.naver.com/research/company_read.naver?nid=92720"
     },
     {
       "firm": "미래에셋증권",

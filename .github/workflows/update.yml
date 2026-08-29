@@ -41,6 +41,7 @@ jobs:
           python target_price_collector.py
           python news_collector.py
           python indices_collector.py
+          python etf_collector.py
           python snapshot_builder.py
           python advisor_collector.py
           exit 0

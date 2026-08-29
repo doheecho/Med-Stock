@@ -78,8 +78,8 @@ def _report_content(rid) -> str:
 
 
 def _analyst_targets(ticker: str) -> list[dict]:
-    """네이버 리서치 리포트에서 (증권사, 목표가, 리포트링크) 추출. 미리보기 → 본문 순.
-    리포트 1건 = 전망 1건. (증권사, 목표가) 중복만 제거. 목표가 내림차순, 최대 12건."""
+    """네이버 리서치 리포트에서 (증권사, 목표가, 리포트링크) 추출.
+    증권사별로 '가장 최신 일자에 목표가가 파싱된 1건'만. 목표가 내림차순."""
     try:
         rows = requests.get(
             f"https://m.stock.naver.com/api/research/stock/{ticker}?page=1&pageSize=40",
@@ -87,11 +87,12 @@ def _analyst_targets(ticker: str) -> list[dict]:
         ).json()
     except Exception:  # noqa: BLE001
         return []
-    out: list[dict] = []
-    seen: set = set()
-    detail_budget = 16
-    for x in rows if isinstance(rows, list) else []:
-        firm = (x.get("brokerName") or "").strip()
+    by_firm: dict[str, dict] = {}
+    detail_budget = 18
+    for x in rows if isinstance(rows, list) else []:   # 목록은 최신순
+        firm = (x.get("brokerName") or "").strip() or "(미상)"
+        if firm in by_firm:                            # 이미 최신 1건 확보
+            continue
         rid = x.get("researchId")
         tgt = _parse_target(f"{x.get('title', '')} {x.get('previewContent', '')}")
         if tgt is None and detail_budget > 0 and rid:
@@ -99,16 +100,13 @@ def _analyst_targets(ticker: str) -> list[dict]:
             tgt = _parse_target(_report_content(rid))
         if not tgt:
             continue
-        k = (firm, tgt)
-        if k in seen:
-            continue
-        seen.add(k)
-        out.append({
-            "firm": firm or None,
+        by_firm[firm] = {
+            "firm": None if firm == "(미상)" else firm,
             "target": tgt,
             "date": x.get("writeDate"),
             "url": f"https://finance.naver.com/research/company_read.naver?nid={rid}" if rid else None,
-        })
+        }
+    out = list(by_firm.values())
     out.sort(key=lambda v: -v["target"])
     return out[:12]
 

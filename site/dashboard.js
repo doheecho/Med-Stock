@@ -72,7 +72,8 @@ async function init() {
       Chart.defaults.set("plugins.datalabels", { display: false }); // 도넛에서만 켠다
     }
   } catch (_) {}
-  document.getElementById("refreshBtn").addEventListener("click", refreshLive);
+  document.getElementById("refreshBtn").addEventListener("click", refreshData);
+  document.getElementById("advisorBtn").addEventListener("click", refreshAdvisor);
   document.querySelectorAll("#viewToggle button").forEach((b) => {
     b.addEventListener("click", () => setViewMode(b.dataset.mode));
   });
@@ -116,9 +117,7 @@ async function init() {
     );
 
     document.getElementById("asOf").textContent =
-      "배치 기준일 " + ((snapshot && snapshot.as_of) || "—") +
-      "  ·  $1 = ₩" + Math.round(fxRate()).toLocaleString("ko-KR") +
-      (state.fx ? ` (${state.fx.date})` : " (대체값)");
+      "배치 기준일 " + ((snapshot && snapshot.as_of) || "—");
 
     buildTabs();
     renderSummary();
@@ -167,6 +166,47 @@ function renderAdvisor() {
     `<span class="tag">${tag}</span> ` +
     escapeHtml(a.comment) +
     (meta ? ` <span class="src">(${meta})</span>` : "");
+}
+
+/* ↻ 현재가 갱신: 배치 시세 JSON(snapshot·prices)을 다시 받아 재렌더 + 프록시 실시간 조회 */
+async function refreshData() {
+  const btn = document.getElementById("refreshBtn");
+  btn.disabled = true;
+  const label = btn.textContent;
+  btn.textContent = "불러오는 중…";
+  try {
+    const snap = await getJSON(`${state.dataBase}/snapshot.json`).catch(() => null);
+    if (snap) state.snapshot = snap;
+    await Promise.all(
+      state.holdings.map(async (h) => {
+        const p = await getJSON(`${state.dataBase}/prices/${h.ticker}.json`).catch(() => null);
+        if (p) state.prices[h.ticker] = p;
+      })
+    );
+    if (snap && snap.as_of) document.getElementById("asOf").textContent = "배치 기준일 " + snap.as_of;
+    renderSummary();
+    await refreshLive();
+    if (state.active) renderDetail(state.active);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = label;
+  }
+}
+
+/* ↻ AI Advisor: advisor.json 만 다시 받아 상단 코멘트 갱신 (재생성은 Actions 담당) */
+async function refreshAdvisor() {
+  const btn = document.getElementById("advisorBtn");
+  btn.disabled = true;
+  const label = btn.textContent;
+  btn.textContent = "불러오는 중…";
+  try {
+    const a = await getJSON(`${state.dataBase}/advisor.json?t=${Date.now()}`).catch(() => null);
+    if (a) state.advisor = a;
+    renderAdvisor();
+  } finally {
+    btn.disabled = false;
+    btn.textContent = label;
+  }
 }
 
 /* ------------------------------------------------------------------ 실시간 현재가 */
@@ -483,7 +523,9 @@ async function renderDetail(ticker) {
       </div>
       <div class="pg-metrics">
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
-        ${etf ? "" : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
+        ${etf
+          ? `<div class="block"><h3>구성 종목</h3><div id="etfBox">로딩…</div></div>`
+          : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
         <div class="block"><h3>주가전망</h3><div id="forecastBox">로딩…</div></div>`}
       </div>
       <div class="pg-market">
@@ -494,18 +536,21 @@ async function renderDetail(ticker) {
 
   document.getElementById("chartCtl").addEventListener("click", onChartCtl);
 
-  const [fund, flow, target, news] = await Promise.all([
+  const [fund, flow, target, news, etfData] = await Promise.all([
     getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
     getJSON(`${state.dataBase}/flows/${ticker}.json`).catch(() => null),
     etf ? Promise.resolve(null) : getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
     getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
+    etf ? getJSON(`${state.dataBase}/etf/${ticker}.json`).catch(() => null) : Promise.resolve(null),
   ]);
-  state.panel = { h, fund, flow, target, news };
+  state.panel = { h, fund, flow, target, news, etfData };
 
   renderFundamentals(h, fund);
   renderIndices();
   drawFlowChart(flow);
-  if (!etf) {
+  if (etf) {
+    renderEtfHoldings(etfData);
+  } else {
     renderTarget(h, target);    // state._targets 캐시 → 시나리오 앵커에 사용
     renderForecast(h, target);
   }
@@ -924,6 +969,37 @@ function renderIndices() {
       <tbody>${rows}</tbody>
     </table>
     <div class="src" style="margin-top:6px">전일 종가 기준 · ${shortDate(d.updated_at)}</div>`;
+}
+
+/* ---- ETF 구성 종목 (상위 10) ---- */
+function renderEtfHoldings(d) {
+  const box = document.getElementById("etfBox");
+  if (!box) return;
+  if (!d || !d.constituents || !d.constituents.length) {
+    box.innerHTML = "<div class='error'>구성종목 데이터 없음 (etf_collector 미실행)</div>";
+    return;
+  }
+  const rows = d.constituents
+    .map((c) => {
+      const chg =
+        c.change == null
+          ? "—"
+          : (c.change >= 0 ? "▲ " : "▼ ") + Math.abs(c.change).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+      return `<tr>
+        <td>${escapeHtml(c.name || c.code || "—")}</td>
+        <td>${c.price == null ? "—" : Number(c.price).toLocaleString("ko-KR", { maximumFractionDigits: 2 })}</td>
+        <td class="${cls(c.change)}">${chg}</td>
+        <td class="${cls(c.change_pct)}">${fmt.pct(c.change_pct)}</td>
+        <td>${c.weight == null ? "—" : c.weight.toFixed(2) + "%"}</td>
+      </tr>`;
+    })
+    .join("");
+  box.innerHTML = `
+    <table class="idx-table">
+      <thead><tr><th>종목명</th><th>현재가</th><th>전일대비</th><th>등락율</th><th>비중</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="src" style="margin-top:6px">${escapeHtml(d.base_index || "")} 추종 · 상위 ${d.constituents.length}종목 · ${shortDate(d.as_of)}</div>`;
 }
 
 /* ---- 수급 막대 (개인·기관·외국인[·기타] 순매수, 억원, 최근 4주) ---- */

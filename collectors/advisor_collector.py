@@ -2,7 +2,7 @@
 
 환경변수:
   GEMINI_API_KEY  (필수 - 없으면 기존 data/advisor.json 유지하고 종료)
-  GEMINI_MODEL    (선택, 기본 gemini-2.5-flash-lite - 토큰 최소화)
+  GEMINI_MODEL    (선택, 미지정 시 gemini-flash-lite-latest → 3.5-flash-lite → flash-latest 순 폴백)
 
 입력: data/snapshot.json, data/indices.json, data/targets/*.json, data/news/*.json
 출력: data/advisor.json  { updated_at, comment, model, source }
@@ -78,12 +78,36 @@ _PROMPT = """당신은 한국 개인투자자를 돕는 애널리스트다. 아�
 """
 
 
-def build_comment() -> str | None:
+# 지정 모델 실패 시 순서대로 폴백. -lite 우선(토큰 최소화).
+_MODEL_FALLBACKS = ["gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-flash-latest"]
+
+
+def _gemini_call(key: str, model: str, prompt: str) -> tuple[str | None, int, str]:
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 700},
+    }
+    r = requests.post(
+        url, params={"key": key}, json=body,
+        headers={"Content-Type": "application/json"}, timeout=60,
+    )
+    if r.status_code != 200:
+        return None, r.status_code, r.text[:400]
+    data = r.json()
+    cand = (data.get("candidates") or [{}])[0]
+    text = "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", [])).strip()
+    if not text:
+        return None, 200, f"빈 응답 finishReason={cand.get('finishReason')}"
+    return text, 200, ""
+
+
+def build_comment() -> tuple[str | None, str | None]:
+    """(comment, used_model) 반환."""
     key = os.getenv("GEMINI_API_KEY")
     if not key:
         print("[skip] GEMINI_API_KEY 없음 - advisor.json 유지")
-        return None
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
+        return None, None
 
     snap = _load("snapshot.json") or {}
     idx = _load("indices.json") or {}
@@ -94,35 +118,25 @@ def build_comment() -> str | None:
         news=_news_summary(tickers) or "(데이터 없음)",
     )
 
-    url = (
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    )
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 700},
-    }
-    print(f"[gemini] model={model} key={key[:6]}… prompt {len(prompt)}자 요청")
-    r = requests.post(
-        url, params={"key": key}, json=body,
-        headers={"Content-Type": "application/json"}, timeout=60,
-    )
-    if r.status_code != 200:
-        print(f"[gemini] HTTP {r.status_code}: {r.text[:500]}")
-        r.raise_for_status()
-    data = r.json()
-    cand = (data.get("candidates") or [{}])[0]
-    parts = cand.get("content", {}).get("parts", [])
-    text = "".join(p.get("text", "") for p in parts).strip()
-    if not text:
-        print(f"[gemini] 빈 응답: finishReason={cand.get('finishReason')} raw={str(data)[:400]}")
-    return text or None
+    tried = []
+    want = os.getenv("GEMINI_MODEL", "").strip()
+    for model in ([want] if want else []) + [m for m in _MODEL_FALLBACKS if m != want]:
+        print(f"[gemini] model={model} key={key[:6]}… prompt {len(prompt)}자")
+        text, code, err = _gemini_call(key, model, prompt)
+        if text:
+            print(f"[gemini] OK ({model}, {len(text)}자)")
+            return text, model
+        print(f"[gemini] 실패 {model}: HTTP {code} {err}")
+        tried.append(model)
+    print(f"[gemini] 모든 모델 실패: {tried} - advisor.json 유지")
+    return None, None
 
 
 def main() -> int:
     try:
-        comment = build_comment()
+        comment, model = build_comment()
     except Exception as e:  # noqa: BLE001
-        print(f"[warn] Gemini 호출 실패: {e!r} - advisor.json 유지")
+        print(f"[warn] Gemini 호출 예외: {e!r} - advisor.json 유지")
         return 0
     if not comment:
         return 0
@@ -131,11 +145,11 @@ def main() -> int:
         {
             "updated_at": now_iso(),
             "comment": comment,
-            "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"),
+            "model": model,
             "source": "gemini",
         },
     )
-    print(f"[write] advisor.json ({len(comment)}자)")
+    print(f"[write] advisor.json ({len(comment)}자, {model})")
     return 0
 
 

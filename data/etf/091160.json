@@ -1,0 +1,99 @@
+{
+  "updated_at": "2026-08-29T13:47:25+09:00",
+  "ticker": "091160",
+  "name": "KODEX 반도체",
+  "base_index": "KRX 반도체",
+  "as_of": "2026-08-29",
+  "constituents": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "weight": 36.91,
+      "price": 1653000.0,
+      "prev": 1730000.0,
+      "change": -77000.0,
+      "change_pct": -4.45
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "weight": 22.94,
+      "price": 257000.0,
+      "prev": 266000.0,
+      "change": -9000.0,
+      "change_pct": -3.38
+    },
+    {
+      "code": "042700",
+      "name": "한미반도체",
+      "weight": 6.11,
+      "price": 219500.0,
+      "prev": 222000.0,
+      "change": -2500.0,
+      "change_pct": -1.13
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "weight": 3.66,
+      "price": 176800.0,
+      "prev": 179100.0,
+      "change": -2300.0,
+      "change_pct": -1.28
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "weight": 2.43,
+      "price": 111100.0,
+      "prev": 112700.0,
+      "change": -1600.0,
+      "change_pct": -1.42
+    },
+    {
+      "code": "039030",
+      "name": "이오테크닉스",
+      "weight": 2.22,
+      "price": 398500.0,
+      "prev": 406500.0,
+      "change": -8000.0,
+      "change_pct": -1.97
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "weight": 2.21,
+      "price": 51100.0,
+      "prev": 50500.0,
+      "change": 600.0,
+      "change_pct": 1.19
+    },
+    {
+      "code": "058470",
+      "name": "리노공업",
+      "weight": 2.2,
+      "price": 66800.0,
+      "prev": 66700.0,
+      "change": 100.0,
+      "change_pct": 0.15
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "weight": 2.02,
+      "price": 122800.0,
+      "prev": 126900.0,
+      "change": -4100.0,
+      "change_pct": -3.23
+    },
+    {
+      "code": "000990",
+      "name": "DB하이텍",
+      "weight": 1.9,
+      "price": 93900.0,
+      "prev": 95400.0,
+      "change": -1500.0,
+      "change_pct": -1.57
+    }
+  ]
+}

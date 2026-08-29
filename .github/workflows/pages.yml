@@ -9,9 +9,9 @@ on:
       - ".github/workflows/pages.yml"
   workflow_dispatch:
   workflow_run:
-    # holdings.yml / update.yml 이 봇 토큰으로 data/ 를 커밋하면 push 트리거가
-    # 안 걸리므로(GitHub 정책), 두 워크플로 완료 이벤트로도 재배포를 건다.
-    workflows: ["Update dashboard data", "Rebuild holdings"]
+    # 봇 토큰으로 data/ 를 커밋하면 push 트리거가 안 걸리므로(GitHub 정책),
+    # 데이터 생성 워크플로 완료 이벤트로도 재배포를 건다.
+    workflows: ["Update dashboard data", "Rebuild holdings", "Refresh AI Advisor"]
     types: [completed]
 
 permissions:
