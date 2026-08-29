@@ -1,0 +1,8 @@
+name = "med-stock-proxy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# 배포:  wrangler deploy   (proxy/ 디렉터리에서)
+# 로그:  wrangler tail
+#
+# 무료 티어: 하루 10만 요청. 개인용 대시보드 트래픽에는 충분.

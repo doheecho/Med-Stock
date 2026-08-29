@@ -1,0 +1,11 @@
+{
+  "updated_at": null,
+  "as_of": null,
+  "basis": "close",
+  "note": "collectors 실행 전 자리표시자. GitHub Actions 'Update dashboard data' 최초 실행 후 실제 값으로 교체됨.",
+  "total_cost": null,
+  "total_value_close": null,
+  "total_pl_close": null,
+  "total_pl_pct_close": null,
+  "positions": []
+}

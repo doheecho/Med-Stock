@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 로컬 비밀값 (DART API 키 등)
+.env
+*.local
+
+# 로컬 테스트 산출물 (data/ 자체는 커밋됨)
+*.log

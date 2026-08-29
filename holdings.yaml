@@ -1,0 +1,20 @@
+# 보유 종목 목록
+# ticker: KRX는 6자리 종목코드(문자열), 미국은 야후 심볼
+# market: KRX | US
+# buy_price: 평균 매수 단가 (KRX=원, US=USD)
+# quantity: 보유 수량
+# buy_date: 최초 매수일 (YYYY-MM-DD)
+
+- ticker: "005930"
+  name: "삼성전자"
+  market: KRX
+  buy_price: 68000
+  quantity: 30
+  buy_date: 2025-11-03
+
+- ticker: "MU"
+  name: "Micron Technology"
+  market: US
+  buy_price: 95.2
+  quantity: 10
+  buy_date: 2025-08-15

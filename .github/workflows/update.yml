@@ -1,0 +1,54 @@
+name: Update dashboard data
+
+on:
+  schedule:
+    # KST 16:30 (장마감 후), 평일. GitHub Actions 는 UTC 기준 → 07:30 UTC
+    - cron: "30 7 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Collect (each step is best-effort)
+        working-directory: collectors
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: |
+          set +e
+          python price_collector.py
+          python flow_collector.py
+          python fundamental_collector.py
+          python target_price_collector.py
+          python news_collector.py
+          python snapshot_builder.py
+          exit 0
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: update dashboard data ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
