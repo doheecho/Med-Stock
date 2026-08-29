@@ -771,16 +771,22 @@ function drawPriceChart(h) {
   const useCandle = hasFinancial && p.candles && xs.length <= 400;
   const datasets = [];
 
+  // 국내 관습: 상승 빨강 / 하락 파랑
+  const UP = "#ef4444", DOWN = "#3b82f6";
   if (useCandle) {
     datasets.push({
       type: "candlestick",
       label: h.name || h.ticker,
       data: pick(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
-      color: { up: "#ef4444", down: "#3b82f6", unchanged: "#8b95a1" },
+      color: { up: UP, down: DOWN, unchanged: "#8b95a1" },
+      borderColor: { up: UP, down: DOWN, unchanged: "#8b95a1" },
       order: 10,
     });
   } else {
-    datasets.push({ ...line("종가", p.close, "#e6e9ee", 1.4), order: 10 });
+    // 구간 첫 종가 대비 마지막 종가로 라인 색 결정
+    const cl = pick(p.close).filter((v) => v != null);
+    const rising = cl.length < 2 || cl[cl.length - 1] >= cl[0];
+    datasets.push({ ...line("종가", p.close, rising ? UP : DOWN, 1.6), order: 10 });
   }
 
   const maColors = { ma5: "#f59e0b", ma20: "#22d3ee", ma60: "#22c55e", ma120: "#a855f7" };
