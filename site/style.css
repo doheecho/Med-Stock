@@ -75,8 +75,9 @@ body {
 .chart-ctl button { flex: none; }
 
 /* 긴 기간 차트: 차트창 폭은 유지하고 내부에서만 가로 스크롤 */
-.chart-scroll { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
-.chart-scroll .chart-inner { min-width: 100%; }
+/* 차트는 항상 칸 너비에 맞춤 — 가로 스크롤 없음 */
+.chart-scroll { max-width: 100%; overflow: hidden; }
+.chart-scroll .chart-inner { width: 100%; }
 .chart-scroll canvas { display: block; }
 .chart-ctl button {
   background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
