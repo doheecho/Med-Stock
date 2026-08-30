@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T03:44:09+00:00",
+  "updated_at": "2026-08-30T04:20:23+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3317917.0,
@@ -47,7 +47,161 @@
       "src": "yahoo"
     }
   ],
-  "consensus_rows": [],
+  "consensus_rows": [
+    {
+      "firm": "미래에셋",
+      "date": "2026-08-25",
+      "target": 2800000,
+      "prev_target": 2800000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "한화투자",
+      "date": "2026-08-20",
+      "target": 3150000,
+      "prev_target": 3150000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "삼성",
+      "date": "2026-08-20",
+      "target": 3000000,
+      "prev_target": 3000000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "하나",
+      "date": "2026-08-20",
+      "target": 3600000,
+      "prev_target": 3600000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "유진투자",
+      "date": "2026-08-18",
+      "target": 3700000,
+      "prev_target": 3700000,
+      "chg": 0.0,
+      "opinion": "STRONG BUY",
+      "prev_opinion": "STRONG BUY"
+    },
+    {
+      "firm": "대신",
+      "date": "2026-08-13",
+      "target": 3200000,
+      "prev_target": 3200000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "키움",
+      "date": "2026-08-10",
+      "target": 2100000,
+      "prev_target": 2200000,
+      "chg": -4.55,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "SK",
+      "date": "2026-08-03",
+      "target": 4000000,
+      "prev_target": 4000000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "현대차",
+      "date": "2026-08-03",
+      "target": 3300000,
+      "prev_target": 3300000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "한국투자",
+      "date": "2026-07-30",
+      "target": 4700000,
+      "prev_target": 3800000,
+      "chg": 23.68,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "KB",
+      "date": "2026-07-30",
+      "target": 4200000,
+      "prev_target": 4200000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-07-30",
+      "target": 3400000,
+      "prev_target": 4100000,
+      "chg": -17.07,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "교보",
+      "date": "2026-07-30",
+      "target": 4000000,
+      "prev_target": 4000000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "신한투자",
+      "date": "2026-07-30",
+      "target": 2700000,
+      "prev_target": 4200000,
+      "chg": -35.71,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "DB",
+      "date": "2026-07-30",
+      "target": 2000000,
+      "prev_target": 1750000,
+      "chg": 14.29,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "IBK투자",
+      "date": "2026-07-30",
+      "target": 4000000,
+      "prev_target": 4000000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "다올투자",
+      "date": "2026-07-30",
+      "target": 4200000,
+      "prev_target": 4200000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    }
+  ],
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX"

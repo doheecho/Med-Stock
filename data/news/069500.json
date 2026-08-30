@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T03:44:18+00:00",
+  "updated_at": "2026-08-30T04:20:29+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -9,12 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE96UXVjd3VrcXJpOElCV1FpTzJxekNtSEZ2dnhoelRHUmpSNlN1N1FUZE1wVlRVQWFTTkk0NkowWnZTN1lFTTNJVUUtdzZOZE9KakE?oc=5",
       "source": "매일경제 마켓",
       "date": "Fri, 28 Aug 2026 17:33:50 GMT"
-    },
-    {
-      "title": "18일, 기관 거래소에서 삼성전자(+4.62%), KODEX 레버리지(+7.04%) 등 순매수",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5scERMbDBNVEtlbTUwbVJpOW1rTy1zY3JOMTNHMmtoa2c1bFRlVkppUXZEUnhEd1hXLUJfX0VmM3lIbzZhU2ZEdkhKNHFpTWZaa1c3SXVFZXZCS1ozQ2ZtNnBLMVZ6NXhs?oc=5",
-      "source": "씽크풀 AI",
-      "date": "Thu, 27 Aug 2026 03:43:12 GMT"
     },
     {
       "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
@@ -81,6 +75,12 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaUpRX0FHUjBUNUphM21SR3d2cDMtbGlMTHRhVVE2N3ZhWHQ1RlAzWkhDeUtFYnBGdVlqX0ZwSFhUUWxBc1J4NG80RDZ5WTJ3dnpMRDlvWmFOY1ZrX1pMRDI2T251bmVZNWxHSS1rencwdFBEbTNnUWVZQXV0V1MwQm9oTV9keTJQ?oc=5",
       "source": "글로벌이코노믹",
       "date": "Thu, 13 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성운용, KODEX 200커버드콜액티브 상장",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBxbEN2N3A2eVp4VC1qUk9lWGJkRUlsV180b09OUGF6SlJKOE5nT19ncV9BWDBqQ1Y0MllRR08tU3RCUkx5R0V6eWxGd09tdG9nbDRVeWM1RjJPeEpRT2Q0M3ZUTGw?oc=5",
+      "source": "서울경제TV",
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
       "title": "KODEX 200커버드콜액티브(0219E0)",
