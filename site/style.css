@@ -241,16 +241,7 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .idx-table th:first-child, .idx-table td:first-child { text-align: left; }
 .idx-table tbody tr:last-child td { border-bottom: none; }
 
-/* 투자의견 컨센서스 — 제목을 세로로, 표는 옆에 */
-.consensus-block { display: flex; align-items: stretch; gap: 10px; }
-.consensus-block > .v-title {
-  writing-mode: vertical-rl;
-  margin: 0; flex: none;
-  display: flex; align-items: center; justify-content: center;
-  letter-spacing: 2px; color: var(--muted); font-size: 12px; font-weight: 600;
-  border-right: 1px solid var(--line); padding-right: 8px;
-}
-.consensus-block > .tbl-scroll { flex: 1 1 auto; min-width: 0; }
+/* 투자의견 컨센서스 표 — 제목은 다른 블록처럼 좌상단 h3 */
 .consensus-table td { color: var(--text); }           /* 기본은 흰색 */
 .consensus-table .op-sbuy  { color: #b91c1c; font-weight: 700; } /* 강력매수 */
 .consensus-table .op-buy   { color: #f59e0b; font-weight: 700; } /* 매수 */

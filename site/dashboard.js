@@ -604,7 +604,7 @@ async function renderDetail(ticker) {
           <canvas id="rsiChart"></canvas>
         </div>
         <div class="block"><h3 class="h3-row">수급 (최근 4주)<span class="unit-tag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
-        ${etf ? "" : `<div class="block consensus-block"><h3 class="v-title">투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll">로딩…</div></div>`}
+        ${etf ? "" : `<div class="block"><h3>투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll">로딩…</div></div>`}
       </div>
       <div class="pg-metrics">
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>

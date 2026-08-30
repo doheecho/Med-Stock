@@ -152,107 +152,124 @@ def _analyst_targets(ticker: str) -> list[dict]:
 
 
 # ------------------------------------------------------------- 투자의견 컨센서스 (증권사별)
-_CONS_HEADERS = {
-    "제공처": "firm", "증권사": "firm", "작성사": "firm", "기관": "firm",
-    "최종일자": "date", "작성일": "date", "작성일자": "date", "제공일자": "date", "발행일": "date",
-    "목표가": "target", "목표주가": "target", "목표주가(원)": "target",
-    "직전목표가": "prev_target", "직전목표주가": "prev_target",
-    "변동율": "chg", "변동률": "chg", "목표가변동": "chg", "목표주가변동": "chg",
-    "투자의견": "opinion", "의견": "opinion",
-    "직전투자의견": "prev_opinion", "직전의견": "prev_opinion",
-}
+# FnGuide / wisereport 컨센서스 표는 서버 요청이 막혀(빈 응답) 못 씀.
+# → 네이버 리서치 리포트(제공처·작성일·목표가·투자의견)를 증권사별로 묶어 재구성.
+#   같은 증권사의 직전 리포트가 있으면 그걸 직전목표가·직전투자의견으로 쓴다.
+_OPI_PATS = [
+    (r"강력\s*매수|적극\s*매수|strong\s*buy", "강력매수"),
+    (r"강력\s*매도|적극\s*매도|strong\s*sell", "강력매도"),
+    (r"trading\s*buy|비중\s*확대|outperform|overweight|accumulate|매수|\bbuy\b", "매수"),
+    (r"비중\s*축소|underperform|underweight|reduce|매도|\bsell\b", "매도"),
+    (r"중립|보유|hold|neutral|market\s*perform", "중립"),
+]
 
 
-def _cons_num(s):
-    if s is None:
+def _parse_opinion(txt: str):
+    if not txt:
         return None
-    s = re.sub(r"[^0-9.\-]", "", str(s))
-    if s in ("", "-", ".", "-.", "--"):
-        return None
-    try:
-        return float(s)
-    except ValueError:
-        return None
+    t = re.sub(r"['\"‘’“”]", "", txt)
+    # 1) '투자의견' 라벨 바로 뒤 단어에서 먼저 판정 (가장 신뢰도 높음)
+    m = re.search(r"투자의견[^가-힣A-Za-z]{0,8}([가-힣A-Za-z ]{2,14})", t)
+    if m:
+        for pat, canon in _OPI_PATS:
+            if re.search(pat, m.group(1), re.I):
+                return canon
+    # 2) 라벨이 문서에 있으면 앞부분에서 한 번 더 (없으면 오탐 방지 위해 포기)
+    if "투자의견" in t:
+        for pat, canon in _OPI_PATS:
+            if re.search(pat, t[:300], re.I):
+                return canon
+    # 3) '매수 유지' / 'BUY 유지' / '매수로 상향' 같은 명확한 관용구
+    m2 = re.search(
+        r"(강력매수|적극매수|강력매도|적극매도|매수|매도|중립|보유|buy|sell|hold)"
+        r"\s*(?:의견)?\s*(?:유지|상향|하향|제시|로\s*[상하]향)",
+        t, re.I,
+    )
+    if m2:
+        for pat, canon in _OPI_PATS:
+            if re.search(pat, m2.group(1), re.I):
+                return canon
+    return None
 
 
-def _cons_date(s):
-    m = re.search(r"(\d{2,4})[.\-/](\d{1,2})[.\-/](\d{1,2})", str(s or ""))
-    if not m:
-        return None
-    y, mo, d = (int(g) for g in m.groups())
-    if y < 100:
-        y += 2000
-    return f"{y:04d}-{mo:02d}-{d:02d}"
-
-
-def _parse_consensus_table(html: str) -> list[dict]:
-    soup = BeautifulSoup(html, "html.parser")
-    for tbl in soup.find_all("table"):
-        heads = [re.sub(r"\s+", "", th.get_text()) for th in tbl.find_all("th")]
-        cols = [_CONS_HEADERS.get(h) for h in heads]
-        if not cols or "firm" not in cols or "opinion" not in cols or "date" not in cols:
-            continue
-        out = []
-        for tr in tbl.find_all("tr"):
-            tds = tr.find_all("td")
-            if len(tds) < len(cols):
-                continue
-            rec = {}
-            for i, key in enumerate(cols):
-                if key and i < len(tds):
-                    rec[key] = tds[i].get_text(strip=True)
-            if rec.get("firm") and rec.get("date"):
-                out.append(rec)
-        if out:
-            return out
-    return []
+def _research_rows(ticker: str) -> list[dict]:
+    rows: list[dict] = []
+    for pg in (1, 2):
+        try:
+            r = requests.get(
+                f"https://m.stock.naver.com/api/research/stock/{ticker}?page={pg}&pageSize=50",
+                headers=_NAVER_HEADERS, timeout=12,
+            ).json()
+            if isinstance(r, list):
+                rows.extend(r)
+        except Exception:  # noqa: BLE001
+            break
+    return rows
 
 
 def _consensus_rows(ticker: str) -> list[dict]:
-    """증권사별 투자의견 컨센서스 — 최근 1개월, 날짜 내림차순.
-    FnGuide → wisereport 순으로 시도(둘 다 실패하면 빈 목록)."""
-    urls = [
-        f"https://comp.fnguide.com/SVO2/ASP/SVD_Consensus.asp?pGB=1&gicode=A{ticker}"
-        "&cID=&MenuYn=Y&ReportGB=&NewMenuID=108&stkGb=701",
-        f"https://navercomp.wisereport.co.kr/v2/company/cF3002.aspx?cmp_cd={ticker}"
-        "&finGubun=MAIN&frq=0&sframe=",
-        f"https://navercomp.wisereport.co.kr/company/cF3002.aspx?cmp_cd={ticker}"
-        "&finGubun=MAIN&frq=0&sframe=",
-    ]
-    raw: list[dict] = []
-    for u in urls:
-        try:
-            r = requests.get(u, headers={**_UA, "Referer": u.split("?")[0]}, timeout=12)
-            r.encoding = r.apparent_encoding or "utf-8"
-            raw = _parse_consensus_table(r.text)
-            if raw:
-                break
-        except Exception:  # noqa: BLE001
-            continue
+    """증권사별 투자의견 컨센서스 — 최근 1개월 작성분, 날짜 내림차순.
+    네이버 리서치 리포트에서 제공처/작성일/목표가/투자의견을 파싱하고,
+    같은 증권사의 바로 이전 리포트를 직전목표가·직전투자의견으로 붙인다."""
+    raw = _research_rows(ticker)
     if not raw:
         return []
 
+    cur_px = _last_close(ticker)
+    lo = cur_px * 0.5 if cur_px else None
+    hi = cur_px * 3 if cur_px else None
     cutoff = (today_kst() - _dt.timedelta(days=31)).isoformat()
-    rows = []
+
+    by_firm: dict[str, list[dict]] = {}
     for x in raw:
-        d = _cons_date(x.get("date"))
-        if not d or d < cutoff:
+        firm = (x.get("brokerName") or "").strip()
+        d = str(x.get("writeDate") or "")[:10]
+        if not firm or not re.match(r"\d{4}-\d{2}-\d{2}", d):
             continue
-        tgt, prev = _cons_num(x.get("target")), _cons_num(x.get("prev_target"))
-        chg = _cons_num(x.get("chg"))
-        if chg is None and tgt and prev:
-            chg = round((tgt - prev) / prev * 100, 2)
-        rows.append({
-            "firm": (x.get("firm") or "").strip() or None,
+        by_firm.setdefault(firm, []).append({
             "date": d,
-            "target": int(tgt) if tgt else None,
-            "prev_target": int(prev) if prev else None,
-            "chg": chg,
-            "opinion": (x.get("opinion") or "").strip() or None,
-            "prev_opinion": (x.get("prev_opinion") or "").strip() or None,
+            "rid": x.get("researchId"),
+            "text": f"{x.get('title', '')} {x.get('previewContent', '')}",
         })
-    rows.sort(key=lambda r: r["date"], reverse=True)
-    return rows[:25]
+
+    budget = 16  # 프리뷰로 못 뽑을 때만 본문 조회
+
+    def _tp_op(rep):
+        nonlocal budget
+        tp = _parse_target(rep["text"])
+        op = _parse_opinion(rep["text"])
+        if (tp is None or op is None) and budget > 0 and rep["rid"]:
+            budget -= 1
+            body = _report_content(rep["rid"])
+            tp = tp or _parse_target(body)
+            op = op or _parse_opinion(body)
+        return tp, op
+
+    out = []
+    for firm, reps in by_firm.items():
+        reps.sort(key=lambda r: r["date"], reverse=True)
+        if reps[0]["date"] < cutoff:
+            continue
+        tp, op = _tp_op(reps[0])
+        if lo and tp and not (lo <= tp <= hi):
+            tp = None
+        if tp is None and op is None:
+            continue
+        ptp, pop = (_tp_op(reps[1]) if len(reps) > 1 else (None, None))
+        if lo and ptp and not (lo * 0.7 <= ptp <= hi * 1.5):
+            ptp = None
+        chg = round((tp - ptp) / ptp * 100, 1) if (tp and ptp) else None
+        out.append({
+            "firm": firm,
+            "date": reps[0]["date"],
+            "target": int(tp) if tp else None,
+            "prev_target": int(ptp) if ptp else None,
+            "chg": chg,
+            "opinion": op,
+            "prev_opinion": pop,
+        })
+    out.sort(key=lambda r: r["date"], reverse=True)
+    return out[:25]
 
 
 def _yf_krx_targets(ticker: str) -> list[dict]:
