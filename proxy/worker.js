@@ -55,6 +55,18 @@ export default {
       }
     }
 
+    // GET /consensus?ticker=005930 → 제공처별 투자의견 컨센서스
+    //   (네이버 증권 종목분석 표. GitHub Actions IP 는 차단돼 브라우저→워커로 받는다)
+    if (path === "/consensus") {
+      const t = (url.searchParams.get("ticker") || "").trim();
+      if (!/^\d[0-9A-Z]{5}$/.test(t)) return json({ ticker: t, rows: [] }, 200);
+      try {
+        return json(await consensusRows(t), 200);
+      } catch (err) {
+        return json({ ticker: t, rows: [], error: String((err && err.message) || err) }, 502);
+      }
+    }
+
     // GET /history?ticker=005930 → 일봉 OHLCV (보유목록 밖 종목 차트용)
     if (path === "/history") {
       const t = (url.searchParams.get("ticker") || url.searchParams.get("code") || "").trim();
@@ -219,6 +231,57 @@ async function searchStock(q) {
     }))
     .filter((x) => x.code && x.name);
   return { q, items };
+}
+
+// ── 투자의견 컨센서스 (wisereport c1010001 table#cTB24) ───────────────
+async function consensusRows(code) {
+  const up = `https://navercomp.wisereport.co.kr/v2/company/c1010001.aspx?cmp_cd=${code}`;
+  const html = await (
+    await fetch(up, {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        Referer: `https://finance.naver.com/item/coinfo.naver?code=${code}`,
+      },
+      cf: { cacheTtl: 1800 },
+    })
+  ).text();
+
+  const m = html.match(/<table[^>]*id=["']cTB24["'][^>]*>([\s\S]*?)<\/table>/i);
+  if (!m) return { ticker: code, rows: [] };
+  const strip = (s) =>
+    s.replace(/<[^>]+>/g, " ").replace(/&nbsp;/gi, " ").replace(/&amp;/gi, "&").replace(/\s+/g, " ").trim();
+  const cleanOp = (s) => (s.replace(/\s*(펼치기|접기)\s*$/, "").trim() || null);
+  const int = (s) => {
+    const v = Number(String(s).replace(/[^0-9.\-]/g, ""));
+    return Number.isFinite(v) && v > 0 ? Math.round(v) : null;
+  };
+  const flt = (s) => {
+    const v = Number(String(s).replace(/[^0-9.\-]/g, ""));
+    return Number.isFinite(v) ? v : null;
+  };
+
+  const cutoff = new Date(Date.now() - 31 * 864e5);
+  const rows = [];
+  for (const tr of m[1].match(/<tr[\s\S]*?<\/tr>/gi) || []) {
+    if (/<th[\s>]/i.test(tr)) continue;
+    const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map(strip);
+    if (c.length < 7) continue;
+    const dm = String(c[1]).match(/(\d{2})[.\/-](\d{1,2})[.\/-](\d{1,2})/);
+    if (!dm) continue;
+    const iso = `20${dm[1]}-${dm[2].padStart(2, "0")}-${dm[3].padStart(2, "0")}`;
+    if (new Date(iso) < cutoff) continue;
+    rows.push({
+      firm: c[0] || null,
+      date: iso,
+      target: int(c[2]),
+      prev_target: int(c[3]),
+      chg: flt(c[4]),
+      opinion: cleanOp(c[5]),
+      prev_opinion: cleanOp(c[6]),
+    });
+  }
+  rows.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return { ticker: code, rows: rows.slice(0, 30) };
 }
 
 // ── 일봉 OHLCV ────────────────────────────────────────────────────────

@@ -761,7 +761,7 @@ async function renderDetail(ticker) {
   } else {
     renderTarget(h, target);    // state._targets 캐시 → 시나리오 앵커에 사용
     renderForecast(h, target);
-    renderConsensus(target);
+    renderConsensus(h, target);
   }
   renderNews(news);
   document.getElementById("rsiTf").addEventListener("click", (e) => {
@@ -1759,10 +1759,18 @@ function opinionClass(s) {
 }
 
 /* ---- 투자의견 컨센서스 (최근 1개월, 날짜 내림차순) ---- */
-function renderConsensus(t) {
+async function renderConsensus(h, t) {
   const box = document.getElementById("consensusBox");
   if (!box) return;
-  const rows = (t && t.consensus_rows) || [];
+  let rows = (t && t.consensus_rows) || [];
+  // 수집기(GitHub Actions)는 한국 금융사이트 IP 차단으로 비어 옴 → 브라우저에서 워커로 조회
+  if (!rows.length && PROXY_BASE && /^\d[0-9A-Z]{5}$/.test(h.ticker || "")) {
+    box.innerHTML = "<div class='dim'>컨센서스 불러오는 중…</div>";
+    try {
+      const r = await getJSON(`${PROXY_BASE}/consensus?ticker=${encodeURIComponent(h.ticker)}`);
+      rows = (r && r.rows) || [];
+    } catch (_) {}
+  }
   if (!rows.length) {
     box.innerHTML = "<div class='error'>최근 1개월 내 컨센서스 없음</div>";
     return;
