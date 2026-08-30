@@ -76,6 +76,16 @@ async function init() {
       Chart.register(window.ChartDataLabels);
       Chart.defaults.set("plugins.datalabels", { display: false }); // 도넛에서만 켠다
     }
+    // 캔들: 한국 관습(상승 빨강 / 하락 파랑) — 데이터셋 옵션이 무시돼도 기본값으로 보장
+    if (window.Chart && Chart.defaults.elements) {
+      const RED = "#ef4444", BLUE = "#3b82f6", GRAY = "#8b95a1";
+      for (const el of ["candlestick", "ohlc"]) {
+        const d = Chart.defaults.elements[el];
+        if (!d) continue;
+        d.color = { up: RED, down: BLUE, unchanged: GRAY };
+        d.borderColor = { up: RED, down: BLUE, unchanged: GRAY };
+      }
+    }
   } catch (_) {}
   document.getElementById("refreshBtn").addEventListener("click", refreshData);
   document.getElementById("advisorBtn").addEventListener("click", refreshAdvisor);
@@ -594,6 +604,7 @@ async function renderDetail(ticker) {
           <canvas id="rsiChart"></canvas>
         </div>
         <div class="block"><h3 class="h3-row">수급 (최근 4주)<span class="unit-tag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
+        ${etf ? "" : `<div class="block consensus-block"><h3 class="v-title">투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll">로딩…</div></div>`}
       </div>
       <div class="pg-metrics">
         <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
@@ -627,6 +638,7 @@ async function renderDetail(ticker) {
   } else {
     renderTarget(h, target);    // state._targets 캐시 → 시나리오 앵커에 사용
     renderForecast(h, target);
+    renderConsensus(target);
   }
   renderNews(news);
   document.getElementById("rsiTf").addEventListener("click", (e) => {
@@ -757,6 +769,10 @@ function xTimeScale(kind, lastRealTs) {
   const stepSize = kind === "quarter" ? 3 : 1;
   const scale = {
     type: "time",
+    // 축 양끝을 눈금이 아니라 데이터(=강제 min/max)에 정확히 맞춘다 →
+    // 가격 차트와 MACD·RSI·스토캐스틱의 시작·끝이 완전히 일치
+    bounds: "data",
+    offset: false,
     time: { unit, stepSize, tooltipFormat: "yyyy-MM-dd" },
     ticks: {
       color: "#8b95a1", maxRotation: 0,
@@ -1392,19 +1408,17 @@ function drawFlowChart(flow) {
             color: "#8b95a1",
             autoSkip: false,
             maxRotation: 0,
-            // 월이 처음 나오거나 바뀔 때만 "MM-DD", 그 외엔 "DD" (예: 07-31 08-01 02 03).
-            // 칸이 좁아 라벨이 넘칠 것 같으면 2칸마다 하나씩만 표기(월 경계는 항상 표기).
+            // 월은 빼고 '일'만 앞자리 0 없이(예: 31 1 2 3). 칸이 좁으면 2칸마다 하나씩.
             callback(value, index) {
               const lbl = this.getLabelForValue(value); // "MM-DD"
-              const prev = index > 0 ? this.getLabelForValue(index - 1) : null;
-              const monthEdge = !prev || lbl.slice(0, 2) !== prev.slice(0, 2);
+              const day = String(parseInt(lbl.slice(3), 10));
               const chart = this.chart || {};
               const area = chart.chartArea;
               const w = area ? area.right - area.left : chart.width || 0;
               const labels = (this.getLabels && this.getLabels()) || (chart.data && chart.data.labels) || [];
               const dense = w > 0 && w / (labels.length || 1) < 24;
-              if (dense && !monthEdge && index % 2 !== 0) return "";
-              return monthEdge ? lbl : lbl.slice(3);
+              if (dense && index % 2 !== 0) return "";
+              return day;
             },
           },
         },
@@ -1537,6 +1551,47 @@ function renderForecast(h, t) {
         ? `최근 1개월 국내 리포트 + 야후 파이낸스 (${items.length}건)`
         : `최근 1개월 리포트 목표가 (${items.length}건)`
     } · 클릭 시 출처</div>`;
+}
+
+/* 투자의견 텍스트 → 색상 클래스 (강력매수/매수/중립/매도/강력매도) */
+function opinionClass(s) {
+  const t = String(s || "").toLowerCase().replace(/\s+/g, "");
+  if (/(strongbuy|적극매수|강력매수)/.test(t)) return "op-sbuy";
+  if (/(strongsell|적극매도|강력매도)/.test(t)) return "op-ssell";
+  if (/(sell|매도|underperform|underweight|reduce|비중축소)/.test(t)) return "op-sell";
+  if (/(buy|매수|outperform|overweight|비중확대|accumulate)/.test(t)) return "op-buy";
+  if (/(hold|중립|neutral|보유|marketperform|mar0perform|시장수익률)/.test(t)) return "op-hold";
+  return "op-na";
+}
+
+/* ---- 투자의견 컨센서스 (최근 1개월, 날짜 내림차순) ---- */
+function renderConsensus(t) {
+  const box = document.getElementById("consensusBox");
+  if (!box) return;
+  const rows = (t && t.consensus_rows) || [];
+  if (!rows.length) {
+    box.innerHTML = "<div class='error'>최근 1개월 내 컨센서스 없음</div>";
+    return;
+  }
+  const num = (v) => (v == null || v === "" || isNaN(+v) ? "—" : (+v).toLocaleString("ko-KR"));
+  const pct = (v) =>
+    v == null || v === "" || isNaN(+v) ? "—" : `${+v > 0 ? "+" : ""}${(+v).toFixed(1)}%`;
+  const body = rows
+    .map(
+      (r) => `<tr>
+      <td>${escapeHtml(r.firm || "—")}</td>
+      <td>${escapeHtml(String(r.date || "—").replace(/-/g, "."))}</td>
+      <td>${num(r.target)}</td>
+      <td>${num(r.prev_target)}</td>
+      <td>${pct(r.chg)}</td>
+      <td class="${opinionClass(r.opinion)}">${escapeHtml(r.opinion || "—")}</td>
+      <td class="${opinionClass(r.prev_opinion)}">${escapeHtml(r.prev_opinion || "—")}</td>
+    </tr>`
+    )
+    .join("");
+  box.innerHTML = `<table class="idx-table consensus-table">
+    <thead><tr><th>제공처</th><th>최종일자</th><th>목표가</th><th>직전목표가</th><th>변동율</th><th>투자의견</th><th>직전투자의견</th></tr></thead>
+    <tbody>${body}</tbody></table>`;
 }
 
 /* ---- 뉴스 ---- */

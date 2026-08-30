@@ -151,6 +151,110 @@ def _analyst_targets(ticker: str) -> list[dict]:
     return out[:12]
 
 
+# ------------------------------------------------------------- 투자의견 컨센서스 (증권사별)
+_CONS_HEADERS = {
+    "제공처": "firm", "증권사": "firm", "작성사": "firm", "기관": "firm",
+    "최종일자": "date", "작성일": "date", "작성일자": "date", "제공일자": "date", "발행일": "date",
+    "목표가": "target", "목표주가": "target", "목표주가(원)": "target",
+    "직전목표가": "prev_target", "직전목표주가": "prev_target",
+    "변동율": "chg", "변동률": "chg", "목표가변동": "chg", "목표주가변동": "chg",
+    "투자의견": "opinion", "의견": "opinion",
+    "직전투자의견": "prev_opinion", "직전의견": "prev_opinion",
+}
+
+
+def _cons_num(s):
+    if s is None:
+        return None
+    s = re.sub(r"[^0-9.\-]", "", str(s))
+    if s in ("", "-", ".", "-.", "--"):
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _cons_date(s):
+    m = re.search(r"(\d{2,4})[.\-/](\d{1,2})[.\-/](\d{1,2})", str(s or ""))
+    if not m:
+        return None
+    y, mo, d = (int(g) for g in m.groups())
+    if y < 100:
+        y += 2000
+    return f"{y:04d}-{mo:02d}-{d:02d}"
+
+
+def _parse_consensus_table(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    for tbl in soup.find_all("table"):
+        heads = [re.sub(r"\s+", "", th.get_text()) for th in tbl.find_all("th")]
+        cols = [_CONS_HEADERS.get(h) for h in heads]
+        if not cols or "firm" not in cols or "opinion" not in cols or "date" not in cols:
+            continue
+        out = []
+        for tr in tbl.find_all("tr"):
+            tds = tr.find_all("td")
+            if len(tds) < len(cols):
+                continue
+            rec = {}
+            for i, key in enumerate(cols):
+                if key and i < len(tds):
+                    rec[key] = tds[i].get_text(strip=True)
+            if rec.get("firm") and rec.get("date"):
+                out.append(rec)
+        if out:
+            return out
+    return []
+
+
+def _consensus_rows(ticker: str) -> list[dict]:
+    """증권사별 투자의견 컨센서스 — 최근 1개월, 날짜 내림차순.
+    FnGuide → wisereport 순으로 시도(둘 다 실패하면 빈 목록)."""
+    urls = [
+        f"https://comp.fnguide.com/SVO2/ASP/SVD_Consensus.asp?pGB=1&gicode=A{ticker}"
+        "&cID=&MenuYn=Y&ReportGB=&NewMenuID=108&stkGb=701",
+        f"https://navercomp.wisereport.co.kr/v2/company/cF3002.aspx?cmp_cd={ticker}"
+        "&finGubun=MAIN&frq=0&sframe=",
+        f"https://navercomp.wisereport.co.kr/company/cF3002.aspx?cmp_cd={ticker}"
+        "&finGubun=MAIN&frq=0&sframe=",
+    ]
+    raw: list[dict] = []
+    for u in urls:
+        try:
+            r = requests.get(u, headers={**_UA, "Referer": u.split("?")[0]}, timeout=12)
+            r.encoding = r.apparent_encoding or "utf-8"
+            raw = _parse_consensus_table(r.text)
+            if raw:
+                break
+        except Exception:  # noqa: BLE001
+            continue
+    if not raw:
+        return []
+
+    cutoff = (today_kst() - _dt.timedelta(days=31)).isoformat()
+    rows = []
+    for x in raw:
+        d = _cons_date(x.get("date"))
+        if not d or d < cutoff:
+            continue
+        tgt, prev = _cons_num(x.get("target")), _cons_num(x.get("prev_target"))
+        chg = _cons_num(x.get("chg"))
+        if chg is None and tgt and prev:
+            chg = round((tgt - prev) / prev * 100, 2)
+        rows.append({
+            "firm": (x.get("firm") or "").strip() or None,
+            "date": d,
+            "target": int(tgt) if tgt else None,
+            "prev_target": int(prev) if prev else None,
+            "chg": chg,
+            "opinion": (x.get("opinion") or "").strip() or None,
+            "prev_opinion": (x.get("prev_opinion") or "").strip() or None,
+        })
+    rows.sort(key=lambda r: r["date"], reverse=True)
+    return rows[:25]
+
+
 def _yf_krx_targets(ticker: str) -> list[dict]:
     """국내 종목의 야후 파이낸스 애널리스트 목표가(상단/중간/하단). .KS → .KQ 순 시도."""
     try:
@@ -226,6 +330,9 @@ def _naver_target(ticker: str) -> dict:
         "opinion_score": mean,
         "as_of": c.get("createDate"),
         "analyst_targets": at,  # [{firm, target, date, url}] 내림차순
+        "consensus_rows": safe(
+            lambda: _consensus_rows(ticker), default=[], label=f"consensus {ticker}"
+        ) or [],
     }
 
 
