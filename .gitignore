@@ -18,3 +18,7 @@ Thumbs.db
 
 # 로컬 테스트 산출물 (data/ 자체는 커밋됨)
 *.log
+
+# Cloudflare Wrangler 로컬 캐시
+.wrangler/
+proxy/.wrangler/
