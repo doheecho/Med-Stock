@@ -1,0 +1,18 @@
+{
+  "id": "/Med-Stock/",
+  "name": "메-Stock · 개인 포트폴리오 대시보드",
+  "short_name": "메-Stock",
+  "description": "보유 종목의 평가손익·재무·수급·목표주가·뉴스를 한 화면에서 보는 개인 대시보드",
+  "start_url": "/Med-Stock/",
+  "scope": "/Med-Stock/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ko",
+  "background_color": "#0f1216",
+  "theme_color": "#0f1216",
+  "icons": [
+    { "src": "/Med-Stock/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/Med-Stock/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/Med-Stock/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
