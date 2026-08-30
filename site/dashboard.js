@@ -139,6 +139,7 @@ async function init() {
 
     document.getElementById("asOf").textContent =
       "배치 기준일 " + ((snapshot && snapshot.as_of) || "—");
+    setProvenance();
 
     buildTabs();
     syncViewToggleBtn();
@@ -178,13 +179,31 @@ function renderAdvisor() {
   const a = state.advisor;
   if (!a || !a.comment) {
     el.hidden = true;
-    return;
+  } else {
+    el.hidden = false;
+    el.innerHTML =
+      `<span class="tag">AI Advisor :</span> ` +
+      escapeHtml(a.comment) +
+      (a.updated_at ? ` <span class="src">(${escapeHtml(shortDate(a.updated_at))})</span>` : "");
   }
-  el.hidden = false;
+  setProvenance();
+}
+
+/* 출처·갱신 스트립 (전문 통계 사이트처럼 데이터 출처를 항상 노출) */
+function setProvenance() {
+  const el = document.getElementById("provenance");
+  if (!el) return;
+  const asOf = (state.snapshot && state.snapshot.as_of) || "—";
+  const adv =
+    state.advisor && state.advisor.updated_at ? shortDate(state.advisor.updated_at) : "—";
+  const S = '<span class="sep">·</span>';
   el.innerHTML =
-    `<span class="tag">AI Advisor :</span> ` +
-    escapeHtml(a.comment) +
-    (a.updated_at ? ` <span class="src">(${escapeHtml(shortDate(a.updated_at))})</span>` : "");
+    `시세 <b>실시간</b>(Cloudflare Worker 프록시)${S}` +
+    `배치 데이터 <b>pykrx·FinanceDataReader</b>(KRX) / <b>yfinance</b>(해외)${S}` +
+    `재무·수급·목표주가·뉴스 네이버 금융 / Google News` +
+    `<br>AI Advisor <b>Google Gemini</b>${S}환율 frankfurter.dev` +
+    `<br>최종 갱신 — 배치 <b>${escapeHtml(asOf)}</b>${S}Advisor <b>${escapeHtml(adv)}</b>`;
+  el.hidden = false;
 }
 
 /* 일시적 완료 토스트 */

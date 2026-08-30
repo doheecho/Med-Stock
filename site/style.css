@@ -7,7 +7,7 @@
   --muted: #8b95a1;
   --up: #ef4444;      /* 국내 관습: 상승=빨강 */
   --down: #3b82f6;    /* 하락=파랑 */
-  --accent: #22d3ee;
+  --accent: #f59e0b;  /* UI 강조색 = 앰버 (AI Advisor·부제와 통일 · 원자재시황과 결 맞춤) */
   --green: #22c55e;
   --amber: #f59e0b;
 }
@@ -25,15 +25,17 @@ body {
   background: var(--bg);
   color: var(--text);
   font: 14px/1.5 -apple-system, "Segoe UI", "Malgun Gothic", Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;   /* 숫자 자릿수 세로 정렬 (통계 사이트 느낌) */
 }
 
 .topbar {
   display: flex; align-items: baseline; justify-content: space-between;
   flex-wrap: wrap; gap: 8px;
-  padding: 16px 20px; border-bottom: 1px solid var(--line);
+  padding: 10px 20px; border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 40; background: var(--bg);
 }
-.topbar h1 { font-size: 18px; margin: 0; }
-.topbar .sub { color: var(--muted); font-weight: 400; font-size: 13px; margin-left: 8px; }
+.topbar h1 { font-size: 17px; margin: 0; }
+.topbar .sub { color: var(--amber); font-weight: 700; font-size: 17px; margin-left: 8px; }
 .meta { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; }
 .meta button {
   background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
@@ -56,15 +58,15 @@ body {
 .card .value.pos { color: var(--up); }
 .card .value.neg { color: var(--down); }
 
-/* AI Advisor 코멘트 (data/advisor.json) */
+/* AI Advisor 코멘트 (data/advisor.json) — 원자재시황과 동일한 절제된 스타일 */
 .advisor {
-  margin-top: 14px; padding: 10px 14px; border-radius: 8px;
-  background: color-mix(in srgb, var(--amber) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
-  color: var(--amber); font-size: 13px; line-height: 1.6;
+  margin-top: 14px; padding: 12px 16px; border-radius: 8px;
+  background: color-mix(in srgb, var(--amber) 5%, var(--panel));
+  border: 1px solid var(--line); border-left: 3px solid var(--amber);
+  color: var(--text); font-weight: 400; font-size: 13px; line-height: 1.6;
   white-space: pre-line;
 }
-.advisor .tag { font-weight: 700; margin-right: 4px; }
+.advisor .tag { font-weight: 700; letter-spacing: .3px; margin-right: 4px; color: var(--amber); }
 .advisor .src { color: var(--muted); }
 
 /* 차트 컨트롤 버튼 */
@@ -164,7 +166,7 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
   border-bottom: 1px solid var(--line); flex-wrap: wrap;
 }
 .tabs button {
-  background: transparent; border: none; border-bottom: 2px solid transparent;
+  background: transparent; border: none; border-bottom: 3px solid transparent;
   color: var(--muted); padding: 10px 14px; cursor: pointer; font-size: 14px;
 }
 .tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
@@ -295,4 +297,14 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .news .src { color: var(--muted); font-size: 11px; margin-left: 6px; }
 
 .loading, .error { color: var(--muted); padding: 20px; text-align: center; }
-.error { color: var(--amber); }
+.error { color: var(--up); }
+
+/* 출처·갱신 스트립 (푸터) — 원자재시황과 동일 */
+.provenance {
+  color: var(--muted); font-size: 11px; line-height: 1.8;
+  border-top: 1px solid var(--line);
+  margin: 4px 20px 0; padding: 14px 0 32px;
+}
+.provenance b { color: var(--text); font-weight: 600; }
+.provenance .sep { margin: 0 8px; opacity: .45; }
+.provenance[hidden] { display: none; }

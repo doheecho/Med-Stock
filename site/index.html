@@ -57,6 +57,8 @@
     <!-- 종목별 패널이 JS로 렌더됨 -->
   </main>
 
+  <footer id="provenance" class="provenance" hidden></footer>
+
   <div id="toast" class="toast" hidden></div>
 
   <!-- Chart.js v4 + 날짜 어댑터 + 캔들 플러그인 -->
@@ -65,6 +67,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
-  <script src="./dashboard.js"></script>
+  <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
+  <script src="./dashboard.js?v=20260830a"></script>
 </body>
 </html>
