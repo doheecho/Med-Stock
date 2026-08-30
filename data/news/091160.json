@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T05:11:08+00:00",
+  "updated_at": "2026-08-30T02:17:28+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -29,10 +29,10 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "'KODEX 미국CPU반도체TOP10' ETF, 상장 일주일 수익률 10.35%",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zMUtubVUxbV9xTl8waVBISk0tYlNrZ2JabWtrMDYxeVlPNTVXNzBNTEFxTDdoSWtkYnZpdlZQUTRxMWZ0bm5UV191Q1p6YjJQTHNqVUdwZm84NkRQZlRFcg?oc=5",
-      "source": "아시아경제",
-      "date": "Tue, 11 Aug 2026 07:00:00 GMT"
+      "title": "반도체 ETF도 양극화…‘TOP2’로 자금 몰렸다",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QVWt6WTUxWV9LZ1hWQ29kdGNDb2cxT3c2UHo3Ujh2LWpYLW9lYzN5enVrejZkaVE1eFQ2TlZpdEk0blZiODcwU1RKN3NsQTlaTVE?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     },
     {
       "title": "삼성자산운용, ‘KODEX 미국CPU반도체TOP10’ 상장 일주일 수익률 10%…“CPU에 집중 투자”",
@@ -53,12 +53,6 @@
       "date": "Mon, 10 Aug 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 ETF도 양극화…‘TOP2’로 자금 몰렸다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QVWt6WTUxWV9LZ1hWQ29kdGNDb2cxT3c2UHo3Ujh2LWpYLW9lYzN5enVrejZkaVE1eFQ2TlZpdEk0blZiODcwU1RKN3NsQTlaTVE?oc=5",
-      "source": "서울경제",
-      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼성운용, KODEX 미국CPU반도체TOP10 상장 일주일 수익률 10%대",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAyeWZPVWl3LXF3ZXhtN1l6UU1EZ3FybUNXekVhdndhZ3lpVG1Ia3BtbXV3VDdmelZlTFNBQkZxaUw0Tmk0YjdkQi03RWV2RThKYnhfSTItVkxKUQ?oc=5",
       "source": "한국경제",
@@ -69,6 +63,12 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aLWFnQ1lnQ29kWm52QU55eHVxekVZTkozMDN3MmpnNVltMVhqTE9lRU9BMjJjV3BsME01aG1CZ2NJbDJuYzd4T3N2dC1RM3hxOFZ6VzZvVGNpN21GZ204eENjOEVRRTAyRXhpRWlSUQ?oc=5",
       "source": "진일보",
       "date": "Fri, 14 Aug 2026 03:56:15 GMT"
+    },
+    {
+      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합)",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
+      "source": "연합인포맥스",
+      "date": "Fri, 29 May 2026 07:00:00 GMT"
     },
     {
       "title": "CPU 핵심 기업 투자…'KODEX 미국CPU반도체TOP10' 상장 - 머니투데이",
@@ -83,16 +83,16 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합)",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
-      "source": "연합인포맥스",
-      "date": "Fri, 29 May 2026 07:00:00 GMT"
+      "title": "삼전·닉스로 쏠린 개미들… 반도체 ETF 거래 두 달 만에 ‘4분의 1′토막 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUTNpdWkyS2RtNjczdF9PdkYyT3E5UjZIMi1WZU9DTThmakxqSlpQMUMtOEhGNkk4a2REbmJqX1lSOGFNU1lOT0ZDWEZORlNmOGVORVFINWRfMnFwOU5YNE9mMXotc0p2SmE5Q1U5cENkanV6QktFMS15dHRjczdLR3R1RUdHTFYt0gGcAUFVX3lxTE5CNzFLQ1dYQUhoQ3FHcDBQcXp4U2lFcVYwanhKMnY5Z2NZdHVHN1FuRTRiZnRaVE9DdGhhd3ktdGwyVDRfSEp1UVp2OTR6M3QwWlhseGlKY2ZoZnJpU1VRZzgtNHZ3OGdrQ19GMnBsaW4wQ05BRFNBeWxCY3pHdXB1Mnh2cFYwQlBzWHRxYTNCSkVwWXNBanRiTWFQWQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Fri, 24 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 독주 꺾이자…코스닥 시장으로 돈 몰린다",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NaWprUHpXQTc2OHdXY09aQ0U1OWdvRjJmaGRrYWNERjV3RGUxWXJaUW1ySFd6UmUzTHY2WlBQOHF6d3JmVUJCLU5NenBPU0p0RlA4bjVkLWhoUktCczFSRnEwVU0?oc=5",
-      "source": "MTN 머니투데이방송",
-      "date": "Wed, 05 Aug 2026 07:00:00 GMT"
+      "title": "순환매 장세에 이달 반도체 아닌 '코스닥·우주·방산' ETF 활짝(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RNVhwWWRIRU84a0FFTWJkWDVyaEdNYjRhSzFxX01STVRfX19odG9vY0JVMi12M1BhNElkazh2QmhnVm5VM3dEb3FWMmM4eWtXVHc1U20tVl9TTnfSAWBBVV95cUxQakRPanJvcnNHMkFGdmlJdFFzMUlZdFJyaXRhZk1LVksxdmQzNm1oaGZ6Y0toekRVclpmVXFaSm5TYlZBWHA2NlZzR2RyQWZfU24tNnM2bXg0enhYV0xSN0g?oc=5",
+      "source": "연합뉴스",
+      "date": "Fri, 14 Aug 2026 07:00:00 GMT"
     }
   ]
 }

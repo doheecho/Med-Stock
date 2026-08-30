@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T05:11:09+00:00",
+  "updated_at": "2026-08-30T02:17:29+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -71,16 +71,10 @@
       "date": "Tue, 27 May 2025 07:00:00 GMT"
     },
     {
-      "title": "세금 나중에 내는 'TR ETF'에 외국인투자자 몰려",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
-      "source": "intn.co.kr",
-      "date": "Mon, 18 Mar 2019 07:00:00 GMT"
-    },
-    {
-      "title": "삼성운용, KODEX ETF 7종 보수 인하···\"상품 경쟁력 강화\"",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BbEhldEo4bEpDeVRuVHNtdW1Jc3c3ejVCcDFPTXpCZ3hnZUdVUkxWY0ZHTzcwTjNyeXJIeFlfT1RWeGx2Z2t1ekoyRGFRM2FIeThvMl8zanNnbXlkdHFYa3NtSnNNV0kzVGc?oc=5",
-      "source": "서울파이낸스",
-      "date": "Thu, 06 Oct 2022 07:00:00 GMT"
+      "title": "TR(Total Return), 너의 정체는?",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04THcwS3JIV3JiY0s5NXR2b0EtZWwwYzktQU1JM2FIZkt1WkZ3elZzZ3l0NEViNk8yV28wLXBFTGtxU1Y5aDVqc0p5ZkF1SUc3ZUE?oc=5",
+      "source": "브런치",
+      "date": "Thu, 02 Jul 2026 07:00:00 GMT"
     },
     {
       "title": "09일, 거래소 기관 순매도상위에 운수장비 업종 6종목",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBuNXYtUmNjM1NLNHJ1VXZRMEJUUTIzTWt6Rl84bWt3U2VRQnJkdUZDdmlKSUJHLXNlOXRwd1hZTHRoV2lSZmNKdUdORmZsY3M?oc=5",
       "source": "매일경제 마켓",
       "date": "Mon, 03 Apr 2023 07:00:00 GMT"
+    },
+    {
+      "title": "“한국투자 때 가장 믿을 만”...외국인 투자자 1년새 1.3조 산 ETF",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE40Sl9Oa0NWUkdxWm9aaE51S2pybU53RWF2ZnctbFRLLUswdl9DbG5EN3lCcHBCcHVXYnR6eUo3ZmtwU0tYM1JqTWRGM1pWeUE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Fri, 17 Feb 2023 08:00:00 GMT"
     }
   ]
 }

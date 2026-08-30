@@ -1,9 +1,33 @@
 {
-  "updated_at": "2026-08-29T05:11:04+00:00",
+  "updated_at": "2026-08-30T02:17:24+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "AI’s memory stack: What investors need to know",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-memory-stack-investors-know-234641961.html",
+      "source": "Investing.com",
+      "date": "2026-08-29T23:46:41Z"
+    },
+    {
+      "title": "Memory Now Accounts for 50% of Global Semiconductor Revenue — But There’s a Catch",
+      "url": "https://247wallst.com/investing/2026/08/29/memory-now-accounts-for-50-of-global-semiconductor-revenue-but-theres-a-catch/",
+      "source": "24/7 Wall St.",
+      "date": "2026-08-29T16:06:49Z"
+    },
+    {
+      "title": "Nvidia's CFO Just Explained Why the AI Boom Is Eating Its Gross Margin -- and It's a Green Light for Micron",
+      "url": "https://www.fool.com/investing/2026/08/29/nvidias-just-explained-why-the-ai-boom-is-eating/",
+      "source": "Motley Fool",
+      "date": "2026-08-29T15:50:00Z"
+    },
+    {
+      "title": "Intel Sold Its NAND Memory Business for About $9 Billion. Micron Is Now Worth More Than Twice What Intel Is.",
+      "url": "https://www.fool.com/investing/2026/08/29/intel-sold-its-nand-memory-business-for-about-usd9-billion-micron-is-now-worth-more-than-twice-what-intel-is/",
+      "source": "Motley Fool",
+      "date": "2026-08-29T09:07:01Z"
+    },
     {
       "title": "Jim Cramer Shared Why Micron Technology, Inc. (NASDAQ:MU)’s Shares Didn’t Rise On Shortage News",
       "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shared-why-micron-033253032.html",
@@ -39,30 +63,6 @@
       "url": "https://247wallst.com/investing/2026/08/28/western-digital-just-dropped-13-in-a-month-is-it-time-to-sell/",
       "source": "24/7 Wall St.",
       "date": "2026-08-28T19:01:16Z"
-    },
-    {
-      "title": "Nvidia Breaks Ranks With Chip Stocks as Correlation Hits Just 0.03",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-breaks-ranks-chip-stocks-174824369.html",
-      "source": "GuruFocus.com",
-      "date": "2026-08-28T17:48:24Z"
-    },
-    {
-      "title": "Micron Just Added $10 Billion to Its U.S. AI Bet",
-      "url": "https://finance.yahoo.com/technology/ai/articles/micron-just-added-10-billion-165836233.html",
-      "source": "GuruFocus.com",
-      "date": "2026-08-28T16:58:36Z"
-    },
-    {
-      "title": "Here's Why Micron Stock Can Double Next Year",
-      "url": "https://www.fool.com/investing/2026/08/28/heres-why-micron-stock-can-double-next-year/",
-      "source": "Motley Fool",
-      "date": "2026-08-28T16:37:00Z"
-    },
-    {
-      "title": "Micron (MU) CEO: AI Shift Breaks Traditional Memory Market Cycles",
-      "url": "https://finance.yahoo.com/technology/ai/articles/micron-mu-ceo-ai-shift-161424175.html",
-      "source": "Insider Monkey",
-      "date": "2026-08-28T16:14:24Z"
     }
   ]
 }
