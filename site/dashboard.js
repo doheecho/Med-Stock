@@ -744,13 +744,25 @@ async function renderDetail(ticker) {
 
   document.getElementById("chartCtl").addEventListener("click", onChartCtl);
 
-  const [fund, flow, target, news, etfData] = await Promise.all([
-    getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
-    getJSON(`${state.dataBase}/flows/${ticker}.json`).catch(() => null),
-    etf ? Promise.resolve(null) : getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
-    getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
-    etf ? getJSON(`${state.dataBase}/etf/${ticker}.json`).catch(() => null) : Promise.resolve(null),
-  ]);
+  let fund, flow, target, news, etfData = null;
+  if (h && h._adhoc) {
+    // 추가 종목: 워커에서 기본지표·목표주가·수급·뉴스를 한 번에
+    const info = PROXY_BASE
+      ? await getJSON(`${PROXY_BASE}/stockinfo?ticker=${encodeURIComponent(ticker)}`).catch(() => null)
+      : null;
+    fund = info && info.fundamentals;
+    flow = info && info.flow;
+    target = info && info.target;
+    news = info && info.news;
+  } else {
+    [fund, flow, target, news, etfData] = await Promise.all([
+      getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
+      getJSON(`${state.dataBase}/flows/${ticker}.json`).catch(() => null),
+      etf ? Promise.resolve(null) : getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
+      getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
+      etf ? getJSON(`${state.dataBase}/etf/${ticker}.json`).catch(() => null) : Promise.resolve(null),
+    ]);
+  }
   state.panel = { h, fund, flow, target, news, etfData };
 
   renderFundamentals(h, fund);

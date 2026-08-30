@@ -55,6 +55,19 @@ export default {
       }
     }
 
+    // GET /stockinfo?ticker=005930 → 기본지표·목표주가·수급·뉴스 한 번에 (추가 종목용)
+    if (path === "/stockinfo") {
+      const t = (url.searchParams.get("ticker") || "").trim();
+      if (!/^\d[0-9A-Z]{5}$/.test(t)) {
+        return json({ ticker: t, fundamentals: null, target: null, flow: null, news: null }, 200);
+      }
+      try {
+        return json(await stockInfo(t), 200);
+      } catch (err) {
+        return json({ ticker: t, error: String((err && err.message) || err) }, 502);
+      }
+    }
+
     // GET /consensus?ticker=005930 → 제공처별 투자의견 컨센서스
     //   (네이버 증권 종목분석 표. GitHub Actions IP 는 차단돼 브라우저→워커로 받는다)
     if (path === "/consensus") {
@@ -231,6 +244,152 @@ async function searchStock(q) {
     }))
     .filter((x) => x.code && x.name);
   return { q, items };
+}
+
+// ── 기본지표 · 목표주가 · 수급 · 뉴스 (추가 종목용) ────────────────────
+const _koNum = (s) => {
+  const v = Number(String(s == null ? "" : s).replace(/[^0-9.\-]/g, ""));
+  return Number.isFinite(v) ? v : null;
+};
+// "1,502조 4,936억" → 원
+function _koWon(s) {
+  s = String(s || "");
+  const jo = s.match(/([\d,]+)\s*조/);
+  const eok = s.match(/([\d,]+)\s*억/);
+  let won = 0, hit = false;
+  if (jo) { won += Number(jo[1].replace(/,/g, "")) * 1e12; hit = true; }
+  if (eok) { won += Number(eok[1].replace(/,/g, "")) * 1e8; hit = true; }
+  if (hit) return won;
+  const n = _koNum(s);
+  return n == null ? null : n;
+}
+function _opinionOf(mean) {
+  const m = Number(mean);
+  if (!Number.isFinite(m)) return null;
+  if (m >= 4.5) return "적극매수";
+  if (m >= 3.5) return "매수";
+  if (m >= 2.5) return "중립";
+  return "매도";
+}
+
+async function stockInfo(code) {
+  const H = { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" };
+  const integ = await (
+    await fetch(`https://m.stock.naver.com/api/stock/${code}/integration`, { headers: H, cf: { cacheTtl: 900 } })
+  ).json();
+
+  const ti = {};
+  for (const x of integ.totalInfos || []) ti[x.code] = x.value;
+  const fundamentals = {
+    per: _koNum(ti.per),
+    forward_per: _koNum(ti.cnsPer),
+    pbr: _koNum(ti.pbr),
+    eps: _koNum(ti.eps),
+    bps: _koNum(ti.bps),
+    div_yield: _koNum(ti.dividendYieldRatio),
+    foreign_rate: _koNum(ti.foreignRate),
+    market_cap: _koWon(ti.marketValue),
+    high_52w: _koNum(ti.highPriceOf52Weeks),
+    low_52w: _koNum(ti.lowPriceOf52Weeks),
+    as_of: new Date().toISOString().slice(0, 10),
+    source: "네이버",
+  };
+
+  const ci = integ.consensusInfo || {};
+  const avg = _koNum(ci.priceTargetMean);
+  const target = avg
+    ? { target_avg: avg, opinion: _opinionOf(ci.recommMean), source: "네이버 컨센서스" }
+    : null;
+
+  const [flow, news] = await Promise.all([
+    flowRows(code).catch(() => null),
+    newsItems(code).catch(() => null),
+  ]);
+  return { ticker: code, fundamentals, target, flow, news };
+}
+
+async function flowRows(code) {
+  const byDate = {};
+  for (const page of [1, 2]) {
+    const buf = await (
+      await fetch(`https://finance.naver.com/item/frgn.naver?code=${code}&page=${page}`, {
+        headers: { "User-Agent": "Mozilla/5.0", Referer: "https://finance.naver.com/" },
+        cf: { cacheTtl: 1800 },
+      })
+    ).arrayBuffer();
+    const html = new TextDecoder("euc-kr").decode(buf);
+    // frgn 페이지엔 type2 표가 여러 개 → 날짜가 든 데이터 표를 고른다
+    const tables = html.match(/<table[\s\S]*?<\/table>/gi) || [];
+    const tbl = tables.find(
+      (t) => /\d{4}\.\d{2}\.\d{2}/.test(t) && (t.match(/<td/gi) || []).length > 20
+    );
+    if (!tbl) continue;
+    for (const tr of tbl.match(/<tr[\s\S]*?<\/tr>/gi) || []) {
+      const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map((s) =>
+        s.replace(/<[^>]+>/g, "").replace(/&nbsp;/gi, " ").replace(/\s+/g, " ").trim()
+      );
+      if (c.length < 9 || !/\d{4}\.\d{2}\.\d{2}/.test(c[0])) continue;
+      const close = _koNum(c[1]);
+      const instQ = _koNum(c[5]);
+      const frgnQ = _koNum(c[6]);
+      if (close == null) continue;
+      const t = c[0].replace(/\./g, "-");
+      const inst = instQ == null ? null : Math.round(instQ * close);
+      const frgn = frgnQ == null ? null : Math.round(frgnQ * close);
+      const indiv = inst != null && frgn != null ? -(inst + frgn) : null;
+      byDate[t] = { t, institution: inst, foreign: frgn, individual: indiv };
+    }
+  }
+  // 최근 며칠 개인 실측치로 덮어쓰기
+  try {
+    const tr = await (
+      await fetch(`https://m.stock.naver.com/api/stock/${code}/trend`, {
+        headers: { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" },
+        cf: { cacheTtl: 900 },
+      })
+    ).json();
+    for (const x of tr || []) {
+      const bd = String(x.bizdate || "");
+      const t = bd.length === 8 ? `${bd.slice(0, 4)}-${bd.slice(4, 6)}-${bd.slice(6, 8)}` : bd;
+      const iq = _koNum(x.individualPureBuyQuant);
+      const cp = _koNum(x.closePrice);
+      if (byDate[t] && iq != null && cp) byDate[t].individual = Math.round(iq * cp);
+    }
+  } catch (_) {}
+
+  const rows = Object.keys(byDate).sort().map((t) => byDate[t]);
+  if (!rows.length) return null;
+  return {
+    rows,
+    source: "naver(frgn)",
+    note: "기관·외국인 순매매 수량을 종가로 환산한 근사치. 개인은 -(기관+외국인) 근사(최근일 실측).",
+  };
+}
+
+async function newsItems(code) {
+  const raw = await (
+    await fetch(`https://m.stock.naver.com/api/news/stock/${code}?pageSize=15&page=1`, {
+      headers: { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" },
+      cf: { cacheTtl: 600 },
+    })
+  ).json();
+  const items = [];
+  for (const cluster of Array.isArray(raw) ? raw : []) {
+    const it = (cluster.items || [])[0];
+    if (!it) continue;
+    const dt = String(it.datetime || "");
+    const iso =
+      dt.length >= 12
+        ? `${dt.slice(0, 4)}-${dt.slice(4, 6)}-${dt.slice(6, 8)}T${dt.slice(8, 10)}:${dt.slice(10, 12)}`
+        : null;
+    items.push({
+      title: it.title,
+      url: `https://n.news.naver.com/article/${it.officeId}/${it.articleId}`,
+      date: iso,
+      source: it.officeName || "",
+    });
+  }
+  return items.length ? { items } : null;
 }
 
 // ── 투자의견 컨센서스 (wisereport c1010001 table#cTB24) ───────────────
