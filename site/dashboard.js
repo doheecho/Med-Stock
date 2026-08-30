@@ -5,7 +5,7 @@
  * 배포 후 할 일: 아래 PROXY_BASE 에 워커 URL 을 넣는다.
  *   비워두면 실시간 조회를 건너뛰고 종가(last_close)로 표시한다.
  */
-const PROXY_BASE = ""; // 예: "https://med-stock-proxy.your-subdomain.workers.dev"
+const PROXY_BASE = "https://med-stock-proxy.dhcho.workers.dev"; // 예: "https://med-stock-proxy.your-subdomain.workers.dev"
 
 const FX_FALLBACK = 1350; // frankfurter 조회 실패 시 USD→KRW 대체 환율
 
