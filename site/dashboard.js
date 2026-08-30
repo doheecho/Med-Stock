@@ -24,7 +24,7 @@ const state = {
   advisor: null,                     // data/advisor.json
   chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
   ma: { ma5: false, ma20: true, ma60: true, ma120: false },
-  overlay: { bbands: false, volume: false, buyprice: false },
+  overlay: { bbands: false, volume: false, buyprice: false, ichimoku: false },
   sub: { rsi: true, macd: false, stoch: false },
   rsiTf: "D", // RSI 봉 단위: D 일봉 | W 주봉 | M 월봉
   panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
@@ -556,7 +556,7 @@ const RANGE_BTNS = [
   ["1Y", "1년"], ["3Y", "3년"], ["5Y", "5년"],
 ];
 const MA_BTNS = [["ma5", "MA5"], ["ma20", "MA20"], ["ma60", "MA60"], ["ma120", "MA120"]];
-const OV_BTNS = [["bbands", "볼린저밴드"], ["volume", "거래량"], ["buyprice", "내 매수가"]];
+const OV_BTNS = [["bbands", "볼린저밴드"], ["volume", "거래량"], ["buyprice", "내 매수가"], ["ichimoku", "일목균형표"]];
 
 function chartCtlHtml() {
   const g = (arr, attr, on) =>
@@ -817,7 +817,33 @@ function acctStripHtml(h) {
   return `<div class="block acct-strip"><h3>계좌별 내역 — ${h.name || h.ticker}</h3><div class="acct-cards">${cards}</div></div>`;
 }
 
-/* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/시나리오 ---- */
+/* 일목균형표 — 전환선(9)·기준선(26)·선행스팬1·2(52). 선행스팬은 이동 전 원시 중간값을
+   전체 길이로 반환(그리는 쪽에서 disp 만큼 미래로 민다). 후행스팬은 종가를 그대로 뒤로. */
+function ichimoku(candles, p1 = 9, p2 = 26, p3 = 52) {
+  const n = candles.length;
+  const mid = (i, w) => {
+    if (i < w - 1) return null;
+    let hi = -Infinity, lo = Infinity;
+    for (let j = i - w + 1; j <= i; j++) {
+      const c = candles[j];
+      if (!c || c.h == null || c.l == null) return null;
+      if (c.h > hi) hi = c.h;
+      if (c.l < lo) lo = c.l;
+    }
+    return (hi + lo) / 2;
+  };
+  const tenkan = [], kijun = [], spanA = [], spanB = [];
+  for (let i = 0; i < n; i++) {
+    const t = mid(i, p1), k = mid(i, p2);
+    tenkan.push(t);
+    kijun.push(k);
+    spanA.push(t == null || k == null ? null : (t + k) / 2);
+    spanB.push(mid(i, p3));
+  }
+  return { tenkan, kijun, spanA, spanB, disp: p2 };
+}
+
+/* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/시나리오/일목균형표 ---- */
 function drawPriceChart(h) {
   const p = state.prices[h.ticker];
   const box = document.getElementById("priceChart");
@@ -873,6 +899,52 @@ function drawPriceChart(h) {
   }
 
   const lastRealTs = xs[xs.length - 1];
+
+  // ---- 일목균형표: 주가전망 점선과 무관하게, 마지막 봉 이후 26영업일 구간에
+  //      선행스팬(구름)을 실제로 밀어서 그린다. (전환/기준/후행은 과거 구간만) ----
+  let ichiXMax = lastRealTs;
+  const useIchi = state.overlay.ichimoku && p.candles && total >= 52;
+  if (useIchi) {
+    const ichi = ichimoku(p.candles);
+    const D = ichi.disp;
+    // 마지막 실제일 이후 D 영업일 타임스탬프
+    const futTs = [];
+    let ts = new Date(p.dates[total - 1]).getTime();
+    while (futTs.length < D) {
+      ts += 864e5;
+      const wd = new Date(ts).getUTCDay();
+      if (wd !== 0 && wd !== 6) futTs.push(ts);
+    }
+    ichiXMax = futTs[futTs.length - 1];
+
+    const base = { borderWidth: 1, pointRadius: 0, spanGaps: true };
+    datasets.push({
+      type: "line", label: "전환선", order: 4, borderColor: "#3b82f6", ...base,
+      data: xs.map((x, i) => ({ x, y: ichi.tenkan[idxs[i]] })),
+    });
+    datasets.push({
+      type: "line", label: "기준선", order: 4, borderColor: "#ef4444", ...base,
+      data: xs.map((x, i) => ({ x, y: ichi.kijun[idxs[i]] })),
+    });
+    datasets.push({
+      type: "line", label: "후행스팬", order: 4, borderColor: "#9ca3af", borderDash: [2, 2], ...base,
+      data: xs.map((x, i) => ({ x, y: p.close[idxs[i] + D] ?? null })),
+    });
+    // 선행스팬1·2: 과거 구간은 disp 만큼 당겨온 값, 미래 stub 은 최근 26봉 값
+    const spanData = (arr) => [
+      ...xs.map((x, i) => ({ x, y: arr[idxs[i] - D] ?? null })),
+      ...futTs.map((x, j) => ({ x, y: arr[total - D + j] ?? null })),
+    ];
+    datasets.push({
+      type: "line", label: "선행스팬1", order: 30, borderColor: "#22c55eaa", borderWidth: 1,
+      pointRadius: 0, spanGaps: true, data: spanData(ichi.spanA),
+      fill: { target: "+1", above: "rgba(34,197,94,0.13)", below: "rgba(239,68,68,0.13)" },
+    });
+    datasets.push({
+      type: "line", label: "선행스팬2", order: 30, borderColor: "#ef4444aa", borderWidth: 1,
+      pointRadius: 0, spanGaps: true, fill: false, data: spanData(ichi.spanB),
+    });
+  }
   const scales = {
     x: xTimeScale(xKind(), lastRealTs),
     y: {
@@ -880,7 +952,7 @@ function drawPriceChart(h) {
       afterFit: (s) => { s.width = AXIS_Y_W; },
     },
   };
-  let xMax = lastRealTs;
+  let xMax = Math.max(lastRealTs, ichiXMax);
 
   // ---- 목표주가 점선 (ETF 제외, 1년 이상 구간에서만). 실제 목표시점(12M)과
   //      무관하게 과거 구간을 넓히려고 x축은 약 1개월분만 사용, 전망 구간 라벨은 숨김 ----
@@ -920,8 +992,8 @@ function drawPriceChart(h) {
 
   scales.x.min = xs[0];
   scales.x.max = xMax;
-  // 보조지표들이 같은 x 구간·눈금을 쓰도록 도메인 저장
-  state._xDomain = { min: xs[0], max: xMax };
+  // 보조지표들이 같은 x 구간·눈금·전망라벨 숨김을 쓰도록 도메인 저장
+  state._xDomain = { min: xs[0], max: xMax, lastRealTs };
 
   makeChart("priceChart", {
     data: { datasets },
@@ -951,7 +1023,7 @@ function drawMacdChart(p) {
   const idxs = sampleIdx(rangeStartIdx(p.dates), total);
   const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   const S = (a) => idxs.map((k) => a[k]);
-  const xg = xTimeScale(xKind());
+  const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("macdChart", {
@@ -1082,7 +1154,7 @@ function drawRsiChart(p) {
   const idxs = sampleIdx(rangeStartIdx(rs.dates), rs.dates.length);
   const xs = idxs.map((k) => new Date(rs.dates[k]).valueOf());
   const ys = idxs.map((k) => rsi[k]);
-  const xg = xTimeScale(xKind());
+  const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("rsiChart", {
@@ -1120,7 +1192,7 @@ function drawStochChart(p) {
   const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
   const xs = idxs.map((i) => new Date(p.dates[i]).valueOf());
   const S = (a) => idxs.map((i) => a[i]);
-  const xg = xTimeScale(xKind());
+  const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
   makeChart("stochChart", {
