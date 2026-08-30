@@ -96,6 +96,11 @@ async function init() {
   document.getElementById("viewToggleBtn").addEventListener("click", () =>
     setViewMode(state.viewMode === "byAccount" ? "byTicker" : "byAccount")
   );
+  const pieC = document.getElementById("pieCollapseBtn");
+  if (pieC) pieC.addEventListener("click", togglePie);
+  let _pc = "0";
+  try { _pc = localStorage.getItem("medstock.pieCollapsed") || "0"; } catch (_) {}
+  if (_pc === "1") setPieCollapsed(true, false);
   document.querySelectorAll("#posTable thead th").forEach((th) => {
     if (th.dataset.key) th.addEventListener("click", () => onSort(th.dataset.key));
   });
@@ -345,6 +350,21 @@ function setViewMode(mode) {
   syncViewToggleBtn();
   renderSummary(); // 도넛 + 표 갱신
   updateAcctStrip(); // 상세는 계좌 스트립만 토글 (지수/뉴스/차트 재렌더 안 함)
+}
+
+/* 원그래프 접기/펼치기 — 접으면 종목 표가 가로 1칸을 전부 차지 */
+function setPieCollapsed(on, redraw = true) {
+  const wrap = document.querySelector(".summary-charts");
+  if (!wrap) return;
+  wrap.classList.toggle("pie-collapsed", !!on);
+  const b = document.getElementById("pieCollapseBtn");
+  if (b) b.textContent = on ? "원그래프 펼치기" : "원그래프 접기";
+  try { localStorage.setItem("medstock.pieCollapsed", on ? "1" : "0"); } catch (_) {}
+  if (redraw && !on) renderSummary(); // 펼칠 때 도넛 재그리기 (숨김 상태에선 크기 0이었음)
+}
+function togglePie() {
+  const wrap = document.querySelector(".summary-charts");
+  setPieCollapsed(!(wrap && wrap.classList.contains("pie-collapsed")));
 }
 
 /* 회사별↔종목별 시 상세 상단 계좌 스트립만 갱신 */

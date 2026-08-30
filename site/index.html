@@ -21,9 +21,9 @@
   <section id="summary" class="summary">
     <div class="cards">
       <div class="card"><div class="label">총 매수금액</div><div class="value" id="sumCost">—</div></div>
-      <div class="card"><div class="label">총 평가금액 <em>(실시간)</em></div><div class="value" id="sumValue">—</div></div>
-      <div class="card"><div class="label">총 평가손익 <em>(실시간)</em></div><div class="value" id="sumPl">—</div></div>
-      <div class="card"><div class="label">전일대비 <em>(실시간)</em></div><div class="value" id="sumDay">—</div></div>
+      <div class="card"><div class="label">총 평가금액</div><div class="value" id="sumValue">—</div></div>
+      <div class="card"><div class="label">총 평가손익</div><div class="value" id="sumPl">—</div></div>
+      <div class="card"><div class="label">전일대비</div><div class="value" id="sumDay">—</div></div>
     </div>
 
     <div id="advisor" class="advisor" hidden></div>
@@ -32,6 +32,7 @@
       <div class="chart-box">
         <button id="viewToggleBtn" class="pie-toggle" type="button">회사별</button>
         <canvas id="weightChart"></canvas>
+        <button id="pieCollapseBtn" class="pie-collapse" type="button">원그래프 접기</button>
       </div>
       <div class="table-wrap">
         <table id="posTable">
@@ -68,6 +69,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
-  <script src="./dashboard.js?v=20260830a"></script>
+  <script src="./dashboard.js?v=20260830b"></script>
 </body>
 </html>

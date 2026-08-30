@@ -93,6 +93,23 @@ body {
   border-radius: 10px; padding: 6px; height: 320px; display: flex;
   position: relative;
 }
+
+/* 원그래프 접기/펼치기 (우하단 버튼) */
+.pie-collapse {
+  position: absolute; bottom: 8px; right: 8px; z-index: 3;
+  background: var(--panel-2); color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 3px 11px; font-size: 11px; cursor: pointer;
+}
+.pie-collapse:hover { border-color: var(--accent); color: var(--text); }
+.summary-charts.pie-collapsed { grid-template-columns: 1fr; }
+.summary-charts.pie-collapsed .chart-box {
+  order: 2; height: auto; min-height: 0; padding: 0;
+  border: none; background: none; justify-content: flex-end;
+}
+.summary-charts.pie-collapsed .chart-box canvas,
+.summary-charts.pie-collapsed .pie-toggle { display: none; }
+.summary-charts.pie-collapsed .pie-collapse { position: static; margin-top: 4px; }
 /* 원그래프 우측 상단 종목별/회사별 토글 (절대배치 → 도넛 크기 영향 없음) */
 .pie-toggle {
   position: absolute; top: 8px; right: 8px; z-index: 2;
