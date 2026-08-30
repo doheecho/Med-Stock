@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T02:17:28+00:00",
+  "updated_at": "2026-08-30T03:24:10+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -29,12 +29,6 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 ETF도 양극화…‘TOP2’로 자금 몰렸다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QVWt6WTUxWV9LZ1hWQ29kdGNDb2cxT3c2UHo3Ujh2LWpYLW9lYzN5enVrejZkaVE1eFQ2TlZpdEk0blZiODcwU1RKN3NsQTlaTVE?oc=5",
-      "source": "서울경제",
-      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼성자산운용, ‘KODEX 미국CPU반도체TOP10’ 상장 일주일 수익률 10%…“CPU에 집중 투자”",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1CYmpuZ1dHTU5kUXBzN3hvLTRLcERXQjAtOUxmNllCeEtrTl9RZ2lZMGxsNkRobUZNWDVkUFk1eUhKSUlaUDFHQ0sxTTJpVGlKMEM3eDVR?oc=5",
       "source": "헤럴드경제",
@@ -51,6 +45,12 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LczN2U0JlMzB6eUU2MzlrdTNETXZDSjR2T2VmZUx0b1BjckRXd1lYSHpUYm1hY19NVkFRQlpheGRwMElyV1VCZmhSNy00ZmtGb2pZQTR3NnUtOHBKNGNYUTd3UjQ?oc=5",
       "source": "서울경제TV",
       "date": "Mon, 10 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "반도체 ETF도 양극화…‘TOP2’로 자금 몰렸다",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QVWt6WTUxWV9LZ1hWQ29kdGNDb2cxT3c2UHo3Ujh2LWpYLW9lYzN5enVrejZkaVE1eFQ2TlZpdEk0blZiODcwU1RKN3NsQTlaTVE?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     },
     {
       "title": "삼성운용, KODEX 미국CPU반도체TOP10 상장 일주일 수익률 10%대",

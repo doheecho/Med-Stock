@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T02:17:36+00:00",
+  "updated_at": "2026-08-30T03:24:20+00:00",
   "items": [
     {
       "key": "KOSPI",
@@ -112,28 +112,28 @@
     {
       "key": "BTC",
       "name": "비트코인",
-      "price": 107546968.0,
-      "prev": 110811624.0,
-      "change": -3264656.0,
-      "change_pct": -2.95,
+      "price": 107519592.0,
+      "prev": 107216672.0,
+      "change": 302920.0,
+      "change_pct": 0.28,
       "fmt": "krw0"
     },
     {
       "key": "ETH",
       "name": "이더리움",
-      "price": 3385035.25,
-      "prev": 3466124.5,
-      "change": -81089.25,
-      "change_pct": -2.34,
+      "price": 3382595.75,
+      "prev": 3364764.0,
+      "change": 17831.75,
+      "change_pct": 0.53,
       "fmt": "krw0"
     },
     {
       "key": "XRP",
       "name": "리플",
-      "price": 1917.6438,
-      "prev": 2006.2032,
-      "change": -88.5594,
-      "change_pct": -4.41,
+      "price": 1917.7972,
+      "prev": 1905.4397,
+      "change": 12.3575,
+      "change_pct": 0.65,
       "fmt": "krw"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T02:17:14+00:00",
+  "updated_at": "2026-08-30T03:23:53+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
@@ -45,6 +45,35 @@
       "target": 210000,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
+    }
+  ],
+  "consensus_rows": [
+    {
+      "firm": "미래에셋증권",
+      "date": "2026-08-26",
+      "target": 370000,
+      "prev_target": 370000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "현대차증권",
+      "date": "2026-08-05",
+      "target": 440000,
+      "prev_target": 440000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "대신증권",
+      "date": "2026-07-31",
+      "target": null,
+      "prev_target": null,
+      "chg": null,
+      "opinion": "매수",
+      "prev_opinion": "매수"
     }
   ],
   "ticker": "005930",
