@@ -168,6 +168,39 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
   color: var(--muted); padding: 10px 14px; cursor: pointer; font-size: 14px;
 }
 .tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
+.tabs button.tab-extra { font-style: italic; }
+.tab-x {
+  margin-left: 6px; padding: 0 3px; border-radius: 3px;
+  color: var(--muted); font-style: normal;
+}
+.tab-x:hover { background: var(--panel-2); color: var(--neg, #3b82f6); }
+
+/* + 종목 추가 */
+.tab-add-wrap { position: relative; display: inline-flex; align-items: center; }
+.tab-add {
+  background: transparent; border: 1px dashed var(--line); border-radius: 6px;
+  color: var(--muted); width: 26px; height: 26px; line-height: 1; cursor: pointer;
+  font-size: 16px; align-self: center;
+}
+.tab-add:hover { border-color: var(--accent); color: var(--text); }
+.tab-add-pop {
+  position: absolute; top: 34px; left: 0; z-index: 40; width: 280px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); padding: 8px;
+}
+.tab-add-pop input {
+  width: 100%; box-sizing: border-box; background: var(--panel-2);
+  border: 1px solid var(--line); border-radius: 6px; color: var(--text);
+  padding: 7px 9px; font-size: 13px; outline: none;
+}
+.tab-add-pop input:focus { border-color: var(--accent); }
+.tab-add-res { list-style: none; margin: 6px 0 0; padding: 0; max-height: 260px; overflow-y: auto; }
+.tab-add-res li {
+  padding: 7px 8px; border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--text);
+}
+.tab-add-res li:hover { background: var(--panel-2); }
+.tab-add-res li.dim { color: var(--muted); cursor: default; }
+.tab-add-res li.dim:hover { background: transparent; }
 
 .detail { padding: 16px 20px 40px; }
 /* 태블릿+ : 차트(2) · 지표(1) · 시장(1) 3열. 좁으면 세로로 쌓임 */

@@ -23,12 +23,15 @@ const state = {
   sort: { key: null, dir: "desc" },  // 표 정렬 상태
   advisor: null,                     // data/advisor.json
   chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
-  ma: { ma5: false, ma20: true, ma60: true, ma120: false },
-  overlay: { bbands: false, volume: false, buyprice: false, ichimoku: false },
-  sub: { rsi: true, macd: false, stoch: false },
+  ma: { ma5: true, ma20: true, ma60: true, ma120: true },
+  overlay: { bbands: false, volume: true, buyprice: false, ichimoku: false },
+  sub: { rsi: false, macd: false, stoch: false },
   rsiTf: "D", // RSI 봉 단위: D 일봉 | W 주봉 | M 월봉
   panel: null,                       // 현재 상세탭 캐시 {h, fund, flow, target, news}
+  extras: [],                        // 보유목록 밖에서 + 로 추가한 종목 [{ticker,name,market,_adhoc:true}]
 };
+
+const EXTRAS_KEY = "medstock.extras";
 
 const RANGE_DAYS = {
   "1W": 8, "1M": 31, "3M": 92, "6M": 184, "1Y": 366,
@@ -123,6 +126,8 @@ async function init() {
     if (!state.holdings.length) {
       return fail("보유종목이 비어 있습니다. GitHub 리포지토리의 holdings.yaml 을 수정하면 'Rebuild holdings' 워크플로가 data/holdings.json 을 재생성합니다.");
     }
+
+    state.extras = loadExtras();
 
     // 가격 시계열 로드
     await Promise.all(
@@ -219,6 +224,7 @@ async function refreshData() {
         if (p) state.prices[h.ticker] = p;
       })
     );
+    for (const h of state.extras) delete state.prices[h.ticker]; // 추가종목은 다시 받도록
     if (snap && snap.as_of) document.getElementById("asOf").textContent = "배치 기준일 " + snap.as_of;
     renderSummary();
     await refreshLive();
@@ -261,7 +267,7 @@ async function refreshAdvisor() {
 async function refreshLive() {
   if (!PROXY_BASE) {
     // 프록시 미설정 → 종가로 대체
-    for (const h of state.holdings) {
+    for (const h of allHoldings()) {
       const p = state.prices[h.ticker];
       if (p && p.last_close != null) {
         state.live[h.ticker] = { price: p.last_close, prevClose: null, currency: h.market === "US" ? "USD" : "KRW", source: "close" };
@@ -276,7 +282,7 @@ async function refreshLive() {
   btn.disabled = true;
   btn.textContent = "조회 중…";
   await Promise.all(
-    state.holdings.map(async (h) => {
+    allHoldings().map(async (h) => {
       try {
         const q = await getJSON(`${PROXY_BASE}/?ticker=${encodeURIComponent(h.ticker)}`);
         if (q && q.price != null) state.live[h.ticker] = q;
@@ -540,6 +546,53 @@ function setText(id, text) {
 }
 
 /* ------------------------------------------------------------------ 탭 */
+/* 보유종목 + 추가종목 통합 조회 */
+function allHoldings() {
+  return [...state.holdings, ...state.extras];
+}
+function findHolding(ticker) {
+  return allHoldings().find((x) => x.ticker === ticker) || null;
+}
+
+function loadExtras() {
+  try {
+    const a = JSON.parse(localStorage.getItem(EXTRAS_KEY) || "[]");
+    return Array.isArray(a)
+      ? a.filter((x) => x && x.ticker).map((x) => ({ ...x, _adhoc: true }))
+      : [];
+  } catch (_) {
+    return [];
+  }
+}
+function saveExtras() {
+  try {
+    localStorage.setItem(
+      EXTRAS_KEY,
+      JSON.stringify(state.extras.map(({ ticker, name, market }) => ({ ticker, name, market })))
+    );
+  } catch (_) {}
+}
+function addExtra({ ticker, name, market }) {
+  ticker = String(ticker || "").trim().toUpperCase();
+  if (!ticker) return;
+  if (allHoldings().some((x) => x.ticker === ticker)) {
+    selectTicker(ticker);
+    return;
+  }
+  if (!market) market = /^\d[0-9A-Z]{5}$/.test(ticker) ? "KOSPI" : "US";
+  state.extras.push({ ticker, name: name || ticker, market, _adhoc: true });
+  saveExtras();
+  buildTabs();
+  selectTicker(ticker);
+}
+function removeExtra(ticker) {
+  state.extras = state.extras.filter((x) => x.ticker !== ticker);
+  delete state.prices[ticker];
+  saveExtras();
+  buildTabs();
+  if (state.active === ticker) selectTicker((state.holdings[0] || {}).ticker);
+}
+
 function buildTabs() {
   const nav = document.getElementById("tabs");
   nav.innerHTML = "";
@@ -550,11 +603,80 @@ function buildTabs() {
     b.addEventListener("click", () => selectTicker(h.ticker));
     nav.appendChild(b);
   }
+  for (const h of state.extras) {
+    const b = document.createElement("button");
+    b.className = "tab-extra";
+    b.dataset.ticker = h.ticker;
+    b.innerHTML = `${escapeHtml(h.name || h.ticker)}<span class="tab-x" title="제거">×</span>`;
+    b.addEventListener("click", (e) => {
+      if (e.target.classList.contains("tab-x")) removeExtra(h.ticker);
+      else selectTicker(h.ticker);
+    });
+    nav.appendChild(b);
+  }
+  nav.appendChild(buildAddControl());
+}
+
+/* + 버튼 + 검색 팝오버 */
+function buildAddControl() {
+  const wrap = document.createElement("span");
+  wrap.className = "tab-add-wrap";
+  wrap.innerHTML = `
+    <button class="tab-add" title="종목 추가">+</button>
+    <div class="tab-add-pop" hidden>
+      <input type="text" placeholder="회사명 또는 종목코드" autocomplete="off" />
+      <ul class="tab-add-res"></ul>
+    </div>`;
+  const btn = wrap.querySelector(".tab-add");
+  const pop = wrap.querySelector(".tab-add-pop");
+  const inp = wrap.querySelector("input");
+  const res = wrap.querySelector(".tab-add-res");
+
+  const close = () => { pop.hidden = true; res.innerHTML = ""; inp.value = ""; };
+  const open = () => { pop.hidden = false; inp.focus(); };
+  btn.addEventListener("click", (e) => { e.stopPropagation(); pop.hidden ? open() : close(); });
+  document.addEventListener("click", (e) => { if (!wrap.contains(e.target)) close(); });
+
+  let timer = null;
+  const runSearch = async () => {
+    const q = inp.value.trim();
+    if (!q) { res.innerHTML = ""; return; }
+    if (/^\d[0-9A-Za-z]{5}$/.test(q)) {
+      res.innerHTML = `<li data-code="${q.toUpperCase()}" data-name="${q.toUpperCase()}">${q.toUpperCase()} <span class="dim">코드로 추가</span></li>`;
+    }
+    if (!PROXY_BASE) {
+      if (!res.innerHTML) res.innerHTML = "<li class='dim'>PROXY_BASE 미설정 — 코드 6자리로만 추가 가능</li>";
+      return;
+    }
+    try {
+      const r = await getJSON(`${PROXY_BASE}/search?q=${encodeURIComponent(q)}`);
+      const rows = (r.items || []).slice(0, 10)
+        .map((x) => `<li data-code="${escapeHtml(x.code)}" data-name="${escapeHtml(x.name)}" data-market="${escapeHtml(x.market || "")}">${escapeHtml(x.name)} <span class="dim">${escapeHtml(x.code)}${x.market ? " · " + escapeHtml(x.market) : ""}</span></li>`)
+        .join("");
+      res.innerHTML = (res.innerHTML || "") + (rows || "<li class='dim'>결과 없음</li>");
+    } catch (_) {
+      if (!res.innerHTML) res.innerHTML = "<li class='dim'>검색 실패</li>";
+    }
+  };
+  inp.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(runSearch, 220); });
+  inp.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const first = res.querySelector("li[data-code]");
+      if (first) first.click();
+    } else if (e.key === "Escape") close();
+  });
+  res.addEventListener("click", (e) => {
+    const li = e.target.closest("li[data-code]");
+    if (!li) return;
+    addExtra({ ticker: li.dataset.code, name: li.dataset.name, market: li.dataset.market });
+    close();
+  });
+  return wrap;
 }
 
 function selectTicker(ticker) {
   state.active = ticker;
-  document.querySelectorAll("#tabs button").forEach((b) => {
+  document.querySelectorAll("#tabs button[data-ticker]").forEach((b) => {
     b.classList.toggle("active", b.dataset.ticker === ticker);
   });
   renderDetail(ticker);
@@ -585,7 +707,8 @@ function isEtf(h) {
 }
 
 async function renderDetail(ticker) {
-  const h = state.holdings.find((x) => x.ticker === ticker);
+  const h = findHolding(ticker);
+  if (h && h._adhoc && !state.prices[ticker]) await ensureAdhocPrice(h);
   const etf = isEtf(h);
   const main = document.getElementById("detail");
   main.innerHTML = `
@@ -859,6 +982,74 @@ function ichimoku(candles, p1 = 9, p2 = 26, p3 = 52) {
   return { tenkan, kijun, spanA, spanB, disp: p2 };
 }
 
+/* ── 추가 종목(보유목록 밖): 프록시로 일봉을 받아 지표를 브라우저에서 계산 ── */
+const _sma = (a, w) =>
+  a.map((_, i) => (i < w - 1 ? null : a.slice(i - w + 1, i + 1).reduce((x, y) => x + y, 0) / w));
+function _ema(a, span) {
+  const k = 2 / (span + 1), out = [];
+  let prev = a[0];
+  for (let i = 0; i < a.length; i++) {
+    prev = i === 0 ? a[0] : a[i] * k + prev * (1 - k);
+    out.push(prev);
+  }
+  return out;
+}
+function _macd(close) {
+  const f = _ema(close, 12), s = _ema(close, 26);
+  const macd = close.map((_, i) => f[i] - s[i]);
+  const signal = _ema(macd, 9);
+  return { macd, signal, hist: macd.map((v, i) => v - signal[i]) };
+}
+function _bbands(close, w = 20, k = 2) {
+  const mid = _sma(close, w), upper = [], lower = [];
+  for (let i = 0; i < close.length; i++) {
+    if (i < w - 1) { upper.push(null); lower.push(null); continue; }
+    const seg = close.slice(i - w + 1, i + 1), m = mid[i];
+    const sd = Math.sqrt(seg.reduce((a, v) => a + (v - m) ** 2, 0) / w);
+    upper.push(m + k * sd); lower.push(m - k * sd);
+  }
+  return { upper, mid, lower };
+}
+
+async function ensureAdhocPrice(h) {
+  if (!PROXY_BASE || state.prices[h.ticker]) return;
+  let d;
+  try {
+    d = await getJSON(`${PROXY_BASE}/history?ticker=${encodeURIComponent(h.ticker)}`);
+  } catch (_) {
+    return;
+  }
+  if (!d || !Array.isArray(d.dates) || !d.dates.length) return;
+
+  const dates = [], O = [], H = [], L = [], C = [], V = [];
+  for (let i = 0; i < d.dates.length; i++) {
+    const c = d.close[i];
+    if (c == null) continue;
+    dates.push(d.dates[i]);
+    C.push(+c);
+    O.push(d.open[i] == null ? +c : +d.open[i]);
+    H.push(d.high[i] == null ? +c : +d.high[i]);
+    L.push(d.low[i] == null ? +c : +d.low[i]);
+    V.push(d.volume[i] == null ? null : +d.volume[i]);
+  }
+  if (C.length < 30) return;
+
+  state.prices[h.ticker] = {
+    dates,
+    close: C,
+    volume: V,
+    candles: dates.map((t, i) => ({ t, o: O[i], h: H[i], l: L[i], c: C[i], v: V[i] })),
+    ma: { ma5: _sma(C, 5), ma20: _sma(C, 20), ma60: _sma(C, 60), ma120: _sma(C, 120) },
+    bbands: _bbands(C, 20, 2),
+    macd: _macd(C),
+    rsi: rsiFrom(C, 14),
+    last_close: C[C.length - 1],
+    prev_close: C.length > 1 ? C[C.length - 2] : null,
+    last_date: dates[dates.length - 1],
+    _adhoc: true,
+  };
+}
+
 /* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/시나리오/일목균형표 ---- */
 function drawPriceChart(h) {
   const p = state.prices[h.ticker];
@@ -885,15 +1076,18 @@ function drawPriceChart(h) {
   const useCandle = hasFinancial && p.candles && xs.length <= 400;
   const datasets = [];
 
-  // 국내 관습: 상승 빨강 / 하락 파랑
+  // 국내 관습: 상승(종가>시가) 빨강 / 하락 파랑
   const UP = "#ef4444", DOWN = "#3b82f6";
   if (useCandle) {
+    // chartjs-chart-financial@0.2.1 은 up/down 키가 뒤집혀 있음:
+    //   close<open → *.up  /  close>open → *.down  → 아래처럼 매핑
+    const ckUp = DOWN, ckDown = UP, ckUnch = "#8b95a1";
     datasets.push({
       type: "candlestick",
       label: h.name || h.ticker,
       data: pick(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
-      color: { up: UP, down: DOWN, unchanged: "#8b95a1" },
-      borderColor: { up: UP, down: DOWN, unchanged: "#8b95a1" },
+      borderColors: { up: ckUp, down: ckDown, unchanged: ckUnch },
+      backgroundColors: { up: ckUp, down: ckDown, unchanged: ckUnch },
       order: 10,
     });
   } else {
@@ -1590,7 +1784,7 @@ function renderConsensus(t) {
     )
     .join("");
   box.innerHTML = `<table class="idx-table consensus-table">
-    <thead><tr><th>제공처</th><th>최종일자</th><th>목표가</th><th>직전목표가</th><th>변동율</th><th>투자의견</th><th>직전투자의견</th></tr></thead>
+    <thead><tr><th>제공처</th><th>최종일자</th><th>목표가</th><th>직전목표가</th><th>변동률(%)</th><th>투자의견</th><th>직전투자의견</th></tr></thead>
     <tbody>${body}</tbody></table>`;
 }
 

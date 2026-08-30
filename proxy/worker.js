@@ -36,12 +36,35 @@ export default {
     // GET /dispatch?wf=advisor|update  → GitHub Actions workflow_dispatch 트리거
     //   필요:  GH_DISPATCH_TOKEN (Worker secret · fine-grained PAT · Actions: Read and write)
     //          GH_REPO           (선택 · [vars] 또는 secret · 기본값 doheecho/Med-Stock)
-    if (url.pathname.replace(/\/+$/, "") === "/dispatch") {
+    const path = url.pathname.replace(/\/+$/, "");
+
+    if (path === "/dispatch") {
       return dispatchWorkflow(
         url.searchParams.get("wf") || "advisor",
         env,
         url.searchParams.get("ref")
       );
+    }
+
+    // GET /search?q=삼성 → 회사명/코드 자동완성 (종목 추가용)
+    if (path === "/search") {
+      try {
+        return json(await searchStock(url.searchParams.get("q") || ""), 200);
+      } catch (err) {
+        return json({ items: [], error: String((err && err.message) || err) }, 502);
+      }
+    }
+
+    // GET /history?ticker=005930 → 일봉 OHLCV (보유목록 밖 종목 차트용)
+    if (path === "/history") {
+      const t = (url.searchParams.get("ticker") || url.searchParams.get("code") || "").trim();
+      if (!t) return json({ error: "ticker required" }, 400);
+      try {
+        const isKRX = /^\d[0-9A-Z]{5}$/.test(t);
+        return json(isKRX ? await histNaver(t) : await histYahoo(t), 200);
+      } catch (err) {
+        return json({ ticker: t, error: String((err && err.message) || err) }, 502);
+      }
     }
 
     const ticker = (url.searchParams.get("ticker") || "").trim();
@@ -171,6 +194,72 @@ async function fetchYahoo(ticker) {
     source: "yahoo",
     ts: Date.now(),
     raw,
+  };
+}
+
+// ── 종목 검색 (네이버 자동완성) ─────────────────────────────────────────
+async function searchStock(q) {
+  q = String(q || "").trim();
+  if (!q) return { q, items: [] };
+  const up = `https://ac.stock.naver.com/ac?q=${encodeURIComponent(q)}&target=stock`;
+  const raw = await (
+    await fetch(up, {
+      headers: { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" },
+      cf: { cacheTtl: 120 },
+    })
+  ).json();
+  const mkt = (tc, tn) =>
+    tc === "KOSDAQ" ? "KOSDAQ" : tc === "KOSPI" ? "KOSPI" : tn || tc || "";
+  const items = (raw.items || [])
+    .map((x) => ({
+      code: x.code,
+      name: x.name,
+      market: mkt(x.typeCode, x.typeName),
+      nation: x.nationCode || "KOR",
+    }))
+    .filter((x) => x.code && x.name);
+  return { q, items };
+}
+
+// ── 일봉 OHLCV ────────────────────────────────────────────────────────
+async function histNaver(code) {
+  const end = new Date();
+  const start = new Date(end.getTime() - 5 * 366 * 864e5); // ~5년치
+  const ymd = (d) => d.toISOString().slice(0, 10).replace(/-/g, "");
+  const up =
+    `https://api.finance.naver.com/siseJson.naver?symbol=${code}` +
+    `&requestType=1&startTime=${ymd(start)}&endTime=${ymd(end)}&timeframe=day`;
+  const txt = await (
+    await fetch(up, {
+      headers: { "User-Agent": "Mozilla/5.0", Referer: "https://finance.naver.com/" },
+      cf: { cacheTtl: 3600 },
+    })
+  ).text();
+  const arr = JSON.parse(txt.replace(/'/g, '"')); // 헤더행은 홑따옴표라 치환 필요
+  const dates = [], open = [], high = [], low = [], close = [], volume = [];
+  for (const r of arr.slice(1)) {
+    const s = String(r[0]);
+    dates.push(`${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`);
+    open.push(num(r[1])); high.push(num(r[2])); low.push(num(r[3]));
+    close.push(num(r[4])); volume.push(num(r[5]));
+  }
+  return { ticker: code, source: "naver", currency: "KRW", dates, open, high, low, close, volume };
+}
+
+async function histYahoo(sym) {
+  const up =
+    `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}` +
+    `?range=5y&interval=1d`;
+  const raw = await (await fetch(up, { headers: { "User-Agent": "Mozilla/5.0" }, cf: { cacheTtl: 3600 } })).json();
+  const r = raw?.chart?.result?.[0];
+  const q = r?.indicators?.quote?.[0] || {};
+  const ts = r?.timestamp || [];
+  const dates = ts.map((t) => new Date(t * 1000).toISOString().slice(0, 10));
+  return {
+    ticker: sym, source: "yahoo",
+    currency: r?.meta?.currency || "USD",
+    dates,
+    open: q.open || [], high: q.high || [], low: q.low || [], close: q.close || [], volume: q.volume || [],
   };
 }
 

@@ -131,6 +131,19 @@ wrangler deploy          # proxy/wrangler.toml 을 사용 ([vars] GH_REPO 포함
 
 응답은 `{ ticker, price, prevClose, changePct, currency, source, raw }` 로 정규화된다.
 
+워커 라우트:
+
+| 경로 | 용도 |
+|---|---|
+| `GET /?ticker=005930` | 실시간 현재가(1건) |
+| `GET /search?q=삼성` | 회사명·코드 자동완성 (탭의 **+** 로 종목 추가) |
+| `GET /history?ticker=005930` | 일봉 OHLCV ~5년 (보유목록 밖 종목 차트용, KRX=네이버 / 그 외=야후) |
+| `GET /dispatch?wf=advisor\|update` | GitHub 워크플로 실행 (§4-1) |
+
+> 탭 우측 **+** 버튼으로 추가한 종목은 브라우저 `localStorage(medstock.extras)` 에만
+> 저장되고, 지표(MA·볼린저·MACD·RSI)는 `/history` 응답으로 브라우저에서 계산한다.
+> 기본지표·목표주가·수급·뉴스·컨센서스는 보유 종목이 아니면 "없음" 으로 표시된다.
+
 ### 4-1. 버튼으로 워크플로 트리거
 
 상단 **↻ AI Advisor** 버튼이 GitHub 의 "Refresh AI Advisor" 워크플로를 바로 실행한다
