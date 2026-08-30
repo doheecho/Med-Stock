@@ -79,14 +79,15 @@ async function init() {
       Chart.register(window.ChartDataLabels);
       Chart.defaults.set("plugins.datalabels", { display: false }); // 도넛에서만 켠다
     }
-    // 캔들: 한국 관습(상승 빨강 / 하락 파랑) — 데이터셋 옵션이 무시돼도 기본값으로 보장
+    // 캔들: 한국 관습(상승 빨강 / 하락 파랑) — 데이터셋 옵션이 무시돼도 기본값으로 보장.
+    // chartjs-chart-financial 은 borderColors/backgroundColors(복수형) 를 쓴다.
     if (window.Chart && Chart.defaults.elements) {
       const RED = "#ef4444", BLUE = "#3b82f6", GRAY = "#8b95a1";
       for (const el of ["candlestick", "ohlc"]) {
         const d = Chart.defaults.elements[el];
         if (!d) continue;
-        d.color = { up: RED, down: BLUE, unchanged: GRAY };
-        d.borderColor = { up: RED, down: BLUE, unchanged: GRAY };
+        d.borderColors = { up: RED, down: BLUE, unchanged: GRAY };
+        d.backgroundColors = { up: RED, down: BLUE, unchanged: GRAY };
       }
     }
   } catch (_) {}
@@ -1089,17 +1090,14 @@ function drawPriceChart(h) {
   const datasets = [];
 
   // 국내 관습: 상승(종가>시가) 빨강 / 하락 파랑
-  const UP = "#ef4444", DOWN = "#3b82f6";
+  const UP = "#ef4444", DOWN = "#3b82f6", UNCH = "#8b95a1";
   if (useCandle) {
-    // chartjs-chart-financial@0.2.1 은 up/down 키가 뒤집혀 있음:
-    //   close<open → *.up  /  close>open → *.down  → 아래처럼 매핑
-    const ckUp = DOWN, ckDown = UP, ckUnch = "#8b95a1";
     datasets.push({
       type: "candlestick",
       label: h.name || h.ticker,
       data: pick(p.candles).map((c) => ({ x: new Date(c.t).valueOf(), o: c.o, h: c.h, l: c.l, c: c.c })),
-      borderColors: { up: ckUp, down: ckDown, unchanged: ckUnch },
-      backgroundColors: { up: ckUp, down: ckDown, unchanged: ckUnch },
+      borderColors: { up: UP, down: DOWN, unchanged: UNCH },
+      backgroundColors: { up: UP, down: DOWN, unchanged: UNCH },
       order: 10,
     });
   } else {
