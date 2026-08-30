@@ -360,7 +360,15 @@ function setPieCollapsed(on, redraw = true) {
   const b = document.getElementById("pieCollapseBtn");
   if (b) b.textContent = on ? "원그래프 펼치기" : "원그래프 접기";
   try { localStorage.setItem("medstock.pieCollapsed", on ? "1" : "0"); } catch (_) {}
-  if (redraw && !on) renderSummary(); // 펼칠 때 도넛 재그리기 (숨김 상태에선 크기 0이었음)
+  if (on) {
+    // 도넛 인스턴스를 완전히 파기 (responsive 리사이즈 옵저버가 남으면 캔버스가 무한 확장됨)
+    if (state.charts && state.charts.weightChart) {
+      try { state.charts.weightChart.destroy(); } catch (_) {}
+      delete state.charts.weightChart;
+    }
+  } else if (redraw) {
+    renderSummary(); // 펼칠 때 도넛 새로 그림
+  }
 }
 function togglePie() {
   const wrap = document.querySelector(".summary-charts");
@@ -1893,6 +1901,8 @@ function makeChart(id, cfg) {
 /* items: [{label, value(원화)}] — 하단 범례 없이, 조각 위에 "#,###만(#%)",
    마우스오버 시 종목명 툴팁. 칸을 꽉 채운다. */
 function drawPie(id, items) {
+  // 원그래프가 접혀 있으면 그리지 않는다 (숨김 캔버스에 재생성되어 무한 확장되는 것 방지)
+  if (id === "weightChart" && document.querySelector(".summary-charts.pie-collapsed")) return;
   const total = items.reduce((a, b) => a + (b.value || 0), 0) || 1;
   makeChart(id, {
     type: "doughnut",
