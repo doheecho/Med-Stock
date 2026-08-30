@@ -119,7 +119,8 @@ Cloudflare Workers 무료 티어(하루 10만 요청)로 충분.
 ```powershell
 npm i -g wrangler
 wrangler login
-wrangler deploy proxy/worker.js --name med-stock-proxy --compatibility-date 2024-11-01
+cd proxy
+wrangler deploy          # proxy/wrangler.toml 을 사용 ([vars] GH_REPO 포함)
 ```
 
 배포 후 나온 URL(`https://med-stock-proxy.<subdomain>.workers.dev`)을
@@ -130,19 +131,24 @@ wrangler deploy proxy/worker.js --name med-stock-proxy --compatibility-date 2024
 
 응답은 `{ ticker, price, prevClose, changePct, currency, source, raw }` 로 정규화된다.
 
-### 4-1. (선택) 버튼으로 워크플로 트리거
+### 4-1. 버튼으로 워크플로 트리거
 
-상단 **↻ AI Advisor** 버튼이 GitHub 의 "Refresh AI Advisor" 워크플로를 바로 실행하게 하려면
-워커에 시크릿 2개를 넣는다 (`PROXY_BASE` 설정 전제):
+상단 **↻ AI Advisor** 버튼이 GitHub 의 "Refresh AI Advisor" 워크플로를 바로 실행한다
+(`PROXY_BASE` 가 설정돼 있을 때). 필요한 준비:
 
 ```powershell
-wrangler secret put GH_DISPATCH_TOKEN   # fine-grained PAT, 이 리포 Actions: Read and write
-wrangler secret put GH_REPO             # 예: doheecho/Med-Stock
+cd proxy
+wrangler deploy
+wrangler secret put GH_DISPATCH_TOKEN   # fine-grained PAT · 이 리포 · Repository permissions > Actions: Read and write
 ```
 
-- 워커 라우트: `GET {PROXY_BASE}/dispatch?wf=advisor` (또는 `wf=update`) → `workflow_dispatch`
-- 시크릿이 없으면 501 을 돌려주고, 대시보드는 그냥 `advisor.json` 을 다시 불러온다.
-- 토큰은 워커 시크릿에만 있고 정적 사이트/코드에는 없다.
+- `GH_REPO` 는 `wrangler.toml` 의 `[vars]` 에 평문(`doheecho/Med-Stock`), worker.js 기본값도 동일 →
+  **토큰만** 시크릿으로 넣으면 된다. 다른 리포면 `[vars]` 만 고친다.
+- 워커 라우트: `GET {PROXY_BASE}/dispatch?wf=advisor` (또는 `wf=update`) → `workflow_dispatch`.
+- 토큰 미설정 시 501, 트리거 실패 시 502(+`detail` 에 GitHub 응답). 이 경우 대시보드는
+  그냥 `data/advisor.json` 을 다시 불러온다.
+- 토큰은 **워커 시크릿에만** 존재하고 정적 사이트/코드/커밋에는 없다.
+- `advisor.yml` / `update.yml` 에는 `workflow_dispatch:` 트리거가 이미 들어 있다.
 
 ---
 

@@ -6,3 +6,13 @@ compatibility_date = "2024-11-01"
 # 로그:  wrangler tail
 #
 # 무료 티어: 하루 10만 요청. 개인용 대시보드 트래픽에는 충분.
+
+# ── AI Advisor / Update 워크플로 자동 실행용 ─────────────────────────────
+# GH_REPO 는 비밀이 아니므로 평문으로 둔다. (worker.js 안에도 기본값이 있어
+#  안 넣어도 동작하지만, 리포를 바꾸면 여기만 고치면 된다.)
+[vars]
+GH_REPO = "doheecho/Med-Stock"
+
+# GH_DISPATCH_TOKEN 은 비밀 → 파일/커밋에 절대 넣지 말고 아래로 등록:
+#   wrangler secret put GH_DISPATCH_TOKEN
+# fine-grained PAT · 대상 리포지토리 선택 · Repository permissions > Actions: Read and write

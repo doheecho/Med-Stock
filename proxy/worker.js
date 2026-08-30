@@ -7,9 +7,14 @@
  * 응답에는 항상 { ticker, price, prevClose, currency, source, raw } 로 정규화한
  * JSON 을 돌려준다. (raw 는 원본 그대로 — 필요 시 프론트에서 참고)
  *
+ * GET /dispatch?wf=advisor  → GitHub Actions "Refresh AI Advisor" 워크플로 실행
+ * GET /dispatch?wf=update   → "Update dashboard data" 워크플로 실행
+ *   (대시보드의 "↻ AI Advisor" 버튼이 /dispatch?wf=advisor 를 호출한다)
+ *
  * 배포:
  *   npm i -g wrangler
- *   wrangler deploy proxy/worker.js --name med-stock-proxy
+ *   cd proxy && wrangler deploy
+ *   wrangler secret put GH_DISPATCH_TOKEN     # fine-grained PAT (Actions: Read and write)
  * 배포 후 나온 URL 을 site/dashboard.js 의 PROXY_BASE 에 넣는다.
  */
 
@@ -28,11 +33,15 @@ export default {
 
     const url = new URL(request.url);
 
-    // GET /dispatch?wf=advisor  → GitHub Actions workflow_dispatch 트리거
-    //   필요 Worker 시크릿:  GH_DISPATCH_TOKEN (fine-grained PAT, Actions: read/write)
-    //                        GH_REPO          (예: "doheecho/Med-Stock")
+    // GET /dispatch?wf=advisor|update  → GitHub Actions workflow_dispatch 트리거
+    //   필요:  GH_DISPATCH_TOKEN (Worker secret · fine-grained PAT · Actions: Read and write)
+    //          GH_REPO           (선택 · [vars] 또는 secret · 기본값 doheecho/Med-Stock)
     if (url.pathname.replace(/\/+$/, "") === "/dispatch") {
-      return dispatchWorkflow(url.searchParams.get("wf") || "advisor", env);
+      return dispatchWorkflow(
+        url.searchParams.get("wf") || "advisor",
+        env,
+        url.searchParams.get("ref")
+      );
     }
 
     const ticker = (url.searchParams.get("ticker") || "").trim();
@@ -53,28 +62,45 @@ export default {
 };
 
 const _WF_FILE = { advisor: "advisor.yml", update: "update.yml" };
+const _DEFAULT_REPO = "doheecho/Med-Stock";
 
-async function dispatchWorkflow(wf, env) {
+// GET /dispatch?wf=advisor[&ref=main]  → GitHub Actions workflow_dispatch
+async function dispatchWorkflow(wf, env, ref) {
   const file = _WF_FILE[wf];
-  if (!file) return json({ error: "unknown workflow" }, 400);
-  if (!env || !env.GH_DISPATCH_TOKEN || !env.GH_REPO) {
-    return json({ error: "worker secrets GH_DISPATCH_TOKEN / GH_REPO 미설정" }, 501);
+  if (!file) return json({ error: `unknown workflow: ${wf}` }, 400);
+
+  const token = env && env.GH_DISPATCH_TOKEN;
+  const repo = (env && env.GH_REPO) || _DEFAULT_REPO;
+  if (!token) {
+    return json(
+      { error: "GH_DISPATCH_TOKEN 미설정 — `wrangler secret put GH_DISPATCH_TOKEN` 필요" },
+      501
+    );
   }
-  const res = await fetch(
-    `https://api.github.com/repos/${env.GH_REPO}/actions/workflows/${file}/dispatches`,
-    {
+
+  const api = `https://api.github.com/repos/${repo}/actions/workflows/${file}/dispatches`;
+  let res;
+  try {
+    res = await fetch(api, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
+        Authorization: `Bearer ${token}`,
         Accept: "application/vnd.github+json",
         "User-Agent": "med-stock-proxy",
         "X-GitHub-Api-Version": "2022-11-28",
       },
-      body: JSON.stringify({ ref: "main" }),
-    }
-  );
-  // 성공 시 204 No Content
-  return json({ ok: res.status === 204, status: res.status, workflow: file }, res.status === 204 ? 200 : 502);
+      body: JSON.stringify({ ref: ref || "main" }),
+    });
+  } catch (err) {
+    return json({ ok: false, error: `github fetch 실패: ${String(err && err.message || err)}` }, 502);
+  }
+
+  // 성공 시 204 No Content. 실패면 본문에 사유가 담겨 온다(잘못된 토큰/권한/ref 등).
+  if (res.status === 204) {
+    return json({ ok: true, status: 204, repo, workflow: file, ref: ref || "main" }, 200);
+  }
+  const detail = await res.text().catch(() => "");
+  return json({ ok: false, status: res.status, repo, workflow: file, detail: detail.slice(0, 400) }, 502);
 }
 
 function json(obj, status) {
