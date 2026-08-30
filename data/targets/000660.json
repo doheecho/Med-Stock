@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T03:24:02+00:00",
+  "updated_at": "2026-08-30T03:44:09+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3317917.0,
@@ -47,35 +47,7 @@
       "src": "yahoo"
     }
   ],
-  "consensus_rows": [
-    {
-      "firm": "미래에셋증권",
-      "date": "2026-08-26",
-      "target": 2800000,
-      "prev_target": 2800000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "현대차증권",
-      "date": "2026-08-05",
-      "target": null,
-      "prev_target": null,
-      "chg": null,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신증권",
-      "date": "2026-07-30",
-      "target": 3200000,
-      "prev_target": 3900000,
-      "chg": -17.9,
-      "opinion": "매수",
-      "prev_opinion": null
-    }
-  ],
+  "consensus_rows": [],
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX"
