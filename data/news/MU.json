@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-30T04:20:28+00:00",
+  "updated_at": "2026-08-31T15:19:42+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
-      "title": "AI’s memory stack: What investors need to know",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-memory-stack-investors-know-234641961.html",
-      "source": "Investing.com",
-      "date": "2026-08-29T23:46:41Z"
-    },
-    {
-      "title": "Memory Now Accounts for 50% of Global Semiconductor Revenue — But There’s a Catch",
-      "url": "https://247wallst.com/investing/2026/08/29/memory-now-accounts-for-50-of-global-semiconductor-revenue-but-theres-a-catch/",
+      "title": "The Overlooked AI Bet That Could Outperform NVIDIA by 2027",
+      "url": "https://247wallst.com/investing/2026/08/31/the-overlooked-ai-bet-that-could-outperform-nvidia-by-2027/",
       "source": "24/7 Wall St.",
-      "date": "2026-08-29T16:06:49Z"
+      "date": "2026-08-31T15:00:34Z"
     },
     {
-      "title": "Nvidia's CFO Just Explained Why the AI Boom Is Eating Its Gross Margin -- and It's a Green Light for Micron",
-      "url": "https://www.fool.com/investing/2026/08/29/nvidias-just-explained-why-the-ai-boom-is-eating/",
-      "source": "Motley Fool",
-      "date": "2026-08-29T15:50:00Z"
-    },
-    {
-      "title": "Intel Sold Its NAND Memory Business for About $9 Billion. Micron Is Now Worth More Than Twice What Intel Is.",
-      "url": "https://www.fool.com/investing/2026/08/29/intel-sold-its-nand-memory-business-for-about-usd9-billion-micron-is-now-worth-more-than-twice-what-intel-is/",
-      "source": "Motley Fool",
-      "date": "2026-08-29T09:07:01Z"
-    },
-    {
-      "title": "Jim Cramer Shared Why Micron Technology, Inc. (NASDAQ:MU)’s Shares Didn’t Rise On Shortage News",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shared-why-micron-033253032.html",
+      "title": "Micron Technology (MU) Gains Driven by Earnings Upgrades",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-gains-driven-145610534.html",
       "source": "Insider Monkey",
-      "date": "2026-08-29T03:32:53Z"
+      "date": "2026-08-31T14:56:10Z"
     },
     {
-      "title": "Nvidia Quietly Became Its Own Market Category",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-quietly-became-own-market-222531285.html",
-      "source": "GuruFocus.com",
-      "date": "2026-08-28T22:25:31Z"
+      "title": "Intel Stock Is Paying Now For Revenue Due Later",
+      "url": "https://www.trefis.com/articles/613729/intel-stock-is-paying-now-for-revenue-due-later/2026-08-31",
+      "source": "Trefis",
+      "date": "2026-08-31T14:51:04Z"
     },
     {
-      "title": "Prediction: This Is What a $1,000 Investment in Micron Stock Will Be Worth by 2030",
-      "url": "https://www.fool.com/investing/2026/08/28/prediction-this-is-what-a-usd1-000-investment-in-micron-stock-will-be-worth-by-2030/",
-      "source": "Motley Fool",
-      "date": "2026-08-28T21:53:01Z"
+      "title": "How to Win on Micron Stock and Its Big Memory-Chip Threat From China",
+      "url": "https://www.barrons.com/articles/micron-stock-price-cxmt-memory-chip-d2b135a2?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-08-31T14:40:00Z"
     },
     {
-      "title": "This AI Fund Is Crushing QQQ, and Nvidia Is Barely 2% of It",
-      "url": "https://247wallst.com/investing/2026/08/28/this-ai-fund-is-crushing-qqq-and-nvidia-is-barely-2-of-it/",
+      "title": "Jim Cramer Warns AI Is Making Even “Diversified” Portfolios More Concentrated",
+      "url": "https://247wallst.com/investing/2026/08/31/jim-cramer-warns-ai-is-making-even-diversified-portfolios-more-concentrated/",
       "source": "24/7 Wall St.",
-      "date": "2026-08-28T21:05:17Z"
+      "date": "2026-08-31T14:30:04Z"
     },
     {
-      "title": "History Says the Nasdaq-100 Does This in September. AI Investors Should Take Note.",
-      "url": "https://www.fool.com/investing/2026/08/28/history-says-the-nasdaq-100-does-this-in-september/",
-      "source": "Motley Fool",
-      "date": "2026-08-28T20:17:00Z"
+      "title": "The Floor Under Micron's Worst Case Is Written Into Its Contracts, Not Memory Prices",
+      "url": "https://www.trefis.com/articles/613723/the-floor-under-microns-worst-case-is-written-into-its-contracts-not-memory-prices/2026-08-31",
+      "source": "Trefis",
+      "date": "2026-08-31T13:52:02Z"
     },
     {
-      "title": "Western Digital Just Dropped 13% in a Month. Is It Time to Sell?",
-      "url": "https://247wallst.com/investing/2026/08/28/western-digital-just-dropped-13-in-a-month-is-it-time-to-sell/",
+      "title": "Leading Economist Warns Chip Tariffs Could Make the AI Buildout More Expensive",
+      "url": "https://247wallst.com/investing/2026/08/31/leading-economist-warns-chip-tariffs-could-make-the-ai-buildout-more-expensive/",
       "source": "24/7 Wall St.",
-      "date": "2026-08-28T19:01:16Z"
+      "date": "2026-08-31T12:32:11Z"
+    },
+    {
+      "title": "AI Chips Update - Optical Transceivers Propel AI Data Center Growth",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-chips-optical-transceivers-propel-113719030.html",
+      "source": "Simply Wall St.",
+      "date": "2026-08-31T11:37:19Z"
+    },
+    {
+      "title": "Trump Praises Nvidia CEO Jensen Huang On 'Incredible Numbers,' Calls Micron One Of The World's 'Hottest' Companies",
+      "url": "https://finance.yahoo.com/technology/ai/articles/trump-praises-nvidia-ceo-jensen-110113841.html",
+      "source": "Benzinga",
+      "date": "2026-08-31T11:01:13Z"
+    },
+    {
+      "title": "Micron Will Report Its Fiscal Q4 Earnings During the Market's Worst Month. History Says This Is What Happens Next.",
+      "url": "https://www.fool.com/investing/2026/08/31/micron-will-report-its-fiscal-q4-earnings-during-t/",
+      "source": "Motley Fool",
+      "date": "2026-08-31T09:44:00Z"
     }
   ]
 }

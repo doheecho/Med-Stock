@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T04:20:18+00:00",
+  "updated_at": "2026-08-31T15:19:16+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 491875.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.04,
-  "as_of": "2026-08-27",
+  "as_of": "2026-08-28",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 491875,
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -99,123 +99,6 @@
       "target": 350000,
       "prev_target": 390000,
       "chg": -10.26,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "한국투자",
-      "date": "2026-07-31",
-      "target": 650000,
-      "prev_target": 590000,
-      "chg": 10.17,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "하나",
-      "date": "2026-07-31",
-      "target": 480000,
-      "prev_target": 480000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "현대차",
-      "date": "2026-07-31",
-      "target": 440000,
-      "prev_target": 440000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "교보",
-      "date": "2026-07-31",
-      "target": 500000,
-      "prev_target": 500000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "한화투자",
-      "date": "2026-07-31",
-      "target": 580000,
-      "prev_target": 580000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "신한투자",
-      "date": "2026-07-31",
-      "target": 450000,
-      "prev_target": 590000,
-      "chg": -23.73,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "DB",
-      "date": "2026-07-31",
-      "target": 360000,
-      "prev_target": 360000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "IBK투자",
-      "date": "2026-07-31",
-      "target": 460000,
-      "prev_target": 460000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "다올투자",
-      "date": "2026-07-31",
-      "target": 585000,
-      "prev_target": 585000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "NH투자",
-      "date": "2026-07-31",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "BNK투자",
-      "date": "2026-07-30",
-      "target": 300000,
-      "prev_target": 430000,
-      "chg": -30.23,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "메리츠",
-      "date": "2026-07-30",
-      "target": 500000,
-      "prev_target": 500000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "DS투자",
-      "date": "2026-07-30",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
     }
