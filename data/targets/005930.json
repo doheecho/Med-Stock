@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-31T15:19:16+00:00",
+  "updated_at": "2026-09-01T12:42:59+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 491875.0,
-  "target_high": 565656,
+  "target_avg": 493958.0,
+  "target_high": 568052,
   "target_low": 370000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.04,
-  "as_of": "2026-08-28",
+  "as_of": "2026-08-31",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,13 +18,13 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 491875,
-      "date": "2026-08-28",
+      "target": 493958,
+      "date": "2026-08-31",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "야후 평균",
-      "target": 470156,
+      "target": 471545,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -48,6 +48,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "LS",
+      "date": "2026-08-31",
+      "target": 450000,
+      "prev_target": 400000,
+      "chg": 12.5,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "미래에셋",
       "date": "2026-08-25",

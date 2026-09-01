@@ -1,98 +1,98 @@
 {
-  "updated_at": "2026-08-31T15:19:42+00:00",
+  "updated_at": "2026-09-01T12:43:11+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "[단독] SK하이닉스, 차세대 HBM ‘베이스 다이’ 인텔에도 맡긴다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCbWtMTzRYNG9OTzlUMXNGc3ZaOC1CeVdGVGlQY3UxSjVJMzh2Z3NBZVlsVlI3SUpFTVgzTVU4SmJsdWI1U0dMRWNUaThsd3Z4VTRUYVlR?oc=5",
-      "source": "헤럴드경제",
-      "date": "Mon, 31 Aug 2026 01:01:06 GMT"
-    },
-    {
-      "title": "\"SK하이닉스 이어 삼성전자도 인텔과 HBM 베이스다이 협력 검토 가능성\", 공급망 다변화 효과",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1aM3Y1SHVpcmxGRDlzMVcyMnprd3Bfd3dhRm9kelg1UFV2NVBpSlE5TUdkWE9GemJ4N2l1eFpaZUpZajhtVV81WGtYRHVka1k4a1Y1UC1tbWIzOUdVV0FCWnFZY1NLSUJvbFJ1REFDMks2bUU?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 31 Aug 2026 05:00:12 GMT"
-    },
-    {
-      "title": "인텔 낸드 품은 SK하이닉스 호실적... 90억 달러 매각 재평가",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYm1rNDhrNkxxQ29vd3g4V3dUdWVab044bk9mSzVLc0p4eFV4bHdqMEJmQ2oxVVpObXhhSjBmQ09paXJIUXdXd1JkX2lzTUVwNXRuLWFFRWc0TndqWW03OFpFSEFDaGllNTMyNW5aWGhwaHh2aGF4Vzk3dXM5aVlnNFBxUUhFTlA1?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Sun, 30 Aug 2026 22:42:42 GMT"
-    },
-    {
-      "title": "한은 “SK하이닉스 성과급, 동탄·수원·용인 아파트 사는 데 쓰였다” - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWnNrd1FjR1pEY241UDh6eDllRTBuamtIRE1iOGNKeGpNM1J2WWJFMzBjWWVGZV9uNXlQdUJNQUFQZzlJUmtGYnFQN2ExcjlVUEtNVTFUZzNCdUl1NGRFTnZZOWs2UzFRZGNCNWl5RXd4QlA5dmhyQ1g1d3FsM2xvNDdlNXlRd9IBmgFBVV95cUxQOWZ5MDVfNS1EWkFSa1FnXzIyVG1VSGJySmRWWVc5blZqNFU4TWdOazNQY05QaHNid2s2cUtHT29mNTlSZEI5bkt2aXpDMHFndl81VWpxNUpZOUNfSFlwd2E0aW9rZVJvMi0zWXczWmo2NWpKU21OT3QxNHhkbDdYcmlIMGJIY09WUjJCNXRTQ0FySXVINGJ6YXV3?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 31 Aug 2026 05:34:00 GMT"
-    },
-    {
-      "title": "같은 하이닉스 성과급인데…이천은 집 사고 청주는 썼다",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9fM3Y5X2N2cENJZ1RxXzBReUpVR1dWTnlxaWlaVEVyOGZRNGtPdFFncWZYcmZSaFptQUZrWFl3MWh4VjdvaW9VUVFYelBEWUE?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 31 Aug 2026 06:46:09 GMT"
-    },
-    {
-      "title": "같은 하이닉스 성과급인데…이천은 집 사고 청주는 썼다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwOE44dkdpOFg5WlFBYjlJV01WaXpjT1B4OGFJV3lFTU16ZGNGZURYN1ZFUlhnMUctbG5KX01fWjU5aDZla2hOTzhhSnBrdzFpMXJxTVRR?oc=5",
-      "source": "중앙일보",
-      "date": "Mon, 31 Aug 2026 06:44:05 GMT"
-    },
-    {
-      "title": "\"SK하이닉스, 목표가 330→240만원…삼성 HBM4 경쟁 심화\"-LS",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4ySUx5NzFEOUpVbElmRi1HLUJjckNGTFgzVzNXa09HTTJNWUg5bEpmLU9mblhGbjJ5dFlDeVB3YjJreUNfdTQzLWc4UFFUR2hDdmllM2MwY0VjUQ?oc=5",
+      "title": "\"330만원→240만원\" 충격 리포트…SK하이닉스 주주 '패닉' [종목+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Cb0dyT0RBX0dMU0xWY2ZZVmdUNzM0WWRaUGkxeEgtZVZodnRIN0MwUW9UWm5aNWtPX2NHYm8zVFVjSG41V05pd2tDTlBKOWs1YzBXeXRxM0Z0Zw?oc=5",
       "source": "한국경제",
-      "date": "Sun, 30 Aug 2026 22:55:31 GMT"
+      "date": "Mon, 31 Aug 2026 13:00:04 GMT"
     },
     {
-      "title": "최태원 회장 \"SK하이닉스, 일본 반도체 공장 설립 검토\"...그간 입장 반복",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tNmNvcVlHNTJtM2pzYXE4dHp6VkRidXlaM1NoZUtCcGV0b3RJdnRzWXpERjcyaE5HSW9DQ09CSTk5N0hQNEZWV2Vleml6NHMzY3VSdXJB?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 31 Aug 2026 07:25:17 GMT"
+      "title": "HBM 경쟁 판도 바뀌나…삼성전자 웃고 SK하이닉스 울었다?",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBVN2toVzV1VDJsclhKcVJVN2dBc3g1cWcxSXJUUFFZbEFvQ2R4TUFPZEdSZUNuYW9RWlltRkhsSjdLVnd0UVZMYmVENnAyNjBoSkHSAVNBVV95cUxPakR3QUIta2xaeVpJMHpncEtqSWR4c2JHcGNMZ2F4LWcxRm9fZl9DVzAyeE91V1Y0aWxDNXhNYVl0dllXTGhqLXNRU1lBOHdtLTZGdw?oc=5",
+      "source": "sedaily.com",
+      "date": "Tue, 01 Sep 2026 01:00:02 GMT"
     },
     {
-      "title": "SK하이닉스 반도체 공장 일본에도 들어서나…최태원 “검토 중, 논의가 끝나는 대로 알릴 것”",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9XbS1UdjhKM2hEMmN2N0NWZjFfSWZ4RnFIc2NlZDdCWUxRamctdjExXzJyN2RucjVobDBWdVB2aDFWUjhXTEJNOGY1OEdEUGc?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 31 Aug 2026 10:57:09 GMT"
+      "title": "삼성전자·SK하이닉스, HBM '품귀 프리미엄' 수혜…LTA 5배 된 현물가",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE13TGVlSUNGZ3RFa05ZbjVpOFFUZWY3eEVzaHB6TFVQWlJhN011MktoN1VZQWFWb1ZKY1JWWGp5UkZydUVIQ1c3bTNQMWpDTUk0clREdV80MWMwZzNLRzE1MURtcTgwX2o0?oc=5",
+      "source": "greened.kr",
+      "date": "Tue, 01 Sep 2026 06:47:14 GMT"
     },
     {
-      "title": "“이번엔 꼭 성공할 것” 일본 미야기현, SK하이닉스 반도체 공장 유치 발 벗고 나섰다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tWFl6YTlfTXJzc0Fsd3NiZGQ4cGtwY2NQYmlLU3BYTEsyMTkxdXZJQzhzMm5OWXU1b2R3ekhBMGM0TFRkeVNCOWtyUUQzaFJIZzV0R055dzhRUdIBX0FVX3lxTE4wVW1vT3dCQzhQdjJxMlV6WElrNlFEakpVMUY2UlBBM3lVdW5jVmIwVFhack1xX1FlUmEyQkllTjZ5X05uaWROTEo3d3k1cHk1Tm9hZFUxTERWVWh0a0s4?oc=5",
-      "source": "경향신문",
-      "date": "Mon, 31 Aug 2026 05:57:00 GMT"
+      "title": "[단독] 삼성·SK하이닉스 법인세 11조 냈는데…中 YMTC는 '10년 면세' 카드 받았다",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZMjZFcnVwTXR5TF84VEt6QlJRQk42ekJCVVBBUm1XYnYwWS01X3NYRjMxNHlqWXl5T3lndFNSZC1Kb3VFNzIteF8tdkFoY2QzSzlEUWxIb1MtRU05?oc=5",
+      "source": "뉴스핌",
+      "date": "Tue, 01 Sep 2026 04:03:00 GMT"
     },
     {
-      "title": "‘동전주’ 현대전자, 상폐 대신 생존…SK하이닉스가 된 비결",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWW9KRHJpTUMwRklRYlYzZnN0VXpBZE41WXNNbXN4R0xQUHlYNkRYb19wUUxZSkRBdXAzUHozV21HWGdmSnhjNXZpUjA2b3IyT21wUDc5TnR5ZkVCQWZSSnBrX05qSU5EQXcwY3d6VVpScXlpUDZuMnRlX2NNbEFBZA?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Mon, 31 Aug 2026 07:52:32 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스, 4대 그룹 ‘주식 10억 클럽’ 임원 91% 차지",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01NzhsTnIyU2JZR2tlanRJZk1BYVJWZlNUZDZzT3hNbG8xZnlGRnFvYnVIMDI2ZS1rbkZMMzB6emt2RUFhUkpYZHFDNDNvelZHb3RaODA5QVVsdw?oc=5",
-      "source": "브릿지경제",
-      "date": "Mon, 31 Aug 2026 00:17:00 GMT"
-    },
-    {
-      "title": "삼성·SK ‘10억 주식부자’ 임원 391명…100억 넘는 4대그룹 ‘슈퍼리치’ 11명",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BZXlubmZ1UlVxbXI5SVN0eXVNU2d6b0Qzb1NPSE1ZMW1jUlJTX3R1Sk5QSkctLXQ3dmU3N054UV9DNTU4d1RJOWs2d1lENlFnMnfSAVNBVV95cUxPQndCX3dvVldYZlFXQzBWTVJrSmg5VkdOME54WjdydGpsZzlGSllUVnF0azRIU0hTWWVRMTVNdjNaVnRBd240M0licXFrVXFjckZfbw?oc=5",
-      "source": "서울경제",
-      "date": "Mon, 31 Aug 2026 11:39:02 GMT"
-    },
-    {
-      "title": "삼성·SK ‘주식부자’ 임원 비교해보니… SK 톱3 중 2명 반도체맨, 삼성은 ‘0명’",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaUJGbGdSWlBVUDdPYkNIT0dsckY3TXM2YUZNMEFPYU1xRzlmXzIzRTdZTFZfS09XdlhqNFZJWVdHUFNabS1WaWhZYXdrbXhNTExDa0RWTjZ4WTlMc1VOZDVWYXNZdVNxbXRGNjM4dkhHZFFrVnI2WlV2bzlfbGE4NHpyNXFXdHdfR2xBbXJSaw?oc=5",
-      "source": "조선일보",
-      "date": "Mon, 31 Aug 2026 03:13:01 GMT"
-    },
-    {
-      "title": "SK하이닉스(000660)",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1Q1cVNWVEVsSng4cENOWGRFdzJLZnJlM1JjcDFNWVFINUx5ZGt1YVNZdWJCQXRmT2piRVZVX3NTLUQ1cW0wcF93Qm1yNzlUS0hreG5QTzh0WHFGbFEzR2I2OUkxUEpkZ043MWFJU3hkNG9qQmZFaVRBYWZINlhFX1IwUng1eUJzM1J0MnRlYVRoSHpEeUlUVE1n?oc=5",
+      "title": "하이닉스 31억 vs 마이크론 144억 … 韓 감사 비용, 글로벌 위상 안맞아",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oNGZMTDk3U2hpR1VacmFrcVNKS2l4Y1FUbmpENnJObkp3TXg1cmhucm10S05EdjBSSk55VzdCREktVlVwZ3hFMjJtVDEwRlY4Y3c?oc=5",
       "source": "매일경제 마켓",
-      "date": "Mon, 31 Aug 2026 04:48:05 GMT"
+      "date": "Tue, 01 Sep 2026 10:41:45 GMT"
+    },
+    {
+      "title": "“삼성전자·SK하이닉스만큼 성과급 달라”…마이크론 대만 노조 파업 예고 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT28zM2hTZ3MxSTU3VXBFdnp3ZTdSMWN0RGtCX3MzcmtrMllKdHB6RnN5ZFhaTTdfYmduMjZzUnlEdlZ6RTBaR0RyQ3Bfd2VlWHI3SW1NcHZ2MkFHSlUxTW9TN1ZQWWhQNVFQbmtPeDJ5cFdlSlIwdXFIWmFvbEhSNHB30gGWAUFVX3lxTE9VWmpyLU1RbXB2TGU4cThxUDdKc1hLcDY1bzhHT3VLc2pPbVk4cEV6STF1VnY3aVU3d2J4cFZBZmtldXIwdEdRRHF4MnlEYnBQYUZnNTUyY0xaTzBFNE5XSThJMVNOQ2hVVFZoR2FDakNLLW1Tc05WUVNrV3licnhmYmlVNzN2eW9MMmtGNm5ZWWdlZkJhQQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Tue, 01 Sep 2026 12:36:00 GMT"
+    },
+    {
+      "title": "하이닉스 31억 vs 마이크론 144억 … 韓 감사 비용, 글로벌 위상 안맞아",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0wUnJEemoxM05rdEdqWjFUeS1OUE4zN2RDWnJiOVNSUmlUTWNyNDFvTEtRWUdXb0dfYVJYYzdfRmJkY1VjdGlGVjNZQlI2UEk?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 01 Sep 2026 10:42:00 GMT"
+    },
+    {
+      "title": "삼성·SK하이닉스, 대만서 AI 메모리 승부...소부장도 총출동",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sRVpUQ3JlOW16ank2a2xsbVFzZnhRNDRoTTBDMGNqSTlGQTJsOEthcW9tSUUtNXNOWXRVSm0yal84UDdrNjJsRHZQOUZVUEk?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 01 Sep 2026 11:14:10 GMT"
+    },
+    {
+      "title": "[특징주] 삼성전자·SK하이닉스, 장 초반 1%대 약세",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Sb3JSOVVhLU5ObWJZa1NfVlRVU3BwMzBpemEwVjR1SVpkTktoNXVWR1p3MmpBVVlMMmZCSTFDVk9VM293d0xJclkyY0hMMmZTT1NVLTRoZTlMTmfSAWBBVV95cUxOUVlCNkhJc3RibEk5TWVORmhRYXVNbEE1M2xvOTdxVnRTcnprX2p4dUdsRy03bGFTQlRjYVZhcm5LeWhXUVlnYjdaYWFmLUdEY2RCeGUyODBiZGhRWEZKNTM?oc=5",
+      "source": "연합뉴스",
+      "date": "Tue, 01 Sep 2026 00:21:37 GMT"
+    },
+    {
+      "title": "삼성전자 1%대 약세…SK하이닉스는 상승 전환[핫스탁]",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1seWpfNmRtRGNLajd0VFBuU054TUNIZ3hsakNJU2wyNmNlaW92OENyT1QyYUJQR0poejFvclNUWWh0R1Y4ZFJnX1Fvc2I3SkF0WXZQbHFTQXBCYkV5Z0FBQ9IBeEFVX3lxTFBBSzBlUE5ncnZWTlFiRzh0SXp4aklPN2F5eHZXUVhjOExUUkRYS0FDdkQ3NGpLTnU2NTN3X21OUGdUWVhYRUt4c2dSWDBfNU05bDVKcUFLdUN1ckh1R2xqVkFQem1iaGhRbWZxWFJBQmFsdEw1MFVOSw?oc=5",
+      "source": "newsis.com",
+      "date": "Tue, 01 Sep 2026 00:32:04 GMT"
+    },
+    {
+      "title": "삼성전자, 장초반 약세 딛고 소폭 상승 마감…하닉도 1.1%↑(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjY1NQbFR5R2QzQmstQ0dhblZEZzZTdDhkSndtbWk0c08yN1VOY21pMVJJcW43UUtZdWl2dkdjZG85TkphRjhYM1lXS2h2b0E?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 01 Sep 2026 06:56:39 GMT"
+    },
+    {
+      "title": "전남광주특별시·SK하이닉스, 반도체 클러스터 '원팀' 체계 가동",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5SWUV5czBzNThuX09pMjZ6RW55S3NWM1VDNG5mRDNBMkxsUW5KSGY3U3RpdlpUbklXbmNybXd6MWJfMlY5WlJvZnQ1VGtpMEx1VUphLUpnZlVBYTlMNnM00gFkQVVfeXFMT0lKUlRDcU53R0txZk1MTmxVc3pHZlFLVlBKUTktalhGQUlOczZKZnRaV0RvQVRpcVB3WV9jY1U1WndCWGZnWmRkckNMZy1xd25FS1JhMVFyWGtsN0RmQzIzYnNqdw?oc=5",
+      "source": "뉴스1",
+      "date": "Tue, 01 Sep 2026 09:38:43 GMT"
+    },
+    {
+      "title": "민형배, SK하이닉스 방문…호남 생산거점 조성 협의",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NZEJUYjlZLWszZFJKY05HX1V3Y1Q5b05xQ2pBb0toRGRMYWFhbWxPRmJRMnZJTGlneTJ1YVVFSmNfaDQwOXR5YVZnaXJ2X1pyNHFGNnJCcHBVWnNWbEY3Zw?oc=5",
+      "source": "asiae.co.kr",
+      "date": "Tue, 01 Sep 2026 09:07:38 GMT"
+    },
+    {
+      "title": "SK하이닉스 광주 투자 속도…전남광주와 '반도체 원팀'",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UeXEtV3FfX0RrcVp5dW9tNVdQQVBLQmhFVnFZbU9mYTdmOUF6RkY5aTcxZ2UwdkItWGpsNVdxSFdQWmozbmY1UUc1OEdBWHRSd0E?oc=5",
+      "source": "노컷뉴스",
+      "date": "Tue, 01 Sep 2026 08:49:44 GMT"
+    },
+    {
+      "title": "넥사다이내믹스, AI 데이터센터·HPC 진출…SK하이닉스 출신 임원 영입 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fOHJXbUNuOHlfRjNmbTFFLVpKVm80UkVrblYxcDNzVWhjOXdDVEpYWTFKNWlSSkoxZzllVHR3cHdRenBSNzRKT2ZzNUlxMU5zaWljMzJjT2FodllJbkNJbXY5dGpySkpW0gFuQVVfeXFMUFpOOF9EdEU5dG5QbF85TG1INndWR2QwNXZoel9KS3BteEV4U2dVZkNFdVVXRWE5RlRRbFJaZ2VpMmNwRUZ2N2J3blZCdGpoZy14cG1EZ244QlJnSFVUZ0k4OTR1Tk1XT0xfa1ZPbWc?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 01 Sep 2026 07:17:39 GMT"
     }
   ]
 }
