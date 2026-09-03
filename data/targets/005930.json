@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T12:15:42+00:00",
+  "updated_at": "2026-09-03T12:14:00+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 487045.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.05,
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-02",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,12 +19,12 @@
     {
       "firm": "컨센서스 평균",
       "target": 487045,
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "야후 평균",
-      "target": 470156,
+      "target": 472719,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -94,20 +94,20 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "KB",
-      "date": "2026-08-10",
-      "target": 600000,
-      "prev_target": 600000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
       "firm": "키움",
       "date": "2026-08-10",
       "target": 350000,
       "prev_target": 390000,
       "chg": -10.26,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "KB",
+      "date": "2026-08-10",
+      "target": 600000,
+      "prev_target": 600000,
+      "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
     }

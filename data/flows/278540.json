@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:15:33+00:00",
+  "updated_at": "2026-09-03T12:13:52+00:00",
   "rows": [
-    {
-      "t": "2026-07-07",
-      "institution": 96568710,
-      "foreign": 202785520,
-      "individual": -299354230
-    },
     {
       "t": "2026-07-08",
       "institution": 308602620,
@@ -185,7 +179,7 @@
       "t": "2026-08-20",
       "institution": 68582840,
       "foreign": 31314600,
-      "individual": -118570220
+      "individual": -99897440
     },
     {
       "t": "2026-08-21",
@@ -240,12 +234,18 @@
       "institution": 130308800,
       "foreign": -27894400,
       "individual": -102414400
+    },
+    {
+      "t": "2026-09-03",
+      "institution": 4241200,
+      "foreign": -16559120,
+      "individual": 37138160
     }
   ],
   "summary": {
-    "foreign_20d": 366455880,
-    "institution_20d": 176468055,
-    "individual_20d": -166153790
+    "foreign_20d": 396681780,
+    "institution_20d": 313663505,
+    "individual_20d": -290082120
   },
   "source": "naver(frgn)",
   "note": "기관·외국인 순매매 수량을 종가로 환산한 근사치. 개인은 -(기관+외국인) 근사(최근일은 실측). 기타법인 미제공.",
