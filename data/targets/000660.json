@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T12:14:04+00:00",
+  "updated_at": "2026-09-04T12:14:52+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3279565.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-02",
+  "as_of": "2026-09-03",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3279565,
-      "date": "2026-09-02",
+      "date": "2026-09-03",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -111,24 +111,6 @@
       "target": 2100000,
       "prev_target": 2200000,
       "chg": -4.55,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "SK",
-      "date": "2026-08-03",
-      "target": 4000000,
-      "prev_target": 4000000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "현대차",
-      "date": "2026-08-03",
-      "target": 3300000,
-      "prev_target": 3300000,
-      "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
     }
