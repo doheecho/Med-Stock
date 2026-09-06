@@ -1,8 +1,8 @@
-"""일봉 + 이동평균(5/20/60/120) + RSI(14) 수집.
+"""일봉 + 이동평균(5/20/60/120) + RSI(14) + 볼린저·MACD + 종합신호 수집.
 
 KRX  : FinanceDataReader (실패 시 pykrx 폴백)
 US   : yfinance
-출력 : data/prices/{ticker}.json
+출력 : data/prices/{ticker}.json  (지표 시계열 + signals.evaluate() 결과 "signals" 블록)
 """
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ from common import (
     write_json,
 )
 from indicators import build_price_series
+from signals import attach as attach_signals
 
 _COLS = ["open", "high", "low", "close", "volume"]
 _HISTORY_DAYS = 2400  # 약 6.5년 — 차트 기간 버튼(최대 5년)까지 커버
@@ -66,7 +67,7 @@ def collect_krx(h: dict) -> None:
     if df is None or df.empty:
         print(f"[skip] {ticker}: 가격 데이터 없음")
         return
-    payload = build_price_series(df)
+    payload = attach_signals(build_price_series(df))
     payload.update(ticker=ticker, name=h.get("name"), market="KRX")
     write_json(PRICES_DIR / f"{ticker}.json", payload)
 
@@ -77,7 +78,7 @@ def collect_us(h: dict) -> None:
     if df is None or df.empty:
         print(f"[skip] {ticker}: 가격 데이터 없음")
         return
-    payload = build_price_series(df)
+    payload = attach_signals(build_price_series(df))
     payload.update(ticker=ticker, name=h.get("name"), market="US")
     write_json(PRICES_DIR / f"{ticker}.json", payload)
 

@@ -55327,5 +55327,32 @@
   "last_date": "2026-09-03",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
-  "market": "US"
+  "market": "US",
+  "signals": {
+    "as_of": "2026-08-28",
+    "stance": "mixed",
+    "score": 1,
+    "n_bull": 1,
+    "n_bear": 0,
+    "read": "신호 혼조 (방향성 불명확) · 변동성 수축",
+    "caveats": [
+      "변동성 수축"
+    ],
+    "signals": [
+      {
+        "key": "macd_zero",
+        "label": "MACD 0선 위",
+        "dir": "bull",
+        "strength": 1,
+        "detail": "MACD가 0선 위 — 중기 상승 모멘텀 우위."
+      },
+      {
+        "key": "bb_squeeze",
+        "label": "밴드 스퀴즈",
+        "dir": "neutral",
+        "strength": 2,
+        "detail": "볼린저 밴드 폭이 최근 60거래일 최저 — 변동성 수축, 곧 방향성 확대 가능."
+      }
+    ]
+  }
 }

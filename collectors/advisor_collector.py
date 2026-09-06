@@ -1,11 +1,15 @@
-"""AI Advisor 코멘트 생성 (Gemini API).
+"""AI Advisor 코멘트 + 종목별 보조지표 신호 서술 생성 (Gemini API).
 
 환경변수:
-  GEMINI_API_KEY  (필수 - 없으면 기존 data/advisor.json 유지하고 종료)
+  GEMINI_API_KEY  (선택 - 없으면 포트폴리오 코멘트는 건너뛰고, 종목별 신호는
+                   규칙 엔진 결과만으로 data/signals/*.json 을 쓴다)
   GEMINI_MODEL    (선택, 미지정 시 gemini-flash-lite-latest → 3.5-flash-lite → flash-latest 순 폴백)
 
-입력: data/snapshot.json, data/indices.json, data/targets/*.json, data/news/*.json
-출력: data/advisor.json  { updated_at, comment, model, source }
+입력: data/snapshot.json, data/indices.json, data/prices/*.json, data/news/*.json
+출력:
+  data/advisor.json        { updated_at, comment, model, source }   — 포트폴리오 종합
+  data/signals/{ticker}.json { as_of, stance, score, read, signals[], narrative, model, source }
+                             — 종목별. narrative 는 규칙 신호 목록만 근거로 한 2~3문장 서술.
 """
 from __future__ import annotations
 
@@ -15,7 +19,7 @@ import sys
 
 import requests
 
-from common import DATA, now_iso, write_json
+from common import DATA, SIGNALS_DIR, now_iso, write_json
 
 
 def _load(path):
@@ -82,11 +86,11 @@ _PROMPT = """당신은 한국 개인투자자를 돕는 애널리스트다. 아�
 _MODEL_FALLBACKS = ["gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-flash-latest"]
 
 
-def _gemini_call(key: str, model: str, prompt: str) -> tuple[str | None, int, str]:
+def _gemini_call(key: str, model: str, prompt: str, max_tokens: int = 700) -> tuple[str | None, int, str]:
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 700},
+        "generationConfig": {"temperature": 0.9, "maxOutputTokens": max_tokens},
     }
     r = requests.post(
         url, params={"key": key}, json=body,
@@ -132,24 +136,132 @@ def build_comment() -> tuple[str | None, str | None]:
     return None, None
 
 
+_DIR_KO = {"bull": "상승", "bear": "하락", "neutral": "중립"}
+
+_SIGNAL_PROMPT = """당신은 한국 주식 기술적 분석가다. 아래는 규칙 엔진이 '{name}({ticker})' 에서
+지금 감지한 보조지표 신호 목록이다. 이 신호들만 근거로 현재 국면을 개인투자자에게
+2~3문장 한국어 평서문으로 설명하라.
+
+- 목록에 없는 내용(실적·뉴스·목표주가·거시)은 지어내지 말 것.
+- 상승·하락 신호가 섞이면 어느 쪽이 우세한지와 지켜볼 지점을 짚을 것.
+- 마지막에 기술적 참고용이라는 점을 한 구절로 덧붙일 것. 불릿 없이.
+
+종합 판정: {read}
+현재가(종가): {close}
+감지된 신호:
+{lines}
+"""
+
+
+def _signal_lines(sg: dict) -> str:
+    return "\n".join(
+        f"- [{_DIR_KO.get(s['dir'], s['dir'])}/강도{s['strength']}] {s['detail']}"
+        for s in sg.get("signals", [])
+    )
+
+
+def _eval_signals(price_doc: dict) -> dict | None:
+    """prices/{t}.json 에 signals 블록이 있으면 그대로, 없으면 직접 계산."""
+    sg = price_doc.get("signals")
+    if sg and sg.get("signals") is not None:
+        return sg
+    try:
+        from signals import evaluate
+
+        return evaluate(price_doc)
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] signals.evaluate 실패: {e!r}")
+        return None
+
+
+def build_ticker_signals(key: str | None) -> int:
+    """보유 종목마다 data/signals/{ticker}.json 생성.
+
+    규칙 신호는 항상 저장하고, GEMINI_API_KEY 가 있으면 신호 목록만 근거로 한
+    2~3문장 서술(narrative)을 함께 넣는다. 한 번 성공한 모델을 이후 종목에 재사용.
+    """
+    snap = _load("snapshot.json") or {}
+    positions = snap.get("positions", [])
+    if not positions:
+        print("[skip] snapshot.json positions 없음 - signals 생략")
+        return 0
+
+    want = os.getenv("GEMINI_MODEL", "").strip()
+    models = ([want] if want else []) + [m for m in _MODEL_FALLBACKS if m != want]
+    picked = None
+    n_written = 0
+
+    for p in positions:
+        t = p["ticker"]
+        price_doc = _load(f"prices/{t}.json")
+        if not price_doc:
+            print(f"[skip] {t}: prices json 없음")
+            continue
+        sg = _eval_signals(price_doc)
+        if not sg:
+            continue
+
+        narrative, used = None, None
+        if key and sg.get("signals"):
+            prompt = _SIGNAL_PROMPT.format(
+                name=p.get("name"), ticker=t, close=p.get("last_close"),
+                read=sg.get("read"), lines=_signal_lines(sg),
+            )
+            for m in ([picked] if picked else models):
+                text, code, err = _gemini_call(key, m, prompt, max_tokens=360)
+                if text:
+                    narrative, used, picked = text, m, m
+                    break
+                print(f"[gemini-sig] {t} 실패 {m}: HTTP {code} {err}")
+
+        write_json(
+            SIGNALS_DIR / f"{t}.json",
+            {
+                "ticker": t,
+                "name": p.get("name"),
+                "as_of": sg.get("as_of"),
+                "stance": sg.get("stance"),
+                "score": sg.get("score"),
+                "read": sg.get("read"),
+                "caveats": sg.get("caveats", []),
+                "signals": sg.get("signals", []),
+                "narrative": narrative,
+                "model": used,
+                "source": "gemini" if narrative else "rule",
+            },
+        )
+        n_written += 1
+        print(f"[write] signals/{t}.json ({sg.get('stance')}, 신호 {len(sg.get('signals', []))}건"
+              + (f", 서술 {len(narrative)}자" if narrative else ", 서술 없음") + ")")
+
+    return n_written
+
+
 def main() -> int:
+    key = os.getenv("GEMINI_API_KEY")
+
     try:
         comment, model = build_comment()
     except Exception as e:  # noqa: BLE001
         print(f"[warn] Gemini 호출 예외: {e!r} - advisor.json 유지")
-        return 0
-    if not comment:
-        return 0
-    write_json(
-        DATA / "advisor.json",
-        {
-            "updated_at": now_iso(),
-            "comment": comment,
-            "model": model,
-            "source": "gemini",
-        },
-    )
-    print(f"[write] advisor.json ({len(comment)}자, {model})")
+        comment, model = None, None
+    if comment:
+        write_json(
+            DATA / "advisor.json",
+            {
+                "updated_at": now_iso(),
+                "comment": comment,
+                "model": model,
+                "source": "gemini",
+            },
+        )
+        print(f"[write] advisor.json ({len(comment)}자, {model})")
+
+    try:
+        build_ticker_signals(key)
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] 종목별 신호 생성 예외: {e!r} - 기존 signals/*.json 유지")
+
     return 0
 
 

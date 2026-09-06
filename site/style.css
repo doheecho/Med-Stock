@@ -325,3 +325,70 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .provenance b { color: var(--text); font-weight: 600; }
 .provenance .sep { margin: 0 8px; opacity: .45; }
 .provenance[hidden] { display: none; }
+
+/* ── 보조지표 종합 신호 패널 ─────────────────────────────────────── */
+.sig-help-btn {
+  margin-left: 8px; width: 18px; height: 18px; line-height: 16px; padding: 0;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--panel-2);
+  color: var(--muted); font-size: 11px; cursor: pointer;
+}
+.sig-help-btn:hover { border-color: var(--accent); color: var(--text); }
+.sig-help {
+  margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line);
+  border-radius: 8px; background: var(--panel-2); font-size: 12px; line-height: 1.7;
+  color: var(--muted);
+}
+.sig-help[hidden] { display: none; }
+.sig-help b { color: var(--text); font-weight: 600; }
+.sig-help ul { margin: 6px 0; padding-left: 18px; }
+.sig-help a { color: var(--accent); }
+
+.sig-head {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 4px 0 10px; border-bottom: 1px solid var(--line); margin-bottom: 10px;
+}
+.sig-stance {
+  font-weight: 700; font-size: 14px; padding: 2px 10px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted);
+}
+.sig-head.bull  .sig-stance { color: var(--up);   border-color: color-mix(in srgb, var(--up) 55%, var(--line)); }
+.sig-head.bear  .sig-stance { color: var(--down); border-color: color-mix(in srgb, var(--down) 55%, var(--line)); }
+.sig-head.mixed .sig-stance { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.sig-read { font-size: 13px; color: var(--text); flex: 1 1 auto; }
+.sig-tally { font-size: 12px; color: var(--muted); }
+.sig-tally i { font-style: normal; margin-left: 4px; }
+.sig-tally i.bull { color: var(--up); }
+.sig-tally i.bear { color: var(--down); }
+
+.sig-narrative {
+  margin: 0 0 12px; font-size: 13px; line-height: 1.75; color: var(--text);
+}
+.sig-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.sig-chip {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 12px;
+  padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--panel-2); color: var(--text); cursor: default;
+}
+.sig-chip b { font-size: 7px; letter-spacing: -1px; }
+.sig-chip.bull    { border-color: color-mix(in srgb, var(--up) 45%, var(--line)); }
+.sig-chip.bull b  { color: var(--up); }
+.sig-chip.bear    { border-color: color-mix(in srgb, var(--down) 45%, var(--line)); }
+.sig-chip.bear b  { color: var(--down); }
+.sig-chip.neutral b { color: var(--muted); }
+
+.sig-list { list-style: none; margin: 0; padding: 0; }
+.sig-row {
+  display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line);
+  font-size: 12.5px; line-height: 1.6;
+}
+.sig-row:last-child { border-bottom: none; }
+.sig-tag {
+  flex: none; align-self: flex-start; font-size: 11px; font-weight: 600;
+  padding: 1px 7px; border-radius: 4px; background: var(--panel-2);
+  border: 1px solid var(--line); color: var(--muted);
+}
+.sig-tag.bull    { color: var(--up);   border-color: color-mix(in srgb, var(--up) 45%, var(--line)); }
+.sig-tag.bear    { color: var(--down); border-color: color-mix(in srgb, var(--down) 45%, var(--line)); }
+.sig-tag.neutral { color: var(--muted); }
+.sig-detail { color: var(--text); }
+.sig-foot { margin-top: 10px; font-size: 11px; color: var(--muted); }

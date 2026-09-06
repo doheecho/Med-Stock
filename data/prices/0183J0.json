@@ -2197,5 +2197,54 @@
   "last_date": "2026-09-04",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
-  "market": "KRX"
+  "market": "KRX",
+  "signals": {
+    "as_of": "2026-08-28",
+    "stance": "bear",
+    "score": -4,
+    "n_bull": 1,
+    "n_bear": 3,
+    "read": "하락 신호 우위 · 변동성 수축",
+    "caveats": [
+      "변동성 수축",
+      "스토캐스틱 과매도"
+    ],
+    "signals": [
+      {
+        "key": "ma_align",
+        "label": "역배열",
+        "dir": "bear",
+        "strength": 3,
+        "detail": "이동평균 역배열 — 이평선이 하락 순으로 정렬, 추세적 약세."
+      },
+      {
+        "key": "price_ma",
+        "label": "이평선 아래",
+        "dir": "bear",
+        "strength": 1,
+        "detail": "종가가 MA20·MA60 아래 — 단기·중기 이평선 아래에서 거래 중."
+      },
+      {
+        "key": "macd_zero",
+        "label": "MACD 0선 아래",
+        "dir": "bear",
+        "strength": 1,
+        "detail": "MACD가 0선 아래 — 중기 하락 모멘텀 우위."
+      },
+      {
+        "key": "bb_squeeze",
+        "label": "밴드 스퀴즈",
+        "dir": "neutral",
+        "strength": 2,
+        "detail": "볼린저 밴드 폭이 최근 60거래일 최저 — 변동성 수축, 곧 방향성 확대 가능."
+      },
+      {
+        "key": "stoch",
+        "label": "스토캐스틱 과매도",
+        "dir": "bull",
+        "strength": 1,
+        "detail": "스토캐스틱 %K 7·%D 16 — 과매도(20-)."
+      }
+    ]
+  }
 }

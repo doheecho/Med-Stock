@@ -35549,5 +35549,32 @@
   "last_date": "2026-09-04",
   "ticker": "069500",
   "name": "KODEX 200",
-  "market": "KRX"
+  "market": "KRX",
+  "signals": {
+    "as_of": "2026-08-28",
+    "stance": "mixed",
+    "score": -1,
+    "n_bull": 0,
+    "n_bear": 1,
+    "read": "신호 혼조 (방향성 불명확) · 변동성 수축",
+    "caveats": [
+      "변동성 수축"
+    ],
+    "signals": [
+      {
+        "key": "macd_zero",
+        "label": "MACD 0선 아래",
+        "dir": "bear",
+        "strength": 1,
+        "detail": "MACD가 0선 아래 — 중기 하락 모멘텀 우위."
+      },
+      {
+        "key": "bb_squeeze",
+        "label": "밴드 스퀴즈",
+        "dir": "neutral",
+        "strength": 2,
+        "detail": "볼린저 밴드 폭이 최근 60거래일 최저 — 변동성 수축, 곧 방향성 확대 가능."
+      }
+    ]
+  }
 }

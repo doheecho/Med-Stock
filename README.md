@@ -20,20 +20,24 @@ Med-Stock/
 ├── requirements.txt
 ├── data/                        # ← GitHub Actions 산출물 (자동 커밋)
 │   ├── holdings.json  scenarios.json  snapshot.json
-│   ├── prices/{ticker}.json      # 일봉 + MA(5/20/60/120) + RSI(14)
+│   ├── prices/{ticker}.json      # 일봉 + MA(5/20/60/120) + RSI(14) + 볼린저·MACD + signals 블록
 │   ├── fundamentals/{ticker}.json
 │   ├── flows/{ticker}.json       # 외인/기관/개인 순매수 + 거래량·거래대금
 │   ├── targets/{ticker}.json     # 목표주가 최고/평균/최저 + 투자의견
+│   ├── signals/{ticker}.json     # 보조지표 종합신호(규칙) + Gemini 서술
 │   └── news/{ticker}.json
 ├── collectors/
 │   ├── common.py                 # 경로·로딩·저장 공통
-│   ├── indicators.py             # RSI / 이동평균
-│   ├── price_collector.py        # FinanceDataReader/pykrx(KRX), yfinance(MU)
+│   ├── indicators.py             # RSI / 이동평균 / 볼린저 / MACD
+│   ├── signals.py                # 보조지표 종합 신호 규칙 엔진 (순수 함수)
+│   ├── price_collector.py        # FinanceDataReader/pykrx(KRX), yfinance(MU) + signals.attach
 │   ├── flow_collector.py         # pykrx 투자자별 매매동향
 │   ├── fundamental_collector.py  # pykrx 기본지표 (+ 선택: dart-fss)
 │   ├── target_price_collector.py # 네이버 금융 스크래핑 / yfinance analyst target
 │   ├── news_collector.py         # 네이버 금융 뉴스탭 / Google News RSS / yfinance
+│   ├── advisor_collector.py      # Gemini: 포트폴리오 코멘트 + 종목별 신호 서술
 │   └── snapshot_builder.py       # yaml→json 변환 + 포트폴리오 요약
+├── docs/indicators.md            # 보조지표·종합신호 가이드
 ├── proxy/worker.js               # Cloudflare Worker: 실시간 시세 CORS 프록시
 ├── site/                         # index.html / dashboard.js / style.css
 └── .github/workflows/
@@ -187,8 +191,23 @@ python -m http.server 8000
 
 - **상단 요약**: 통화별 총 매수금액 / 평가금액 / 평가손익 / 수익률 (현재가는 프록시로 갱신),
   종목 비중 도넛, 포지션 표
-- **종목 탭**: 가격(캔들 또는 라인) + 이동평균 + 시나리오 점선,
-  RSI(14) 서브차트, 수급 막대(외인/기관), 기본지표 표, 목표주가 갭 바, 최근 뉴스
+- **종목 탭**: 가격(캔들 또는 라인) + 이동평균 + 시나리오 점선, **보조지표 신호 패널**,
+  RSI(14)·MACD·스토캐스틱 서브차트, 수급 막대(외인/기관), 기본지표 표, 목표주가 갭 바, 최근 뉴스
+
+### 보조지표 신호
+
+종목을 고르면 상세 탭 맨 위 **보조지표 신호** 패널이 그 종목의 일봉 지표
+(이동평균·RSI·MACD·볼린저밴드·거래량·스토캐스틱·52주 고저)를 규칙으로 읽어
+**지금 나타나는 신호**를 방향(상승/하락/중립)·강도(● ~ ●●●)와 함께 모아 보여준다.
+신호별 점수를 합산해 `상승 우위 / 하락 우위 / 혼조 / 중립` 종합 판정과 한 줄 요약을 낸다.
+
+- 규칙 엔진: `collectors/signals.py` — `price_collector` 가 배치에서 `data/prices/{ticker}.json` 의
+  `signals` 블록으로, `advisor_collector` 가 `data/signals/{ticker}.json` 으로 저장.
+- `GEMINI_API_KEY` 가 있으면 그 신호 목록만 근거로 한 2~3문장 한국어 서술이 함께 붙는다(없으면 규칙 결과만).
+- 보유목록 밖(＋) 종목은 브라우저가 `dashboard.js` 의 `evaluateSignals()` 로 동일 규칙을 즉석 계산.
+- 지표별 정의·조건·유의점은 [`docs/indicators.md`](./docs/indicators.md), 화면에선 패널 헤더의 `?` 버튼.
+
+> 기술적 참고용이다. 실적·수급·뉴스·거시는 신호 판정에 들어가지 않는다.
 
 ### 시나리오 점선
 

@@ -768,6 +768,11 @@ async function renderDetail(ticker) {
           <div class="chart-ctl" id="chartCtl">${chartCtlHtml()}</div>
           <canvas id="priceChart"></canvas>
         </div>
+        <div class="block" id="signalBlock">
+          <h3 class="h3-row">보조지표 신호<button class="sig-help-btn" id="sigHelpBtn" title="지표 설명" aria-label="지표 설명">?</button></h3>
+          <div id="signalBox">로딩…</div>
+          <div id="sigHelp" class="sig-help" hidden></div>
+        </div>
         <div class="block sub-block${state.sub.macd ? "" : " collapsed"}" id="macdBlock"><h3>MACD (12·26·9)</h3><canvas id="macdChart"></canvas></div>
         <div class="block sub-block${state.sub.stoch ? "" : " collapsed"}" id="stochBlock"><h3>스토캐스틱 (14·3·3)</h3><canvas id="stochChart"></canvas></div>
         <div class="block sub-block${state.sub.rsi ? "" : " collapsed"}" id="rsiBlock">
@@ -792,7 +797,7 @@ async function renderDetail(ticker) {
 
   document.getElementById("chartCtl").addEventListener("click", onChartCtl);
 
-  let fund, flow, target, news, etfData = null;
+  let fund, flow, target, news, etfData = null, sigDoc = null;
   if (h && h._adhoc) {
     // 추가 종목: 워커에서 기본지표·목표주가·수급·뉴스를 한 번에
     const info = PROXY_BASE
@@ -803,15 +808,16 @@ async function renderDetail(ticker) {
     target = info && info.target;
     news = info && info.news;
   } else {
-    [fund, flow, target, news, etfData] = await Promise.all([
+    [fund, flow, target, news, etfData, sigDoc] = await Promise.all([
       getJSON(`${state.dataBase}/fundamentals/${ticker}.json`).catch(() => null),
       getJSON(`${state.dataBase}/flows/${ticker}.json`).catch(() => null),
       etf ? Promise.resolve(null) : getJSON(`${state.dataBase}/targets/${ticker}.json`).catch(() => null),
       getJSON(`${state.dataBase}/news/${ticker}.json`).catch(() => null),
       etf ? getJSON(`${state.dataBase}/etf/${ticker}.json`).catch(() => null) : Promise.resolve(null),
+      getJSON(`${state.dataBase}/signals/${ticker}.json`).catch(() => null),
     ]);
   }
-  state.panel = { h, fund, flow, target, news, etfData };
+  state.panel = { h, fund, flow, target, news, etfData, sigDoc };
 
   renderFundamentals(h, fund);
   renderIndices();
@@ -824,6 +830,12 @@ async function renderDetail(ticker) {
     renderConsensus(h, target);
   }
   renderNews(news);
+  renderSignals(h, sigDoc);
+  document.getElementById("sigHelpBtn").addEventListener("click", () => {
+    const el = document.getElementById("sigHelp");
+    if (el.hidden) { el.innerHTML = SIG_HELP_HTML; el.hidden = false; }
+    else el.hidden = true;
+  });
   document.getElementById("rsiTf").addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (!b || b.dataset.tf === state.rsiTf) return;
@@ -1405,6 +1417,225 @@ function stochFrom(candles, kP = 14, dP = 3) {
   const k = sma(kRaw, dP);
   return { k, d: sma(k, dP) };
 }
+
+/* ============ 보조지표 종합 신호 — collectors/signals.py 의 JS 포팅 ============
+ * 보유 종목은 배치가 만든 data/signals/{ticker}.json (규칙 + Gemini 서술)을 쓰고,
+ * 보유목록 밖(+)으로 추가한 종목은 여기 evaluateSignals(p) 로 브라우저에서 계산한다.
+ * 규칙·문구는 파이썬 쪽과 1:1 로 맞춘다. */
+const _SIG_DIR_KO = { bull: "상승", bear: "하락", neutral: "중립" };
+const _SIG_STANCE_KO = { bull: "상승 우위", bear: "하락 우위", mixed: "혼조", neutral: "중립" };
+const _SIG_CROSS_MA = 10, _SIG_CROSS_MACD = 5, _SIG_CROSS_STOCH = 3;
+const _SIG_VOL_SPIKE = 2.0, _SIG_SQUEEZE_LB = 60, _SIG_NEAR_52W = 0.03;
+
+function _sigLastValid(a) {
+  if (!a) return [null, null];
+  for (let i = a.length - 1; i >= 0; i--) if (a[i] != null) return [i, a[i]];
+  return [null, null];
+}
+function _sigPrevValid(a, before) {
+  for (let i = before - 1; i >= 0; i--) if (a[i] != null) return [i, a[i]];
+  return [null, null];
+}
+function _sigCross(a, b, within) {
+  const n = Math.min(a.length, b.length), pairs = [];
+  for (let i = 0; i < n; i++) if (a[i] != null && b[i] != null) pairs.push([i, a[i] - b[i]]);
+  if (pairs.length < 2) return null;
+  const lastI = pairs[pairs.length - 1][0];
+  const win = pairs.slice(-(within + 1));
+  for (let k = win.length - 1; k > 0; k--) {
+    const d0 = win[k - 1][1], d1 = win[k][1];
+    if (d0 <= 0 && d1 > 0) return ["up", lastI - win[k][0]];
+    if (d0 >= 0 && d1 < 0) return ["down", lastI - win[k][0]];
+  }
+  return null;
+}
+function _sigSmaLast(seq, w) {
+  const v = seq.filter((x) => x != null);
+  if (v.length < w) return null;
+  return v.slice(-w).reduce((a, b) => a + b, 0) / w;
+}
+function _sg(key, label, dir, strength, detail) { return { key, label, dir, strength, detail }; }
+
+function evaluateSignals(p) {
+  if (!p || !p.close) return null;
+  const S = [], cav = [];
+  const ma = p.ma || {}, bb = p.bbands || {}, mac = p.macd || {};
+  const close = p.close, rsi = p.rsi || [];
+
+  { // 이평 배열
+    const [, m5] = _sigLastValid(ma.ma5), [, m20] = _sigLastValid(ma.ma20),
+          [, m60] = _sigLastValid(ma.ma60), [, m120] = _sigLastValid(ma.ma120);
+    if (m5 != null && m20 != null && m60 != null) {
+      const chain = [m5, m20, m60].concat(m120 != null ? [m120] : []);
+      const up = chain.every((v, i) => i === 0 || chain[i - 1] > v);
+      const dn = chain.every((v, i) => i === 0 || chain[i - 1] < v);
+      const lbl = "MA5 > MA20 > MA60" + (m120 != null ? " > MA120" : "");
+      if (up) S.push(_sg("ma_align", "정배열", "bull", 3, `이동평균 정배열 (${lbl}) — 단기·중기·장기선이 상승 순으로 정렬.`));
+      else if (dn) S.push(_sg("ma_align", "역배열", "bear", 3, "이동평균 역배열 — 이평선이 하락 순으로 정렬, 추세적 약세."));
+    }
+  }
+  { // MA20 x MA60
+    const c = _sigCross(ma.ma20 || [], ma.ma60 || [], _SIG_CROSS_MA);
+    if (c) {
+      const when = c[1] === 0 ? "오늘" : `${c[1]}거래일 전`;
+      if (c[0] === "up") S.push(_sg("ma_cross", "골든크로스", "bull", 2, `골든크로스 — MA20이 MA60을 ${when} 상향 돌파. 중기 추세 전환 가능.`));
+      else S.push(_sg("ma_cross", "데드크로스", "bear", 2, `데드크로스 — MA20이 MA60을 ${when} 하향 이탈. 중기 추세 악화.`));
+    }
+  }
+  { // 종가 vs 이평
+    const [, c] = _sigLastValid(close), [, m20] = _sigLastValid(ma.ma20), [, m60] = _sigLastValid(ma.ma60);
+    if (c != null && m20 != null && m60 != null) {
+      if (c > m20 && c > m60) S.push(_sg("price_ma", "이평선 위", "bull", 1, "종가가 MA20·MA60 위 — 단기·중기 이평선 위에서 거래 중."));
+      else if (c < m20 && c < m60) S.push(_sg("price_ma", "이평선 아래", "bear", 1, "종가가 MA20·MA60 아래 — 단기·중기 이평선 아래에서 거래 중."));
+    }
+  }
+  { // RSI(14)
+    const [i, rv] = _sigLastValid(rsi);
+    if (rv != null) {
+      const r = Math.round(rv);
+      if (r >= 70) { cav.push(`RSI ${r} 과매수`); S.push(_sg("rsi", "RSI 과매수", "bear", 2, `RSI(14) ${r} — 과매수(70+) 구간. 단기 되돌림 압력.`)); }
+      else if (r <= 30) { cav.push(`RSI ${r} 과매도`); S.push(_sg("rsi", "RSI 과매도", "bull", 2, `RSI(14) ${r} — 과매도(30-) 구간. 기술적 반등 가능.`)); }
+      else {
+        const [, rp] = _sigPrevValid(rsi, i);
+        if (rp != null && rp < 50 && r >= 50) S.push(_sg("rsi", "RSI 50 상향", "bull", 1, `RSI(14)가 50선을 상향 돌파(${Math.round(rp)}→${r}) — 모멘텀 개선.`));
+        else if (rp != null && rp >= 50 && r < 50) S.push(_sg("rsi", "RSI 50 하향", "bear", 1, `RSI(14)가 50선을 하향 이탈(${Math.round(rp)}→${r}) — 모멘텀 약화.`));
+      }
+    }
+  }
+  { // MACD
+    const line = mac.macd || [], sig = mac.signal || [];
+    const c = _sigCross(line, sig, _SIG_CROSS_MACD);
+    if (c) {
+      const when = c[1] === 0 ? "오늘" : `${c[1]}거래일 전`;
+      if (c[0] === "up") S.push(_sg("macd_cross", "MACD 골든크로스", "bull", 2, `MACD가 시그널선을 ${when} 상향 돌파 — 매수 신호.`));
+      else S.push(_sg("macd_cross", "MACD 데드크로스", "bear", 2, `MACD가 시그널선을 ${when} 하향 돌파 — 매도 신호.`));
+    }
+    const [, ml] = _sigLastValid(line);
+    if (ml != null && ml > 0) S.push(_sg("macd_zero", "MACD 0선 위", "bull", 1, "MACD가 0선 위 — 중기 상승 모멘텀 우위."));
+    else if (ml != null && ml < 0) S.push(_sg("macd_zero", "MACD 0선 아래", "bear", 1, "MACD가 0선 아래 — 중기 하락 모멘텀 우위."));
+  }
+  { // 볼린저
+    const up = bb.upper || [], mid = bb.mid || [], lo = bb.lower || [];
+    const [, c] = _sigLastValid(close), [, u] = _sigLastValid(up), [, l] = _sigLastValid(lo);
+    if (c != null && u != null && l != null) {
+      if (c >= u) { cav.push("볼린저 상단 접촉"); S.push(_sg("bb_edge", "볼린저 상단", "bear", 1, "종가가 볼린저 상단(+2σ) 도달 — 단기 과열 또는 강한 추세, 되돌림 주의.")); }
+      else if (c <= l) { cav.push("볼린저 하단 접촉"); S.push(_sg("bb_edge", "볼린저 하단", "bull", 1, "종가가 볼린저 하단(−2σ) 도달 — 낙폭과대 반등 가능.")); }
+    }
+    const w = [], n = Math.min(up.length, mid.length, lo.length);
+    for (let i = 0; i < n; i++) if (up[i] != null && mid[i] != null && lo[i] != null && mid[i]) w.push((up[i] - lo[i]) / mid[i]);
+    if (w.length >= _SIG_SQUEEZE_LB && w[w.length - 1] <= Math.min(...w.slice(-_SIG_SQUEEZE_LB)) + 1e-12) {
+      cav.push("변동성 수축");
+      S.push(_sg("bb_squeeze", "밴드 스퀴즈", "neutral", 2, `볼린저 밴드 폭이 최근 ${_SIG_SQUEEZE_LB}거래일 최저 — 변동성 수축, 곧 방향성 확대 가능.`));
+    }
+  }
+  { // 거래량
+    const vol = p.volume || [];
+    const [, v] = _sigLastValid(vol);
+    const avg = _sigSmaLast(vol.length && vol[vol.length - 1] != null ? vol.slice(0, -1) : vol, 20);
+    const [ci, c] = _sigLastValid(close);
+    const [, cprev] = ci != null ? _sigPrevValid(close, ci) : [null, null];
+    if (v != null && avg && c != null && cprev != null) {
+      const ratio = v / avg;
+      if (ratio >= _SIG_VOL_SPIKE && c > cprev) S.push(_sg("volume", "거래량 급증(상승)", "bull", 2, `거래량이 20일 평균의 ${ratio.toFixed(1)}배로 급증 + 주가 상승 — 매수세 유입.`));
+      else if (ratio >= _SIG_VOL_SPIKE && c < cprev) S.push(_sg("volume", "거래량 급증(하락)", "bear", 2, `거래량이 20일 평균의 ${ratio.toFixed(1)}배로 급증 + 주가 하락 — 매도 출회.`));
+    }
+  }
+  { // 스토캐스틱(14·3·3)
+    if (p.candles && p.candles.length >= 20) {
+      const { k, d } = stochFrom(p.candles, 14, 3);
+      const [ki, kv] = _sigLastValid(k), [, dv] = _sigLastValid(d);
+      if (kv != null && dv != null) {
+        if (kv >= 80 && dv >= 80) { cav.push("스토캐스틱 과매수"); S.push(_sg("stoch", "스토캐스틱 과매수", "bear", 1, `스토캐스틱 %K ${kv.toFixed(0)}·%D ${dv.toFixed(0)} — 과매수(80+).`)); }
+        else if (kv <= 20 && dv <= 20) { cav.push("스토캐스틱 과매도"); S.push(_sg("stoch", "스토캐스틱 과매도", "bull", 1, `스토캐스틱 %K ${kv.toFixed(0)}·%D ${dv.toFixed(0)} — 과매도(20-).`)); }
+        const c = _sigCross(k, d, _SIG_CROSS_STOCH);
+        if (c) {
+          const [, dAt] = _sigLastValid(d.slice(0, ki + 1));
+          const when = c[1] === 0 ? "오늘" : `${c[1]}거래일 전`;
+          if (c[0] === "up" && dAt != null && dAt < 35) S.push(_sg("stoch_cross", "스토캐스틱 골든크로스", "bull", 2, `과매도권에서 %K가 %D를 ${when} 상향 돌파 — 반등 신호.`));
+          else if (c[0] === "down" && dAt != null && dAt > 65) S.push(_sg("stoch_cross", "스토캐스틱 데드크로스", "bear", 2, `과매수권에서 %K가 %D를 ${when} 하향 돌파 — 조정 신호.`));
+        }
+      }
+    }
+  }
+  { // 52주 위치
+    const c2 = close.filter((x) => x != null);
+    if (c2.length >= 60) {
+      const win = c2.slice(-252), c = c2[c2.length - 1];
+      const hi = Math.max(...win), lo = Math.min(...win);
+      if (hi && c >= hi * (1 - _SIG_NEAR_52W)) S.push(_sg("range52w", "52주 고가권", "bull", 1, `52주 최고가의 ${((c / hi - 1) * 100).toFixed(1)}% 이내 — 신고가 근접, 강한 상승 추세.`));
+      else if (lo && c <= lo * (1 + _SIG_NEAR_52W)) S.push(_sg("range52w", "52주 저가권", "bear", 1, `52주 최저가의 +${((c / lo - 1) * 100).toFixed(1)}% 이내 — 신저가 근접, 약세 지속.`));
+    }
+  }
+
+  const score = S.reduce((a, s) => a + s.strength * (s.dir === "bull" ? 1 : s.dir === "bear" ? -1 : 0), 0);
+  const nB = S.filter((s) => s.dir === "bull").length, nS = S.filter((s) => s.dir === "bear").length;
+  let stance, base;
+  if (!S.length) { stance = "neutral"; base = "뚜렷한 기술적 신호 없음"; }
+  else if (score >= 3) { stance = "bull"; base = "상승 신호 우위"; }
+  else if (score <= -3) { stance = "bear"; base = "하락 신호 우위"; }
+  else { stance = "mixed"; base = "신호 혼조 (방향성 불명확)"; }
+  const read = base + (cav.length ? ` · ${cav[0]}` : "");
+  const dates = p.dates || [];
+  return {
+    as_of: p.last_date || dates[dates.length - 1] || null,
+    stance, score, n_bull: nB, n_bear: nS, read, caveats: cav, signals: S,
+  };
+}
+
+function renderSignals(h, sigDoc) {
+  const box = document.getElementById("signalBox");
+  if (!box) return;
+  const p = state.prices[h.ticker];
+  const sig = (sigDoc && sigDoc.signals) ? sigDoc
+            : (p && p.signals && p.signals.signals) ? p.signals
+            : (p ? evaluateSignals(p) : null);
+  if (!sig || !sig.signals) {
+    box.innerHTML = "<div class='muted'>보조지표 신호 데이터가 없습니다.</div>";
+    return;
+  }
+  const list = sig.signals.slice().sort((a, b) => b.strength - a.strength);
+  const nB = sig.n_bull != null ? sig.n_bull : list.filter((s) => s.dir === "bull").length;
+  const nS = sig.n_bear != null ? sig.n_bear : list.filter((s) => s.dir === "bear").length;
+
+  const chips = list.map((s) =>
+    `<span class="sig-chip ${s.dir}" title="${escapeHtml(s.detail)}"><b>${"●".repeat(s.strength)}</b>${escapeHtml(s.label)}</span>`
+  ).join("");
+  const rows = list.map((s) =>
+    `<li class="sig-row ${s.dir}"><span class="sig-tag ${s.dir}">${_SIG_DIR_KO[s.dir]}</span><span class="sig-detail">${escapeHtml(s.detail)}</span></li>`
+  ).join("");
+  const narr = (sigDoc && sigDoc.narrative)
+    ? `<p class="sig-narrative">${escapeHtml(sigDoc.narrative)}</p>` : "";
+  const src = (sigDoc && sigDoc.source === "gemini") ? "AI 서술 + 규칙 엔진" : "규칙 엔진";
+  const asOf = sig.as_of ? ` · ${escapeHtml(sig.as_of)} 종가 기준` : "";
+
+  box.innerHTML =
+    `<div class="sig-head ${sig.stance}">
+       <span class="sig-stance">${_SIG_STANCE_KO[sig.stance] || sig.stance}</span>
+       <span class="sig-read">${escapeHtml(sig.read)}</span>
+       <span class="sig-tally"><i class="bull">▲${nB}</i> <i class="bear">▼${nS}</i></span>
+     </div>
+     ${narr}
+     ${list.length
+        ? `<div class="sig-chips">${chips}</div><ul class="sig-list">${rows}</ul>`
+        : `<div class="muted">현재 감지된 신호가 없습니다.</div>`}
+     <div class="sig-foot">${src}${asOf} · 기술적 참고용이며 투자 판단은 본인 책임</div>`;
+}
+
+const SIG_HELP_HTML = `
+  <p>보유 종목의 일봉에서 아래 보조지표를 규칙으로 읽어 <b>지금 나타나는 신호만</b> 모읍니다.
+     각 신호는 방향(<span class="sig-tag bull">상승</span>/<span class="sig-tag bear">하락</span>/<span class="sig-tag neutral">중립</span>)과 강도(● ~ ●●●)를 갖습니다.</p>
+  <ul>
+    <li><b>이동평균 MA(5·20·60·120)</b> — 정배열/역배열, MA20·MA60 골든/데드크로스, 종가의 이평선 위·아래.</li>
+    <li><b>RSI(14)</b> — 70↑ 과매수(되돌림 주의), 30↓ 과매도(반등 가능), 50선 돌파로 모멘텀 전환.</li>
+    <li><b>MACD(12·26·9)</b> — 시그널선 교차(매수·매도 신호), 0선 위·아래로 중기 모멘텀.</li>
+    <li><b>볼린저밴드(20·2σ)</b> — 상·하단 접촉, 밴드 폭이 60거래일 최저면 "스퀴즈"(변동성 확대 임박).</li>
+    <li><b>거래량</b> — 20일 평균의 2배 이상 급증 + 주가 방향으로 수급 강도 확인.</li>
+    <li><b>스토캐스틱(14·3·3)</b> — 80↑/20↓ 과매수·과매도, 과매도권 %K·%D 골든크로스는 반등 신호.</li>
+    <li><b>52주 고·저</b> — 신고가·신저가 ±3% 근접.</li>
+  </ul>
+  <p>종합 판정은 신호별 강도를 합산(상승 +, 하락 −)해 <b>±3 이상</b>이면 "상승/하락 우위", 그 사이면 "혼조"로 표시합니다.
+     보유목록 밖(＋)으로 추가한 종목은 브라우저에서 같은 규칙으로 즉석 계산합니다.
+     자세한 설명: <a href="https://github.com/doheecho/Med-Stock/blob/main/docs/indicators.md" target="_blank" rel="noopener">docs/indicators.md</a></p>`;
 
 /* ---- RSI (일/주/월봉) ---- */
 function drawRsiChart(p) {

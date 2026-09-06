@@ -17,8 +17,9 @@ FUNDAMENTALS_DIR = DATA / "fundamentals"
 FLOWS_DIR = DATA / "flows"
 TARGETS_DIR = DATA / "targets"
 NEWS_DIR = DATA / "news"
+SIGNALS_DIR = DATA / "signals"  # 종목별 보조지표 종합신호 (advisor_collector 산출)
 
-for _d in (PRICES_DIR, FUNDAMENTALS_DIR, FLOWS_DIR, TARGETS_DIR, NEWS_DIR):
+for _d in (PRICES_DIR, FUNDAMENTALS_DIR, FLOWS_DIR, TARGETS_DIR, NEWS_DIR, SIGNALS_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 
