@@ -28,14 +28,35 @@ TX_CSV = ROOT / "transactions.csv"
 
 
 # ── 공통 헬퍼 ──────────────────────────────────────────────────────────
+_HIST_CACHE: dict | None = None
+
+
+def _hist_series() -> dict:
+    """data/equity_prices.json 의 종목별 종가 맵 (equity_price_history.py 산출)."""
+    global _HIST_CACHE
+    if _HIST_CACHE is None:
+        p = DATA / "equity_prices.json"
+        try:
+            _HIST_CACHE = json.loads(p.read_text(encoding="utf-8")).get("series", {})
+        except Exception:  # noqa: BLE001
+            _HIST_CACHE = {}
+    return _HIST_CACHE
+
+
 def _price_map(ticker: str) -> dict[str, float]:
+    """배치 최신(data/prices) 우선, 없으면 히스토리(data/equity_prices) 사용.
+    둘 다 있으면 병합(히스토리로 과거를 메우고 배치로 최근을 덮어씀)."""
+    out: dict[str, float] = {}
+    h = _hist_series().get(ticker)
+    if isinstance(h, dict):
+        out.update({d: float(c) for d, c in h.items() if c is not None})
     p = PRICES_DIR / f"{ticker}.json"
-    if not p.exists():
-        return {}
-    doc = json.loads(p.read_text(encoding="utf-8"))
-    dates = doc.get("dates") or [c.get("t") for c in doc.get("candles", [])]
-    close = doc.get("close") or [c.get("c") for c in doc.get("candles", [])]
-    return {d: float(c) for d, c in zip(dates, close) if d and c is not None}
+    if p.exists():
+        doc = json.loads(p.read_text(encoding="utf-8"))
+        dates = doc.get("dates") or [c.get("t") for c in doc.get("candles", [])]
+        close = doc.get("close") or [c.get("c") for c in doc.get("candles", [])]
+        out.update({d: float(c) for d, c in zip(dates, close) if d and c is not None})
+    return out
 
 
 def _fx_series(start: str, end: str) -> dict[str, float]:
@@ -168,7 +189,8 @@ def build_from_ledger(txns: list[dict]) -> dict:
         else:
             missing.append(t)
     if missing:
-        print(f"[tx] 시세 데이터 없는 {len(missing)}종목은 곡선에서 제외(원금·평가액 모두): {missing}")
+        print(f"[tx] 시세 없어 제외 {len(missing)}종목 (대부분 2020년 전 청산분): "
+              f"{missing[:8]}{' …' if len(missing) > 8 else ''}")
     if not pmaps:
         print("[tx] 평가 가능한 종목이 없음 -> 백테스트로 폴백")
         return {}

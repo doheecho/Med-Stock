@@ -145,6 +145,19 @@ body {
 .eq-stat b.pos { color: var(--up); }
 .eq-stat b.neg { color: var(--down); }
 #equityChart { height: 260px !important; }
+.eq-askrow {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line);
+}
+.eq-askrow label { font-size: 12px; color: var(--muted); }
+.eq-askrow input[type="date"] {
+  background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
+  border-radius: 6px; padding: 3px 8px; font-size: 12px; color-scheme: dark;
+}
+.eq-asof { font-size: 12.5px; color: var(--muted); }
+.eq-asof b { color: var(--text); font-weight: 700; }
+.eq-asof b.pos { color: var(--up); }
+.eq-asof b.neg { color: var(--down); }
 .eq-note { margin-top: 8px; font-size: 11px; line-height: 1.6; color: var(--muted); }
 
 .table-wrap {

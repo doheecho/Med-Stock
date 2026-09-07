@@ -22,6 +22,7 @@ Med-Stock/
 ├── data/                        # ← GitHub Actions 산출물 (자동 커밋)
 │   ├── holdings.json  scenarios.json  snapshot.json
 │   ├── equity_curve.json        # 과거 시점별 포트폴리오 총 평가액(자산 추이 그래프)
+│   ├── equity_prices.json       # 거래한 모든 종목의 보유기간 일별 종가(상폐 포함)
 │   ├── prices/{ticker}.json      # 일봉 + MA(5/20/60/120) + RSI(14) + 볼린저·MACD + signals 블록
 │   ├── fundamentals/{ticker}.json
 │   ├── flows/{ticker}.json       # 외인/기관/개인 순매수 + 거래량·거래대금
@@ -39,7 +40,8 @@ Med-Stock/
 │   ├── news_collector.py         # 네이버 금융 뉴스탭 / Google News RSS / yfinance
 │   ├── advisor_collector.py      # Gemini: 포트폴리오 코멘트 + 종목별 신호 서술
 │   ├── snapshot_builder.py       # yaml→json 변환 + 포트폴리오 요약
-│   └── equity_curve.py           # 현재 보유분 × 과거 종가 → 자산 추이(누적 평가액)
+│   ├── equity_price_history.py   # 거래한 전 종목의 보유기간 일별 종가 수집(FDR, 상폐 포함)
+│   └── equity_curve.py           # transactions.csv|holdings × 종가 → 자산 추이(누적 평가액)
 ├── docs/indicators.md            # 보조지표·종합신호 가이드
 ├── proxy/worker.js               # Cloudflare Worker: 실시간 시세 CORS 프록시
 ├── site/                         # index.html / dashboard.js / style.css
@@ -204,14 +206,18 @@ python -m http.server 8000
 
 상단 요약 아래 **자산 추이** 그래프는 과거 시점별 포트폴리오 총 평가액(원화)을 보여준다.
 전고점·현재값·전고점 대비 낙폭·원금 대비 수익률을 함께 표시하고, 기간 버튼(1M~전체)으로 구간을 좁힌다.
+**날짜를 지정**하면 그날 기준 평가금액·원금·손익을 읽어주고 차트에 표시한다.
 
 - 계산: `collectors/equity_curve.py`
   1. **`transactions.csv`** (매수·매도 이력)이 있으면 → 그걸로 시점별 보유수량을 재구성. **매도까지 반영된 실제 곡선.**
-     CSV 열: `date,ticker,action(buy|sell),quantity,price,account,note` — `#` 줄은 주석.
+     CSV 열: `date,ticker,action(buy|sell),quantity,price,currency,account,note` — `#` 줄은 주석. 엑셀 붙여넣기(탭·천단위 콤마)도 인식.
   2. 없으면 → `holdings.yaml` 의 현재 수량을 과거 종가에 소급(가상 백테스트). lot/종목에 `buy_date` 가 있으면 그 시점부터.
-- 미국 종목은 시점별 USD/KRW(frankfurter)로 환산. 입출금·배당은 어느 경우든 미반영.
-- 출력 `data/equity_curve.json`. `transactions.csv` 만 고쳐 push 하면 `holdings.yml` 이 수초 내 재계산(커밋된 시세 사용),
-  `update.yml` 은 시세까지 새로 받아 재계산.
+- 시세 소스: `data/prices/{t}.json`(배치 최신) → 없으면 **`data/equity_prices.json`**.
+  후자는 `collectors/equity_price_history.py` 가 `transactions.csv` 의 **거래했던 모든 종목**에 대해
+  보유 기간 일별 종가를 FinanceDataReader 로 받아 모은 것(상장폐지 종목 포함, 2020-01~). `update.yml` 에서 갱신.
+- 미국 종목은 시점별 USD/KRW(frankfurter)로 환산. 입출금·배당은 미반영. 2020년 전 청산 종목은 제외.
+- 출력 `data/equity_curve.json`. `transactions.csv` 만 고쳐 push → `holdings.yml` 이 수초 내 재계산(커밋된 시세),
+  `update.yml` 은 히스토리 시세까지 새로 받아 재계산.
 
 ### 보조지표 신호
 

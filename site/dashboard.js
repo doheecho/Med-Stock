@@ -616,10 +616,40 @@ function renderEquity() {
     note.push(`전 종목이 데이터에 잡히는 시점: ${eq.first_full_date}`);
   document.getElementById("eqNote").textContent = note.join(" ");
 
-  drawEquityChart(pts, wp);
+  _eqDraw = { pts, wp };
+  drawEquityChart(pts, wp, null);
+
+  // 특정일 평가금액 조회
+  const di = document.getElementById("eqDate");
+  if (di) {
+    di.min = eq.points[0].d;
+    di.max = eq.points[eq.points.length - 1].d;
+    if (di.value < di.min || di.value > di.max) di.value = "";
+    di.onchange = () => eqShowAsOf(di.value);
+    if (di.value) eqShowAsOf(di.value);
+    else document.getElementById("eqAsof").textContent = "";
+  }
 }
 
-function drawEquityChart(pts, peak) {
+let _eqDraw = null;
+
+function eqShowAsOf(dateStr) {
+  const out = document.getElementById("eqAsof");
+  const eq = state.equity;
+  if (!out || !eq || !dateStr) { if (out) out.textContent = ""; return; }
+  const pts = eq.points;
+  let hit = null;
+  for (const p of pts) { if (p.d <= dateStr) hit = p; else break; }
+  if (!hit) hit = pts[0];
+  const pnl = hit.v - hit.c;
+  const pct = hit.c ? (pnl / hit.c) * 100 : null;
+  out.innerHTML =
+    `<b>${hit.d}</b> 기준 · 평가 <b>${eqWon(hit.v)}</b> · 원금 ${eqWon(hit.c)} · ` +
+    `<b class="${cls(pnl)}">손익 ${pnl < 0 ? "-" : "+"}${eqWon(Math.abs(pnl))}${pct == null ? "" : ` (${fmt.pct(pct)})`}</b>`;
+  if (_eqDraw) drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit);
+}
+
+function drawEquityChart(pts, peak, asOf) {
   const X = (p) => new Date(p.d).valueOf();
   makeChart("equityChart", {
     data: {
@@ -653,6 +683,20 @@ function drawEquityChart(pts, peak) {
             formatter: () => "전고점 " + eqWon(peak.v),
           },
         },
+        ...(asOf ? [{
+          label: "선택일",
+          data: [{ x: X(asOf), y: asOf.v }],
+          type: "scatter",
+          pointRadius: 5, pointHoverRadius: 6,
+          pointBackgroundColor: "#22d3ee", pointBorderColor: "#fff", pointBorderWidth: 1,
+          showLine: false, order: 4,
+          datalabels: {
+            display: true, anchor: "center", align: "end", offset: 8, clamp: true,
+            color: "#67e8f9", font: { size: 10, weight: "700" },
+            backgroundColor: "rgba(15,18,22,.82)", borderRadius: 4, padding: { x: 5, y: 2 },
+            formatter: () => `${asOf.d}  ${eqWon(asOf.v)}`,
+          },
+        }] : []),
       ],
     },
     options: {
@@ -679,7 +723,7 @@ function drawEquityChart(pts, peak) {
           display: true, position: "bottom",
           labels: {
             color: "#8b95a1", boxWidth: 12, font: { size: 11 },
-            filter: (it) => it.text !== "구간 전고점",
+            filter: (it) => it.text !== "구간 전고점" && it.text !== "선택일",
           },
         },
         tooltip: {
