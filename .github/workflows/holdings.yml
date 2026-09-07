@@ -1,11 +1,12 @@
 name: Rebuild holdings
 
 # 보유종목 단방향 업데이트 흐름:
-#   GitHub 웹에서 holdings.yaml (또는 scenarios.yaml) 수정 → main 에 커밋
-#     → 이 워크플로가 data/holdings.json · scenarios.json · snapshot.json 재생성·커밋
+#   GitHub 웹에서 holdings.yaml / scenarios.yaml / transactions.csv 수정 → main 에 커밋
+#     → 이 워크플로가 data/holdings.json · scenarios.json · snapshot.json · equity_curve.json 재생성·커밋
 #       → "Deploy dashboard to GitHub Pages" 가 data/** 변경을 받아 자동 재배포
 #
-# 시세/재무/뉴스 스크래핑은 하지 않는다(그건 update.yml 담당). pyyaml 만 있으면 되므로 수초 내 완료.
+# 시세/재무/뉴스 스크래핑은 하지 않는다(그건 update.yml 담당). 커밋된 data/prices/*.json 으로
+# equity_curve 만 다시 계산하므로 수초 내 완료. pyyaml + stdlib 만 사용.
 
 on:
   push:
@@ -13,6 +14,7 @@ on:
     paths:
       - "holdings.yaml"
       - "scenarios.yaml"
+      - "transactions.csv"
       - ".github/workflows/holdings.yml"
   workflow_dispatch:
 
@@ -38,13 +40,15 @@ jobs:
 
       - name: Rebuild data/*.json from holdings.yaml
         working-directory: collectors
-        run: python snapshot_builder.py
+        run: |
+          python snapshot_builder.py
+          python equity_curve.py
 
       - name: Commit regenerated JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/holdings.json data/scenarios.json data/snapshot.json
+          git add data/holdings.json data/scenarios.json data/snapshot.json data/equity_curve.json
           if git diff --cached --quiet; then
             echo "no changes"
           else

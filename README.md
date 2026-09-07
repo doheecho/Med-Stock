@@ -15,11 +15,13 @@
 
 ```
 Med-Stock/
-├── holdings.yaml                 # 매수가/수량/매수일
+├── holdings.yaml                 # 매수가/수량/매수일 (현재 보유 스냅샷)
+├── transactions.csv             # (선택) 매수·매도 이력 → 자산 추이 그래프
 ├── scenarios.yaml               # (선택) 종목별 커스텀 목표가 시나리오
 ├── requirements.txt
 ├── data/                        # ← GitHub Actions 산출물 (자동 커밋)
 │   ├── holdings.json  scenarios.json  snapshot.json
+│   ├── equity_curve.json        # 과거 시점별 포트폴리오 총 평가액(자산 추이 그래프)
 │   ├── prices/{ticker}.json      # 일봉 + MA(5/20/60/120) + RSI(14) + 볼린저·MACD + signals 블록
 │   ├── fundamentals/{ticker}.json
 │   ├── flows/{ticker}.json       # 외인/기관/개인 순매수 + 거래량·거래대금
@@ -36,13 +38,15 @@ Med-Stock/
 │   ├── target_price_collector.py # 네이버 금융 스크래핑 / yfinance analyst target
 │   ├── news_collector.py         # 네이버 금융 뉴스탭 / Google News RSS / yfinance
 │   ├── advisor_collector.py      # Gemini: 포트폴리오 코멘트 + 종목별 신호 서술
-│   └── snapshot_builder.py       # yaml→json 변환 + 포트폴리오 요약
+│   ├── snapshot_builder.py       # yaml→json 변환 + 포트폴리오 요약
+│   └── equity_curve.py           # 현재 보유분 × 과거 종가 → 자산 추이(누적 평가액)
 ├── docs/indicators.md            # 보조지표·종합신호 가이드
 ├── proxy/worker.js               # Cloudflare Worker: 실시간 시세 CORS 프록시
 ├── site/                         # index.html / dashboard.js / style.css
 └── .github/workflows/
     ├── holdings.yml              # holdings.yaml 변경 시 data/*.json 재생성 (스크래핑 없음, 수초)
-    ├── update.yml                # 배치 파이프라인 — 시세·재무·수급·뉴스·목표주가 (cron + 수동)
+    ├── update.yml                # 배치 파이프라인 — 시세·재무·수급·뉴스·목표주가·자산추이·advisor (cron + 수동)
+    ├── advisor.yml              # Gemini 서술 갱신 후 update.yml 을 디스패치 ("↻ AI Advisor" 버튼)
     └── pages.yml                 # site/ + data/ → GitHub Pages 배포
 ```
 
@@ -151,7 +155,9 @@ wrangler deploy          # proxy/wrangler.toml 을 사용 ([vars] GH_REPO 포함
 ### 4-1. 버튼으로 워크플로 트리거
 
 상단 **↻ AI Advisor** 버튼이 GitHub 의 "Refresh AI Advisor" 워크플로를 바로 실행한다
-(`PROXY_BASE` 가 설정돼 있을 때). 필요한 준비:
+(`PROXY_BASE` 가 설정돼 있을 때). 이 워크플로는 커밋된 데이터로 서술을 먼저 갱신한 뒤
+마지막에 **"Update dashboard data"** 를 디스패치하므로, 버튼 한 번으로 서술 + 시세·지표
+전체가 새로 수집된다(서술 1~2분, 전체 데이터 3~5분). 필요한 준비:
 
 ```powershell
 cd proxy
@@ -190,16 +196,33 @@ python -m http.server 8000
 ## 화면 구성
 
 - **상단 요약**: 통화별 총 매수금액 / 평가금액 / 평가손익 / 수익률 (현재가는 프록시로 갱신),
-  종목 비중 도넛, 포지션 표
+  종목 비중 도넛, 포지션 표, **자산 추이 그래프**
 - **종목 탭**: 가격(캔들 또는 라인) + 이동평균 + 시나리오 점선, **보조지표 신호 패널**,
   RSI(14)·MACD·스토캐스틱 서브차트, 수급 막대(외인/기관), 기본지표 표, 목표주가 갭 바, 최근 뉴스
 
+### 자산 추이 (누적 평가액)
+
+상단 요약 아래 **자산 추이** 그래프는 과거 시점별 포트폴리오 총 평가액(원화)을 보여준다.
+전고점·현재값·전고점 대비 낙폭·원금 대비 수익률을 함께 표시하고, 기간 버튼(1M~전체)으로 구간을 좁힌다.
+
+- 계산: `collectors/equity_curve.py`
+  1. **`transactions.csv`** (매수·매도 이력)이 있으면 → 그걸로 시점별 보유수량을 재구성. **매도까지 반영된 실제 곡선.**
+     CSV 열: `date,ticker,action(buy|sell),quantity,price,account,note` — `#` 줄은 주석.
+  2. 없으면 → `holdings.yaml` 의 현재 수량을 과거 종가에 소급(가상 백테스트). lot/종목에 `buy_date` 가 있으면 그 시점부터.
+- 미국 종목은 시점별 USD/KRW(frankfurter)로 환산. 입출금·배당은 어느 경우든 미반영.
+- 출력 `data/equity_curve.json`. `transactions.csv` 만 고쳐 push 하면 `holdings.yml` 이 수초 내 재계산(커밋된 시세 사용),
+  `update.yml` 은 시세까지 새로 받아 재계산.
+
 ### 보조지표 신호
 
-종목을 고르면 상세 탭 맨 위 **보조지표 신호** 패널이 그 종목의 일봉 지표
-(이동평균·RSI·MACD·볼린저밴드·거래량·스토캐스틱·52주 고저)를 규칙으로 읽어
+종목을 고르면 상세 탭 맨 위 **보조지표 신호** 패널이 그 종목의 일봉 지표를 규칙으로 읽어
 **지금 나타나는 신호**를 방향(상승/하락/중립)·강도(● ~ ●●●)와 함께 모아 보여준다.
-신호별 점수를 합산해 `상승 우위 / 하락 우위 / 혼조 / 중립` 종합 판정과 한 줄 요약을 낸다.
+
+- **핵심 지표** — 이동평균·RSI·MACD·볼린저밴드·거래량·스토캐스틱·52주 고저.
+  강도를 합산(상승 +, 하락 −)해 `상승 우위 / 하락 우위 / 혼조 / 중립` 종합 판정과 한 줄 요약을 낸다.
+- **참고 지표** — 이격도·CCI·일목균형표·OBV·연속 양음봉·RSI 다이버전스·MA5×MA20 단기 크로스.
+  패널에 따로 모아 보여주되 **종합 점수에는 넣지 않는다**.
+- **신호를 누르면(마우스오버·터치)** 그 지표가 무슨 의미인지, 무엇을 함께 봐야 하는지 설명이 펼쳐진다.
 
 - 규칙 엔진: `collectors/signals.py` — `price_collector` 가 배치에서 `data/prices/{ticker}.json` 의
   `signals` 블록으로, `advisor_collector` 가 `data/signals/{ticker}.json` 으로 저장.

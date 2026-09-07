@@ -120,6 +120,33 @@ body {
 .pie-toggle:hover { border-color: var(--accent); color: var(--text); }
 .pie-toggle.on { color: var(--text); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel-2)); }
 .chart-box canvas { flex: 1 1 auto; }
+
+/* ── 자산 추이 ─────────────────────────────────────────────── */
+.equity-block {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; padding: 14px; margin-top: 16px; min-width: 0; overflow: hidden;
+}
+.equity-block[hidden] { display: none; }
+.eq-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.eq-head h3 { margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; }
+.eq-head .eq-sub { color: var(--muted); font-size: 11px; font-weight: 400; opacity: .8; }
+.eq-range { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+.eq-range button {
+  background: var(--panel-2); color: var(--muted); border: 1px solid var(--line);
+  border-radius: 6px; padding: 2px 9px; font-size: 11px; cursor: pointer;
+}
+.eq-range button:hover { border-color: var(--accent); }
+.eq-range button.on { color: var(--text); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel-2)); }
+.eq-stats { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 10px 0 6px; }
+.eq-stat { display: flex; flex-direction: column; gap: 1px; }
+.eq-stat i { font-style: normal; color: var(--muted); font-size: 11px; }
+.eq-stat i em { font-style: normal; opacity: .7; }
+.eq-stat b { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.eq-stat b.pos { color: var(--up); }
+.eq-stat b.neg { color: var(--down); }
+#equityChart { height: 260px !important; }
+.eq-note { margin-top: 8px; font-size: 11px; line-height: 1.6; color: var(--muted); }
+
 .table-wrap {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 10px; padding: 4px 12px; overflow-x: auto;
@@ -378,10 +405,33 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 
 .sig-list { list-style: none; margin: 0; padding: 0; }
 .sig-row {
-  display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line);
-  font-size: 12.5px; line-height: 1.6;
+  display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 7px 0;
+  border-bottom: 1px solid var(--line); font-size: 12.5px; line-height: 1.6;
 }
 .sig-row:last-child { border-bottom: none; }
+.sig-row .sig-body { flex: 1 1 auto; min-width: 0; }
+.sig-row.has-guide { cursor: pointer; }
+.sig-row.has-guide:hover { background: var(--panel-2); }
+.sig-row.has-guide:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 4px; }
+.sig-more {
+  margin-left: 6px; font-size: 11px; color: var(--muted); white-space: nowrap;
+  border: 1px solid var(--line); border-radius: 4px; padding: 0 5px;
+}
+.sig-row.open .sig-more { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.sig-guide {
+  flex-basis: 100%; margin-top: 4px; padding: 8px 10px; border-radius: 6px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  font-size: 12px; line-height: 1.7; color: var(--muted);
+}
+.sig-guide[hidden] { display: none; }
+.sig-guide b { color: var(--text); font-weight: 600; }
+.sig-subhead {
+  margin: 14px 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .03em;
+  color: var(--muted); text-transform: uppercase;
+}
+.sig-subhead span { font-weight: 400; text-transform: none; letter-spacing: 0; opacity: .8; }
+.sig-list.sig-ref .sig-detail { color: var(--muted); }
+.sig-list.sig-ref .sig-row.open .sig-detail { color: var(--text); }
 .sig-tag {
   flex: none; align-self: flex-start; font-size: 11px; font-weight: 600;
   padding: 1px 7px; border-radius: 4px; background: var(--panel-2);

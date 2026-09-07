@@ -1,5 +1,7 @@
 name: Update dashboard data
 
+# 전체 파이프라인: 시세·수급·기본지표·목표주가·뉴스·지수·ETF·스냅샷·AI Advisor.
+# 트리거: 평일 KST 16:30 스케줄 / 수동 실행 / "Refresh AI Advisor" 워크플로가 디스패치.
 on:
   schedule:
     # KST 16:30 (장마감 후), 평일. GitHub Actions 는 UTC 기준 → 07:30 UTC
@@ -43,6 +45,7 @@ jobs:
           python indices_collector.py
           python etf_collector.py
           python snapshot_builder.py
+          python equity_curve.py
           python advisor_collector.py
           exit 0
 
@@ -55,5 +58,6 @@ jobs:
             echo "no changes"
           else
             git commit -m "chore: update dashboard data ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main
             git push
           fi

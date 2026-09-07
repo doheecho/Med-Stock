@@ -22,6 +22,8 @@ const state = {
   fx: null,                          // { USDKRW, date }
   sort: { key: null, dir: "desc" },  // 표 정렬 상태
   advisor: null,                     // data/advisor.json
+  equity: null,                      // data/equity_curve.json
+  eqRange: "1Y",                     // 자산 추이 기간: 1M 3M 6M 1Y 3Y ALL
   chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
   ma: { ma5: true, ma20: true, ma60: true, ma120: true },
   overlay: { bbands: false, volume: true, buyprice: false, ichimoku: false },
@@ -106,7 +108,7 @@ async function init() {
   });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, scenarios, snapshot, advisor, indices, fx] = await Promise.all([
+    const [holdings, scenarios, snapshot, advisor, indices, fx, equity] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
       getJSON(`${state.dataBase}/scenarios.json`).catch(() => ({ scenarios: {} })),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
@@ -115,7 +117,9 @@ async function init() {
       getJSON("https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW")
         .catch(() => getJSON("https://api.frankfurter.app/latest?from=USD&to=KRW"))
         .catch(() => null),
+      getJSON(`${state.dataBase}/equity_curve.json`).catch(() => null),
     ]);
+    state.equity = equity;
 
     if (fx && fx.rates && fx.rates.KRW) state.fx = { USDKRW: fx.rates.KRW, date: fx.date };
     state.advisor = advisor;
@@ -149,6 +153,16 @@ async function init() {
     buildTabs();
     syncViewToggleBtn();
     renderSummary();
+    renderEquity();
+    const eqRangeEl = document.getElementById("eqRange");
+    if (eqRangeEl) {
+      eqRangeEl.addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-eqr]");
+        if (!b || b.dataset.eqr === state.eqRange) return;
+        state.eqRange = b.dataset.eqr;
+        renderEquity();
+      });
+    }
     selectTicker(state.holdings[0].ticker);
 
     await refreshLive(); // 실시간 현재가
@@ -249,9 +263,12 @@ async function refreshData() {
         if (p) state.prices[h.ticker] = p;
       })
     );
+    const eq = await getJSON(`${state.dataBase}/equity_curve.json?t=${Date.now()}`).catch(() => null);
+    if (eq) state.equity = eq;
     for (const h of state.extras) delete state.prices[h.ticker]; // 추가종목은 다시 받도록
     if (snap && snap.as_of) document.getElementById("asOf").textContent = "배치 기준일 " + snap.as_of;
     renderSummary();
+    renderEquity();
     await refreshLive();
     if (state.active) renderDetail(state.active);
     showToast(PROXY_BASE ? "현재가 갱신 완료" : "시세 데이터 갱신 완료");
@@ -264,10 +281,11 @@ async function refreshAdvisor() {
     if (PROXY_BASE) {
       const r = await getJSON(`${PROXY_BASE}/dispatch?wf=advisor`).catch((e) => ({ error: String(e) }));
       if (r && r.ok) {
-        showToast("AI Advisor 재생성 요청됨 · 1~2분 후 자동 반영", 3500);
+        showToast("AI Advisor + 대시보드 데이터 갱신 요청됨 · 2~5분 후 자동 반영", 4000);
         // 잠시 후부터 몇 차례 advisor.json 을 확인해 갱신되면 반영
+        // (서술은 1~2분, 이어서 도는 전체 데이터 갱신은 3~5분 소요)
         const before = state.advisor && state.advisor.updated_at;
-        for (let i = 0; i < 12; i++) {
+        for (let i = 0; i < 20; i++) {
           await new Promise((s) => setTimeout(s, 12000));
           const a = await getJSON(`${state.dataBase}/advisor.json?t=${Date.now()}`).catch(() => null);
           if (a && a.updated_at !== before) {
@@ -518,6 +536,160 @@ function renderSummary(withPie = true) {
   markSortHeader();
   if (state.viewMode === "byAccount") renderByAccount(applySort(rows), withPie);
   else renderByTicker(applySort(rows), withPie);
+}
+
+/* ================= 자산 추이 (data/equity_curve.json) ================= */
+const EQ_RANGE_BTNS = [
+  ["1M", "1M"], ["3M", "3M"], ["6M", "6M"], ["1Y", "1Y"], ["3Y", "3Y"], ["ALL", "전체"],
+];
+const EQ_RANGE_DAYS = { "1M": 31, "3M": 92, "6M": 184, "1Y": 366, "3Y": 1096, "ALL": null };
+
+/* 금액 축약: 1억 이상 "N.N억", 1만 이상 "N만", 그 외 원 단위 */
+function eqWon(v) {
+  if (v == null) return "—";
+  const a = Math.abs(v);
+  if (a >= 1e8) return (v / 1e8).toFixed(a >= 1e10 ? 0 : 1) + "억";
+  if (a >= 1e4) return Math.round(v / 1e4).toLocaleString("ko-KR") + "만";
+  return Math.round(v).toLocaleString("ko-KR");
+}
+
+function renderEquity() {
+  const box = document.getElementById("equityBlock");
+  if (!box) return;
+  const eq = state.equity;
+  if (!eq || !Array.isArray(eq.points) || eq.points.length < 2) {
+    box.hidden = true;
+    return;
+  }
+  box.hidden = false;
+
+  document.getElementById("eqRange").innerHTML = EQ_RANGE_BTNS
+    .map(([k, l]) => `<button type="button" data-eqr="${k}"${state.eqRange === k ? ' class="on"' : ""}>${l}</button>`)
+    .join("");
+
+  const days = EQ_RANGE_DAYS[state.eqRange];
+  let full = eq.points;
+  if (days) {
+    const cut = new Date(full[full.length - 1].d).valueOf() - days * 864e5;
+    full = full.filter((p) => new Date(p.d).valueOf() >= cut);
+  }
+  if (full.length < 2) full = eq.points.slice(-2);
+
+  const last = eq.last || full[full.length - 1];
+  const first = full[0];
+  // 구간 내 전고점 — 다운샘플 전 원본에서 계산
+  let wp = full[0];
+  for (const p of full) if (p.v > wp.v) wp = p;
+
+  // 과다 포인트 스트라이드 샘플링 (마지막 + 전고점 포함)
+  let pts = full;
+  if (pts.length > 500) {
+    const stride = Math.ceil(pts.length / 500);
+    pts = pts.filter((_, i) => i % stride === 0);
+    if (pts[pts.length - 1] !== full[full.length - 1]) pts.push(full[full.length - 1]);
+    if (!pts.includes(wp)) {
+      pts.push(wp);
+      pts.sort((a, b) => (a.d < b.d ? -1 : 1));
+    }
+  }
+  const vsPeak = wp.v ? (last.v / wp.v - 1) * 100 : null;
+  const vsCost = last.c ? (last.v / last.c - 1) * 100 : null;
+  const vsStart = first.v ? (last.v / first.v - 1) * 100 : null;
+
+  const stat = (label, val, cls2 = "") => `<span class="eq-stat"><i>${label}</i><b class="${cls2}">${val}</b></span>`;
+  document.getElementById("eqStats").innerHTML =
+    stat("현재 평가액", eqWon(last.v)) +
+    stat(`구간 전고점 <em>${wp.d}</em>`, eqWon(wp.v)) +
+    stat("전고점 대비", vsPeak == null ? "—" : fmt.pct(vsPeak), cls(vsPeak)) +
+    (vsCost == null ? "" : stat("원금 대비", fmt.pct(vsCost), cls(vsCost))) +
+    stat(`${state.eqRange === "ALL" ? "시작" : "구간 시작"} 대비`, vsStart == null ? "—" : fmt.pct(vsStart), cls(vsStart));
+
+  const note = [];
+  if (eq.assumption === "ledger") {
+    note.push("※ transactions.csv 의 매수·매도 이력으로 재구성한 실제 곡선. 입출금·배당은 반영되지 않습니다.");
+  } else if (eq.assumption === "buy_date") {
+    note.push("※ buy_date 가 있는 종목은 매수일부터, 없는 종목은 현재 수량으로 전 구간 소급. 매도·입출금은 반영되지 않습니다.");
+  } else {
+    note.push("※ 현재 보유 수량을 과거 종가에 소급한 가상 곡선. transactions.csv 에 매매 이력을 넣으면 실제 곡선으로 바뀝니다. 매도·입출금은 반영되지 않습니다.");
+  }
+  if (eq.assumption !== "ledger" && eq.first_full_date && eq.first_full_date > eq.points[0].d)
+    note.push(`전 종목이 데이터에 잡히는 시점: ${eq.first_full_date}`);
+  document.getElementById("eqNote").textContent = note.join(" ");
+
+  drawEquityChart(pts, wp);
+}
+
+function drawEquityChart(pts, peak) {
+  const X = (p) => new Date(p.d).valueOf();
+  makeChart("equityChart", {
+    data: {
+      datasets: [
+        {
+          type: "line",
+          label: "평가액",
+          data: pts.map((p) => ({ x: X(p), y: p.v })),
+          borderColor: "#f59e0b",
+          backgroundColor: "rgba(245,158,11,.10)",
+          borderWidth: 1.6, pointRadius: 0, fill: "origin", tension: 0, order: 2,
+        },
+        {
+          type: "line",
+          label: "원금",
+          data: pts.map((p) => ({ x: X(p), y: p.c })),
+          borderColor: "#8b95a1", borderWidth: 1, borderDash: [5, 4],
+          pointRadius: 0, fill: false, tension: 0, order: 1,
+        },
+        {
+          label: "구간 전고점",
+          data: [{ x: X(peak), y: peak.v }],
+          type: "scatter",
+          pointRadius: 4, pointHoverRadius: 5,
+          pointBackgroundColor: "#ef4444", pointBorderColor: "#fff", pointBorderWidth: 1,
+          showLine: false, order: 3,
+          datalabels: {
+            display: true, anchor: "center", align: "start", offset: 8, clamp: true,
+            color: "#fca5a5", font: { size: 10, weight: "700" },
+            backgroundColor: "rgba(15,18,22,.82)", borderRadius: 4, padding: { x: 5, y: 2 },
+            formatter: () => "전고점 " + eqWon(peak.v),
+          },
+        },
+      ],
+    },
+    options: {
+      parsing: false,
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      scales: {
+        x: {
+          type: "time",
+          time: { tooltipFormat: "yyyy-MM-dd" },
+          grid: { display: false },
+          ticks: { color: "#8b95a1", maxRotation: 0, autoSkip: true, maxTicksLimit: 6 },
+        },
+        y: {
+          position: "right",
+          afterFit: (s) => { s.width = AXIS_Y_W; },
+          ticks: { color: "#8b95a1", callback: (v) => eqWon(v) },
+          grid: { color: "#2b333d40" },
+        },
+      },
+      plugins: {
+        legend: {
+          display: true, position: "bottom",
+          labels: {
+            color: "#8b95a1", boxWidth: 12, font: { size: 11 },
+            filter: (it) => it.text !== "구간 전고점",
+          },
+        },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.dataset.label}: ${Math.round(ctx.parsed.y).toLocaleString("ko-KR")}원`,
+          },
+        },
+      },
+    },
+  });
 }
 
 /* 한 포지션 행 <td> 묶음. 단가/현재가는 환종 유지, 금액류는 원화 환산. */
@@ -1426,6 +1598,11 @@ const _SIG_DIR_KO = { bull: "상승", bear: "하락", neutral: "중립" };
 const _SIG_STANCE_KO = { bull: "상승 우위", bear: "하락 우위", mixed: "혼조", neutral: "중립" };
 const _SIG_CROSS_MA = 10, _SIG_CROSS_MACD = 5, _SIG_CROSS_STOCH = 3;
 const _SIG_VOL_SPIKE = 2.0, _SIG_SQUEEZE_LB = 60, _SIG_NEAR_52W = 0.03;
+// 참고(ref) 지표 파라미터 — signals.py 와 1:1
+const _SIG_DISPARITY_HOT = 110, _SIG_DISPARITY_COLD = 90;
+const _SIG_CCI_HOT = 100, _SIG_CCI_COLD = -100;
+const _SIG_STREAK_MIN = 4, _SIG_DIV_WIN = 40;
+const _SIG_DIV_PRICE_MARGIN = 0.01, _SIG_DIV_RSI_MARGIN = 3.0;
 
 function _sigLastValid(a) {
   if (!a) return [null, null];
@@ -1454,7 +1631,83 @@ function _sigSmaLast(seq, w) {
   if (v.length < w) return null;
   return v.slice(-w).reduce((a, b) => a + b, 0) / w;
 }
-function _sg(key, label, dir, strength, detail) { return { key, label, dir, strength, detail }; }
+function _sigTypical(candles) {
+  return candles.map((c) =>
+    c && c.h != null && c.l != null && c.c != null ? (c.h + c.l + c.c) / 3 : null);
+}
+function _sigHlExtremes(candles, period, end) {
+  if (end + 1 < period) return [null, null];
+  let hi = -Infinity, lo = Infinity;
+  for (let j = end - period + 1; j <= end; j++) {
+    const c = candles[j];
+    if (!c || c.h == null || c.l == null) return [null, null];
+    if (c.h > hi) hi = c.h;
+    if (c.l < lo) lo = c.l;
+  }
+  return [hi, lo];
+}
+function _sg(key, label, dir, strength, detail, tier = "core") {
+  return { key, label, dir, strength, detail, tier };
+}
+
+/* 신호별 상세 설명 — 패널에서 마우스오버/터치로 펼침. collectors/signals.py 의 _SIG_GUIDE 와 동일. */
+const _SIG_GUIDE = {
+  ma_align:
+    "이동평균선이 단기>중기>장기 순으로 정렬(정배열)이면 상승 추세, 반대(역배열)면 하락 추세다. " +
+    "정배열에서는 눌림목이 매수 기회로, 역배열에서는 반등이 매도 기회로 자주 쓰인다. 이평선은 후행 지표라 전환점을 늦게 알려준다.",
+  ma_cross:
+    "MA20이 MA60을 위로 뚫으면 골든크로스(중기 추세가 상승으로), 아래로 뚫으면 데드크로스(하락으로)다. " +
+    "추세장에서는 신뢰도가 높지만 횡보장에서는 자주 뒤집히니 거래량·가격 위치와 함께 본다.",
+  ma_cross_s:
+    "MA5가 MA20을 교차하는 단기 신호다. 방향을 빠르게 알려주는 대신 잦게 뒤바뀐다. " +
+    "핵심 신호(정배열·MA20×60)와 같은 방향일 때 참고 가치가 커진다.",
+  price_ma:
+    "종가가 MA20·MA60 위에 있으면 그 기간 매수자가 평균적으로 이익 구간이라 매물 부담이 적다. " +
+    "아래에 있으면 반대로 매물벽이 위에 쌓여 있다는 뜻이다.",
+  rsi:
+    "RSI는 0~100으로 상승·하락 압력의 균형을 본다. 70 위는 과매수(되돌림 확률↑), 30 아래는 과매도(반등 확률↑)지만 " +
+    "즉시 방향 전환을 뜻하진 않는다. 강한 추세에서는 한쪽에 오래 머문다. 50선 돌파는 모멘텀 전환 신호.",
+  macd:
+    "MACD선이 시그널선을 위로 교차하면 매수, 아래로 교차하면 매도 쪽 신호다. " +
+    "MACD선이 0선 위면 중기 상승 우위, 아래면 하락 우위. 급등락 직후에는 교차가 연달아 나올 수 있다.",
+  bb_edge:
+    "종가가 볼린저 상단(+2σ)에 닿으면 단기 과열이거나 강한 추세, 하단(−2σ)에 닿으면 낙폭과대다. " +
+    "추세가 강하면 밴드를 타고 계속 갈 수 있으니 단독으로 역방향 베팅하지 않는다.",
+  bb_squeeze:
+    "밴드 폭이 최근 60거래일 최저라는 것은 변동성이 바짝 수축했다는 뜻이다. " +
+    "곧 큰 방향성 움직임이 나올 확률이 높다는 '경고'일 뿐, 위아래 방향은 알려주지 않는다(중립).",
+  volume:
+    "거래량이 20일 평균의 2배 이상 터지며 주가가 오르면 매수세 유입, 내리면 매도 출회로 본다. " +
+    "거래량 없는 등락은 신뢰도가 낮다. 지수 편입·배당락·만기 같은 이벤트성 급증은 방향 의미가 약하다.",
+  stoch:
+    "스토캐스틱은 최근 14일 고저 범위에서 종가 위치를 본다. %K·%D가 모두 80 위면 과매수, 20 아래면 과매도. " +
+    "과매도권에서 %K가 %D를 상향 교차하면 반등 신호로 쓴다. RSI보다 민감해 신호가 잦다.",
+  stoch_cross:
+    "과매도(또는 과매수) 구간에서 %K와 %D가 교차하는 순간을 잡는 신호다. " +
+    "짧은 반등·조정을 노리는 단기 관점이며, 추세장에서는 속임수가 많다.",
+  range52w:
+    "종가가 52주 최고가에 근접하면 강한 상승 추세(신고가 돌파 시도), 최저가에 근접하면 약세 지속으로 읽는다. " +
+    "신고가는 매물 부담이 적고, 신저가는 지지선 붕괴 위험이 있다. 단독 판단은 금물.",
+  disparity:
+    "이격도는 종가가 MA20에서 몇 % 떨어져 있는지 본다(100 = 이평선과 일치). " +
+    "110 이상은 단기 과열, 90 이하는 단기 침체로 보고 평균 회귀(이평선으로 되돌림)를 기대하는 지표다. 참고용.",
+  cci:
+    "CCI는 대표가격이 평균에서 얼마나 벗어났는지를 본다. +100 위는 과열, −100 아래는 침체권. " +
+    "추세 진입 초기에는 +100 돌파가 상승 가속 신호로도 쓰이니 방향과 함께 해석한다. 참고용.",
+  ichimoku:
+    "일목균형표는 전환선(9)·기준선(26)과 '구름대'로 추세를 한눈에 본다. " +
+    "종가가 구름 위 + 전환선>기준선이면 상방 정렬, 그 반대면 하방 정렬이다. 구름 안이면 방향 불명확. 참고용.",
+  obv:
+    "OBV는 상승일 거래량은 더하고 하락일 거래량은 빼서 누적한 값으로, 돈이 들어오는지 나가는지를 본다. " +
+    "주가와 OBV가 반대로 움직이면(다이버전스) 추세 힘이 빠지고 있다는 신호다. 참고용.",
+  streak:
+    "양봉/음봉이 연속으로 며칠 이어졌는지 본다. 추세가 살아있다는 뜻이면서, 너무 길면 단기 과열·과매도로 " +
+    "되돌림이 나오기도 한다. 다른 신호와 함께 '지금 추세가 어느 국면인지' 가늠하는 용도. 참고용.",
+  rsi_div:
+    "주가 고점은 높아지는데 RSI 고점은 낮아지면(약세 다이버전스) 상승 힘이 빠지는 것, " +
+    "주가 저점은 낮아지는데 RSI 저점은 높아지면(강세 다이버전스) 하락 힘이 빠지는 것이다. " +
+    "전환을 미리 암시하지만 타이밍은 늦거나 빗나갈 수 있다. 참고용.",
+};
 
 function evaluateSignals(p) {
   if (!p || !p.close) return null;
@@ -1566,11 +1819,115 @@ function evaluateSignals(p) {
       else if (lo && c <= lo * (1 + _SIG_NEAR_52W)) S.push(_sg("range52w", "52주 저가권", "bear", 1, `52주 최저가의 +${((c / lo - 1) * 100).toFixed(1)}% 이내 — 신저가 근접, 약세 지속.`));
     }
   }
+  { // 참고: MA5 x MA20 단기 크로스
+    const c = _sigCross(ma.ma5 || [], ma.ma20 || [], _SIG_CROSS_MA);
+    if (c) {
+      const when = c[1] === 0 ? "오늘" : `${c[1]}거래일 전`;
+      if (c[0] === "up") S.push(_sg("ma_cross_s", "단기 골든크로스", "bull", 1, `MA5가 MA20을 ${when} 상향 돌파 — 단기 흐름이 위로.`, "ref"));
+      else S.push(_sg("ma_cross_s", "단기 데드크로스", "bear", 1, `MA5가 MA20을 ${when} 하향 이탈 — 단기 흐름이 아래로.`, "ref"));
+    }
+  }
+  { // 참고: 이격도 (종가 / MA20)
+    const [, cc] = _sigLastValid(close), [, m20] = _sigLastValid(ma.ma20);
+    if (cc != null && m20) {
+      const disp = (cc / m20) * 100;
+      if (disp >= _SIG_DISPARITY_HOT) S.push(_sg("disparity", "이격도 과열", "bear", 1, `20일 이격도 ${disp.toFixed(0)} — 종가가 MA20보다 ${(disp - 100).toFixed(0)}% 위. 단기 되돌림 소지.`, "ref"));
+      else if (disp <= _SIG_DISPARITY_COLD) S.push(_sg("disparity", "이격도 침체", "bull", 1, `20일 이격도 ${disp.toFixed(0)} — 종가가 MA20보다 ${(100 - disp).toFixed(0)}% 아래. 단기 반등 소지.`, "ref"));
+    }
+  }
+  { // 참고: CCI(20)
+    const tp = _sigTypical(p.candles || []).filter((x) => x != null);
+    if (tp.length >= 20) {
+      const w = tp.slice(-20), sma = w.reduce((a, b) => a + b, 0) / 20;
+      const mad = w.reduce((a, b) => a + Math.abs(b - sma), 0) / 20;
+      if (mad > 0) {
+        const cci = (w[w.length - 1] - sma) / (0.015 * mad);
+        if (cci >= _SIG_CCI_HOT) S.push(_sg("cci", "CCI 과열", "bear", 1, `CCI(20) ${cci >= 0 ? "+" : ""}${cci.toFixed(0)} — +100 위 과열권. 상승 탄력은 강하나 과열 부담.`, "ref"));
+        else if (cci <= _SIG_CCI_COLD) S.push(_sg("cci", "CCI 침체", "bull", 1, `CCI(20) ${cci >= 0 ? "+" : ""}${cci.toFixed(0)} — −100 아래 침체권. 낙폭과대 반등 소지.`, "ref"));
+      }
+    }
+  }
+  { // 참고: 일목균형표
+    const cd = p.candles || [];
+    if (cd.length >= 78) {
+      const last = cd.length - 1, base2 = last - 26;
+      const [th, tl] = _sigHlExtremes(cd, 9, last), [kh, kl] = _sigHlExtremes(cd, 26, last);
+      const [ah, al] = _sigHlExtremes(cd, 9, base2), [bh, bl] = _sigHlExtremes(cd, 26, base2);
+      const [bbh, bbl] = _sigHlExtremes(cd, 52, base2);
+      const [, cc] = _sigLastValid(close);
+      if ([th, tl, kh, kl, ah, al, bh, bl, bbh, bbl].every((v) => v != null) && cc != null) {
+        const tenkan = (th + tl) / 2, kijun = (kh + kl) / 2;
+        const spanA = (((ah + al) / 2) + ((bh + bl) / 2)) / 2, spanB = (bbh + bbl) / 2;
+        const top = Math.max(spanA, spanB), bot = Math.min(spanA, spanB);
+        if (cc > top && tenkan > kijun) S.push(_sg("ichimoku", "일목 호전", "bull", 2, "종가가 일목 구름 위 + 전환선 > 기준선 — 추세·모멘텀 모두 상방.", "ref"));
+        else if (cc < bot && tenkan < kijun) S.push(_sg("ichimoku", "일목 악화", "bear", 2, "종가가 일목 구름 아래 + 전환선 < 기준선 — 추세·모멘텀 모두 하방.", "ref"));
+      }
+    }
+  }
+  { // 참고: OBV
+    const vol = p.volume || [];
+    const pr = [];
+    for (let i = 0; i < Math.min(close.length, vol.length); i++)
+      if (close[i] != null && vol[i] != null) pr.push([close[i], vol[i]]);
+    if (pr.length >= 25) {
+      const obv = [0];
+      for (let i = 1; i < pr.length; i++) {
+        const ch = pr[i][0] - pr[i - 1][0];
+        obv.push(obv[i - 1] + (ch > 0 ? pr[i][1] : ch < 0 ? -pr[i][1] : 0));
+      }
+      const look = 20;
+      const dO = obv[obv.length - 1] - obv[obv.length - 1 - look];
+      const dP = pr[pr.length - 1][0] - pr[pr.length - 1 - look][0];
+      if (dP < 0 && dO > 0) S.push(_sg("obv", "OBV 강세 다이버전스", "bull", 2, "주가는 20일 전보다 낮은데 OBV(누적 거래량)는 오름 — 저가 매집 가능성.", "ref"));
+      else if (dP > 0 && dO < 0) S.push(_sg("obv", "OBV 약세 다이버전스", "bear", 2, "주가는 20일 전보다 높은데 OBV는 내림 — 상승에 거래량 뒷받침 부족.", "ref"));
+      else if (dP > 0 && dO > 0) S.push(_sg("obv", "OBV 매집 우위", "bull", 1, "최근 20거래일 OBV 상승 — 거래량이 매수 쪽에 실림.", "ref"));
+      else if (dP < 0 && dO < 0) S.push(_sg("obv", "OBV 분산 우위", "bear", 1, "최근 20거래일 OBV 하락 — 거래량이 매도 쪽에 실림.", "ref"));
+    }
+  }
+  { // 참고: 연속 양/음봉
+    const cd = p.candles || [];
+    const lastC = cd[cd.length - 1];
+    if (cd.length >= _SIG_STREAK_MIN && lastC && lastC.o != null && lastC.c != null && lastC.o !== lastC.c) {
+      const up = lastC.c > lastC.o;
+      let run = 0;
+      for (let i = cd.length - 1; i >= 0; i--) {
+        const c = cd[i];
+        if (!c || c.o == null || c.c == null) break;
+        if ((c.c > c.o) === up && c.c !== c.o) run++;
+        else break;
+      }
+      if (run >= _SIG_STREAK_MIN) {
+        if (up) S.push(_sg("streak", `${run}일 연속 양봉`, "bull", 1, `${run}거래일 연속 양봉 — 매수 우위가 이어지는 중(단기 과열 여부는 함께 확인).`, "ref"));
+        else S.push(_sg("streak", `${run}일 연속 음봉`, "bear", 1, `${run}거래일 연속 음봉 — 매도 우위가 이어지는 중(낙폭과대 여부는 함께 확인).`, "ref"));
+      }
+    }
+  }
+  { // 참고: RSI 다이버전스
+    const idx = [];
+    for (let i = 0; i < Math.min(rsi.length, close.length); i++)
+      if (rsi[i] != null && close[i] != null) idx.push(i);
+    if (idx.length >= _SIG_DIV_WIN) {
+      const w = idx.slice(-_SIG_DIV_WIN), half = Math.floor(w.length / 2);
+      const prior = w.slice(0, half), recent = w.slice(half);
+      const hi = (seg) => seg.reduce((a, i) => (close[i] > close[a] ? i : a), seg[0]);
+      const lo = (seg) => seg.reduce((a, i) => (close[i] < close[a] ? i : a), seg[0]);
+      const ph = hi(prior), rh = hi(recent);
+      if (close[rh] > close[ph] * (1 + _SIG_DIV_PRICE_MARGIN) && rsi[rh] < rsi[ph] - _SIG_DIV_RSI_MARGIN) {
+        S.push(_sg("rsi_div", "RSI 약세 다이버전스", "bear", 2, "주가는 고점을 높였지만 RSI 고점은 낮아짐 — 상승 모멘텀 둔화 경고.", "ref"));
+      } else {
+        const pl = lo(prior), rl = lo(recent);
+        if (close[rl] < close[pl] * (1 - _SIG_DIV_PRICE_MARGIN) && rsi[rl] > rsi[pl] + _SIG_DIV_RSI_MARGIN)
+          S.push(_sg("rsi_div", "RSI 강세 다이버전스", "bull", 2, "주가는 저점을 낮췄지만 RSI 저점은 높아짐 — 하락 모멘텀 둔화 신호.", "ref"));
+      }
+    }
+  }
 
-  const score = S.reduce((a, s) => a + s.strength * (s.dir === "bull" ? 1 : s.dir === "bear" ? -1 : 0), 0);
-  const nB = S.filter((s) => s.dir === "bull").length, nS = S.filter((s) => s.dir === "bear").length;
+  S.forEach((s) => { if (!s.tier) s.tier = "core"; s.guide = _SIG_GUIDE[s.key] || ""; });
+  const core = S.filter((s) => s.tier === "core");
+  const score = core.reduce((a, s) => a + s.strength * (s.dir === "bull" ? 1 : s.dir === "bear" ? -1 : 0), 0);
+  const nB = core.filter((s) => s.dir === "bull").length, nS = core.filter((s) => s.dir === "bear").length;
   let stance, base;
-  if (!S.length) { stance = "neutral"; base = "뚜렷한 기술적 신호 없음"; }
+  if (!core.length) { stance = "neutral"; base = "뚜렷한 기술적 신호 없음"; }
   else if (score >= 3) { stance = "bull"; base = "상승 신호 우위"; }
   else if (score <= -3) { stance = "bear"; base = "하락 신호 우위"; }
   else { stance = "mixed"; base = "신호 혼조 (방향성 불명확)"; }
@@ -1578,7 +1935,8 @@ function evaluateSignals(p) {
   const dates = p.dates || [];
   return {
     as_of: p.last_date || dates[dates.length - 1] || null,
-    stance, score, n_bull: nB, n_bear: nS, read, caveats: cav, signals: S,
+    stance, score, n_bull: nB, n_bear: nS, n_ref: S.length - core.length,
+    read, caveats: cav, signals: S,
   };
 }
 
@@ -1593,16 +1951,28 @@ function renderSignals(h, sigDoc) {
     box.innerHTML = "<div class='muted'>보조지표 신호 데이터가 없습니다.</div>";
     return;
   }
-  const list = sig.signals.slice().sort((a, b) => b.strength - a.strength);
-  const nB = sig.n_bull != null ? sig.n_bull : list.filter((s) => s.dir === "bull").length;
-  const nS = sig.n_bear != null ? sig.n_bear : list.filter((s) => s.dir === "bear").length;
+  const all = sig.signals.slice();
+  all.forEach((s) => { if (!s.tier) s.tier = "core"; });
+  const byStrength = (a, b) => b.strength - a.strength;
+  const core = all.filter((s) => s.tier === "core").sort(byStrength);
+  const ref = all.filter((s) => s.tier === "ref").sort(byStrength);
+  const nB = sig.n_bull != null ? sig.n_bull : core.filter((s) => s.dir === "bull").length;
+  const nS = sig.n_bear != null ? sig.n_bear : core.filter((s) => s.dir === "bear").length;
+  const guideOf = (s) => s.guide || _SIG_GUIDE[s.key] || "";
 
-  const chips = list.map((s) =>
+  const chips = core.map((s) =>
     `<span class="sig-chip ${s.dir}" title="${escapeHtml(s.detail)}"><b>${"●".repeat(s.strength)}</b>${escapeHtml(s.label)}</span>`
   ).join("");
-  const rows = list.map((s) =>
-    `<li class="sig-row ${s.dir}"><span class="sig-tag ${s.dir}">${_SIG_DIR_KO[s.dir]}</span><span class="sig-detail">${escapeHtml(s.detail)}</span></li>`
-  ).join("");
+  const rowHtml = (s) => {
+    const g = guideOf(s);
+    return `<li class="sig-row ${s.dir}${g ? " has-guide" : ""}"${g ? ' tabindex="0" role="button" aria-expanded="false"' : ""} title="${escapeHtml(g || s.detail)}">
+      <span class="sig-tag ${s.dir}">${_SIG_DIR_KO[s.dir]}</span>
+      <span class="sig-body"><span class="sig-detail">${escapeHtml(s.detail)}</span>${g ? '<span class="sig-more">ⓘ 설명</span>' : ""}</span>
+      ${g ? `<span class="sig-guide" hidden><b>${escapeHtml(s.label)}</b> — ${escapeHtml(g)}</span>` : ""}
+    </li>`;
+  };
+  const coreRows = core.map(rowHtml).join("");
+  const refRows = ref.map(rowHtml).join("");
   const narr = (sigDoc && sigDoc.narrative)
     ? `<p class="sig-narrative">${escapeHtml(sigDoc.narrative)}</p>` : "";
   const src = (sigDoc && sigDoc.source === "gemini") ? "AI 서술 + 규칙 엔진" : "규칙 엔진";
@@ -1615,15 +1985,36 @@ function renderSignals(h, sigDoc) {
        <span class="sig-tally"><i class="bull">▲${nB}</i> <i class="bear">▼${nS}</i></span>
      </div>
      ${narr}
-     ${list.length
-        ? `<div class="sig-chips">${chips}</div><ul class="sig-list">${rows}</ul>`
-        : `<div class="muted">현재 감지된 신호가 없습니다.</div>`}
-     <div class="sig-foot">${src}${asOf} · 기술적 참고용이며 투자 판단은 본인 책임</div>`;
+     ${core.length
+        ? `<div class="sig-chips">${chips}</div><ul class="sig-list">${coreRows}</ul>`
+        : `<div class="muted">현재 감지된 핵심 신호가 없습니다.</div>`}
+     ${ref.length
+        ? `<div class="sig-subhead">참고 지표 <span>· 종합 점수 미반영</span></div><ul class="sig-list sig-ref">${refRows}</ul>`
+        : ""}
+     <div class="sig-foot">${src}${asOf} · 신호를 누르면 의미 설명이 열립니다 · 기술적 참고용이며 투자 판단은 본인 책임</div>`;
+
+  const toggle = (row) => {
+    if (!row || !row.classList.contains("has-guide")) return;
+    const g = row.querySelector(".sig-guide");
+    if (!g) return;
+    const open = g.hasAttribute("hidden");
+    g.toggleAttribute("hidden", !open);
+    row.classList.toggle("open", open);
+    row.setAttribute("aria-expanded", open ? "true" : "false");
+  };
+  box.querySelectorAll(".sig-row.has-guide").forEach((row) => {
+    row.addEventListener("click", () => toggle(row));
+    row.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(row); }
+    });
+  });
 }
 
 const SIG_HELP_HTML = `
   <p>보유 종목의 일봉에서 아래 보조지표를 규칙으로 읽어 <b>지금 나타나는 신호만</b> 모읍니다.
-     각 신호는 방향(<span class="sig-tag bull">상승</span>/<span class="sig-tag bear">하락</span>/<span class="sig-tag neutral">중립</span>)과 강도(● ~ ●●●)를 갖습니다.</p>
+     각 신호는 방향(<span class="sig-tag bull">상승</span>/<span class="sig-tag bear">하락</span>/<span class="sig-tag neutral">중립</span>)과 강도(● ~ ●●●)를 갖고,
+     <b>신호를 누르면(마우스오버·터치)</b> 그 지표가 무슨 의미인지 설명이 열립니다.</p>
+  <p><b>핵심 지표</b> — 종합 판정에 반영</p>
   <ul>
     <li><b>이동평균 MA(5·20·60·120)</b> — 정배열/역배열, MA20·MA60 골든/데드크로스, 종가의 이평선 위·아래.</li>
     <li><b>RSI(14)</b> — 70↑ 과매수(되돌림 주의), 30↓ 과매도(반등 가능), 50선 돌파로 모멘텀 전환.</li>
@@ -1633,7 +2024,17 @@ const SIG_HELP_HTML = `
     <li><b>스토캐스틱(14·3·3)</b> — 80↑/20↓ 과매수·과매도, 과매도권 %K·%D 골든크로스는 반등 신호.</li>
     <li><b>52주 고·저</b> — 신고가·신저가 ±3% 근접.</li>
   </ul>
-  <p>종합 판정은 신호별 강도를 합산(상승 +, 하락 −)해 <b>±3 이상</b>이면 "상승/하락 우위", 그 사이면 "혼조"로 표시합니다.
+  <p><b>참고 지표</b> — 패널에 따로 표시, 종합 점수에는 넣지 않음</p>
+  <ul>
+    <li><b>MA5×MA20 단기 크로스</b> — 단기 방향 전환(잦게 뒤집힘).</li>
+    <li><b>이격도(20일)</b> — 종가가 MA20에서 ±10% 벌어지면 평균 회귀 기대.</li>
+    <li><b>CCI(20)</b> — ±100 돌파로 과열·침체.</li>
+    <li><b>일목균형표</b> — 구름 위/아래 + 전환선·기준선 정렬로 추세 방향.</li>
+    <li><b>OBV</b> — 누적 거래량과 주가의 방향 일치/다이버전스.</li>
+    <li><b>연속 양/음봉</b> — 4일 이상 한 방향 캔들.</li>
+    <li><b>RSI 다이버전스</b> — 주가와 RSI의 고점·저점 엇갈림(모멘텀 둔화).</li>
+  </ul>
+  <p>종합 판정은 <b>핵심 신호</b>의 강도를 합산(상승 +, 하락 −)해 <b>±3 이상</b>이면 "상승/하락 우위", 그 사이면 "혼조"로 표시합니다.
      보유목록 밖(＋)으로 추가한 종목은 브라우저에서 같은 규칙으로 즉석 계산합니다.
      자세한 설명: <a href="https://github.com/doheecho/Med-Stock/blob/main/docs/indicators.md" target="_blank" rel="noopener">docs/indicators.md</a></p>`;
 

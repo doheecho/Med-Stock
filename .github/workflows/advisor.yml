@@ -1,7 +1,9 @@
 name: Refresh AI Advisor
 
 # Gemini 로 AI Advisor 코멘트 + 종목별 보조지표 신호 서술(data/signals/*.json) 갱신.
-# 시세 스크래핑은 하지 않고 리포에 커밋돼 있는 data/*.json(snapshot·indices·prices·news)만 참고한다.
+# 커밋돼 있는 data/*.json(snapshot·indices·prices·news)으로 먼저 빠르게 서술을 만든 뒤,
+# 마지막에 "Update dashboard data" 워크플로를 디스패치해 시세·지표까지 새로 수집한다.
+#   → 대시보드 "↻ AI Advisor" 버튼 한 번 = 서술 갱신 + 전체 데이터 갱신
 # GEMINI_API_KEY 가 없어도 규칙 엔진 신호는 data/signals/*.json 에 그대로 기록된다.
 
 on:
@@ -12,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # update.yml 디스패치용
 
 concurrency:
   group: advisor
@@ -48,3 +51,11 @@ jobs:
             git pull --rebase --autostash origin main
             git push
           fi
+
+      - name: Trigger full dashboard data update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run update.yml --ref main \
+            && echo "'Update dashboard data' 디스패치 완료" \
+            || echo "[warn] update.yml 디스패치 실패 (권한/이름 확인)"
