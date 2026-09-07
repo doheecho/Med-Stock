@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T13:39:18+00:00",
+  "updated_at": "2026-09-07T22:51:47+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
@@ -9,18 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rZ2s0N1NyUk8yM21MdENmeTVXcTVBc091MmdGV2hOeDFJRm14YnpmMUpPZ2UwZVJuSjVkUlprRHZsdnJXbnBGZ25VR0E2dWE4REp3bnNn?oc=5",
       "source": "지디넷코리아",
       "date": "Mon, 07 Sep 2026 05:27:17 GMT"
-    },
-    {
-      "title": "삼성, 파운드리 DSP '옥석 가리기'…13곳→11곳 재편",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GYjljTVZ2X0NIUU12NTVjR1UzT0Foa0Z3WmJzcW1zVnpQSjJwSnMzLVpXUEU2elh2aDZodkYwbThlVldRRUVGaGcwRWRwQQ?oc=5",
-      "source": "전자신문",
-      "date": "Mon, 07 Sep 2026 07:30:00 GMT"
-    },
-    {
-      "title": "\"삼성전자, HBM·파운드리 협력 강조…AI ASIC 시장 겨냥\"",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rTUVibEpmOVVqX0hXY2IyT3ZFaktXbUVXNXZRcEJlMmZGWVJseVRNNm9KRk5pVnFQeENXT3FrRnlTUTk1MWFrQXZORi1ONmM?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 07 Sep 2026 00:22:07 GMT"
     },
     {
       "title": "삼성, 2026년 하반기 공채 실시",
@@ -35,58 +23,70 @@
       "date": "Mon, 07 Sep 2026 05:00:04 GMT"
     },
     {
-      "title": "'인재 투자' 확대하는 삼성, 내일부터 하반기 공채 시작",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBanlPaHJBdXpvZDBlalRKZkY4UjV1UF9la2JDaGdqUGVaQV9idndlZTRoMG9fX0I5UUxDaV80NGpTSE9FUUUweTVGc0E4Q1U?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 07 Sep 2026 05:03:01 GMT"
+      "title": "삼성전자 등 삼성그룹 19개사 하반기 공채 시작...이재용, 청년 채용 약속 '재조명'",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xbHI3WkpDNmNnNGVqRGtjLXU4M0xwMzY3M1pKS1NmUlEyRFhhLVBTMTBJS2dhSVNfYjJtZDc1ek9ZNlRoNUV3eHEyckwtaENpTzgyZFBfLWVCb0N4RjhRMi05bVU3OUtx?oc=5",
+      "source": "녹색경제신문",
+      "date": "Mon, 07 Sep 2026 21:37:57 GMT"
     },
     {
-      "title": "\"투룸 살면서 원룸 다운계약서 제출?\" 삼성전자, 주거비 '부정수급' 직원 실태 조사",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBVc3UxUjFqYUNFTzFUYy16bEFTeDB2NzhtN09FbURYejhuZVJQOTRPelJwc2p4TzJ2TkJpeTJBeHdnUXJ3b0w3SlBkNmNfZjlZTTlTWVZITF9aVVU5S1BCddIBeEFVX3lxTE1OWnFNRW9mU2NyRXFsUS0xb2RYeFJ1eWdVLXpXbF9ac1lNMzRYTWkwTE0tU2RwcWJXTDFQMFp5TE5rWUl1UjRWVW4zTzFGYzBCbXJfQ2lCRExMZzFKRFZoYmtBU1I3Z0ljZV95U2tCV0kzelRiX21PTA?oc=5",
+      "title": "SK하이닉스 목표가는 230만원 '상향'...삼성전자는 '유지' 왜?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd3dWWnJYN0d5bFdtamoyTGpxX2VROFk1MTgyYjlKSWM0UXNSVDlpRXptc1JUZDhaUGhObW9GaTFxdGJUcUptVFpHWjNkb2g1bDZPYllZeW1KbnRlMTg5R0J1Wm1tTkFXeTA3aHpaaXo3Y1NvQ215MGNRRU81eW5uMA?oc=5",
+      "source": "edaily.co.kr",
+      "date": "Mon, 07 Sep 2026 00:46:17 GMT"
+    },
+    {
+      "title": "日 프리미엄TV 시장 쥔 삼성·LG디스플레이, 소니에 OLED 패널 공급",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ydERKOFhaZXRNeFhoa2tjbzl5NWFsYmZEYXV4UERONHJrTTJhVEYxWDRNc3NpTVc1NDRSSFgxVnI5TmttcUlJY2xZX0FEWHZ2b3fSAVNBVV95cUxQUmotU1czRW5udkRpQW95N0xpczJYbW1TQ1FNZWRNY2VxWC1xMzA0bTBxSGVDNXFtc3R1QmZwLUs3aV9TanM5NGVyVnhjUE01VUVrSQ?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 07 Sep 2026 22:00:00 GMT"
+    },
+    {
+      "title": "\"내년에도 메모리 가격 상승...스마트폰 시장서 삼성·애플 수혜\"",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MWmhTMDZYMGh3VkQ0MmRaLVZFbnkzcFc2YVpOcFBScXVkX28yNi1OZTJTQWhxcmxBTmRUQjh5bGFZaWVHV3VITzFwMXFtTjB3TG0yRUR3?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 07 Sep 2026 16:34:46 GMT"
+    },
+    {
+      "title": "\"삼성 독무대 아니었어?\"…칼 간 애플 참전에 '폭탄 전망'",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rN1QybE1yZUNvd3g1UlFyZC1KRjZFaGhQbXdFVVMtaG8yZGt6V3FTanFtbjFXUklZYktrQTlKcXNTRk1zcUU2NFN4ZWRzYWxNa3g0amFXMnVkUQ?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 07 Sep 2026 07:57:38 GMT"
+    },
+    {
+      "title": "두 번 접는 화웨이 vs 둘로 나눈 삼성 vs 첫발 떼는 애플…폴더블폰 '3강전'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1MYmVMWUh4MHFZUjZNT2kzSGhsV0Q2Y3VtbjZvaWpCNzh0RE1QLV9mSl9vQ3c0elo0M0lLT1JpdjRqNTkwcHp2LUE0QXliZ2lRVUs2QmFrdkU4REo4dGI3QtIBeEFVX3lxTE5oenptRVpMbnJrQW9SQnNaNlg4TFJRdVd4UU5kQjctYWpqemt4WXNtbW9NZjFicm1qUHBEV1VpLTlYYmE3RXo0TWFPdzBEVXc3a29pMF8xdnlXUWhkejZZbUZUR013WGw0MDF1YlE1SldId2NvWThOcQ?oc=5",
       "source": "뉴시스",
-      "date": "Mon, 07 Sep 2026 07:54:43 GMT"
+      "date": "Mon, 07 Sep 2026 21:00:00 GMT"
     },
     {
-      "title": "[단독] 삼성전자 주거비 지원 ‘부정 수급’ 의혹⋯조사 착수",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBwM1N3Ulg5TWE2bmQ1M1RYLTlKMkNxaVROcWpRb2VSLU5jYThydGZsbnNKRENmbnBQYmtaZXZvdm51X2twaWxkYVdVM0ZCVlk?oc=5",
+      "title": "삼성전자 DX노조, 뉴욕 타임스퀘어에 광고…\"우리도 있다\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1NdkZHN0FvMHRSZU83OHhEeFpkUGlTVEhGVzdZeUVmZGMtUXBqejN3UTNLREhzSm5uNHBoR1hHdF9GMlpleGRzd0MydjVPVzU3QUNibEV4YmhSMTTSAWBBVV95cUxNYXRxYVZweWt6WGRMemJDVlQwUFZnUW1VWXcwd05oUnFJbUVTRi1GZHNVZ0pyTlEyX2RDRkRvei02cV83RjhaaTRpLWJ0R0p3RlBjaHFBdWZZZndsNl93alU?oc=5",
+      "source": "연합뉴스",
+      "date": "Sat, 05 Sep 2026 06:45:36 GMT"
+    },
+    {
+      "title": "삼성전자 DX 노조 '미국 타임스퀘어 광고'…\"부적절한 행위\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jWlpsOUNWaGJvLU9uX0pzYUhJYTdyZVdxTEFFOWt1OGlPV1BCZFNLeEJjcEdDVjZUNXpTdy1iQ2hfM1lrRkRyT3JKcnQ2MGZ3ZFktNURKNy1EUQ?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 06 Sep 2026 07:25:21 GMT"
+    },
+    {
+      "title": "[사설] ‘N% 성과급 파업’이 부른 삼성전자 동행노조 시위",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10NFp5UXRaRXBVZnNwMkt0Nk9ONG1wMTZ1ZGUyelNNTWRsYXhjZnhIeEJNZXRCT1RPT1VGZG1zMmJfaTFVQmpna3hsX1F2WnM?oc=5",
       "source": "v.daum.net",
-      "date": "Mon, 07 Sep 2026 06:29:10 GMT"
+      "date": "Sun, 06 Sep 2026 16:13:55 GMT"
     },
     {
-      "title": "“집 평수 줄여 신고했다”…삼성 DS 발칵 뒤집은 ‘월세깡’",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ESzVZWUI1TFREbi1JVTBIRFNiSGY3Z0NGWGJ3cUZfQXR1V1ZzR2lJUFpsUE5yREs0Wm5ZdTR4bkVDd2xHTHRxR3J3N0JXNzZaaHd0cXc2Wk11OFlJZF9YeTl6cw?oc=5",
-      "source": "에너지경제신문",
-      "date": "Mon, 07 Sep 2026 13:33:11 GMT"
+      "title": "복지 악용해 '부정 수급'한 삼성전자 직원들? 대규모 조사 착수 [지금이뉴스]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MYzRyUzRNMm5vSDVJUVQwS3M2bEM0S3J0TnNZWXRwR2Z6aWFTd0xhOVE1WkdIZGVEM1lrSV9UeXZTcHN0Nmhjb3NXX3FCVWxiblFISl9oT3ZmSkJkMUE?oc=5",
+      "source": "YTN",
+      "date": "Mon, 07 Sep 2026 07:29:00 GMT"
     },
     {
-      "title": "삼성전자·SK하이닉스 3분기 실적 전망 상향…주가도 동반 반등",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5RYjZxMWdZRElNbTRHMmVwanpLWWFYSjVXR0w5ZVpTcUdoeXpIdkV5cVo4NTBCSlZBZDY1eFdjdS1vZHNMdWtObHV5X29lUkU?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 07 Sep 2026 07:12:38 GMT"
-    },
-    {
-      "title": "삼성전자, TSMC '光 반도체 테스트 플랫폼' 그대로 쓴다",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ydm9MbmljOXByMUg0aXc3XzM4VkFYa0hyUXp3VVQ5V1NKZXlUR1ctNmVHZzhhQks0YW93OFVnX3RHUEZqUmhONWZ4dV9rVDZQTTh1M0pfYmlwVUJTRkRpNW9MWU12dw?oc=5",
-      "source": "디일렉",
-      "date": "Mon, 07 Sep 2026 09:40:15 GMT"
-    },
-    {
-      "title": "전국삼성전자노조 위원장에 이호석 수원지부장",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UN1dxU1NjN0lpdXhvTlRfNjlLUk1IMWQ0bGwwbDM3Skc0a3NpVnI3aGRXcVRQUDRheTM3S2NFR1FUR1RZVjJSVDJKX0lLQ2xUbkwzQ2tDbURGNzJTNlo5Yy03RzQxbkxEU1hDRmpNOFM?oc=5",
-      "source": "매일노동뉴스",
-      "date": "Sun, 06 Sep 2026 21:30:04 GMT"
-    },
-    {
-      "title": "삼성전자, LG전자 OLED TV '추격'…中 물량공세 속 프리미엄 혈투",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HYzBIZHF6Zk5fVGVJSmJMWVRWbW51TXpuajQ2YVpDWEFHczZKRTEzdklraHVLR0IzbG52elFaZ01NaWpDekhnSERyb3JqUQ?oc=5",
+      "title": "삼성전자·LG전자, 격돌…제주 히트펌프 사업 승부 내달 가려진다",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5WYThnRm9BLXg5NXFJUXJ1dmtLREVpVWFGcG9UT2hJaXNMeXFOZ21ULUlIeUdBQnhTbWxRdkdTbXROX1BGa2dEYzZvckZjZw?oc=5",
       "source": "전자신문",
-      "date": "Sun, 06 Sep 2026 07:00:00 GMT"
-    },
-    {
-      "title": "삼성전자 D램 점유율 40% 육박…시장 1위 주도권 지속",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lM2VSQ2V3MHpPQkgybjVzTmNIY1U2ZVlRQWh4WDRXX0YzcHpON1FnWkFzRWI0R25SNXY5aERVMThkN3paZ2dqZGR1eVcyekZacnVoYmViSEVOOEo3RTRLRTEzVS11Vl9UWGdVQ1d6TEpobjg?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 07 Sep 2026 10:58:32 GMT"
+      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     },
     {
       "title": "2분기 글로벌 D램 시장 전분기보다 60%↑…삼성전자 39%로 1위",

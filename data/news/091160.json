@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-07T13:39:24+00:00",
+  "updated_at": "2026-09-07T22:51:53+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
+    {
+      "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 07 Sep 2026 22:00:05 GMT"
+    },
     {
       "title": "반도체 사던 '개미', 美 대표지수로…ETF 자금 이동",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FTTNQcWRldm9mWU90T01aWFU0Q1NTVUphNnc0d2tGOWp5SkxDZlo0WnVUUWQwOVR5QjUyRkJ5Nld3Nlh6OUdrYzVueHViNXZ3a1NHYlF3SEIyd1Zn?oc=5",
@@ -31,26 +37,14 @@
     {
       "title": "삼성전자·SK하이닉스 담고 월배당까지…삼성운용, ‘KODEX 반도체타겟위클리커버드콜’ 출시",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5DeWtXMHphdnVQcTRoQy1ZQ0lGckZiaTYwQXNjY3RzNmJkYnpma2Y0OTd1Zmxlb245QjZ0QkQ3Zko4dzZPMEZCTF83OVlqRGktdlFGM0I1VUpDTFRsRUpOMUhGNmJQR2xHUFk4Sy1NTnhYUQ?oc=5",
-      "source": "인더스트리뉴스",
+      "source": "industrynews.co.kr",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "KODEX 반도체타겟위클리커버드콜(0190G0)",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9EdVBsdE9TdGpNTTBqcjY2MGktTS1ZdV82Q1hMSnFtaGYyUXl2RzF0SkJrcTQ0SDFiVUNfUHY4cDFOMXQxZzhKc1BHTVZkbDloNUNhdXFqNThsTGFYSWJwZA?oc=5",
+      "title": "KODEX 미국CPU반도체TOP10(0225V0)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ycDB2TWtWanRuVFFxNlFfUnRKWDRWbVI4cnZkUzNkOTBXQVFuVGZfU1dORi0yS1ZVRmo4N3RuMlBEbVJQSEF1b3VCRkh4ZGd6bDJEa1FhRFdkUQ?oc=5",
       "source": "매일경제 마켓",
-      "date": "Tue, 12 May 2026 02:56:17 GMT"
-    },
-    {
-      "title": "순환매 장세에 이달 반도체 아닌 '코스닥·우주·방산' ETF 활짝(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RNVhwWWRIRU84a0FFTWJkWDVyaEdNYjRhSzFxX01STVRfX19odG9vY0JVMi12M1BhNElkazh2QmhnVm5VM3dEb3FWMmM4eWtXVHc1U20tVl9TTnfSAWBBVV95cUxQakRPanJvcnNHMkFGdmlJdFFzMUlZdFJyaXRhZk1LVksxdmQzNm1oaGZ6Y0toekRVclpmVXFaSm5TYlZBWHA2NlZzR2RyQWZfU24tNnM2bXg0enhYV0xSN0g?oc=5",
-      "source": "연합뉴스",
-      "date": "Fri, 14 Aug 2026 07:00:00 GMT"
-    },
-    {
-      "title": "“반도체 주가 상승도 먹고 월말엔 배당까지”…KODEX 반도체타겟위클리커버드콜 상장",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aTXRDN1RYV0U2bUY1TXo4UnNlUzlNVG9YQVZYMzBWREV6WGR4cEhDeUhJcTJ6SVZxNndiRmVuVmduQXFCQWRjaTNaQXNVdGM?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 11 May 2026 07:00:00 GMT"
+      "date": "Tue, 04 Aug 2026 03:08:32 GMT"
     },
     {
       "title": "[단독] \"결국 삼전·하닉\"…KODEX AI 반도체 ETF 대수술 나선다",
@@ -67,32 +61,38 @@
     {
       "title": "반도체 투자에 배당까지…'KODEX 반도체타겟위클리커버드콜' 상장",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yZVJKUkdDdmctdkVCYVZ4Umk2cUYyZzJpY3Jqd095VDlxaEV6cEs5MHZLSVY1MF9BT1JqcDlzLTlMaFpzRUgzcGpXb0N6X3N0dnVwNG5UWDdpZDZwUWlheQ?oc=5",
-      "source": "asiae.co.kr",
+      "source": "아시아경제",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성운용, 월배당 주는 '반도체 커버드콜 ETF' 상장",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE54aHFDSlF0dTJDRFY2TkRzbTRlVzVtVVFTMkp3MUJsb2lNWUJHRVRGSDRDZWxJXzdES1pfa2Z3MGZNWXJWU21Wcm1WZnFPNkMtaTBjMUpkaHlEcDltV0EyWHRrajJ5UXlxRXNOTks2VjNaTTDSAXdBVV95cUxPcUg0QzNYdjJBQnNLejlDUTlfYXhabVU2dVlnTXEydnRySlVXQ20yZ2tOWUVieXViWTJVSHJBVXFMYTFKY0ptSVh4emt4WTF5eGNkUzl6UWhRVERaandwZVdOaTNYWmxGOXhLRUQzdm9YU18yODJmdw?oc=5",
-      "source": "스트레이트뉴스",
-      "date": "Mon, 11 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "KODEX 미국CPU반도체TOP10(0225V0)",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ycDB2TWtWanRuVFFxNlFfUnRKWDRWbVI4cnZkUzNkOTBXQVFuVGZfU1dORi0yS1ZVRmo4N3RuMlBEbVJQSEF1b3VCRkh4ZGd6bDJEa1FhRFdkUQ?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 04 Aug 2026 03:08:32 GMT"
-    },
-    {
-      "title": "삼성운용 \"KODEX 미국CPU반도체TOP10, 상장 일주일 수익률 10.35%\"",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tZ2NnX0VaQS1uSm50OGM0TVQ2V3gtaENHYjc1dnZsVnFUOGhRTUhfWGV1TGwzMl9HTXdFWFdoVkMySmxWR3Z1YUhfYWhIT1ZuWGMyNG8zZnVBS0nSAWBBVV95cUxNa0N5aWJEVGY4T3ZVZGVocjh1el9NUldhSFpPSl9vREZjN2sycDEtQldheTQ2a1JFeVZVRl93RHBMa3VuaG5LLTZTMndCVXBBb0xhcWtORXMwdFpuYmllS1U?oc=5",
+      "title": "순환매 장세에 이달 반도체 아닌 '코스닥·우주·방산' ETF 활짝(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RNVhwWWRIRU84a0FFTWJkWDVyaEdNYjRhSzFxX01STVRfX19odG9vY0JVMi12M1BhNElkazh2QmhnVm5VM3dEb3FWMmM4eWtXVHc1U20tVl9TTnfSAWBBVV95cUxQakRPanJvcnNHMkFGdmlJdFFzMUlZdFJyaXRhZk1LVksxdmQzNm1oaGZ6Y0toekRVclpmVXFaSm5TYlZBWHA2NlZzR2RyQWZfU24tNnM2bXg0enhYV0xSN0g?oc=5",
       "source": "연합뉴스",
-      "date": "Tue, 11 Aug 2026 07:00:00 GMT"
+      "date": "Fri, 14 Aug 2026 07:00:00 GMT"
+    },
+    {
+      "title": "“반도체 주가 상승도 먹고 월말엔 배당까지”…KODEX 반도체타겟위클리커버드콜 상장",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aTXRDN1RYV0U2bUY1TXo4UnNlUzlNVG9YQVZYMzBWREV6WGR4cEhDeUhJcTJ6SVZxNndiRmVuVmduQXFCQWRjaTNaQXNVdGM?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "“반도체 주가 상승도 먹고 월말엔 배당까지”…KODEX 반도체타겟위클리커버드콜 상장",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCQjBGWXd5ZFV1VU90UnZ1b0FrRS1zaWJrQUNjdVZaYmVmUmZtbl9TdWhkZVQtTlc1Q0Q5UzJEcUpONGZSSVZsUW4zdDJ5MmtmdEE?oc=5",
+      "source": "매일경제",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
       "title": "삼성자산운용, '반도체 성장'에 '월 2회 배당' 더했다…KODEX 커버드콜 솔루션 제시",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FZTdGOEZCT0JPdFIwRy1CVXQzcDVSU0hnWFFveXJSSkFvUFFmZmp6YmlwTy1IVGwyekc4UHBnTmZxdF9hQlJZd3B2QmlEc0hFZWhKTw?oc=5",
       "source": "더밸류뉴스",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성운용 \"KODEX 미국CPU반도체TOP10, 상장 일주일 수익률 10.35%\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tZ2NnX0VaQS1uSm50OGM0TVQ2V3gtaENHYjc1dnZsVnFUOGhRTUhfWGV1TGwzMl9HTXdFWFdoVkMySmxWR3Z1YUhfYWhIT1ZuWGMyNG8zZnVBS0nSAWBBVV95cUxNa0N5aWJEVGY4T3ZVZGVocjh1el9NUldhSFpPSl9vREZjN2sycDEtQldheTQ2a1JFeVZVRl93RHBMa3VuaG5LLTZTMndCVXBBb0xhcWtORXMwdFpuYmllS1U?oc=5",
+      "source": "연합뉴스",
+      "date": "Tue, 11 Aug 2026 07:00:00 GMT"
     }
   ]
 }
