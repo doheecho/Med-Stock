@@ -18,6 +18,7 @@ from __future__ import annotations
 import bisect
 import csv
 import json
+import re
 import sys
 
 from common import DATA, PRICES_DIR, ROOT, load_holdings, write_json
@@ -104,6 +105,14 @@ def _norm_ccy(s: str) -> str | None:
     return None
 
 
+def _num(s: str) -> float:
+    """'63,000' · '1 200' · '95.4' → float. 실패 시 0."""
+    try:
+        return float(re.sub(r"[,\s'](?=\d)|[,\s']$", "", str(s)))
+    except ValueError:
+        return 0.0
+
+
 # ── 거래 이력(transactions.csv) 로딩 ──────────────────────────────────
 def _load_transactions() -> list[dict]:
     if not TX_CSV.exists():
@@ -113,16 +122,21 @@ def _load_transactions() -> list[dict]:
              if ln.strip() and not ln.lstrip().startswith("#")]
     if not lines:
         return []
-    for i, r in enumerate(csv.DictReader(lines)):
-        rl = { (k or "").strip().lower(): (v or "").strip() for k, v in r.items() }
+    # 데이터 줄에 탭이 섞여 있으면 TSV(엑셀 붙여넣기)로 간주 — 헤더행은 버리고
+    # 고정 필드명으로 파싱, 숫자의 천단위 콤마('63,000')는 제거.
+    if any("\t" in ln for ln in lines[1:8]):
+        fields = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note"]
+        data = [ln.replace(",", "") for ln in lines if "\t" in ln]
+        reader = csv.DictReader(data, fieldnames=fields, delimiter="\t")
+    else:
+        reader = csv.DictReader(lines)
+    for i, r in enumerate(reader):
+        rl = {(k or "").strip().lower(): (v or "").strip() for k, v in r.items()}
         d = _norm_date(rl.get("date", ""))
         act = _norm_action(rl.get("action", ""))
         tk = rl.get("ticker", "")
-        try:
-            qty = float(rl.get("quantity") or rl.get("qty") or 0)
-            px = float(rl.get("price") or 0)
-        except ValueError:
-            qty = px = 0.0
+        qty = _num(rl.get("quantity") or rl.get("qty") or 0)
+        px = _num(rl.get("price") or 0)
         if not (d and act and tk and qty > 0):
             print(f"[tx] {i+2}행 건너뜀: {r}")
             continue
@@ -154,9 +168,14 @@ def build_from_ledger(txns: list[dict]) -> dict:
         else:
             missing.append(t)
     if missing:
-        print(f"[tx] 가격 데이터 없는 종목(평가액서 제외): {missing}")
+        print(f"[tx] 시세 데이터 없는 {len(missing)}종목은 곡선에서 제외(원금·평가액 모두): {missing}")
     if not pmaps:
         print("[tx] 평가 가능한 종목이 없음 -> 백테스트로 폴백")
+        return {}
+
+    # 시세가 있는 종목만 남긴다 — 없는 종목을 원금에만 넣으면 과거 곡선이 가짜로 눌린다.
+    txns = [tx for tx in txns if tx["ticker"] in pmaps]
+    if not txns:
         return {}
 
     all_dates = sorted({d for m in pmaps.values() for d in m})

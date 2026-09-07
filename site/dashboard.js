@@ -606,7 +606,7 @@ function renderEquity() {
 
   const note = [];
   if (eq.assumption === "ledger") {
-    note.push("※ transactions.csv 의 매수·매도 이력으로 재구성한 실제 곡선. 입출금·배당은 반영되지 않습니다.");
+    note.push("※ transactions.csv 의 매수·매도 이력으로 재구성. 일봉 시세가 있는 종목만 포함되며(상장폐지·비상장 제외), 입출금·배당은 반영되지 않습니다.");
   } else if (eq.assumption === "buy_date") {
     note.push("※ buy_date 가 있는 종목은 매수일부터, 없는 종목은 현재 수량으로 전 구간 소급. 매도·입출금은 반영되지 않습니다.");
   } else {
