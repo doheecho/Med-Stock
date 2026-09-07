@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-07T12:25:06+00:00",
+  "updated_at": "2026-09-07T13:39:20+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Micron Technology, Inc. (MU) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-inc-mu-trending-130005841.html",
+      "source": "Zacks",
+      "date": "2026-09-07T13:00:05Z"
+    },
     {
       "title": "Sandisk Jumps 12% as AI Storage Trade Keeps Running",
       "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-jumps-12-ai-storage-121051569.html",
@@ -57,12 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-fell-2-ai-190345284.html",
       "source": "Insider Monkey",
       "date": "2026-09-05T19:03:45Z"
-    },
-    {
-      "title": "Why Is Micron Technology (MU) CEO Being Honored In Taiwan?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/why-micron-technology-mu-ceo-181050654.html",
-      "source": "Simply Wall St.",
-      "date": "2026-09-05T18:10:50Z"
     }
   ]
 }

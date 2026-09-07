@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T12:25:18+00:00",
+  "updated_at": "2026-09-07T13:39:30+00:00",
   "items": [
     {
       "key": "KOSPI",
@@ -58,28 +58,28 @@
     {
       "key": "USDKRW",
       "name": "원/달러",
-      "price": 1348.34,
+      "price": 1347.28,
       "prev": 1355.41,
-      "change": -7.0701,
-      "change_pct": -0.52,
+      "change": -8.13,
+      "change_pct": -0.6,
       "fmt": "krw"
     },
     {
       "key": "EURKRW",
       "name": "원/유로",
-      "price": 1566.6,
+      "price": 1565.6,
       "prev": 1575.39,
-      "change": -8.79,
-      "change_pct": -0.56,
+      "change": -9.79,
+      "change_pct": -0.62,
       "fmt": "krw"
     },
     {
       "key": "JPYKRW100",
       "name": "원/엔100",
-      "price": 870.1,
+      "price": 869.9,
       "prev": 870.7788,
-      "change": -0.6788,
-      "change_pct": -0.08,
+      "change": -0.8788,
+      "change_pct": -0.1,
       "fmt": "krw"
     },
     {
@@ -112,28 +112,28 @@
     {
       "key": "BTC",
       "name": "비트코인",
-      "price": 107229248.0,
+      "price": 106916008.0,
       "prev": 108180000.0,
-      "change": -950752.0,
-      "change_pct": -0.88,
+      "change": -1263992.0,
+      "change_pct": -1.17,
       "fmt": "krw0"
     },
     {
       "key": "ETH",
       "name": "이더리움",
-      "price": 3362348.25,
+      "price": 3365578.0,
       "prev": 3385485.25,
-      "change": -23137.0,
-      "change_pct": -0.68,
+      "change": -19907.25,
+      "change_pct": -0.59,
       "fmt": "krw0"
     },
     {
       "key": "XRP",
       "name": "리플",
-      "price": 1892.5079,
+      "price": 1899.6368,
       "prev": 1915.6335,
-      "change": -23.1256,
-      "change_pct": -1.21,
+      "change": -15.9967,
+      "change_pct": -0.84,
       "fmt": "krw"
     }
   ]

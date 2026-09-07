@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T12:25:10+00:00",
+  "updated_at": "2026-09-07T13:39:25+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -35,12 +35,6 @@
       "date": "Sun, 26 Apr 2026 07:00:00 GMT"
     },
     {
-      "title": "22일, 기관 거래소에서 KODEX SK하이닉스단일종목레버리지(+12.24%), TIGER MSCI Korea TR(+1.24%) 등 순매도",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OMWhvMGdQYTZRWVpFSW1xNmgtZHZzZzRrSGJnM1hjM3hseXpTbW9mbTFGeFRHWmgzbUZjZmpNaGVUQ09iOGtlU1NqTmkxSE1NM3dj?oc=5",
-      "source": "네이트",
-      "date": "Mon, 22 Jun 2026 07:00:00 GMT"
-    },
-    {
       "title": "KODEX MSCI Korea TR(278540)",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lallReExvNW80ZzZkU3JvQlJwWndaRmoyeHJfVW95R2lMOUFZTHJXdEVDeVdBWkl0cjJrcV9qWi1FZmx3SkV0dlpEZ1JTOEVzODh2WVVVTVEtQQ?oc=5",
       "source": "매일경제 마켓",
@@ -49,7 +43,7 @@
     {
       "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF - 조선비즈",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
-      "source": "biz.chosun.com",
+      "source": "Chosunbiz",
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
@@ -67,7 +61,7 @@
     {
       "title": "외국인이 ‘토탈리턴 ETF’ 집중 매수하는 이유는",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qM2JaOUw3N2hFa0lzSGtlQlJaQ045dXBIWGNEaVk5XzBBdFZFVXhmekREVEIzVVdGOThYWTVQOTFlTHNIWjF6MUUwUm0xeGtYMGN2RW45WU52bnl2YVVLag?oc=5",
-      "source": "아시아경제",
+      "source": "asiae.co.kr",
       "date": "Thu, 23 Mar 2023 07:00:00 GMT"
     },
     {
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVmFPWWVUcWV4dHhZREp1S3VkOTJJbFBKRTh4WDlwNHZtdVFrZ3JPdWZmQ19oTGxFZE04eEd1eHRNajA1M3QxQ3lQU3FlZy13WmVBX3RsMkZIZw?oc=5",
       "source": "한국경제",
       "date": "Wed, 27 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "​과세 피하자 外人 KODEX 200 ETF 팔고 KODEX 200TR 사고",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
+      "source": "아주경제",
+      "date": "Wed, 23 Mar 2022 07:00:00 GMT"
     }
   ]
 }
