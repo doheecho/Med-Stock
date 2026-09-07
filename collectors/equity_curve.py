@@ -21,7 +21,7 @@ import json
 import re
 import sys
 
-from common import DATA, PRICES_DIR, ROOT, load_holdings, write_json
+from common import DATA, PRICES_DIR, ROOT, load_holdings, now_iso, write_json
 
 FX_FALLBACK = 1350.0  # USD→KRW (frankfurter 실패 시)
 TX_CSV = ROOT / "transactions.csv"
@@ -114,7 +114,10 @@ def _norm_action(s: str) -> str | None:
 def _market_of(ticker: str, hint: dict[str, str]) -> str:
     if ticker in hint:
         return hint[ticker]
-    return "KRX" if len(ticker) == 6 and ticker[0].isdigit() else "US"
+    # 미국 심볼은 ASCII 대문자 1~5자. 한글 종목명이 티커 칸에 온 경우는 KRX 취급.
+    if ticker.isascii() and ticker.isalpha() and 1 <= len(ticker) <= 5:
+        return "US"
+    return "KRX"
 
 
 def _norm_ccy(s: str) -> str | None:
@@ -134,36 +137,48 @@ def _num(s: str) -> float:
         return 0.0
 
 
+# 티커 칸에 종목명이 들어온 경우(상폐·비상장)의 코드 매핑. 못 찾으면 이름 그대로 키로 쓴다
+# (시세가 없어 곡선엔 안 잡히지만 특정일 보유표에는 수량·매수가가 표시된다).
+_TX_ALIAS = {"홈캐스트": "064240", "홈 캐스트": "064240"}
+
+_TX_FIELDS = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note"]
+
+
+def _split_line(ln: str) -> list[str]:
+    """줄 단위로 구분자 판별 — 탭이 있으면 탭(엑셀 붙여넣기), 없으면 콤마."""
+    if "\t" in ln:
+        return [c.strip() for c in ln.replace(",", "").split("\t")]
+    return next(csv.reader([ln]))
+
+
 # ── 거래 이력(transactions.csv) 로딩 ──────────────────────────────────
 def _load_transactions() -> list[dict]:
     if not TX_CSV.exists():
         return []
     rows: list[dict] = []
-    lines = [ln for ln in TX_CSV.read_text(encoding="utf-8-sig").splitlines()
-             if ln.strip() and not ln.lstrip().startswith("#")]
-    if not lines:
+    raw = [ln for ln in TX_CSV.read_text(encoding="utf-8-sig").splitlines()
+           if ln.strip() and not ln.lstrip().startswith("#")]
+    if not raw:
         return []
-    # 데이터 줄에 탭이 섞여 있으면 TSV(엑셀 붙여넣기)로 간주 — 헤더행은 버리고
-    # 고정 필드명으로 파싱, 숫자의 천단위 콤마('63,000')는 제거.
-    if any("\t" in ln for ln in lines[1:8]):
-        fields = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note"]
-        data = [ln.replace(",", "") for ln in lines if "\t" in ln]
-        reader = csv.DictReader(data, fieldnames=fields, delimiter="\t")
-    else:
-        reader = csv.DictReader(lines)
-    for i, r in enumerate(reader):
-        rl = {(k or "").strip().lower(): (v or "").strip() for k, v in r.items()}
-        d = _norm_date(rl.get("date", ""))
-        act = _norm_action(rl.get("action", ""))
-        tk = rl.get("ticker", "")
-        qty = _num(rl.get("quantity") or rl.get("qty") or 0)
-        px = _num(rl.get("price") or 0)
+    # 첫 줄이 헤더면(첫 칸이 'date') 건너뛴다
+    body = raw[1:] if _split_line(raw[0])[:1] == ["date"] else raw
+    for i, ln in enumerate(body):
+        vals = _split_line(ln)
+        r = dict(zip(_TX_FIELDS, vals + [""] * (len(_TX_FIELDS) - len(vals))))
+        d = _norm_date(r["date"])
+        act = _norm_action(r["action"])
+        raw_tk = r["ticker"].strip()
+        tk = _TX_ALIAS.get(raw_tk, raw_tk)
+        qty = _num(r["quantity"])
+        px = _num(r["price"])
         if not (d and act and tk and qty > 0):
-            print(f"[tx] {i+2}행 건너뜀: {r}")
+            print(f"[tx] {i+2}행 건너뜀: {ln[:80]}")
             continue
+        # 표시명: note 우선, 없으면 티커 칸이 한글이면 그걸, 아니면 코드
+        nm = r["note"].strip() or (raw_tk if not raw_tk[:1].isascii() or not raw_tk[:1].isdigit() else tk)
         rows.append({"date": d, "ticker": tk, "action": act, "qty": qty, "price": px,
-                     "account": rl.get("account", ""),
-                     "ccy": _norm_ccy(rl.get("currency") or rl.get("ccy") or "")})
+                     "account": r["account"].strip(), "name": nm,
+                     "ccy": _norm_ccy(r["currency"])})
     if not rows:
         print(f"[tx] {TX_CSV.name}: 데이터 행 없음 -> holdings 백테스트 사용")
         return []
@@ -173,6 +188,7 @@ def _load_transactions() -> list[dict]:
 
 
 def build_from_ledger(txns: list[dict]) -> dict:
+    all_txns = list(txns)
     holds = {h["ticker"]: h for h in load_holdings()}
     mkt_hint = {t: h.get("market", "KRX") for t, h in holds.items()}
     # transactions.csv 의 currency 열이 있으면 그 종목 시장을 확정 (holdings.yaml 다음 우선)
@@ -261,7 +277,29 @@ def build_from_ledger(txns: list[dict]) -> dict:
         if want is not None and abs(got - float(want)) > 1e-6:
             print(f"[tx][warn] {t} 이력 합계 {got} != holdings.yaml {want}")
 
+    _write_tx_json(all_txns, mkt_hint, fx_raw)
     return _finish(points, "ledger", first_full=axis[0]) if points else {}
+
+
+def _write_tx_json(txns: list[dict], mkt_hint: dict, fx_raw: dict) -> None:
+    """프론트 '특정일 보유내역 표' 용 — 정규화된 거래 + 환율 시계열.
+    tx = [일자, 티커, 부호수량, 체결가(현지통화), 미국?(1/0)]"""
+    names, tx = {}, []
+    for r in txns:
+        t = r["ticker"]
+        is_us = 1 if _market_of(t, mkt_hint) == "US" else 0
+        names.setdefault(t, r.get("name") or t)
+        q = r["qty"] if r["action"] == "buy" else -r["qty"]
+        tx.append([r["date"], t, round(q, 4), round(r["price"], 4), is_us])
+    doc = {
+        "updated_at": now_iso(),
+        "names": names,
+        "fx": {d: round(v, 2) for d, v in sorted(fx_raw.items())},
+        "tx": tx,
+    }
+    (DATA / "equity_tx.json").write_text(
+        json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"[write] data/equity_tx.json ({len(tx)}건, {len(names)}종목)")
 
 
 # ── holdings.yaml 백테스트 (폴백) ────────────────────────────────────

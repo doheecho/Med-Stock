@@ -625,10 +625,16 @@ function renderEquity() {
     di.min = eq.points[0].d;
     di.max = eq.points[eq.points.length - 1].d;
     if (di.value < di.min || di.value > di.max) di.value = "";
-    di.onchange = () => eqShowAsOf(di.value);
+    di.onchange = () => { eqShowAsOf(di.value); if (di.value) eqOpenTable(di.value); };
+    const tb = document.getElementById("eqTableBtn");
+    if (tb) { tb.hidden = !di.value; tb.onclick = () => di.value && eqOpenTable(di.value); }
     if (di.value) eqShowAsOf(di.value);
     else document.getElementById("eqAsof").textContent = "";
   }
+  const mc = document.getElementById("eqModalClose");
+  if (mc) mc.onclick = () => { document.getElementById("eqModal").hidden = true; };
+  const mo = document.getElementById("eqModal");
+  if (mo) mo.onclick = (e) => { if (e.target === mo) mo.hidden = true; };
 }
 
 let _eqDraw = null;
@@ -646,7 +652,128 @@ function eqShowAsOf(dateStr) {
   out.innerHTML =
     `<b>${hit.d}</b> 기준 · 평가 <b>${eqWon(hit.v)}</b> · 원금 ${eqWon(hit.c)} · ` +
     `<b class="${cls(pnl)}">손익 ${pnl < 0 ? "-" : "+"}${eqWon(Math.abs(pnl))}${pct == null ? "" : ` (${fmt.pct(pct)})`}</b>`;
+  const tb = document.getElementById("eqTableBtn");
+  if (tb) tb.hidden = false;
   if (_eqDraw) drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit);
+}
+
+/* ── 특정일 보유내역 표 (모달) ── */
+let _eqTx = null, _eqPrices = null, _eqLoading = null;
+
+async function eqEnsureData() {
+  if (_eqTx && _eqPrices) return true;
+  if (!_eqLoading) {
+    _eqLoading = Promise.all([
+      getJSON(`${state.dataBase}/equity_tx.json`).catch(() => null),
+      getJSON(`${state.dataBase}/equity_prices.json`).catch(() => null),
+    ]).then(([tx, pr]) => {
+      _eqTx = tx; _eqPrices = pr && pr.series ? pr.series : null;
+    });
+  }
+  await _eqLoading;
+  return !!(_eqTx && _eqTx.tx);
+}
+
+function _asOfClose(map, d) {           // {date: close} 에서 d 이하 마지막 값
+  if (!map) return null;
+  let best = null;
+  for (const k in map) if (k <= d && (best === null || k > best)) best = k;
+  return best === null ? null : map[best];
+}
+function _fxOn(d) {
+  const f = _eqTx && _eqTx.fx;
+  return _asOfClose(f, d) || (f ? Object.values(f).slice(-1)[0] : 1350) || 1350;
+}
+
+async function eqOpenTable(dateStr) {
+  const modal = document.getElementById("eqModal");
+  const body = document.getElementById("eqModalBody");
+  const title = document.getElementById("eqModalTitle");
+  if (!modal || !body) return;
+  modal.hidden = false;
+  title.textContent = `${dateStr} 기준 보유내역`;
+  body.innerHTML = "<div class='muted'>불러오는 중…</div>";
+  if (!(await eqEnsureData())) { body.innerHTML = "<div class='error'>데이터를 불러오지 못했습니다.</div>"; return; }
+
+  // 거래 리플레이 → 종목별 수량·평균매수원가(원)
+  const pos = {}, cost = {}, solidAfter = {};
+  for (const row of _eqTx.tx) {
+    const [d, t, sq, px, isUs] = row;
+    if (d > dateStr) { solidAfter[t] = 1; continue; }
+    const rate = isUs ? _fxOn(d) : 1;
+    if (sq > 0) { pos[t] = (pos[t] || 0) + sq; cost[t] = (cost[t] || 0) + sq * px * rate; }
+    else {
+      const have = pos[t] || 0, avg = have > 0 ? (cost[t] || 0) / have : 0;
+      const sold = Math.min(-sq, have);
+      pos[t] = have - sold; cost[t] = Math.max(0, (cost[t] || 0) - sold * avg);
+    }
+  }
+  // 이력이 불완전한 '유령 보유' 제거: 기준일 이후 거래가 있거나(그때 실제 보유)
+  // 지금도 보유 중인 종목만 남긴다.
+  const heldNow = new Set(state.holdings.map((h) => h.ticker));
+  for (const t in pos) if (pos[t] > 1e-6 && !(solidAfter[t] || heldNow.has(t))) delete pos[t];
+
+  const priced = [], unpriced = [];
+  for (const t in pos) {
+    const q = pos[t];
+    if (q <= 1e-6) continue;
+    const c = cost[t], avg = c / q;
+    const isUs = (_eqTx.tx.find((x) => x[1] === t) || [])[4] || 0;
+    let closeNative = null;
+    const cur = state.prices[t];
+    if (cur && cur.dates && cur.close) {
+      for (let k = cur.dates.length - 1; k >= 0; k--) if (cur.dates[k] <= dateStr && cur.close[k] != null) { closeNative = cur.close[k]; break; }
+    }
+    if (closeNative == null) closeNative = _asOfClose(_eqPrices && _eqPrices[t], dateStr);
+    const priceKRW = closeNative == null ? null : closeNative * (isUs ? _fxOn(dateStr) : 1);
+    const rec = { name: (_eqTx.names && _eqTx.names[t]) || t, t, q, avg, c, isUs,
+                  v: priceKRW == null ? null : q * priceKRW };
+    (rec.v == null ? unpriced : priced).push(rec);
+  }
+  priced.sort((a, b) => b.v - a.v);
+  unpriced.sort((a, b) => b.c - a.c);
+
+  if (!priced.length && !unpriced.length) {
+    body.innerHTML = "<div class='muted'>해당일 보유 종목이 없습니다.</div>"; return;
+  }
+  const tr = (r) => {
+    const pnl = r.v - r.c, pct = r.c ? (pnl / r.c) * 100 : null;
+    return `<tr>
+      <td class="l">${escapeHtml(r.name)}${r.isUs ? ' <span class="us">$</span>' : ""}</td>
+      <td>${fmt.num(r.q, 4)}</td><td>${fmt.won(r.avg)}</td><td>${fmt.won(r.v)}</td>
+      <td class="${cls(pnl)}">${fmt.wonSigned(pnl)}</td>
+      <td class="${cls(pct)}">${pct == null ? "—" : fmt.pct(pct)}</td>
+    </tr>`;
+  };
+  const totV = priced.reduce((a, r) => a + r.v, 0);
+  const totC = priced.reduce((a, r) => a + r.c, 0);
+  const tPnl = totV - totC, tPct = totC ? (tPnl / totC) * 100 : null;
+  const unpC = unpriced.reduce((a, r) => a + r.c, 0);
+
+  body.innerHTML =
+    (dateStr < "2024-07-01"
+      ? `<div class="eq-warn">⚠ 2024년 이전 구간입니다. 액면분할·무상증자·공모주·일부 매도가 이력에 없어
+         수량·평균매수가·수익률이 실제와 다를 수 있습니다. (곡선상 그날 평가금액은 상단 요약을 참고)</div>`
+      : "") +
+    (priced.length
+      ? `<table class="eq-htbl"><thead><tr>
+           <th class="l">종목</th><th>수량</th><th>평균매수가</th><th>평가금액</th><th>평가손익</th><th>수익률</th>
+         </tr></thead><tbody>${priced.map(tr).join("")}</tbody>
+         <tfoot><tr>
+           <td class="l">합계 <span class="muted">(시세 있는 ${priced.length}종목)</span></td>
+           <td></td><td>${fmt.won(totC)}</td><td>${fmt.won(totV)}</td>
+           <td class="${cls(tPnl)}">${fmt.wonSigned(tPnl)}</td>
+           <td class="${cls(tPct)}">${tPct == null ? "—" : fmt.pct(tPct)}</td>
+         </tr></tfoot></table>`
+      : "<div class='muted'>이 날짜에 시세가 있는 보유 종목이 없습니다.</div>") +
+    (unpriced.length
+      ? `<div class="eq-unpriced"><b>시세 없는 계산상 보유 ${unpriced.length}종목</b>` +
+        ` (상장폐지·비상장이거나 이력 누락분) — 평가 생략<br>` +
+        `<span class="muted">${unpriced.slice(0, 8).map((r) => escapeHtml(r.name)).join(" · ")}` +
+        `${unpriced.length > 8 ? " …" : ""}</span></div>`
+      : "") +
+    `<p class="eq-hnote">금액은 원화 환산(미국 $ 종목은 그날 환율). ` +
+    `공모주 배정·무상증자·액면분할·일부 매도가 이력에 없어 <b>오래된 종목의 수량·평균매수가·수익률이 부정확</b>할 수 있습니다 — 최근 1~2년이 가장 정확.</p>`;
 }
 
 function drawEquityChart(pts, peak, asOf) {

@@ -66,10 +66,21 @@
         <label for="eqDate">특정일 평가금액</label>
         <input type="date" id="eqDate">
         <span class="eq-asof" id="eqAsof"></span>
+        <button type="button" id="eqTableBtn" class="eq-tbtn" hidden>보유내역 표 ▸</button>
       </div>
       <div class="eq-note" id="eqNote"></div>
     </div>
   </section>
+
+  <div id="eqModal" class="eq-modal" hidden>
+    <div class="eq-modal-inner">
+      <div class="eq-modal-head">
+        <h3 id="eqModalTitle">보유내역</h3>
+        <button type="button" id="eqModalClose" aria-label="닫기">✕</button>
+      </div>
+      <div id="eqModalBody" class="eq-modal-body"></div>
+    </div>
+  </div>
 
   <!-- 종목 탭 -->
   <nav id="tabs" class="tabs"></nav>
@@ -89,6 +100,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
-  <script src="./dashboard.js?v=20260908a"></script>
+  <script src="./dashboard.js?v=20260908b"></script>
 </body>
 </html>
