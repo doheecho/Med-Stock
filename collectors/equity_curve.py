@@ -95,6 +95,15 @@ def _market_of(ticker: str, hint: dict[str, str]) -> str:
     return "KRX" if len(ticker) == 6 and ticker[0].isdigit() else "US"
 
 
+def _norm_ccy(s: str) -> str | None:
+    s = (s or "").strip().upper()
+    if s in ("KRW", "원", "KOR", "KR", "국내"):
+        return "KRX"
+    if s in ("USD", "$", "달러", "US", "USA", "해외"):
+        return "US"
+    return None
+
+
 # ── 거래 이력(transactions.csv) 로딩 ──────────────────────────────────
 def _load_transactions() -> list[dict]:
     if not TX_CSV.exists():
@@ -117,8 +126,9 @@ def _load_transactions() -> list[dict]:
         if not (d and act and tk and qty > 0):
             print(f"[tx] {i+2}행 건너뜀: {r}")
             continue
-        rows.append({"date": d, "ticker": tk, "action": act,
-                     "qty": qty, "price": px, "account": rl.get("account", "")})
+        rows.append({"date": d, "ticker": tk, "action": act, "qty": qty, "price": px,
+                     "account": rl.get("account", ""),
+                     "ccy": _norm_ccy(rl.get("currency") or rl.get("ccy") or "")})
     if not rows:
         print(f"[tx] {TX_CSV.name}: 데이터 행 없음 -> holdings 백테스트 사용")
         return []
@@ -130,6 +140,10 @@ def _load_transactions() -> list[dict]:
 def build_from_ledger(txns: list[dict]) -> dict:
     holds = {h["ticker"]: h for h in load_holdings()}
     mkt_hint = {t: h.get("market", "KRX") for t, h in holds.items()}
+    # transactions.csv 의 currency 열이 있으면 그 종목 시장을 확정 (holdings.yaml 다음 우선)
+    for tx in txns:
+        if tx.get("ccy") and tx["ticker"] not in holds:
+            mkt_hint[tx["ticker"]] = tx["ccy"]
     tickers = sorted({t["ticker"] for t in txns})
 
     pmaps, missing = {}, []
