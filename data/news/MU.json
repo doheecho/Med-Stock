@@ -1,9 +1,21 @@
 {
-  "updated_at": "2026-09-08T01:13:51+00:00",
+  "updated_at": "2026-09-08T09:34:51+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Dow, S&P 500 Futures Decline Amid Rising Oil Prices As Iran War Escalates: MU, ORCL, INTC, BE Stocks In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-futures-decline-amid-rising-oil-prices-as-iran-war-escalates-mu-orcl-intc-be-stocks-in-focus/cZt3K4yRJxo",
+      "source": "Stocktwits",
+      "date": "2026-09-08T02:19:20Z"
+    },
+    {
+      "title": "Why SNDK, DELL, PANW Stocks Are Rallying Overnight Ahead Of Fresh Trading Week",
+      "url": "https://stocktwits.com/news-articles/markets/equity/why-sndk-dell-panw-stocks-are-rallying-overnight-ahead-of-fresh-trading-week/cZt30ruRJx8",
+      "source": "Stocktwits",
+      "date": "2026-09-08T02:03:01Z"
+    },
     {
       "title": "The AI Memory Stock That Could Outshine the Obvious Picks",
       "url": "https://www.fool.com/investing/2026/09/07/the-ai-memory-stock-that-could-outshine-the-obviou/",
@@ -51,18 +63,6 @@
       "url": "https://247wallst.com/investing/2026/09/07/everyone-is-watching-nvidia-but-this-memory-stock-could-be-the-next-ai-winner/",
       "source": "24/7 Wall St.",
       "date": "2026-09-07T15:00:22Z"
-    },
-    {
-      "title": "Micron Has Skyrocketed 256% in 2026. What Would It Take to Get MU Stock Up to $1,250?",
-      "url": "https://247wallst.com/investing/2026/09/07/micron-has-skyrocketed-256-in-2026-what-would-it-take-to-get-mu-stock-up-to-1250/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-07T14:40:45Z"
-    },
-    {
-      "title": "Can Silicon Motion's CRA Compliance Efforts Drive Future Growth?",
-      "url": "https://finance.yahoo.com/technology/articles/silicon-motions-cra-compliance-efforts-141100714.html",
-      "source": "Zacks",
-      "date": "2026-09-07T14:11:00Z"
     }
   ]
 }
