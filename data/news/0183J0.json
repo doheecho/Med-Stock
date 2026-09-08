@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T22:51:50+00:00",
+  "updated_at": "2026-09-08T00:15:05+00:00",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
   "market": "KRX",
@@ -9,12 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOREZsLTVrM3hLUklTYjcxY1A4UWl0YWNXSVZzdUdyOUpZRmVmbVQ4WDRSaWdwbXV1YTRNY3J6ZV9fcTF5N2p1MFUtRENxSjBCdFNuR3dnRFZjOXdEdUlLU1VEQTN1RHpxR1lqTW9qR3kyTTUwOERCaXN6MzJLbU5iTQ?oc=5",
       "source": "edaily.co.kr",
       "date": "Mon, 07 Sep 2026 06:50:29 GMT"
-    },
-    {
-      "title": "국내 상장 패시브형 미래에셋 ‘TIGER 미국우주테크 ETF’, 순자산 1조원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5fWkV1QjhGc0NNLTEyVFh2TjlmSW5VRGVlOVVIcVNvMk93UVZpLWIzWEJ1akpNYnRsYmtIWS1HTGJyQzdQdFpfZUFpdGpfWW5ra1czVlRVOVpoZFpnZTR1ekZjZzdfWkJwNkE?oc=5",
-      "source": "intn.co.kr",
-      "date": "Fri, 22 May 2026 07:00:00 GMT"
     },
     {
       "title": "스페이스X 상장했는데…우주항공 ETF '우수수' 급락",
@@ -61,13 +55,13 @@
     {
       "title": "미래에셋 ‘TIGER 미국우주테크 ETF’, 순자산 2조원 돌파",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PUm02Ri10SlB2c3BYUTgtemFzU3NFSWwtSm9pbl9BRmdNMWN2STNiT1Q4Tm9kNGVnNklhYWpoTFdHbC1GenZMdE5lTWVqOGhEX19qMlFhbjQ?oc=5",
-      "source": "joseplus.com",
+      "source": "조세플러스",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT"
     },
     {
       "title": "스페이스X 덕 볼 줄 알았는데...'-19%' 비명 터진 우주 ETF, 왜 - 머니투데이",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3aWo2QkRCSW4xbDliTDhRMExON25OcEZjZEpnU1dnTlZMeDdnVEVrMHNUTU5IRmsxTFk2RnJ3bE5ua0tZTXVnNzkxMWp3cFZlSjdIMTlJejJPcFlYeGo0RjJVTXNyTmRC0gFuQVVfeXFMTVQ4OVN1QTM4clhab0d6ME56VnlPNmhTNWx3dUFrOFBvMkFBbHNXUklXMTZkNWtOUkk0bFFNenBuRzdHWEcyQV9kODY5ZGZDNkFhelpZUmxBMi0tek80aEZ2TjRqazczMjNPZnp3MXc?oc=5",
-      "source": "머니투데이",
+      "source": "mt.co.kr",
       "date": "Thu, 18 Jun 2026 07:00:00 GMT"
     },
     {
@@ -79,7 +73,7 @@
     {
       "title": "미래에셋자산운용, 스페이스X 상장 수혜 부각…'TIGER 미국우주테크' ETF 자금 유입 확대",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lWlU4TEZGeVhKSVNYVUZPSTh3R2dScl9ZOG5seW9jaE8xYmh5RllNVEJha05wNGVsdEtRQy16V19KSjQ4Y3FJSEJyRllZTm9QeVhhTlRBNTkxVUZqbFFUdDNZNE8?oc=5",
-      "source": "PRESS9",
+      "source": "press9.kr",
       "date": "Thu, 11 Jun 2026 07:00:00 GMT"
     },
     {
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1wa1RwaGNIZnAtYWNIY0U1ZHltb1BlVFduWF9Wa0doMVpRbGwzVXlNRnl1QVFwTnRvc1I4X0VOaHE0SGw4NkthRExpeG11MXJaZHZ3aW1IYnNJZDMzWnE5NmUxRkhiMHpZSG00?oc=5",
       "source": "뉴스저널리즘",
       "date": "Fri, 12 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "title": "스페이스X 상장에 엇갈린 ETF 희비...삼성운용, 우주 ETF 시장 주도권 잡나",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mREJycEVMdzRLdFlna1VJRDZERGJfSUFwbUlaLXNrcU5LaXlDVGpxbUhyRGgxdFBnUF9MMDNIbjFFeVBMeTJXTVotU0xnOE93MW1hT281WEtHZW5hc1l3QzdsVWw2RGRD?oc=5",
+      "source": "녹색경제신문",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT"
     }
   ]
 }
