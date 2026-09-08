@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-08T12:16:23+00:00",
+  "updated_at": "2026-09-08T23:25:48+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-09",
   "per": 12.09,
   "forward_per": 5.6,
   "pbr": 3.13,
@@ -12,8 +12,8 @@
   "div_yield": 0.62,
   "dps": 1668.0,
   "market_cap": 1575572100000000.0,
-  "foreign_rate": 46.79,
+  "foreign_rate": 46.85,
   "high_52w": 380000.0,
-  "low_52w": 70000.0,
+  "low_52w": 71400.0,
   "source": "naver"
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T12:16:32+00:00",
+  "updated_at": "2026-09-08T23:25:56+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 488409.0,
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-09-08",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "미래에셋",
       "date": "2026-09-07",
@@ -95,15 +104,6 @@
       "chg": 0.0,
       "opinion": "STRONG BUY",
       "prev_opinion": "STRONG BUY"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-08-13",
-      "target": 560000,
-      "prev_target": 560000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "키움",
