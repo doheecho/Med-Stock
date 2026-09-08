@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T23:26:07+00:00",
+  "updated_at": "2026-09-08T23:43:49+00:00",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
   "market": "KRX",
@@ -59,12 +59,6 @@
       "date": "Sat, 13 Jun 2026 07:00:00 GMT"
     },
     {
-      "title": "미래에셋 ‘TIGER 미국우주테크 ETF’, 순자산 2조원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PUm02Ri10SlB2c3BYUTgtemFzU3NFSWwtSm9pbl9BRmdNMWN2STNiT1Q4Tm9kNGVnNklhYWpoTFdHbC1GenZMdE5lTWVqOGhEX19qMlFhbjQ?oc=5",
-      "source": "조세플러스",
-      "date": "Fri, 05 Jun 2026 07:00:00 GMT"
-    },
-    {
       "title": "[단독] TIGER 미국우주테크, 스페이스X 상장 당일 편입 철회",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vWU1OMHZwVk5sd0pCemV1SGlaendMQXhYYnd5b1I2RXNPRUl2WmdtcUJqMXM0Sl9rYUJQbnRkMVFJUTRJdVJkZXZBbXA2azlkY0HSAVNBVV95cUxPMXM5OXFpQmdXWnI3UDM2OU0zeDZlWkJiS2VGbldPWHJRSENTNGtNUXFENkM0QVBTYS10bXlBamYtZ1pBYW81eFgtRU9kLVN0R3d0WQ?oc=5",
       "source": "서울경제",
@@ -87,6 +81,12 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1wa1RwaGNIZnAtYWNIY0U1ZHltb1BlVFduWF9Wa0doMVpRbGwzVXlNRnl1QVFwTnRvc1I4X0VOaHE0SGw4NkthRExpeG11MXJaZHZ3aW1IYnNJZDMzWnE5NmUxRkhiMHpZSG00?oc=5",
       "source": "뉴스저널리즘",
       "date": "Fri, 12 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "title": "“국내 우주 투자 새로운 기준”… ‘TIGER 미국우주테크 ETF’ 순자산 5,000억원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WbVg4MVFwX2t4WmhqalJFUng1Q0xKN0R2T2ZjZ29WRlhJREowU1FUWVQ2VTVnLVp5ajRIaElTMGFWbEFTT2FnSGdZMGxGZml5ZkVFZmRSUkc?oc=5",
+      "source": "joseplus.com",
+      "date": "Thu, 07 May 2026 07:00:00 GMT"
     },
     {
       "title": "스페이스X 상장에 엇갈린 ETF 희비...삼성운용, 우주 ETF 시장 주도권 잡나",
