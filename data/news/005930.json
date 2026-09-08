@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:34:50+00:00",
+  "updated_at": "2026-09-08T12:16:55+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
@@ -11,16 +11,58 @@
       "date": "Tue, 08 Sep 2026 06:03:00 GMT"
     },
     {
-      "title": "삼성전자, TSMC '光 반도체 테스트 플랫폼' 그대로 쓴다",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ydm9MbmljOXByMUg0aXc3XzM4VkFYa0hyUXp3VVQ5V1NKZXlUR1ctNmVHZzhhQks0YW93OFVnX3RHUEZqUmhONWZ4dV9rVDZQTTh1M0pfYmlwVUJTRkRpNW9MWU12dw?oc=5",
-      "source": "디일렉",
-      "date": "Mon, 07 Sep 2026 09:40:15 GMT"
+      "title": "\"성과급 6억 받으면서 70만원까지?\"…삼성 '발칵' 뒤집혔다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WLWROd191M0tiN2haOE1YZTBCVnZZNlZEX1JRckZ3SzE3Y3ozNUxueFZHZkRuYkV2OVQzUjlHa0tPRWFRajhkRzdqcUdYYzNkNDl4WlBoWkR0Zw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 07 Sep 2026 11:49:03 GMT"
     },
     {
-      "title": "삼성전자, 일부 직원 주거지원금 부정수급 의혹 조사 착수",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oRDBTcFY4a0Z5bWNfb3JtUTZILWVHbzYyQUhhNHl4Umw2WTUyWlNUQ2ZRWWJyVWEwalZhc0lDa18zbWQzNjd4azl3V2lXZ3c?oc=5",
+      "title": "삼성전자, 2028년까지 D램 제조에 업계 최초 ASML 차세대 노광장비 도입 추진",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1tU2xnVERtM2N0YmFBd2xmekVILUFtODdzM2ticThUQ1luSS04Rk9Vc2xNYk0wVWtsVmpXSUdNaEh3SUxpdlZqSmZHVktvRTQ?oc=5",
       "source": "v.daum.net",
-      "date": "Tue, 08 Sep 2026 09:15:01 GMT"
+      "date": "Tue, 08 Sep 2026 06:50:39 GMT"
+    },
+    {
+      "title": "삼성전자, 요코하마에 첨단패키징 연구소…AI반도체 경쟁력 강화",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9KVDl2TDBiTkt6TnZxeG1JNHJsSVRPOEdqLWJ4cW9PWWllbHItbklSVWVFUFUxSWo4UEZZclVnaFI4eXBYeHV2WEh2UW5YdHpINmYtQWlZOXFxY2vSAWBBVV95cUxON1FCaVFtLVZ4MkFoVWxjRXFMYUNQV3UxNVVlSmVycWRILWE5M1E1YUFtM1huUmlIT2FfTENubElXak1ta00xeEQwSVhKeTI2NGttV0tzc1Bsdnl4UVk0OTQ?oc=5",
+      "source": "연합뉴스",
+      "date": "Tue, 08 Sep 2026 10:10:33 GMT"
+    },
+    {
+      "title": "삼성전자, 日 요코하마 ‘첨단 패키징 연구소’ 개소식",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGJpV3EzUnl4QW9HN0w0MTQzMEJOQldFcjQtdzNUZWRnQzFhVzU0djJydjVoaHNqZFp6MEx5b0lqZXVZQjhxNFJXMUJNU29IQTVxbUhXdTBzZzFkaVhjNl9hWVRiOTNPcG5xUjlwX0sxQzhhX1U5ZzhYdzNfdXBOQ0ZrMA?oc=5",
+      "source": "chosun.com",
+      "date": "Tue, 08 Sep 2026 08:33:27 GMT"
+    },
+    {
+      "title": "삼성전자, 日 요코하마에 첨단 패키징 연구소…5년간 3500억원 투자",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tS0Q5UFBYWWZDOEh3dzFCT0p6cjVXbjM4NEhHUUEtOVlReGhVQlRVU3V0Z1FUTGEzV054VmxWVXBGanV2eWZwNTZiMW1kQlVjNVhUYUFJakdXV0Qx?oc=5",
+      "source": "newspim.com",
+      "date": "Tue, 08 Sep 2026 11:52:00 GMT"
+    },
+    {
+      "title": "“대졸 3년 차 잘릴까 무섭다”…삼성, 주거비 부정수급 의혹 조사 착수",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MMlNpU0RSVF9VLVc3Zlk4bTRsd2NfUC1uYU8zSnNvY0FLZ2lzSGlrSUswa1FqcGpOZlVoUzZ0aUN2MmFjRWZKSGxMSVZqcW1TOGU3ek5R?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 08 Sep 2026 11:48:57 GMT"
+    },
+    {
+      "title": "SK하이닉스 목표가는 230만원 '상향'...삼성전자는 '유지' 왜?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd3dWWnJYN0d5bFdtamoyTGpxX2VROFk1MTgyYjlKSWM0UXNSVDlpRXptc1JUZDhaUGhObW9GaTFxdGJUcUptVFpHWjNkb2g1bDZPYllZeW1KbnRlMTg5R0J1Wm1tTkFXeTA3aHpaaXo3Y1NvQ215MGNRRU81eW5uMA?oc=5",
+      "source": "edaily.co.kr",
+      "date": "Mon, 07 Sep 2026 00:46:17 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 반등…메모리 쇼티지에 장비주도 질주",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4ydnRPdFNtVTNpQmtpR0wxajBpRGx1MjUzUVN0ckhDM1N0dlVYQ19Xa1o2ZzdzeWNDUS1zZ0NmN0JFRGd6NmdYWWZJXzE4djA?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 07 Sep 2026 21:01:13 GMT"
+    },
+    {
+      "title": "올 2분기 세계 D램 1위 삼성전자...3분기엔 상승폭 둔화 예상",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTldNVmRLWDh3QjJ6anBvZ3hCR09FMlgzUnlrN3FEUHdyT3MzZXJZLTFXRUlBc3FTMjRRMjE0aGR1Q2ZlMi1JR0hfaUtXSmNmU2V2bG9NZlIzb0NROTJTaTg3WGN3S1BJS0pjZ3BWdUd4OW00ZnZLQWVwUHJ4MVJBUEtRYw?oc=5",
+      "source": "chosun.com",
+      "date": "Tue, 08 Sep 2026 03:02:18 GMT"
     },
     {
       "title": "노동장관 \"새 지침대로면 '삼성전자 N% 성과급' 요구 파업 불법\"",
@@ -35,64 +77,22 @@
       "date": "Tue, 08 Sep 2026 00:51:38 GMT"
     },
     {
-      "title": "김영훈 “삼성전자 N% 성과급 파업, 새 지침 적용 땐 불법”",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PSm1LeGhzTThtSkI3U1cwZDdWRUNSYmhLY1FzM0x2c2RnQUY2NmRDMlB6ZXMxdFpKc1RoTTNTMGZoWnpUWXVYcWxuU3ZEdW5wa2k2UXE0OXkxdGQtZTNoRS1kb0o5RVRGVG5PbUdrQQ?oc=5",
-      "source": "서울신문",
-      "date": "Tue, 08 Sep 2026 09:13:55 GMT"
+      "title": "김영훈 노동 “삼성전자 N% 성과급 파업, 새 지침대로면 불법”",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GUGF1TzJDNTRNckJaSE5lX0RHendXMXVJNEhtaUFvTmpKd19sUkFFQVBURXRfVDdrWVFWdEVJMncwTDVZMkdKR3p3OTROR2M?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 08 Sep 2026 09:58:36 GMT"
     },
     {
-      "title": "삼성전자가 찜한 佛 AI기업 ‘미스트랄’, 4.6조원 투자 유치",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91YU12Q19zRU0tYVhQc0NPaGNJa2VzYVV6UkVYWlBZUU40b1AyWXlFN1JTTlFsZ0JQdWJ1OW9aSGZ5WFpZODcwX245VktSX2IwX01oVDBXNElkbGt4U09JdF9vWTl4QU8zZUhpRFg4VEdDVWhSY0HSAWZBVV95cUxQYVV4c2dOYVBzanVVS0JHTzZhbm1VZHZlT3RySVBMa0pFZVdPTmFvU1NkaHZxX2tXaDN4d0ZtemhhYzNDMHBqS2ROVEljYWRlRXpWOEVUcnRKNDhpVWZXYXoyVVB3X2c?oc=5",
-      "source": "동아일보",
-      "date": "Tue, 08 Sep 2026 08:09:00 GMT"
-    },
-    {
-      "title": "'유럽 대표 AI기업' 佛미스트랄 \"삼성전자 주도로 4.6조원 투자 유치\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94RUJGNTE5VWJQMVVJVTdXQVNXRFZMYWFRR29YUVVCdjdCSkNIRjhTVVIxbnhUdG9Oc1RvM2l4RnNUenhiRG1uejhpSFV2YjVvOUhVb1RYaS1Db3dvVml4NdIBeEFVX3lxTE1fREJrbWFZVjlkZDlmVWtuQkpobDJNRzYwM3c4dWpUZHYyVWQ1dzR5ek9QVFdTVGJtN3JHQjRCaUNsTVQ3YXhHNFBKMlRfWlRoc0JQd1pJMDFYWVQ3SFRWVWtXaXJEbzVJOVRURF9hOXp6eHp3bzBaZg?oc=5",
-      "source": "뉴시스",
-      "date": "Tue, 08 Sep 2026 06:35:28 GMT"
-    },
-    {
-      "title": "삼성전자, 佛 AI기업 '미스트랄'에 수천억원 투자",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yQ0pGTWtCZlFsQ3hDMk1WLXpZazlneDRyT1NDM1FrUDBzMkRRQ044WVFCQlhrWUlxck5BNFdzQ1U3RUZiT0lwcGF2R19sTGJ2aTZoRURyUHFqdw?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 08 Sep 2026 09:15:56 GMT"
-    },
-    {
-      "title": "삼성전자, 세계 최대 반도체 노광 장비 'ASML'과 대형 마스크 컨소시엄 참여",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMaDgxeFFFUFlOY0EyMzNzbFJHZjA0U2k5ZWhYV05HamlPQnBpR0ZZajM4WUNyU1kzMU01RkttR0ZPS3dmMlM5ZHVQSjhvTy1oS3VJeDM1YVA3N2ZTS2F5ZdIBeEFVX3lxTFBWaUo3U2gzeUtrcXhPZUt4TkhCWDNLZEI2aGVuT1FxeWt0YmhGdFcwczR0NjRNM2MyR2VSZ3pCT2x6XzBJNFBDNEdkVkNJNmtmQWRyeFdFMDN4eFc3M1JqVHpobDYzSzVYOG5ZeXZDN2tqT2VVRjFaMA?oc=5",
-      "source": "뉴시스",
-      "date": "Tue, 08 Sep 2026 06:03:00 GMT"
+      "title": "삼성전자, TSMC '光 반도체 테스트 플랫폼' 그대로 쓴다",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ydm9MbmljOXByMUg0aXc3XzM4VkFYa0hyUXp3VVQ5V1NKZXlUR1ctNmVHZzhhQks0YW93OFVnX3RHUEZqUmhONWZ4dV9rVDZQTTh1M0pfYmlwVUJTRkRpNW9MWU12dw?oc=5",
+      "source": "디일렉",
+      "date": "Mon, 07 Sep 2026 09:40:15 GMT"
     },
     {
       "title": "갤럭시Z폴드8 디스플레이 '모서리 눌림' 보고 잇달아, 삼성전자 측 \"손상 방지 위한 설계\"",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE43Z01fRjlyWjdTRldZbGNiczNLRVZ4TV93UEVwUnZmcXF5U21LQlhOc2x2RVFDZTJhYV9DT0dGRXVicEQ0Q1RVcmZYY0hRenZnYS12QnNqdXdfN0xhZUdaTFRYVHJiT0Z5Qlo2ZWNtb0o5ZDA?oc=5",
-      "source": "businesspost.co.kr",
+      "source": "비즈니스포스트",
       "date": "Mon, 07 Sep 2026 06:44:51 GMT"
-    },
-    {
-      "title": "삼성전자, 세계 주요 도시서 '웰컴 투 폴더블' 옥외 광고",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KZHlYZE1WYk54d3c2TEZMX29KTzJpWUdFUUh6MklDc0syN2dqS3ZVNUFQeWpDX2F5UlE3elNsMXQ3VjJ2YnlKU2U1a05adEVfeU5pR1JB?oc=5",
-      "source": "지디넷코리아",
-      "date": "Tue, 08 Sep 2026 00:39:40 GMT"
-    },
-    {
-      "title": "[포토] 삼성전자, 세계 주요 도시서 '웰컴 투 폴더블' 옥외 광고 진행",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE01Wkk1SGNRUmNmdk83QjFybG1BLUp6cWg1LUM0OWp6Qi03LXd0VFZCOGs1TXVnQmdVYWY0S1FMeG1qbVUtRzZ5elh6M2dJQQ?oc=5",
-      "source": "전자신문",
-      "date": "Tue, 08 Sep 2026 04:58:11 GMT"
-    },
-    {
-      "title": "삼성전자, 요코하마 '첨단 패키징 연구소' 개소…日 소부장 협력 강화 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nSUNUenZVSUZfQXpiaTVlUGZqVlZGYm9fMHpTdm4zS3RycVJrNkdrN3g1bmxVZVFYdDktb1dXdV91WEV2YWJQNkFGUGs0Mmk0SUk1aFhpak9zUTk0Q2tLUWJVMVRUSDdo0gFuQVVfeXFMT1ZvZ0h5LXE0TVZ3dnJSa3cyTjM3aTZPbEJhWE1UZlJGM2hqSklHSlR2UDhlMXdBVlk2dnAyS1VQTkd4NE9qblNtNThVeGZuWG50UXVhdGpzUXo0QVlZcFFQQmdWUEVqSUk5VFdnZlE?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 08 Sep 2026 08:44:06 GMT"
-    },
-    {
-      "title": "삼성전자, 日 요코하마 ‘첨단 패키징 연구소’ 개소식",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGJpV3EzUnl4QW9HN0w0MTQzMEJOQldFcjQtdzNUZWRnQzFhVzU0djJydjVoaHNqZFp6MEx5b0lqZXVZQjhxNFJXMUJNU29IQTVxbUhXdTBzZzFkaVhjNl9hWVRiOTNPcG5xUjlwX0sxQzhhX1U5ZzhYdzNfdXBOQ0ZrMA?oc=5",
-      "source": "chosun.com",
-      "date": "Tue, 08 Sep 2026 08:33:27 GMT"
     }
   ]
 }

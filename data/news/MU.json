@@ -1,9 +1,21 @@
 {
-  "updated_at": "2026-09-08T09:34:51+00:00",
+  "updated_at": "2026-09-08T12:16:57+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Micron vs. Sandisk: 1 Artificial Intelligence (AI) Memory Winner Is Down 20% and Clearly the Superior Buy Today",
+      "url": "https://www.fool.com/investing/2026/09/08/micron-vs-sandisk-1-artificial-intelligence-ai-mem/",
+      "source": "Motley Fool",
+      "date": "2026-09-08T11:30:00Z"
+    },
+    {
+      "title": "AI Memory Crunch Is About to Hit ‘10 Out of 10’ Craziness",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-memory-crunch-hit-10-094513798.html",
+      "source": "Benzinga",
+      "date": "2026-09-08T09:45:13Z"
+    },
     {
       "title": "Dow, S&P 500 Futures Decline Amid Rising Oil Prices As Iran War Escalates: MU, ORCL, INTC, BE Stocks In Focus",
       "url": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-futures-decline-amid-rising-oil-prices-as-iran-war-escalates-mu-orcl-intc-be-stocks-in-focus/cZt3K4yRJxo",
@@ -51,18 +63,6 @@
       "url": "https://247wallst.com/investing/2026/09/07/why-micron-and-sk-hynix-sit-in-the-most-valuable-spot-in-the-entire-compute-stack/",
       "source": "24/7 Wall St.",
       "date": "2026-09-07T16:45:33Z"
-    },
-    {
-      "title": "Not Nvidia. Not Micron. This Is My Top AI Infrastructure Stock to Buy Right Now (Hint: It Can Double Within 3 Years)",
-      "url": "https://www.fool.com/investing/2026/09/07/not-nvidia-not-micron-this-is-my-top-ai-infrastructure-stock-to-buy-right-now-hint-it-can-double-within-3-years/",
-      "source": "Motley Fool",
-      "date": "2026-09-07T16:23:01Z"
-    },
-    {
-      "title": "Everyone Is Watching Nvidia. But This Memory Stock Could Be the Next AI Winner",
-      "url": "https://247wallst.com/investing/2026/09/07/everyone-is-watching-nvidia-but-this-memory-stock-could-be-the-next-ai-winner/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-07T15:00:22Z"
     }
   ]
 }
