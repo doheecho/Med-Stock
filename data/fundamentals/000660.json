@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T12:27:37+00:00",
+  "updated_at": "2026-09-09T23:27:24+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
-  "as_of": "2026-09-09",
+  "as_of": "2026-09-10",
   "per": 8.27,
   "forward_per": 5.31,
   "pbr": 5.01,
@@ -12,8 +12,8 @@
   "div_yield": 0.16,
   "dps": 3000.0,
   "market_cap": 1355793800000000.0,
-  "foreign_rate": 50.66,
+  "foreign_rate": 50.67,
   "high_52w": 3002000.0,
-  "low_52w": 289500.0,
+  "low_52w": 304500.0,
   "source": "naver"
 }

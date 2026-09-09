@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T12:28:01+00:00",
+  "updated_at": "2026-09-09T23:27:43+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -19,7 +19,7 @@
     {
       "title": "30일, 기관 거래소에서 TIGER MSCI Korea TR(-1.49%), KODEX 레버리지(-2.22%) 등 순매도",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMXNKMEpGdHRXZHg3UXkta1M5WUNQTGo1U1hVWGI4aHBNWUx0NFFtUDdaUDFRcXpkdF9aZlhudVNzOGdIMW1hRHB0M0FhcXEzcGVSd194SW1KQQ?oc=5",
-      "source": "한국경제",
+      "source": "hankyung.com",
       "date": "Thu, 30 Apr 2026 07:00:00 GMT"
     },
     {
@@ -37,7 +37,7 @@
     {
       "title": "22일, 기관 거래소에서 KODEX SK하이닉스단일종목레버리지(+12.24%), TIGER MSCI Korea TR(+1.24%) 등 순매도",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OMWhvMGdQYTZRWVpFSW1xNmgtZHZzZzRrSGJnM1hjM3hseXpTbW9mbTFGeFRHWmgzbUZjZmpNaGVUQ09iOGtlU1NqTmkxSE1NM3dj?oc=5",
-      "source": "news.nate.com",
+      "source": "Nate News",
       "date": "Mon, 22 Jun 2026 07:00:00 GMT"
     },
     {
@@ -73,8 +73,14 @@
     {
       "title": "27일, 외국인 거래소에서 삼성전자우(+2.56%), TIGER MSCI Korea TR(+2.43%) 등 순매수",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVmFPWWVUcWV4dHhZREp1S3VkOTJJbFBKRTh4WDlwNHZtdVFrZ3JPdWZmQ19oTGxFZE04eEd1eHRNajA1M3QxQ3lQU3FlZy13WmVBX3RsMkZIZw?oc=5",
-      "source": "한국경제",
+      "source": "hankyung.com",
       "date": "Wed, 27 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "'수익률 26%' 잘 나가는데 돈 빼더니…\"몸 사려야\" 여기로 몰렸다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fcjZnSEpVeWlOVmQ4NFlpNnlHZEktT2kwSVhaOFlpanJqV2hzWGVVVmhWNlY1b29MeTExcG9BbmE5RXpFZENuRWk3RDNTcktMc0tlcWdNM2xobDg0aDFocllTQVJxTUho0gFuQVVfeXFMTnFxaVh1WGRVV25XVDU2ZklWVGhheHU2M1JUZllsT1puQXlyNlNSMDJiRktVRVpPWnJBdlc4eTJEeElNZDlnU2tDUUFSYU1ZTDV1ODZsY013T0NyV0FSTndGbnZmODVtSFdfMTJvYVE?oc=5",
+      "source": "머니투데이",
+      "date": "Fri, 18 Oct 2024 07:00:00 GMT"
     },
     {
       "title": "“한국투자 때 가장 믿을 만”...외국인 투자자 1년새 1.3조 산 ETF",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
       "source": "아주경제",
       "date": "Wed, 23 Mar 2022 07:00:00 GMT"
-    },
-    {
-      "title": "외국인, 코스피 상승 '베팅'…MSCI 코리아 ETF 5700억 담아",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWVdnd3g2RnJLV0RQN21WTDFMa0F0ZVNLQVNwT3d4M2ZKQjdpY0VLV25pVUZNZTJkRTFqam9MRVpTaDlqSWRXV0tFU0dETFl6VWhfM1RtQXQ0dw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 01 Jun 2025 07:00:00 GMT"
     }
   ]
 }
