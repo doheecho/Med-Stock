@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T23:43:51+00:00",
+  "updated_at": "2026-09-09T00:07:02+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -29,6 +29,12 @@
       "date": "Tue, 08 Sep 2026 06:50:25 GMT"
     },
     {
+      "title": "반도체 ETF 수익률 ‘고공행진’…개인은 미국 지수로 이동",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tZFYzenhsZW8yOGxUNHVVZ3pqdTM2Zk43dmdsSnM5ZWZsYnJEVW9jaXRINGk0SV9yRjFVNThaMld2MVZUOHZmZVRJNUFyTVY1bEEzTkNBZU4zb2gzVU9lQ1hpQVRoQ01jNWk3dEFkaHhvcXly0gF0QVVfeXFMTS1kVjN6eGxlbzI4bFQ0dVVnemp1MzZmTjd2Z2xKczllZmxickRVb2NpdEg0aTRJX3JGMVU1OFoyV3YxVlQ4dmZlVEk1QXJNVjVsQTNOQ0FlTjNvaDNVT2VDWGlBVGhDTWM1aTd0QWRoeG9xeXI?oc=5",
+      "source": "산경투데이",
+      "date": "Tue, 08 Sep 2026 00:40:40 GMT"
+    },
+    {
       "title": "반도체 사던 '개미', 美 대표지수로…ETF 자금 이동",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FTTNQcWRldm9mWU90T01aWFU0Q1NTVUphNnc0d2tGOWp5SkxDZlo0WnVUUWQwOVR5QjUyRkJ5Nld3Nlh6OUdrYzVueHViNXZ3a1NHYlF3SEIyd1Zn?oc=5",
       "source": "뉴스핌",
@@ -55,20 +61,20 @@
     {
       "title": "변동성에 떠는 개미들…안정형 ETF '쏠림'",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBrWHJzUFBfQ2lkZmRzWmNUNXN4TDlhaXFmRXB3TnUxeVoyQ2JmSFJKd3hYN2hoMW1MVXBNLTlyZEc4WFl3YUQ0Vm1wdHdqb05oUjd30gFYQVVfeXFMUGltdUl2eVdyWFRwcnI2Z2VPMU1FRFNiRXFmZm56YXVBQTZ6T1dWZlBTbGdDalRZbDNwXzJFSE9DbXZOOUZROGR3T3pncUxlWWRFSHZQenJDZQ?oc=5",
-      "source": "SBS Biz",
+      "source": "biz.sbs.co.kr",
       "date": "Tue, 08 Sep 2026 01:22:00 GMT"
-    },
-    {
-      "title": "32개월 이어진 ETF 사랑 식어버렸다…개미들, 韓 팔고 美으로 대이동",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ENFphVVIzSDhUbDdseWNteFBSb2xaaG04UHhGNkF5QkNqRVNXeUYybEV5VjZ1VlFYVUV1LTFKcnFQU3o1WGZJZWxBc0F1YkNOVS1Ga1hBc0hwZFJTeGlaZ0Nn?oc=5",
-      "source": "매일신문",
-      "date": "Tue, 08 Sep 2026 01:07:19 GMT"
     },
     {
       "title": "반도체 ETF 수익률 뛰었지만...개인은 미국 지수·안정형 상품 담았다",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CY19TcVhQVHpCcmctb1ZTWElVeTRNMDJCR3ZEUFdtNlpqZ3F5bDZncENNRG5RRF9BNEtzaXlvM1JfZjFQdHVCTEZIaUtobWc2MlI1dTl5a3VVVnB0OFdtMnBmWlpkdlp1aUUw0gFvQVVfeXFMTm1HQ0JyanphNjRUbmdHbnZmQlBqTjBYUnZ5cTJ6dVRKT1pyYkdiVHd5R2h3aXViQU5aT1h3TkM1dWZVQW9WWUlrSjk2d1NFNU1XS2R1QUJ5a0xkSUgxN0RNR2dNbmU4LU4tTEpvMml3?oc=5",
       "source": "더퍼블릭",
       "date": "Tue, 08 Sep 2026 02:15:14 GMT"
+    },
+    {
+      "title": "32개월 이어진 ETF 사랑 식어버렸다…개미들, 韓 팔고 美으로 대이동",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ENFphVVIzSDhUbDdseWNteFBSb2xaaG04UHhGNkF5QkNqRVNXeUYybEV5VjZ1VlFYVUV1LTFKcnFQU3o1WGZJZWxBc0F1YkNOVS1Ga1hBc0hwZFJTeGlaZ0Nn?oc=5",
+      "source": "매일신문",
+      "date": "Tue, 08 Sep 2026 01:07:19 GMT"
     },
     {
       "title": "‘마지막 탈출 기회?’ 삼전닉스 뛰자 ETF 수익률도 ‘쑥’…개인은 대거 ‘팔자’ [투자360]",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQLXJPODlnc1ZuT2E0Ym9YVTFlVEdHUFNKV0JLQjAxbVRuanc4UEs2Wkw0Y3NRb3o5LUNsaUJMTXVUdHdwV1A0ZTU0MGlvVF93UGZDTHZEWk52QkJqSTBrOWxaNjYwcUl3NkpZSQ?oc=5",
       "source": "센머니",
       "date": "Mon, 07 Sep 2026 05:15:00 GMT"
-    },
-    {
-      "title": "반도체 ETF 수익률 ‘고공행진’…개인은 미국 지수로 이동",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xYmtFOWxuMDRtNzlEdjdnX09mSmdLbTBITGtrNWtwRzZlc0N6LWUtbWpCczhhZFp4NS1OY2NtZUJPTWhVNXVONFdWRjM3VlcwWU5ISFRoM05aSDVscnhVRnFBTTFuUWFSektVSktEVWzSAXRBVV95cUxNLWRWM3p4bGVvMjhsVDR1VWd6anUzNmZON3ZnbEpzOWVmbGJyRFVvY2l0SDRpNElfckYxVTU4WjJXdjFWVDh2ZmVUSTVBck1WNWxBM05DQWVOM29oM1VPZUNYaUFUaENNYzVpN3RBZGh4b3F5cg?oc=5",
-      "source": "산경투데이",
-      "date": "Tue, 08 Sep 2026 00:29:50 GMT"
     }
   ]
 }

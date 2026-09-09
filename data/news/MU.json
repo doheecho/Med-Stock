@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-08T23:43:48+00:00",
+  "updated_at": "2026-09-09T00:06:58+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Can SanDisk Stock Keep Climbing When It Cannot Make Enough To Sell?",
+      "url": "https://www.trefis.com/articles/614534/can-sandisk-stock-keep-climbing-when-it-cannot-make-enough-to-sell/2026-09-08",
+      "source": "Trefis",
+      "date": "2026-09-08T23:45:58Z"
+    },
     {
       "title": "Druckenmiller Exited Micron and Bought Alphabet. The AI Risks Moved With Him",
       "url": "https://finance.yahoo.com/markets/stocks/articles/druckenmiller-exited-micron-bought-alphabet-230042923.html",
@@ -47,7 +53,7 @@
       "date": "2026-09-08T16:00:07Z"
     },
     {
-      "title": "SK Hynix Jumps 7% as AI Diverts Memory From Phones; Micron Holds Steady, Apple Slips",
+      "title": "SK Hynix Jumps 7% as AI Diverts Memory From Phones, Micron Holds Steady, Apple Slips",
       "url": "https://247wallst.com/investing/2026/09/08/sk-hynix-jumps-7-as-ai-diverts-memory-from-phones-micron-holds-steady-apple-slips/",
       "source": "24/7 Wall St.",
       "date": "2026-09-08T15:58:06Z"
@@ -57,12 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/amkr-stock-falls-10-month-145000216.html",
       "source": "Zacks",
       "date": "2026-09-08T14:50:00Z"
-    },
-    {
-      "title": "Why Micron Stock Can Benefit from Fresh Memory-Chip Price Data",
-      "url": "https://www.barrons.com/articles/micron-stock-price-memory-chips-15d74f8e?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-08T14:45:00Z"
     }
   ]
 }
