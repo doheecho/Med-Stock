@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-09-10T09:37:33+00:00",
+  "updated_at": "2026-09-10T12:21:50+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.",
+      "url": "https://www.barrons.com/articles/stock-market-things-to-know-today-69b0702b?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-10T11:34:00Z"
+    },
+    {
+      "title": "Value Has Outperformed Growth in 2026: 3 Surprising Tech Stocks Leading the Way",
+      "url": "https://www.fool.com/investing/2026/09/10/value-has-outperformed-growth-in-2026-3-surprising/",
+      "source": "Motley Fool",
+      "date": "2026-09-10T11:08:00Z"
+    },
+    {
+      "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell; AeroVironment to Rise, American Eagle to Fall",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mixed-103943009.html",
+      "source": "MT Newswires",
+      "date": "2026-09-10T10:39:43Z"
+    },
     {
       "title": "2 Trillion-Dollar Companies Poised to Become Wall Street's Next Stock-Split Stocks",
       "url": "https://www.fool.com/investing/2026/09/10/2-trillion-dollar-companies-poised-to-become-wall-street-next-stock-split-stocks/",
@@ -45,24 +63,6 @@
       "url": "https://www.barrons.com/articles/micron-visa-and-other-growth-stocks-look-ready-for-a-revivalhere-are-the-signs-f2d9af9b?siteid=yhoof2&yptr=yahoo",
       "source": "Barrons.com",
       "date": "2026-09-09T19:42:00Z"
-    },
-    {
-      "title": "Bank of America Spots a Major Semiconductor. Micron and AMD Are Big Winners",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-spots-major-semiconductor-190624043.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-09T19:06:24Z"
-    },
-    {
-      "title": "Micron Gains 2.4% as Memory's 86% Margin Era Refuses to Break",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-gains-2-4-memorys-182526527.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-09T18:25:26Z"
-    },
-    {
-      "title": "Prediction: Micron Stock Could Turn $10,000 Into a Much Larger Sum by 2030",
-      "url": "https://www.fool.com/investing/2026/09/09/prediction-micron-stock-could-turn-10000-into-a-mu/",
-      "source": "Motley Fool",
-      "date": "2026-09-09T17:20:00Z"
     }
   ]
 }
