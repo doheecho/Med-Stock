@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-10T00:07:00+00:00",
+  "updated_at": "2026-09-10T00:13:04+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
+    {
+      "title": "ETF 수익률 상위 휩쓴 반도체…삼전닉스보다 '장비주' 날았다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pVkZtdWlBdk54QWRIaGlVVG5qemYtQjI1d0c0OUc5Qk0yZzlTWFlsNzE1dTUzTi1YdVdFZGFQY21zbFV3eDZtdWlyZUROa3c3UW5wVEQ0cV9ZN3JjekFIeFFIRknSAWRBVV95cUxNaVZGbXVpQXZOeEFkSGhpVVRuanpmLUIyNXdHNDlHOUJNMmc5U1hZbDcxNXU1M04tWHVXRWRhUGNtc2xVd3g2bXVpcmVETmt3N1FucFRENHFfWTdyY3pBSHhRSEZJ?oc=5",
+      "source": "뉴스1",
+      "date": "Wed, 09 Sep 2026 21:00:00 GMT"
+    },
     {
       "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQLXJPODlnc1ZuT2E0Ym9YVTFlVEdHUFNKV0JLQjAxbVRuanc4UEs2Wkw0Y3NRb3o5LUNsaUJMTXVUdHdwV1A0ZTU0MGlvVF93UGZDTHZEWk52QkJqSTBrOWxaNjYwcUl3NkpZSQ?oc=5",
       "source": "센머니",
       "date": "Mon, 07 Sep 2026 05:15:00 GMT"
-    },
-    {
-      "title": "‘반도체ETF 수익률 급등’에도...개인투자자 “그래도 안정형”",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BbjNfek1WMi0yR3JTUE5aSTZnNkxSc003d2RPQUtSaWZQd3hUekZXaGIxUHFnOG1IaDllRUFKSWVZb2R1c1JQNXZ4dC1FcXVHQkdKNzdTajR2NHZYVXJQRGpB?oc=5",
-      "source": "cwn.kr",
-      "date": "Tue, 08 Sep 2026 01:10:00 GMT"
     }
   ]
 }
