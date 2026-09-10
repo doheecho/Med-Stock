@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-10T00:13:01+00:00",
+  "updated_at": "2026-09-10T09:37:33+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "2 Trillion-Dollar Companies Poised to Become Wall Street's Next Stock-Split Stocks",
+      "url": "https://www.fool.com/investing/2026/09/10/2-trillion-dollar-companies-poised-to-become-wall-street-next-stock-split-stocks/",
+      "source": "Motley Fool",
+      "date": "2026-09-10T09:26:01Z"
+    },
     {
       "title": "Micron's Operating Margin Surged Past 80% for the First Time Ever. History Says This Is What's Coming Next.",
       "url": "https://www.fool.com/investing/2026/09/09/microns-operating-margin-surged-past-80-for-the-fi/",
@@ -57,12 +63,6 @@
       "url": "https://www.fool.com/investing/2026/09/09/prediction-micron-stock-could-turn-10000-into-a-mu/",
       "source": "Motley Fool",
       "date": "2026-09-09T17:20:00Z"
-    },
-    {
-      "title": "Top Chip Analyst: Memory Prices Won’t Ease ‘For Years’ and Even Apple Can’t Dodge It",
-      "url": "https://247wallst.com/investing/2026/09/09/top-chip-analyst-memory-prices-wont-ease-for-years-and-even-apple-cant-dodge-it/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-09T17:10:37Z"
     }
   ]
 }
