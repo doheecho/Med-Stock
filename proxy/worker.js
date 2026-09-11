@@ -592,61 +592,42 @@ async function stockInfo(code) {
   return { ticker: code, fundamentals, target, flow, news };
 }
 
+// 개인·기관·외국인 순매수 '수량' 실측치(m.stock trend API)에 종가를 곱해 금액으로 환산하고,
+// 기타법인 등은 하루 순매수 합이 0이 되도록 잔차로 추정한다.
 async function flowRows(code) {
-  const byDate = {};
-  for (const page of [1, 2]) {
-    const buf = await (
-      await fetch(`https://finance.naver.com/item/frgn.naver?code=${code}&page=${page}`, {
-        headers: { "User-Agent": "Mozilla/5.0", Referer: "https://finance.naver.com/" },
-        cf: { cacheTtl: 1800 },
-      })
-    ).arrayBuffer();
-    const html = new TextDecoder("euc-kr").decode(buf);
-    // frgn 페이지엔 type2 표가 여러 개 → 날짜가 든 데이터 표를 고른다
-    const tables = html.match(/<table[\s\S]*?<\/table>/gi) || [];
-    const tbl = tables.find(
-      (t) => /\d{4}\.\d{2}\.\d{2}/.test(t) && (t.match(/<td/gi) || []).length > 20
-    );
-    if (!tbl) continue;
-    for (const tr of tbl.match(/<tr[\s\S]*?<\/tr>/gi) || []) {
-      const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map((s) =>
-        s.replace(/<[^>]+>/g, "").replace(/&nbsp;/gi, " ").replace(/\s+/g, " ").trim()
-      );
-      if (c.length < 9 || !/\d{4}\.\d{2}\.\d{2}/.test(c[0])) continue;
-      const close = _koNum(c[1]);
-      const instQ = _koNum(c[5]);
-      const frgnQ = _koNum(c[6]);
-      if (close == null) continue;
-      const t = c[0].replace(/\./g, "-");
-      const inst = instQ == null ? null : Math.round(instQ * close);
-      const frgn = frgnQ == null ? null : Math.round(frgnQ * close);
-      const indiv = inst != null && frgn != null ? -(inst + frgn) : null;
-      byDate[t] = { t, institution: inst, foreign: frgn, individual: indiv };
-    }
-  }
-  // 최근 며칠 개인 실측치로 덮어쓰기
-  try {
-    const tr = await (
-      await fetch(`https://m.stock.naver.com/api/stock/${code}/trend`, {
-        headers: { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" },
-        cf: { cacheTtl: 900 },
-      })
-    ).json();
-    for (const x of tr || []) {
-      const bd = String(x.bizdate || "");
-      const t = bd.length === 8 ? `${bd.slice(0, 4)}-${bd.slice(4, 6)}-${bd.slice(6, 8)}` : bd;
-      const iq = _koNum(x.individualPureBuyQuant);
-      const cp = _koNum(x.closePrice);
-      if (byDate[t] && iq != null && cp) byDate[t].individual = Math.round(iq * cp);
-    }
-  } catch (_) {}
+  const raw = await (
+    await fetch(`https://m.stock.naver.com/api/stock/${code}/trend?page=1&pageSize=30`, {
+      headers: { "User-Agent": "Mozilla/5.0", Referer: "https://m.stock.naver.com/" },
+      cf: { cacheTtl: 900 },
+    })
+  ).json();
 
-  const rows = Object.keys(byDate).sort().map((t) => byDate[t]);
+  const rows = [];
+  for (const x of raw || []) {
+    const bd = String(x.bizdate || "");
+    if (bd.length !== 8) continue;
+    const cp = _koNum(x.closePrice);
+    const fq = _koNum(x.foreignerPureBuyQuant);
+    const oq = _koNum(x.organPureBuyQuant);
+    const iq = _koNum(x.individualPureBuyQuant);
+    if (cp == null || fq == null || oq == null || iq == null) continue;
+    const frgn = Math.round(fq * cp);
+    const inst = Math.round(oq * cp);
+    const indiv = Math.round(iq * cp);
+    rows.push({
+      t: `${bd.slice(0, 4)}-${bd.slice(4, 6)}-${bd.slice(6, 8)}`,
+      institution: inst,
+      foreign: frgn,
+      individual: indiv,
+      etc_corp: -(frgn + inst + indiv),
+    });
+  }
   if (!rows.length) return null;
+  rows.sort((a, b) => (a.t < b.t ? -1 : 1));
   return {
     rows,
-    source: "naver(frgn)",
-    note: "기관·외국인 순매매 수량을 종가로 환산한 근사치. 개인은 -(기관+외국인) 근사(최근일 실측).",
+    source: "naver(trend)",
+    note: "개인·기관·외국인은 네이버 실측 순매수수량×종가. 기타법인 등은 하루 순매수 합이 0이 되도록 한 잔차 추정치.",
   };
 }
 

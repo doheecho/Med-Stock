@@ -1,254 +1,224 @@
 {
-  "updated_at": "2026-09-10T09:37:06+00:00",
+  "updated_at": "2026-09-11T22:40:21+09:00",
   "rows": [
-    {
-      "t": "2026-07-15",
-      "institution": -26330980070,
-      "foreign": 106507963385,
-      "individual": -80176983315
-    },
-    {
-      "t": "2026-07-16",
-      "institution": -79632457000,
-      "foreign": -868839000,
-      "individual": 80501296000
-    },
-    {
-      "t": "2026-07-20",
-      "institution": -145017971445,
-      "foreign": 116599203685,
-      "individual": 28418767760
-    },
-    {
-      "t": "2026-07-21",
-      "institution": -92207733800,
-      "foreign": 97384287460,
-      "individual": -5176553660
-    },
-    {
-      "t": "2026-07-22",
-      "institution": 76165374960,
-      "foreign": 29902738680,
-      "individual": -106068113640
-    },
-    {
-      "t": "2026-07-23",
-      "institution": -39910631020,
-      "foreign": 67416462620,
-      "individual": -27505831600
-    },
-    {
-      "t": "2026-07-24",
-      "institution": -93164784405,
-      "foreign": -17099450130,
-      "individual": 110264234535
-    },
-    {
-      "t": "2026-07-27",
-      "institution": -13834902060,
-      "foreign": 1276815960,
-      "individual": 12558086100
-    },
-    {
-      "t": "2026-07-28",
-      "institution": -222653520550,
-      "foreign": 3419807200,
-      "individual": 219233713350
-    },
-    {
-      "t": "2026-07-29",
-      "institution": -144634118650,
-      "foreign": 62662747810,
-      "individual": 81971370840
-    },
-    {
-      "t": "2026-07-30",
-      "institution": -57055555465,
-      "foreign": 23061237885,
-      "individual": 33994317580
-    },
     {
       "t": "2026-07-31",
       "institution": 325861816460,
       "foreign": -26375682780,
-      "individual": -299486133680
+      "individual": -289123966820,
+      "etc_corp": -10362166860
     },
     {
       "t": "2026-08-03",
       "institution": -188527243290,
       "foreign": -15328173930,
-      "individual": 203855417220
+      "individual": 187532922825,
+      "etc_corp": 16322494395
     },
     {
       "t": "2026-08-04",
       "institution": 15511619980,
       "foreign": -8747170720,
-      "individual": -6764449260
+      "individual": -13266134250,
+      "etc_corp": 6501684990
     },
     {
       "t": "2026-08-05",
       "institution": 47097186500,
       "foreign": -6676973100,
-      "individual": -40420213400
+      "individual": -34147089900,
+      "etc_corp": -6273123500
     },
     {
       "t": "2026-08-06",
       "institution": -168931090000,
       "foreign": 2384083400,
-      "individual": 166547006600
+      "individual": 139248134100,
+      "etc_corp": 27298872500
     },
     {
       "t": "2026-08-07",
       "institution": -7725764580,
       "foreign": 150666240,
-      "individual": 7575098340
+      "individual": 5845379280,
+      "etc_corp": 1729719060
     },
     {
       "t": "2026-08-10",
       "institution": -3220635375,
       "foreign": -5639231820,
-      "individual": 8859867195
+      "individual": 3866924280,
+      "etc_corp": 4992942915
     },
     {
       "t": "2026-08-11",
       "institution": 15609520515,
       "foreign": 6148672630,
-      "individual": -21758193145
+      "individual": -22699423875,
+      "etc_corp": 941230730
     },
     {
       "t": "2026-08-12",
       "institution": 86915333750,
       "foreign": 37921660000,
-      "individual": -124836993750
+      "individual": -103288099250,
+      "etc_corp": -21548894500
     },
     {
       "t": "2026-08-13",
       "institution": 43264136400,
       "foreign": 5246146620,
-      "individual": -48510283020
+      "individual": -47911716420,
+      "etc_corp": -598566600
     },
     {
       "t": "2026-08-14",
       "institution": 89302243760,
       "foreign": -27592482240,
-      "individual": -61709761520
+      "individual": -54835303860,
+      "etc_corp": -6874457660
     },
     {
       "t": "2026-08-18",
       "institution": -27055978950,
       "foreign": 38045906600,
-      "individual": -10989927650
+      "individual": -10391491500,
+      "etc_corp": -598436150
     },
     {
       "t": "2026-08-19",
       "institution": -101097033600,
       "foreign": 20450096640,
-      "individual": 80646936960
+      "individual": 84285874560,
+      "etc_corp": -3638937600
     },
     {
       "t": "2026-08-20",
       "institution": 94685940580,
       "foreign": 22851134470,
-      "individual": -117537075050
+      "individual": -122646888750,
+      "etc_corp": 5109813700
     },
     {
       "t": "2026-08-21",
       "institution": 104552047080,
       "foreign": -38072216520,
-      "individual": -66479830560
+      "individual": -50548017780,
+      "etc_corp": -15931812780
     },
     {
       "t": "2026-08-24",
       "institution": -15638290310,
       "foreign": -16336479375,
-      "individual": 31974769685
+      "individual": 31235666550,
+      "etc_corp": 739103135
     },
     {
       "t": "2026-08-25",
       "institution": -4440322510,
       "foreign": -850942560,
-      "individual": 5291265070
+      "individual": 7245399980,
+      "etc_corp": -1954134910
     },
     {
       "t": "2026-08-26",
       "institution": 140430143800,
       "foreign": 2408611020,
-      "individual": -142838754820
+      "individual": -134035724230,
+      "etc_corp": -8803030590
     },
     {
       "t": "2026-08-27",
       "institution": 49498943195,
       "foreign": -5778261710,
-      "individual": -43720681485
+      "individual": -42150992780,
+      "etc_corp": -1569688705
     },
     {
       "t": "2026-08-28",
       "institution": -18409987060,
       "foreign": -3143160680,
-      "individual": 23144234840
+      "individual": 23144234840,
+      "etc_corp": -1591087100
     },
     {
       "t": "2026-08-31",
       "institution": -23388936485,
       "foreign": 22608512505,
-      "individual": 805283045
+      "individual": 805283045,
+      "etc_corp": -24859065
     },
     {
       "t": "2026-09-01",
       "institution": 17667894910,
       "foreign": 8977542390,
-      "individual": -26705097705
+      "individual": -26705097705,
+      "etc_corp": 59660405
     },
     {
       "t": "2026-09-02",
       "institution": -87382152000,
       "foreign": 14678680500,
-      "individual": 69983388000
+      "individual": 69983388000,
+      "etc_corp": 2720083500
     },
     {
       "t": "2026-09-03",
       "institution": 34458199360,
       "foreign": -1527625840,
-      "individual": -33550161320
+      "individual": -33550161320,
+      "etc_corp": 619587800
     },
     {
       "t": "2026-09-04",
       "institution": 83382526920,
       "foreign": -36179815560,
-      "individual": -47161269120
+      "individual": -47161269120,
+      "etc_corp": -41442240
     },
     {
       "t": "2026-09-07",
       "institution": 174810460140,
       "foreign": 9099873480,
-      "individual": -177893361720
+      "individual": -177893361720,
+      "etc_corp": -6016971900
     },
     {
       "t": "2026-09-08",
       "institution": 58301676010,
       "foreign": -1054692265,
-      "individual": -55136385530
+      "individual": -55136385530,
+      "etc_corp": -2110598215
     },
     {
       "t": "2026-09-09",
       "institution": 29797076800,
       "foreign": 3829672300,
-      "individual": -34356408000
+      "individual": -34356408000,
+      "etc_corp": 729658900
     },
     {
       "t": "2026-09-10",
       "institution": 156163540,
       "foreign": -564918250,
-      "individual": -125512530
+      "individual": -125512530,
+      "etc_corp": 534267240
+    },
+    {
+      "t": "2026-09-11",
+      "institution": -95153200500,
+      "foreign": 62607282000,
+      "individual": 31675612500,
+      "etc_corp": 870306000
     }
   ],
   "summary": {
-    "foreign_20d": 17095581525,
-    "institution_20d": 642894751580,
-    "individual_20d": -654868632430
+    "foreign_20d": 74456716905,
+    "institution_20d": 504477414680,
+    "individual_20d": -541161155350
   },
-  "source": "naver(frgn)",
-  "note": "기관·외국인 순매매 수량을 종가로 환산한 근사치. 개인은 -(기관+외국인) 근사(최근일은 실측). 기타법인 미제공.",
+  "source": "naver(trend)",
+  "note": "개인·기관·외국인은 네이버 실측 순매수수량×종가. 기타법인 등은 하루 순매수 합이 0이 되도록 한 잔차 추정치.",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX"
