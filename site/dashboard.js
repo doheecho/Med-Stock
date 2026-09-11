@@ -81,6 +81,7 @@ async function init() {
       Chart.register(window.ChartDataLabels);
       Chart.defaults.set("plugins.datalabels", { display: false }); // 도넛에서만 켠다
     }
+    if (window.Chart && window.ChartZoom) Chart.register(window.ChartZoom);
     // 캔들: 한국 관습(상승 빨강 / 하락 파랑) — 데이터셋 옵션이 무시돼도 기본값으로 보장.
     // chartjs-chart-financial 은 borderColors/backgroundColors(복수형) 를 쓴다.
     if (window.Chart && Chart.defaults.elements) {
@@ -158,6 +159,7 @@ async function init() {
         const b = e.target.closest("button[data-eqr]");
         if (!b || b.dataset.eqr === state.eqRange) return;
         state.eqRange = b.dataset.eqr;
+        state._eqZoom = null; // 기간이 바뀌면 확대 구간 초기화
         renderEquity();
       });
     }
@@ -410,12 +412,13 @@ function scheduleWsReconnect() {
   _wsBackoff = Math.min(_wsBackoff * 2, 60000);
 }
 
+/* renderDetail() 은 차트 캔버스를 통째로 새로 만들고 fundamentals·news 등도 재조회한다 —
+   틱마다 부르면 사용자가 확대해둔 차트가 매번 다시 그려져 깜빡이므로, 틱은 요약 표만 갱신. */
 function scheduleWsRender() {
   if (_wsRenderTimer) return;
   _wsRenderTimer = setTimeout(() => {
     _wsRenderTimer = null;
     renderSummary();
-    if (state.active) renderDetail(state.active);
   }, 300);
 }
 
@@ -857,6 +860,7 @@ async function eqOpenTable(dateStr) {
 function drawEquityChart(pts, peak, asOf) {
   const X = (p) => new Date(p.d).valueOf();
   makeChart("equityChart", {
+    _onZoomReset: resetEqZoom,
     data: {
       datasets: [
         {
@@ -915,6 +919,7 @@ function drawEquityChart(pts, peak, asOf) {
           time: { tooltipFormat: "yyyy-MM-dd" },
           grid: { display: false },
           ticks: { color: "#8b95a1", maxRotation: 0, autoSkip: true, maxTicksLimit: 6 },
+          ...(state._eqZoom ? { min: state._eqZoom.min, max: state._eqZoom.max } : {}),
         },
         y: {
           position: "right",
@@ -936,6 +941,7 @@ function drawEquityChart(pts, peak, asOf) {
             label: (ctx) => `${ctx.dataset.label}: ${Math.round(ctx.parsed.y).toLocaleString("ko-KR")}원`,
           },
         },
+        zoom: zoomPluginOpts(onEqZoomChange),
       },
     },
   });
@@ -1145,6 +1151,7 @@ function buildAddControl() {
 
 function selectTicker(ticker) {
   state.active = ticker;
+  state._chartZoom = null; // 종목이 바뀌면 확대 구간 초기화
   document.querySelectorAll("#tabs button[data-ticker]").forEach((b) => {
     b.classList.toggle("active", b.dataset.ticker === ticker);
   });
@@ -1282,7 +1289,7 @@ function onChartCtl(e) {
   const b = e.target.closest("button");
   if (!b) return;
   let scope; // "all"(기간) | "price"(이평·오버레이) | "macd" | "stoch" | "rsi"
-  if (b.dataset.range) { state.chartRange = b.dataset.range; scope = "all"; }
+  if (b.dataset.range) { state.chartRange = b.dataset.range; state._chartZoom = null; scope = "all"; }
   else if (b.dataset.ma) { state.ma[b.dataset.ma] = !state.ma[b.dataset.ma]; scope = "price"; }
   else if (b.dataset.ov) { state.overlay[b.dataset.ov] = !state.overlay[b.dataset.ov]; scope = "price"; }
   else if (b.dataset.sub) { state.sub[b.dataset.sub] = !state.sub[b.dataset.sub]; scope = b.dataset.sub; }
@@ -1676,8 +1683,11 @@ function drawPriceChart(h) {
   scales.x.max = xMax;
   // 보조지표들이 같은 x 구간·눈금·전망라벨 숨김을 쓰도록 도메인 저장
   state._xDomain = { min: xs[0], max: xMax, lastRealTs };
+  // 사용자가 확대/이동해둔 구간이 있으면 유지(실시간 갱신·이평선 토글 등으로 다시 그려도 안 풀리게)
+  if (state._chartZoom) { scales.x.min = state._chartZoom.min; scales.x.max = state._chartZoom.max; }
 
   makeChart("priceChart", {
+    _onZoomReset: resetPriceZoom,
     data: { datasets },
     options: {
       parsing: false,
@@ -1688,6 +1698,7 @@ function drawPriceChart(h) {
       plugins: {
         legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
         tooltip: { callbacks: {} },
+        zoom: zoomPluginOpts(onPriceZoomChange),
       },
     },
   });
@@ -1708,7 +1719,9 @@ function drawMacdChart(p) {
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
+  if (state._chartZoom) { xg.min = state._chartZoom.min; xg.max = state._chartZoom.max; }
   makeChart("macdChart", {
+    _onZoomReset: resetPriceZoom,
     data: {
       datasets: [
         { type: "bar", label: "히스토그램", data: xs.map((x, i) => ({ x, y: S(p.macd.hist)[i] })),
@@ -1723,7 +1736,10 @@ function drawMacdChart(p) {
         x: xg,
         y: { position: "right", afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1" }, grid: { color: "#2b333d40" } },
       },
-      plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
+      plugins: {
+        legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
+        zoom: zoomPluginOpts(onPriceZoomChange),
+      },
     },
   });
 }
@@ -2263,7 +2279,9 @@ function drawRsiChart(p) {
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
+  if (state._chartZoom) { xg.min = state._chartZoom.min; xg.max = state._chartZoom.max; }
   makeChart("rsiChart", {
+    _onZoomReset: resetPriceZoom,
     data: {
       datasets: [
         { type: "line", label: `RSI ${tf === "W" ? "주봉" : tf === "M" ? "월봉" : "일봉"}`, data: xs.map((x, i) => ({ x, y: ys[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
@@ -2279,7 +2297,7 @@ function drawRsiChart(p) {
         x: xg,
         y: { position: "right", min: 0, max: 100, afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
-      plugins: { legend: { display: false } },
+      plugins: { legend: { display: false }, zoom: zoomPluginOpts(onPriceZoomChange) },
     },
     plugins: [rsiZoneLabels],
   });
@@ -2301,7 +2319,9 @@ function drawStochChart(p) {
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
   xg.grid = { display: false };
   if (state._xDomain) { xg.min = state._xDomain.min; xg.max = state._xDomain.max; }
+  if (state._chartZoom) { xg.min = state._chartZoom.min; xg.max = state._chartZoom.max; }
   makeChart("stochChart", {
+    _onZoomReset: resetPriceZoom,
     data: {
       datasets: [
         { type: "line", label: "%K", data: xs.map((x, i) => ({ x, y: S(k)[i] })), borderColor: "#22d3ee", borderWidth: 1.2, pointRadius: 0, spanGaps: true },
@@ -2318,7 +2338,10 @@ function drawStochChart(p) {
         x: xg,
         y: { position: "right", min: 0, max: 100, afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
-      plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
+      plugins: {
+        legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
+        zoom: zoomPluginOpts(onPriceZoomChange),
+      },
     },
     plugins: [stochZoneLabels],
   });
@@ -2734,7 +2757,59 @@ function makeChart(id, cfg) {
   if (state.charts[id]) state.charts[id].destroy();
   cfg.options = cfg.options || {};
   if (state._noAnim) cfg.options.animation = false; // 버튼 토글 시 즉시 반영(떠오름 방지)
+  const onZoomReset = cfg._onZoomReset;
+  delete cfg._onZoomReset;
   state.charts[id] = new Chart(el.getContext("2d"), cfg);
+  el.ondblclick = onZoomReset || null; // 더블클릭 = 줌 초기화 (MTS 관습)
+}
+
+/* ------------------------------------------------------------------ 차트 확대/축소 (MTS 스타일)
+   휠 줌·드래그 박스 줌·핀치 줌 + x축 팬. 가격차트와 보조지표(RSI/MACD/Stoch)는 x축을 공유하므로
+   한쪽을 줌/팬하면 나머지도 같은 구간으로 맞춘다. 더블클릭으로 초기화. */
+const PRICE_ZOOM_GROUP = ["priceChart", "rsiChart", "macdChart", "stochChart"];
+
+function zoomPluginOpts(onChange) {
+  return {
+    pan: { enabled: true, mode: "x", onPanComplete: onChange },
+    zoom: {
+      wheel: { enabled: true },
+      pinch: { enabled: true },
+      drag: { enabled: true, backgroundColor: "rgba(96,165,250,.15)", borderColor: "#60a5fa66", borderWidth: 1 },
+      mode: "x",
+      onZoomComplete: onChange,
+    },
+  };
+}
+
+function onPriceZoomChange({ chart }) {
+  const xs = chart.scales.x;
+  state._chartZoom = { min: xs.min, max: xs.max };
+  for (const id of PRICE_ZOOM_GROUP) {
+    const c = state.charts[id];
+    if (!c || c === chart) continue;
+    c.options.scales.x.min = xs.min;
+    c.options.scales.x.max = xs.max;
+    c.update("none");
+  }
+}
+
+function resetPriceZoom() {
+  state._chartZoom = null;
+  for (const id of PRICE_ZOOM_GROUP) {
+    const c = state.charts[id];
+    if (c && c.resetZoom) c.resetZoom();
+  }
+}
+
+function onEqZoomChange({ chart }) {
+  const xs = chart.scales.x;
+  state._eqZoom = { min: xs.min, max: xs.max };
+}
+
+function resetEqZoom() {
+  state._eqZoom = null;
+  const c = state.charts.equityChart;
+  if (c && c.resetZoom) c.resetZoom();
 }
 
 /* items: [{label, value(원화)}] — 하단 범례 없이, 조각 위에 "#,###만(#%)",
