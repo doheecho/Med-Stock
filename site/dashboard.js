@@ -12,7 +12,6 @@ const FX_FALLBACK = 1350; // frankfurter 조회 실패 시 USD→KRW 대체 환�
 const state = {
   dataBase: "./data",
   holdings: [],
-  scenarios: {},
   snapshot: null,
   prices: {},       // ticker -> prices json
   live: {},         // ticker -> {price, prevClose, currency,...}
@@ -22,6 +21,7 @@ const state = {
   fx: null,                          // { USDKRW, date }
   sort: { key: null, dir: "desc" },  // 표 정렬 상태
   advisor: null,                     // data/advisor.json
+  indices: null,                     // data/indices.json (새로고침 시 /indices 실시간으로 제자리 갱신)
   equity: null,                      // data/equity_curve.json
   eqRange: "1Y",                     // 자산 추이 기간: 1M 3M 6M 1Y 3Y ALL
   chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
@@ -108,9 +108,8 @@ async function init() {
   });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, scenarios, snapshot, advisor, indices, fx, equity] = await Promise.all([
+    const [holdings, snapshot, advisor, indices, fx, equity] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
-      getJSON(`${state.dataBase}/scenarios.json`).catch(() => ({ scenarios: {} })),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
       getJSON(`${state.dataBase}/advisor.json`).catch(() => null),
       getJSON(`${state.dataBase}/indices.json`).catch(() => null),
@@ -127,7 +126,6 @@ async function init() {
     renderAdvisor();
 
     state.snapshot = snapshot;
-    state.scenarios = (scenarios && scenarios.scenarios) || {};
     state.holdings =
       (holdings && holdings.holdings) ||
       (snapshot && snapshot.positions) ||
@@ -1545,7 +1543,7 @@ async function ensureAdhocPrice(h) {
   };
 }
 
-/* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/시나리오/일목균형표 ---- */
+/* ---- 가격 차트: 기간/이동평균/볼린저/거래량/내매수가/일목균형표 ---- */
 function drawPriceChart(h) {
   const p = state.prices[h.ticker];
   const box = document.getElementById("priceChart");
@@ -1656,24 +1654,6 @@ function drawPriceChart(h) {
   };
   let xMax = Math.max(lastRealTs, ichiXMax);
 
-  // ---- 목표주가 점선 (ETF 제외, 1년 이상 구간에서만). 실제 목표시점(12M)과
-  //      무관하게 과거 구간을 넓히려고 x축은 약 1개월분만 사용, 전망 구간 라벨은 숨김 ----
-  const showScenario =
-    !isEtf(h) && ["1Y", "3Y", "5Y"].includes(state.chartRange);
-  const cur = priceOf(h.ticker) ?? p.last_close;
-  if (showScenario) {
-    const anchor = lastRealTs;
-    const horizon = anchor + 30 * 864e5; // 약 1개월
-    xMax = Math.max(xMax, horizon);
-    for (const sc of scenarioAnchors(h)) {
-      datasets.push({
-        type: "line", label: sc.label, borderColor: sc.color, borderDash: [5, 5], borderWidth: 1.5,
-        pointRadius: 3, pointBackgroundColor: sc.color, order: 1,
-        data: [{ x: anchor, y: cur }, { x: horizon, y: sc.target }],
-      });
-    }
-  }
-
   if (state.overlay.buyprice && h.buy_price != null) {
     datasets.push({
       type: "line", label: "내 매수가", borderColor: "#ef4444", borderWidth: 1.6, pointRadius: 0, order: 2,
@@ -1746,30 +1726,6 @@ function drawMacdChart(p) {
       plugins: { legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } } },
     },
   });
-}
-
-/* 증권사 컨센서스 + 사용자 시나리오를 앵커로 변환 */
-function scenarioAnchors(h) {
-  const out = [];
-  const t = state._targets && state._targets[h.ticker];
-  // targets 는 renderTarget 에서 캐시됨. 없으면 스냅샷 값 사용
-  const snapPos = (state.snapshot?.positions || []).find((x) => x.ticker === h.ticker) || h;
-  const hi = (t && t.target_high) ?? snapPos.target_high;
-  const avg = (t && t.target_avg) ?? snapPos.target_avg;
-  const lo = (t && t.target_low) ?? snapPos.target_low;
-  if (hi) out.push({ label: "낙관(최고 목표가)", target: hi, months: 12, color: "#22c55e" });
-  if (avg) out.push({ label: "중립(평균 컨센서스)", target: avg, months: 12, color: "#f59e0b" });
-  if (lo) out.push({ label: "비관(최저 목표가)", target: lo, months: 12, color: "#3b82f6" });
-
-  for (const s of state.scenarios[h.ticker] || []) {
-    out.push({
-      label: s.label || "내 목표가",
-      target: s.target_price,
-      months: s.horizon_months || 6,
-      color: "#e6e9ee",
-    });
-  }
-  return out;
 }
 
 /* 일봉 close/dates → 주봉(W)/월봉(M) 마지막 종가 시리즈 */
