@@ -136,6 +136,21 @@ wrangler deploy          # proxy/wrangler.toml 을 사용 ([vars] GH_REPO 포함
 배포 후 나온 URL(`https://med-stock-proxy.<subdomain>.workers.dev`)을
 `site/dashboard.js` 상단 `PROXY_BASE` 에 넣고 커밋한다.
 
+### 4-1. NH투자증권 나무플러그(NH PLUG) 연동 (선택)
+
+보유종목 실시간가는 [나무플러그](https://www.nhplug.com) OpenAPI를 우선 쓰고, 키가
+없거나 호출이 실패하면 자동으로 네이버(국내)/야후(해외)로 폴백한다.
+**코스피·코스닥 등 지수는 나무플러그에 조회 API가 없어 그대로 배치 수집을 쓴다.**
+
+```powershell
+cd proxy
+wrangler secret put NH_APP_KEY       # nhplug.com 에서 발급한 API KEY
+wrangler secret put NH_APP_SECRET    # nhplug.com 에서 발급한 APP SECRET
+wrangler deploy
+```
+
+시크릿은 Cloudflare에만 저장되고 저장소에는 절대 커밋하지 않는다.
+
 > `PROXY_BASE` 가 비어 있으면 대시보드는 실시간 조회를 건너뛰고
 > 배치 종가(`last_close`)로 현재가/평가손익을 표시한다.
 

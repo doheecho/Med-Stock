@@ -1,11 +1,15 @@
 /**
  * 실시간 시세 CORS 프록시 (Cloudflare Worker, 무료 티어)
  *
- * GET /?ticker=005930   → 네이버 국내 실시간 시세 JSON
- * GET /?ticker=MU       → 야후 파이낸스 chart JSON
+ * GET /?ticker=005930   → NH투자증권 나무플러그(NH PLUG) 국내 실시간 시세 JSON (실패 시 네이버 폴백)
+ * GET /?ticker=MU       → NH PLUG 해외 실시간 시세 JSON (실패 시 야후 폴백)
  *
  * 응답에는 항상 { ticker, price, prevClose, currency, source, raw } 로 정규화한
- * JSON 을 돌려준다. (raw 는 원본 그대로 — 필요 시 프론트에서 참고)
+ * JSON 을 돌려준다. (raw 는 원본 그대로 — 필요 시 프론트에서 참고, source 로 실제 사용된
+ * 공급자(nhplug/naver/yahoo)를 구분)
+ *
+ * ⚠ 코스피/코스닥 등 지수는 NH PLUG 에 조회 API가 없어 이 프록시의 대상이 아니다
+ *   (지수는 collectors/indices_collector.py 배치 수집으로만 갱신됨).
  *
  * GET /dispatch?wf=advisor  → GitHub Actions "Refresh AI Advisor" 워크플로 실행
  * GET /dispatch?wf=update   → "Update dashboard data" 워크플로 실행
@@ -15,6 +19,8 @@
  *   npm i -g wrangler
  *   cd proxy && wrangler deploy
  *   wrangler secret put GH_DISPATCH_TOKEN     # fine-grained PAT (Actions: Read and write)
+ *   wrangler secret put NH_APP_KEY            # 나무플러그(nhplug.com) 발급 API KEY
+ *   wrangler secret put NH_APP_SECRET         # 나무플러그 발급 APP SECRET
  * 배포 후 나온 URL 을 site/dashboard.js 의 PROXY_BASE 에 넣는다.
  */
 
@@ -101,13 +107,38 @@ export default {
     // 미국 심볼은 영문으로 시작(MU, AAPL...) → 야후로 라우팅.
     const isKRX = /^\d[0-9A-Z]{5}$/.test(ticker);
     try {
-      const data = isKRX ? await fetchNaver(ticker) : await fetchYahoo(ticker);
+      const data = isKRX
+        ? await fetchDomestic(ticker, env)
+        : await fetchOverseas(ticker, env);
       return json(data, 200);
     } catch (err) {
       return json({ ticker, error: String(err && err.message || err) }, 502);
     }
   },
 };
+
+// NH PLUG 우선, 실패(키 미설정·오류·rsp_cd 비정상) 시 기존 소스로 폴백.
+async function fetchDomestic(ticker, env) {
+  if (env && env.NH_APP_KEY && env.NH_APP_SECRET) {
+    try {
+      return await fetchNHDomestic(ticker, env);
+    } catch (err) {
+      console.log("nhplug domestic fail, fallback to naver:", ticker, String(err && err.message || err));
+    }
+  }
+  return fetchNaver(ticker);
+}
+
+async function fetchOverseas(ticker, env) {
+  if (env && env.NH_APP_KEY && env.NH_APP_SECRET) {
+    try {
+      return await fetchNHOverseas(ticker, env);
+    } catch (err) {
+      console.log("nhplug overseas fail, fallback to yahoo:", ticker, String(err && err.message || err));
+    }
+  }
+  return fetchYahoo(ticker);
+}
 
 const _WF_FILE = { advisor: "advisor.yml", update: "update.yml" };
 const _DEFAULT_REPO = "doheecho/Med-Stock";
@@ -217,6 +248,97 @@ async function fetchYahoo(ticker) {
         : null,
     currency: meta.currency || "USD",
     source: "yahoo",
+    ts: Date.now(),
+    raw,
+  };
+}
+
+// ── NH투자증권 나무플러그(NH PLUG) OpenAPI ──────────────────────────────
+// https://www.nhplug.com — REST, appkey+appsecretkey → OAuth2 Bearer 토큰(24h).
+// 토큰은 같은(warm) 워커 인스턴스 안에서만 메모리 캐시(콜드스타트 시 새로 발급).
+// 재발급은 보안 알림을 유발하므로 만료 직전(또는 401)에만 재발급한다.
+const NH_BASE = "https://api.nhplug.com:8443";
+let _nhTokenCache = { token: null, exp: 0 };
+
+async function nhToken(env, force) {
+  if (!force && _nhTokenCache.token && Date.now() < _nhTokenCache.exp) {
+    return _nhTokenCache.token;
+  }
+  const res = await fetch(`${NH_BASE}/oauth2/token`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      appkey: env.NH_APP_KEY,
+      appsecretkey: env.NH_APP_SECRET,
+      grant_type: "client_credentials",
+      scope: "oob",
+    }),
+  });
+  if (!res.ok) throw new Error(`nhplug token http ${res.status}`);
+  const j = await res.json();
+  if (!j.access_token) throw new Error("nhplug token: access_token 없음");
+  _nhTokenCache = { token: j.access_token, exp: Date.now() + (Number(j.expires_in) || 86400) * 1000 - 60000 };
+  return _nhTokenCache.token;
+}
+
+// 401(토큰 만료/무효) 한정으로 1회 재발급 후 재시도.
+async function nhPost(env, path, body) {
+  let token = await nhToken(env);
+  let res = await nhCall(path, token, body);
+  if (res.status === 401) {
+    token = await nhToken(env, true);
+    res = await nhCall(path, token, body);
+  }
+  if (!res.ok) throw new Error(`nhplug ${path} http ${res.status}`);
+  const j = await res.json();
+  if (j.rsp_cd && j.rsp_cd !== "00000") throw new Error(`nhplug ${path} rsp_cd=${j.rsp_cd} ${j.rsp_msg || ""}`);
+  return j;
+}
+
+function nhCall(path, token, body) {
+  return fetch(`${NH_BASE}${path}`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+}
+
+async function fetchNHDomestic(ticker, env) {
+  const raw = await nhPost(env, "/krstock/quote/v1/currentPrice", {
+    Input_0: { market_cd: "KRX", iem_cd: ticker },
+  });
+  const o = raw.Output_0 || {};
+  const price = num(o.stck_prpr);
+  const prevClose = num(o.stck_prdy_clpr);
+  if (price == null) throw new Error("nhplug domestic: stck_prpr 없음");
+  return {
+    ticker,
+    price,
+    prevClose,
+    changePct: prevClose ? round(((price - prevClose) / prevClose) * 100, 2) : null,
+    currency: "KRW",
+    source: "nhplug",
+    ts: Date.now(),
+    raw,
+  };
+}
+
+async function fetchNHOverseas(ticker, env) {
+  const raw = await nhPost(env, "/gbstock/quote/v1/current", { Input_0: { iem_cd: ticker } });
+  const o = raw.Output_0 || {};
+  const price = num(o.trdprc);
+  if (price == null) throw new Error("nhplug overseas: trdprc 없음");
+  const down = o.netchng_cls === "5";
+  const netchng = num(o.netchng);
+  const pctchng = num(o.pctchng);
+  const prevClose = netchng != null ? price - (down ? -Math.abs(netchng) : Math.abs(netchng)) : num(o.base_prc);
+  return {
+    ticker,
+    price,
+    prevClose,
+    changePct: pctchng != null ? (down ? -Math.abs(pctchng) : Math.abs(pctchng)) : null,
+    currency: o.currency_unit || "USD",
+    source: "nhplug",
     ts: Date.now(),
     raw,
   };
