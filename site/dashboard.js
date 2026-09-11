@@ -166,6 +166,7 @@ async function init() {
     selectTicker(state.holdings[0].ticker);
 
     await refreshLive(); // 실시간 현재가
+    connectLiveWS(); // 국내 보유종목 실시간 체결가 (NH PLUG WebSocket)
   } catch (e) {
     console.error(e);
     fail("초기화 실패: " + e.message);
@@ -324,21 +325,100 @@ async function refreshLive() {
   const btn = document.getElementById("refreshBtn");
   btn.disabled = true;
   btn.textContent = "조회 중…";
-  await Promise.all(
-    allHoldings().map(async (h) => {
+  await Promise.all([
+    ...allHoldings().map(async (h) => {
       try {
         const q = await getJSON(`${PROXY_BASE}/?ticker=${encodeURIComponent(h.ticker)}`);
         if (q && q.price != null) state.live[h.ticker] = q;
       } catch (e) {
         console.warn("live fail", h.ticker, e);
       }
-    })
-  );
+    }),
+    refreshIndicesLive(),
+  ]);
   btn.disabled = false;
   btn.textContent = "↻ 현재가 갱신";
 
   renderSummary();
+  renderIndices();
   if (state.active) renderDetail(state.active);
+}
+
+/* 지수/환율/원자재/암호화폐 실시간 갱신 — 배치 data/indices.json 의 items 를 제자리 갱신 */
+async function refreshIndicesLive() {
+  if (!PROXY_BASE) return;
+  try {
+    const live = await getJSON(`${PROXY_BASE}/indices`);
+    if (!live || !live.items || !live.items.length) return;
+    if (!state.indices) state.indices = { items: [] };
+    const byKey = new Map(state.indices.items.map((x) => [x.key, x]));
+    for (const it of live.items) {
+      if (it.price == null) continue; // 실패한 항목은 배치값 유지
+      byKey.set(it.key, { key: it.key, name: it.name, price: it.price, prev: it.prev, change: it.change, change_pct: it.change_pct, fmt: it.fmt });
+    }
+    state.indices = { items: [...byKey.values()], updated_at: live.updated_at, live: true };
+  } catch (e) {
+    console.warn("indices live fail", e);
+  }
+}
+
+/* ------------------------------------------------------------------ 실시간 체결가 (WebSocket) */
+// NH PLUG WebSocket 은 국내(KRX)만 지원(해외는 GIC 15자리 코드가 필요해 미지원).
+// 연결이 끊기면 지수백오프(5s→60s)로 재연결. 틱은 300ms 묶어 한 번만 렌더.
+let _ws = null;
+let _wsBackoff = 5000;
+let _wsRenderTimer = null;
+
+function connectLiveWS() {
+  if (!PROXY_BASE) return;
+  const tickers = allHoldings()
+    .map((h) => h.ticker)
+    .filter((t) => /^\d[0-9A-Z]{5}$/.test(t));
+  if (!tickers.length) return;
+
+  let ws;
+  try {
+    const wsBase = PROXY_BASE.replace(/^http/, "ws");
+    ws = new WebSocket(`${wsBase}/ws?tickers=${encodeURIComponent(tickers.join(","))}`);
+  } catch (e) {
+    console.warn("live ws open fail", e);
+    scheduleWsReconnect();
+    return;
+  }
+  _ws = ws;
+  ws.addEventListener("open", () => { _wsBackoff = 5000; });
+  ws.addEventListener("message", (ev) => {
+    let msg;
+    try { msg = JSON.parse(ev.data); } catch (_) { return; }
+    if (msg.type !== "tick" || !msg.ticker || msg.price == null) return;
+    state.live[msg.ticker] = {
+      ticker: msg.ticker,
+      price: msg.price,
+      prevClose: msg.prevClose,
+      changePct: msg.changePct,
+      currency: "KRW",
+      source: "nhplug-ws",
+      ts: msg.ts || Date.now(),
+    };
+    scheduleWsRender();
+  });
+  ws.addEventListener("close", scheduleWsReconnect);
+  ws.addEventListener("error", () => { try { ws.close(); } catch (_) {} });
+}
+
+function scheduleWsReconnect() {
+  _ws = null;
+  setTimeout(connectLiveWS, _wsBackoff);
+  _wsBackoff = Math.min(_wsBackoff * 2, 60000);
+}
+
+function scheduleWsRender() {
+  if (_wsRenderTimer) return;
+  _wsRenderTimer = setTimeout(() => {
+    _wsRenderTimer = null;
+    renderSummary();
+    if (state.active) renderDetail(state.active);
+  }, 300);
 }
 
 /* live 우선 → last_close → 종가 배열의 마지막 유효값 */
@@ -2386,7 +2466,7 @@ function renderIndices() {
       <thead><tr><th>지수</th><th>현재가</th><th>전일대비</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
-    <div class="src" style="margin-top:6px">전일 종가 기준 · ${shortDate(d.updated_at)}</div>`;
+    <div class="src" style="margin-top:6px">${d.live ? "실시간" : "전일 종가 기준"} · ${shortDate(d.updated_at)}</div>`;
 }
 
 /* ---- ETF 구성 종목 (상위 10) ---- */

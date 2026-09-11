@@ -8,8 +8,14 @@
  * JSON 을 돌려준다. (raw 는 원본 그대로 — 필요 시 프론트에서 참고, source 로 실제 사용된
  * 공급자(nhplug/naver/yahoo)를 구분)
  *
- * ⚠ 코스피/코스닥 등 지수는 NH PLUG 에 조회 API가 없어 이 프록시의 대상이 아니다
- *   (지수는 collectors/indices_collector.py 배치 수집으로만 갱신됨).
+ * GET /indices           → 코스피·코스닥·다우·나스닥·환율·금/은/WTI·BTC/ETH/XRP 실시간 일괄 조회
+ *   (코스피·코스닥은 네이버, 나머지는 야후 — NH PLUG 는 지수 조회 API가 없어 대상이 아니다.
+ *    배치 data/indices.json 과 같은 스키마라 프론트에서 제자리 치환한다.)
+ *
+ * GET /ws?tickers=005930,000660   (WebSocket) → NH PLUG 국내 실시간체결가 릴레이.
+ *   브라우저는 wss:// 로 이 워커에 붙고, 워커가 NH PLUG 와의 연결·토큰을 대신 들고 있는다
+ *   (access token을 브라우저에 노출하지 않기 위해). 해외종목은 NH PLUG WS가 별도 GIC 코드를
+ *   요구해 미지원 — 해외는 계속 REST(/?ticker=) 폴링만 쓴다.
  *
  * GET /dispatch?wf=advisor  → GitHub Actions "Refresh AI Advisor" 워크플로 실행
  * GET /dispatch?wf=update   → "Update dashboard data" 워크플로 실행
@@ -32,7 +38,7 @@ const CORS = {
 };
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: CORS });
     }
@@ -43,6 +49,48 @@ export default {
     //   필요:  GH_DISPATCH_TOKEN (Worker secret · fine-grained PAT · Actions: Read and write)
     //          GH_REPO           (선택 · [vars] 또는 secret · 기본값 doheecho/Med-Stock)
     const path = url.pathname.replace(/\/+$/, "");
+
+    // GET /ws?tickers=005930,000660  (WebSocket Upgrade) → NH PLUG 실시간체결가(oc) 릴레이.
+    //   시크릿(access token)은 워커 안에만 두고, 브라우저엔 정규화된 틱만 보낸다.
+    if (path === "/ws") {
+      if ((request.headers.get("Upgrade") || "").toLowerCase() !== "websocket") {
+        return json({ error: "websocket upgrade required" }, 426);
+      }
+      const tickers = (url.searchParams.get("tickers") || "")
+        .split(",")
+        .map((s) => s.trim())
+        .filter((t) => /^\d[0-9A-Z]{5}$/.test(t))
+        .slice(0, 30); // NH PLUG 채널당 최대 30 구독
+      const pair = new WebSocketPair();
+      const [client, server] = Object.values(pair);
+      server.accept();
+      const relay = relayNH(server, tickers, env).catch((err) => {
+        try { server.close(1011, String((err && err.message) || err).slice(0, 120)); } catch (_) {}
+      });
+      if (ctx && ctx.waitUntil) ctx.waitUntil(relay);
+      return new Response(null, { status: 101, webSocket: client });
+    }
+
+    // GET /indices → 코스피/코스닥/환율/원자재/암호화폐 실시간 일괄 조회 (배치 data/indices.json 와 동일 스키마)
+    if (path === "/indices") {
+      const items = await Promise.all(
+        INDEX_SPEC.map(async (spec) => {
+          try {
+            const q = spec.naver
+              ? await fetchNaverIndex(spec.naver)
+              : await fetchYahooIndex(spec.yahoo, spec.scale || 1);
+            return { key: spec.key, name: spec.name, fmt: spec.fmt, ...q };
+          } catch (err) {
+            return {
+              key: spec.key, name: spec.name, fmt: spec.fmt,
+              price: null, prev: null, change: null, change_pct: null,
+              error: String((err && err.message) || err),
+            };
+          }
+        })
+      );
+      return json({ items, updated_at: new Date().toISOString() }, 200);
+    }
 
     if (path === "/dispatch") {
       return dispatchWorkflow(
@@ -253,11 +301,63 @@ async function fetchYahoo(ticker) {
   };
 }
 
+// ── 주요 지수·환율·원자재·암호화폐 (실시간, /indices) ───────────────────
+// NH PLUG 는 지수 조회 API가 없어 collectors/indices_collector.py 의 _SPEC 과 같은
+// 소스(코스피·코스닥=네이버, 나머지=야후)를 그대로 라이브로 쓴다. 스펙 바뀌면 양쪽 다 고칠 것.
+const INDEX_SPEC = [
+  { key: "KOSPI", name: "KOSPI", naver: "KOSPI", fmt: "pt" },
+  { key: "KOSDAQ", name: "KOSDAQ", naver: "KOSDAQ", fmt: "pt" },
+  { key: "DJI", name: "다우 산업", yahoo: "^DJI", fmt: "pt" },
+  { key: "IXIC", name: "나스닥 종합", yahoo: "^IXIC", fmt: "pt" },
+  { key: "SOX", name: "필라델피아 반도체", yahoo: "^SOX", fmt: "pt" },
+  { key: "SPX", name: "S&P 500", yahoo: "^GSPC", fmt: "pt" },
+  { key: "USDKRW", name: "원/달러", yahoo: "KRW=X", fmt: "krw" },
+  { key: "EURKRW", name: "원/유로", yahoo: "EURKRW=X", fmt: "krw" },
+  { key: "JPYKRW100", name: "원/엔100", yahoo: "JPYKRW=X", fmt: "krw", scale: 100 },
+  { key: "GOLD", name: "금 선물", yahoo: "GC=F", fmt: "usd" },
+  { key: "SILVER", name: "은 선물", yahoo: "SI=F", fmt: "usd" },
+  { key: "WTI", name: "WTI 선물", yahoo: "CL=F", fmt: "usd" },
+  { key: "BTC", name: "비트코인", yahoo: "BTC-KRW", fmt: "krw0" },
+  { key: "ETH", name: "이더리움", yahoo: "ETH-KRW", fmt: "krw0" },
+  { key: "XRP", name: "리플", yahoo: "XRP-KRW", fmt: "krw" },
+];
+
+async function fetchNaverIndex(key) {
+  const upstream = `https://polling.finance.naver.com/api/realtime/domestic/index/${key}`;
+  const res = await fetch(upstream, {
+    headers: { "User-Agent": "Mozilla/5.0", Referer: "https://finance.naver.com/" },
+    cf: { cacheTtl: 0 },
+  });
+  const raw = await res.json();
+  const item = raw?.datas?.[0] || {};
+  const price = num(item.closePriceRaw ?? item.closePrice);
+  const change = num(item.compareToPreviousClosePriceRaw ?? item.compareToPreviousClosePrice);
+  const change_pct = num(item.fluctuationsRatioRaw ?? item.fluctuationsRatio);
+  return {
+    price,
+    prev: price != null && change != null ? round(price - change, 4) : null,
+    change,
+    change_pct,
+  };
+}
+
+async function fetchYahooIndex(symbol, scale) {
+  const y = await fetchYahoo(symbol);
+  const s = scale || 1;
+  return {
+    price: y.price != null ? round(y.price * s, 4) : null,
+    prev: y.prevClose != null ? round(y.prevClose * s, 4) : null,
+    change: y.price != null && y.prevClose != null ? round((y.price - y.prevClose) * s, 4) : null,
+    change_pct: y.changePct,
+  };
+}
+
 // ── NH투자증권 나무플러그(NH PLUG) OpenAPI ──────────────────────────────
 // https://www.nhplug.com — REST, appkey+appsecretkey → OAuth2 Bearer 토큰(24h).
 // 토큰은 같은(warm) 워커 인스턴스 안에서만 메모리 캐시(콜드스타트 시 새로 발급).
 // 재발급은 보안 알림을 유발하므로 만료 직전(또는 401)에만 재발급한다.
 const NH_BASE = "https://api.nhplug.com:8443";
+const NH_WS_BASE = "wss://api.nhplug.com:7070";
 let _nhTokenCache = { token: null, exp: 0 };
 
 async function nhToken(env, force) {
@@ -342,6 +442,68 @@ async function fetchNHOverseas(ticker, env) {
     ts: Date.now(),
     raw,
   };
+}
+
+// 국내 실시간체결가(WebSocket). 서버 소켓(client용 WebSocketPair 쪽)에 정규화된 틱만 보내고
+// access_token 은 워커 밖으로 절대 내보내지 않는다. tickers 는 6자리 KRX 코드만.
+async function relayNH(server, tickers, env) {
+  if (!env || !env.NH_APP_KEY || !env.NH_APP_SECRET) {
+    server.send(JSON.stringify({ type: "error", detail: "NH_APP_KEY/NH_APP_SECRET 미설정" }));
+    server.close(1011, "no credentials");
+    return;
+  }
+  if (!tickers.length) {
+    server.close(1008, "tickers required");
+    return;
+  }
+
+  const token = await nhToken(env);
+  const upstream = new WebSocket(`${NH_WS_BASE}/websocket`);
+  await new Promise((resolve, reject) => {
+    upstream.addEventListener("open", resolve, { once: true });
+    upstream.addEventListener("error", () => reject(new Error("nhplug ws connect 실패")), { once: true });
+  });
+
+  for (const t of tickers) {
+    upstream.send(JSON.stringify({ header: { token, tr_type: "1" }, body: { tr_cd: "oc", tr_key: t } }));
+  }
+
+  upstream.addEventListener("message", (ev) => {
+    let msg;
+    try {
+      msg = JSON.parse(typeof ev.data === "string" ? ev.data : "");
+    } catch (_) {
+      return;
+    }
+    const header = msg && msg.header;
+    if (header && header.rsp_cd) {
+      // 구독 등록 ack — 실패한 것만 클라이언트에 알림
+      if (header.rsp_cd !== "00000") {
+        try { server.send(JSON.stringify({ type: "error", detail: msg })); } catch (_) {}
+      }
+      return;
+    }
+    const tick = normalizeTick(msg && msg.body);
+    if (tick) {
+      try { server.send(JSON.stringify({ type: "tick", ...tick })); } catch (_) {}
+    }
+  });
+  upstream.addEventListener("close", () => { try { server.close(1011, "nhplug ws closed"); } catch (_) {} });
+  upstream.addEventListener("error", () => { try { server.close(1011, "nhplug ws error"); } catch (_) {} });
+  server.addEventListener("close", () => { try { upstream.close(); } catch (_) {} });
+}
+
+// oc 채널 body 필드명이 공식 문서에 없어 REST currentPrice(Output_0)와 같은 이름을
+// 우선 시도하고, 흔한 대안 필드명까지 방어적으로 폴백한다.
+function normalizeTick(o) {
+  if (!o) return null;
+  const ticker = o.iem_cd || o.code || o.tr_key;
+  const price = num(o.stck_prpr ?? o.prpr ?? o.trdprc ?? o.price ?? o.cntg_prc);
+  if (!ticker || price == null) return null;
+  const prevClose = num(o.stck_prdy_clpr ?? o.prdy_clpr ?? o.base_prc);
+  const changePct =
+    num(o.prdy_ctrt) ?? (prevClose ? round(((price - prevClose) / prevClose) * 100, 2) : null);
+  return { ticker, price, prevClose, changePct, ts: Date.now() };
 }
 
 // ── 종목 검색 (네이버 자동완성) ─────────────────────────────────────────
