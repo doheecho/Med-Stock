@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T09:34:36+00:00",
+  "updated_at": "2026-09-11T12:19:47+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 488409.0,
@@ -24,7 +24,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 472989,
+      "target": 477239,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -36,7 +36,7 @@
     },
     {
       "firm": "야후 하단",
-      "target": 210000,
+      "target": 290000,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     }

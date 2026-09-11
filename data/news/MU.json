@@ -1,9 +1,33 @@
 {
-  "updated_at": "2026-09-11T09:34:45+00:00",
+  "updated_at": "2026-09-11T12:19:56+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Micron Stock in Focus -- Unveils Massive Employee Rewards After Record Profits",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-focus-unveils-massive-121339678.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-11T12:13:39Z"
+    },
+    {
+      "title": "Micron offers Taiwan workers up to 68-month bonuses as strike threat looms",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-offers-taiwan-workers-68-115655223.html",
+      "source": "Investing.com",
+      "date": "2026-09-11T11:56:55Z"
+    },
+    {
+      "title": "Social Buzz: Wallstreetbets Stocks Mixed Premarket Friday; Oracle to Rise, Adobe to Fall",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mixed-103802922.html",
+      "source": "MT Newswires",
+      "date": "2026-09-11T10:38:02Z"
+    },
+    {
+      "title": "These 2 Hardware Leaders Will Cash In on the Next Data Center Memory Crunch",
+      "url": "https://www.fool.com/investing/2026/09/11/these-2-hardware-leaders-will-cash-in-on-the-next/",
+      "source": "Motley Fool",
+      "date": "2026-09-11T09:50:00Z"
+    },
     {
       "title": "Nasdaq, Dow, S&P 500 Futures Rise After 4-Day Market Slide As CPI Looms Large: ORCL, ADBE, MU, TSLA, RKLB, IBRX, HOOD, GME In Focus",
       "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-sp500-futures-rise-after-4-day-market-slide-as-cpi-looms-large-orcl-adbe-mu-tsla-rklb-ibrx-hood-gme-in-focus/cZtXONwRBGW",
@@ -39,30 +63,6 @@
       "url": "https://www.fool.com/investing/2026/09/11/why-micron-stock-just-sank/",
       "source": "Motley Fool",
       "date": "2026-09-11T04:54:13Z"
-    },
-    {
-      "title": "Micron Is Down 19% From Its High. History Suggests a $5,000 Investment Today Could Be Worth This Much by 2030.",
-      "url": "https://www.fool.com/investing/2026/09/10/micron-is-down-16-from-its-high-history-suggests-a/",
-      "source": "Motley Fool",
-      "date": "2026-09-10T23:01:00Z"
-    },
-    {
-      "title": "Semiconductors Stocks Q2 Highlights: Micron (NASDAQ:MU)",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductors-stocks-q2-highlights-micron-202504233.html",
-      "source": "StockStory",
-      "date": "2026-09-10T20:25:04Z"
-    },
-    {
-      "title": "S&P 500 ends down as Treasury yields rise and traders fret about inflation",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-futures-attempt-113102414.html",
-      "source": "Reuters",
-      "date": "2026-09-10T20:16:24Z"
-    },
-    {
-      "title": "Micron Drops 4.2% While China's AI Chips Reveal Its Pricing Power",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-drops-4-2-while-184028602.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-10T18:40:28Z"
     }
   ]
 }

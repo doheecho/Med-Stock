@@ -1,68 +1,32 @@
 {
-  "updated_at": "2026-09-11T09:34:43+00:00",
+  "updated_at": "2026-09-11T12:19:54+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "“삼성전자, 성장판 더 커진다…HBM 점유율 40% 눈앞”",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQckNzeXVRalRyWjBpQm1lNzAxYlFtLUlxTldfNFNEU1k3Wmo3aEdNUzVHSjI5bUtRQndDcTIwNHQ2Nzd0Qll6bUVqU1RnOVF2eTFMdFNRcHRfODRVSUd5bVpsc2J5X3FQdlhQZF9QTHNPN0ZBQzYzaUp3aThTOVh0VA?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Fri, 11 Sep 2026 04:27:24 GMT"
-    },
-    {
-      "title": "'60만전자' 시나리오 더 세졌다…HBM 40%에 파운드리까지 '부활'",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE03VXFsRFZkdlZCTlludEstOXNBVmRYNWdtakJOT0FrX0hlbUZGWU9xZnp5cXY2QTk4WVJkZVhqc3A0by1ZaGpCS0k0RjRtUE0?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 11 Sep 2026 05:30:00 GMT"
-    },
-    {
       "title": "삼성전자 급락에도 \"60만전자 간다\"…'역대급 잭팟' 시나리오 근거는",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10UzFmWkhySE5Dbm9fN3A4d1RrRTJLS0E2dG5iMGwzaE1wbXpORFdTRWVBVVJoNy1UaFNQRkZkdDl6bHlROHBQdjlqTE5ldFk?oc=5",
       "source": "v.daum.net",
-      "date": "Fri, 11 Sep 2026 06:48:51 GMT"
+      "date": "Fri, 11 Sep 2026 06:48:00 GMT"
     },
     {
-      "title": "삼성전자 '월세 꼼수' 논란...줄해고 위기? [앵커리포트]",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE56aHp6Rzk0ZURMZm82TUhJZXpZSTE3djlWczBhdUdFUWk5VlFrTnlNUmp6Qm5kRF9PQXpFTkYwcEhFMzNka2otSVJPcVdDSjY5YkplcnRQei1FNGgwaVE?oc=5",
-      "source": "YTN",
-      "date": "Thu, 10 Sep 2026 09:10:00 GMT"
+      "title": "“삼성전자 HBM, 더 크게 터진다”…'역대급' 증권가 파격 전망 나왔다",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9IN2tSZnhWVDdzdFY5bGdmVlBxOWFWOFRXbzJpa3hqYmpEdG56ZlR0ZkV4dWRzcVdnNlVIaFVxRUY2X2JRdzR5OTB5dkFjUQ?oc=5",
+      "source": "전자신문",
+      "date": "Fri, 11 Sep 2026 12:08:40 GMT"
     },
     {
-      "title": "삼성전자 직원 313명 '전보 무효 확인 소송' 제기 \"설명 의무 미이행\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8ybHhFNjZQQ01HdjVFSG55TEJ3ZFdJUS1scWpMOVNpcXJWODBiQmJQOEVrV3dOSEhzSFNUbjVuWVBxMWNGVU00QmR0bWsyQVhGYmNEMzh1dW5SUW1XSXFxNQ?oc=5",
-      "source": "아시아경제",
-      "date": "Fri, 11 Sep 2026 09:17:41 GMT"
+      "title": "'삼성전자, 드디어 터지나' 들썩…증권가서 '파격 전망' 나왔다 [분석+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oSEdMT3BzNnBVSUxfcTU1U1d1ZUZ1WlJCSHFWNmdvbGRZWFhZd29zaHVsQ1B4a0piYTdfRzdMQjB1eDE0cVlaUEpHQU1NVVFkTWF1bV9JTkdwUQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 10 Sep 2026 23:06:15 GMT"
     },
     {
-      "title": "\"설명 없이 부서 옮겼다\"…삼성전자 직원 313명, 사측 상대 소송 제기",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzVUdwVjlqbTFzbVFHQnRJNXVzX3Z5XzFhMUdCTFNaV240bk50TkxuOUpuazhlbnNoLVRxdF9aWHVnc2dBVWdfamVsUVh3QlBtcEVsYncxQzBPQUZBNHN2dNIBeEFVX3lxTE5KbG5pUkFIMXBlaUd0SGV6ZWJZTWUxSFR5YUJZdE9uZWpjN3c3NUdUdFNqM3BOXzdWdVBOS1RTSXRtOGFsTURKbnBxQ3V1S2c3ZkpFcWRjcDRrRzY1YUNFUEdtWmMzcUYwLW5wYlVUdWg2bzVGb0hQZA?oc=5",
-      "source": "뉴시스",
-      "date": "Fri, 11 Sep 2026 07:26:12 GMT"
-    },
-    {
-      "title": "삼성전자 직원 313명, 'PKG 부당 전보' 무효 소 제기",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtVjQ0U29qX2RjYjhaYUg0UjVSNEVXR3kwenNGdFJ0Q1hNRE9Od2Fjb3dPenZGeHJBalFSbnIwOWw4NzN2dnF6THRkYmd3T3FoQ0dKR3NLNDZFcXNxOUxQdVBiSGxEYjFnWGc?oc=5",
-      "source": "뉴스웨이",
-      "date": "Fri, 11 Sep 2026 08:03:04 GMT"
-    },
-    {
-      "title": "삼성전자 '성과급 투쟁' 조끼‥\"노조위원장 장인 업체서 샀다\"",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5XdnhNNkd2MERWNWFkeEtLcUtSWndtNEhJczV3TlFUQTV6Qmprc0dRdThZYmNBWmVwQkVpTDV6WHJLa2x6emE0UFUxM1BFN1Fnekh0SmZTNlJ6U29TTDV6VEZycjl5ZW9PYmVKaWc5NlctaU5rSHpOQdIBeEFVX3lxTE9SZG40LWY4TnM5ejNLNDR1anNFWkFuRmtUaGpXM3FCQzQ0c3U3bkExZ2hmSHBGcEo2Z2JYMlNsTjB5OFdyRDZLQVZzai0tY3N3NXNvVkVibncxb3N4TkN6b3Z2d1RDQ1I5cW4yWmx5UEFScl8zNVFGTg?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Wed, 09 Sep 2026 11:24:28 GMT"
-    },
-    {
-      "title": "삼성전자 최대 노조 내분 점입가경... 이번엔 최승호 리조트 계약 배임 논란",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzYU1BbVZGalo0d2FFQ2YyUnZwRk02c2VhdTRJRGNZa3kxek41U3dXaGhNSGxiZzc2WHFjajJXNWxnampJcS1WMXJtaGhIbmc?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 11 Sep 2026 08:35:00 GMT"
-    },
-    {
-      "title": "DS·DX 교섭 분리에 위원장 비위·성과급 법적공방까지, 삼성전자 노노갈등 '자승자박' 길 가나",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nUDdMTmtMUlVFMW5QVXZUUnRLLWZ0OHQyR0pjRkVWUDdYTjF5cXBDYkRLbnNZTUs1MWlLMVN1ODZCTkczOVVEMFl2VHdha18tbHZWREVkdGVYcS1SZ3ZJTFRfNWF0NGtBMDNrdkNfYTdoZE0?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Fri, 11 Sep 2026 06:47:30 GMT"
+      "title": "'월세 70만원' 핑계로 직원 자르겠다는 삼성전자…변호사들 “절대 자진퇴사 말라”",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80SlRMdGFrSTY0blo0UU1JbnY1bElIREVkbGhfTlNBSEtkS2NQeHVTaUIwYmlDOFpjTEM2SWM5WGNzd0Fvdi1CaUt4ZHZHU251b2FtZkgwcmg0UzRvM0p1OFpGRUpVUXV4QXNsN2xaRG83cWRlNTJLZzBvUThPMWc?oc=5",
+      "source": "땅집고",
+      "date": "Thu, 10 Sep 2026 21:00:00 GMT"
     },
     {
       "title": "배당, 기금에 전기요금까지…모두의 돈주머니 된 삼성전자",
@@ -71,10 +35,10 @@
       "date": "Wed, 09 Sep 2026 22:00:33 GMT"
     },
     {
-      "title": "삼성 'SW 네트워크'·LG 'AI-특화망'…차세대 네트워크 경쟁",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1YQWRzTy1KM29UVFRBS3RYSWxiX05PLTU3Z3lfVlRnYVNHT21tSWF1RURnY2sycVNuZlEwM2ExWE85T3JsUFl3TjZ3eEJMUQ?oc=5",
-      "source": "전자신문",
-      "date": "Fri, 11 Sep 2026 06:02:06 GMT"
+      "title": "삼성전자 '월세 꼼수' 논란...줄해고 위기? [앵커리포트]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE56aHp6Rzk0ZURMZm82TUhJZXpZSTE3djlWczBhdUdFUWk5VlFrTnlNUmp6Qm5kRF9PQXpFTkYwcEhFMzNka2otSVJPcVdDSjY5YkplcnRQei1FNGgwaVE?oc=5",
+      "source": "YTN",
+      "date": "Thu, 10 Sep 2026 09:10:00 GMT"
     },
     {
       "title": "세계 1위 탈환한 삼성전자 스마트폰, 사상 첫 적자에 속앓이",
@@ -93,6 +57,42 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBicWk1N0JabWNVQnEzODFpNGJIN2Z3b1ZYNFp6LUtQMDR1bjlDa00yVXlfdFJPbFR1REJrZjBXRjU2aWtZVFhuMFBHVi15NzhfX1HSAVNBVV95cUxPYlRBNXhZSzlNUlB1OFp2aThMSmh5dzR5VXcyVVRtR0xsOVpKZTRMU2htWDFCbXY1cXo5VkpkRGppNnF2c09HRWhia1dfV0lPVHhoUQ?oc=5",
       "source": "서울경제",
       "date": "Fri, 11 Sep 2026 00:30:45 GMT"
+    },
+    {
+      "title": "[특징주] 미 기술주 삭풍에 삼성전자 3.8% 하락…하이닉스도 4%↓",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhQUgwcTYxTXRXOXp3dGJiRUI1blpXaldBSFFhT1ZhLUZqUFNYQk5lSnJmcjRtbEZyOXR0LThuVnNqam5UeW85X2Q2ZzVtZTFaVTFGNm9OenM0Vk3SAWBBVV95cUxONDBNSENGMlgtcmlaMFI1c1phZERxS2QyWEpvYkNYSGZubG1kUl9kcndJc3E1WUhFdGxybUhTX0xETlZ2YnFfZmlMV3V2TUNjRDJLTjVjYUNzZU1XNzhLOVI?oc=5",
+      "source": "연합뉴스",
+      "date": "Fri, 11 Sep 2026 00:18:47 GMT"
+    },
+    {
+      "title": "삼성전자 직원 313명, 사측 상대 '전보 무효 확인 소송' 제기",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzVUdwVjlqbTFzbVFHQnRJNXVzX3Z5XzFhMUdCTFNaV240bk50TkxuOUpuazhlbnNoLVRxdF9aWHVnc2dBVWdfamVsUVh3QlBtcEVsYncxQzBPQUZBNHN2dNIBeEFVX3lxTE5KbG5pUkFIMXBlaUd0SGV6ZWJZTWUxSFR5YUJZdE9uZWpjN3c3NUdUdFNqM3BOXzdWdVBOS1RTSXRtOGFsTURKbnBxQ3V1S2c3ZkpFcWRjcDRrRzY1YUNFUEdtWmMzcUYwLW5wYlVUdWg2bzVGb0hQZA?oc=5",
+      "source": "뉴시스",
+      "date": "Fri, 11 Sep 2026 07:26:12 GMT"
+    },
+    {
+      "title": "삼성전자 직원 313명 '전보 무효 확인 소송' 제기 \"설명 의무 미이행\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8ybHhFNjZQQ01HdjVFSG55TEJ3ZFdJUS1scWpMOVNpcXJWODBiQmJQOEVrV3dOSEhzSFNUbjVuWVBxMWNGVU00QmR0bWsyQVhGYmNEMzh1dW5SUW1XSXFxNQ?oc=5",
+      "source": "아시아경제",
+      "date": "Fri, 11 Sep 2026 09:17:41 GMT"
+    },
+    {
+      "title": "삼성전자 직원 313명, 회사 상대 ‘전보 무효 확인 소송’ 제기",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ON0JoQjFqTkR4ZFYxc2MtYmpNXzk3aS1YeUZBUlVxQThpUnNzUDUwMFNzVkNUX05CaDVXQVJ5NzlKb3I0b0ZUODVhemlaTG1hUWNfNg?oc=5",
+      "source": "이투데이",
+      "date": "Fri, 11 Sep 2026 11:44:00 GMT"
+    },
+    {
+      "title": "삼성전자 노하우 접목한 공공나노팹…“혁신 모델 전국 확산”",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE51Vm9yRVp6Y19pVFZ1RDVUenotU0huYlFmNWU2RTRtRlczOUVMWEVZVkMzSndQdzJ0U3Z5Q0QydVlqM0xPR3FvVEFGdjRPSWx2S0HSAVNBVV95cUxQck5uRmRlSWo4dUJrcXQ1dHZ3ek9PRUR3SnlXQWpmMWlBM0dla3QyeFQtSGdzM3ZQZ1NuWUdPSXVaNTBaRHhlYWc2TFlnaG51LW9mMA?oc=5",
+      "source": "서울경제",
+      "date": "Fri, 11 Sep 2026 04:30:00 GMT"
+    },
+    {
+      "title": "삼성전자 '반도체 팹 노하우' 공공나노팹에 심는다",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRSFJIeV9pWUEwLURwSWJpblhhc01rUUdYRFplS0lqZk5XdHdrNmlQR3JwZ1BQeE9LbWpXTFFYRXRLcmhuRGNTZWhXN0xQQ3h4NHNCY2RaVXJFMXPSAWBBVV95cUxNREY2QzdhMHgta3JSa3AwZVpodmNKQUdyZTZtMy1DWFlYczNVUTBna2ZNYjJwdlprLU5wWTBNRTUyMjUtbTVYcFJabmtzZks3R0Voc2RqR1FUb0tObUUzcjI?oc=5",
+      "source": "연합뉴스",
+      "date": "Fri, 11 Sep 2026 04:30:02 GMT"
     }
   ]
 }
