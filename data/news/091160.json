@@ -1,21 +1,9 @@
 {
-  "updated_at": "2026-09-10T09:37:37+00:00",
+  "updated_at": "2026-09-11T00:03:35+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
-    {
-      "title": "삼전닉스 위에 '반도체 장비주'…ETF 한 달 수익률 30% 뛰었다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lY2QtUVRDLXNvMmlacnZKY1hRS3RvU1FsNjBOaDBwWmpjYTdpNFg5TGI2RS1Ga2hqM0ZLMTY5NHBYVTlSZFRLVzVnc3pGQQ?oc=5",
-      "source": "전자신문",
-      "date": "Thu, 10 Sep 2026 07:04:38 GMT"
-    },
-    {
-      "title": "ETF 수익률 상위 휩쓴 반도체…삼전닉스보다 '장비주' 날았다",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pVkZtdWlBdk54QWRIaGlVVG5qemYtQjI1d0c0OUc5Qk0yZzlTWFlsNzE1dTUzTi1YdVdFZGFQY21zbFV3eDZtdWlyZUROa3c3UW5wVEQ0cV9ZN3JjekFIeFFIRknSAWRBVV95cUxNaVZGbXVpQXZOeEFkSGhpVVRuanpmLUIyNXdHNDlHOUJNMmc5U1hZbDcxNXU1M04tWHVXRWRhUGNtc2xVd3g2bXVpcmVETmt3N1FucFRENHFfWTdyY3pBSHhRSEZJ?oc=5",
-      "source": "뉴스1",
-      "date": "Wed, 09 Sep 2026 21:00:00 GMT"
-    },
     {
       "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
@@ -29,16 +17,22 @@
       "date": "Tue, 08 Sep 2026 01:23:58 GMT"
     },
     {
-      "title": "반도체 ETF 수익률 ‘고공행진’…개인은 미국 지수로 이동",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tZFYzenhsZW8yOGxUNHVVZ3pqdTM2Zk43dmdsSnM5ZWZsYnJEVW9jaXRINGk0SV9yRjFVNThaMld2MVZUOHZmZVRJNUFyTVY1bEEzTkNBZU4zb2gzVU9lQ1hpQVRoQ01jNWk3dEFkaHhvcXly0gF0QVVfeXFMTS1kVjN6eGxlbzI4bFQ0dVVnemp1MzZmTjd2Z2xKczllZmxickRVb2NpdEg0aTRJX3JGMVU1OFoyV3YxVlQ4dmZlVEk1QXJNVjVsQTNOQ0FlTjNvaDNVT2VDWGlBVGhDTWM1aTd0QWRoeG9xeXI?oc=5",
-      "source": "산경투데이",
-      "date": "Tue, 08 Sep 2026 00:40:40 GMT"
+      "title": "ETF 수익률 상위 휩쓴 반도체…삼전닉스보다 '장비주' 날았다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pVkZtdWlBdk54QWRIaGlVVG5qemYtQjI1d0c0OUc5Qk0yZzlTWFlsNzE1dTUzTi1YdVdFZGFQY21zbFV3eDZtdWlyZUROa3c3UW5wVEQ0cV9ZN3JjekFIeFFIRknSAWRBVV95cUxNaVZGbXVpQXZOeEFkSGhpVVRuanpmLUIyNXdHNDlHOUJNMmc5U1hZbDcxNXU1M04tWHVXRWRhUGNtc2xVd3g2bXVpcmVETmt3N1FucFRENHFfWTdyY3pBSHhRSEZJ?oc=5",
+      "source": "뉴스1",
+      "date": "Wed, 09 Sep 2026 21:00:00 GMT"
     },
     {
       "title": "반도체 사던 '개미', 美 대표지수로…ETF 자금 이동",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FTTNQcWRldm9mWU90T01aWFU0Q1NTVUphNnc0d2tGOWp5SkxDZlo0WnVUUWQwOVR5QjUyRkJ5Nld3Nlh6OUdrYzVueHViNXZ3a1NHYlF3SEIyd1Zn?oc=5",
       "source": "뉴스핌",
       "date": "Mon, 07 Sep 2026 06:59:00 GMT"
+    },
+    {
+      "title": "반도체 못 믿는 개미…안정형 ETF ‘줄매수’",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5QcUgtN2JGdXJMQ2wxR2p1Y1JLV0hQVWV0SWR4TTV3UklGb3hwV3FGaXlaRmYxM2x4RWpfWTNSeW0ybmZWSENlSFExTHRnOEdLYmd1Qw?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 08 Sep 2026 04:54:37 GMT"
     },
     {
       "title": "반도체 ETF 수익률 날았지만…개인은 ‘안전자산’으로",
@@ -60,14 +54,14 @@
     },
     {
       "title": "[월간 ETF] 8月, 반도체 쏠림 완화되나 ‘TIGER 2차전지TOP10레버리지’ 월간 수익률 톱...화장품 ETF도 강세 보여",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WOWFhNVpuZmp1WWlXVzgzSGdMMXZaM0wtMnkzbTVNZUM3UFd6SGxHcVpwblNNdVlsM3VqUFdsVjVXeUtqSndzWE1XeVUwdi1SLTZz?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9QOXpIQ2R4TGp5S29UM24wc3VBWW9WQlhVb2RIa2pnR3g4bE5ZTE1fRWxYUTBuVTc4OWNjLXFvLTVqUzROMkxDSmFDQ3kzSUJ2RnhicA?oc=5",
       "source": "더밸류뉴스",
       "date": "Sun, 06 Sep 2026 23:07:10 GMT"
     },
     {
       "title": "변동성에 떠는 개미들…안정형 ETF '쏠림'",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBrWHJzUFBfQ2lkZmRzWmNUNXN4TDlhaXFmRXB3TnUxeVoyQ2JmSFJKd3hYN2hoMW1MVXBNLTlyZEc4WFl3YUQ0Vm1wdHdqb05oUjd30gFYQVVfeXFMUGltdUl2eVdyWFRwcnI2Z2VPMU1FRFNiRXFmZm56YXVBQTZ6T1dWZlBTbGdDalRZbDNwXzJFSE9DbXZOOUZROGR3T3pncUxlWWRFSHZQenJDZQ?oc=5",
-      "source": "SBS Biz",
+      "source": "biz.sbs.co.kr",
       "date": "Tue, 08 Sep 2026 01:22:00 GMT"
     },
     {
@@ -85,7 +79,7 @@
     {
       "title": "반도체 ETF 수익률 뛰었지만...개인은 미국 지수·안정형 상품 담았다",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CY19TcVhQVHpCcmctb1ZTWElVeTRNMDJCR3ZEUFdtNlpqZ3F5bDZncENNRG5RRF9BNEtzaXlvM1JfZjFQdHVCTEZIaUtobWc2MlI1dTl5a3VVVnB0OFdtMnBmWlpkdlp1aUUw0gFvQVVfeXFMTm1HQ0JyanphNjRUbmdHbnZmQlBqTjBYUnZ5cTJ6dVRKT1pyYkdiVHd5R2h3aXViQU5aT1h3TkM1dWZVQW9WWUlrSjk2d1NFNU1XS2R1QUJ5a0xkSUgxN0RNR2dNbmU4LU4tTEpvMml3?oc=5",
-      "source": "thepublic.kr",
+      "source": "더퍼블릭",
       "date": "Tue, 08 Sep 2026 02:15:14 GMT"
     },
     {
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQLXJPODlnc1ZuT2E0Ym9YVTFlVEdHUFNKV0JLQjAxbVRuanc4UEs2Wkw0Y3NRb3o5LUNsaUJMTXVUdHdwV1A0ZTU0MGlvVF93UGZDTHZEWk52QkJqSTBrOWxaNjYwcUl3NkpZSQ?oc=5",
       "source": "센머니",
       "date": "Mon, 07 Sep 2026 05:15:00 GMT"
+    },
+    {
+      "title": "‘반도체ETF 수익률 급등’에도...개인투자자 “그래도 안정형”",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BbjNfek1WMi0yR3JTUE5aSTZnNkxSc003d2RPQUtSaWZQd3hUekZXaGIxUHFnOG1IaDllRUFKSWVZb2R1c1JQNXZ4dC1FcXVHQkdKNzdTajR2NHZYVXJQRGpB?oc=5",
+      "source": "cwn.kr",
+      "date": "Tue, 08 Sep 2026 01:10:00 GMT"
     }
   ]
 }

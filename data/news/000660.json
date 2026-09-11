@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-09-10T09:37:33+00:00",
+  "updated_at": "2026-09-11T00:03:31+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "SK하이닉스 미국 ADR 7% 폭등하며 최고가 경신",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZXFldGt4WlowOUVRUVpFZVE0QTBUWlBsS3dvd3puOU5vVkFfQzhIazRYX005cTVjdVN5cWFmUkczamNDbjU3cVM0NkFGZHhONnBNa1BFTklrNndXUHZDWElVRGRSYXZZTktrSEZTRXFjMXZWZWplbUN4N3ZVcWtoN0p6a3J6ejIxTHIyWQ?oc=5",
+      "source": "science.ytn.co.kr",
+      "date": "Thu, 10 Sep 2026 02:02:23 GMT"
+    },
+    {
+      "title": "SK하이닉스 ADR, 7%대 급등 최고가 마감…코스피는 하락 출발",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uMi1QNG8xSkNuN3VyUWxVOUVLUHRhUzZIVVU4WEUzNnRrcVpJZGtyU0ZTeUl1VUVmSHc3djdWcGRubzNTaVRYTWpBaEV4RV9sV0d4VWlvemhkeHB6NzZVanpEWDdtMjdoZFI3WWpZQ0pzendVOFHSAWZBVV95cUxNVlZfSlUzekNnM0tVbEswWElnRVppc1hHNHFUNm1yRmYyY2dkODNwTFRhQXBnMDRmTWN6a05JNjRhb1c0QUdxZjFMVE1pLXFnQWdXZV9LSVQwWkh3UVlGTWlSRW9tenc?oc=5",
+      "source": "동아일보",
+      "date": "Thu, 10 Sep 2026 02:10:00 GMT"
+    },
+    {
+      "title": "본주보다 44% 비싸진 SK하이닉스 ADR…“250弗 간다”",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ybnl2VVlPOHU3bDBWcUI4blZUWk9pa1F5VUdqeDFlZVVsVXFoeEV6MkJiRk9ibFFMY2ZtbXlEaXF2dkQ5aV9jNmZsbWpZcVQxWmfSAVNBVV95cUxQMlNid1ZBeHVSOTlkWUNvSjVreEo0cU9jLUt5Y3JIa09GQ2ZqZnAwRXJFWGhfVVduc3d0cE5xZzM3dEd1UXY1UFRoWWZodEdNbVlqWQ?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 10 Sep 2026 08:57:11 GMT"
+    },
     {
       "title": "월가 \"마이크론 좋지만 SK하이닉스는 더 강력… AI 메모리 승자 하이닉스\"",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOGNNaWF0a2tza1JDNGdwYWVVNmt2cTVuNlNaeXRRekxxOThqOEpoekVxT2huOGlhdC1CLUlueFY0dTQ1RXdXVUg1YWs2NDUtcUxCQVJ0Y3d0SjZWdXBBb1pleWVLMWdDZVhJa21QWE5VZWxkeDNQT1lmdWR0eU5vclNkYkhqWVhu?oc=5",
@@ -11,22 +29,22 @@
       "date": "Wed, 09 Sep 2026 21:07:51 GMT"
     },
     {
-      "title": "상장 후 최고가 찍었다…SK하이닉스 ADR 7% 급등, 장중 199.87달러",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1mdFJNamZfRUl6WlpDaHdxdVB5YVI5YlhSd1lvcHJGbUNxTG95cFFmeXJGOFV1TE9TMVBteTF0c3FhMEI0bVVrRHByR2xUMWNYdVE?oc=5",
-      "source": "매일경제",
-      "date": "Thu, 10 Sep 2026 00:03:31 GMT"
+      "title": "[AI 대전환 리딩 전략] SK하이닉스, HBF로 '풀스택 전략' 강화",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9yREJ3MzctMXUtZ2U5NVFvZmV4NFVBT3lqR3l3YWxfNDI4Vlgtek5NV2N5d25RcU5GREdZbzM1SUlmd1J2MGc?oc=5",
+      "source": "v.daum.net",
+      "date": "Thu, 10 Sep 2026 01:16:55 GMT"
     },
     {
-      "title": "SK하이닉스 ADR 7% 급등…상장 후 최고가",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zaFRKdDZkUjdQanl5RVlmN0NEM3pFZHVlVDBpUWhUODFHcmFldXM1Y2pzbjJsdU56ZlhvSHR1a3JnZzdJdUlvSElQdWt4UQ?oc=5",
-      "source": "전자신문",
-      "date": "Thu, 10 Sep 2026 00:07:15 GMT"
+      "title": "메모리반도체 호황 2030년까지 지속 전망, 삼성전자 SK하이닉스 가격 인상 '절제'가 관건",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NSDROakVyQmhjNnFDZzJDZF9jVkpIMU1uZFZlc3cta1V6MTFfTXBQSS1aeWxxM2YzbFc3dEJ5c2V5SVRYN09jZ3JBSTJmQVhZV3dtUzRXWkowX0N4NUNpRnJpSDFNazhxZHU4dVg0QlJHREU?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 10 Sep 2026 01:10:59 GMT"
     },
     {
-      "title": "본주보다 44% 비싸진 SK하이닉스 ADR…“250弗 간다”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ybnl2VVlPOHU3bDBWcUI4blZUWk9pa1F5VUdqeDFlZVVsVXFoeEV6MkJiRk9ibFFMY2ZtbXlEaXF2dkQ5aV9jNmZsbWpZcVQxWmfSAVNBVV95cUxQMlNid1ZBeHVSOTlkWUNvSjVreEo0cU9jLUt5Y3JIa09GQ2ZqZnAwRXJFWGhfVVduc3d0cE5xZzM3dEd1UXY1UFRoWWZodEdNbVlqWQ?oc=5",
-      "source": "서울경제",
-      "date": "Thu, 10 Sep 2026 08:57:11 GMT"
+      "title": "이천시·청주시·SK하이닉스, 고향사랑기부 상생 협약",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZZ1FXUm9Gajg4bThZS3pNQUZEcEt5WkVVTGxndWNSQU9rVWxqWk9LY25WY3Z1ZkZEV2xjZ3JQSDNLOFBnTVFLLTlBUUQ4aGVMbnFHcXBwSWxLZzA?oc=5",
+      "source": "KBS 뉴스",
+      "date": "Thu, 10 Sep 2026 22:45:00 GMT"
     },
     {
       "title": "이천시, SK하이닉스·청주시 고향사랑기부 협약…‘전국 최초’ 상호 기부 체결",
@@ -36,15 +54,21 @@
     },
     {
       "title": "이천·청주시, SK하이닉스 매개로 고향사랑기부금 '교차 기부'",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84TzhOSUpBdTRNczZ1ODhEYmhNTjhVVElGbUJqeHhpUW5uWm56ajlSRndnc1NiY2xEeEVKUUozdUFhcWZGRnFENDh0R3VDbjY2bmlmTzFCZnhhTjjSAWBBVV95cUxORENsc2x1VEptNTVpam1hQ1FxenlUYlJsTmoySEJJUk51WU92RlhxNmp6bGpZTUZLRHJmeS1POUtfdWFjekRSSXIzRFJ0aGRKRVFrM2RqUWxXYzd6RTZ5T2Y?oc=5",
-      "source": "연합뉴스",
-      "date": "Thu, 10 Sep 2026 08:19:17 GMT"
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wNFlfYlRMQzRMS1pXME85ak14YlVKUlMwZXpWWFVZbFNMbUoyWHB2bjVrUDQtSVY5aWFvUGpEalA5N3NLdWp1bGxEVmhCdDQ?oc=5",
+      "source": "v.daum.net",
+      "date": "Thu, 10 Sep 2026 08:20:40 GMT"
     },
     {
-      "title": "청주·이천·SK하이닉스, 고향사랑기부로 상생 협력",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtVEZVbVBJRFpndDhEa1Exd3RCWkJEUmJ1NlhpQVBPYlY4WXRyenExSEplSDBWaWd4MjVnanRMWHFIeFlpbHNJeEh3NjdnVTg?oc=5",
+      "title": "[증시키워드] SK하이닉스 성과급 잠정합의·최태원 등판한 SK이노…삼성SDI는 보상체계 개편",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5nSjR5bzBveWV4TVVvRWlPenBOaVJCdWRfLXplQzhJR1BzQm9rNXdSOVBqeDlpNHhqeWtMdUJCMkk1WVJEcnRubnRlcXRubmM?oc=5",
       "source": "v.daum.net",
-      "date": "Thu, 10 Sep 2026 08:28:07 GMT"
+      "date": "Thu, 10 Sep 2026 23:01:04 GMT"
+    },
+    {
+      "title": "중국 CXMT, 2분기 이익률 82%…삼성전자·SK하이닉스 다 제쳤다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Ib1Y5WlljYzRranRreExUM0t6ZHdlaFI5Z0hqYXFGS0wyZzdNZDJ5U3c1Q3ctYU5LWnpnc1g4MUVrRWktNS1PUlg0b3VmX1FtQTI1Y001bGd3VHVRanIxamxqSVBXdU1IZUtpeDd5Nm0weUk?oc=5",
+      "source": "마켓인",
+      "date": "Thu, 10 Sep 2026 22:57:10 GMT"
     },
     {
       "title": "SK스퀘어에 가로막힌 하이닉스 낙숫물…우회로 된 솔리다임",
@@ -54,45 +78,21 @@
     },
     {
       "title": "SK하이닉스, 3.5% 급등 마감…삼성전자는 상승분 반납(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IaEFsMUVvNmQ4UUY4X3pOUWF6VGVCMEJ0Nmd0b19YN202UmNiZ0V0d05ZeWNveWY1UlRldWtDQmh3WFJQS3Z2TWZtMUQzY3FRSUVuT1FXeE0wOE3SAWBBVV95cUxPNnN1N2Fydkp6bTJyRS10QUdMcDZadFhiS0Q2OWo1TU9uaE1ISjNkb0pWcmFRRmdETGFSa2RETmo4NDFvbWNtcGp6U2RRaEhuS1RORmVTTi1DQnJFSXBSTnQ?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 09 Sep 2026 07:02:17 GMT"
-    },
-    {
-      "title": "SK하이닉스, 3.5% 급등 마감…삼성전자는 상승분 반납(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YQXpCUXlYeG81YWh5SHMzTnpwMmctWktjVjVKYmRmNTdMZ2tSd3lCb3hKRUUtb1p6NjY3LVQ2R1pWSDJmVDVjR2xBY0c1Nlk?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE44UEE2ZlVmVHNKLTJoTGpyREp1WHJyN3FjRkMzbi1ITDdXTDVuZDBRWE5SYWFKeUdOelplaFNLTi1UaUhfREE?oc=5",
       "source": "v.daum.net",
       "date": "Wed, 09 Sep 2026 07:03:56 GMT"
     },
     {
-      "title": "티에스이, 삼성전자·SK하이닉스 HBM4·4E 프로브카드 공급 가속 페달",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RdlVYMXZWQVBXeEg4aFdNd1V0U0FvQWVlNXNQZGFtN1p3VTRRWTdkZlVMdmQzSTcxYTJUdG53S084b0kyTldVc1FaTUpYNEtSMjZ1Z0lBWkJPVWI4OWl0SmNXNm5IYUhJNGxuNXFjTkdXUdIBdkFVX3lxTFA4RTlfOGc3SHg3aDlvQnA3YW5ORDRiUlhReHdSVndDclBoRUVVdkdsaW56RHowdk1KVjN1cG5fakZuSGVjdG4tOEdBelRwWWNfZnZfZE8yTFMzTUlYci0yMG5KRG5PRHhHc0x3Wnl2SGc1WnhpaGc?oc=5",
-      "source": "시사저널e",
-      "date": "Thu, 10 Sep 2026 05:01:21 GMT"
-    },
-    {
-      "title": "SK하이닉스, 성과급 현금 50%·주식 선택권 확대…이번엔 노조 문턱 넘나",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9vcjUzYkp2YlJRMmhTcmZvaWo1STE2LWNnMDhab1l6cmxnWk9ucE91bVplVXluVXN0WmFwTTZ3aHZBdGpnRjktek5YQ2ZKanM?oc=5",
-      "source": "v.daum.net",
-      "date": "Thu, 10 Sep 2026 01:40:42 GMT"
-    },
-    {
-      "title": "‘채권시장 큰손’ 복귀…SK하이닉스, 3조 실탄 푼다 [시그널]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wNVRKeUc2OFc2NUhscWU5WGJ0NGNSOERlXzVtRlZPWUF0YXRnb3J4dUprNE1VeDUtNGNlQXNQbC11V2pFWWh1N1hUeVNNczdyVHfSAVNBVV95cUxOd3h3YjNWSHlYVFBaRl9qQmIyY0RiekVRdC1vVGdrUldQdEpjeWt6cU52ajNkMDdRRDlndDhqNEVsSUw4RG9mMzQ5cXVwNDgyWTJ5aw?oc=5",
+      "title": "美 증시 악재에 삼성전자·SK하이닉스 3% 하락 [마켓시그널]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5iUXBrZlJHNFpRV1drMWlxd1g0WldLTEFtZTJPVnIybndjNjVOUktJNC1EN1hzUkphcEJVYVBKZ3o2NDBQUEZNR1hYbXJwc2VISUHSAVNBVV95cUxPMDJoMi1PdGZiUlB5U190TVQ5VUZuWWpjdnhvMFFvX0VGWFVUNzY3bzVUTmpqdURUOW41RWZ6RmxXX3gzeUNFQ0NDdnNGRmpaRjhUSQ?oc=5",
       "source": "서울경제",
-      "date": "Thu, 10 Sep 2026 02:23:05 GMT"
+      "date": "Thu, 10 Sep 2026 23:29:36 GMT"
     },
     {
-      "title": "SK하이닉스, 3조 채권 투자 재개하나…신탁 대신 운용사 위탁",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1XWXppa09DOVRkUklRLXpJcF9UQ2RoTW5VQzNkWjcwUkZlSnpPNzdGdWYyQnhzOWI0a2xPLThrS2RRMXMwUUF3UE1POGtCTDA?oc=5",
-      "source": "v.daum.net",
-      "date": "Thu, 10 Sep 2026 01:12:00 GMT"
-    },
-    {
-      "title": "'3조' SK하이닉스 선택은 중장기 크레디트물…\"가장 효율적 방향으로 자금 운용\"",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13Si0taXN2NHlPUC1qSzRCRFVHUjVkVWJSOXpNUGpoMzBLTm1iclJzZWpFLU5KYVdvWkJyaGdjVWVGd3h5OFlVcjgxeEpjODl1Zzh1X0M1SXdvQUsxVkhvWFdjX1cyV0RsakpBMzhSblA?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 09 Sep 2026 07:19:37 GMT"
+      "title": "외국인 삼전·하이닉스 3.2조 팔았다…마이크론 4.7%↓·유가 107달러",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xckoybFB4d3RzQU9sNVFxMEY3Z052Z2lmVENMMU91blE5MGxYTU1sSTRueUl1VlEzY0JNaUt6VE9pa1ZCRTBkVGs2UzIyR1lUZ1htOHliMzZldnVVcDhZQW50N2VHanR6?oc=5",
+      "source": "녹색경제신문",
+      "date": "Thu, 10 Sep 2026 21:04:27 GMT"
     }
   ]
 }
