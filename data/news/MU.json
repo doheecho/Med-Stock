@@ -1,9 +1,45 @@
 {
-  "updated_at": "2026-09-11T00:03:32+00:00",
+  "updated_at": "2026-09-11T09:34:45+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Nasdaq, Dow, S&P 500 Futures Rise After 4-Day Market Slide As CPI Looms Large: ORCL, ADBE, MU, TSLA, RKLB, IBRX, HOOD, GME In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-sp500-futures-rise-after-4-day-market-slide-as-cpi-looms-large-orcl-adbe-mu-tsla-rklb-ibrx-hood-gme-in-focus/cZtXONwRBGW",
+      "source": "Stocktwits",
+      "date": "2026-09-11T08:33:52Z"
+    },
+    {
+      "title": "Andy Jassy Just Made a Move That Should Excite Micron and Broadcom Investors",
+      "url": "https://www.fool.com/investing/2026/09/11/andy-jassy-just-made-a-move-that-should-excite-mic/",
+      "source": "Motley Fool",
+      "date": "2026-09-11T08:23:00Z"
+    },
+    {
+      "title": "SK Hynix, Samsung Shares Dip In Korea After DeepSeek Debuts AI Tech That Uses Less Memory – Micron, SanDisk Hold Up",
+      "url": "https://stocktwits.com/news-articles/markets/equity/sk-hynix-samsung-shares-dip-in-korea-after-deep-seek-debuts-ai-tech-that-uses-less-memory-micron-san-disk-hold-up/cZtXBNqRBGe",
+      "source": "Stocktwits",
+      "date": "2026-09-11T07:18:11Z"
+    },
+    {
+      "title": "PLTR Stock Wins Whether We’re In An AI Bubble Or Not? Wall Street Analyst Explains Why",
+      "url": "https://stocktwits.com/news-articles/markets/equity/pltr-stock-wins-whether-we-re-in-an-ai-bubble-or-not-wall-street-analyst-explains-why/cZtXeu2RBGd",
+      "source": "Stocktwits",
+      "date": "2026-09-11T06:11:07Z"
+    },
+    {
+      "title": "The New Chip Rally Comes With a Warning Attached",
+      "url": "https://www.barrons.com/articles/new-chip-rally-warning-c35195a2?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-11T05:30:00Z"
+    },
+    {
+      "title": "Why Micron Stock Just Sank",
+      "url": "https://www.fool.com/investing/2026/09/11/why-micron-stock-just-sank/",
+      "source": "Motley Fool",
+      "date": "2026-09-11T04:54:13Z"
+    },
     {
       "title": "Micron Is Down 19% From Its High. History Suggests a $5,000 Investment Today Could Be Worth This Much by 2030.",
       "url": "https://www.fool.com/investing/2026/09/10/micron-is-down-16-from-its-high-history-suggests-a/",
@@ -27,42 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/micron-drops-4-2-while-184028602.html",
       "source": "GuruFocus.com",
       "date": "2026-09-10T18:40:28Z"
-    },
-    {
-      "title": "Not Nvidia, Not Palantir. This Might Be September's Most Important AI Infrastructure Stock.",
-      "url": "https://www.fool.com/investing/2026/09/10/not-nvidia-not-palantir-this-might-be-septembers-m/",
-      "source": "Motley Fool",
-      "date": "2026-09-10T18:24:00Z"
-    },
-    {
-      "title": "Micron's 662% Rally Just Created a Problem Wall Street Cannot Ignore",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-662-rally-created-very-181201774.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-10T18:12:01Z"
-    },
-    {
-      "title": "A $1 Trillion Micron Sounds Absurd. Then You See the 10-Fold Earnings Forecast.",
-      "url": "https://247wallst.com/investing/2026/09/10/a-1-trillion-micron-sounds-absurd-then-you-see-the-10-fold-earnings-forecast/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-10T17:00:41Z"
-    },
-    {
-      "title": "Micron Stock Slips as Intel-Backed Start-up Takes Aim at Memory-Chip Market",
-      "url": "https://www.barrons.com/articles/micron-stock-price-memory-chips-intel-e84cd499?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-10T15:10:00Z"
-    },
-    {
-      "title": "‘I Am the House Now,’ Bessent Warns — But Bond Traders Keep Raising Yields Anyway",
-      "url": "https://247wallst.com/investing/2026/09/10/i-am-the-house-now-bessent-warns-but-bond-traders-keep-raising-yields-anyway/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-10T15:09:14Z"
-    },
-    {
-      "title": "Can Seagate Sustain Its Strong Revenue Growth in Fiscal 2027?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-sustain-strong-revenue-growth-150700755.html",
-      "source": "Zacks",
-      "date": "2026-09-10T15:07:00Z"
     }
   ]
 }
