@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-11T12:20:41+00:00",
+  "updated_at": "2026-09-12T00:12:48+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
-  "as_of": "2026-09-11",
+  "as_of": "2026-09-12",
   "constituents": [
     {
       "code": "005930",
       "name": "삼성전자",
-      "weight": 34.38,
+      "weight": 33.92,
       "price": 259500.0,
       "prev": 269000.0,
       "change": -9500.0,
@@ -26,7 +26,7 @@
     {
       "code": "005935",
       "name": "삼성전자우",
-      "weight": 4.45,
+      "weight": 4.33,
       "price": 193300.0,
       "prev": 203000.0,
       "change": -9700.0,
@@ -35,7 +35,7 @@
     {
       "code": "402340",
       "name": "SK스퀘어",
-      "weight": 2.88,
+      "weight": 2.82,
       "price": 1089000.0,
       "prev": 1135000.0,
       "change": -46000.0,
@@ -44,7 +44,7 @@
     {
       "code": "009150",
       "name": "삼성전기",
-      "weight": 2.14,
+      "weight": 2.19,
       "price": 1400000.0,
       "prev": 1400000.0,
       "change": 0.0,
@@ -53,7 +53,7 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "weight": 1.6,
+      "weight": 1.68,
       "price": 177900.0,
       "prev": 173400.0,
       "change": 4500.0,
@@ -71,7 +71,7 @@
     {
       "code": "055550",
       "name": "신한지주",
-      "weight": 1.25,
+      "weight": 1.31,
       "price": 112900.0,
       "prev": 110300.0,
       "change": 2600.0,
@@ -80,7 +80,7 @@
     {
       "code": "034020",
       "name": "두산에너빌리티",
-      "weight": 1.1,
+      "weight": 1.14,
       "price": 90800.0,
       "prev": 89900.0,
       "change": 900.0,
@@ -89,7 +89,7 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "weight": 0.99,
+      "weight": 1.03,
       "price": 137800.0,
       "prev": 135300.0,
       "change": 2500.0,

@@ -1,14 +1,20 @@
 {
-  "updated_at": "2026-09-11T12:19:54+00:00",
+  "updated_at": "2026-09-12T00:11:45+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자 급락에도 \"60만전자 간다\"…'역대급 잭팟' 시나리오 근거는",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10UzFmWkhySE5Dbm9fN3A4d1RrRTJLS0E2dG5iMGwzaE1wbXpORFdTRWVBVVJoNy1UaFNQRkZkdDl6bHlROHBQdjlqTE5ldFk?oc=5",
+      "title": "‘월세 지원금 부정수령’ 발칵… 삼성전자 “내역 전수조사”",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZG5LenVVYVFtOGR4dVBBWUc1bzAyS0lwSFVRcW1YQVJWR1FuNy0yQzh5UUQ1eDROQ3BVUy1yVlZ2elRyZUo0VjJTTHN2MUE2UmE5V2UxTVlkb1NsdXFhWTJfQXAtcFJSanpJSlVQcUc5dzNYYUtGcXo0ZDZ5ZHJmYnFmRUNoWmo1LU9OOUE3YXg?oc=5",
+      "source": "조선일보",
+      "date": "Fri, 11 Sep 2026 15:35:00 GMT"
+    },
+    {
+      "title": "삼성전자 반도체 반격 시작되나…4분기 HBM 점유율 40% 넘본다",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjaHNORVdraDFDdnpSNTlWMU1TclRhM2Rua1lzanVOVlNIQmpoaXJYSjFzSUQ3YXIxcHJUQmhVN05qbkNLVFlnb1BNcE85VHc?oc=5",
       "source": "v.daum.net",
-      "date": "Fri, 11 Sep 2026 06:48:00 GMT"
+      "date": "Fri, 11 Sep 2026 12:32:00 GMT"
     },
     {
       "title": "“삼성전자 HBM, 더 크게 터진다”…'역대급' 증권가 파격 전망 나왔다",
@@ -17,40 +23,52 @@
       "date": "Fri, 11 Sep 2026 12:08:40 GMT"
     },
     {
-      "title": "'삼성전자, 드디어 터지나' 들썩…증권가서 '파격 전망' 나왔다 [분석+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oSEdMT3BzNnBVSUxfcTU1U1d1ZUZ1WlJCSHFWNmdvbGRZWFhZd29zaHVsQ1B4a0piYTdfRzdMQjB1eDE0cVlaUEpHQU1NVVFkTWF1bV9JTkdwUQ?oc=5",
+      "title": "삼성전자 테일러팹 9월 가동 어렵다…파운드리 반등도 늦춰지나",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9qSk1kVXVWaHkwU1M5X2wxdTJoYkh0NHNabWg2enljOTZFS2dKRnR0SVFFRHcxaEgwbzVMOHN1eWJFUDFRWUdaQ0F3eEJESVRubnVfV1NSc3RNSExR?oc=5",
+      "source": "뉴스핌",
+      "date": "Fri, 11 Sep 2026 02:18:00 GMT"
+    },
+    {
+      "title": "'삼성이 애플 두드려팼다'…불붙은 디스전에 임원까지 등판 [이슈+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkbTVjblQ4TllCV1JIQWo5SnV1cUFWQnkxeW9ZSHRoRFFoSnFXdEFpTldmdm9VRnpJU3Y4dXZqcjhldFNzT0VjMDMxa3BHV2Yyd3dFOXpCemNVUQ?oc=5",
       "source": "한국경제",
-      "date": "Thu, 10 Sep 2026 23:06:15 GMT"
+      "date": "Fri, 11 Sep 2026 00:11:13 GMT"
     },
     {
-      "title": "'월세 70만원' 핑계로 직원 자르겠다는 삼성전자…변호사들 “절대 자진퇴사 말라”",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80SlRMdGFrSTY0blo0UU1JbnY1bElIREVkbGhfTlNBSEtkS2NQeHVTaUIwYmlDOFpjTEM2SWM5WGNzd0Fvdi1CaUt4ZHZHU251b2FtZkgwcmg0UzRvM0p1OFpGRUpVUXV4QXNsN2xaRG83cWRlNTJLZzBvUThPMWc?oc=5",
-      "source": "땅집고",
-      "date": "Thu, 10 Sep 2026 21:00:00 GMT"
+      "title": "애플 접는 폰 나오자…삼성 \"우리 음식 재탕 끝났나\"",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4YndvQ0daeG1CRl9FRG9hSE54SF9PbWd0eDBhN3Vfa2dCZ0JhdGpqNEE4a1pYNWwyMnFpU2tOY2Q3bFcwNllLMXhsVDRELWs?oc=5",
+      "source": "v.daum.net",
+      "date": "Fri, 11 Sep 2026 19:00:00 GMT"
     },
     {
-      "title": "배당, 기금에 전기요금까지…모두의 돈주머니 된 삼성전자",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkxZd0ljRzZTdnJ4V1NTYTE1UWRMaWFmYXU2eUJkaFgzRm1tZXhCeUtrRTgtV2dabzlXampGWTY4bEZ5Y3g5RFB6R0poN0EtRVVQQU9tcGxoSVc4bnJIcVRJOUl5cGlJZFV1Wi1CanRONVI4TDlMWVVsenJlWjd3N3ctMA?oc=5",
-      "source": "인베스트조선",
-      "date": "Wed, 09 Sep 2026 22:00:33 GMT"
+      "title": "애플은 ‘측정 정확도’ 삼성은 ‘건강 분석’…스마트워치 전략 갈렸다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9GRWxQdm9KQ01tMVkzN3hUWldkQUcxa3d6dWJmSnR4UW1YenlJRVhmSGZocC1XVWZnMnprT3JZdTc1YTJGaFFZRzlHeTY0YzRzZm04b21ycERHa0RQakNHQmh3ZmdBWG4yYU9hamVPZ0bSAXRBVV95cUxQbnVOeXJBdTd2aE11cDFrblMzOHRHM0R3QndIZUt3TEpvYXJsU2cwNVA1MW1vejNwcEducEhlRUlVd0tZSnJmVzRlc25SVGtIdEF0TFhmTzdyZ21DVDFzbTRaWTd0YjRoOHJkMEFid1BtTVAzRA?oc=5",
+      "source": "it.chosun.com",
+      "date": "Fri, 11 Sep 2026 22:00:00 GMT"
     },
     {
-      "title": "삼성전자 '월세 꼼수' 논란...줄해고 위기? [앵커리포트]",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE56aHp6Rzk0ZURMZm82TUhJZXpZSTE3djlWczBhdUdFUWk5VlFrTnlNUmp6Qm5kRF9PQXpFTkYwcEhFMzNka2otSVJPcVdDSjY5YkplcnRQei1FNGgwaVE?oc=5",
-      "source": "YTN",
-      "date": "Thu, 10 Sep 2026 09:10:00 GMT"
+      "title": "삼성전자, CMA CGM에 2499억대 손배소송 제기",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMEJLc3h4ZnEzeTJSX1d0dkIteWl6cTR0U2lQeTljMnNNb1h2QkxqWGZRUEZIUmdqbzh1TE52dUhIWkQtTmZsWWNjaXdoUnV0TFh6b0s5bGkwQTJxTzBkUXpZWW5NeGtnZUtsRjB5ZE90ems3Rml4SzY3UG0tN24tMEdNUkFzN19S?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Fri, 11 Sep 2026 22:51:40 GMT"
     },
     {
-      "title": "세계 1위 탈환한 삼성전자 스마트폰, 사상 첫 적자에 속앓이",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Jck1leXBXNWlXRTltRTZNOGljZDBROE5JcVBRaDhNMGJrbmFnT2NaUlpaTmhDYXNxdXJOajJocVR2Q3AxVlo0SEM3QWtIbUY3N0t4WmtSckhwRW50Q1p3TW9jYW5XSlZjNXdSZFhiRm8?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 09 Sep 2026 23:48:00 GMT"
+      "title": "아스트라 성능 뛰자 메모리 중요성도↑…삼전닉스에 더 커지는 기회 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fR0V2bUFSR3lrRWFaekV0VnVHbEk4Wm1JRE52ZlBoUXFDZUI3Mm00YnJhVmhlTG44a3c0UmRuVUZJNUVBdnAzcEpRUmJKbWpXTHVkMnQ4NEVBZmN4dFBjWDJNZjNCRzBhSjFkeNIBckFVX3lxTFAxdGlZYVRVRENkYVhrQnZHLW80aEJzcUxUVGFkYXo2WWM0bHR5U20xUTVzcVpCTXU1eWJOUWI3eG1QMG1OOXVyTU9scDAxaHhDUm1qRzNtMXBSajdSVDhrd3pqV3dFaFV1aXVxcU1xQkJzQQ?oc=5",
+      "source": "머니투데이",
+      "date": "Sat, 12 Sep 2026 00:00:00 GMT"
     },
     {
-      "title": "[단독]“일 시켜도 야근수당 없다”···삼성전자 직원 절반이 대상 될 판",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13aFNvN3hBdzgzYWZ0MkZ2cEZ0MWZIcnIxUUJpemV5WjBRa2dCa05hRlhLbnQ0VlJGRWFyOURCZFZvbnF2UzZ5YmpWWUZzNTJIeVV1MDlJdDFmUdIBX0FVX3lxTE9BU2FTOEI3bzhOZ0R4VGhHOWh2NnIxUjA1YmMtN1hBYXNnQ3ltcXZhby1UQmhVYjFvYVZoR1JtZTMyeFlRNXJ0S3lqdjhLTl8tZml3QlI4Z2JCa0ExVVNV?oc=5",
-      "source": "경향신문",
-      "date": "Wed, 09 Sep 2026 21:00:00 GMT"
+      "title": "삼성전자",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOE10eWJVakRQRFlJUkNmdU1hWmhtSDhSRmJCSUJfcWEzNWdpQS1TNm9Eek1NSVhGZFQ2ZnRxRVFINFZhUk5kcU01aW1RWHZ0cTFHakxFWWJkMHJUZUtab3V4ZUtZRWw2eXIxWTdDekNFV2JVdVBtczA3Z0RmeEhwcm5Id1F4aXB2NnJRbHpROG1YdFVQVGxZ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Fri, 11 Sep 2026 15:12:04 GMT"
+    },
+    {
+      "title": "반도체 생산 확대에 전력·용수 부담↑…삼성·SK, 재생에너지·물 재이용 늘린다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sTktzOVFsT01FVHdFSHQ5a2dfRzdJZ1JzM1ZhQ0U0VGd5R3hfUXVZaEpKZ0tKX0ZCcnBJdnJ3TFprT1B6Y0NTMmZDY19TNE11NWxFY0pfczZBV0gzeTgtZzJzd0RjRzhWWURwVG11WjLSAXRBVV95cUxNOHlPdlZpRFRRSHRUclpiQTRMUUlDZDQ5V1kyR0djOFRhVHMtdWpocjhWR2xrOUF4V2diSTh5Y2Q1cUlfbG4wSnN5cUZqRmtETDN0NWJ6RFprNTN6aHpfSW1oTnNRLWl0TkNreE9GZTFXMXMwcQ?oc=5",
+      "source": "it.chosun.com",
+      "date": "Fri, 11 Sep 2026 23:00:00 GMT"
     },
     {
       "title": "삼성전자 3.7% 하락…전쟁·유가·금리 ‘3중고’ 덮쳤다 [마켓시그널]",
@@ -59,40 +77,22 @@
       "date": "Fri, 11 Sep 2026 00:30:45 GMT"
     },
     {
-      "title": "[특징주] 미 기술주 삭풍에 삼성전자 3.8% 하락…하이닉스도 4%↓",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhQUgwcTYxTXRXOXp3dGJiRUI1blpXaldBSFFhT1ZhLUZqUFNYQk5lSnJmcjRtbEZyOXR0LThuVnNqam5UeW85X2Q2ZzVtZTFaVTFGNm9OenM0Vk3SAWBBVV95cUxONDBNSENGMlgtcmlaMFI1c1phZERxS2QyWEpvYkNYSGZubG1kUl9kcndJc3E1WUhFdGxybUhTX0xETlZ2YnFfZmlMV3V2TUNjRDJLTjVjYUNzZU1XNzhLOVI?oc=5",
-      "source": "연합뉴스",
-      "date": "Fri, 11 Sep 2026 00:18:47 GMT"
-    },
-    {
-      "title": "삼성전자 직원 313명, 사측 상대 '전보 무효 확인 소송' 제기",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzVUdwVjlqbTFzbVFHQnRJNXVzX3Z5XzFhMUdCTFNaV240bk50TkxuOUpuazhlbnNoLVRxdF9aWHVnc2dBVWdfamVsUVh3QlBtcEVsYncxQzBPQUZBNHN2dNIBeEFVX3lxTE5KbG5pUkFIMXBlaUd0SGV6ZWJZTWUxSFR5YUJZdE9uZWpjN3c3NUdUdFNqM3BOXzdWdVBOS1RTSXRtOGFsTURKbnBxQ3V1S2c3ZkpFcWRjcDRrRzY1YUNFUEdtWmMzcUYwLW5wYlVUdWg2bzVGb0hQZA?oc=5",
-      "source": "뉴시스",
-      "date": "Fri, 11 Sep 2026 07:26:12 GMT"
-    },
-    {
-      "title": "삼성전자 직원 313명 '전보 무효 확인 소송' 제기 \"설명 의무 미이행\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8ybHhFNjZQQ01HdjVFSG55TEJ3ZFdJUS1scWpMOVNpcXJWODBiQmJQOEVrV3dOSEhzSFNUbjVuWVBxMWNGVU00QmR0bWsyQVhGYmNEMzh1dW5SUW1XSXFxNQ?oc=5",
+      "title": "'KIWOOM 삼성전자&SK하이닉스채권혼합50' ETF, 9월 분배금 주당 151원",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fcG1ZQjFaVkJIMWwwanlyY1ZSOFQ0alQ1NlhjdWhYa2t6LUdTNVlsNTMzS093Ny0zdUtISnVONkxIZDlMZVF5RllQYjl0NUlubEI0aDJFbnRuYm5idXI0Ug?oc=5",
       "source": "아시아경제",
-      "date": "Fri, 11 Sep 2026 09:17:41 GMT"
+      "date": "Fri, 11 Sep 2026 00:09:16 GMT"
     },
     {
-      "title": "삼성전자 직원 313명, 회사 상대 ‘전보 무효 확인 소송’ 제기",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ON0JoQjFqTkR4ZFYxc2MtYmpNXzk3aS1YeUZBUlVxQThpUnNzUDUwMFNzVkNUX05CaDVXQVJ5NzlKb3I0b0ZUODVhemlaTG1hUWNfNg?oc=5",
-      "source": "이투데이",
-      "date": "Fri, 11 Sep 2026 11:44:00 GMT"
-    },
-    {
-      "title": "삼성전자 노하우 접목한 공공나노팹…“혁신 모델 전국 확산”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE51Vm9yRVp6Y19pVFZ1RDVUenotU0huYlFmNWU2RTRtRlczOUVMWEVZVkMzSndQdzJ0U3Z5Q0QydVlqM0xPR3FvVEFGdjRPSWx2S0HSAVNBVV95cUxQck5uRmRlSWo4dUJrcXQ1dHZ3ek9PRUR3SnlXQWpmMWlBM0dla3QyeFQtSGdzM3ZQZ1NuWUdPSXVaNTBaRHhlYWc2TFlnaG51LW9mMA?oc=5",
-      "source": "서울경제",
-      "date": "Fri, 11 Sep 2026 04:30:00 GMT"
-    },
-    {
-      "title": "삼성전자 '반도체 팹 노하우' 공공나노팹에 심는다",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRSFJIeV9pWUEwLURwSWJpblhhc01rUUdYRFplS0lqZk5XdHdrNmlQR3JwZ1BQeE9LbWpXTFFYRXRLcmhuRGNTZWhXN0xQQ3h4NHNCY2RaVXJFMXPSAWBBVV95cUxNREY2QzdhMHgta3JSa3AwZVpodmNKQUdyZTZtMy1DWFlYczNVUTBna2ZNYjJwdlprLU5wWTBNRTUyMjUtbTVYcFJabmtzZks3R0Voc2RqR1FUb0tObUUzcjI?oc=5",
+      "title": "키움운용, '삼성전자&SK하이닉스채권혼합50' 주당 151원 지급",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxMEtTajhnRHNTcnJyRjRoOW9LcmVleFZvLS1ZTHAzU2lPNG93ZGNuMkF6MnFBOWRaUWtpdGVaWmotUHJDMWppOHZMT18ydUNSQk43SHVDUGhDZEXSAWBBVV95cUxORk1VM0t1bGNYRHh3V2NQMlhlQUtVd3VSVzJJVFFVX3lVTWo5TDVTMkVlNDRma01BRnQ2Z2d0dEdlczUyVE9feG5FelFvLTVCcWlGWlRlTTNlQjhVYXpwN2s?oc=5",
       "source": "연합뉴스",
-      "date": "Fri, 11 Sep 2026 04:30:02 GMT"
+      "date": "Fri, 11 Sep 2026 00:46:30 GMT"
+    },
+    {
+      "title": "'삼성전자·SK하이닉스채권혼합50' ETF, 151원 분배",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPNElLQTViYlE5bXZrM3FEeVRYRW5ZbXJ0RGpnTE84R0YxaEFzOHFoNGFXSlBkWWlDT2NSWm1hTWtjSWlPeWhETGY2ZDNPRkVUamkw?oc=5",
+      "source": "네이트",
+      "date": "Fri, 11 Sep 2026 02:36:00 GMT"
     }
   ]
 }
