@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-12T00:11:49+00:00",
+  "updated_at": "2026-09-12T23:57:25+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
     {
+      "title": "[커버드콜 점검] [삼성자산운용] 코덱스200 앞세워 수조원 '훌쩍'…액티브는 시험대",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5GUEwzR1pQM2tZSS1VdDdBS2dVQ2ZsR3R2SE9vQkE5Y0lPYkIwcldIUExsV3RxOHFnYnRxaVp0eXg0TWF4dTJyOXZ6QXhOWW5QQkJrQlhVTQ?oc=5",
+      "source": "DealSite경제TV",
+      "date": "Thu, 10 Sep 2026 05:59:19 GMT"
+    },
+    {
       "title": "[ETF 머니플로우 9월 1~2주] KODEX 커버드콜 1위 찍고…TIGER S&P500 다시 선두",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ueEZPcy1NV2RIZ0tGdGhLd0QtcjVORFI5ZFJzd2V1SUlaY3dhNUtqSXBsWGdDQms4YVhOd1FkeDUyb3UwdFB2VnpjWU9xbGU2d0dJSGNVM2ltSERmUzczSW5UUTR2cXdPWGZDQl81dm0?oc=5",
       "source": "신아일보",
       "date": "Fri, 11 Sep 2026 23:00:00 GMT"
-    },
-    {
-      "title": "[커버드콜 점검] [삼성자산운용] 코덱스200 앞세워 수조원 '훌쩍'…액티브는 시험대",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rRkxEcFBvNVRCZzV6MElNTTBIeHkzbU9peUkwUWVxMURPQ1FWbzRhalNTem4wY1BMcEp4dlRiRW9WNHpacDhER2FjMUd0UnlwTmJrdGVn?oc=5",
-      "source": "DealSite경제TV",
-      "date": "Thu, 10 Sep 2026 05:59:19 GMT"
     },
     {
       "title": "07일, 기관 거래소에서 KODEX 인버스(-4.90%), KODEX 200선물인버스2X(-8.86%) 등 순매도",
@@ -25,14 +25,8 @@
     {
       "title": "“매년 880만원 아끼는데 안해요?” … 파이어족 다들 한다는데",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5rcTg4SW9xTHpWdkZUcERjR3BaeTVVOXdKQzNYSXZpQ1dxMGtoN0NWTzlTQUNXby1GcDFNd0lLZ0lSaXpDX2h0eGlJdGZyR1MtR2c?oc=5",
-      "source": "매일경제",
+      "source": "mk.co.kr",
       "date": "Thu, 10 Sep 2026 20:00:00 GMT"
-    },
-    {
-      "title": "신규 ETF 28종에 7440억 몰렸다…삼성 KODEX 선전 '눈길'",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41clBvT0JLazVPd0tmdnpuWWhORGZ5d0w2UEZtMkFVMW11dHZ4UlBnVTJGT3kyUy1DSDNiSDktem02bm9DSWUwTkR0T05LWlU?oc=5",
-      "source": "v.daum.net",
-      "date": "Sat, 05 Sep 2026 22:06:08 GMT"
     },
     {
       "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
@@ -65,10 +59,22 @@
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
+      "title": "'KODEX 200커버드콜액티브' ETF 신규 상장…커버드콜 라인업 확장",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JZ2Q2azB4V1o4b1oxY3BCZDRIdHhlV0ZBdmJqRjhnR2xMNmlXZ3hhR0Qta1puSXBwejFkNjhLaEJUaklXTlFsR2tkUnRzaW8?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+    },
+    {
       "title": "삼성운용, KODEX 200커버드콜액티브 상장",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBxbEN2N3A2eVp4VC1qUk9lWGJkRUlsV180b09OUGF6SlJKOE5nT19ncV9BWDBqQ1Y0MllRR08tU3RCUkx5R0V6eWxGd09tdG9nbDRVeWM1RjJPeEpRT2Q0M3ZUTGw?oc=5",
-      "source": "sentv.co.kr",
+      "source": "서울경제TV",
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 신규 ETF 3종에 개인자금 6863억 원 몰려…점유율 92.2%",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jblRZMFkyNkhjbWw4VTMtOXh5YVZrcDhTVHNqejdMOVY0RWpDV21Va0I4NHJscy02MHFxLWU1enU1QjlVZ0kyQjlJcV9LNGhyWFlLc2FfX2hPMkMzRHBtOVh3VWlzRFB5M0Q2QURpZXBtQdIBdkFVX3lxTE1wZElrYWtJMHp3LVBtTFFZdGJUMEZPWHh5cW9vSDZjTEJEelJUOWR1ZWVKeHp1SjFvWjFjNER4LUtqT1VvNElmT01qOHZqcFhJZXZ4VnRhRUJ4TjlrbndERUpWQlVmc2g5SHZkcHRsWi1kVEprbEE?oc=5",
+      "source": "포춘코리아",
+      "date": "Tue, 01 Sep 2026 07:00:00 GMT"
     },
     {
       "title": "\"월급처럼 따박따박 꽂힌다\"…일주일 새 1200억 몰린 곳",
@@ -77,22 +83,16 @@
       "date": "Mon, 07 Sep 2026 21:00:25 GMT"
     },
     {
-      "title": "삼성운용, KODEX 200커버드콜액티브 개인순매수 2000억 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8wM0k4QjhXRnlJanpxVXJJbU9DRnlUdGVuX0lvQkJhLXRhYm1RTUwzQ3dibWdJYXVXd0p5OXpjSHFQLTk4UklySWxrQ18zVXdzd2E1RjZ4TTU1WXQ5SU5ZN3NkRGo?oc=5",
-      "source": "sentv.co.kr",
-      "date": "Wed, 22 Jul 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼성운용, 'KODEX 200커버드콜액티브' ETF 신규 상장",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmWFlUdlFMVUVkWHhKS1phX1JCWmtlekVLUDN1dlFWM01SeEE3ZUh1cVZBYVVJNXdSN3BDWjZCWU0tTWNLUV9EVnVGRDIwMFFkMUl3MS13?oc=5",
       "source": "DealSite경제TV",
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "'KODEX 200커버드콜액티브' ETF 신규 상장…커버드콜 라인업 확장",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JZ2Q2azB4V1o4b1oxY3BCZDRIdHhlV0ZBdmJqRjhnR2xMNmlXZ3hhR0Qta1puSXBwejFkNjhLaEJUaklXTlFsR2tkUnRzaW8?oc=5",
-      "source": "v.daum.net",
-      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+      "title": "KODEX 200커버드콜액티브, 첫 월배당 실시… 주당 153원 지급 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE02YjlXTFp3UUhNeWNTRjBOV3JCZUx6TTNzQVFmVnVOclNDcnA1a1VfRk1fOE5vM0pVcU9qcVc0ZTJTQkZVNFJWSjZwY09scVdvZUFPd3BxX2dYRGxqWWxqNXY2WkVkekVR0gFuQVVfeXFMTmdCM0NHS1hlOE8wU2pRdWRhZGM1Y0FURko0U2FSal93QUNwN2x1TWRtdy1fQk5hWWJ4eXk4SGNuV0o0bi1UbnJrRXJ2cXJPby1mdEFDenZKQ1dIYjdpdXMwZkNZYzZZSHRFdFRGT1E?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
     }
   ]
 }
