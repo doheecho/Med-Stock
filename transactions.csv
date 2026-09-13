@@ -1,6 +1,10 @@
-﻿# 주식투자이력.xlsx(csv용) 에서 자동 변환. 열: date,ticker,action,quantity,price,currency,account,note
+﻿# 주식투자이력.xlsx(csv용) 에서 자동 변환. 열: date,ticker,action,quantity,price,currency,account,note,account_no
 # 원본: ~/Downloads/주식투자이력.xlsx  ·  재생성: collectors/equity_curve.py
-date,ticker,action,quantity,price,currency,account,note
+# account_no(선택, 9번째 칸): 같은 증권사(account)에 계좌가 여러 개라 평단가가 섞이는
+# 종목만 채운다. 예) 같은 "미래에셋"인데 실제로는 계좌가 둘이면, 한쪽 계좌의 매수/매도
+# 행 전부에 같은 구분값(예: "2")을 적어주면 그 계좌 몫만 따로 평단가가 잡힌다.
+# 안 채우면(대부분) 기존처럼 종목 전체가 한 평균으로 계산된다.
+date,ticker,action,quantity,price,currency,account,note,account_no
 2014-02-26,010120,buy,8,63000,KRW,미래에셋,LS산전
 2014-02-27,010120,sell,8,63500,KRW,미래에셋,LS산전
 2014-03-13,086280,buy,3,224000,KRW,미래에셋,현대글로비스

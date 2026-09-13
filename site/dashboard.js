@@ -887,18 +887,27 @@ async function eqOpenTable(dateStr) {
   body.innerHTML = "<div class='muted'>불러오는 중…</div>";
   if (!(await eqEnsureData())) { body.innerHTML = "<div class='error'>데이터를 불러오지 못했습니다.</div>"; return; }
 
-  // 거래 리플레이 → 종목별 수량·평균매수원가(원)
-  const pos = {}, cost = {}, solidAfter = {};
+  // 거래 리플레이 → (종목,계좌) 단위로 수량·평균매수원가 추적 후 종목별로 합산.
+  // 계좌 구분 없이 종목 하나로 뭉치면, 다른 계좌의 싼 매수가가 평단가를 끌어내려버림
+  // (equity_curve.py 의 계좌별 분리와 동일 로직 — acc_no 를 채운 종목만 실제로 나뉜다).
+  const posByKey = {}, costByKey = {}, solidAfter = {};
   for (const row of _eqTx.tx) {
-    const [d, t, sq, px, isUs] = row;
+    const [d, t, sq, px, isUs, acc] = row;
     if (d > dateStr) { solidAfter[t] = 1; continue; }
+    const key = t + "::" + (acc || "");
     const rate = isUs ? _fxOn(d) : 1;
-    if (sq > 0) { pos[t] = (pos[t] || 0) + sq; cost[t] = (cost[t] || 0) + sq * px * rate; }
+    if (sq > 0) { posByKey[key] = (posByKey[key] || 0) + sq; costByKey[key] = (costByKey[key] || 0) + sq * px * rate; }
     else {
-      const have = pos[t] || 0, avg = have > 0 ? (cost[t] || 0) / have : 0;
+      const have = posByKey[key] || 0, avg = have > 0 ? (costByKey[key] || 0) / have : 0;
       const sold = Math.min(-sq, have);
-      pos[t] = have - sold; cost[t] = Math.max(0, (cost[t] || 0) - sold * avg);
+      posByKey[key] = have - sold; costByKey[key] = Math.max(0, (costByKey[key] || 0) - sold * avg);
     }
+  }
+  const pos = {}, cost = {};
+  for (const key in posByKey) {
+    const t = key.split("::")[0];
+    pos[t] = (pos[t] || 0) + posByKey[key];
+    cost[t] = (cost[t] || 0) + costByKey[key];
   }
   // 이력이 불완전한 '유령 보유' 제거: 기준일 이후 거래가 있거나(그때 실제 보유)
   // 지금도 보유 중인 종목만 남긴다.

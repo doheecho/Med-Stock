@@ -141,7 +141,7 @@ def _num(s: str) -> float:
 # (시세가 없어 곡선엔 안 잡히지만 특정일 보유표에는 수량·매수가가 표시된다).
 _TX_ALIAS = {"홈캐스트": "064240", "홈 캐스트": "064240"}
 
-_TX_FIELDS = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note"]
+_TX_FIELDS = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note", "account_no"]
 
 
 def _split_line(ln: str) -> list[str]:
@@ -178,7 +178,10 @@ def _load_transactions() -> list[dict]:
         nm = r["note"].strip() or (raw_tk if not raw_tk[:1].isascii() or not raw_tk[:1].isdigit() else tk)
         rows.append({"date": d, "ticker": tk, "action": act, "qty": qty, "price": px,
                      "account": r["account"].strip(), "name": nm,
-                     "ccy": _norm_ccy(r["currency"])})
+                     "ccy": _norm_ccy(r["currency"]),
+                     # 같은 증권사 안에 계좌가 여러 개면 "account"(증권사명)만으론 못 구분됨.
+                     # 평단가를 계좌별로 따로 잡아야 하는 종목만 이 칸에 구분값을 채운다(선택 입력).
+                     "acc_no": r["account_no"].strip()})
     if not rows:
         print(f"[tx] {TX_CSV.name}: 데이터 행 없음 -> holdings 백테스트 사용")
         return []
@@ -233,23 +236,28 @@ def build_from_ledger(txns: list[dict]) -> dict:
     pget = {t: _ffill_lookup(m) for t, m in pmaps.items()}
     first_px = {t: min(m) for t, m in pmaps.items()}
 
-    pos: dict[str, float] = {}
-    cost: dict[str, float] = {}  # KRW, 평균단가 기준 순투입
+    # (ticker, 계좌구분) 로 따로 추적 — 같은 증권사 안에 계좌가 여러 개면 "account"(증권사명)
+    # 만으론 못 나눠서 평단가가 서로 다른 계좌끼리 섞여버림(예: A계좌 6만원대 매수 + B계좌 저가
+    # 매수가 하나의 평균으로 뭉개짐). transactions.csv 의 account_no 칸에 구분값을 채운 종목만
+    # 계좌별로 분리되고, 안 채우면(대부분) 기존처럼 종목 전체가 한 평균으로 잡힌다.
+    pos: dict[tuple[str, str], float] = {}
+    cost: dict[tuple[str, str], float] = {}  # KRW, 평균단가 기준 순투입
 
     def apply_tx(tx):
         t = tx["ticker"]
+        key = (t, tx.get("acc_no") or "")
         mkt = _market_of(t, mkt_hint)
         rate = fx_on(tx["date"]) if mkt == "US" else 1.0
         q, price = tx["qty"], tx["price"]
         if tx["action"] == "buy":
-            pos[t] = pos.get(t, 0.0) + q
-            cost[t] = cost.get(t, 0.0) + q * price * rate
-        else:  # sell — 평균단가법
-            have = pos.get(t, 0.0)
-            avg = (cost.get(t, 0.0) / have) if have > 0 else 0.0
+            pos[key] = pos.get(key, 0.0) + q
+            cost[key] = cost.get(key, 0.0) + q * price * rate
+        else:  # sell — 평균단가법(계좌 단위)
+            have = pos.get(key, 0.0)
+            avg = (cost.get(key, 0.0) / have) if have > 0 else 0.0
             sold = min(q, have)
-            pos[t] = have - sold
-            cost[t] = max(0.0, cost.get(t, 0.0) - sold * avg)
+            pos[key] = have - sold
+            cost[key] = max(0.0, cost.get(key, 0.0) - sold * avg)
 
     ti = 0
     points = []
@@ -257,8 +265,12 @@ def build_from_ledger(txns: list[dict]) -> dict:
         while ti < len(txns) and txns[ti]["date"] <= d:
             apply_tx(txns[ti])
             ti += 1
+        # 평가액은 계좌 구분과 무관하게 종목 전체 보유수량 합산으로 계산
+        qty_by_ticker: dict[str, float] = {}
+        for (t, _acc), q in pos.items():
+            qty_by_ticker[t] = qty_by_ticker.get(t, 0.0) + q
         value = 0.0
-        for t, q in pos.items():
+        for t, q in qty_by_ticker.items():
             if q <= 1e-9 or t not in pget or d < first_px[t]:
                 continue
             px = pget[t](d)
@@ -270,10 +282,13 @@ def build_from_ledger(txns: list[dict]) -> dict:
             continue
         points.append({"d": d, "v": round(value), "c": round(sum(cost.values()))})
 
-    # 정합성 경고: 이력 최종 보유수량 vs holdings.yaml
+    # 정합성 경고: 이력 최종 보유수량 vs holdings.yaml (계좌 구분과 무관하게 종목 전체 합산)
+    final_qty_by_ticker: dict[str, float] = {}
+    for (t, _acc), q in pos.items():
+        final_qty_by_ticker[t] = final_qty_by_ticker.get(t, 0.0) + q
     for t in tickers:
         want = holds.get(t, {}).get("quantity")
-        got = round(pos.get(t, 0.0), 4)
+        got = round(final_qty_by_ticker.get(t, 0.0), 4)
         if want is not None and abs(got - float(want)) > 1e-6:
             print(f"[tx][warn] {t} 이력 합계 {got} != holdings.yaml {want}")
 
@@ -283,14 +298,16 @@ def build_from_ledger(txns: list[dict]) -> dict:
 
 def _write_tx_json(txns: list[dict], mkt_hint: dict, fx_raw: dict) -> None:
     """프론트 '특정일 보유내역 표' 용 — 정규화된 거래 + 환율 시계열.
-    tx = [일자, 티커, 부호수량, 체결가(현지통화), 미국?(1/0)]"""
+    tx = [일자, 티커, 부호수량, 체결가(현지통화), 미국?(1/0), 계좌구분]
+    계좌구분은 equity_curve.py 의 계좌별 평단가 분리와 같은 값을 써야 프론트 리플레이가
+    동일한 결과를 낸다(비어있으면 기존처럼 종목 전체가 한 평균으로 잡힘)."""
     names, tx = {}, []
     for r in txns:
         t = r["ticker"]
         is_us = 1 if _market_of(t, mkt_hint) == "US" else 0
         names.setdefault(t, r.get("name") or t)
         q = r["qty"] if r["action"] == "buy" else -r["qty"]
-        tx.append([r["date"], t, round(q, 4), round(r["price"], 4), is_us])
+        tx.append([r["date"], t, round(q, 4), round(r["price"], 4), is_us, r.get("acc_no") or ""])
     doc = {
         "updated_at": now_iso(),
         "names": names,
