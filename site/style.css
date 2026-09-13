@@ -197,7 +197,7 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
 /* ── 자산 추이 ─────────────────────────────────────────────── */
 .equity-block {
   background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; padding: 14px; margin-top: 16px; min-width: 0; overflow: hidden;
+  border-radius: 10px; padding: 14px; min-width: 0; overflow: hidden;
 }
 .equity-block[hidden] { display: none; }
 .eq-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }

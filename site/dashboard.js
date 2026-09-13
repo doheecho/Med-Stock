@@ -693,7 +693,6 @@ function renderContribution(rows) {
 
 function renderSummary(withPie = true) {
   const rows = state.holdings.map((h) => ({ h, ...computePosition(h) }));
-  renderContribution(rows);
 
   // 총합은 전부 원화 환산 (미국 종목은 오늘 환율로). 종목별/회사별 동일.
   let cost = 0, value = 0, haveAll = true;
@@ -1522,6 +1521,7 @@ async function renderDetail(ticker) {
           ? `<div class="block"><h3>구성 종목</h3><div id="etfBox" class="loading">로딩…</div></div>`
           : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox" class="loading">로딩…</div></div>
         <div class="block"><h3>주가전망</h3><div id="forecastBox" class="loading">로딩…</div></div>`}
+        <div class="block"><h3>종목별 손익 기여도</h3><div id="contribBox" class="loading">로딩…</div></div>
       </div>
       <div class="pg-market">
         <div class="block"><h3>주요 지수</h3><div id="indicesBox" class="loading">로딩…</div></div>
@@ -1530,6 +1530,7 @@ async function renderDetail(ticker) {
     </div>`;
 
   document.getElementById("chartCtl").addEventListener("click", onChartCtl);
+  renderContribution(state.holdings.map((hh) => ({ h: hh, ...computePosition(hh) })));
 
   let fund, flow, target, news, etfData = null, sigDoc = null;
   if (h && h._adhoc) {

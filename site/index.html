@@ -71,31 +71,26 @@
 
     <div class="section-eyebrow">인사이트</div>
     <div class="insight-grid">
-      <div class="block">
-        <h3>종목별 손익 기여도</h3>
-        <div id="contribBox" class="loading">로딩…</div>
+      <div id="equityBlock" class="equity-block" hidden>
+        <div class="eq-head">
+          <h3>자산 추이 <span class="eq-sub">누적 평가액</span></h3>
+          <button type="button" id="eqBenchBtn" class="eq-tbtn" hidden>코스피 비교</button>
+          <span class="eq-range" id="eqRange"></span>
+        </div>
+        <div class="eq-stats" id="eqStats"></div>
+        <canvas id="equityChart" height="108"></canvas>
+        <div class="eq-askrow">
+          <label for="eqDate">특정일 평가금액 <span class="eq-hint">그래프를 클릭해도 조회돼요</span></label>
+          <input type="date" id="eqDate">
+          <span class="eq-asof" id="eqAsof"></span>
+          <button type="button" id="eqTableBtn" class="eq-tbtn" hidden>보유내역 표 ▸</button>
+        </div>
+        <div class="eq-note" id="eqNote"></div>
       </div>
       <div class="block">
         <h3>연도별 수익률</h3>
         <div id="yearlyBox" class="loading">로딩…</div>
       </div>
-    </div>
-
-    <div id="equityBlock" class="equity-block" hidden>
-      <div class="eq-head">
-        <h3>자산 추이 <span class="eq-sub">누적 평가액</span></h3>
-        <button type="button" id="eqBenchBtn" class="eq-tbtn" hidden>코스피 비교</button>
-        <span class="eq-range" id="eqRange"></span>
-      </div>
-      <div class="eq-stats" id="eqStats"></div>
-      <canvas id="equityChart" height="108"></canvas>
-      <div class="eq-askrow">
-        <label for="eqDate">특정일 평가금액 <span class="eq-hint">그래프를 클릭해도 조회돼요</span></label>
-        <input type="date" id="eqDate">
-        <span class="eq-asof" id="eqAsof"></span>
-        <button type="button" id="eqTableBtn" class="eq-tbtn" hidden>보유내역 표 ▸</button>
-      </div>
-      <div class="eq-note" id="eqNote"></div>
     </div>
   </section>
 
@@ -130,6 +125,6 @@
   <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2/dist/chartjs-plugin-zoom.min.js"></script>
   <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
-  <script src="./dashboard.js?v=20260913q"></script>
+  <script src="./dashboard.js?v=20260913r"></script>
 </body>
 </html>
