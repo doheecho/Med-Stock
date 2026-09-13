@@ -840,7 +840,13 @@ function eqShowAsOf(dateStr) {
     `<b class="${cls(pnl)}">손익 ${pnl < 0 ? "-" : "+"}${eqWon(Math.abs(pnl))}${pct == null ? "" : ` (${fmt.pct(pct)})`}</b>`;
   const tb = document.getElementById("eqTableBtn");
   if (tb) tb.hidden = false;
-  if (_eqDraw) drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit, _eqDraw.viewMinTs, _eqDraw.viewMaxTs);
+  if (_eqDraw) {
+    // "선택일" 마커만 바뀌는 거라 애니메이션 없이 — 클릭할 때마다 차트 전체가
+    // 다시 그려지며 움찔거리는 느낌을 없앤다.
+    state._noAnim = true;
+    try { drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit, _eqDraw.viewMinTs, _eqDraw.viewMaxTs); }
+    finally { state._noAnim = false; }
+  }
 }
 
 /* ── 특정일 보유내역 표 (모달) ── */
