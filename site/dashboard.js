@@ -885,6 +885,13 @@ async function eqOpenTable(dateStr) {
   modal.hidden = false;
   title.textContent = `${dateStr} 기준 보유내역`;
   body.innerHTML = "<div class='muted'>불러오는 중…</div>";
+  body.onclick = (e) => {
+    const th = e.target.closest("th[data-key]");
+    if (!th) return;
+    const key = th.dataset.key;
+    _eqHTblSort = { key, dir: _eqHTblSort.key === key && _eqHTblSort.dir === "desc" ? "asc" : "desc" };
+    renderEqHtblBody();
+  };
   if (!(await eqEnsureData())) { body.innerHTML = "<div class='error'>데이터를 불러오지 못했습니다.</div>"; return; }
 
   // 거래 리플레이 → (종목,계좌) 단위로 수량·평균매수원가 추적 후 종목별로 합산.
@@ -945,27 +952,52 @@ async function eqOpenTable(dateStr) {
     const priceKRW = closeNative == null ? null : closeNative * (isUs ? _fxOn(dateStr) : 1);
     const rec = { name: (_eqTx.names && _eqTx.names[t]) || t, t, q, avg, c, isUs,
                   v: priceKRW == null ? null : q * priceKRW };
+    if (rec.v != null) { rec.pnl = rec.v - rec.c; rec.pct = rec.c ? (rec.pnl / rec.c) * 100 : null; }
     (rec.v == null ? unpriced : priced).push(rec);
   }
-  priced.sort((a, b) => b.v - a.v);
-  unpriced.sort((a, b) => b.c - a.c);
+  _eqHTbl = { dateStr, priced, unpriced };
+  renderEqHtblBody();
+}
+
+/* 특정일 보유내역 표 — 헤더 클릭으로 오름/내림차순 정렬 */
+let _eqHTbl = null; // { dateStr, priced, unpriced } — 마지막으로 조회한 결과(재정렬용)
+let _eqHTblSort = { key: "v", dir: "desc" };
+const _EQ_HTBL_COLS = [
+  ["name", "종목", "l"], ["q", "수량"], ["avg", "평균매수가"],
+  ["v", "평가금액"], ["pnl", "평가손익"], ["pct", "수익률"],
+];
+
+function renderEqHtblBody() {
+  const body = document.getElementById("eqModalBody");
+  if (!body || !_eqHTbl) return;
+  const { dateStr, unpriced } = _eqHTbl;
+  let { priced } = _eqHTbl;
+  const { key, dir } = _eqHTblSort;
+  const mul = dir === "asc" ? 1 : -1;
+  priced = [...priced].sort((a, b) => {
+    const av = a[key], bv = b[key];
+    if (key === "name") return mul * String(av).localeCompare(String(bv), "ko");
+    return mul * ((av ?? -Infinity) - (bv ?? -Infinity));
+  });
 
   if (!priced.length && !unpriced.length) {
     body.innerHTML = "<div class='muted'>해당일 보유 종목이 없습니다.</div>"; return;
   }
-  const tr = (r) => {
-    const pnl = r.v - r.c, pct = r.c ? (pnl / r.c) * 100 : null;
-    return `<tr>
+  const tr = (r) => `<tr>
       <td class="l">${escapeHtml(r.name)}${r.isUs ? ' <span class="us">$</span>' : ""}</td>
       <td>${fmt.num(r.q, 4)}</td><td>${fmt.won(r.avg)}</td><td>${fmt.won(r.v)}</td>
-      <td class="${cls(pnl)}">${fmt.wonSigned(pnl)}</td>
-      <td class="${cls(pct)}">${pct == null ? "—" : fmt.pct(pct)}</td>
+      <td class="${cls(r.pnl)}">${fmt.wonSigned(r.pnl)}</td>
+      <td class="${cls(r.pct)}">${r.pct == null ? "—" : fmt.pct(r.pct)}</td>
     </tr>`;
-  };
   const totV = priced.reduce((a, r) => a + r.v, 0);
   const totC = priced.reduce((a, r) => a + r.c, 0);
   const tPnl = totV - totC, tPct = totC ? (tPnl / totC) * 100 : null;
   const unpC = unpriced.reduce((a, r) => a + r.c, 0);
+  const th = (k, label, align) => {
+    const on = k === key;
+    const arrow = on ? (dir === "asc" ? " ▲" : " ▼") : "";
+    return `<th class="${align === "l" ? "l" : ""}${on ? " on" : ""}" data-key="${k}">${label}${arrow}</th>`;
+  };
 
   body.innerHTML =
     (dateStr < "2024-07-01"
@@ -974,7 +1006,7 @@ async function eqOpenTable(dateStr) {
       : "") +
     (priced.length
       ? `<table class="eq-htbl"><thead><tr>
-           <th class="l">종목</th><th>수량</th><th>평균매수가</th><th>평가금액</th><th>평가손익</th><th>수익률</th>
+           ${_EQ_HTBL_COLS.map(([k, l, a]) => th(k, l, a)).join("")}
          </tr></thead><tbody>${priced.map(tr).join("")}</tbody>
          <tfoot><tr>
            <td class="l">합계 <span class="muted">(시세 있는 ${priced.length}종목)</span></td>

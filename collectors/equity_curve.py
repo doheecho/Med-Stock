@@ -201,6 +201,31 @@ def _load_transactions() -> list[dict]:
     return rows
 
 
+# 확인된 액면분할·무상감자 이력. ratio = 이후 주식수 / 이전 주식수
+# (액면분할 50:1 → ratio=50, 무상감자 10주→1주 → ratio=0.1).
+# equity_prices.json/data/prices 의 시세는 최신 주식수 기준으로 이미 보정돼 있는데
+# (FinanceDataReader 가 분할·감자 조정 종가를 줌) transactions.csv 는 그 당시 실제
+# 체결가·체결수량 그대로라 스케일이 안 맞음 — 그 날짜 이전 거래를 비율만큼 보정해서
+# 맞춘다(수량 ×ratio, 단가 ÷ratio → 투입금액 total 은 그대로).
+SPLITS: dict[str, list[tuple[str, float]]] = {
+    "005930": [("2018-05-04", 50)],    # 삼성전자 — 액면분할 50:1
+    "093230": [("2022-03-30", 0.1)],   # 이아이디 — 무상감자 10주→1주(2022-03-14 이사회, 감자비율 90%)
+}
+
+
+def _apply_splits(txns: list[dict]) -> list[dict]:
+    """SPLITS 에 등록된 종목의 분할·감자 시점 이전 거래를 최신 주식수 기준으로 정규화."""
+    for tx in txns:
+        ratio = 1.0
+        for eff_date, r in SPLITS.get(tx["ticker"], []):
+            if tx["date"] < eff_date:
+                ratio *= r
+        if ratio != 1.0:
+            tx["qty"] *= ratio
+            tx["price"] /= ratio
+    return txns
+
+
 def build_from_ledger(txns: list[dict]) -> dict:
     all_txns = list(txns)
     holds = {h["ticker"]: h for h in load_holdings()}
@@ -436,7 +461,7 @@ def _finish(points: list[dict], assumption: str, first_full: str) -> dict:
 
 
 def build() -> dict:
-    txns = _load_transactions()
+    txns = _apply_splits(_load_transactions())
     if txns:
         doc = build_from_ledger(txns)
         if doc:

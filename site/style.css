@@ -264,7 +264,9 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
 .eq-modal-body { padding: 12px 16px 16px; overflow: auto; }
 .eq-htbl { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .eq-htbl th, .eq-htbl td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-.eq-htbl th { color: var(--muted); font-size: 11px; font-weight: 600; }
+.eq-htbl th { color: var(--muted); font-size: 11px; font-weight: 600; cursor: pointer; user-select: none; }
+.eq-htbl th:hover { color: var(--text); }
+.eq-htbl th.on { color: var(--accent); }
 .eq-htbl td.l, .eq-htbl th.l { text-align: left; }
 .eq-htbl td.pos { color: var(--up); }
 .eq-htbl td.neg { color: var(--down); }
