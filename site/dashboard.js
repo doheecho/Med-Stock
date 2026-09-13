@@ -1296,7 +1296,7 @@ async function renderDetail(ticker) {
           <h3 class="h3-row">RSI (14)<span class="tf-btns" id="rsiTf">${rsiTfBtns()}</span></h3>
           <canvas id="rsiChart"></canvas>
         </div>
-        <div class="block"><h3 class="h3-row">수급 (최근 4주)<span class="unit-tag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
+        <div class="block"><h3 class="h3-row">수급<span class="unit-tag" id="flowUnitTag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
         ${etf ? "" : `<div class="block"><h3>투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll">로딩…</div></div>`}
       </div>
       <div class="pg-metrics">
@@ -1413,7 +1413,7 @@ function onChartCtl(e) {
   // 기간 변경 → 전 차트 / 이평·오버레이 → 가격 차트만. 애니메이션 없이 다시 그린다.
   state._noAnim = true;
   try {
-    if (scope === "all") { drawPriceChart(h); drawRsiChart(p); drawMacdChart(p); drawStochChart(p); }
+    if (scope === "all") { drawPriceChart(h); drawRsiChart(p); drawMacdChart(p); drawStochChart(p); drawFlowChart(state.panel && state.panel.flow); }
     else if (scope === "price") { drawPriceChart(h); }
   } finally {
     state._noAnim = false;
@@ -2586,15 +2586,24 @@ function renderEtfHoldings(d) {
     <div class="src" style="margin-top:6px">${escapeHtml(d.base_index || "")} 추종 · 상위 ${d.constituents.length}종목 · ${shortDate(d.as_of)}</div>`;
 }
 
-/* ---- 수급 막대 (개인·기관·외국인[·기타] 순매수, 억원, 최근 4주) ---- */
+/* ---- 수급 막대 (개인·기관·외국인[·기타] 순매수, 억원) ----
+   원 차트(가격차트)와 같은 기간 버튼(state.chartRange) 을 따른다. 다만 수급 데이터 자체가
+   최근 약 30거래일(네이버 API 한도)까지만 있어서, 그보다 긴 기간을 고르면 있는 만큼만 보여준다. */
 function drawFlowChart(flow) {
   const el = document.getElementById("flowChart");
+  if (!el) return; // 데이터 없음으로 이미 캔버스가 에러 메시지로 교체된 경우(기간 버튼 재클릭 등)
   if (!flow || !flow.rows || !flow.rows.length) {
     el.parentElement.innerHTML =
       "<h3>수급</h3><div class='error'>수급 데이터 없음 (해외 종목·ETF 일부는 미제공)</div>";
     return;
   }
-  const rows = flow.rows.slice(-20); // 최근 약 4주(영업일 기준)
+  const allRows = flow.rows;
+  const days = RANGE_DAYS[state.chartRange] || 366;
+  const cutoff = new Date(allRows[allRows.length - 1].t).valueOf() - days * 864e5;
+  let rows = allRows.filter((r) => new Date(r.t).valueOf() >= cutoff);
+  if (rows.length < 2) rows = allRows.slice(-2);
+  const tag = document.getElementById("flowUnitTag");
+  if (tag) tag.textContent = `(억원 · 최근 ${rows.length}거래일)`;
   const toEok = (v) => (v == null ? null : Math.round(v / 1e8));
   const hasEtc = rows.some((r) => r.etc != null || r.etc_corp != null);
   const series = [
