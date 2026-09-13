@@ -119,6 +119,8 @@ def _norm_action(s: str) -> str | None:
         return "buy"
     if s in ("sell", "s", "매도", "매각", "sold"):
         return "sell"
+    if s in ("dividend", "div", "배당", "배당금", "배당입금"):
+        return "dividend"
     if s in ("deposit", "dep", "d", "입금", "입금액"):
         return "deposit"
     if s in ("withdraw", "withdrawal", "w", "출금", "출금액"):
@@ -186,16 +188,17 @@ def _load_transactions() -> list[dict]:
         qty = _num(r["quantity"])
         px = _num(r["price"])
 
-        if act in ("deposit", "withdraw"):
-            # 입금·출금: ticker 칸은 비워도 됨(자동으로 "CASH"). 금액은 quantity 칸에
-            # 적는다 — quantity 가 비어있고 price 만 채웠으면 그것도 금액으로 받아줌.
+        if act in ("deposit", "withdraw", "dividend"):
+            # 입금·출금·배당입금: ticker 칸은 비워도 됨(자동으로 "CASH"). 금액은 quantity
+            # 칸에 적는다 — quantity 가 비어있고 price 만 채웠으면 그것도 금액으로 받아줌.
+            # 배당입금은 "입금"과 달리 순수 투자수익으로 잡힌다(원금 늘린 걸로 안 침).
             amount = qty or px
             if not (d and amount > 0):
                 print(f"[tx] {i+2}행 건너뜀: {ln[:80]}")
                 continue
+            nm = r["note"].strip() or {"deposit": "입금", "withdraw": "출금", "dividend": "배당입금"}[act]
             rows.append({"date": d, "ticker": raw_tk or "CASH", "action": act, "qty": amount, "price": 1.0,
-                         "account": r["account"].strip(),
-                         "name": r["note"].strip() or ("입금" if act == "deposit" else "출금"),
+                         "account": r["account"].strip(), "name": nm,
                          "ccy": _norm_ccy(r["currency"]), "acc_no": r["account_no"].strip()})
             continue
 
@@ -261,9 +264,9 @@ def _apply_splits(txns: list[dict]) -> list[dict]:
 
 
 def build_from_ledger(all_txns_in: list[dict]) -> dict:
-    # 입금·출금은 "종목"이 아니라 현금흐름이라 시세 조회·평단가 계산 대상에서 빼고
-    # 따로 누적 순입금(cash_txns)으로만 추적한다. 나머지(buy/sell)만 기존 로직대로.
-    cash_txns = sorted((tx for tx in all_txns_in if tx["action"] in ("deposit", "withdraw")),
+    # 입금·출금·배당입금은 "종목"이 아니라 현금흐름이라 시세 조회·평단가 계산 대상에서 빼고
+    # 따로 누적치(cash_txns)로만 추적한다. 나머지(buy/sell)만 기존 로직대로.
+    cash_txns = sorted((tx for tx in all_txns_in if tx["action"] in ("deposit", "withdraw", "dividend")),
                        key=lambda x: x["date"])
     txns = [tx for tx in all_txns_in if tx["action"] in ("buy", "sell")]
     all_txns = list(txns)
@@ -324,7 +327,10 @@ def build_from_ledger(all_txns_in: list[dict]) -> dict:
         if tx["date"] > last_tx_date.get(tx["ticker"], ""):
             last_tx_date[tx["ticker"]] = tx["date"]
 
+    realized_running = 0.0  # 누적 실현손익(매도 시점에 확정된 손익, 평균단가 대비, KRW)
+
     def apply_tx(tx):
+        nonlocal realized_running
         t = tx["ticker"]
         key = (t, tx.get("acc_no") or "")
         mkt = _market_of(t, mkt_hint)
@@ -336,12 +342,14 @@ def build_from_ledger(all_txns_in: list[dict]) -> dict:
         else:  # sell — 평균단가법(계좌 단위). 매도 쪽 계좌 태그가 매수 쪽과 다르거나
                # 비어 있으면(실수·누락) 그 계좌엔 팔 수량이 없어 수량이 그냥 증발해버림
                # — 부족분은 같은 종목의 다른 계좌 버킷에서 채워서 수량이 안 사라지게 한다.
+            sell_px = price * rate
             remaining = q
             have = pos.get(key, 0.0)
             avg = (cost.get(key, 0.0) / have) if have > 0 else 0.0
             sold = min(remaining, have)
             pos[key] = have - sold
             cost[key] = max(0.0, cost.get(key, 0.0) - sold * avg)
+            realized_running += sold * (sell_px - avg)  # 그 계좌의 평단가 대비 확정손익
             remaining -= sold
             if remaining > 1e-9:
                 other_keys = sorted(
@@ -356,11 +364,16 @@ def build_from_ledger(all_txns_in: list[dict]) -> dict:
                     sold2 = min(remaining, have2)
                     pos[k2] = have2 - sold2
                     cost[k2] = max(0.0, cost.get(k2, 0.0) - sold2 * avg2)
+                    realized_running += sold2 * (sell_px - avg2)
                     remaining -= sold2
 
     ti = 0
     ci = 0
-    net_contrib = 0.0  # 누적 순입금(입금-출금, KRW 환산) — 종목 매수원가(cost)와 별개 지표
+    net_contrib = 0.0     # 누적 순입금(입금-출금, KRW 환산) — 종목 매수원가(cost)와 별개 지표.
+                           # 배당입금은 "새로 넣은 돈"이 아니라 투자수익이라 여기엔 안 넣는다.
+    cum_deposit = 0.0      # 누적 입금(계속 증가만 함) — 연도별 입금액 breakdown 용
+    cum_withdraw = 0.0     # 누적 출금(계속 증가만 함)
+    cum_dividend = 0.0     # 누적 배당입금(계속 증가만 함) — 순수 투자수익으로 취급
     points = []
     for d in axis:
         while ti < len(txns) and txns[ti]["date"] <= d:
@@ -370,7 +383,12 @@ def build_from_ledger(all_txns_in: list[dict]) -> dict:
             ctx = cash_txns[ci]
             rate = fx_on(ctx["date"]) if ctx.get("ccy") == "US" else 1.0
             amt = ctx["qty"] * rate
-            net_contrib += amt if ctx["action"] == "deposit" else -amt
+            if ctx["action"] == "deposit":
+                net_contrib += amt; cum_deposit += amt
+            elif ctx["action"] == "withdraw":
+                net_contrib -= amt; cum_withdraw += amt
+            else:  # dividend
+                cum_dividend += amt
             ci += 1
         # 평가액은 계좌 구분과 무관하게 종목 전체 보유수량 합산으로 계산
         qty_by_ticker: dict[str, float] = {}
@@ -394,7 +412,11 @@ def build_from_ledger(all_txns_in: list[dict]) -> dict:
         if value <= 0:
             continue
         cost_total = sum(c for (t, _acc), c in cost.items() if t in trusted)
-        points.append({"d": d, "v": round(value), "c": round(cost_total), "nc": round(net_contrib)})
+        points.append({
+            "d": d, "v": round(value), "c": round(cost_total), "nc": round(net_contrib),
+            "dep": round(cum_deposit), "wd": round(cum_withdraw), "rz": round(realized_running),
+            "dv": round(cum_dividend),
+        })
 
     # 정합성 경고: 이력 최종 보유수량 vs holdings.yaml (계좌 구분과 무관하게 종목 전체 합산)
     final_qty_by_ticker: dict[str, float] = {}
@@ -514,7 +536,8 @@ def _finish(points: list[dict], assumption: str, first_full: str) -> dict:
         "first_full_date": first_full,
         "peak": {"d": peak["d"], "v": peak["v"]},
         "trough_after_peak": {"d": trough["d"], "v": trough["v"]},
-        "last": {"d": last["d"], "v": last["v"], "c": last["c"], **({"nc": last["nc"]} if "nc" in last else {})},
+        "last": {"d": last["d"], "v": last["v"], "c": last["c"],
+                 **{k: last[k] for k in ("nc", "dep", "wd", "rz", "dv") if k in last}},
         "points": points,
     }
 

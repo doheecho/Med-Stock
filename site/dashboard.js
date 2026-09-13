@@ -1084,35 +1084,43 @@ function renderYearlyReturns() {
   const lastOfYear = new Map(); // 연도 -> 그 해의 마지막 포인트(정렬돼 있으므로 계속 덮어쓰면 마지막이 남음)
   for (const p of pts) lastOfYear.set(p.d.slice(0, 4), p);
   const years = [...lastOfYear.keys()].sort();
-  // nc(누적 순입금)가 transactions.csv 에 입출금이 없으면 계속 0 이라, 아래 계산은
-  // "그 해 평가액 증감 - 그 해 순입금 증감" = 자동으로 예전(평가액 증감만) 로직과 같아짐.
-  const hasContrib = pts.some((p) => (p.nc ?? 0) !== 0);
-  let prevV = null, prevNc = null;
+  // dep/wd/dv/rz 가 transactions.csv 에 입출금·배당·매도 이력이 없으면 계속 0 이라,
+  // 아래 계산은 자동으로 예전(평가액 증감만) 로직과 같아진다.
+  const hasContrib = pts.some((p) => (p.nc ?? 0) !== 0 || (p.dv ?? 0) !== 0);
+  let prev = null;
   const rows = years.map((y, i) => {
     const p = lastOfYear.get(y);
-    const nc = p.nc ?? 0;
-    let chg = null, pct = null;
-    if (prevV != null) {
-      chg = (p.v - prevV) - (nc - prevNc);
-      pct = prevV ? (chg / prevV) * 100 : null;
+    const dep = p.dep ?? 0, wd = p.wd ?? 0, dv = p.dv ?? 0, rz = p.rz ?? 0, nc = p.nc ?? 0;
+    let chg = null, pct = null, yDep = null, yWd = null, yDv = null, yRz = null;
+    if (prev) {
+      // 그 해 투자손익 = 평가액 증감 - 순입금 증감(입출금 제외) + 그 해 받은 배당금
+      // (배당은 "새로 넣은 돈"이 아니라 투자수익이라 더해준다)
+      chg = (p.v - prev.v) - (nc - prev.nc) + (dv - prev.dv);
+      pct = prev.v ? (chg / prev.v) * 100 : null;
+      yDep = dep - prev.dep; yWd = wd - prev.wd; yDv = dv - prev.dv; yRz = rz - prev.rz;
     }
-    prevV = p.v; prevNc = nc;
-    return { year: y, v: p.v, chg, pct, isLast: i === years.length - 1 };
+    prev = { v: p.v, dep, wd, dv, rz, nc };
+    return { year: y, v: p.v, chg, pct, dep: yDep, wd: yWd, dv: yDv, rz: yRz, isLast: i === years.length - 1 };
   });
+  const money = (v) => (v == null ? "—" : v === 0 ? "—" : fmt.wonSigned(v));
   box.innerHTML =
-    `<table class="yearly-table"><thead><tr>
-       <th>연도</th><th>평가액</th><th>${hasContrib ? "투자손익" : "연간 증감"}</th><th>수익률</th>
+    `<div class="tbl-scroll"><table class="yearly-table"><thead><tr>
+       <th>연도</th><th>평가액</th>
+       ${hasContrib ? "<th>입금</th><th>출금</th><th>배당금</th>" : ""}
+       <th>${hasContrib ? "투자손익" : "연간 증감"}</th><th>실현손익</th><th>수익률</th>
      </tr></thead><tbody>
        ${rows.map((r) => `<tr>
          <td>${r.year}${r.isLast ? " · 현재" : " 말"}</td>
          <td>${eqWon(r.v)}</td>
+         ${hasContrib ? `<td>${money(r.dep)}</td><td>${money(r.wd)}</td><td>${money(r.dv)}</td>` : ""}
          <td class="${cls(r.chg)}">${r.chg == null ? "—" : fmt.wonSigned(r.chg)}</td>
+         <td class="${cls(r.rz)}">${money(r.rz)}</td>
          <td class="${cls(r.pct)}">${r.pct == null ? "—" : fmt.pct(r.pct)}</td>
        </tr>`).join("")}
-     </tbody></table>
+     </tbody></table></div>
      <div class="eq-note">${hasContrib
-       ? "※ 연말(마지막 해는 현재) 기준, 그 해 입출금은 제외한 순수 투자손익입니다."
-       : "※ 연말(마지막 해는 현재) 평가액 기준 단순 증감 — transactions.csv 에 입출금(deposit/withdraw) 을 넣으면 입출금을 뺀 순수 투자손익으로 바뀝니다."}</div>`;
+       ? "※ 연말(마지막 해는 현재) 기준. 투자손익=평가액 증감에서 입출금을 빼고 배당금을 더한 값(보유 종목 기준), 실현손익=그 해 매도로 확정된 손익. 둘은 서로 다른 관점이라 단순히 더해지지 않습니다(매도 후 재투자 안 한 현금은 추적하지 않음)."
+       : "※ 연말(마지막 해는 현재) 평가액 기준 단순 증감. 실현손익=그 해 매도로 확정된 손익. transactions.csv 에 입금/출금/배당입금 을 넣으면 입출금·배당을 반영한 투자손익으로 바뀝니다."}</div>`;
 }
 
 /* 코스피 비교선 — 보이는 구간 시작일의 실제 평가액을 기준으로 코스피 등락률만큼
