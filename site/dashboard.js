@@ -23,6 +23,8 @@ const state = {
   advisor: null,                     // data/advisor.json
   indices: null,                     // data/indices.json (새로고침 시 /indices 실시간으로 제자리 갱신)
   equity: null,                      // data/equity_curve.json
+  benchmark: null,                   // data/benchmark.json (코스피 등 지수 이력)
+  eqShowBench: false,                // 자산추이에 코스피 비교선 표시 여부
   eqRange: "1Y",                     // 자산 추이 기간: 1M 3M 6M 1Y 3Y ALL
   chartRange: "1Y",                  // 1W 1M 3M 6M 1Y 3Y 5Y
   ma: { ma5: true, ma20: true, ma60: true, ma120: true },
@@ -157,7 +159,7 @@ async function init() {
   });
   try {
     state.dataBase = await resolveDataBase();
-    const [holdings, snapshot, advisor, indices, fx, equity] = await Promise.all([
+    const [holdings, snapshot, advisor, indices, fx, equity, benchmark] = await Promise.all([
       getJSON(`${state.dataBase}/holdings.json`).catch(() => null),
       getJSON(`${state.dataBase}/snapshot.json`).catch(() => null),
       getJSON(`${state.dataBase}/advisor.json`).catch(() => null),
@@ -166,8 +168,10 @@ async function init() {
         .catch(() => getJSON("https://api.frankfurter.app/latest?from=USD&to=KRW"))
         .catch(() => null),
       getJSON(`${state.dataBase}/equity_curve.json`).catch(() => null),
+      getJSON(`${state.dataBase}/benchmark.json`).catch(() => null),
     ]);
     state.equity = equity;
+    state.benchmark = benchmark;
 
     if (fx && fx.rates && fx.rates.KRW) state.fx = { USDKRW: fx.rates.KRW, date: fx.date };
     state.advisor = advisor;
@@ -665,8 +669,31 @@ function markSortHeader() {
   });
 }
 
+/* ---- 인사이트: 종목별 손익 기여도(현재 평가손익 기준 랭킹) ---- */
+function renderContribution(rows) {
+  const box = document.getElementById("contribBox");
+  if (!box) return;
+  box.classList.remove("loading");
+  const items = rows
+    .map((r) => ({ name: r.h.name || r.h.ticker, pl: toKRW(r.pl, r.h.market) }))
+    .filter((x) => x.pl != null)
+    .sort((a, b) => b.pl - a.pl);
+  if (!items.length) { box.innerHTML = "<div class='error'>평가손익 데이터 없음</div>"; return; }
+  const maxAbs = Math.max(...items.map((x) => Math.abs(x.pl)), 1);
+  box.innerHTML = items.map((x) => {
+    const side = x.pl >= 0 ? "pos" : "neg";
+    const w = (Math.abs(x.pl) / maxAbs) * 100;
+    return `<div class="contrib-row">
+      <span class="contrib-name">${escapeHtml(x.name)}</span>
+      <span class="contrib-bar-track"><span class="contrib-bar ${side}" style="width:${w}%"></span></span>
+      <span class="contrib-val ${side}">${fmt.wonSigned(x.pl)}</span>
+    </div>`;
+  }).join("");
+}
+
 function renderSummary(withPie = true) {
   const rows = state.holdings.map((h) => ({ h, ...computePosition(h) }));
+  renderContribution(rows);
 
   // 총합은 전부 원화 환산 (미국 종목은 오늘 환율로). 종목별/회사별 동일.
   let cost = 0, value = 0, haveAll = true;
@@ -734,6 +761,7 @@ function renderEquity() {
     return;
   }
   box.hidden = false;
+  renderYearlyReturns();
 
   document.getElementById("eqRange").innerHTML = EQ_RANGE_BTNS
     .map(([k, l]) => `<button type="button" data-eqr="${k}"${state.eqRange === k ? ' class="on"' : ""}>${l}</button>`)
@@ -803,6 +831,19 @@ function renderEquity() {
 
   const viewMaxTs = new Date(last.d).valueOf();
   _eqDraw = { pts, wp, viewMinTs, viewMaxTs };
+
+  const bb = document.getElementById("eqBenchBtn");
+  if (bb) {
+    const hasBench = !!(state.benchmark && state.benchmark.series && state.benchmark.series.KOSPI);
+    bb.hidden = !hasBench;
+    bb.classList.toggle("on", state.eqShowBench);
+    bb.onclick = () => {
+      state.eqShowBench = !state.eqShowBench;
+      bb.classList.toggle("on", state.eqShowBench);
+      state._noAnim = true;
+      try { drawEquityChart(pts, wp, null, viewMinTs, viewMaxTs); } finally { state._noAnim = false; }
+    };
+  }
   drawEquityChart(pts, wp, null, viewMinTs, viewMaxTs);
 
   // 특정일 평가금액 조회
@@ -1025,8 +1066,73 @@ function renderEqHtblBody() {
     `공모주 배정·무상증자·액면분할·일부 매도가 이력에 없어 <b>오래된 종목의 수량·평균매수가·수익률이 부정확</b>할 수 있습니다 — 최근 1~2년이 가장 정확.</p>`;
 }
 
+/* ---- 인사이트: 연도별 수익률 요약(연말 평가액 기준 단순 증감) ---- */
+function renderYearlyReturns() {
+  const box = document.getElementById("yearlyBox");
+  if (!box) return;
+  box.classList.remove("loading");
+  const eq = state.equity;
+  if (!eq || !Array.isArray(eq.points) || eq.points.length < 2) {
+    box.innerHTML = "<div class='error'>자산 추이 데이터 없음</div>";
+    return;
+  }
+  const pts = eq.points;
+  const lastOfYear = new Map(); // 연도 -> 그 해의 마지막 포인트(정렬돼 있으므로 계속 덮어쓰면 마지막이 남음)
+  for (const p of pts) lastOfYear.set(p.d.slice(0, 4), p);
+  const years = [...lastOfYear.keys()].sort();
+  let prevV = null;
+  const rows = years.map((y, i) => {
+    const p = lastOfYear.get(y);
+    const chg = prevV != null ? p.v - prevV : null;
+    const pct = prevV ? (chg / prevV) * 100 : null;
+    prevV = p.v;
+    return { year: y, v: p.v, chg, pct, isLast: i === years.length - 1 };
+  });
+  box.innerHTML =
+    `<table class="yearly-table"><thead><tr>
+       <th>연도</th><th>평가액</th><th>연간 증감</th><th>등락률</th>
+     </tr></thead><tbody>
+       ${rows.map((r) => `<tr>
+         <td>${r.year}${r.isLast ? " · 현재" : " 말"}</td>
+         <td>${eqWon(r.v)}</td>
+         <td class="${cls(r.chg)}">${r.chg == null ? "—" : fmt.wonSigned(r.chg)}</td>
+         <td class="${cls(r.pct)}">${r.pct == null ? "—" : fmt.pct(r.pct)}</td>
+       </tr>`).join("")}
+     </tbody></table>
+     <div class="eq-note">※ 연말(마지막 해는 현재) 평가액 기준 단순 증감 — 그 해 입출금·추가매수가 있으면 실제 수익률과 다를 수 있습니다.</div>`;
+}
+
+/* 코스피 비교선 — 보이는 구간 시작일의 실제 평가액을 기준으로 코스피 등락률만큼
+   같이 움직이는 가상의 "그때 코스피에 넣었다면" 선(같은 원화 축에 그려서 직접 비교).
+   입출금·추가매수 등 현금흐름은 반영 못 함(포트폴리오 쪽도 이미 그 한계 있음) —
+   딱 그 기간의 등락률 비교용. */
+function benchSeries(pts, viewMinTs) {
+  const series = state.benchmark && state.benchmark.series && state.benchmark.series.KOSPI;
+  if (!series || !pts.length) return null;
+  const keys = Object.keys(series).sort();
+  const ffill = (d) => {
+    let lo = 0, hi = keys.length - 1, ans = null;
+    while (lo <= hi) {
+      const mid = (lo + hi) >> 1;
+      if (keys[mid] <= d) { ans = keys[mid]; lo = mid + 1; } else hi = mid - 1;
+    }
+    return ans == null ? null : series[ans];
+  };
+  const viewDateStr = viewMinTs != null ? new Date(viewMinTs).toISOString().slice(0, 10) : pts[0].d;
+  const anchor = pts.find((p) => p.d >= viewDateStr) || pts[0];
+  const anchorIdx = pts.findIndex((p) => p.d === anchor.d);
+  const anchorKospi = ffill(anchor.d);
+  if (!anchorKospi) return null;
+  const scale = anchor.v / anchorKospi;
+  return pts.slice(anchorIdx).map((p) => {
+    const k = ffill(p.d);
+    return k == null ? null : { x: new Date(p.d).valueOf(), y: k * scale };
+  }).filter(Boolean);
+}
+
 function drawEquityChart(pts, peak, asOf, viewMinTs, viewMaxTs) {
   const X = (p) => new Date(p.d).valueOf();
+  const bench = state.eqShowBench ? benchSeries(pts, viewMinTs) : null;
   makeChart("equityChart", {
     _onZoomReset: resetEqZoom,
     data: {
@@ -1046,6 +1152,13 @@ function drawEquityChart(pts, peak, asOf, viewMinTs, viewMaxTs) {
           borderColor: "#8b95a1", borderWidth: 1, borderDash: [5, 4],
           pointRadius: 0, fill: false, tension: 0, order: 1,
         },
+        ...(bench ? [{
+          type: "line",
+          label: "코스피(같은 금액 가정)",
+          data: bench,
+          borderColor: "#60a5fa", borderWidth: 1.4, borderDash: [2, 2],
+          pointRadius: 0, fill: false, tension: 0, order: 1,
+        }] : []),
         {
           label: "구간 전고점",
           data: [{ x: X(peak), y: peak.v }],

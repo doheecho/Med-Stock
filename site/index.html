@@ -69,9 +69,22 @@
       </div>
     </div>
 
+    <div class="section-eyebrow">인사이트</div>
+    <div class="insight-grid">
+      <div class="block">
+        <h3>종목별 손익 기여도</h3>
+        <div id="contribBox" class="loading">로딩…</div>
+      </div>
+      <div class="block">
+        <h3>연도별 수익률</h3>
+        <div id="yearlyBox" class="loading">로딩…</div>
+      </div>
+    </div>
+
     <div id="equityBlock" class="equity-block" hidden>
       <div class="eq-head">
         <h3>자산 추이 <span class="eq-sub">누적 평가액</span></h3>
+        <button type="button" id="eqBenchBtn" class="eq-tbtn" hidden>코스피 비교</button>
         <span class="eq-range" id="eqRange"></span>
       </div>
       <div class="eq-stats" id="eqStats"></div>
@@ -117,6 +130,6 @@
   <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2/dist/chartjs-plugin-zoom.min.js"></script>
   <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
-  <script src="./dashboard.js?v=20260913n"></script>
+  <script src="./dashboard.js?v=20260913o"></script>
 </body>
 </html>

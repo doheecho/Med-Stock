@@ -46,6 +46,7 @@ jobs:
           python etf_collector.py
           python snapshot_builder.py
           python equity_price_history.py
+          python benchmark_history.py
           python equity_curve.py
           python advisor_collector.py
           exit 0
