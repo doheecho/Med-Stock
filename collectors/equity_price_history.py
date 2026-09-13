@@ -33,7 +33,7 @@ def _windows() -> dict[str, tuple[str, str]]:
     sys.path.insert(0, str(ROOT / "collectors"))
     from equity_curve import _load_transactions
 
-    tx = _load_transactions()
+    tx = [r for r in _load_transactions() if r["action"] in ("buy", "sell")]  # 입출금은 종목이 아님
     floor = min((r["date"] for r in tx), default=DEFAULT_FLOOR)
     held_now = {h["ticker"] for h in load_holdings()}
     by: dict[str, list[dict]] = {}

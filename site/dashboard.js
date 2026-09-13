@@ -808,6 +808,9 @@ function renderEquity() {
   const vsPeak = wp.v ? (last.v / wp.v - 1) * 100 : null;
   const vsCost = last.c ? (last.v / last.c - 1) * 100 : null;
   const vsStart = first.v ? (last.v / first.v - 1) * 100 : null;
+  // transactions.csv 에 입출금(deposit/withdraw) 을 넣은 경우에만 표시 — 안 넣었으면
+  // last.nc 가 0 이라 그냥 숨김(기존 화면과 동일하게 유지).
+  const vsNc = last.nc ? (last.v / last.nc - 1) * 100 : null;
 
   const stat = (label, val, cls2 = "") => `<span class="eq-stat"><i>${label}</i><b class="${cls2}">${val}</b></span>`;
   document.getElementById("eqStats").innerHTML =
@@ -815,6 +818,7 @@ function renderEquity() {
     stat(`구간 전고점 <em>${wp.d}</em>`, eqWon(wp.v)) +
     stat("전고점 대비", vsPeak == null ? "—" : fmt.pct(vsPeak), cls(vsPeak)) +
     (vsCost == null ? "" : stat("원금 대비", fmt.pct(vsCost), cls(vsCost))) +
+    (vsNc == null ? "" : stat("누적 입금 대비", fmt.pct(vsNc), cls(vsNc))) +
     stat(`${state.eqRange === "ALL" ? "시작" : "구간 시작"} 대비`, vsStart == null ? "—" : fmt.pct(vsStart), cls(vsStart));
 
   const note = [];
@@ -1080,17 +1084,24 @@ function renderYearlyReturns() {
   const lastOfYear = new Map(); // 연도 -> 그 해의 마지막 포인트(정렬돼 있으므로 계속 덮어쓰면 마지막이 남음)
   for (const p of pts) lastOfYear.set(p.d.slice(0, 4), p);
   const years = [...lastOfYear.keys()].sort();
-  let prevV = null;
+  // nc(누적 순입금)가 transactions.csv 에 입출금이 없으면 계속 0 이라, 아래 계산은
+  // "그 해 평가액 증감 - 그 해 순입금 증감" = 자동으로 예전(평가액 증감만) 로직과 같아짐.
+  const hasContrib = pts.some((p) => (p.nc ?? 0) !== 0);
+  let prevV = null, prevNc = null;
   const rows = years.map((y, i) => {
     const p = lastOfYear.get(y);
-    const chg = prevV != null ? p.v - prevV : null;
-    const pct = prevV ? (chg / prevV) * 100 : null;
-    prevV = p.v;
+    const nc = p.nc ?? 0;
+    let chg = null, pct = null;
+    if (prevV != null) {
+      chg = (p.v - prevV) - (nc - prevNc);
+      pct = prevV ? (chg / prevV) * 100 : null;
+    }
+    prevV = p.v; prevNc = nc;
     return { year: y, v: p.v, chg, pct, isLast: i === years.length - 1 };
   });
   box.innerHTML =
     `<table class="yearly-table"><thead><tr>
-       <th>연도</th><th>평가액</th><th>연간 증감</th><th>등락률</th>
+       <th>연도</th><th>평가액</th><th>${hasContrib ? "투자손익" : "연간 증감"}</th><th>수익률</th>
      </tr></thead><tbody>
        ${rows.map((r) => `<tr>
          <td>${r.year}${r.isLast ? " · 현재" : " 말"}</td>
@@ -1099,7 +1110,9 @@ function renderYearlyReturns() {
          <td class="${cls(r.pct)}">${r.pct == null ? "—" : fmt.pct(r.pct)}</td>
        </tr>`).join("")}
      </tbody></table>
-     <div class="eq-note">※ 연말(마지막 해는 현재) 평가액 기준 단순 증감 — 그 해 입출금·추가매수가 있으면 실제 수익률과 다를 수 있습니다.</div>`;
+     <div class="eq-note">${hasContrib
+       ? "※ 연말(마지막 해는 현재) 기준, 그 해 입출금은 제외한 순수 투자손익입니다."
+       : "※ 연말(마지막 해는 현재) 평가액 기준 단순 증감 — transactions.csv 에 입출금(deposit/withdraw) 을 넣으면 입출금을 뺀 순수 투자손익으로 바뀝니다."}</div>`;
 }
 
 /* 코스피 비교선 — 보이는 구간 시작일의 실제 평가액을 기준으로 코스피 등락률만큼

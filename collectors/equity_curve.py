@@ -119,6 +119,10 @@ def _norm_action(s: str) -> str | None:
         return "buy"
     if s in ("sell", "s", "매도", "매각", "sold"):
         return "sell"
+    if s in ("deposit", "dep", "d", "입금", "입금액"):
+        return "deposit"
+    if s in ("withdraw", "withdrawal", "w", "출금", "출금액"):
+        return "withdraw"
     return None
 
 
@@ -179,9 +183,23 @@ def _load_transactions() -> list[dict]:
         d = _norm_date(r["date"])
         act = _norm_action(r["action"])
         raw_tk = r["ticker"].strip()
-        tk = _TX_ALIAS.get(raw_tk, raw_tk)
         qty = _num(r["quantity"])
         px = _num(r["price"])
+
+        if act in ("deposit", "withdraw"):
+            # 입금·출금: ticker 칸은 비워도 됨(자동으로 "CASH"). 금액은 quantity 칸에
+            # 적는다 — quantity 가 비어있고 price 만 채웠으면 그것도 금액으로 받아줌.
+            amount = qty or px
+            if not (d and amount > 0):
+                print(f"[tx] {i+2}행 건너뜀: {ln[:80]}")
+                continue
+            rows.append({"date": d, "ticker": raw_tk or "CASH", "action": act, "qty": amount, "price": 1.0,
+                         "account": r["account"].strip(),
+                         "name": r["note"].strip() or ("입금" if act == "deposit" else "출금"),
+                         "ccy": _norm_ccy(r["currency"]), "acc_no": r["account_no"].strip()})
+            continue
+
+        tk = _TX_ALIAS.get(raw_tk, raw_tk)
         if not (d and act and tk and qty > 0):
             print(f"[tx] {i+2}행 건너뜀: {ln[:80]}")
             continue
@@ -242,7 +260,12 @@ def _apply_splits(txns: list[dict]) -> list[dict]:
     return txns
 
 
-def build_from_ledger(txns: list[dict]) -> dict:
+def build_from_ledger(all_txns_in: list[dict]) -> dict:
+    # 입금·출금은 "종목"이 아니라 현금흐름이라 시세 조회·평단가 계산 대상에서 빼고
+    # 따로 누적 순입금(cash_txns)으로만 추적한다. 나머지(buy/sell)만 기존 로직대로.
+    cash_txns = sorted((tx for tx in all_txns_in if tx["action"] in ("deposit", "withdraw")),
+                       key=lambda x: x["date"])
+    txns = [tx for tx in all_txns_in if tx["action"] in ("buy", "sell")]
     all_txns = list(txns)
     holds = {h["ticker"]: h for h in load_holdings()}
     mkt_hint = {t: h.get("market", "KRX") for t, h in holds.items()}
@@ -336,11 +359,19 @@ def build_from_ledger(txns: list[dict]) -> dict:
                     remaining -= sold2
 
     ti = 0
+    ci = 0
+    net_contrib = 0.0  # 누적 순입금(입금-출금, KRW 환산) — 종목 매수원가(cost)와 별개 지표
     points = []
     for d in axis:
         while ti < len(txns) and txns[ti]["date"] <= d:
             apply_tx(txns[ti])
             ti += 1
+        while ci < len(cash_txns) and cash_txns[ci]["date"] <= d:
+            ctx = cash_txns[ci]
+            rate = fx_on(ctx["date"]) if ctx.get("ccy") == "US" else 1.0
+            amt = ctx["qty"] * rate
+            net_contrib += amt if ctx["action"] == "deposit" else -amt
+            ci += 1
         # 평가액은 계좌 구분과 무관하게 종목 전체 보유수량 합산으로 계산
         qty_by_ticker: dict[str, float] = {}
         for (t, _acc), q in pos.items():
@@ -363,7 +394,7 @@ def build_from_ledger(txns: list[dict]) -> dict:
         if value <= 0:
             continue
         cost_total = sum(c for (t, _acc), c in cost.items() if t in trusted)
-        points.append({"d": d, "v": round(value), "c": round(cost_total)})
+        points.append({"d": d, "v": round(value), "c": round(cost_total), "nc": round(net_contrib)})
 
     # 정합성 경고: 이력 최종 보유수량 vs holdings.yaml (계좌 구분과 무관하게 종목 전체 합산)
     final_qty_by_ticker: dict[str, float] = {}
@@ -483,7 +514,7 @@ def _finish(points: list[dict], assumption: str, first_full: str) -> dict:
         "first_full_date": first_full,
         "peak": {"d": peak["d"], "v": peak["v"]},
         "trough_after_peak": {"d": trough["d"], "v": trough["v"]},
-        "last": {"d": last["d"], "v": last["v"], "c": last["c"]},
+        "last": {"d": last["d"], "v": last["v"], "c": last["c"], **({"nc": last["nc"]} if "nc" in last else {})},
         "points": points,
     }
 
