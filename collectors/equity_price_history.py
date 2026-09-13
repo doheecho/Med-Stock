@@ -22,16 +22,19 @@ import time
 
 from common import DATA, ROOT, load_holdings, now_iso
 
-FLOOR = "2020-01-01"   # 이보다 이른 구간은 자르기
+DEFAULT_FLOOR = "2020-01-01"  # transactions.csv 가 아예 없을 때만 쓰는 안전값
 TODAY = dt.date.today().isoformat()
 
 
 def _windows() -> dict[str, tuple[str, str]]:
-    """종목 -> (첫 활동일, 마지막 활동일). 계속 보유 중이면 오늘."""
+    """종목 -> (첫 활동일, 마지막 활동일). 계속 보유 중이면 오늘.
+    시작일은 transactions.csv 에 실제로 입력된 가장 이른 거래일까지 그대로 쓴다
+    (예전엔 2020-01-01 로 잘라서 그 전 이력은 곡선에 아예 안 잡혔음)."""
     sys.path.insert(0, str(ROOT / "collectors"))
     from equity_curve import _load_transactions
 
     tx = _load_transactions()
+    floor = min((r["date"] for r in tx), default=DEFAULT_FLOOR)
     held_now = {h["ticker"] for h in load_holdings()}
     by: dict[str, list[dict]] = {}
     for t in tx:
@@ -43,13 +46,13 @@ def _windows() -> dict[str, tuple[str, str]]:
         pos = 0.0
         for r in rows:
             pos += r["qty"] if r["action"] == "buy" else -r["qty"]
-        start = max(rows[0]["date"], FLOOR)
+        start = rows[0]["date"]
         end = TODAY if (pos > 1e-6 or tk in held_now) else rows[-1]["date"]
         if end >= start:
             win[tk] = (start, end)
     # 거래이력엔 없지만 지금 보유 중인 종목(안전망)
     for tk in held_now:
-        win.setdefault(tk, (FLOOR, TODAY))
+        win.setdefault(tk, (floor, TODAY))
     return win
 
 

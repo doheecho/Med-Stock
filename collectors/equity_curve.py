@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import bisect
 import csv
+import datetime as _dt
 import json
 import re
 import sys
@@ -82,12 +83,22 @@ def _fx_series(start: str, end: str) -> dict[str, float]:
     return {}
 
 
-def _ffill_lookup(m: dict[str, float]):
+def _ffill_lookup(m: dict[str, float], max_gap_days: int | None = None):
+    """직전 값을 앞으로 채워 넣는 조회(마지막 거래일 종가를 다음날에도 쓰는 식).
+    max_gap_days 를 주면, 그보다 오래된 값은 안 씀 — 종목이 상폐·매도완료 등으로
+    가격 수집이 끊긴 뒤에도 마지막 시세가 몇 년씩 그대로 이어져서 이미 정리된
+    포지션이 계속 평가되는 걸 막는다(FX 환율처럼 계속 이어 써도 되는 값엔 안 씀)."""
     keys = sorted(m)
 
     def get(d: str):
         i = bisect.bisect_right(keys, d) - 1
-        return m[keys[i]] if i >= 0 else None
+        if i < 0:
+            return None
+        if max_gap_days is not None:
+            gap = (_dt.date.fromisoformat(d) - _dt.date.fromisoformat(keys[i])).days
+            if gap > max_gap_days:
+                return None
+        return m[keys[i]]
 
     return get
 
@@ -233,7 +244,8 @@ def build_from_ledger(txns: list[dict]) -> dict:
     def fx_on(d):
         return (fx_get(d) or fx_flat) or FX_FALLBACK
 
-    pget = {t: _ffill_lookup(m) for t, m in pmaps.items()}
+    # 30일 넘게 새 시세가 없으면(상폐·매도완료로 수집 종료) 그 이후엔 평가에서 뺀다.
+    pget = {t: _ffill_lookup(m, max_gap_days=30) for t, m in pmaps.items()}
     first_px = {t: min(m) for t, m in pmaps.items()}
 
     # (ticker, 계좌구분) 로 따로 추적 — 같은 증권사 안에 계좌가 여러 개면 "account"(증권사명)
@@ -377,7 +389,7 @@ def build_from_holdings() -> dict:
     def fx_on(d):
         return (fx_get(d) or fx_flat) or FX_FALLBACK
 
-    pget = {t: _ffill_lookup(m) for t, m in priced.items()}
+    pget = {t: _ffill_lookup(m, max_gap_days=30) for t, m in priced.items()}
     has_bd = any(lot["buy_date"] for lot in lots)
     first_full = max(first_date[lot["ticker"]] for lot in lots if lot["ticker"] in priced)
 
