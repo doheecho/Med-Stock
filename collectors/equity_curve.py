@@ -158,7 +158,8 @@ def _num(s: str) -> float:
 # (시세가 없어 곡선엔 안 잡히지만 특정일 보유표에는 수량·매수가가 표시된다).
 _TX_ALIAS = {"홈캐스트": "064240", "홈 캐스트": "064240"}
 
-_TX_FIELDS = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note", "account_no"]
+_TX_FIELDS = ["date", "ticker", "action", "quantity", "price", "currency", "account", "note", "account_no",
+              "amount_total"]
 
 
 def _split_line(ln: str) -> list[str]:
@@ -191,8 +192,9 @@ def _load_transactions() -> list[dict]:
         if act in ("deposit", "withdraw", "dividend"):
             # 입금·출금·배당입금: ticker 칸은 비워도 됨(자동으로 "CASH"). 금액은 quantity
             # 칸에 적는다 — quantity 가 비어있고 price 만 채웠으면 그것도 금액으로 받아줌.
+            # quantity/price 를 0으로 두고 10번째 칸(총액)에 금액을 적은 경우도 지원.
             # 배당입금은 "입금"과 달리 순수 투자수익으로 잡힌다(원금 늘린 걸로 안 침).
-            amount = qty or px
+            amount = qty or px or _num(r["amount_total"])
             if not (d and amount > 0):
                 print(f"[tx] {i+2}행 건너뜀: {ln[:80]}")
                 continue
