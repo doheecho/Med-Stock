@@ -72,10 +72,58 @@ const fmt = {
 
 const cls = (v) => (v == null ? "" : v >= 0 ? "pos" : "neg");
 
+/* ------------------------------------------------------------------ 테마(다크/라이트) */
+const THEME_KEY = "medstock.theme";
+
+function resolvedIsLight(explicit) {
+  if (explicit === "light") return true;
+  if (explicit === "dark") return false;
+  return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches);
+}
+
+function paintThemeUI(explicit) {
+  const isLight = resolvedIsLight(explicit);
+  const btn = document.getElementById("themeToggle");
+  if (btn) {
+    btn.textContent = isLight ? "🌙" : "☀️";
+    btn.title = isLight ? "다크 모드로 전환" : "라이트 모드로 전환";
+  }
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) metaTheme.setAttribute("content", isLight ? "#f6f7f9" : "#0f1216");
+}
+
+function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem(THEME_KEY); } catch (_) {}
+  // index.html 인라인 스크립트가 <html data-theme> 는 이미 세팅해둠(깜빡임 방지) — 여기선 버튼/메타만 동기화.
+  paintThemeUI(saved === "light" || saved === "dark" ? saved : null);
+
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    let cur = null;
+    try { cur = localStorage.getItem(THEME_KEY); } catch (_) {}
+    const next = resolvedIsLight(cur === "light" || cur === "dark" ? cur : null) ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (_) {}
+    paintThemeUI(next);
+  });
+
+  // OS 설정이 바뀌면(자동 모드일 때만) 버튼 표시도 따라가게
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", () => {
+      let cur = null;
+      try { cur = localStorage.getItem(THEME_KEY); } catch (_) {}
+      if (cur !== "light" && cur !== "dark") paintThemeUI(null);
+    });
+  }
+}
+
 /* ------------------------------------------------------------------ 부트스트랩 */
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+  initTheme();
   try {
     if (window.Chart && window.ChartDataLabels) {
       Chart.register(window.ChartDataLabels);

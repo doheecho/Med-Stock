@@ -10,13 +10,23 @@
   --accent: #f59e0b;  /* UI 강조색 = 앰버 (AI Advisor·부제와 통일 · 원자재시황과 결 맞춤) */
   --green: #22c55e;
   --amber: #f59e0b;
+  color-scheme: dark;
 }
 
+/* 자동(OS) 모드: 사용자가 수동으로 고른 적 없을 때만(data-theme 없음) OS 라이트 설정을 따름 */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --bg: #f6f7f9; --panel: #fff; --panel-2: #f0f2f5; --line: #e2e6eb;
     --text: #1a1f26; --muted: #667085;
+    color-scheme: light;
   }
+}
+
+/* 수동 라이트 모드 (상단 토글 버튼) — OS 설정과 무관하게 강제 적용 */
+:root[data-theme="light"] {
+  --bg: #f6f7f9; --panel: #fff; --panel-2: #f0f2f5; --line: #e2e6eb;
+  --text: #1a1f26; --muted: #667085;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -26,6 +36,18 @@ body {
   color: var(--text);
   font: 14px/1.5 -apple-system, "Segoe UI", "Malgun Gothic", Roboto, sans-serif;
   font-variant-numeric: tabular-nums;   /* 숫자 자릿수 세로 정렬 (통계 사이트 느낌) */
+}
+
+/* 다크/라이트 전환 시 색상만 부드럽게 트랜지션 (레이아웃엔 영향 없음) */
+body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
+.eq-modal-inner, .tabs button, .block, .bubble, .acct-card, table, th, td,
+.advisor, .sig-chip, .sig-guide, .tab-add-pop, .eq-askrow input[type="date"] {
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+/* 다크/라이트 토글 버튼 */
+#themeToggle {
+  font-size: 14px; line-height: 1; padding: 5px 9px !important;
 }
 
 .topbar {
@@ -152,7 +174,7 @@ body {
 .eq-askrow label { font-size: 12px; color: var(--muted); }
 .eq-askrow input[type="date"] {
   background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
-  border-radius: 6px; padding: 3px 8px; font-size: 12px; color-scheme: dark;
+  border-radius: 6px; padding: 3px 8px; font-size: 12px;
 }
 .eq-asof { font-size: 12.5px; color: var(--muted); }
 .eq-asof b { color: var(--text); font-weight: 700; }

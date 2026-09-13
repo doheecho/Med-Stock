@@ -11,12 +11,22 @@
   <meta name="theme-color" content="#0f1216" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <script>
+    /* 저장된 테마를 CSS 적용 전에 세팅 → 전환 시 화면 깜빡임(FOUC) 방지 */
+    (function () {
+      try {
+        var t = localStorage.getItem("medstock.theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <header class="topbar">
     <h1>메-Stock <span class="sub">개인 포트폴리오 대시보드</span></h1>
     <div class="meta">
       <span id="asOf">데이터 로딩 중…</span>
+      <button id="themeToggle" type="button" title="라이트 모드로 전환" aria-label="다크/라이트 모드 전환">☀️</button>
       <button id="refreshBtn" type="button" title="시세 데이터 다시 불러오기">↻ 현재가 갱신</button>
       <button id="advisorBtn" type="button" title="AI Advisor 코멘트 다시 불러오기">↻ AI Advisor</button>
     </div>
@@ -103,6 +113,6 @@
   <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2/dist/chartjs-plugin-zoom.min.js"></script>
   <!-- dashboard.js 수정 시 ?v= 를 바꿔 캐시 무효화 (GitHub Pages 기본 캐시 10분) -->
-  <script src="./dashboard.js?v=20260911a"></script>
+  <script src="./dashboard.js?v=20260913a"></script>
 </body>
 </html>
