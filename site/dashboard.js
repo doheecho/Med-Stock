@@ -212,6 +212,26 @@ async function init() {
         renderEquity();
       });
     }
+    const eqCanvas = document.getElementById("equityChart");
+    if (eqCanvas) {
+      // 캡처 단계에서 직접 처리 — chartjs-plugin-zoom(드래그줌)의 버블 단계 핸들러가
+      // click 이벤트를 먹어버려서(줌 인터랙션과 충돌) Chart.js 의 onClick 옵션이 안 먹힘.
+      eqCanvas.addEventListener("click", (e) => {
+        const c = state.charts.equityChart;
+        const eq = state.equity;
+        if (!c || !c.scales || !c.scales.x || !eq || !eq.points || !eq.points.length) return;
+        const xVal = c.scales.x.getValueForPixel(e.offsetX);
+        if (xVal == null) return;
+        const dateStr = new Date(xVal).toISOString().slice(0, 10);
+        let hit = null;
+        for (const p of eq.points) { if (p.d <= dateStr) hit = p; else break; }
+        if (!hit) hit = eq.points[0];
+        const di = document.getElementById("eqDate");
+        if (di) di.value = hit.d;
+        eqShowAsOf(hit.d);
+      }, true);
+    }
+
     selectTicker(state.holdings[0].ticker);
 
     await refreshLive(); // 실시간 현재가
@@ -2273,6 +2293,7 @@ function evaluateSignals(p) {
 function renderSignals(h, sigDoc) {
   const box = document.getElementById("signalBox");
   if (!box) return;
+  box.classList.remove("loading");
   const p = state.prices[h.ticker];
   const sig = (sigDoc && sigDoc.signals) ? sigDoc
             : (p && p.signals && p.signals.signals) ? p.signals
@@ -2488,6 +2509,7 @@ const stochZoneLabels = zoneLabelsPlugin("stochZoneLabels", 90, 10);
 /* ---- 지표 표 ---- */
 function renderFundamentals(h, f) {
   const box = document.getElementById("fundBox");
+  box.classList.remove("loading");
   if (!f) {
     box.innerHTML = "<div class='error'>재무지표 없음</div>";
     return;
@@ -2519,6 +2541,7 @@ function renderFundamentals(h, f) {
 function renderIndices() {
   const box = document.getElementById("indicesBox");
   if (!box) return;
+  box.classList.remove("loading");
   const d = state.indices;
   if (!d || !d.items || !d.items.length) {
     box.innerHTML = "<div class='error'>지수 데이터 없음 (indices_collector 미실행)</div>";
@@ -2559,6 +2582,7 @@ function renderIndices() {
 function renderEtfHoldings(d) {
   const box = document.getElementById("etfBox");
   if (!box) return;
+  box.classList.remove("loading");
   if (!d || !d.constituents || !d.constituents.length) {
     box.innerHTML = "<div class='error'>구성종목 데이터 없음 (etf_collector 미실행)</div>";
     return;
@@ -2688,6 +2712,7 @@ function renderTarget(h, t) {
   state._targets = state._targets || {};
   if (t) state._targets[h.ticker] = t;
   const box = document.getElementById("targetBox");
+  box.classList.remove("loading");
   if (!t || !t.target_avg) {
     box.innerHTML = "<div class='error'>목표주가 컨센서스 없음</div>";
     return;
@@ -2721,6 +2746,7 @@ function renderTarget(h, t) {
 function renderForecast(h, t) {
   const box = document.getElementById("forecastBox");
   if (!box) return;
+  box.classList.remove("loading");
   const m = h.market;
   const items = ((t && t.analyst_targets) || [])
     .filter((x) => x && x.target != null)
@@ -2788,6 +2814,7 @@ function opinionClass(s) {
 async function renderConsensus(h, t) {
   const box = document.getElementById("consensusBox");
   if (!box) return;
+  box.classList.remove("loading");
   let rows = (t && t.consensus_rows) || [];
   // 수집기(GitHub Actions)는 한국 금융사이트 IP 차단으로 비어 옴 → 브라우저에서 워커로 조회
   if (!rows.length && PROXY_BASE && /^\d[0-9A-Z]{5}$/.test(h.ticker || "")) {
