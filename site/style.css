@@ -72,8 +72,26 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
 .meta button {
   background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
   border-radius: 6px; padding: 5px 10px; cursor: pointer; font-size: 12px;
+  transition: border-color .15s ease, background-color .15s ease, transform .1s ease;
 }
 .meta button:hover { border-color: var(--accent); }
+.meta button:active { transform: scale(.96); }
+/* 현재가 갱신 = 툴바의 주 액션으로 강조 (AI Advisor·테마 토글은 보조) */
+#refreshBtn {
+  background: color-mix(in srgb, var(--accent) 16%, var(--panel-2));
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--line));
+  font-weight: 600;
+}
+#refreshBtn:hover { background: color-mix(in srgb, var(--accent) 26%, var(--panel-2)); }
+
+/* 기간/토글류 버튼 공통 — 눌렀을 때 살짝 눌리는 피드백 */
+.chart-ctl button, .eq-range button, .tf-btns button, .pie-toggle, .pie-collapse, .eq-tbtn {
+  transition: border-color .15s ease, background-color .15s ease, color .15s ease, transform .1s ease;
+}
+.chart-ctl button:active, .eq-range button:active, .tf-btns button:active,
+.pie-toggle:active, .pie-collapse:active, .eq-tbtn:active {
+  transform: scale(.96);
+}
 
 /* 상단 티커 스트립 — KOSPI·KOSDAQ·원/달러 등 시황을 한눈에 (data/indices.json) */
 .top-ticker {
@@ -108,6 +126,8 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
   font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+/* 손익 방향이 있는 숫자(평가손익·전일대비)가 진짜 헤드라인 — 매수/평가금액보다 한 단계 크게 */
+.card .value.pos, .card .value.neg { font-size: 19px; font-weight: 700; }
 .card .value.pos { color: var(--up); }
 .card .value.neg { color: var(--down); }
 
@@ -197,6 +217,8 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
 .eq-stat b { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .eq-stat b.pos { color: var(--up); }
 .eq-stat b.neg { color: var(--down); }
+/* "현재 평가액"이 이 블록의 헤드라인 숫자 — 나머지 보조 지표보다 한 단계 크게 */
+.eq-stat:first-child b { font-size: 18px; }
 #equityChart { height: 260px !important; }
 .eq-askrow {
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -271,6 +293,13 @@ thead th { color: var(--muted); font-weight: 500; font-size: 12px; }
 #posTable thead th { cursor: pointer; user-select: none; white-space: nowrap; }
 #posTable thead th:hover { color: var(--text); }
 tbody tr:last-child td { border-bottom: none; }
+/* 표 행 hover — 지금 어떤 줄을 보고 있는지 시각적으로 짚어줌 */
+#posTable tbody tr, .eq-htbl tbody tr, .idx-table tbody tr {
+  transition: background-color .12s ease;
+}
+#posTable tbody tr:hover, .eq-htbl tbody tr:hover, .idx-table tbody tr:hover {
+  background: var(--panel-2);
+}
 
 .pos { color: var(--up); }
 .neg { color: var(--down); }
@@ -325,7 +354,9 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .tabs button {
   background: transparent; border: none; border-bottom: 3px solid transparent;
   color: var(--muted); padding: 10px 14px; cursor: pointer; font-size: 14px;
+  transition: color .15s ease, border-color .15s ease;
 }
+.tabs button:hover { color: var(--text); }
 .tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
 .tabs button.tab-extra { font-style: italic; }
 .tab-x {
@@ -453,8 +484,27 @@ a.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .news a:hover { color: var(--accent); }
 .news .src { color: var(--muted); font-size: 11px; margin-left: 6px; }
 
-.loading, .error { color: var(--muted); padding: 20px; text-align: center; }
-.error { color: var(--up); }
+/* 로딩 — 은은한 펄스로 "아직 처리 중"임을 표시 (멎어 보이는 텍스트 대신) */
+.loading {
+  color: var(--muted); padding: 20px; text-align: center; font-size: 12.5px;
+  animation: loadingPulse 1.4s ease-in-out infinite;
+}
+@keyframes loadingPulse { 0%, 100% { opacity: .4; } 50% { opacity: .9; } }
+
+/* 빈/미제공 데이터 — 눈에 띄는 빨강 대신 카드 톤의 절제된 안내 박스 */
+.error {
+  color: var(--muted); padding: 16px 14px; text-align: center; font-size: 12px; line-height: 1.6;
+  border: 1px dashed var(--line); border-radius: 8px; background: var(--panel-2);
+}
+.error::before { content: "ⓘ "; opacity: .7; }
+
+/* 페이지 전체가 못 뜬 경우 — AI Advisor 박스와 같은 언어의 강조 알림 */
+.fail {
+  margin: 20px; padding: 16px 18px; border-radius: 8px;
+  background: color-mix(in srgb, var(--amber) 6%, var(--panel));
+  border: 1px solid var(--line); border-left: 3px solid var(--amber);
+  color: var(--text); font-size: 13px; line-height: 1.7;
+}
 
 /* 출처·갱신 스트립 (푸터) — 원자재시황과 동일 */
 .provenance {

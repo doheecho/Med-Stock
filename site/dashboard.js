@@ -239,7 +239,7 @@ async function getJSON(url) {
 }
 
 function fail(msg) {
-  document.getElementById("detail").innerHTML = `<div class="error">${msg}</div>`;
+  document.getElementById("detail").innerHTML = `<div class="fail">${msg}</div>`;
 }
 
 function renderAdvisor() {
@@ -1287,7 +1287,7 @@ async function renderDetail(ticker) {
         </div>
         <div class="block" id="signalBlock">
           <h3 class="h3-row">보조지표 신호<button class="sig-help-btn" id="sigHelpBtn" title="지표 설명" aria-label="지표 설명">?</button></h3>
-          <div id="signalBox">로딩…</div>
+          <div id="signalBox" class="loading">로딩…</div>
           <div id="sigHelp" class="sig-help" hidden></div>
         </div>
         <div class="block sub-block${state.sub.macd ? "" : " collapsed"}" id="macdBlock"><h3>MACD (12·26·9)</h3><canvas id="macdChart"></canvas></div>
@@ -1297,18 +1297,18 @@ async function renderDetail(ticker) {
           <canvas id="rsiChart"></canvas>
         </div>
         <div class="block"><h3 class="h3-row">수급 (최근 4주)<span class="unit-tag">(억원)</span></h3><canvas id="flowChart" height="90"></canvas></div>
-        ${etf ? "" : `<div class="block"><h3>투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll">로딩…</div></div>`}
+        ${etf ? "" : `<div class="block"><h3>투자의견 컨센서스</h3><div id="consensusBox" class="tbl-scroll loading">로딩…</div></div>`}
       </div>
       <div class="pg-metrics">
-        <div class="block"><h3>기본 지표</h3><div id="fundBox">로딩…</div></div>
+        <div class="block"><h3>기본 지표</h3><div id="fundBox" class="loading">로딩…</div></div>
         ${etf
-          ? `<div class="block"><h3>구성 종목</h3><div id="etfBox">로딩…</div></div>`
-          : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox">로딩…</div></div>
-        <div class="block"><h3>주가전망</h3><div id="forecastBox">로딩…</div></div>`}
+          ? `<div class="block"><h3>구성 종목</h3><div id="etfBox" class="loading">로딩…</div></div>`
+          : `<div class="block"><h3>목표주가 갭</h3><div id="targetBox" class="loading">로딩…</div></div>
+        <div class="block"><h3>주가전망</h3><div id="forecastBox" class="loading">로딩…</div></div>`}
       </div>
       <div class="pg-market">
-        <div class="block"><h3>주요 지수</h3><div id="indicesBox">로딩…</div></div>
-        <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li>로딩…</li></ul></div>
+        <div class="block"><h3>주요 지수</h3><div id="indicesBox" class="loading">로딩…</div></div>
+        <div class="block"><h3>최근 뉴스</h3><ul class="news" id="newsBox"><li class="loading">로딩…</li></ul></div>
       </div>
     </div>`;
 
