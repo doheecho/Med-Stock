@@ -252,12 +252,30 @@ def build_from_ledger(txns: list[dict]) -> dict:
         if tx["action"] == "buy":
             pos[key] = pos.get(key, 0.0) + q
             cost[key] = cost.get(key, 0.0) + q * price * rate
-        else:  # sell — 평균단가법(계좌 단위)
+        else:  # sell — 평균단가법(계좌 단위). 매도 쪽 계좌 태그가 매수 쪽과 다르거나
+               # 비어 있으면(실수·누락) 그 계좌엔 팔 수량이 없어 수량이 그냥 증발해버림
+               # — 부족분은 같은 종목의 다른 계좌 버킷에서 채워서 수량이 안 사라지게 한다.
+            remaining = q
             have = pos.get(key, 0.0)
             avg = (cost.get(key, 0.0) / have) if have > 0 else 0.0
-            sold = min(q, have)
+            sold = min(remaining, have)
             pos[key] = have - sold
             cost[key] = max(0.0, cost.get(key, 0.0) - sold * avg)
+            remaining -= sold
+            if remaining > 1e-9:
+                other_keys = sorted(
+                    (k for k in pos if k[0] == t and k != key and pos[k] > 1e-9),
+                    key=lambda k: -pos[k],
+                )
+                for k2 in other_keys:
+                    if remaining <= 1e-9:
+                        break
+                    have2 = pos.get(k2, 0.0)
+                    avg2 = (cost.get(k2, 0.0) / have2) if have2 > 0 else 0.0
+                    sold2 = min(remaining, have2)
+                    pos[k2] = have2 - sold2
+                    cost[k2] = max(0.0, cost.get(k2, 0.0) - sold2 * avg2)
+                    remaining -= sold2
 
     ti = 0
     points = []

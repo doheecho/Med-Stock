@@ -898,9 +898,25 @@ async function eqOpenTable(dateStr) {
     const rate = isUs ? _fxOn(d) : 1;
     if (sq > 0) { posByKey[key] = (posByKey[key] || 0) + sq; costByKey[key] = (costByKey[key] || 0) + sq * px * rate; }
     else {
+      // 매도 계좌 태그가 매수 쪽과 다르면 그 버킷엔 팔 수량이 없어 수량이 증발함 —
+      // 부족분은 같은 종목의 다른 계좌 버킷에서 채운다(equity_curve.py 와 동일 로직).
+      let remaining = -sq;
       const have = posByKey[key] || 0, avg = have > 0 ? (costByKey[key] || 0) / have : 0;
-      const sold = Math.min(-sq, have);
+      const sold = Math.min(remaining, have);
       posByKey[key] = have - sold; costByKey[key] = Math.max(0, (costByKey[key] || 0) - sold * avg);
+      remaining -= sold;
+      if (remaining > 1e-9) {
+        const otherKeys = Object.keys(posByKey)
+          .filter((k) => k !== key && k.startsWith(t + "::") && posByKey[k] > 1e-9)
+          .sort((a, b) => posByKey[b] - posByKey[a]);
+        for (const k2 of otherKeys) {
+          if (remaining <= 1e-9) break;
+          const have2 = posByKey[k2] || 0, avg2 = have2 > 0 ? (costByKey[k2] || 0) / have2 : 0;
+          const sold2 = Math.min(remaining, have2);
+          posByKey[k2] = have2 - sold2; costByKey[k2] = Math.max(0, (costByKey[k2] || 0) - sold2 * avg2);
+          remaining -= sold2;
+        }
+      }
     }
   }
   const pos = {}, cost = {};
