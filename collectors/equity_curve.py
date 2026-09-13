@@ -280,6 +280,11 @@ def build_from_ledger(txns: list[dict]) -> dict:
     pos: dict[tuple[str, str], float] = {}
     cost: dict[tuple[str, str], float] = {}  # KRW, 평균단가 기준 순투입
 
+    last_tx_date: dict[str, str] = {}
+    for tx in txns:
+        if tx["date"] > last_tx_date.get(tx["ticker"], ""):
+            last_tx_date[tx["ticker"]] = tx["date"]
+
     def apply_tx(tx):
         t = tx["ticker"]
         key = (t, tx.get("acc_no") or "")
@@ -324,9 +329,15 @@ def build_from_ledger(txns: list[dict]) -> dict:
         qty_by_ticker: dict[str, float] = {}
         for (t, _acc), q in pos.items():
             qty_by_ticker[t] = qty_by_ticker.get(t, 0.0) + q
+        # 유령보유 필터: 지금 보유 중이거나, 이 날짜 이후에도 그 종목 거래가 더 있어야
+        # (나중에 매도 등으로 이어짐) 이 시점에 실제로 들고 있었다고 신뢰할 수 있다.
+        # 프론트 eqOpenTable(특정일 보유내역 표) 의 필터와 동일 — 안 맞추면 같은 날짜인데
+        # 그래프와 표가 다른 값을 보여줌(같은 날 여러 매도 순서 모호성 등으로 생기는
+        # 일시적 잔량 아티팩트가 그래프에만 남는 문제).
+        trusted = {t for t in qty_by_ticker if t in holds or last_tx_date.get(t, "") > d}
         value = 0.0
         for t, q in qty_by_ticker.items():
-            if q <= 1e-9 or t not in pget or d < first_px[t]:
+            if t not in trusted or q <= 1e-9 or t not in pget or d < first_px[t]:
                 continue
             px = pget[t](d)
             if px is None:
@@ -335,7 +346,8 @@ def build_from_ledger(txns: list[dict]) -> dict:
             value += q * px * (fx_on(d) if mkt == "US" else 1.0)
         if value <= 0:
             continue
-        points.append({"d": d, "v": round(value), "c": round(sum(cost.values()))})
+        cost_total = sum(c for (t, _acc), c in cost.items() if t in trusted)
+        points.append({"d": d, "v": round(value), "c": round(cost_total)})
 
     # 정합성 경고: 이력 최종 보유수량 vs holdings.yaml (계좌 구분과 무관하게 종목 전체 합산)
     final_qty_by_ticker: dict[str, float] = {}
