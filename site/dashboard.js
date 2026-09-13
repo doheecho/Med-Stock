@@ -173,6 +173,7 @@ async function init() {
     state.advisor = advisor;
     state.indices = indices;
     renderAdvisor();
+    renderTopTicker();
 
     state.snapshot = snapshot;
     state.holdings =
@@ -389,7 +390,29 @@ async function refreshLive() {
 
   renderSummary();
   renderIndices();
+  renderTopTicker();
   if (state.active) renderDetail(state.active);
+}
+
+/* 상단 티커 스트립 — KOSPI·KOSDAQ·원/달러만 뽑아 요약 표시 (data/indices.json 재사용) */
+function renderTopTicker() {
+  const box = document.getElementById("topTicker");
+  if (!box) return;
+  const d = state.indices;
+  if (!d || !d.items || !d.items.length) { box.innerHTML = ""; return; }
+  const byKey = new Map(d.items.map((x) => [x.key, x]));
+  const WANT = ["KOSPI", "KOSDAQ", "USDKRW"];
+  box.innerHTML = WANT.map((k) => {
+    const x = byKey.get(k);
+    if (!x || x.price == null) return "";
+    const isKrw = x.fmt === "krw" || x.fmt === "krw0";
+    const price = isKrw
+      ? Math.round(x.price).toLocaleString("ko-KR")
+      : Number(x.price).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+    const pct = x.change_pct == null ? "" : ` (${x.change_pct >= 0 ? "+" : ""}${x.change_pct.toFixed(2)}%)`;
+    const arrow = x.change == null ? "" : x.change >= 0 ? "▲" : "▼";
+    return `<span class="tick-item"><b>${escapeHtml(x.name)}</b><span class="${cls(x.change)}">${price} ${arrow}${pct}</span></span>`;
+  }).join("");
 }
 
 /* 지수/환율/원자재/암호화폐 실시간 갱신 — 배치 data/indices.json 의 items 를 제자리 갱신 */

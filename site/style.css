@@ -10,6 +10,7 @@
   --accent: #f59e0b;  /* UI 강조색 = 앰버 (AI Advisor·부제와 통일 · 원자재시황과 결 맞춤) */
   --green: #22c55e;
   --amber: #f59e0b;
+  --shadow: rgba(0, 0, 0, .35);
   color-scheme: dark;
 }
 
@@ -17,7 +18,7 @@
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
     --bg: #f6f7f9; --panel: #fff; --panel-2: #f0f2f5; --line: #e2e6eb;
-    --text: #1a1f26; --muted: #667085;
+    --text: #1a1f26; --muted: #667085; --shadow: rgba(15, 23, 42, .08);
     color-scheme: light;
   }
 }
@@ -25,7 +26,7 @@
 /* 수동 라이트 모드 (상단 토글 버튼) — OS 설정과 무관하게 강제 적용 */
 :root[data-theme="light"] {
   --bg: #f6f7f9; --panel: #fff; --panel-2: #f0f2f5; --line: #e2e6eb;
-  --text: #1a1f26; --muted: #667085;
+  --text: #1a1f26; --muted: #667085; --shadow: rgba(15, 23, 42, .08);
   color-scheme: light;
 }
 
@@ -50,13 +51,22 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
   font-size: 14px; line-height: 1; padding: 5px 9px !important;
 }
 
+/* 패널형 컨테이너 공통 elevation — 배경이 판판해 보이지 않게 미세한 그림자만 */
+.chart-box, .table-wrap, .equity-block, .block, .tab-add-pop {
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
 .topbar {
   display: flex; align-items: baseline; justify-content: space-between;
   flex-wrap: wrap; gap: 8px;
   padding: 10px 20px; border-bottom: 1px solid var(--line);
   position: sticky; top: 0; z-index: 40; background: var(--bg);
 }
-.topbar h1 { font-size: 17px; margin: 0; }
+.topbar h1 { font-size: 17px; margin: 0; display: flex; align-items: center; }
+.topbar h1::before {
+  content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 2px;
+  background: var(--accent); margin-right: 9px; flex: none;
+}
 .topbar .sub { color: var(--amber); font-weight: 700; font-size: 17px; margin-left: 8px; }
 .meta { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; }
 .meta button {
@@ -65,13 +75,34 @@ body, .topbar, .meta button, .card, .chart-box, .table-wrap, .equity-block,
 }
 .meta button:hover { border-color: var(--accent); }
 
+/* 상단 티커 스트립 — KOSPI·KOSDAQ·원/달러 등 시황을 한눈에 (data/indices.json) */
+.top-ticker {
+  display: flex; flex-wrap: wrap; gap: 5px 20px;
+  padding: 7px 20px; font-size: 11.5px; border-bottom: 1px solid var(--line);
+  background: var(--panel); font-variant-numeric: tabular-nums;
+}
+.top-ticker:empty { display: none; }
+.tick-item b { color: var(--muted); font-weight: 600; margin-right: 5px; }
+.tick-item .pos, .tick-item .neg { font-weight: 600; }
+
+/* 섹션 구분 라벨 — 라벨 + 가로선으로 시각적 위계를 분명히 */
+.section-eyebrow {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); margin: 18px 0 8px;
+}
+.section-eyebrow::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--line); }
+.section-eyebrow:first-child { margin-top: 0; }
+
 .summary { padding: 16px 20px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
 .card {
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; padding: 12px 14px;
+  background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--line);
+  border-radius: 10px; padding: 12px 14px; box-shadow: 0 2px 8px var(--shadow);
 }
-.card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+.card:has(.value.pos) { border-left-color: var(--up); }
+.card:has(.value.neg) { border-left-color: var(--down); }
+.card .label { color: var(--muted); font-size: 11px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
 .card .label em { font-style: normal; color: var(--accent); font-size: 11px; }
 .card .value {
   font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums;
