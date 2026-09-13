@@ -720,12 +720,17 @@ function renderEquity() {
     .join("");
 
   const days = EQ_RANGE_DAYS[state.eqRange];
-  let full = eq.points;
+  const allPts = eq.points;
+  let full = allPts;
+  let rangeStartIdxEq = 0; // full(=선택 구간)이 allPts 안에서 시작하는 인덱스 — 팬용 과거 버퍼 계산에 씀
   if (days) {
-    const cut = new Date(full[full.length - 1].d).valueOf() - days * 864e5;
-    full = full.filter((p) => new Date(p.d).valueOf() >= cut);
+    const cut = new Date(allPts[allPts.length - 1].d).valueOf() - days * 864e5;
+    const i = allPts.findIndex((p) => new Date(p.d).valueOf() >= cut);
+    rangeStartIdxEq = i < 0 ? 0 : i;
+    full = allPts.slice(rangeStartIdxEq);
   }
-  if (full.length < 2) full = eq.points.slice(-2);
+  if (full.length < 2) { full = allPts.slice(-2); rangeStartIdxEq = allPts.length - full.length; }
+  const viewMinTs = days ? new Date(allPts[rangeStartIdxEq].d).valueOf() : null;
 
   const last = eq.last || full[full.length - 1];
   const first = full[0];
@@ -743,6 +748,14 @@ function renderEquity() {
       pts.push(wp);
       pts.sort((a, b) => (a.d < b.d ? -1 : 1));
     }
+  }
+  // 선택 구간 이전 이력을 듬성듬성 붙여서, 드래그(팬)해도 실데이터가 보이게 한다
+  // (통계·전고점 계산은 위에서 이미 선택 구간 기준으로 끝났으니 여기엔 영향 없음)
+  if (rangeStartIdxEq > 0) {
+    const bufSrc = allPts.slice(0, rangeStartIdxEq);
+    const bufStride = Math.max(1, Math.ceil(bufSrc.length / 300));
+    const buf = bufSrc.filter((_, i) => i % bufStride === 0);
+    pts = [...buf, ...pts];
   }
   const vsPeak = wp.v ? (last.v / wp.v - 1) * 100 : null;
   const vsCost = last.c ? (last.v / last.c - 1) * 100 : null;
@@ -768,8 +781,9 @@ function renderEquity() {
     note.push(`전 종목이 데이터에 잡히는 시점: ${eq.first_full_date}`);
   document.getElementById("eqNote").textContent = note.join(" ");
 
-  _eqDraw = { pts, wp };
-  drawEquityChart(pts, wp, null);
+  const viewMaxTs = new Date(last.d).valueOf();
+  _eqDraw = { pts, wp, viewMinTs, viewMaxTs };
+  drawEquityChart(pts, wp, null, viewMinTs, viewMaxTs);
 
   // 특정일 평가금액 조회
   const di = document.getElementById("eqDate");
@@ -806,7 +820,7 @@ function eqShowAsOf(dateStr) {
     `<b class="${cls(pnl)}">손익 ${pnl < 0 ? "-" : "+"}${eqWon(Math.abs(pnl))}${pct == null ? "" : ` (${fmt.pct(pct)})`}</b>`;
   const tb = document.getElementById("eqTableBtn");
   if (tb) tb.hidden = false;
-  if (_eqDraw) drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit);
+  if (_eqDraw) drawEquityChart(_eqDraw.pts, _eqDraw.wp, hit, _eqDraw.viewMinTs, _eqDraw.viewMaxTs);
 }
 
 /* ── 특정일 보유내역 표 (모달) ── */
@@ -928,7 +942,7 @@ async function eqOpenTable(dateStr) {
     `공모주 배정·무상증자·액면분할·일부 매도가 이력에 없어 <b>오래된 종목의 수량·평균매수가·수익률이 부정확</b>할 수 있습니다 — 최근 1~2년이 가장 정확.</p>`;
 }
 
-function drawEquityChart(pts, peak, asOf) {
+function drawEquityChart(pts, peak, asOf, viewMinTs, viewMaxTs) {
   const X = (p) => new Date(p.d).valueOf();
   makeChart("equityChart", {
     _onZoomReset: resetEqZoom,
@@ -990,7 +1004,11 @@ function drawEquityChart(pts, peak, asOf) {
           time: { tooltipFormat: "yyyy-MM-dd" },
           grid: { display: false },
           ticks: { color: "#8b95a1", maxRotation: 0, autoSkip: true, maxTicksLimit: 6 },
-          ...(state._eqZoom ? { min: state._eqZoom.min, max: state._eqZoom.max } : {}),
+          // 기본 화면은 선택 기간(예: 1Y)만 보여주되, 데이터엔 그 이전 이력도 붙어 있어
+          // 드래그(팬)하면 과거 구간이 실데이터로 드러난다.
+          ...(state._eqZoom
+            ? { min: state._eqZoom.min, max: state._eqZoom.max }
+            : viewMinTs != null ? { min: viewMinTs, max: viewMaxTs } : {}),
         },
         y: {
           position: "right",
@@ -1012,7 +1030,7 @@ function drawEquityChart(pts, peak, asOf) {
             label: (ctx) => `${ctx.dataset.label}: ${Math.round(ctx.parsed.y).toLocaleString("ko-KR")}원`,
           },
         },
-        zoom: zoomPluginOpts(onEqZoomChange),
+        zoom: zoomPluginOpts(onEqZoomChange, { min: X(pts[0]), max: X(pts[pts.length - 1]) }),
       },
     },
   });
@@ -1414,14 +1432,31 @@ function rangeStartIdx(dates) {
 
 /* 구간이 길면 표시 포인트를 ~420개로 스트라이드 샘플링 → 가로 폭 과다 팽창 방지.
    [si, len) 범위에서 고른 인덱스 배열(마지막 포함) 반환 */
-function sampleIdx(si, len) {
+function sampleIdx(si, len, target = 420) {
+  if (len <= si) return [];
   const n = len - si;
-  const target = 420;
   const stride = n > target ? Math.ceil(n / target) : 1;
   const out = [];
   for (let i = si; i < len; i += stride) out.push(i);
   if (out[out.length - 1] !== len - 1) out.push(len - 1);
   return out;
+}
+
+/* 선택한 기간(예: 1Y) 만큼만 데이터를 실으면 그 이전 구간은 드래그(팬)해도
+   보여줄 데이터 자체가 없다. 선택 구간은 촘촘히 그대로 두고, 그 이전 구간은
+   성능을 위해 듬성듬성(최대 ~300포인트) 붙여서 과거로 팬 했을 때도 실데이터가 보이게 한다.
+   반환: idxs(합쳐진 인덱스), viewMinTs(기본으로 보여줄 구간의 시작 시각),
+        viewCount(선택 구간만의 포인트 수 — 캔들 밀도 판단용) */
+function chartIdxs(dates) {
+  const total = dates.length;
+  const si = rangeStartIdx(dates);
+  const dense = sampleIdx(si, total);
+  const buffer = si > 0 ? sampleIdx(0, si, 300) : [];
+  return {
+    idxs: [...buffer, ...dense],
+    viewMinTs: new Date(dates[si]).valueOf(),
+    viewCount: dense.length,
+  };
 }
 
 /* 기간별 x축 시간축 설정. '월/연 표기는 처음 한 번 + 바뀔 때만' 규칙 적용.
@@ -1634,8 +1669,7 @@ function drawPriceChart(h) {
   }
 
   const total = p.dates.length;
-  const si = rangeStartIdx(p.dates);
-  const idxs = sampleIdx(si, total);            // 표시할 인덱스 (긴 구간은 스트라이드 샘플)
+  const { idxs, viewMinTs, viewCount } = chartIdxs(p.dates); // 선택 구간 + 팬용 과거 버퍼
   const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   const pick = (arr) => (arr ? idxs.map((k) => arr[k]) : []);
   const line = (label, arr, color, w = 1) => ({
@@ -1644,7 +1678,8 @@ function drawPriceChart(h) {
   });
 
   const hasFinancial = !!(window.Chart && Chart.registry.controllers.get("candlestick"));
-  const useCandle = hasFinancial && p.candles && xs.length <= 400;
+  // 캔들/라인 판단은 "선택 구간"의 밀도만 기준 — 팬용 과거 버퍼가 붙어도 기본 화면은 그대로.
+  const useCandle = hasFinancial && p.candles && viewCount <= 400;
   const datasets = [];
 
   // 국내 관습: 상승(종가>시가) 빨강 / 하락 파랑
@@ -1750,10 +1785,12 @@ function drawPriceChart(h) {
     scales.vol = { display: false, position: "left", min: 0, max: vmax * 4 };
   }
 
-  scales.x.min = xs[0];
+  scales.x.min = viewMinTs;
   scales.x.max = xMax;
-  // 보조지표들이 같은 x 구간·눈금·전망라벨 숨김을 쓰도록 도메인 저장
-  state._xDomain = { min: xs[0], max: xMax, lastRealTs };
+  // 보조지표들이 같은 x 구간·눈금·전망라벨 숨김을 쓰도록 도메인 저장. dataMin/dataMax 는
+  // 팬·줌이 실데이터 밖 빈 공간으로 새지 않게 잡아주는 상/하한.
+  const dataMin = new Date(p.dates[0]).valueOf();
+  state._xDomain = { min: viewMinTs, max: xMax, lastRealTs, dataMin, dataMax: xMax };
   // 사용자가 확대/이동해둔 구간이 있으면 유지(실시간 갱신·이평선 토글 등으로 다시 그려도 안 풀리게)
   if (state._chartZoom) { scales.x.min = state._chartZoom.min; scales.x.max = state._chartZoom.max; }
 
@@ -1769,7 +1806,7 @@ function drawPriceChart(h) {
       plugins: {
         legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
         tooltip: { callbacks: {} },
-        zoom: zoomPluginOpts(onPriceZoomChange),
+        zoom: zoomPluginOpts(onPriceZoomChange, { min: dataMin, max: xMax }),
       },
     },
   });
@@ -1783,8 +1820,7 @@ function drawMacdChart(p) {
     el.parentElement.innerHTML = "<h3>MACD (12·26·9)</h3><div class='error'>MACD 데이터 없음</div>";
     return;
   }
-  const total = p.dates.length;
-  const idxs = sampleIdx(rangeStartIdx(p.dates), total);
+  const { idxs } = chartIdxs(p.dates); // 선택 구간 + 팬용 과거 버퍼 (가격차트와 동일 로직)
   const xs = idxs.map((k) => new Date(p.dates[k]).valueOf());
   const S = (a) => idxs.map((k) => a[k]);
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
@@ -1809,7 +1845,7 @@ function drawMacdChart(p) {
       },
       plugins: {
         legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
-        zoom: zoomPluginOpts(onPriceZoomChange),
+        zoom: zoomPluginOpts(onPriceZoomChange, state._xDomain && { min: state._xDomain.dataMin, max: state._xDomain.dataMax }),
       },
     },
   });
@@ -2344,7 +2380,7 @@ function drawRsiChart(p) {
   const tf = state.rsiTf || "D";
   const rs = resampleClose(p.dates, p.close, tf);
   const rsi = tf === "D" && Array.isArray(p.rsi) ? p.rsi : rsiFrom(rs.close, 14);
-  const idxs = sampleIdx(rangeStartIdx(rs.dates), rs.dates.length);
+  const { idxs } = chartIdxs(rs.dates); // 선택 구간 + 팬용 과거 버퍼
   const xs = idxs.map((k) => new Date(rs.dates[k]).valueOf());
   const ys = idxs.map((k) => rsi[k]);
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
@@ -2368,7 +2404,7 @@ function drawRsiChart(p) {
         x: xg,
         y: { position: "right", min: 0, max: 100, afterFit: (s) => { s.width = AXIS_Y_W; }, ticks: { color: "#8b95a1", stepSize: 25 }, grid: { color: "#2b333d40" } },
       },
-      plugins: { legend: { display: false }, zoom: zoomPluginOpts(onPriceZoomChange) },
+      plugins: { legend: { display: false }, zoom: zoomPluginOpts(onPriceZoomChange, state._xDomain && { min: state._xDomain.dataMin, max: state._xDomain.dataMax }) },
     },
     plugins: [rsiZoneLabels],
   });
@@ -2384,7 +2420,7 @@ function drawStochChart(p) {
     return;
   }
   const { k, d } = stochFrom(p.candles, 14, 3);
-  const idxs = sampleIdx(rangeStartIdx(p.dates), p.dates.length);
+  const { idxs } = chartIdxs(p.dates); // 선택 구간 + 팬용 과거 버퍼
   const xs = idxs.map((i) => new Date(p.dates[i]).valueOf());
   const S = (a) => idxs.map((i) => a[i]);
   const xg = xTimeScale(xKind(), state._xDomain && state._xDomain.lastRealTs);
@@ -2411,7 +2447,7 @@ function drawStochChart(p) {
       },
       plugins: {
         legend: { labels: { color: "#8b95a1", boxWidth: 12, font: { size: 10 } } },
-        zoom: zoomPluginOpts(onPriceZoomChange),
+        zoom: zoomPluginOpts(onPriceZoomChange, state._xDomain && { min: state._xDomain.dataMin, max: state._xDomain.dataMax }),
       },
     },
     plugins: [stochZoneLabels],
@@ -2839,7 +2875,7 @@ function makeChart(id, cfg) {
    한쪽을 줌/팬하면 나머지도 같은 구간으로 맞춘다. 더블클릭으로 초기화. */
 const PRICE_ZOOM_GROUP = ["priceChart", "rsiChart", "macdChart", "stochChart"];
 
-function zoomPluginOpts(onChange) {
+function zoomPluginOpts(onChange, limits) {
   return {
     pan: { enabled: true, mode: "x", onPanComplete: onChange },
     zoom: {
@@ -2849,6 +2885,8 @@ function zoomPluginOpts(onChange) {
       mode: "x",
       onZoomComplete: onChange,
     },
+    // 팬/줌이 실데이터 범위를 벗어나 빈 공간으로 흘러가지 않게 상/하한 고정
+    ...(limits ? { limits: { x: { min: limits.min, max: limits.max } } } : {}),
   };
 }
 
