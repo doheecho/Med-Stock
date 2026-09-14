@@ -1,86 +1,14 @@
 {
-  "updated_at": "2026-09-14T00:06:16+00:00",
+  "updated_at": "2026-09-14T10:33:08+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "\"67% 폭락에도 또?\"…'AI 천재'가 SK하이닉스 다시 찍은 이유 [김주완의 글로벌 머니 X파일]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jSkFZWU9WRnotZTlOQnFfU2twYlFjZ2t5eDVYVkpnX08tSWRmUV93eUNtc2VCa0I2QUo3QTlrdFZYaDdDQkpFOWNtNl92eXJhZko4TE85T19Edw?oc=5",
-      "source": "한국경제",
-      "date": "Sat, 12 Sep 2026 22:00:04 GMT"
-    },
-    {
-      "title": "“있는 돈 다 때려박아” “물타기 올인” SK하이닉스 ‘몰빵’, 괜찮을까",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iSnp6TFhobTd0UkpXRWpVN0FXWG96NHBzMll1X3RZYWJGekJDNmZPWFVVdUswUWEydFM1LWZmMTJjVENJVUpEWEJkNTRIX1NXWVY3MWpn?oc=5",
-      "source": "헤럴드경제",
-      "date": "Sat, 12 Sep 2026 12:40:00 GMT"
-    },
-    {
-      "title": "\"전기료 25조 미리 내달라\"…한전 요청에 삼성·SK하이닉스가 내린 결론",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5nUlV3UXNHREc1dmg4V3BnNXNLaTV0a29fSHFsNXgtS1dyNDllbjRFcTh1MERmYVlxOUQzaXZkLXI5VDIzWXlidnJFWXQtbmc?oc=5",
-      "source": "v.daum.net",
-      "date": "Sun, 13 Sep 2026 23:28:44 GMT"
-    },
-    {
-      "title": "\"전기료 25조 미리 내달라\"…삼성전자·SK하이닉스, 한전 제안 거절",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPcWJTY2VfV2RhUkE2bTJfSmFKR1FDQW5EWi0wRnJGcVV0NWg0bkhYYmd4OUxtUG1nY0wxVGlReFl1NjNoc3ZZYUZGMGpZT2l2c3hYVnMyNW1vdw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 13 Sep 2026 23:25:11 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스, 한전 ’25조 전기료 선납’ 제안 거절",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByYlZQWVEzd09VZU9qOWp2MTI4YmFrQ1NMLWZHam0yMGlhenZoLVIyY2kzeDduSEJhM3NLOW1HTXpvbnJjRkd5UHpVN3lhVUthMmJnZEtIOXNlbkxib21oV3FTSGFUWHM?oc=5",
-      "source": "연합뉴스TV",
-      "date": "Sun, 13 Sep 2026 23:42:00 GMT"
-    },
-    {
-      "title": "삼성전자 2%·SK하이닉스 3%↓…FOMC 경계 속 프리마켓 약세",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10MjZQTjI1ZkIxcmNWZ2g0RkxhTU5EZEE2VUdOVnJkNUhieExCUGZieTZ5NDJiLWl2OE5EUThlVVR3NXpVZVJFdTduOWtTTWM?oc=5",
-      "source": "v.daum.net",
-      "date": "Sun, 13 Sep 2026 23:20:00 GMT"
-    },
-    {
-      "title": "25표에 뒤집힌 SK하이닉스 임단협…성과급 수정안, 이번엔 넘을까",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUGNiVG5OV1pKQjVJS2NCTzBvX0U5OTBqX2hhX1dxWVJBN3dkclZzLWVscEhiaEtQREh2R2FTYjNMNWlTZU0tMmpPeHF4MFNRMHc0UlJLWjRhYXVhMldnREltZ1RxZDNDVUo3WjhzWnVCdWg5amxnQTRYWTB1N1RTRQ?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Sun, 13 Sep 2026 07:02:54 GMT"
-    },
-    {
-      "title": "“HBM 공장, 잠수함까지 블록으로”… 삼성·SK도 꽂힌 ‘옥스포드 굿즈’ - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPekNhRGI4Rzg1UFlSdXU2eHVpOURieHg2N0x3VHkyOEFsU0wzZHBkU05FRUFrdlFSLUxxb1p5cnRyV2JZcGMzMzliQlAxTEdkcFZDTnZBZTNTWFYwQy1VX0V3cU52ZXBHc0JyYUN6OE00UDFoSW5PVGtScjMxS3FEa1I5Z09NRHFaanfSAZ4BQVVfeXFMTmtRZU9naFY3NndrTC1kb1pzNGd3cjIyM1FSbVQ3Ml9lTE84ajBybEVTVW11Rk90eHJoeGp6aEp4d0pFMWg3R1Q3c2xseEpUbDdfc3E5NklDVmRZT1JCbGhUZnZ3MkpPdi1FRjRSSGpfVFI3aDEwWGxvX0hCaU1EMDc4MHVZNWdfX182X1BXXzY4WXo5NHk1dk0xZGw3aXc?oc=5",
-      "source": "Chosunbiz",
-      "date": "Sat, 12 Sep 2026 04:04:00 GMT"
-    },
-    {
-      "title": "“삼전닉스도 속슬도 던졌다”…개미들, 반도체株 대탈출 [머니+]",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83Nm9EVld6c1l2SjdDQW1qblh4NFlvS0VVVmR4VHpFMlZXMW1sMkxvdTd3c1J3VG5tRFJGRzc3V2xaeFltY2xIV2dkSkpPeW95YkVNempVT2pla1E?oc=5",
-      "source": "에너지경제신문",
-      "date": "Sun, 13 Sep 2026 00:24:24 GMT"
-    },
-    {
-      "title": "양세찬, 경제용어에 “SK하이닉스·삼성전자” 소환 폭소 (‘런닝맨’)[종합] - 스타투데이",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvR1dVSlFUQ1BTdks5UWE5emd4VEJpMWNmOHhCdmlUYXRlQ0tveWJ3T29aeVc1VVNMS3phZnV6UVlQUlhNbW5VVkJkeHJsRXhLLVJWS09DdUp6Y2FqVEpzcjYtVHI1Zw?oc=5",
-      "source": "매일경제",
-      "date": "Sun, 13 Sep 2026 11:53:38 GMT"
-    },
-    {
-      "title": "[특징주] AI 속도조절론에 S7 일제히 약세…SK하이닉스 2.6%↓",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rVHZkRUp2N0gxR2NNNEo1TEFLbmpIaW9SXzdGWEEzZ3RYWXVQZzZoRTI4UnQtOFJpN3h3Q19CNVh5OHBKZ2pZUUJzNjZDY1UwZUtiMlRiWFlSOFFU?oc=5",
-      "source": "뉴스핌",
-      "date": "Sun, 13 Sep 2026 23:24:00 GMT"
-    },
-    {
-      "title": "AI 모멘텀에 SK하이닉스 레버리지 ETF 강세…한주 35%↑",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ubUlVYVE2VWtfWU1ycExUVmZwWmgyc3VvUFlXRUZvbUZUSms2R0dqanNhWEdBMC1hR2ZNVFpNa1gzaTloMEVzcnM4X1lIdlRiMXF0VmFBZDZCUjQta2VmWW1oOTc?oc=5",
-      "source": "MTN 머니투데이방송",
-      "date": "Sun, 13 Sep 2026 03:02:01 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스, 한전 '25兆 전기료 선납' 제안 거절",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jWXc4UVYwS09zTDF5MHFvNVR4UV9hVkNtVmlUMU5UMmZqRVYwc2djc2tIMDJEZzlyWXRYcFFoZUF6YmxEa2N5S2RtSTZkOUJrTzl6Zy1zUk9fLXBWUHFjZWFDN1k4cDYxWHFETmJwM3k?oc=5",
-      "source": "연합인포맥스",
-      "date": "Sun, 13 Sep 2026 23:29:00 GMT"
+      "title": "코스피, 3%대 하락 마감...SK하이닉스 6%대 급락",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkRHFZVElRUEdham9rU2stcXRpS3ZKUElYWXgxeWFoVl9HV241SlE4M1BkWGFBRTZGNnpDNGtsb1BDOXdDell5WjFSQzRrYzdwX2RpZTdxbnlWWTlLZ0E?oc=5",
+      "source": "YTN",
+      "date": "Mon, 14 Sep 2026 07:43:00 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스, '25조 전기료 선납' 한전 제안 거절",
@@ -89,10 +17,82 @@
       "date": "Sun, 13 Sep 2026 22:51:00 GMT"
     },
     {
-      "title": "AI 속도 조절론, SK하이닉스 등 무기한 선물상품 강타…오픈AI 최대 13% 급락",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KdkttcDFHWkZzZngxVzdLNXEyeGFJVzdnN3NhWDRvS253VE1iQ3NfUmZYN0JxYVE3TjdJNTBIeE00NGo4ZTBwalk2M3FxSWlaSlBaaUhEUTQ?oc=5",
-      "source": "블록미디어",
-      "date": "Sun, 13 Sep 2026 10:39:00 GMT"
+      "title": "삼성전자·SK하이닉스, 한전 '25조 전기료 선납' 제안 거절",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Cam1jOGxoZzF4UDRyVjhNM1hHVHdDZFd4ZEpBdVM5MnRJcGVRcDBreWY4bGl2N2pwdDI5bjNJTnU4NmtVNU9TcVhYS3VlUQ?oc=5",
+      "source": "전자신문",
+      "date": "Mon, 14 Sep 2026 07:37:06 GMT"
+    },
+    {
+      "title": "한전 25조 원 전기료 선납 제안 2달 만 삼전·하닉 모두 '거절'",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9abmJHSmtwbjRqdTNPWmZxbWFMbjNJd3Nuam9WSnYxNzRqZ1dfeFNpUm9Ka3YtMWFHd1QyZXRTM3VCQ1R6YjZMQWpTcFduUWhaTGpyY25BcDc2T1ItdkE?oc=5",
+      "source": "YTN",
+      "date": "Mon, 14 Sep 2026 09:02:00 GMT"
+    },
+    {
+      "title": "[이슈콘서트] 삼성전자·SK하이닉스 주가 다시 불붙나…반도체 수요 새 국면?",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5LN3FQdXphdUlZa19CdTFJSkdsQjZnaTlUZnpqSHhVenJsbzZqY2dkY2NEVWZBcVJtaVBfVmQ4OFBaeUJDdW9LSmI5SHFmRGc?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 14 Sep 2026 09:38:55 GMT"
+    },
+    {
+      "title": "[비즈톡톡] ‘메모리 초호황기’에 D램 점유율 25%로 하락… ‘HBM 왕좌’ SK하이닉스의 고민 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYUNueWJNOHp0Nkw1ZDlTUWl6a1FQcjhtZ2I2UHd5LVhka1NIR2poY1ZKRTF5SnY4QkFwRnpqUWFoSDQ3RWlIUW5MX3FzR3FiNlNkMndCZTFRd0FpYVk4ZHlnVUY0ZFRkYTFrc0loRDdHNl9mMDY2Mm4zYThBUVJiX21R0gGWAUFVX3lxTFA3UWdaVWprWGNVWmZLQXN0blhiZ0lJRHoyUldpbWtmcWswbVU4UVMyc2NkT2kzZGtoQ3JSbW9ZaXRWRHltZFJFcG1lTElFdzI3TjVidlRVZEpWWlEzMHNyeTdWVll2T3JUVzh0R2JrejNpdWlGN3YwQklEZjJkUE92MTVNUUVtVDQwbHVCOS1uLXRHM21rUQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Sun, 13 Sep 2026 21:03:00 GMT"
+    },
+    {
+      "title": "[단독-메가특구법 노동특례?] 삼성전자·SK하이닉스, 기간제·파견 확대 ‘관심 없다’",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBkdW9PcFUyZ0xmZVZVVVNaY3ZsOVMtNjRBX3NrU0ladWIwNDNLODFMQURybnRDWW5uS2MzREVMa1ctNk1BVmlQaWVDMGpMTGhMeEYzWEV4bDZ0LWlSNGRpTFZLNk1UOXlzLWtrSjBQaFg?oc=5",
+      "source": "매일노동뉴스",
+      "date": "Sun, 13 Sep 2026 21:30:04 GMT"
+    },
+    {
+      "title": "용인특례시-SK하이닉스-(재)지관, ‘용인 지관서가’ 조성 위해 업무협약",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ydF9yZkc2RlZHdFV4ZlBJNGc2UElRQWhCYmwyWFNqSUthX19iQlowX3JmRVltZXExQ2xzV1FqOFkyWWJMa3VpZS1Ec0lTOWdQTUpzekIzNjFmUlpJckVMMWlDamJTRlE0amN1UmxqZFI?oc=5",
+      "source": "인천일보",
+      "date": "Mon, 14 Sep 2026 06:08:00 GMT"
+    },
+    {
+      "title": "용인시, SK하이닉스·지관과 '용인 지관서가' 조성 업무협약 - 보도자료 | 기사",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Rd1RsVU5VQTNVMjN5d25hUW9oZnNMYkJBdmJBOFdOMmVta1l1cjAxZkRNZ3RESU0xLUZFZkdwMjd0cHJUbjRGeG5lTzlDd1dHaFVxMUNSRTFGcDdwWmFV?oc=5",
+      "source": "더팩트",
+      "date": "Mon, 14 Sep 2026 07:32:53 GMT"
+    },
+    {
+      "title": "용인시-SK하이닉스-재단법인 지관, ‘용인 지관서가’ 조성 업무협약",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBMS1V1TUI4cDNMeUVSUHllMFd4dmV6d2gyaDhHcEJTeDQ1RzVpbjNZblg0YXFPVUdXZTFFUWlMYnhhOW00ZFdkMEg1b3JSTm9EN0dtRXpmb3JISVQxSVZaNlFUQTdKOFA1OUg3QUI1Vm5LdDg?oc=5",
+      "source": "seoul.co.kr",
+      "date": "Mon, 14 Sep 2026 05:39:46 GMT"
+    },
+    {
+      "title": "'SK하이닉스 독점' 끝난 한미반도체, 실적 성장 여지 더 커진 이유는",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5RWXE5VjNBZU95d0M4UkdJa0xHUW51YUVoZnQ0RDhzalNzOXlLNUtDUmZRZVpzaE5obk1CdkxhejN6MU8tNFBMaF84YUx2c25QeUFMY2g3R1VKc0xDVlBRUm5hV3FJajZK0gFsQVVfeXFMUHEzNXNXSlEyOVB5WkNnWFFJZk9Tbzktem9xR3YyYzFPLVBsVGtBOWFOamZDSnZGZjZyQzhqVFBwZkZ2dkRVZnlWamFhUHh5dnRJTDBVR01hajVsdzVTYUE3c3lMMGw2M1V4RWdB?oc=5",
+      "source": "블로터",
+      "date": "Mon, 14 Sep 2026 02:19:06 GMT"
+    },
+    {
+      "title": "25표에 뒤집힌 SK하이닉스 임단협…성과급 수정안, 이번엔 넘을까",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUGNiVG5OV1pKQjVJS2NCTzBvX0U5OTBqX2hhX1dxWVJBN3dkclZzLWVscEhiaEtQREh2R2FTYjNMNWlTZU0tMmpPeHF4MFNRMHc0UlJLWjRhYXVhMldnREltZ1RxZDNDVUo3WjhzWnVCdWg5amxnQTRYWTB1N1RTRQ?oc=5",
+      "source": "edaily.co.kr",
+      "date": "Sun, 13 Sep 2026 07:02:54 GMT"
+    },
+    {
+      "title": "삼성전자 SK하이닉스 메모리반도체 중국에 중장기적 우위 장담 어렵다, 중국 '공급망 장악' 위협적",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hOW00ZFktLUNBdEoxSFoxdHZPcER5amtxbzNvU3l5Q1B2ckNUdDh0YXBlSGxPeXhOaDRWMUV0QnMwbEI3Z3hRd0xWN1IwMTVNQ1o2RVFQOGFFeTdCWUNvdURwNWpTaHRiQlpPV0xpMUx6Mnc?oc=5",
+      "source": "businesspost.co.kr",
+      "date": "Mon, 14 Sep 2026 02:22:23 GMT"
+    },
+    {
+      "title": "[특징주] 삼성전자·SK하이닉스, 중동·금리 부담에 동반 약세…4%대↓",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5zWFBZak9hcFY5RTc3dWFwNEdBN1JZX0FkR0NsU1BqdjRwUWV3OHpBdlJlaUl0VUFrU19Tb3Qwa1lQazhBcUpESnB3cDhEWFRIX2pnbg?oc=5",
+      "source": "이투데이",
+      "date": "Mon, 14 Sep 2026 00:11:00 GMT"
+    },
+    {
+      "title": "SK하이닉스 주가, 오늘 급락 이유는?",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE11S0hPOVI2c3dXX1hnV3ZvVjQ4cUpuNHY3MVhCV043aWhhbUl1bUl1NzRVUHBzOVJ0aDc0dkpPU281UTJROGdqWEZLVWJBYVo0VXFjekg2YjlVVTdPVklfRkhua1dvbWpKam5QWDk3UExfNzVzdmVJ?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 14 Sep 2026 03:05:00 GMT"
     }
   ]
 }
