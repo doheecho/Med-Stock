@@ -1,20 +1,56 @@
 {
-  "updated_at": "2026-09-14T10:33:09+00:00",
+  "updated_at": "2026-09-14T12:13:02+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
-      "title": "AI stocks get drilled because of Anthropic CEO Dario Amodei's 3,800 word warning",
+      "title": "AI stocks get drilled because of Anthropic CEO Dario Amodei's 3,800-word warning",
       "url": "https://finance.yahoo.com/markets/stocks/article/ai-stocks-get-drilled-because-of-anthropic-ceo-dario-amodeis-3800-word-warning-093637548.html",
       "source": "Yahoo Finance",
       "date": "2026-09-14T09:36:37Z"
+    },
+    {
+      "title": "Major Tech Stocks Fall as AI Leaders Warn of Risks From Rapid Advances",
+      "url": "https://finance.yahoo.com/technology/ai/articles/major-tech-stocks-fall-ai-114933012.html",
+      "source": "MT Newswires",
+      "date": "2026-09-14T11:49:33Z"
+    },
+    {
+      "title": "AI stocks fall after Amodei, Altman, and Musk back AI slowdown",
+      "url": "https://qz.com/ai-stocks-sink-amodei-altman-musk-slowdown-091426",
+      "source": "Quartz",
+      "date": "2026-09-14T11:23:32Z"
+    },
+    {
+      "title": "Wall Street Fear Index Jumps as Brutal AI Selloff Hits Market",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-091426/card/wall-street-fear-index-jumps-as-brutal-ai-selloff-hits-market-lRY6Sjw10ISlwtLhYwZD?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-14T11:15:14Z"
+    },
+    {
+      "title": "This Memory Sector Sleeper Stock Nears a Profitability Turning Point",
+      "url": "https://www.fool.com/investing/2026/09/14/this-memory-sector-sleeper-stock-hits-a-profitabil/",
+      "source": "Motley Fool",
+      "date": "2026-09-14T10:43:00Z"
+    },
+    {
+      "title": "Social Buzz: Wallstreetbets Stocks Fall Pre-Bell Monday; Nebius Group, AMD to Open Lower",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-fall-103731728.html",
+      "source": "MT Newswires",
+      "date": "2026-09-14T10:37:31Z"
     },
     {
       "title": "Anthropic CEO Urges AI Industry to Slow Development Pace; Chip Stocks Slide",
       "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-urges-ai-industry-101357356.html",
       "source": "MT Newswires",
       "date": "2026-09-14T10:13:57Z"
+    },
+    {
+      "title": "AI Stocks Are Tumbling. 3 Reasons Not to Panic.",
+      "url": "https://www.barrons.com/articles/ai-stocks-musk-altman-anthropic-382d6220?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-14T10:11:00Z"
     },
     {
       "title": "Why Are Nasdaq Futures Tumbling Premarket? MU, AMD, NVDA, ORCL, RUM, TSLA, SPCX Stocks In Focus",
@@ -27,42 +63,6 @@
       "url": "https://www.fool.com/investing/2026/09/14/prediction-micron-sept-30-earnings-memory-shortage/",
       "source": "Motley Fool",
       "date": "2026-09-14T08:35:00Z"
-    },
-    {
-      "title": "Oil Jumps, Nasdaq Futures Slide as AI-Related Stocks Tumble Worldwide",
-      "url": "https://www.wsj.com/finance/stocks/oil-jumps-nasdaq-futures-slide-as-ai-related-stocks-tumble-worldwide-eaaf198b?siteid=yhoof2&yptr=yahoo",
-      "source": "The Wall Street Journal",
-      "date": "2026-09-14T08:34:00Z"
-    },
-    {
-      "title": "Nvidia's Latest Signal Points to Serious Downside Risk for Micron Before 2029 Is Over",
-      "url": "https://www.fool.com/investing/2026/09/13/nvidias-latest-signal-points-to-serious-downside-r/",
-      "source": "Motley Fool",
-      "date": "2026-09-14T02:35:00Z"
-    },
-    {
-      "title": "MU, SNDK, INTC, AMD: Chip Stocks Slide After Anthropic Calls For AI Industry Slowdown",
-      "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-intc-amd-chip-stocks-slide-after-anthropic-calls-for-ai-industry-slowdown/cZtlF2pRBRT",
-      "source": "Stocktwits",
-      "date": "2026-09-14T02:20:18Z"
-    },
-    {
-      "title": "Will Micron Technology Stock Soar to $1,500 After Sept. 30?",
-      "url": "https://www.fool.com/investing/2026/09/13/will-micron-technology-stock-soar-to-1500-sept-30/",
-      "source": "Motley Fool",
-      "date": "2026-09-13T16:35:00Z"
-    },
-    {
-      "title": "Prediction: This Memory Stock Could Surge 233% Over the Next 3 Years (Hint: It's not Micron or Sandisk)",
-      "url": "https://www.fool.com/investing/2026/09/13/prediction-this-memory-stock-could-surge-233-over/",
-      "source": "Motley Fool",
-      "date": "2026-09-13T16:31:00Z"
-    },
-    {
-      "title": "Prediction: 2 AI Semiconductor Stocks That Will Join Micron and Broadcom in the $1 Trillion Club by 2028",
-      "url": "https://www.fool.com/investing/2026/09/13/predict-ai-semiconductor-stocks-micron-broadcom/",
-      "source": "Motley Fool",
-      "date": "2026-09-13T15:15:00Z"
     }
   ]
 }
