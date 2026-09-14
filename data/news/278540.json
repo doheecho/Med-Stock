@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T23:57:27+00:00",
+  "updated_at": "2026-09-14T00:06:21+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -31,7 +31,7 @@
     {
       "title": "“삼전·닉스 쓸어 담자”…MSCI 코리아지수 기반 ETF 뭉칫돈",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBtQ2lJUnNVc0VtMnNyRlRqRHBkaVdjb2g0X0tUQTRBM2VmOFVKMWppUUFwN2ZHbGNoXzdnWDNSZ3FCVGZIQlhpeFh2cVlOOHZRWG5pOA?oc=5",
-      "source": "mk.co.kr",
+      "source": "매일경제",
       "date": "Sun, 26 Apr 2026 07:00:00 GMT"
     },
     {
@@ -45,12 +45,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lallReExvNW80ZzZkU3JvQlJwWndaRmoyeHJfVW95R2lMOUFZTHJXdEVDeVdBWkl0cjJrcV9qWi1FZmx3SkV0dlpEZ1JTOEVzODh2WVVVTVEtQQ?oc=5",
       "source": "매일경제 마켓",
       "date": "Sun, 23 Apr 2023 11:13:00 GMT"
-    },
-    {
-      "title": "외국인 투자자, MSCI코리아 ETF에 올해 7000억원 순매수",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xUlIwSUZsQzJ4VE9PNThBVFV4V1hSNlJBSl93VFBQZGVZMEpHNkRIbjFjanFyQkNoV1l6dzdrd0NSZU5FZ3U1TFljNmV1ZGJwd3FxTkZacGVCd9IBWEFVX3lxTE1OaDVQaXZmUlhmTTdscXJnMVBQLXNxQ0d5dE1VUTZjZmZPTmVPcGZOQjBpeGVpaFRYVFp0d1M4c3A5Nlg5a3JEeUFNbk9pWHBFSEU1N2ZZQXM?oc=5",
-      "source": "아주경제",
-      "date": "Tue, 27 May 2025 07:00:00 GMT"
     },
     {
       "title": "'수익률 26%' 잘 나가는데 돈 빼더니…\"몸 사려야\" 여기로 몰렸다 - 머니투데이",
@@ -71,10 +65,16 @@
       "date": "Thu, 09 Apr 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성 KODEX 미국S&P500TR ETF, 순자산 5000억원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSLV8xby1IYlExS2VhQTJCWU9oU3pJYUczcFhlTnFfVU0zTWhaMG9uTTA5VEdidXgxc0NuVTZBWlBtaGllN3hGZVpoOXFNZjdFcG5VcGc1bzFFbEJrbUI2MXdaTFU0MWhuZk1vU0Y2TUNad9IBdkFVX3lxTE05U1kwU2VjLUR5aG1hU2ItNnhiNUt4cjdsMG56R0RxLWM0dzZhdlFUUVI2dkRST2tialA2M0FDZXRkeTA3TzlPQVhYblA0c0NJTkFUbGJOMVBOcDhBQnhCZU9sSGhtOURFYjc5ajQxNGNQRWk4b0E?oc=5",
-      "source": "포춘코리아",
-      "date": "Mon, 22 Aug 2022 07:00:00 GMT"
+      "title": "삼성자산운용, ETF 7종 보수 인하...글로벌 투심 위축·고객 니즈 반영",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtTnNobDJ6RTRlOFRTbDkyeVZ0bDRZemowTXZsSUpNc1FQbVd3WHA5ZmlDWDVFSzhTZGVDSThtcms1dVBTZUVqRDVrSUdXa1BOU0xMQ1UxOVhKUTdISFE?oc=5",
+      "source": "뉴스투데이",
+      "date": "Thu, 06 Oct 2022 07:00:00 GMT"
+    },
+    {
+      "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
+      "source": "인포스탁데일리",
+      "date": "Tue, 24 Dec 2019 08:00:00 GMT"
     },
     {
       "title": "“한국투자 때 가장 믿을 만”...외국인 투자자 1년새 1.3조 산 ETF",

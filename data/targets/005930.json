@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T23:57:16+00:00",
+  "updated_at": "2026-09-14T00:06:07+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 488409.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.05,
-  "as_of": "2026-09-10",
+  "as_of": "2026-09-11",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,12 +19,12 @@
     {
       "firm": "컨센서스 평균",
       "target": 488409,
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "야후 평균",
-      "target": 477239,
+      "target": 475850,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
