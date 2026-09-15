@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T10:00:10+00:00",
+  "updated_at": "2026-09-15T11:15:26+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
@@ -9,6 +9,18 @@
       "url": "https://finance.yahoo.com/video/tech-pulls-back-ai-concerns-143900977.html",
       "source": "Yahoo Finance Video",
       "date": "2026-09-14T14:39:00Z"
+    },
+    {
+      "title": "3 Stocks That Declared Dividend Raises of at Least 30% in 2026",
+      "url": "https://www.fool.com/investing/2026/09/15/3-stocks-that-declared-dividend-raises-2026/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T11:05:00Z"
+    },
+    {
+      "title": "Where Will Micron Technology Stock Be in 10 Years? Here's What History Says Could Come Next",
+      "url": "https://www.fool.com/investing/2026/09/15/where-will-micron-technology-stock-be-in-10-years/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T10:36:00Z"
     },
     {
       "title": "Watch Out SKHY, MU, SNDK: Japan’s Kioxia Reportedly Eyes $10B US Listing To Ride AI Memory Boom",
@@ -51,18 +63,6 @@
       "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-micron-sandisk-ai-warning-fed-rate-hike/?src=A00220&yptr=yahoo",
       "source": "Investor's Business Daily",
       "date": "2026-09-14T22:29:28Z"
-    },
-    {
-      "title": "AI-linked stocks slide after tech bosses call for slowdown in ‘reckless’ development",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-linked-stocks-slide-tech-181747255.html",
-      "source": "The Guardian",
-      "date": "2026-09-14T22:10:52Z"
-    },
-    {
-      "title": "Micron (MU) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-falls-more-steeply-214506520.html",
-      "source": "Zacks",
-      "date": "2026-09-14T21:45:06Z"
     }
   ]
 }
