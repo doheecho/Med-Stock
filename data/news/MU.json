@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T11:15:26+00:00",
+  "updated_at": "2026-09-15T12:51:13+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
@@ -9,6 +9,42 @@
       "url": "https://finance.yahoo.com/video/tech-pulls-back-ai-concerns-143900977.html",
       "source": "Yahoo Finance Video",
       "date": "2026-09-14T14:39:00Z"
+    },
+    {
+      "title": "Micron Stock Moves Past AI Fears but Now Faces Another Threat",
+      "url": "https://www.barrons.com/articles/micron-stock-price-ai-memory-chips-e2d8eb73?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-15T12:34:00Z"
+    },
+    {
+      "title": "Stock Market Today: Dow Falls As Yields, Oil Prices Rise Ahead Of Fed Meeting; Nvidia Set To Rebound (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-oil-prices-nvidia-stock/?src=A00220&yptr=yahoo",
+      "source": "Investor's Business Daily",
+      "date": "2026-09-15T12:09:46Z"
+    },
+    {
+      "title": "3 AI Stocks Poised to Outperform Micron and Sandisk as the Next Infrastructure Bottleneck Builds",
+      "url": "https://www.fool.com/investing/2026/09/15/x-ai-stock-poised-to-outperform-micron-and-sandisk/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T11:45:00Z"
+    },
+    {
+      "title": "Micron Sits Far Below Wall Street’s Target. Here’s What Gets It There.",
+      "url": "https://247wallst.com/investing/2026/09/15/micron-sits-far-below-wall-streets-target-heres-what-gets-it-there/",
+      "source": "24/7 Wall St.",
+      "date": "2026-09-15T11:35:19Z"
+    },
+    {
+      "title": "Intel, Sandisk, Palantir, Coinbase, and More Stocks That Explain Today’s Market",
+      "url": "https://www.barrons.com/articles/stock-movers-bb7c16dd?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-15T11:30:00Z"
+    },
+    {
+      "title": "2 Trillion-Dollar AI Infrastructure Stocks With Up to 136% Upside, According to Select Wall Street Analysts",
+      "url": "https://www.fool.com/investing/2026/09/15/2-trillion-dollar-ai-infrastructure-stocks-up-to-136-upside-according-to-wall-street-analysts/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T11:26:01Z"
     },
     {
       "title": "3 Stocks That Declared Dividend Raises of at Least 30% in 2026",
@@ -27,42 +63,6 @@
       "url": "https://stocktwits.com/news-articles/markets/equity/watch-out-skhy-mu-sndk-japan-s-kioxia-reportedly-eyes-10-b-us-listing-to-ride-ai-memory-boom/cZtnTCxRBTA",
       "source": "Stocktwits",
       "date": "2026-09-15T07:48:52Z"
-    },
-    {
-      "title": "Chip Stocks Sink on AI Slowdown Calls, But Analysts Doubt a Crash Is Near",
-      "url": "https://beincrypto.com/chip-stocks-ai-slowdown-crash-risk/",
-      "source": "BeInCrypto",
-      "date": "2026-09-15T06:05:00Z"
-    },
-    {
-      "title": "Prediction: Micron Stock Will Hit $1,250 After Sept. 30",
-      "url": "https://www.fool.com/investing/2026/09/15/prediction-micron-stock-will-hit-1250-after-sept-3/",
-      "source": "Motley Fool",
-      "date": "2026-09-15T04:20:00Z"
-    },
-    {
-      "title": "Why Micron, Intel, AMD, and Other Chip Stocks Fell Today",
-      "url": "https://www.fool.com/investing/2026/09/14/why-micron-intel-amd-chip-stocks-fell-today/",
-      "source": "Motley Fool",
-      "date": "2026-09-15T03:28:22Z"
-    },
-    {
-      "title": "Why Western Digital (WDC) Stock Is Trading Lower Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-western-digital-wdc-stock-002730490.html",
-      "source": "StockStory",
-      "date": "2026-09-15T00:27:30Z"
-    },
-    {
-      "title": "Tech stocks slump after AI execs call for industry slowdown",
-      "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/",
-      "source": "CBS News",
-      "date": "2026-09-14T22:50:00Z"
-    },
-    {
-      "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Dive On AI Fears; Fed Rate Hike Looms",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-micron-sandisk-ai-warning-fed-rate-hike/?src=A00220&yptr=yahoo",
-      "source": "Investor's Business Daily",
-      "date": "2026-09-14T22:29:28Z"
     }
   ]
 }
