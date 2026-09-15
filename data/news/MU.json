@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T00:31:14+00:00",
+  "updated_at": "2026-09-15T10:00:10+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
@@ -11,10 +11,40 @@
       "date": "2026-09-14T14:39:00Z"
     },
     {
+      "title": "Watch Out SKHY, MU, SNDK: Japan’s Kioxia Reportedly Eyes $10B US Listing To Ride AI Memory Boom",
+      "url": "https://stocktwits.com/news-articles/markets/equity/watch-out-skhy-mu-sndk-japan-s-kioxia-reportedly-eyes-10-b-us-listing-to-ride-ai-memory-boom/cZtnTCxRBTA",
+      "source": "Stocktwits",
+      "date": "2026-09-15T07:48:52Z"
+    },
+    {
+      "title": "Chip Stocks Sink on AI Slowdown Calls, But Analysts Doubt a Crash Is Near",
+      "url": "https://beincrypto.com/chip-stocks-ai-slowdown-crash-risk/",
+      "source": "BeInCrypto",
+      "date": "2026-09-15T06:05:00Z"
+    },
+    {
+      "title": "Prediction: Micron Stock Will Hit $1,250 After Sept. 30",
+      "url": "https://www.fool.com/investing/2026/09/15/prediction-micron-stock-will-hit-1250-after-sept-3/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T04:20:00Z"
+    },
+    {
+      "title": "Why Micron, Intel, AMD, and Other Chip Stocks Fell Today",
+      "url": "https://www.fool.com/investing/2026/09/14/why-micron-intel-amd-chip-stocks-fell-today/",
+      "source": "Motley Fool",
+      "date": "2026-09-15T03:28:22Z"
+    },
+    {
+      "title": "Why Western Digital (WDC) Stock Is Trading Lower Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-western-digital-wdc-stock-002730490.html",
+      "source": "StockStory",
+      "date": "2026-09-15T00:27:30Z"
+    },
+    {
       "title": "Tech stocks slump after AI execs call for industry slowdown",
       "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/",
       "source": "CBS News",
-      "date": "2026-09-14T22:50:30Z"
+      "date": "2026-09-14T22:50:00Z"
     },
     {
       "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Dive On AI Fears; Fed Rate Hike Looms",
@@ -33,36 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-falls-more-steeply-214506520.html",
       "source": "Zacks",
       "date": "2026-09-14T21:45:06Z"
-    },
-    {
-      "title": "Update: Semiconductors Help Push US Equity Indexes Lower While Benchmark Treasury Yield Hits 5%",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductors-help-push-us-equity-212047694.html",
-      "source": "MT Newswires",
-      "date": "2026-09-14T21:20:47Z"
-    },
-    {
-      "title": "Update: Wall Street Dips as AI Warnings Weigh on Tech Sector",
-      "url": "https://finance.yahoo.com/technology/ai/articles/wall-street-dips-ai-warnings-204112098.html",
-      "source": "MT Newswires",
-      "date": "2026-09-14T20:41:12Z"
-    },
-    {
-      "title": "Stock Market Today: Dow Falls, Cyber Plays Soar Amid AI Fears; Bessent Makes This Move On Iran (Live Coverage)",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-nvda-stock-ai-warning/?src=A00220&yptr=yahoo",
-      "source": "Investor's Business Daily",
-      "date": "2026-09-14T20:36:26Z"
-    },
-    {
-      "title": "Oracle, Corning, Alphabet, GE Vernova, CrowdStrike, SpaceX, and More Stocks That Explain Today’s Market",
-      "url": "https://www.barrons.com/articles/stock-movers-259d1f80?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-14T20:25:00Z"
-    },
-    {
-      "title": "Wall Street ends down, calls for AI slowdown pummel chipmakers",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-warnings-knock-nasdaq-futures-092329455.html",
-      "source": "Reuters",
-      "date": "2026-09-14T20:15:55Z"
     }
   ]
 }

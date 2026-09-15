@@ -1,68 +1,86 @@
 {
-  "updated_at": "2026-09-15T00:31:12+00:00",
+  "updated_at": "2026-09-15T10:00:09+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
+      "title": "라이프운용 \"삼성전자, 우선주 사서 소각해야\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBnT19VdGNWR2l2MHZPNkhBRjRWeFhfUXRYN3g0M2NXcUF0NkxiMVJ5aVZoRVBtMzBndzhhdzhCc1pDMnhjaVo1WEt3OFNyV2prMmc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 15 Sep 2026 08:47:22 GMT"
+    },
+    {
+      "title": "삼성전자 ‘27만원’·SK하이닉스 ‘148만원’...BNK “주가 상단 제한적”",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBGcmM4SzdBdC16WGMtOGowLUlTUHpqVktDVUkyV1Z3LVlvREtCdWMxOXNkNGx2bW5mTm5xU1JKMXE1Zzg0M0JGMnljU2hRY3M?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 14 Sep 2026 11:25:29 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스, 3분기 영업익 전망치 급상향… “HBM4 성적은 삼성 우세” - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRFpkSGdsTFFkcG9vNHhJTVpTZE1feEZNTmVvSFRsajB0YXh4Nlg0YVlPREhOWHFhMUxmREs5OGFHa0kzeEs4bTBwRVdIMGlrODcyOG5oOVNaakk4b2F4SmpiVlItNUZkcG9CbngwMzJtS1ZqcDdISWNKd0NFd0N1UHVR0gGWAUFVX3lxTE9kUmJlcUlwZkR0SE9CbmIzbmFkdjdsd2x3U0RwbW1YYTFfSE9vajd0VV9rYndvbGd4T1pocWxGYlJuZWFQOGNLcEo5V2xyYjl1dmlINVcwQnJ6dVBOUHlLSXg4ZmNid3NhdHc3aWUtTVN0aWNoSlZOaHFONTRRSHZUMFQ5SE1NYXQyNldMR0c0NnZzSkd1QQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Mon, 14 Sep 2026 21:04:05 GMT"
+    },
+    {
       "title": "삼성전자·SK하이닉스, '25조 전기료 선납' 한전 제안 거절",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51eWR1bEJhRHlJZmhuZmhUakNCR1RXZlJIbTI1c0FWRkg4Vy1iMTQ5Z29ZRFh2U2tZR2E2ZTFjamZyb3ZkNGV0QlE2UGtWT25McGNQWFNSZDBxUnPSAWBBVV95cUxPZkJ6bTlydHVLMWdQTEt3eFU5YTZDSWxsT1Nybkc2MmRpbDV3bHlZTWp6eHNLNmg0NmpURS1nOHAyc2sydFpsSUN1S0t6b1FvNTkwUTZmVEdwMFV3dVhKd2U?oc=5",
-      "source": "yna.co.kr",
+      "source": "연합뉴스",
       "date": "Sun, 13 Sep 2026 22:51:00 GMT"
     },
     {
-      "title": "\"5조 풀겠다\"던 삼성, 추석에도 통 크게 쏜다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KQVJjYjJidG1BSzdmNzBoZ1Q3QnpXTERHU1ZFM1FnN0hjdXNNZGVJUGV0cE9QU1BjTnlxZjJjeTJhUk9MSmJ4Q2x5aHNSQUs5elBUc2pfMGxfUQ?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 14 Sep 2026 05:00:03 GMT"
+      "title": "삼성 폰 펼쳤다…젠슨 황, 트럼프와 통화 중 포착된 장면 [지금이뉴스]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EaGpVcllyb3NKTkR3bHh4YXJtSkh4QzdCLTd4UlRDaHRZb0ZmaXlVb2dBU3o1T1k1UXduZHVEb0R2X1E4MXNINVZpQmNoNmZicXpjczFOajVUQ19qaVE?oc=5",
+      "source": "YTN",
+      "date": "Tue, 15 Sep 2026 09:20:00 GMT"
     },
     {
-      "title": "삼성전자, 상업용 시스템에어컨 세척 프로모션 진행",
-      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPZlJuVXR2Uk0xWDhaSk5wYUFiTDk2S05tcDIyZldRYzg0RGw5VGJicnZLV2Q2TkxHdUNDYkk0RHJwbGFHaXlyWW0xaHdDTkVNT0RaZmxUREpZSnZvZ1M5b09IRUNTZGNUem5SSmVrSl9KTllmdUY3eWV4NmFQMzE4RVRGbUI1WFNxQWZLdmdkUDRDYVNrdUVBZG1rNUtqSGtOSXh2ZXhsS3d5dWx6bUR3eDRLamY1d05FUWxCNkkxaWlTcjAzR2h5emVxQzNlUmZ3bHpDeTYzRHU4bVlPd1dhOHk5WnRqV0hSdGZFMy15TXdtRVk1WWhfajNoOVYta2dDMUxDS2JsdHI4VHVldjlSbnpob0tqU1BjWWVtMWUxaVZZOGllNHV4UmFCZHRZS3VUSHpEUVJ0SnQ0SlFoOEhheGlHTGM?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Mon, 14 Sep 2026 23:00:00 GMT"
+      "title": "삼성전자, 내년 1분기 메모리 가격 30~40% 인상..애플도 '수용'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rM2p1V2t2TGhmN1o5cUtxZ2xpNnRjMWRSaWdRaExpT1RHMDhjN2dpSnlleGdxQmlFVDJxazlEbVNueW1ES1lIS2ZiVFNheDg?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 15 Sep 2026 08:40:00 GMT"
     },
     {
-      "title": "삼성전자, 상업용 시스템에어컨 세척 할인 프로모션",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5raHVhOWtDRm5pQUV6aTVjZmJSWFhuZ3dEb2taTlFDRlZXYVpTLVhDTXEwYXJJWWtEcGtMMjlVNjVxV2wwUmZVa0QwMGxJY3BBZHZZdF9ZX0hNbFnSAWBBVV95cUxPVlN6ajlPWEVZbEJKSnhqR09Cak4yd284WDh5VUJwU2FHdlBJZ3o2MVNnN3hkZVIyUTNsRHdwZ1U2YncxYWRVazhnUlFWTDd4WlpsdUY5V0VIXzZKZzBGeVc?oc=5",
-      "source": "yna.co.kr",
-      "date": "Mon, 14 Sep 2026 23:45:26 GMT"
+      "title": "삼성전자, 커스텀 HBM서 '핵심 칩' 공급망 변화…내부·TSMC '투트랙' 추진",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Od0NZQmplSXVCZzdWLVdMWVAzdWxTMlItenMtelQyWlk0NXhVNkpYcmgxYm14YWZ5QkgxRnZrZ0ZPOU5RQkFfbF9NRkdfbHBCVHI4aVRB?oc=5",
+      "source": "지디넷코리아",
+      "date": "Tue, 15 Sep 2026 04:56:09 GMT"
     },
     {
-      "title": "삼성전자, 시스템에어컨 세척 프로모션…최대 30% 할인",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xdGg3YndrMng4NVJlWnd5THA1VC0xQUhucVNZZmJfVDlVSGE3ZEhsSGJsUFNHaXVMVmlmak9NNTYyZDBuSXBJdzY3ZnV5UjBTbGQxdW9JWXdReXA5ZWVmVFR0LTBjZkRqbWVSaHJHZFgyUzg?oc=5",
+      "title": "[단독] 삼성 테일러팹, 테슬라 타고 양산 시작…한달만에 가동률 30%",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1lenpLNFhYcF9DaVQ3QWZZVXpNQ0tCdm84bWFHU1Z1bkkxR21XUlNaY3VidEFmTmNvV0dGN1NJVUxvZVlxR3dpYk1DMzdmNUhjb2fSAVNBVV95cUxQMnRVX1Q5WU1EUHhSUUdHeDczM3NLXzZjS1QzcjFDTks5ZXFpR0NuX2JTODA1bUdKVWhJb1NDZ0tzdkV5YzFJUC1OTFl1bk02OUpqcw?oc=5",
+      "source": "서울경제",
+      "date": "Tue, 15 Sep 2026 08:21:02 GMT"
+    },
+    {
+      "title": "삼성·암바렐라 2나노 동맹, 피지컬AI 칩 만든다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5iV0RuSExIdFdtSUNBZVZSQTJqWkZ2VWtOV3h4eTMyZm95M3k1bHg3Z2dBeDQwcURNUEd1c1BzMmFVMzE5ZkJ3Vmk1X0hKNVk3REFZeEhCUVQzeDRueFAyRVpRZE1vQWhqNkV3T0hGR2FMa3c?oc=5",
       "source": "마켓인",
-      "date": "Mon, 14 Sep 2026 23:51:23 GMT"
+      "date": "Tue, 15 Sep 2026 08:48:53 GMT"
     },
     {
-      "title": "삼성전자서비스, 업계 최초 ‘ISMS-P’ 인증 획득",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aaDk3Ym53a2VZSkU4TWtza2RSWFpIbE01dmtxd2NaX2stRkN2Yk5IZXlLbE01MlpxaTYzTzA1NXhIU1R4MGtFYk9YYW9QTUFpZ08ySUFkTmZQei1WcjVsQlR1a2lKOGt2Zi1FUmRkYw?oc=5",
-      "source": "기호일보",
-      "date": "Tue, 15 Sep 2026 00:09:10 GMT"
+      "title": "삼성전자 DS·DX 갈라서나…최대 노조, 내일부터 ‘반도체 노조’ 전환 투표",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeldMZjZZQWlXNEstb2pEMFFaQmk4T0toQlBibHZvdzR6N2NTV2FCQmpxeVJBa3V3UTNCVmNFTEt6dndvZ29VcFNGNU1JZVdRdDE0b3BoSlVzZ3cybUE4eGNkcGJBenFXaTlVNnI3UnZZcWJiVXhvSzFoSTRVZWxmV1lfMA?oc=5",
+      "source": "조선일보",
+      "date": "Tue, 15 Sep 2026 07:21:00 GMT"
     },
     {
-      "title": "삼성전자서비스, 전자제품 서비스 업계 최초 ‘ISMS-P’ 인증 획득 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRE01TE02VE9VaHdtdGFQMnliajRwTkNMd3hRLWJJS2t0WGJxWEg2RnZPcW9Ud29iNEJBWnZjOVNaMGt4MTNzcFg0UjFKOGZHMU9Qc20yOFg5NE95d1FZU29aMWFmeFhmWjQ5RDZRMkxSSTB2azdRR0JCVUFMNUFSR1Vn0gGWAUFVX3lxTE9XMVhCdTdUdnhEQWtxbzVnNVQzdHBvS25LNEhPbDFrdkFncXE3SWxrUEpud1R5S1NJaF94YWNRY3RWU0M1TlA2MUc2d01nSHdORXdNOFluelVJTlZKbmJPT2huUDE3SVZCb0FRajdEV1Fka1ZDUk9PSU90S09nZGlwc05famkxN0tzQzFkNjFXRDBlTUd1QQ?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 14 Sep 2026 23:47:00 GMT"
+      "title": "\"끔찍한 최후를 당했으면\"…삼성전자 노조 분열 '위험 수위' [지금이뉴스]",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4VDJDVHRqWkJqZEt3dm1vWTlTUjlJcURVUXlyalBBM0F2MEE5ZUcwVDFpOTFvQklVcDFiSFBfN0ktRHN5YUNnZkg1bnFVN3JHVjlROUc4SXdLTGxfR1RFVkR2eWN1WWR5enhCemNZTGc0dWZuUFE?oc=5",
+      "source": "YTN",
+      "date": "Tue, 15 Sep 2026 02:20:00 GMT"
     },
     {
-      "title": "삼성전자서비스, 전자제품 서비스 업계 최초 'ISMS-P' 인증 획득",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4xV1JrU2hmMzRiOWItc01fQ3ZleE1nTzBvb3RPZGlKMFBSYUVqRnFYUkFDMHdwcEtPZ3JjTWplN0dsR19LN2tpZXFLbFNueHc?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 14 Sep 2026 23:01:49 GMT"
+      "title": "“최대한 고통스럽고, 끔직한 최후”…삼성전자 DX·DS 노노 갈등 위험 수위",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Qc2VBMTdmMi1UYWxNc2xWLVVfdTBWYUtsNXM2UEQ0dlYzOHRiZlRUQmlMWFdhWTNGaWNMXzNWWEF0dW5jMkRzcUM2X0FJQ3ZjLW0zVlhIRVBRTExXSVlNZm9oRkxnZ3Nj?oc=5",
+      "source": "CEO스코어데일리",
+      "date": "Tue, 15 Sep 2026 08:34:12 GMT"
     },
     {
-      "title": "삼성전자, 버라이즌과 6G 핵심기술 'ISAC' 현장 실증 성공",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbHZsM29vQjk3SWlVTTRFcTR6RE5fWjFNeWF6NnJxZU4wSFRua0pIcFZKWlJSWnlKWjczcG5MdUdoVlItRHgwQ0JRTW5zSWM?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 14 Sep 2026 23:57:02 GMT"
-    },
-    {
-      "title": "삼성전자, 美 버라이즌과 6G 핵심 기술인 ‘AI 기반 ISAC’ 실증 성공",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNQXpEVDJMQmdVNG0tVjdFYjVjZTJfcmIwUDVtaHhYR2ZfSXF4RHViQko4a3R6bW16dEFEX1JQam80SDYtMU5qQkhtMVZNSTNwQm5MVmhpUFJzd2k4S2RnNWNqaEoxQWUwLUppTWhoZ0VDYVBqYUludEwzZ2drOERJNWc4Q3d2WEFHZWNCeGlNWVRfZUdqQWxnYXlrOWI4dlZxbXdIZjVOekFjZkREMzJERUlGNDV5dFNPNDk2SEZoS015NEZmYmN6bVBYSlh2RlBPOGw5bGZ1RVRVSHVqejQzMXlVTG5KU0VJS0hrUWVxQnhIOE54c0FZU2dEMFRQVDU2NnV5aUtXWDJuM3VJektzMkxJWi1rMm9ubEFEWDA1LVJSaUw4Q283WlBqTEpqdUVQOTY3U3hweldNTmkw?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Mon, 14 Sep 2026 23:00:00 GMT"
+      "title": "삼성전자, 美 버라이즌과 6G 핵심 ‘통신·센싱 융합’ 기술 실증",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DX3lXb2FwTzBxdUVWX0Jza3QxZWJ6YUN5eUQ3ejFOSVByakw1aEVDUGZrcjNidGN5bjJJSnpyRXdscVhoYVE3WEpzV3gyQUZaeEZvNl9JS3d1QS11Sldjb0VldEhid2hCTTJsaHp0Z1hFa1lHV0HSAWZBVV95cUxOU3pfa3JpZVJwelJDSHdtVmlFQVNJc0R6N3R6SmpMVEVMbVBmSExEeG9lTTc3a21fQkRMRTVmRmp6M3RVNTJNaGxyOTF3TTNWQWRIYmtxdE1OMnlTajNSdnk2RVp1NXc?oc=5",
+      "source": "동아일보",
+      "date": "Tue, 15 Sep 2026 06:52:00 GMT"
     },
     {
       "title": "삼성전자, 美 버라이즌과 6G 핵심 기술 실증...업계 최초",
@@ -71,28 +89,10 @@
       "date": "Mon, 14 Sep 2026 23:33:33 GMT"
     },
     {
-      "title": "삼성전자·퀄컴, 5년 전 ‘트라우마’ 극복하나… 2나노 파운드리 수주 가능성은 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSXNDbmVGRldkRGVxaXBEakdzVkE5Q2UzOUtRaTBMMTR0UjdkMHBNMTFGangxS1gxb19HVmR0emkyTUV2bm5VWTFnbFhSQ2N0TFhaWEJrTEFfYjQ0d0xpelBraDVxZHpYVVdtN21qWlhiOWFYZ3dNVWlLdVJGRkItNmJn0gGWAUFVX3lxTE92TGxxUE5YNDFSM0pGSlpqVWdTTDNOcFk2dU1Ya2hwVnJFdHZwZlFkVjV4czQzWWJfenhMYW5zYkUzaVJkOFh0ang4OEtTRnp2eUxEeFlsZ3g2LXcyZjN4eDdWR216NzA0aHYzRDFvREJUVUFMSXpXYl9FS3loRDlCZHR0cGFRLXhURlVGU3VvQWh3VWo3UQ?oc=5",
-      "source": "Chosunbiz",
-      "date": "Sat, 12 Sep 2026 21:00:00 GMT"
-    },
-    {
-      "title": "삼성전자, '엔비디아 대항마' 유클리드의 3천억원 규모 라운드 투자",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pMGZ1VkF1TjZuV3oweGJNZXJTTFhWTlRlc2ZsdWZwWVBqSmthUWdlM0JxYjFlVUoweVVtM3NBUkpuSURvbHk2SXRQdzZMWnRscjExTDJsWG02S05oZ1Ewa3g1LUxIVTU5emZEamY2bTM?oc=5",
-      "source": "연합인포맥스",
-      "date": "Tue, 15 Sep 2026 00:12:29 GMT"
-    },
-    {
-      "title": "“삼성전자, 현금배당 말고 우선주 사라”…라이프운용 주주제안",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqMFBjYVNkSjI1TkctN3NHY0lUd19CQm5EVlp4YUVOd0xkemdjSHJod1A1WXpZX3RqbkZCS1ZEMlZXUGxHNFVvOFdJRTM0bFl2VklWelN5aXlJMWVDMXhOVUJRX1c5WkhtOFVCY0dtazk5dnc?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 14 Sep 2026 23:57:51 GMT"
-    },
-    {
-      "title": "라이프자산운용, 삼성전자에 우선주 매입·소각 제안",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hOVJhQWctbFRaenJzTkltZ3dlZlFEeXVMcXJaTmtGSDlURDNnb0ppbVFQeV9Cc2hyRzdoUDlmZU56Vk1MNmNhY1ZybGcxTEs5RmotREN4QWlPbnPSAWBBVV95cUxQWGk1UE95SWJNM0pVUlhic3puY1dVUU9iNlFFbUNyM2VJa2dLWEJVWjh6dU5JbTRsbVpYNXBBZjE2dVpSSF9saWJTQTBBY2JYa01uN2lhN0tiOVlyOFpMMzc?oc=5",
-      "source": "yna.co.kr",
-      "date": "Tue, 15 Sep 2026 00:11:44 GMT"
+      "title": "삼성전자, 美버라이즌과 6G 핵심기술 실증…AI로 군중 밀집도 실시간 감지",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ub3M4dEl5OENweVItTWsxdTJQSmZwX2s5d3lqRjBzV25JMDFqV2JpZW5nWk1PVENNQVVTbWNsbHpRa0s5NVVjWF94QldWWGM?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 14 Sep 2026 23:27:00 GMT"
     }
   ]
 }
