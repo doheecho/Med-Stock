@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T12:51:07+00:00",
+  "updated_at": "2026-09-16T00:11:16+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3305652.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,12 +19,12 @@
     {
       "firm": "컨센서스 평균",
       "target": 3305652,
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "야후 평균",
-      "target": 3197604,
+      "target": 3202944,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     },
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "BNK투자",
+      "date": "2026-09-14",
+      "target": 1480000,
+      "prev_target": 1480000,
+      "chg": 0.0,
+      "opinion": "보유",
+      "prev_opinion": "보유"
+    },
     {
       "firm": "대신",
       "date": "2026-09-08",
