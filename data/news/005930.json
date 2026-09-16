@@ -1,62 +1,14 @@
 {
-  "updated_at": "2026-09-16T09:52:15+00:00",
+  "updated_at": "2026-09-16T12:46:50+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자 3분기 영업익 전망치, 석달 새 12조 넘게 상향",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnJ3QUZNdW9RNkNZRmQzVXRDbl8tU3p0UFRFRUFNYWZpZkltNkxvazRvQzVlVnYxSXZReFlmQnFRQVZVdjl3MVgwR2FWTEpsMFZVVi1MU3NzcG9aWXM5Rnkwb3BENFl5bjNLNk9wX2hUY3dySnVOclpRRGYwOE0wNVVZZUViV2g3SlN3?oc=5",
-      "source": "조선일보",
-      "date": "Tue, 15 Sep 2026 15:44:46 GMT"
-    },
-    {
-      "title": "삼성전자, 美 버라이즌과 6G 핵심 기술 실증...업계 최초",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40ZFBUOENONkRYQmxtRWJ5U3hZVFpabjFUX1VIa1hldFFPUENJeFQ3eExlRzRvdFNVYnczdWQ0TS1GTURCalVYZHZ5NmdGRXhKMjNyOHhn?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 14 Sep 2026 23:33:33 GMT"
-    },
-    {
-      "title": "삼성전자 초기업노조 위원장, 이번엔 조합비 결제 마일리지 ‘사적 유용’ 의혹",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBheUp6bnI0Z1FPY3k2MGFGMU5heHJLUmEwTWxnc182RF9YN2RzeUNjTlRPWWQ3VUh2RV9tRzRGTVZyTnZUcjNtMVY4dUdjMGc?oc=5",
-      "source": "v.daum.net",
-      "date": "Wed, 16 Sep 2026 08:44:36 GMT"
-    },
-    {
-      "title": "[단독] 삼성전자 초기업노조 부위원장, 위원장 수사의뢰…\"장인업체 계약 등 비위 의혹\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE16M0d6VFdQazJBRWhNd2d2SnpoV3lPZ1c5WmQwaHRHTklTelQ2WEpkbXI1dUFoRHJoY3QxQU0wUEo1dFQwaVUzM1lORzM3Zmo0UEMyRTJhRUZ2dGRMdTRiONIBeEFVX3lxTE8tZl9pRzZ5dWNRd0FDN1R6V0V2RWFDWEFnSW1MOVdmNlBDaGQtT3dxZ0lpdXpITGZyN3VHYnFwYW83aGVsUDJodUdxUWtkYmx6Yl9QYTFPbmREU1NWdEpUOVNSSi1FY1lhY2xfT3Blck9DUG9MdHdVWA?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 16 Sep 2026 05:22:13 GMT"
-    },
-    {
-      "title": "삼성 초기업노조 최승호 위원장, 조합비로 결제한 마일리지·포인트 챙긴 의혹 제기",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ZT01sQVBIdHNzNGtmTi1zb0Uta242SWtNZk5rZ0pwZS1CZ3dYWmo0QVoza21rRHNtTERuN3k0RzE0Njk2N1FQTDNzSkEtcnRJSFhoM2hGS09tb05NTU13UWY1cEVqN3FITEhnbzNEMGxCdDc50gF0QVVfeXFMT2lRbkpBUGxUNGhPNGFsaUJkVzNRTDh1aUpTaVBUMkhid3UtWVo2N0o4ZzVlT1pQQ3RHX2p3R0dsUXNtY1BHd0dBcWJvQjY3U0ttMWRGZjloLVF1RGZxY3U4bGcwSXBzOWY5UXB4WnhnckFCWUI?oc=5",
-      "source": "imnews.imbc.com",
-      "date": "Wed, 16 Sep 2026 09:29:26 GMT"
-    },
-    {
-      "title": "갤럭시S22 ‘성능 저하’ 논란 종결…“삼성 배상책임 없다”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zX0g4dmFfNEpaaHFrZTNfek5OemllbnNnbTdMN1JUV1BfMFhRQ01CN1FTelE5WURLb2VVSVNSR1lDeTd1WWpJbGtkb2tZb3dub3fSAVNBVV95cUxQbFgzTlZ6V0piVEpJM0dJS3llenFFZG1YMFp3TXRVNzZBODBISVBJOXFBSGxNS3E0ZmdOTXZsRENmWm1FT0ZzV3Y0bXpoZU5aaGR4WQ?oc=5",
-      "source": "서울경제",
-      "date": "Wed, 16 Sep 2026 08:11:28 GMT"
-    },
-    {
-      "title": "갤럭시 성능저하 국내외 소송 4년 만에 모두 종결… 삼성 배상책임 8건 중 0건",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBpcDBGVjdhbHo4R1R3OVNMbjV4azJYaFJlVmRnZFEtaGM4OTNPVTVZNGpkTXVmRmFZRjN0MlRqbXBzbVJVTjJpN0NWWFZrQVk?oc=5",
-      "source": "v.daum.net",
-      "date": "Wed, 16 Sep 2026 09:28:40 GMT"
-    },
-    {
-      "title": "삼성 갤럭시 'GOS' 소송전 4년 만에 종료…국내외 8건 모두 종결",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9odlhnbHNCMlJKSGtxcDhiYTIwejNCa2xZcUdaNUZwOWNIbTYwWFc3dUJycnhCb3RLby04Mm9rbUVjdnhveEFPQ2lwVF9hdw?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 16 Sep 2026 07:27:03 GMT"
-    },
-    {
-      "title": "[삼성전자 주주환원①] 자사주 소각 10조냐 40조냐…'우선주' 변수",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KZloxakY4M1ZzRHJRWDBGUVM5RXQxcXlPWTN1R3RiUV92cmxYRG1KVlRrcExWV191M2VOWUwxM0VzZHktYktGNjVtR2lJWFpkNk95UVZib3J3VDViUUZob2lldGNpNU50QUlCMUpfS2U?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 16 Sep 2026 00:09:00 GMT"
+      "title": "삼성전자 주주환원책 대안으로 부상한 우선주",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaWZNbkNlTDYwNmxPeHdEWVNVcU1FbTZUdWt3RklHNjFEVVF3QmFjS2ZrTThPZmRpTWI5bmxUZ0pydkhKcEszUDlBYzlnYmtCZHBob2Z5U0xXRnA4Tll2WWtVY2lYMUp6ZFVWbnItdmlUTGxzVlhIMU14ZTFjYzloemhyRQ?oc=5",
+      "source": "인베스트조선",
+      "date": "Wed, 16 Sep 2026 02:45:00 GMT"
     },
     {
       "title": "[삼성전자 주주환원②] 美달튼부터 라이프운용까지…'우선주 더 사라'는 이유",
@@ -65,34 +17,82 @@
       "date": "Wed, 16 Sep 2026 00:09:14 GMT"
     },
     {
-      "title": "삼성전자 주주환원책 대안으로 부상한 우선주",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaWZNbkNlTDYwNmxPeHdEWVNVcU1FbTZUdWt3RklHNjFEVVF3QmFjS2ZrTThPZmRpTWI5bmxUZ0pydkhKcEszUDlBYzlnYmtCZHBob2Z5U0xXRnA4Tll2WWtVY2lYMUp6ZFVWbnItdmlUTGxzVlhIMU14ZTFjYzloemhyRQ?oc=5",
-      "source": "인베스트조선",
-      "date": "Wed, 16 Sep 2026 02:45:00 GMT"
+      "title": "초고수는 이틀 연속 “삼성전자 본주 줍고 우선주 턴다” [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LRnQwR19FWElRTFMtOXd1dVdBTFp3MmRtZWdOVE1Kc3VERWhEenlyOXY1WlFJNDg0NkhBQW1pLUFkVUVLRnM3M0c1RzY2SGdNRUHSAVNBVV95cUxQQko4VFBrb3NCR0hQSFlpT0V2QmNKMnQtTWlQN20xRnVfYjZHSzRrdHdvSVU0ank3Sk5wQmw0N2s3MVNMdjdYVnpXVVdjbHJXWTByQQ?oc=5",
+      "source": "sedaily.com",
+      "date": "Wed, 16 Sep 2026 02:27:07 GMT"
     },
     {
-      "title": "이재용 삼성전자 회장, 日 참의원 대표단 회동…반도체·AI 협력 논의",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBaSXFGX3JzUTZoSXEyQk5uVWwxalNyZUVqT3djUFNuQnFhU3BCc2gtX2FiMjlUcTVhV3lBTlhqbVRYTlppclBONXZDR1poQQ?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 16 Sep 2026 05:11:45 GMT"
+      "title": "삼성전자, 커스텀 HBM서 '핵심 칩' 공급망 변화…내부·TSMC '투트랙' 추진",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1VcjlqaHdQZGdHOFVTeHdKeTF1Z1BLNlhwSERYbnNrbkNlSmhoZ2VpNVcycTJGeXZPaHJCbmNnX0ZJQlI5WHc?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 15 Sep 2026 04:57:50 GMT"
     },
     {
-      "title": "삼성전자 이재용, 방한 중인 일본 참의원 대표단과 협력 논의",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1ck54THNTYUtoNnNPendYRFNTNmM4M2w1ZTl0eXNnVGU0V243M2J5SU5vaGZRUEpLZG1iY0FneDdReTBtYS1pTnUxZS1HZGlKTGhFQTk2aXNMX05JZmtEeEtBRlhxRFVEaGJiRzYwTHFwSVk?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Wed, 16 Sep 2026 08:20:01 GMT"
-    },
-    {
-      "title": "日의원들 만난 이재용, 반도체·AI 협력 논의",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1bWJOMGhFTExLekpvUFFheE1yYXZHYXUwTDEtZ2FnMG96NTlwS1NMdlRfNkttNWtqQjFxT1JuWFIyV1pmRzRXSDdQeV8zQUpfVDVoR2NVODF4dw?oc=5",
+      "title": "기관 뭉칫돈에 급등한 DB하이텍…\"삼성전자·TSMC 공백 집중수혜\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpZFhPSjJ2NmJLQ3g5TGtCdmFKMFJnT1V0TlZYVGtEUHM2U0hlZ2tGQ1pDY2NaR2oxdGFZVGpWUXVBV0lKQ0xVdVRDNU9VTzc1TkRXdDh6ZmJhQQ?oc=5",
       "source": "한국경제",
-      "date": "Wed, 16 Sep 2026 08:33:52 GMT"
+      "date": "Wed, 16 Sep 2026 07:48:51 GMT"
+    },
+    {
+      "title": "삼성전자, '자체 팹' 벽 허물고 TSMC와 HBM4 손잡나",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFZ3ODZsSXRWdEJ5aDB0bDQxLXRGaGNsTnlaalpFQzdERm96M3R0VV9OVk9fb0UwZ3BOOE9XZTFkOTZiSU9sZWthUXB5cWdON0NpVE9PdVRYVHJFTEZNRFNrRHJ6UXI0SXNPQks5UldxOEt5aFJPOFMyMkExVkF5VGp3OFlfUHRY?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Tue, 15 Sep 2026 22:21:24 GMT"
+    },
+    {
+      "title": "한때 7.5만명 ‘삼성 초기업노조’… 넉달 만에 왜 싸움판 됐나 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUmZwTmUzOXFyd3NpTjk1QnhKOExWaHprdDRNOXFkUVVhUXUwR3o2a2RFLWpfS1VzY25TcVRJSTZsVWFKYlJLVnNIeWszQl9KM0RTY0VrU2h4eFF6MlFKaDNUdmd4QUFlZ1JTakE2Y2VfOTg4NmFqcXJVcnEzR3dDSFRqNVFURDJkNnfSAZ4BQVVfeXFMUG9LYWNqTEg2MEx6aWZxYVdwSU5tbjVyM3hublRaRkF1S1JSY3E0RGU0ci1lR0pZSkRwbHpYeWRXRDlON3dkaEZzV3FuU0hvMnZmUTlqcERyQjZjemdHdUhnbEdFbzZta2x1N3VURmZXbkVBZmZYVjVyRl9MU0hucWZCdklRYWVFTlk2cTNsb3NvNUFJTkR5dXh1Y0t3cUE?oc=5",
+      "source": "Chosunbiz",
+      "date": "Wed, 16 Sep 2026 07:45:00 GMT"
+    },
+    {
+      "title": "[단독] 삼성전자 초기업노조 부위원장, 위원장 수사의뢰…\"장인업체 계약 등 비위 의혹\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE16M0d6VFdQazJBRWhNd2d2SnpoV3lPZ1c5WmQwaHRHTklTelQ2WEpkbXI1dUFoRHJoY3QxQU0wUEo1dFQwaVUzM1lORzM3Zmo0UEMyRTJhRUZ2dGRMdTRiONIBeEFVX3lxTE8tZl9pRzZ5dWNRd0FDN1R6V0V2RWFDWEFnSW1MOVdmNlBDaGQtT3dxZ0lpdXpITGZyN3VHYnFwYW83aGVsUDJodUdxUWtkYmx6Yl9QYTFPbmREU1NWdEpUOVNSSi1FY1lhY2xfT3Blck9DUG9MdHdVWA?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 16 Sep 2026 05:22:13 GMT"
+    },
+    {
+      "title": "삼성 초기업노조 최승호, 조합비 카드마일리지 개인귀속 의혹 제기",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBySzNDTTlVWW5MdU9XYU9NVXU0Zkc2WlN3R2tNbXZuM3B6R0dOTmR3anpBSzh4RkFSRWRqczQtYTJBZ1BSXzJGemVva2Y2UFk?oc=5",
+      "source": "v.daum.net",
+      "date": "Wed, 16 Sep 2026 12:16:39 GMT"
+    },
+    {
+      "title": "하이닉스 하락 맞췄던 BNK…이번엔 삼성전자에 ‘제동’",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43bzBJZVliZ2VsSnh5b1Z0ZHNDNXZzVThuUG5uX0RJenBUTXhiUzE0RkhMSU1XdThYNlVoekY3WW1LNzZDRlU5WV9mNVhtbjk1SFdkZw?oc=5",
+      "source": "JTBC",
+      "date": "Tue, 15 Sep 2026 06:11:00 GMT"
+    },
+    {
+      "title": "[속보]삼성전자 2.01%, SK하이닉스 4.08% 상승 마감",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LSWlLbTNMazBjQXdpbXJzd1AxbTZHMmotd1VIYXJzV1JwRHgwaG0tcXlzQzFCS0N6cXBKQVFsT243OXM3UjljTHFnb2JIS1JEWGNnWWk4a2MtNzI1cmwwWNIBeEFVX3lxTE1SZUhfOW9aYldSbkRVdXpabl9yY2tNdVZXS28tQ0wwVTRKUndpZmd5WGlaa0ZpYnNMYUU2U05rdUptUXA0UHVRbDlyYXNCSW1ELTFEWlZaLWxaTFVyMExSNngtelZwNUpiMm1MSlpMZWJxc2hQVlltWg?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 16 Sep 2026 06:31:54 GMT"
+    },
+    {
+      "title": "애프터마켓도 반도체 강세…삼성전자 2%·SK하이닉스 4%↑",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAyRTcyR1JOVWQtd3VZM2JxamkzVVRmcmR6a1l6RTE4Z28wTF9VV24wOFgtVWtBd1lxNlNKZUYwa3o0WUlBS083MndkTHViSnVhem02bjVwaWVDLWFDcTFWRzFqbXQ?oc=5",
+      "source": "MTN 머니투데이방송",
+      "date": "Wed, 16 Sep 2026 11:12:31 GMT"
+    },
+    {
+      "title": "삼성 “반도체 올해 영업익 370조 추산”",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE51anBDZXlZNnE5ak1CYjRwb00zOEdYRzhtRW56dm1tQ19md2pYeXU3dlpZREpob1JkMlNMQ2dyeTZWdzRWcDhzV3VubEhMREd4b0HSAVNBVV95cUxOOWtLbDlCeHUxaVAzSF9kazFrV1hhS28yOHlXTEcwY1dDZEg0NDYxLVVsVGlXVlZQRERpSUFCZXJ3bmRERTh3UlFkSy1jdUlPNkpiQQ?oc=5",
+      "source": "sedaily.com",
+      "date": "Wed, 16 Sep 2026 08:32:02 GMT"
     },
     {
       "title": "삼성전자, '기후산업국제박람회'서 AI 기반 전방위 에너지 솔루션 공개",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuZFpCbHd6QkRmallfX21uVFROa0lzSXFYNGlsNVVjVmNSem1sRFNEQmctTmNZQ1ZRYjd6Q3Y0eHBnU0JUUWVrQXNFamxpME03MUNtS1NB?oc=5",
       "source": "지디넷코리아",
       "date": "Wed, 16 Sep 2026 01:10:15 GMT"
+    },
+    {
+      "title": "삼성전자, 히트펌프부터 AI DC까지 '에너지 절감' 기술 총망라",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9RSnR5U3U4cDZiMkhfMktFVlVQWE5YQVJQcXdaNTBwbFU0dHhOZlJvZkdNdklQamx4YUw0eGVvNWtaQ2N4dlhOSElwV040WDhFSVR6bG9mWlFVLUlPc19WU3BXcXrSAWpBVV95cUxOVVpXSUt1UWtRWmlzc0pxSUw0Szk0T0dLd05XZGZXRV8tYkJEYzNHcUJFbGNTdy1DdDZtTm9YMFY3UWVSbGl3ZGJDM0NUNmVhVHJ5TVY0V0VPcXNNWEZyQ0M0eHJCUWItcDdB?oc=5",
+      "source": "뉴스1",
+      "date": "Wed, 16 Sep 2026 01:00:00 GMT"
     }
   ]
 }
