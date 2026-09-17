@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-09-17T00:21:24+00:00",
+  "updated_at": "2026-09-17T09:57:50+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Modi pitches India as global chipmaking hub",
+      "url": "https://finance.yahoo.com/technology/articles/modi-pitches-india-global-chipmaking-091954560.html",
+      "source": "AFP",
+      "date": "2026-09-17T09:19:54Z"
+    },
+    {
+      "title": "Zacks Earnings Trends Highlights: Micron  and Nvidia",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-earnings-trends-highlights-micron-070100921.html",
+      "source": "Zacks",
+      "date": "2026-09-17T07:01:00Z"
+    },
+    {
+      "title": "Micron vs. Sandisk: Which AI Memory Stock Benefits More From Nvidia's $279 Billion Warning?",
+      "url": "https://www.fool.com/investing/2026/09/16/micron-vs-sandisk-which-ai-memory-stock-benefits/",
+      "source": "Motley Fool",
+      "date": "2026-09-17T01:41:00Z"
+    },
     {
       "title": "Michael Burry reveals his verdict on the ongoing AI bubble",
       "url": "https://www.thestreet.com/investing/stocks/michael-burry-has-a-strong-verdict-on-the-ongoing-ai-bubble-anthropic-openai-elon-musk-sam-altman-dario-amodei",
@@ -45,24 +63,6 @@
       "url": "https://www.fool.com/investing/2026/09/16/september-effect-memory-stocks-buy-market-dip/",
       "source": "Motley Fool",
       "date": "2026-09-16T17:42:00Z"
-    },
-    {
-      "title": "Micron's AI boom faces a much tougher earnings test",
-      "url": "https://finance.yahoo.com/technology/ai/articles/microns-ai-boom-faces-much-165738455.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-16T16:57:38Z"
-    },
-    {
-      "title": "Brad Gerstner Says Latest ‘Negativity’ Around AI is ‘Political Agenda’; See His 2 New AI Stock Picks",
-      "url": "https://finance.yahoo.com/technology/ai/articles/brad-gerstner-says-latest-negativity-141757194.html",
-      "source": "Insider Monkey",
-      "date": "2026-09-16T14:17:57Z"
-    },
-    {
-      "title": "Is Micron Technology (MU) Stock Outpacing Its Computer and Technology Peers This Year?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-stock-outpacing-134004970.html",
-      "source": "Zacks",
-      "date": "2026-09-16T13:40:04Z"
     }
   ]
 }
