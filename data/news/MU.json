@@ -1,9 +1,33 @@
 {
-  "updated_at": "2026-09-17T09:57:50+00:00",
+  "updated_at": "2026-09-17T12:44:28+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "A $2.75 Billion Reason Why Micron Stock In Focus",
+      "url": "https://finance.yahoo.com/technology/articles/2-75-billion-reason-why-120258174.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-17T12:02:58Z"
+    },
+    {
+      "title": "U.S. semiconductor industry faces shortage of 157,000 workers by 2030",
+      "url": "https://qz.com/us-semiconductor-worker-shortage-157000-samsung-micron-091726",
+      "source": "Quartz",
+      "date": "2026-09-17T11:54:19Z"
+    },
+    {
+      "title": "1 AI Stock Poised to Outperform Micron and Sandisk on the Next Infrastructure Surge",
+      "url": "https://www.fool.com/investing/2026/09/17/1-ai-stock-poised-to-outperform-micron-and-sandisk/",
+      "source": "Motley Fool",
+      "date": "2026-09-17T11:28:00Z"
+    },
+    {
+      "title": "2 Cash-Producing Stocks Worth Your Attention and 1 We Find Risky",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-cash-producing-stocks-worth-112217323.html",
+      "source": "StockStory",
+      "date": "2026-09-17T11:22:17Z"
+    },
     {
       "title": "Modi pitches India as global chipmaking hub",
       "url": "https://finance.yahoo.com/technology/articles/modi-pitches-india-global-chipmaking-091954560.html",
@@ -39,30 +63,6 @@
       "url": "https://247wallst.com/investing/etf/2026/09/16/the-75000-retirement-budget-that-jepq-may-struggle-to-support-in-10-years/",
       "source": "24/7 Wall St.",
       "date": "2026-09-16T19:30:21Z"
-    },
-    {
-      "title": "Micron Faces New Threat to Its U.S. Memory-Chip Supremacy",
-      "url": "https://www.barrons.com/articles/micron-stock-price-memory-chip-threat-67929c3c?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-16T19:28:00Z"
-    },
-    {
-      "title": "Micron Gains as Memory Scarcity Threatens Its Customers",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-gains-memory-scarcity-threatens-192509592.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-16T19:25:09Z"
-    },
-    {
-      "title": "Is Micron Stock Cheap, Or Are Its Profits Borrowed?",
-      "url": "https://www.trefis.com/articles/615528/is-micron-stock-cheap-or-are-its-profits-borrowed/2026-09-16",
-      "source": "Trefis",
-      "date": "2026-09-16T19:02:58Z"
-    },
-    {
-      "title": "September Effect: 2 Memory Stocks to Buy on a Potential Market Dip",
-      "url": "https://www.fool.com/investing/2026/09/16/september-effect-memory-stocks-buy-market-dip/",
-      "source": "Motley Fool",
-      "date": "2026-09-16T17:42:00Z"
     }
   ]
 }
