@@ -1,9 +1,39 @@
 {
-  "updated_at": "2026-09-18T09:38:17+00:00",
+  "updated_at": "2026-09-18T12:20:38+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Stock Market Today: Dow Wavers As Oil Extends Losses; Apple, AMD In Buy Zones (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
+      "source": "Investor's Business Daily",
+      "date": "2026-09-18T11:59:39Z"
+    },
+    {
+      "title": "AI Chips Update - BrainChip Expands Edge AI Capabilities With New Development Card",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-chips-brainchip-expands-edge-113730246.html",
+      "source": "Simply Wall St.",
+      "date": "2026-09-18T11:37:30Z"
+    },
+    {
+      "title": "U.S. AI-Related Stocks Extend Rally Premarket",
+      "url": "https://www.wsj.com/finance/stocks/nikkei-rises-0-8-led-by-chip-related-stocks-2b0efbba?siteid=yhoof2&yptr=yahoo",
+      "source": "The Wall Street Journal",
+      "date": "2026-09-18T10:41:00Z"
+    },
+    {
+      "title": "What China’s Fresh Memory-Chip Push Means for Micron and SK Hynix",
+      "url": "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-chips-china-573a7f1d?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-18T10:12:00Z"
+    },
+    {
+      "title": "Micron Is Still 22% Below Its All-Time High Heading Into Earnings -- Buying Opportunity or Warning Sign?",
+      "url": "https://www.fool.com/investing/2026/09/18/micron-is-still-22-below-its-all-time-high-heading/",
+      "source": "Motley Fool",
+      "date": "2026-09-18T10:10:00Z"
+    },
     {
       "title": "Micron's Largest Production Base Faces Strike Threats as Bonus Falls 'Short of Expectations,' Workers Demand Bigger Cut of AI-Driven Profits: Report",
       "url": "https://finance.yahoo.com/markets/stocks/articles/microns-largest-production-faces-strike-052010224.html",
@@ -33,36 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/micron-qualcomm-nova-lattice-semiconductor-211417375.html",
       "source": "StockStory",
       "date": "2026-09-17T21:14:17Z"
-    },
-    {
-      "title": "Stocks Rally, Shaking Off Fed’s Rate Hike",
-      "url": "https://www.wsj.com/finance/stocks/stocks-rally-shaking-off-feds-rate-hike-aebb2c0b?siteid=yhoof2&yptr=yahoo",
-      "source": "The Wall Street Journal",
-      "date": "2026-09-17T20:36:00Z"
-    },
-    {
-      "title": "AMD Leads Chip Stocks Higher Amid Sector Rebound",
-      "url": "https://www.investors.com/news/technology/amd-stock-leads-chip-stocks-sox-index-higher-amid-sector-rebound/?src=A00220&yptr=yahoo",
-      "source": "Investor's Business Daily",
-      "date": "2026-09-17T20:21:59Z"
-    },
-    {
-      "title": "Why Micron Stock Is Jumping as Intel CEO Warns on Memory Chips",
-      "url": "https://www.barrons.com/articles/micron-stock-price-intel-memory-chips-b0eca0f2?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-17T19:08:00Z"
-    },
-    {
-      "title": "If QQQ Repeats Its Last Decade, $100,000 at 40 Could Hit $1 Million by 52",
-      "url": "https://247wallst.com/investing/etf/2026/09/17/if-qqq-repeats-its-last-decade-100000-at-40-could-hit-1-million-by-52/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-17T19:05:36Z"
-    },
-    {
-      "title": "Micron Jumps 5.5% as Labor Claims AI's Margin Windfall",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-5-labor-183703220.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-17T18:37:03Z"
     }
   ]
 }
