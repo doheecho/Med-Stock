@@ -1,9 +1,21 @@
 {
-  "updated_at": "2026-09-18T00:07:46+00:00",
+  "updated_at": "2026-09-18T09:38:17+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Micron's Largest Production Base Faces Strike Threats as Bonus Falls 'Short of Expectations,' Workers Demand Bigger Cut of AI-Driven Profits: Report",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-largest-production-faces-strike-052010224.html",
+      "source": "Benzinga",
+      "date": "2026-09-18T05:20:10Z"
+    },
+    {
+      "title": "INTC, AMD, MU, NVDA: Chip Stocks Rally As Investors Look Past AI Concerns",
+      "url": "https://stocktwits.com/news-articles/markets/equity/intc-amd-mu-nvda-chip-stocks-rally-as-investors-look-past-ai-concerns/cZtuLZsRBdw",
+      "source": "Stocktwits",
+      "date": "2026-09-18T02:17:04Z"
+    },
     {
       "title": "Why Was Micron Technology Stock Up Today?",
       "url": "https://www.fool.com/investing/2026/09/17/why-was-micron-technology-stock-up-today/",
@@ -51,18 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-5-labor-183703220.html",
       "source": "GuruFocus.com",
       "date": "2026-09-17T18:37:03Z"
-    },
-    {
-      "title": "The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/memory-shortage-not-over-more-180200318.html",
-      "source": "Zacks",
-      "date": "2026-09-17T18:02:00Z"
-    },
-    {
-      "title": "Micron Stock Soars as India Facility Bets Big on AI Memory Demand",
-      "url": "https://finance.yahoo.com/technology/ai/articles/micron-stock-soars-india-facility-172713195.html",
-      "source": "GuruFocus.com",
-      "date": "2026-09-17T17:27:13Z"
     }
   ]
 }
