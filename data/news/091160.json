@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-18T12:20:41+00:00",
+  "updated_at": "2026-09-19T00:12:23+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
+    {
+      "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
+    },
     {
       "title": "“반도체만 보다가 놓칠뻔”…9월 ETF 순위 치고 올라온 ‘이것’",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jSWpZNGROaF9iV3oyN0VOa0Y0WmtuSlhsRHZXUjg3WEhXbC1OdjVqNmlxT0ZBQmtzTnBPaHVHNUJRbzV4QjlIUm1lVF9MNTV1NkE?oc=5",
@@ -11,10 +17,10 @@
       "date": "Fri, 11 Sep 2026 04:54:35 GMT"
     },
     {
-      "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 07 Sep 2026 22:00:05 GMT"
+      "title": "반도체 ETF 수익률 싹쓸이에도…개미는 미국지수·안정형 담았다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1Sjg0eHotN0ZLZVhSRGZCdmY0UEZSVWRFSGg1UEMwbTJhQ3dNZ3JFM0xTMTN0XzVocG9JampKOUZvMTZvSVpOdWcycFJRaUdmM3c4djJVMy1nZmdMX0FMSGZuNGU?oc=5",
+      "source": "서울경제TV",
+      "date": "Tue, 08 Sep 2026 01:23:58 GMT"
     },
     {
       "title": "한 달 새 2.2조 뭉칫돈 몰린 ‘반도체 ETF ’, 지금 사도 될까?",
@@ -41,12 +47,6 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 ETF 수익률 싹쓸이에도…개미는 미국지수·안정형 담았다",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mVzI4MFpsZUdUYV94bUR5UFVXSjBKTzVYa21Qb0RoelN0dkcxbE9VSjNNSjgxbTFxT3Y5dW1nVmtLYl9ST2pBaWJQdHFfbUdxd1g1MkFMUjJta245MGJmMjZhMTJEMUlfUUYw?oc=5",
-      "source": "서울경제TV",
-      "date": "Tue, 08 Sep 2026 01:23:58 GMT"
-    },
-    {
       "title": "삼성자산운용, '반도체 성장'에 '월 2회 배당' 더했다…KODEX 커버드콜 솔루션 제시",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FZTdGOEZCT0JPdFIwRy1CVXQzcDVSU0hnWFFveXJSSkFvUFFmZmp6YmlwTy1IVGwyekc4UHBnTmZxdF9hQlJZd3B2QmlEc0hFZWhKTw?oc=5",
       "source": "더밸류뉴스",
@@ -65,34 +65,34 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 ETF 뛰어도 개미는 방어형 상품 담았다",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FY0xfQ3pSaVhCNmhGbXNrWHZJVU9SNlZwMlVzNFNhRnpBWXhoU25BQ21Qc2lXeVlBZXdDQmtzZXRCY0gyZ2pYMGNRa1ZFVnF6WEpFSGp3TXBxNmgzUnBETEpNSlJHNms?oc=5",
-      "source": "이로운경제TV",
-      "date": "Tue, 08 Sep 2026 13:20:00 GMT"
-    },
-    {
-      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합)",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42c04xNTIzdEtmWUkzT1ZwbFVWMmtQZXZkV3VFZHZrYWx6MzY3RXl4WDRJNkllMUZOOGQtNTlfUjg2NVRPd21welZWeTh1Mkd0enhaZV9HSU1MTWg0Q2tGLXVHRTBieVVyU04waFRRQlo?oc=5",
-      "source": "연합인포맥스",
+      "title": "같은 반도체 ETF인데 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도 | KB의 생각",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42SWdLM0M2R1htdTlOXzdNNmN0cW44c3czeDUxRXg0UkpMbDJFRE01SkN1YjF3NFh1dDVlV2NCRWNiWnZJeVEwM1NOVlZ6SkdOMnhHMlY1anhSRkhJUUZqTEIwdTlYZVBiUVpYRmN3YjhKUQ?oc=5",
+      "source": "KB Think",
       "date": "Fri, 29 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반도체 투자에 배당까지…'KODEX 반도체타겟위클리커버드콜' 상장",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yZVJKUkdDdmctdkVCYVZ4Umk2cUYyZzJpY3Jqd095VDlxaEV6cEs5MHZLSVY1MF9BT1JqcDlzLTlMaFpzRUgzcGpXb0N6X3N0dnVwNG5UWDdpZDZwUWlheQ?oc=5",
-      "source": "아시아경제",
-      "date": "Mon, 11 May 2026 07:00:00 GMT"
+      "title": "반도체 ETF 뛰어도 개미는 방어형 상품 담았다",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FY0xfQ3pSaVhCNmhGbXNrWHZJVU9SNlZwMlVzNFNhRnpBWXhoU25BQ21Qc2lXeVlBZXdDQmtzZXRCY0gyZ2pYMGNRa1ZFVnF6WEpFSGp3TXBxNmgzUnBETEpNSlJHNms?oc=5",
+      "source": "erountv.com",
+      "date": "Tue, 08 Sep 2026 13:20:00 GMT"
     },
     {
-      "title": "[단독] \"결국 삼전·하닉\"…KODEX AI 반도체 ETF 대수술 나선다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqSkFsZzBSbTJ5N0hiRUxfWlBwMnFIczJZU01TRHF4RjJxSWlCSS1uRTZJY1FnUUVpMVc1aXVEeEM4dXVyT250enRLQWNnMmRMVmxudmgwOFZ6QQ?oc=5",
-      "source": "한국경제",
-      "date": "Thu, 07 May 2026 07:00:00 GMT"
+      "title": "KODEX 반도체타겟위클리커버드콜(0190G0)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Bd2pST1FvdHBSVW4xUm9oYVJvOFJJNlBBNkxiUVJSZmYzSlpjTy01a3hYS05jQmk2WVJuNDJWaW02V0FHeUdpR2ZPODZGZ0szc0ZlQWNINUYxUQ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 12 May 2026 02:41:08 GMT"
     },
     {
       "title": "반도체 사던 '개미', 美 대표지수로…ETF 자금 이동",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FTTNQcWRldm9mWU90T01aWFU0Q1NTVUphNnc0d2tGOWp5SkxDZlo0WnVUUWQwOVR5QjUyRkJ5Nld3Nlh6OUdrYzVueHViNXZ3a1NHYlF3SEIyd1Zn?oc=5",
       "source": "뉴스핌",
-      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
+      "date": "Mon, 07 Sep 2026 06:59:00 GMT"
+    },
+    {
+      "title": "반도체 독주 뚫고…ETF 순위 262계단 뛴 ‘이 종목’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBid1NtZ3h0bHpMamVuV2JhMHZOUHI1MFZZTUFCMEFOclNnU0lPYTdSaWxlYVZuaFdEUGNlcmZRWERjZWE5anhFWEJuX2FRcWU3cjQ3VU1n?oc=5",
+      "source": "mk.co.kr",
+      "date": "Fri, 11 Sep 2026 08:38:36 GMT"
     }
   ]
 }
