@@ -1,68 +1,38 @@
 {
-  "updated_at": "2026-09-19T00:12:17+00:00",
+  "updated_at": "2026-09-20T00:05:42+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "주가 41% 빠졌는데 \"기회다\"…300만원 간다는 삼성전자 동생",
+      "title": "삼성전자, 미국 테크 포럼에 경영진 총출동…AI 전략 공유",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKMGxMTkFqbEh0d1pjNElXVS1qQTBJc2VTNDRUQ2t1M0NObTljaXl5RWtkSnF1QlNBRFNPX1NwVWdUYno3S2ktMzlDUTV1WEU?oc=5",
+      "source": "v.daum.net",
+      "date": "Sat, 19 Sep 2026 23:43:53 GMT"
+    },
+    {
+      "title": "“주가 41% 빠졌는데 실적은 사상 최대…삼성전기, 저가매수 기회”",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOUs0b0RYODRHVmVSNHk2WjVUbHJUeTVOUURRbDlLcWpON0lGTV80QlN2TVFLRlZabFJZNXVoS1VHTGxZMGYyMzh1SUU5azBEb2JlSUlubVpJRnBnZEtfdWRPSE52OU9kODhIRzVVSmM2UF9sbWZKMUlRQTRYY3A1Mw?oc=5",
       "source": "edaily.co.kr",
       "date": "Thu, 17 Sep 2026 22:33:53 GMT"
     },
     {
-      "title": "삼성, 올해 QD TV 생산 80% 줄인다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zS3NPWERTdlpjaFZJdkM4YWJkYklhdjU2bXBBVXFEbGc5d3VocE94aFVnZUZfc3BHMVVpbWk1Y2ZmOXdOS01uZXllMjE4QQ?oc=5",
-      "source": "전자신문",
-      "date": "Thu, 17 Sep 2026 07:30:00 GMT"
-    },
-    {
-      "title": "갤럭시든 아이폰이든…'접는 OLED', 결국 삼성D로 모인다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05dFp0b3M0M1lzRVJHVzN1ZjJ0QloyMkZ1ZGxBaHNTb3dMOGk5LWJyVUdvTkczZjZYX3Z0SFNDRjVPQnp5ZC1VbWlhb2t0NzBfU3BrcFdLUlVVRjRVTnhkVkpDNTdIWkM1VkVZUNIBckFVX3lxTE5wRnBoRkJzVzdVVHFuZ094TDFzeEVBUVF2UFF5VEppbjNrQXNDRWlQdHZwZjJtT0NidkJLbkxVaXdsZzdQY2FmRGJMb0E2T3pXbUxpcE5hemRGWGxYLXdvbWVydUpZbC1Qd25jYThaOGh4UQ?oc=5",
-      "source": "머니투데이",
-      "date": "Fri, 18 Sep 2026 22:40:00 GMT"
-    },
-    {
-      "title": "\"직접 대화하자\" 삼성전자 동행노조, 이재용 자택 앞 무기한 농성",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE54dnNBY1RDWVo5ZkMwN05vcGdGT1R0dE1va2F2Q0dKU2RiejhLOWNKcURJVDluZnBpdHZqUDdLRjhxU0FTRDlPZ0owRmI4cFU?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 18 Sep 2026 10:06:00 GMT"
-    },
-    {
-      "title": "[특징주] 삼성전자 장 초반 2.6% 급등…SK하이닉스는 4.2%↑",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91Y2NHOUNLeFlUMTJfQ1BQY05QREx4cVNmWkREb2NuTWhpN25yNUhrVEstVF9KRktrY25qV0o4cDQ4TnVhbGJVYzdCX3JKOHUzN3N3R3NxckFhbE3SAWBBVV95cUxQbWxMa0d4dEpQUXNsV2p2dU9nNWdla0o4VXJRTTk4T2lnanFrdExHZ3dreks1VkcweXdPbG1IOGRNcl9jMkdnckhJaXVWUVlqZ250aHQtc3l2amQtSTBReU4?oc=5",
-      "source": "연합뉴스",
-      "date": "Fri, 18 Sep 2026 00:18:28 GMT"
-    },
-    {
-      "title": "삼성전자, One UI 9 공식 버전 업데이트 시작",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPTmhZOWxpSDNpTXlDU0JkTU9zaFZJUlNSRkdHbWtzUXdrVk04RkhRRFNoc0tlUzRUMG0wZ2xsU2lWU1c3cFRRTTk0TkRUTGNMblV2dmpaOFNvVFdtbGwtM2Vod25FNVMwT09zM3FwRWRHVk5QZ3ZNSnZCVWxxWUtVaElXSC1tZmxEb1RaTm9xRE13bUo3NV9iLUI2WFpQU2p5eVh1TmFubXpkZzdITUgzZGhwTGVNMUtpVmdINHdES1RWVWZBRHYyUUZSU1gzdEtYOHBCUWZUVl9hU1lCWUJyQzVVNlJjMTZQbVpuSGJMSE5HTlJDR2ZkWDE5VQ?oc=5",
-      "source": "news.samsung.com",
-      "date": "Wed, 16 Sep 2026 23:00:00 GMT"
-    },
-    {
-      "title": "삼성전자",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMFlhRk9YTXdaRnJRZ2xtQW5nRHpqNl9pWGQ4bHN5enBqUkhUTmpYam5WNlp5ekx1NS1rRDlWeEdBUkZ0RS15SHg4dzFsTElSc1F0M08wcEdlWk9xWjR2SG5NSy1JRmx1Y29LVURCUnF3VGREVGpSMG56SFhJLUJYWWhMUEhpV1BvN3BMal9fWVl0SXM4SGxr?oc=5",
+      "title": "“삼성전자 DDR5 외주물량 싹쓸이?”…나흘새 23% 뛴 SFA반도체 [이주의 Bull기둥]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QbXk5Z0Itakpyd0Jlb2xVaGZ5WEZkdkd6WFZfZVlic2djN0hTMVlMZjRpUDFWTGxkT2VvWW5QMk9mXzFmWHNqVWVWa1djalJKR3c?oc=5",
       "source": "매일경제 마켓",
-      "date": "Fri, 18 Sep 2026 15:59:58 GMT"
+      "date": "Sat, 19 Sep 2026 23:57:52 GMT"
     },
     {
-      "title": "거래 급감에도 동탄 30대 비중↑…삼성전자 '5억 대출' 새 변수",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wcU5jdS1ZYzdQM2FsNEgyVVdsQmxYWFhhaXlRaFBiTTVqZlNGOFFhczU0M2J1cUdtNXZfY0NKRk1vb2x0OXVpWURtNFNZeVlieHV4d016WXFJREXSAWBBVV95cUxQRThib2h0a0xGMVAyVV91UVV0NVJIRkxvZ0JuUnFwbFowdExhNWpjNFN5Z2tLU1Rfc0hNdmdzSURnZ3Qxb1Z6cW45RFp1NzRrN1BBZ2tDZHNrNnlFU09rTEs?oc=5",
-      "source": "뉴스1",
-      "date": "Thu, 17 Sep 2026 23:15:20 GMT"
+      "title": "삼성전자 초기업노조, ‘반도체 노조’ 전환",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEYlhOYVIyYmw5ZHJpRXJMSE5meDFzWmRUdEZrYnlMemlvTWlfN090TWR1SEgtT0lDeWpFdzZxYXZ5QlZ1TFdJblk4cE9KNHhkb1JUby1haGZyZ9IBX0FVX3lxTE1KNnlRR2JJNGh0c3ZzbjdCT3R4QTFkQkpkN2V5TFRnV2g3QXVVZEstUk9RS2V1MklIQlVyUU5wWGwwNzF2WVhYOGQ1b0R5T0NocVl3RlhxdUJGeUFBcFJV?oc=5",
+      "source": "경향신문",
+      "date": "Sat, 19 Sep 2026 04:44:00 GMT"
     },
     {
-      "title": "‘기지국 센서’ 삼성 ‘차량 통신’ LG…6G 영토 선점 가속",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oc0FXMUVpUXBQYkRDbG5TZ1p3cUVESEFYYkUzR0ZoSi1ZUXF4R3RPV01iYzR1ZTNZaEZrX1V0RC1jOTI2aUJmZFZfcUpFeU0wM2NIZWplb2hzTjh2VkZqZ09ZYmFDcm55MzNxUnc5elLSAXRBVV95cUxOZTUxaDVCZVpRRjBES0pYZXF3a2RHS0ItR3lnTDRJdmZSMkVsQ0lUSlFJVnJqRklpME1zM0RnUVhUc0NoNUhnSGJ0dm1rNlJlLU9sMUR0WWhDZ2NHNzNhQmt1R21IVEpqY2FNMFRINy1XRDYzWg?oc=5",
-      "source": "IT조선",
-      "date": "Fri, 18 Sep 2026 21:30:00 GMT"
-    },
-    {
-      "title": "삼성전자 주주환원책 대안으로 부상한 우선주",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaWZNbkNlTDYwNmxPeHdEWVNVcU1FbTZUdWt3RklHNjFEVVF3QmFjS2ZrTThPZmRpTWI5bmxUZ0pydkhKcEszUDlBYzlnYmtCZHBob2Z5U0xXRnA4Tll2WWtVY2lYMUp6ZFVWbnItdmlUTGxzVlhIMU14ZTFjYzloemhyRQ?oc=5",
-      "source": "investchosun.com",
-      "date": "Wed, 16 Sep 2026 02:45:00 GMT"
+      "title": "삼성전자·SK하이닉스, '국제금융통 관료 출신' 나란히 영입 눈길",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05RzMyTnNvNlNiLURsUS1CNFI4SUNlYlNHaFVCaloxWDhqRTlMYldVaG9qSWZyZkE1UVAxZU5uV1l1MF9xNjVUZlRjUkJJT3FjYnVVa1NkckR1ZEctYTVQQdIBeEFVX3lxTFB6WVVud25mdHlyNmtNVlFnRmliVExCRFU1SnlyUlRRN3JUSUpQNDJOTXdhS0hTbE4wek10TjJ4Q1M1OVVYZE5oODhZUnRQUW1pcFJib0lXVEFKeEdrejhVbzZUT2czM3Y3VHJ1ck03UTVWSTJYdnU4cg?oc=5",
+      "source": "뉴시스",
+      "date": "Fri, 18 Sep 2026 23:00:00 GMT"
     },
     {
       "title": "삼성전자, 3.4% 급등 마감…SK하이닉스는 6.4% 뛰어(종합)",
@@ -71,10 +41,46 @@
       "date": "Fri, 18 Sep 2026 06:54:41 GMT"
     },
     {
-      "title": "\"2년 만에 최고\" 삼성전자 일냈다…갤럭시 잘 팔리더니 '깜짝'",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13bnlCODlqVWphZG5kUmVRcncyLWxydUtBdnFDdTlXWkJKanJvc1BGa0d6WktlMXBBMmc4aVUzbDhBMWhxc3ZDTU5uODhtVEFRa3FBamk3TVJXZw?oc=5",
-      "source": "한국경제",
-      "date": "Fri, 18 Sep 2026 06:31:27 GMT"
+      "title": "삼전·닉스 다시 날아오를까…주목할 세 가지 관전포인트[stock&톡]",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1UY1VvNFU2SlA1RFZKNXl1Y0RpejJ6RTF0RXk2TnRkSk9GSlRjTGRYVVRKeTlocEF0dER2dGU2OHdOT05Dand0UWhHT1Z2NlU?oc=5",
+      "source": "v.daum.net",
+      "date": "Sat, 19 Sep 2026 23:07:07 GMT"
+    },
+    {
+      "title": "DDI 부족...삼성, 갤Z폴드8 이달 부품 생산계획 10% 다음달로 이연",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qYm9DQTlHdC11bUNpcHJtNld1VnhSZXdTWjREd2tqRGw4OUU4UGdTekplalVrVWVlVFV5TUhFcDRaMjI5ODZycXJhR0FnbGJWNlA5ZEhn?oc=5",
+      "source": "지디넷코리아",
+      "date": "Fri, 18 Sep 2026 07:06:14 GMT"
+    },
+    {
+      "title": "삼성전자, One UI 9 공식 버전 업데이트 시작",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPTmhZOWxpSDNpTXlDU0JkTU9zaFZJUlNSRkdHbWtzUXdrVk04RkhRRFNoc0tlUzRUMG0wZ2xsU2lWU1c3cFRRTTk0TkRUTGNMblV2dmpaOFNvVFdtbGwtM2Vod25FNVMwT09zM3FwRWRHVk5QZ3ZNSnZCVWxxWUtVaElXSC1tZmxEb1RaTm9xRE13bUo3NV9iLUI2WFpQU2p5eVh1TmFubXpkZzdITUgzZGhwTGVNMUtpVmdINHdES1RWVWZBRHYyUUZSU1gzdEtYOHBCUWZUVl9hU1lCWUJyQzVVNlJjMTZQbVpuSGJMSE5HTlJDR2ZkWDE5VQ?oc=5",
+      "source": "Samsung Global Newsroom",
+      "date": "Wed, 16 Sep 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 245TB 초고용량 SSD로 AI 데이터센터 공략",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1meUZBb0ROWldxeGg3cDl0VGhOV2k5UDJyY2t5LU1pSVpDakJWb3hBWm96ZWNYSGhXNHcycTRveEpRbTFsUFl3TGlhOFhBMWM3b1NscTJuY1laOTZO?oc=5",
+      "source": "뉴스핌",
+      "date": "Sat, 19 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "title": "‘기지국 센서’ 삼성 ‘차량 통신’ LG…6G 영토 선점 가속",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oc0FXMUVpUXBQYkRDbG5TZ1p3cUVESEFYYkUzR0ZoSi1ZUXF4R3RPV01iYzR1ZTNZaEZrX1V0RC1jOTI2aUJmZFZfcUpFeU0wM2NIZWplb2hzTjh2VkZqZ09ZYmFDcm55MzNxUnc5elLSAXRBVV95cUxOZTUxaDVCZVpRRjBES0pYZXF3a2RHS0ItR3lnTDRJdmZSMkVsQ0lUSlFJVnJqRklpME1zM0RnUVhUc0NoNUhnSGJ0dm1rNlJlLU9sMUR0WWhDZ2NHNzNhQmt1R21IVEpqY2FNMFRINy1XRDYzWg?oc=5",
+      "source": "IT조선",
+      "date": "Fri, 18 Sep 2026 21:30:00 GMT"
+    },
+    {
+      "title": "폴더블폰, 삼성은 받치고 애플은 접는다[특허로 읽는 미래전략③]",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9BTnlmM3dNUTRRMzF0TWFKdFI4Sm5rdXZNeUJtcFUwZHhDLS1aM3dCTC1HalIzdmlWNm52UUZxWFJ4YW5VaHk4OE9tX2kyX2pwblNUYTZjbXRrc01KRm53dzdXOVA?oc=5",
+      "source": "MTN 머니투데이방송",
+      "date": "Fri, 18 Sep 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 미국 테크 포럼에 경영진 총출동…AI 전략 공유",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PR2pxT01wcGs2QzNPdHFKU1JVRHdvY0RrdDIxMk8yaERKdFRlVzdOQUVkbzVIRy0tVl8zbm9Nc1pqcWZFdjMxRTVkQTJrV2FDanBhMjZVQWxQZFHSAWBBVV95cUxPUUQ0ZzBRNGJSZ1RvdndpSFRvYTdSMUs4U0lwV1ZKbVVjRUc1WXhCeHRpQ1ZBWHhodXk0NkotRVA3YkYyM1JpSnc3UTByM2IxRmt6c19mQS1EcGo3bUNPclQ?oc=5",
+      "source": "연합뉴스",
+      "date": "Sat, 19 Sep 2026 23:42:34 GMT"
     },
     {
       "title": "[ET톡] 삼성전자, 내부 기강 다잡아야 '초격차' 지킨다",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82cHl4MlJucWUtUnBtLUJoS01qbjFSUFdLWmR6QWV0dGlXTjlkNjA0OEQydFRaUFhUMlpnVVZPN1NWTWZYeWU1bV9fMjU2QnBVa1l5WUg0MEs2UdIBX0FVX3lxTE1DVjlPWWNkMV9VcnFybklBQ2ZsSk5Ha3g5b0V2Zkp2M3RfUTI2SExFeC04d0FvSFRGWi1YRjBGVFY0RUtkaEhOTHJwYlRtWGdFSDd2R3BSNlZsdER2aXJv?oc=5",
       "source": "경향신문",
       "date": "Thu, 17 Sep 2026 07:35:00 GMT"
-    },
-    {
-      "title": "[삼성전자 주주환원①] 자사주 소각 10조냐 40조냐…'우선주' 변수",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KZloxakY4M1ZzRHJRWDBGUVM5RXQxcXlPWTN1R3RiUV92cmxYRG1KVlRrcExWV191M2VOWUwxM0VzZHktYktGNjVtR2lJWFpkNk95UVZib3J3VDViUUZob2lldGNpNU50QUlCMUpfS2U?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 16 Sep 2026 00:09:00 GMT"
     }
   ]
 }

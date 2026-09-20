@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-09-19T00:12:19+00:00",
+  "updated_at": "2026-09-20T00:05:43+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
+      "title": "美서 40조 끌어온 SK하이닉스…한국 외환시장까지 움직였다",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOM1EyU3lxSjQtbFV3b05aMjhnUGpleXowVk16VjNYNjV6dzltVDZoZmNySnBweUpHOXQ4TnFkWmRITEE4OEkya3JXYjR5T3BWTDZacGZOb2NoQWZjSUUzWG9ueWpqVk4tcHZoWC1NeXFvdWJoV3hIR0k1S05OeXhjOHdpXzJ0MWZDTGVZNVczUHU4VVJpU2diLTFfdXdlVE9TcDVYTFhUVUx6TFFmYVhIU2p2bG5uSkF3UXdRelZzSmRJUmUyaWxsXy1JTlREcG9scGxfVk0xY1k5NVEzLXk2MnNTWlNGWEpYZ2YxUy1COHlFWDFsaWdv?oc=5",
+      "source": "데일리안",
+      "date": "Fri, 18 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "title": "SK하이닉스 손자회사 솔리다임, 미국에 첫 낸드공장 검토",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jdmVQb1VWRU9MN29idllHc0hWWmRFXzc4MjdkalR2aTVlZHVhb1lTNjdsQk43TE1DTTFmWUZUY2x0VkpUcU9JRmRhLUtIWTU5cnRuR2NUemJMR3fSAWBBVV95cUxPeER5ZG5Pb1dkTFhZZVR1NEFYdlR6WlRpM01jUk9IcnFvWV9WY2NXQ2R6X3NKb0tiNVFPVDFaOGo4aXpPRlFnaG5uT3BlazVXVUw2TjI0QXcxRFhFR1k5UWg?oc=5",
+      "source": "연합뉴스",
+      "date": "Fri, 18 Sep 2026 05:39:42 GMT"
+    },
+    {
       "title": "SK하이닉스 손자회사 솔리다임, 美 첫 낸드 공장 구축 추진",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBR3pVVnAzUkt4N1pFMlcyUmxsSzBsTFpmdUZlTjNxNXZFdHk3cFhrRFlqNHRPVkRiUVdnbGp3d2s0dWJTNUhXYTloaUpwWkhjREt4SW1R?oc=5",
       "source": "지디넷코리아",
-      "date": "Sat, 19 Sep 2026 00:02:09 GMT"
+      "date": "Fri, 18 Sep 2026 04:44:20 GMT"
+    },
+    {
+      "title": "SK하이닉스, 인텔 공장 삼키나…개미들 역대급 호재에 발 뻗고 자도 된다 (윤석천 경제평론가)",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtMHFhenBBVUQ3bjhjLXVXakdSVzNTaDU2VUVMTm9GMTJySmpiNkVMdlQ4dkR6TG00TEp2ampZVU5sa1ZvN3ZBbXJwVQ?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 17 Sep 2026 09:45:29 GMT"
+    },
+    {
+      "title": "삼성전자, 3.4% 급등 마감…SK하이닉스는 6.4% 뛰어(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oX0ZyRGtiWXNOQW9mRHFUWUFTakswblB6eU5NVWdkOXMxNnlmZTNXUVJOazBfMjNtaE40QWVGaXZxNXpSeGc?oc=5",
+      "source": "v.daum.net",
+      "date": "Fri, 18 Sep 2026 06:54:41 GMT"
+    },
+    {
+      "title": "SK하이닉스, '중국통' 부회장 전진 배치…中 현지 반도체 전략은",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5reHlxck9DVVR3SVlrVE5sc1Y2emlCREZfbzVkVHdRTjZzMTNpTGFITkFtZDhQWHVpUkVWVkYyRWhUZ1BldGlXdDlScjJrOXBwTTJBVVRaeVh2Q3BlTm5aUdIBeEFVX3lxTFBabXJDRmpXVHFrMHdWenpLQWZ6aVdsT0JWZGROOVVXMUp2SnZNSGI5UHB3VEFpREFacEdleTl3ei12Ym5Tb1dxeFk2R2FmMi1NWk00ZHVLSlNBZmZaVXJIVTBlTHRRM2psRkcxcDJvRDJ3RjRwWnlaRA?oc=5",
+      "source": "뉴시스",
+      "date": "Sat, 19 Sep 2026 20:00:00 GMT"
+    },
+    {
+      "title": "SK그룹 전문경영인 부회장 3인, SK하이닉스로 이동… 반도체 전략 강화",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6SnNaSWhOMnJPYkJYcndFeTYwWHhJMHY2ME1DZ21tVnlrdkxhU0xWMWwybHRkRjd2NkZYRWl5VFkyMUVLTGZKUHQ3cjR6V1NsVjB4NXNfaDdnSDhYajI5c3RhNWNzaUpkYVE?oc=5",
+      "source": "천지일보",
+      "date": "Fri, 18 Sep 2026 06:09:21 GMT"
+    },
+    {
+      "title": "[힘내라 K산업]②최태원, SK하이닉스 전열 재정비…'부회장단 투입·풀스택 전환' 승부수",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5OeG5HUGVpcVoxYkE1eFgxUkxteUdXNWlWWUN0OVZpSmM0WjQ4SG90TnAzdEhBY3hvSUJwa2ZMQUV6QlhNT1dCcXVZelJDY2NHZnA2V19ZMFBYajVBd1E?oc=5",
+      "source": "아시아타임즈",
+      "date": "Fri, 18 Sep 2026 22:33:00 GMT"
+    },
+    {
+      "title": "앤트로픽 내년부터 메모리 직접 구매 확대, 삼성전자·SK하이닉스 가격 협상력 더 높아진다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfRTJwanRjQ0pfd3JJa2pScHVRRVp3clY1a1lUcm1Jb2owU3dxZVdLbFREVmJrVjRnLTh4R2l3OWdCUXg1VXhBanRrR1g1Tko4QWpvZ2U5WWxXUURKWHRNbk1kS1k1MHdHZmlJWlVpUG1IbUE?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Sat, 19 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "title": "‘HBM 더 높이’ 속도전에도…SK하이닉스 “하이브리드 본딩 수율 90% 포기 못해” [칩칩팹팹]",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9hU3c2Q1gzZFFObVNBRjRYTE5sbWM5UUlaNzFVMWZkbUxBRVVudVlocURuUHdiaHZ2SXZ3a0VBOG9PbkdZVktjWERKUHljcWI0engyc1BR?oc=5",
+      "source": "헤럴드경제",
+      "date": "Sat, 19 Sep 2026 22:30:00 GMT"
     },
     {
       "title": "[단독] 'SK하닉 470만원 간다' 외쳤던 애널…美 반도체리서치 업체 '법인장'으로",
@@ -17,28 +71,10 @@
       "date": "Fri, 18 Sep 2026 05:42:17 GMT"
     },
     {
-      "title": "삼성전자, 3.4% 급등 마감…SK하이닉스는 6.4% 뛰어(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CX3dBcjM1VzlVR2xVWms5bmtFOGZ2enZ3RkY1OXAyR2tjVHgwRTE2WDBLTGZYMV9pUFo0R2ZXSUxlc1JiV2xub3ZVY285WVk?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 18 Sep 2026 06:54:41 GMT"
-    },
-    {
-      "title": "D램은 중국에, HBM은 미국에…협공 당하는 K-메모리",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMYUpvclNQWVFra1BFTDI4UEJxVWtiYU9jd0pFVFB3YXpyVlpQY0dQbVpqY1JpOXVWWjVPVHBaMlpjOVZXTlRHS2lLZFIwYkRJU1E?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 18 Sep 2026 21:05:01 GMT"
-    },
-    {
-      "title": "SK하이닉스, AI 생태계 투자 확대 위해 기업형VC 출범…개장전↑",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdlRKRmhtcXc0Y2RWNkRDOE5MMEJCa0xxaERaSTI1VExseGdaZXQ2ZnFLNEpGaGV1VTBwdE9uR18ydEFsZUc1Q0puTTh4Q1pndzJJOGNyaWczYmFxemdUWE1RaXZKQ0w0LUh6UHBaWXFnSWs?oc=5",
-      "source": "마켓인",
-      "date": "Fri, 18 Sep 2026 10:42:35 GMT"
-    },
-    {
-      "title": "‘SK하이닉스 벤처스’ 출범…글로벌 혁신기업들과 AI 생태계 만든다",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtLTVIQndhSXhDc3JRSTdWNmJCazFWRmtmQ0xEX0FSN0hyLTFTakplUlFQNjk3Y3lDNVdGQXVuZTd1di1GVTlsSkRzaVNRME0?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 18 Sep 2026 08:02:10 GMT"
+      "title": "SK하이닉스, 실리콘밸리 CVC 출범…AI 스타트업 투자 본격화",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1UTWFHc2phQTBwbW84OUVPZ1AyM1ZNdFpwaVRKWmU4cGpTNUw4eENBcFZBRVBFZl9xc2tHbWN2Vl9NNUgxTVh4V1p0WXhWV2dHaVHSAVNBVV95cUxNQ0ZtNE5PMFBfMEhsdHNNY2RaNGgzTUUwdEE0M1pNaVNlSDRRZkxSdkNGVDU3UVJtTUpCVVpVMEN6ODJ3VThxUDBYWHdKRW5Ma1NSdw?oc=5",
+      "source": "서울경제",
+      "date": "Sat, 19 Sep 2026 04:18:12 GMT"
     },
     {
       "title": "삼전·닉스, 'AI 생태계' 투자 넓힌다…\"칩 넘어 데이터센터·SW까지\"",
@@ -47,52 +83,16 @@
       "date": "Fri, 18 Sep 2026 23:00:00 GMT"
     },
     {
-      "title": "SK그룹 부회장 3인, SK하이닉스 합류…AI·반도체 힘 싣는다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pc19qRHlGSGMzSzB4bm9EamJmQV9GeFpBUGNOV2QzQzVlQWE5aE1RQnZyc2tOSVdRTFdyZndpb1VxN0tqcURYdmJEQjhkVWc2NVVidk1ENzB2SFhxdjJnM1o2Y1N2QmlKMVRNNdIBckFVX3lxTFBGUlN5bnE2TFNydWNOZWlOazBDUDNKZW9wSkptTzV3a1d1Sm84bjZOUW9pUkdZcFZ4dVJrYkdrOHhvRllOV244N1RxY19kVUgzTlFkaWczQWNNaXpET0tmX0hSZG81THFNQ0pSYWNxbEtQZw?oc=5",
-      "source": "머니투데이",
-      "date": "Fri, 18 Sep 2026 00:59:00 GMT"
+      "title": "SK하이닉스, AI 생태계 투자 확대 위해 기업형VC 출범…개장전↑",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdlRKRmhtcXc0Y2RWNkRDOE5MMEJCa0xxaERaSTI1VExseGdaZXQ2ZnFLNEpGaGV1VTBwdE9uR18ydEFsZUc1Q0puTTh4Q1pndzJJOGNyaWczYmFxemdUWE1RaXZKQ0w0LUh6UHBaWXFnSWs?oc=5",
+      "source": "마켓인",
+      "date": "Fri, 18 Sep 2026 10:42:35 GMT"
     },
     {
-      "title": "SK 부회장 3인 하이닉스行…250명 임원 면담, 조직·중장기 전략 점검",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBrUDVjcUNBZjhUcUNJYWtPand0RThNM3ZiX1R6YmVUWE1VdlZkcHlmU18yUHJ6U2paSHUtTHdXak1IMS1ONjZqY1E1R0dHbHZPTjU5NTFOWTcxbzVISzNNZ3JNMkpRUzJkaVd2T1VyM0NFZVXSAXdBVV95cUxNcjY2LTFMR2FiclRHMlFUNnpvamFTdklPU1kzU1VTS2JsUWJBMmNROTc0SmRxcGt2b1pZS292cjVNTkhhdmJoM2dWa2ZpVExpY09QblducTJENWhDSHVKY2I3UlA0TGVCaWJUY3N6Tm8ySTZoQ1Z3QQ?oc=5",
-      "source": "스트레이트뉴스",
-      "date": "Fri, 18 Sep 2026 04:16:50 GMT"
-    },
-    {
-      "title": "SK그룹 전문경영인 부회장 3명 SK하이닉스로 보임",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfTFZZYUY2cjQ0V2V5ZTQwTnJwOHdiaHZsR0pmSlZIbjhRZmczdm5TRW14ZDcwUEpNblZETFR5ZTNRWXhyNlBVR1E5aGpzX3ppYU5CSlcxOG1KQUnSAWBBVV95cUxPa01QdjNoMFNHcGlMOFZQZjUteVQ4SURyczFaZ3pnbE1yQ1NmV2dBbWxvd3JUN094TFZBR1NrcU1UQVhNRE9JV05mTjRNdUZxWl93ckw1VGZFeGdwQXZZWmQ?oc=5",
-      "source": "연합뉴스",
-      "date": "Thu, 17 Sep 2026 23:47:44 GMT"
-    },
-    {
-      "title": "美서 40조 끌어온 SK하이닉스…한국 외환시장까지 움직였다",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOM1EyU3lxSjQtbFV3b05aMjhnUGpleXowVk16VjNYNjV6dzltVDZoZmNySnBweUpHOXQ4TnFkWmRITEE4OEkya3JXYjR5T3BWTDZacGZOb2NoQWZjSUUzWG9ueWpqVk4tcHZoWC1NeXFvdWJoV3hIR0k1S05OeXhjOHdpXzJ0MWZDTGVZNVczUHU4VVJpU2diLTFfdXdlVE9TcDVYTFhUVUx6TFFmYVhIU2p2bG5uSkF3UXdRelZzSmRJUmUyaWxsXy1JTlREcG9scGxfVk0xY1k5NVEzLXk2MnNTWlNGWEpYZ2YxUy1COHlFWDFsaWdv?oc=5",
-      "source": "dailian.co.kr",
-      "date": "Fri, 18 Sep 2026 21:00:00 GMT"
-    },
-    {
-      "title": "‘호남 400조’ 발 묶인 SK하이닉스, 美·日로 눈 돌리는 속사정은",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5pVXNvb01YVXlWOUkzT2xaSGJjMl85SmY3MkVzenZOMEFYdE42c09WS3NOd3EycUtZdUZRdk1yWnZWSU05c0lmWXFWWms4SjJOYkNCbUxyWXF1ZV9vZi12eERiUFF5czVTenEtZ0FSMzPSAXRBVV95cUxOWHNFMktSYk9NRDFUckJ6N3BiVjBhSXFQd3dJRFREeFpXSGZ0ZkdEZkM4cE1iNTRWM3FWWnBtVWpHYTVLNDNNZzV2LTR4cV9QVUpCRGI5azcxbzhoTVhvajN0OEdlWlo4UUxvWDNwbnlZeHdFZw?oc=5",
-      "source": "IT조선",
-      "date": "Thu, 17 Sep 2026 23:00:00 GMT"
-    },
-    {
-      "title": "\"반도체 상생\" SK하이닉스, 협력사 임직원·가족 3만명 초청 대규모 행사 '첫 개최'",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qWU9rZXctekVyUl8yUEVEZEh0Z01rSk9yejBpZU94WGJ0NWxIN0RudjB2WkluZXRsZUk4QTVBUlVhdXl2UVJhZTlTUU1xcjl0ZHV0ZndmclE1clZyMFQzc9IBeEFVX3lxTE5MdlRHT0NXeHljX2p3RzBWYXRkZTZEeEFDdDRvV1Fha2hzTjNPa21yQVZIMlI3YTFLaVFvaUhWWXpHbk1jcl9Lc0dPd3dCTGl2bEJmQTdZUGVyZFJmekNLSjZFay1TaEJJaUpvQ2pHQ0wwWnZHTy1XbA?oc=5",
-      "source": "뉴시스",
-      "date": "Thu, 17 Sep 2026 07:47:45 GMT"
-    },
-    {
-      "title": "SK하이닉스, 오는 10월15일 ‘Thanks FULL Day’ 개최",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1nZ1M1a1d3em9CUG1jRENWWlJCaVJ0SE16YjJlRWwxUVM0b2ptTU40ZXJGYW1VYUlWWENxODlZaGtHM1JIZ18xWkh5RmZvYzA?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 18 Sep 2026 01:34:53 GMT"
-    },
-    {
-      "title": "SK하이닉스, 서울랜드 통째로 대관…협력사 가족 3만명 초대한다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9UdkVkZjFCV2hzQXRJWUNJMU9pM1V0QW9RcUZleC1kLURHWHdHSDdVRkN5RWVMSVV2VHZMN0Nua2lDQ2M3WFZWTUVaek4teEh1S2fSAVNBVV95cUxNTGxiU19LRXhpOUlBNjJvLUZ4eTRld2VGSUVhMFdKd0E5TUN5QXpNSjRHbENzT0RoZDRNakF1Mi1ObHNNcF9fN1VReHVGNTVYYWpCVQ?oc=5",
-      "source": "서울경제",
-      "date": "Thu, 17 Sep 2026 01:36:28 GMT"
+      "title": "삼성·SK하이닉스 아성 흔드는 中·美… D램·HBM 점유율 추격 거세진다",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4SU41UnltQ0d4NzB0dTVMdURuV3lpcXdvWDdOME1id0sxdDY0bTgzdW93QzZmeEUxaEpsQXgwc0RaYkZ6aUhqOTlHc0d6SUdNcDhmbWdxSi1KZk9Qc0VKYUtSZ1NRMnVjUXc?oc=5",
+      "source": "천지일보",
+      "date": "Sat, 19 Sep 2026 07:44:18 GMT"
     }
   ]
 }
