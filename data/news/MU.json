@@ -1,9 +1,21 @@
 {
-  "updated_at": "2026-09-21T00:09:51+00:00",
+  "updated_at": "2026-09-21T08:45:27+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "China’s CXMT Says It Has Reached Advanced DRAM Mass Production, Challenging Samsung, SK Hynix and Micron in Memory Chips",
+      "url": "https://finance.yahoo.com/technology/articles/china-cxmt-says-reached-advanced-041453764.html",
+      "source": "Benzinga",
+      "date": "2026-09-21T04:14:53Z"
+    },
+    {
+      "title": "MU, SNDK, SKHY Stocks In Focus: Memory Rebound Gains Steam Even As China’s CXMT Touts Faster Production",
+      "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhy-stocks-in-focus-memory-rebound-gains-steam-even-as-china-s-cxmt-touts-faster-production/cZMRGVORB43",
+      "source": "Stocktwits",
+      "date": "2026-09-21T02:01:19Z"
+    },
     {
       "title": "Prediction: Micron Will Earn More Profit Than Microsoft in Fiscal 2027",
       "url": "https://www.fool.com/investing/2026/09/20/prediction-micron-will-earn-more-profit-than-microsoft-in-fiscal-2027/",
@@ -51,18 +63,6 @@
       "url": "https://finance.yahoo.com/technology/articles/chinas-cxmt-says-memory-chip-035403310.html",
       "source": "Reuters",
       "date": "2026-09-20T03:54:03Z"
-    },
-    {
-      "title": "Micron (MU) Unveils Breakthrough Memory Product. It Says Much About the Memory Market",
-      "url": "https://finance.yahoo.com/technology/articles/micron-mu-unveils-breakthrough-memory-171152232.html",
-      "source": "Insider Monkey",
-      "date": "2026-09-19T17:11:52Z"
-    },
-    {
-      "title": "Better Artificial Intelligence (AI) Stock Pick for 2027: Nvidia versus Micron",
-      "url": "https://www.fool.com/investing/2026/09/19/better-artificial-intelligence-ai-stock-pick-for-2/",
-      "source": "Motley Fool",
-      "date": "2026-09-19T15:50:00Z"
     }
   ]
 }
