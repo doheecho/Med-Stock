@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T00:05:38+00:00",
+  "updated_at": "2026-09-21T00:09:45+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3305652.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-17",
+  "as_of": "2026-09-18",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3305652,
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -86,33 +86,6 @@
       "chg": -27.27,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "삼성",
-      "date": "2026-08-20",
-      "target": 3000000,
-      "prev_target": 3000000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "한화투자",
-      "date": "2026-08-20",
-      "target": 3150000,
-      "prev_target": 3150000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "하나",
-      "date": "2026-08-20",
-      "target": 3600000,
-      "prev_target": 3600000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     }
   ],
   "ticker": "000660",

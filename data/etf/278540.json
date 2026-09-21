@@ -1,99 +1,99 @@
 {
-  "updated_at": "2026-09-20T00:06:33+00:00",
+  "updated_at": "2026-09-21T00:10:34+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-21",
   "constituents": [
     {
       "code": "005930",
       "name": "삼성전자",
       "weight": 34.07,
-      "price": 260000.0,
-      "prev": 256000.0,
-      "change": 4000.0,
-      "change_pct": 1.56
+      "price": 270000.0,
+      "prev": 260000.0,
+      "change": 10000.0,
+      "change_pct": 3.85
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "weight": 28.62,
-      "price": 1849000.0,
-      "prev": 1766000.0,
-      "change": 83000.0,
-      "change_pct": 4.7
+      "price": 1875000.0,
+      "prev": 1849000.0,
+      "change": 26000.0,
+      "change_pct": 1.41
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "weight": 4.39,
-      "price": 196900.0,
-      "prev": 196100.0,
-      "change": 800.0,
-      "change_pct": 0.41
+      "price": 204500.0,
+      "prev": 196900.0,
+      "change": 7600.0,
+      "change_pct": 3.86
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "weight": 2.79,
-      "price": 1072000.0,
-      "prev": 1019000.0,
-      "change": 53000.0,
-      "change_pct": 5.2
+      "price": 1104000.0,
+      "prev": 1072000.0,
+      "change": 32000.0,
+      "change_pct": 2.99
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "weight": 2.17,
-      "price": 1388000.0,
-      "prev": 1351000.0,
-      "change": 37000.0,
-      "change_pct": 2.74
+      "price": 1413000.0,
+      "prev": 1388000.0,
+      "change": 25000.0,
+      "change_pct": 1.8
     },
     {
       "code": "105560",
       "name": "KB금융",
       "weight": 1.65,
-      "price": 175700.0,
-      "prev": 179700.0,
-      "change": -4000.0,
-      "change_pct": -2.23
+      "price": 175600.0,
+      "prev": 175700.0,
+      "change": -100.0,
+      "change_pct": -0.06
     },
     {
       "code": "005380",
       "name": "현대차",
       "weight": 1.36,
-      "price": 366500.0,
-      "prev": 364500.0,
-      "change": 2000.0,
-      "change_pct": 0.55
+      "price": 362000.0,
+      "prev": 366500.0,
+      "change": -4500.0,
+      "change_pct": -1.23
     },
     {
       "code": "055550",
       "name": "신한지주",
       "weight": 1.28,
-      "price": 111100.0,
-      "prev": 114100.0,
-      "change": -3000.0,
-      "change_pct": -2.63
+      "price": 111800.0,
+      "prev": 111100.0,
+      "change": 700.0,
+      "change_pct": 0.63
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "weight": 1.06,
-      "price": 85700.0,
-      "prev": 86400.0,
-      "change": -700.0,
-      "change_pct": -0.81
+      "price": 85750.0,
+      "prev": 85700.0,
+      "change": 50.0,
+      "change_pct": 0.06
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "weight": 1.0,
-      "price": 1092000.0,
-      "prev": 1098000.0,
-      "change": -6000.0,
-      "change_pct": -0.55
+      "price": 1095000.0,
+      "prev": 1092000.0,
+      "change": 3000.0,
+      "change_pct": 0.27
     }
   ]
 }
