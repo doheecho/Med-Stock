@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-09-21T14:28:06+00:00",
+  "updated_at": "2026-09-21T22:59:21+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "삼성전자, 전남 광주사업장에 HVAC 생산라인 착공…내후년 초 가동 목표",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PRmw5azNUalAtY3NpeF9JNF9ISWt3Yy1veUdINXZ3UWRkYW5LZ09IdkFBVGNqLUx1OWRzWUpTNXRtSnd3WnZFQVF3b3lZT3BjeEctR0Nn?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 21 Sep 2026 01:00:01 GMT"
-    },
     {
       "title": "삼성전자, 광주 반도체 앞서 냉난방공조 공장 착공",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQNzVxd0IwMWxVaG5uVGpWTWdTc1RrYWR1SlVyOTdHWjZ3S1VRa08yWDhHOXBROU9pd0VIX01JOGxVNjMweVE3blhwNHM4cVlraG5RbS16czRydXJsM052U0JNT05iUEUtYlHSAW5BVV95cUxOemt2ZjN1STZTWlRObktQSGFEM2Z1VV81SHpYbUZwNXVsTUU1YWJ1aU5Ib0Q1WEFWR0MyOXEzcU9iNTc0MkxrcEtYTldZc0ZIc0xiUUxSNTZ3LVJ3NE9QTXhCRVIxVUstc0QtQWp2dw?oc=5",
@@ -17,10 +11,16 @@
       "date": "Mon, 21 Sep 2026 09:00:00 GMT"
     },
     {
-      "title": "송형곤 전남광주통합특별시의회 의장, 삼성전자 플랙트사 광주공장 착공식 참석",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5objFpOGxhX0ExaUhaQzJNNVpDOHM1X3FiSFRaZ04zS0NKbGM3dzdJMXRLb3dsNXdWN2hlZG1udFQ5NGJnQkVtb3NTYVYtYXd6VXVEQjRjb3c5RDNfVmF3WUg5MW5GcHNOcHNYUmNQbjNvd1hSOFFQY0pR0gF_QVVfeXFMTS1ZWlVfMlA2Z2tNUE1iTTZHMkxpeXp3ZVFiTWZNMUpxTFJhX2hPUjlvLS1IeUNTVTJfRVBMT0dWZUg3aThYa0VGU1R5QXEtR0ptVkFWMHFyVDN3dk5tZmg2ZHlFZ2k1YW5xRElETVdwNXU1N29JNzRDVFJsX3NPdw?oc=5",
-      "source": "뉴데일리",
-      "date": "Mon, 21 Sep 2026 06:41:22 GMT"
+      "title": "삼성전자, 전남 광주사업장에 HVAC 생산라인 착공…내후년 초 가동 목표",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PRmw5azNUalAtY3NpeF9JNF9ISWt3Yy1veUdINXZ3UWRkYW5LZ09IdkFBVGNqLUx1OWRzWUpTNXRtSnd3WnZFQVF3b3lZT3BjeEctR0Nn?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 21 Sep 2026 01:00:01 GMT"
+    },
+    {
+      "title": "삼성전자, 광주 HVAC 생산라인 착공",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1hbExuT0pKN3dEM1RUMDUyOWZwbWQ1QVVPWTlNSFV4RHBrbUI5UF8xdWdDM0hYYzZ6VlMtTlF5OXFGanBWa3pZUE9iS0w5Ykk?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 21 Sep 2026 21:04:30 GMT"
     },
     {
       "title": "삼성전자, 스마트폰 배터리에 정품 인증 보안칩 넣는다",
@@ -29,22 +29,46 @@
       "date": "Mon, 21 Sep 2026 08:21:37 GMT"
     },
     {
-      "title": "다시 오르는 반도체…특별배당 받으려면 삼성전자 28일까지 매수해야",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10NTZ4Mk5nWVJ4M2dzeVhNQVFuWFd1ZFZTOG1DLTlucTZQRElJVnlBQU0zaTM4OUUxRVpURnMtV0VsX3V4SXg2MzQzSE0za28?oc=5",
-      "source": "v.daum.net",
-      "date": "Sat, 19 Sep 2026 22:48:51 GMT"
+      "title": "삼성전자, HBM4 수율 개선에 생산 확대 시동…메모리 실적 반등 정조준 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rQThfclhVLVBlQnFuUjJ2cThZQ09FeHZlYVVUcEFfajdHUDdvUm9uRVYteU5hWl9fT2R1RHZHbkoyRDBvZjdKeFFYRWpYN2hrRWRFdGZzUFdRcXU0NFJhYUZTbkE3SzVvYVlzMHBuT2g?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 21 Sep 2026 06:11:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스, D램 생산량 HBM에 묶인 사이 中 범용 D램 시장 침투 가속 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcDRqZm51SUtvNm1DajFVSnJyOGY3MXRsNzI3UVNZdk9mYnJNLUJ6cnhQdTNvckwxclZlMjcwaFowNU5qR3RWQkRZcVV1cW1QVnkwa0tCUTZVekJJVE5lTUhIVDJOOUZtQ01NMW5rVEdVOGpXVkRxQ0JkSHBIWWJXaV930gGWAUFVX3lxTE56UURXeEg2RV9kbi1UNU5QNWxCRU8xQU1rNUJJMFQ5SkhxV2VyLWI0dVU1LU9ERTlsSFZPRzdGRmE2MnkwTzNwMEVMVGpzNHUyUTZNcTZmUUNOME51aFdRUHhmWGZfWWpXZWEyaTVfXzMyOGJpOUlSZ2J2SkJ6MVZuQlNSSjhNOWtESlBJdXZCT0c4OW1Fdw?oc=5",
+      "source": "Chosunbiz",
+      "date": "Mon, 21 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "title": "“삼성전자, 업황 확장·HBM 경쟁력 강화…긍정적 접근 필요”",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9peVRSZmJ2UE11aVJkQzBpeE1OU0NLQk9nZmJnZi14OU1aQ2diN3ZOUno0VlNjUHNCNlFpbm9EMHhoSmZXdEpmcHE4TG1fdXlRc3c?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Mon, 21 Sep 2026 22:43:22 GMT"
+    },
+    {
+      "title": "\"삼성·LG에 안 밀리네\"…2030 '중국산 TV' 사는 이유 [텔레비전(戰) ②]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFaEd3SV9MSXdnUmxYc2lvMzlNUVF2MmlJNDM1aEFXZ3VRSWhOMFEwQ3pYdG1YZjIyYWxNV1dfeFhWTXN1SFpZaGU4R1FhR1lVblRqWUhBcEs3dw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 21 Sep 2026 21:00:09 GMT"
     },
     {
       "title": "삼성전자, 5% 급등 '27만전자' 회복…SK하이닉스 0.6%↑(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lVEJFUmdCa3JlQlc4cDhUTnVXdkZGUWE2NFF1Z0oxZDMyajdrenBza3FFVE5CcDhOOTJqYm84cExBRUFhbFY4UTFjMV93ZDJjVHdSbFJ6N203T0nSAWBBVV95cUxQVV9xdFVRNzVFS3BSeEdGUWllcUllVTQ2Z2ZDeUdZR2sxSW5wOFRobjdka1RtRWNzdXZTZENSUzFtUmRrSXFqODIycVl6bmJpVjhNQ3hUYVJtVUhLWE1PSHk?oc=5",
-      "source": "yna.co.kr",
-      "date": "Mon, 21 Sep 2026 06:53:03 GMT"
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1keGU5ZFEtQmVuaG1neDlkaUFRM0xFTVF5SUNIaDQzWlpwWVYtWFBXZy1ZVkVsX1I0TDd1dmxXaVBBTVRtZlE?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 21 Sep 2026 06:54:00 GMT"
     },
     {
-      "title": "티이엠씨, 삼성전자·SK하이닉스에 '반도체 양산 필수' 재활용 네온가스 동시 수주 '잭팟'",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXS0JQc1R6bTNvajM0S3pvcVRXNnFJbnhhaTZxcU45Tk0wNGxkcF9ZV1RVSERNMExRbE9GcmNtbG9aaC1FWHJSMWFsVHVmOXpCc1AxVnNKeDBUenlDNEI1aWJmUQ?oc=5",
-      "source": "프라임경제",
-      "date": "Mon, 21 Sep 2026 01:58:12 GMT"
+      "title": "[단독]반도체 화학사고 5년간 12건…SK하이닉스·삼성전자가 11건 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90eTMxdG9zLUh2NzFDbi04emZXbE9CT3IyMFNJd09YUDRSQk51ZkdiUGtMTG1lamVRMnk1alBIZXZiT3pzN1RiS0Uxay1KVi1lR3U1a1dvNWxPT1hFaEtpb2IwSGRpVXduS2R30gFwQVVfeXFMUFloVXFPMWdiaDN2Ymh2VU4wdFBoVWZzMVA3SUpWWWlscjl4OU05QWhZTmo4MUR6UmR1YVlaajMyY0x6ckpUT3kyUzd5N0Z1aUo4YU1xZkFRWlRfNEViSWxmM05heUpDenF1amN3OEJrUw?oc=5",
+      "source": "머니투데이",
+      "date": "Mon, 21 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "title": "매년 깎던 삼성·SK…협력사 단가 인상 받아줬다",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTFMzekgwdDdCZmQ5QldVaGJseUczbjV3U1BQb2h4bmNwMXYzdklrSmVmUHVnOU9WX08yV3JmNG5xeUQ5YzBHaWhtSjBkTWtiUG5CZnVXb2NwU0xKRVFOcnJWQk5LTWJUVlJSRjBiaDNBTlV6cjhwLTZPcjZMeUFEYw?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Mon, 21 Sep 2026 22:05:09 GMT"
     },
     {
       "title": "“삼전 1000주면 460만원”…역대급 배당 앞두고 28일 ‘막차’",
@@ -53,22 +77,10 @@
       "date": "Mon, 21 Sep 2026 00:45:20 GMT"
     },
     {
-      "title": "[오후장 체크포인트] 7천피 끌어올린 삼성전자 \"특별배당 받으려면 28일까지 매수\"",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBfWVZuWE1VMzhQUi1oeFJuQllacHVzR082eUNkSHJIdU5GMU9keUVpX29nTkw4RlNBMW5rYmp1c3gtSlBmZGFESWw0bGpmWEU?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 21 Sep 2026 07:10:49 GMT"
-    },
-    {
-      "title": "다시 오르는 반도체…특별배당 받으려면 삼성전자 28일까지 매수해야",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xYUd6LW5WOEdfdEFxQXNRYVNCOFZvTjl5SEJUWG1JVHBqb0F2OXhHUjV3bnFwMkUza3V1WXpoQUhqWVpIQWhpZWJlaTZaWW43ZC1wRkRfM2nSAVRBVV95cUxONFdicmIzdWZHak90ZEVfSWd6MEJaTDJjS3B0cERscGhOTGdISzZiLWl1bTlpSUVYeHNsMDVscFpWWkhEa0lNM2JUZTFwSEJDV1BsbFg?oc=5",
-      "source": "세계일보",
-      "date": "Sat, 19 Sep 2026 22:47:00 GMT"
-    },
-    {
-      "title": "\"삼성전자 팔자\"…1% 초고수들이 집중 매수한 주식",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTN2Zmd3hJeDFLMmVPSko5WGJuRWF1dUNhQWItRTNwMDdrdGRreWxmLTRaNzJpaldnZjh2UnJYM0JrTl9IQjhueDlTcnZqTmdiVlhjRzJSdWgzQQ?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 21 Sep 2026 02:01:54 GMT"
+      "title": "코스피, 1%대 상승 '7천 선' 탈환...삼성전자 급등",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44dWhfejNQTFNSQ1RxNU1rMmhZSk9XS1Ztd0pqZGxSTUo3UjlDU1R3Njh4ZlhLYmQ2VkpKazFPUkpIQzJPcTdPb0FJT21PaWVKWm5rSktJcFNyQ2U0VXc?oc=5",
+      "source": "YTN",
+      "date": "Mon, 21 Sep 2026 07:37:00 GMT"
     },
     {
       "title": "KAIST 신임 이사장에 '반도체 주역' 권오현 前 삼성전자 대표이사 회장 - 머니투데이",
@@ -81,18 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNc3lsbDZ5aHpXcXRBdmY3cHBMa0kxTVYwT2JEQUcyVXFHMjVKNmsxV1VuQ2RsLXRzX29UMW1jRWhhdUtHWEs1TWtrTFloODdsNE91dllueTVKajRiSkVnLUpuYnRESmRWdFVkQnZVS3h3dDNzRDJKWWR3cXZ5cy1INXRZNFoxREp4WkJhWNIBoAFBVV95cUxQTFBENmJRUGJJbVh5eW1fVUp6NUZfVHM0TGJhRElPS2hGTHVndTlVNlV4NHIxTDA3UWg1WE1uLTQ4Z3Z0TVJrYXU1UE4taWVNWVBpMXZpNVczdDBzdF9DVzBMdFk5WlRmOU5vNlJXOFJIcE9STEZTaXE2R3EtM05ra21FalZmWE9WVXljLUFKelg1OWxZTXZKN2gtUzhPdjVH?oc=5",
       "source": "Chosunbiz",
       "date": "Mon, 21 Sep 2026 07:58:00 GMT"
-    },
-    {
-      "title": "KAIST 신임 이사장에 ‘반도체 초격차 신화’ 권오현 전 삼성전자 회장",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFByVWpPeFNRQlpzT1RXSmp1M2M3amw5MU1yR1lHU3pnOEtxV3p5aHNHV1YzT25BMmxGcHh4Q1ljemdmX1R6Mi1pWWNpOEpzajQ?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 21 Sep 2026 10:36:50 GMT"
-    },
-    {
-      "title": "코스피, 1%대 상승 '7천 선' 탈환...삼성전자 급등",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44dWhfejNQTFNSQ1RxNU1rMmhZSk9XS1Ztd0pqZGxSTUo3UjlDU1R3Njh4ZlhLYmQ2VkpKazFPUkpIQzJPcTdPb0FJT21PaWVKWm5rSktJcFNyQ2U0VXc?oc=5",
-      "source": "YTN",
-      "date": "Mon, 21 Sep 2026 07:37:00 GMT"
     }
   ]
 }

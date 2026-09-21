@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T14:28:10+00:00",
+  "updated_at": "2026-09-21T22:59:25+00:00",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
   "market": "KRX",
@@ -25,7 +25,7 @@
     {
       "title": "스페이스X 상장 한 달…개인투자자, '우주 ETF' 5천억 던졌다",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5bkV2MDY2ZG8xNGtFc0tVU0k3dnpOa3c5elZkaFZ6QUlSQndweVoxd3MyNEZTUWVYbFVOU3NTd2U2alZXb1EyUzJWVWdqbDhfWGcyWjNNUF8zcGc?oc=5",
-      "source": "yna.co.kr",
+      "source": "연합뉴스",
       "date": "Sun, 12 Jul 2026 07:00:00 GMT"
     },
     {
@@ -65,18 +65,6 @@
       "date": "Fri, 05 Jun 2026 07:00:00 GMT"
     },
     {
-      "title": "미래에셋자산운용, 스페이스X 상장 수혜 부각…'TIGER 미국우주테크' ETF 자금 유입 확대",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lWlU4TEZGeVhKSVNYVUZPSTh3R2dScl9ZOG5seW9jaE8xYmh5RllNVEJha05wNGVsdEtRQy16V19KSjQ4Y3FJSEJyRllZTm9QeVhhTlRBNTkxVUZqbFFUdDNZNE8?oc=5",
-      "source": "PRESS9",
-      "date": "Thu, 11 Jun 2026 07:00:00 GMT"
-    },
-    {
-      "title": "‘미국 우주항공 ETF’ 7종 중 수익률 플러스는 우리운용 WON 유일, 부진 원인은",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVelJZRWpnd1dFQVZxOG11VEVobngyajRVMGprUzhKZHhOem5MbnpZWkVnRXVxNU5iV1NjWFpLdjE1cUx2WFFrSGNvdWFuZXpuMWhkWEZNQ00yc1VpaXlWLVk3dzdPUE9QOUtz?oc=5",
-      "source": "CEO스코어데일리",
-      "date": "Fri, 26 Jun 2026 07:00:00 GMT"
-    },
-    {
       "title": "미래에셋 스페이스X 물량 '0주' 후폭풍 어디까지?…ETF 편입도 직격탄",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5waUI5eFhqTEFEbFNOWlJTUFRFaHVIWC05WXY5X2kxc0RndWRtd2tBdzNiVDFJS1lCbERvWTNpdGhYd3BnenVOcEx5WEtGXzg?oc=5",
       "source": "v.daum.net",
@@ -87,6 +75,18 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1wa1RwaGNIZnAtYWNIY0U1ZHltb1BlVFduWF9Wa0doMVpRbGwzVXlNRnl1QVFwTnRvc1I4X0VOaHE0SGw4NkthRExpeG11MXJaZHZ3aW1IYnNJZDMzWnE5NmUxRkhiMHpZSG00?oc=5",
       "source": "뉴스저널리즘",
       "date": "Fri, 12 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "title": "미래에셋자산운용, 스페이스X 상장 수혜 부각…'TIGER 미국우주테크' ETF 자금 유입 확대",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lWlU4TEZGeVhKSVNYVUZPSTh3R2dScl9ZOG5seW9jaE8xYmh5RllNVEJha05wNGVsdEtRQy16V19KSjQ4Y3FJSEJyRllZTm9QeVhhTlRBNTkxVUZqbFFUdDNZNE8?oc=5",
+      "source": "PRESS9",
+      "date": "Thu, 11 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "title": "‘미국 우주항공 ETF’ 7종 중 수익률 플러스는 우리운용 WON 유일, 부진 원인은",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVelJZRWpnd1dFQVZxOG11VEVobngyajRVMGprUzhKZHhOem5MbnpZWkVnRXVxNU5iV1NjWFpLdjE1cUx2WFFrSGNvdWFuZXpuMWhkWEZNQ00yc1VpaXlWLVk3dzdPUE9QOUtz?oc=5",
+      "source": "CEO스코어데일리",
+      "date": "Fri, 26 Jun 2026 07:00:00 GMT"
     },
     {
       "title": "미래에셋만 믿었는데… 스페이스X 미배정에 우주ETF ‘털썩’",
