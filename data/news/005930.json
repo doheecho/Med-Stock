@@ -1,27 +1,9 @@
 {
-  "updated_at": "2026-09-21T22:59:21+00:00",
+  "updated_at": "2026-09-22T00:44:28+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "삼성전자, 광주 반도체 앞서 냉난방공조 공장 착공",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQNzVxd0IwMWxVaG5uVGpWTWdTc1RrYWR1SlVyOTdHWjZ3S1VRa08yWDhHOXBROU9pd0VIX01JOGxVNjMweVE3blhwNHM4cVlraG5RbS16czRydXJsM052U0JNT05iUEUtYlHSAW5BVV95cUxOemt2ZjN1STZTWlRObktQSGFEM2Z1VV81SHpYbUZwNXVsTUU1YWJ1aU5Ib0Q1WEFWR0MyOXEzcU9iNTc0MkxrcEtYTldZc0ZIc0xiUUxSNTZ3LVJ3NE9QTXhCRVIxVUstc0QtQWp2dw?oc=5",
-      "source": "주간조선",
-      "date": "Mon, 21 Sep 2026 09:00:00 GMT"
-    },
-    {
-      "title": "삼성전자, 전남 광주사업장에 HVAC 생산라인 착공…내후년 초 가동 목표",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PRmw5azNUalAtY3NpeF9JNF9ISWt3Yy1veUdINXZ3UWRkYW5LZ09IdkFBVGNqLUx1OWRzWUpTNXRtSnd3WnZFQVF3b3lZT3BjeEctR0Nn?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 21 Sep 2026 01:00:01 GMT"
-    },
-    {
-      "title": "삼성전자, 광주 HVAC 생산라인 착공",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1hbExuT0pKN3dEM1RUMDUyOWZwbWQ1QVVPWTlNSFV4RHBrbUI5UF8xdWdDM0hYYzZ6VlMtTlF5OXFGanBWa3pZUE9iS0w5Ykk?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 21 Sep 2026 21:04:30 GMT"
-    },
     {
       "title": "삼성전자, 스마트폰 배터리에 정품 인증 보안칩 넣는다",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE55ZEdIUzVkbS01RllVRVBreFJVRFlLTkM3YnFsQm5UQzJnOE5xUUE3QXZTOXJJek5BQnFScUJsR3M5VXhTczRLdUREUVlWOTFvYU9yc05tdnhfOFVjZm5TSmZHTFBVdw?oc=5",
@@ -29,28 +11,76 @@
       "date": "Mon, 21 Sep 2026 08:21:37 GMT"
     },
     {
-      "title": "삼성전자, HBM4 수율 개선에 생산 확대 시동…메모리 실적 반등 정조준 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rQThfclhVLVBlQnFuUjJ2cThZQ09FeHZlYVVUcEFfajdHUDdvUm9uRVYteU5hWl9fT2R1RHZHbkoyRDBvZjdKeFFYRWpYN2hrRWRFdGZzUFdRcXU0NFJhYUZTbkE3SzVvYVlzMHBuT2g?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Mon, 21 Sep 2026 06:11:00 GMT"
+      "title": "삼성전자, 광주 냉난방공조 생산라인 첫삽… AI데이터센터 수요 대응, 지방투자 강화도",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1vM1puOHpSVVMya1R3NEZBR05pS0VhNXVOVFpQRGcwZUFDTUsyOF9Ud2xMTkR4X0Mtb3Axc0xDQ2dESWZ0bWl4UFlzTlA4SGhZdWM5RHI2eG14WVpvazZwRjRvTkNTT3ZBeXp5cjhXWU9fSk53cFHSAWZBVV95cUxQWGdEREw3bWhHR3FrbEZhYUtPOGhCVmxjWVYwVEJZV3I0SVQ0YVlSN3RfMFZYa2xhUDdqUEVIeklBRjgycnFCU0plRXlKZ0diZ3lZODBkOWNhbVJ2bDRtMDktbi15Wnc?oc=5",
+      "source": "donga.com",
+      "date": "Mon, 21 Sep 2026 15:30:00 GMT"
+    },
+    {
+      "title": "삼성전자, 광주 반도체 앞서 냉난방공조 공장 착공",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQNzVxd0IwMWxVaG5uVGpWTWdTc1RrYWR1SlVyOTdHWjZ3S1VRa08yWDhHOXBROU9pd0VIX01JOGxVNjMweVE3blhwNHM4cVlraG5RbS16czRydXJsM052U0JNT05iUEUtYlHSAW5BVV95cUxOemt2ZjN1STZTWlRObktQSGFEM2Z1VV81SHpYbUZwNXVsTUU1YWJ1aU5Ib0Q1WEFWR0MyOXEzcU9iNTc0MkxrcEtYTldZc0ZIc0xiUUxSNTZ3LVJ3NE9QTXhCRVIxVUstc0QtQWp2dw?oc=5",
+      "source": "주간조선",
+      "date": "Mon, 21 Sep 2026 09:00:00 GMT"
+    },
+    {
+      "title": "금호건설, 삼성전자 플랙트 한국공장 첫 삽… 오는 2028년 완공 목표",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PN2VPQmp5cEpQaDQyNDRIVUNMZDIxYUZfSWZWRlpwZ1owM2pRTzM5ZjVkYjVaOWxZMWJOS0RTMmlJazVpZlVFY2FkY0hHWTA?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 21 Sep 2026 07:24:51 GMT"
+    },
+    {
+      "title": "삼성전자서비스, 추석 연휴 ‘긴급 서비스’ 지원",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNSDJWVWhIVFJaa3RMcWNIeVdxOU5HZFBJaWlyWFlLbjNyRXRIYW9YbDYwRmhlZ3RCTHFIUndiOEFjNEZ5WXh2b3R1VTBySE1KZnNMbVJlZmREYkN0SjFCblVxX01QRFBPaldGb0hiMG9WYlktU0NSZkltMnk5ejRvck16c2RROUs1ZTJHSHowS1dZV2FEd3J0RHVUZ19ySi1QWThkaTZCQjhYYXYtWllDX09NYThJWDdoTXc1b242ZGJKNl9RVFdEVEFCQXQ4aHRoS21ZdEstd3lLZFk1eXd5SUhReVhZTWRscXdrUmd1NWNMY2JiVEhYVjZZTEtnclJuUi1vZnBQenJ4MFlkVUdHQlU1Z1gxUTRXYzljNnBVYzA?oc=5",
+      "source": "Samsung Global Newsroom",
+      "date": "Mon, 21 Sep 2026 23:30:00 GMT"
+    },
+    {
+      "title": "삼성전자서비스 \"추석 연휴에도 긴급 수리 서비스 가능\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KQlAzUEUyOXpTUlJjenBHWEF2a1ZqTE5UYWNONjJ2cFpOS1h5N2NvQjEyU1dMbERERFYtRWsxcGJkQS1yN3paTnc1ckpNZkhDMUZOdmZrNTB0bmJQeVAwUndJd0VDcFpIR2JYWnVOYTdMRVE?oc=5",
+      "source": "마켓인",
+      "date": "Mon, 21 Sep 2026 23:27:49 GMT"
+    },
+    {
+      "title": "삼성전자서비스, 추석 연휴 긴급 수리 지원…26·27일 센터 운영",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pdVpFZG0xMzNQNE5MdG5QWUQ4MlpxbGRrSUk0OWFwNzZSeEN6elBXODFQWDNETlUwUmJxZTZtYWpFOUJqUjhrU0RTNkt4YzA?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 21 Sep 2026 23:51:00 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스, D램 생산량 HBM에 묶인 사이 中 범용 D램 시장 침투 가속 - 조선비즈",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcDRqZm51SUtvNm1DajFVSnJyOGY3MXRsNzI3UVNZdk9mYnJNLUJ6cnhQdTNvckwxclZlMjcwaFowNU5qR3RWQkRZcVV1cW1QVnkwa0tCUTZVekJJVE5lTUhIVDJOOUZtQ01NMW5rVEdVOGpXVkRxQ0JkSHBIWWJXaV930gGWAUFVX3lxTE56UURXeEg2RV9kbi1UNU5QNWxCRU8xQU1rNUJJMFQ5SkhxV2VyLWI0dVU1LU9ERTlsSFZPRzdGRmE2MnkwTzNwMEVMVGpzNHUyUTZNcTZmUUNOME51aFdRUHhmWGZfWWpXZWEyaTVfXzMyOGJpOUlSZ2J2SkJ6MVZuQlNSSjhNOWtESlBJdXZCT0c4OW1Fdw?oc=5",
       "source": "Chosunbiz",
-      "date": "Mon, 21 Sep 2026 21:00:00 GMT"
+      "date": "Mon, 21 Sep 2026 21:06:03 GMT"
     },
     {
-      "title": "“삼성전자, 업황 확장·HBM 경쟁력 강화…긍정적 접근 필요”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9peVRSZmJ2UE11aVJkQzBpeE1OU0NLQk9nZmJnZi14OU1aQ2diN3ZOUno0VlNjUHNCNlFpbm9EMHhoSmZXdEpmcHE4TG1fdXlRc3c?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 21 Sep 2026 22:43:22 GMT"
+      "title": "KB증권 \"삼성전자 HBM 증설로 범용 D램 공급 부족 장기화\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NLU81RjRYMXVrMm9rUHE1VWxFLW1QLVJVRUxEUDFSd1hPN2FRcjF6M2lNWHNzNDJIYUM5RzBtNXBQNDZhSDl5cXBYbG9NY3JuOVFjeGxFZkd4aFnSAWBBVV95cUxNbkM5TzF3MUltWjhaZVJRLWU2R0pJVEVfbExyTlA1Yk5jQlgxYndTcE9NaWtMUkNTdHpZelU4d3JvT1I5bS1lZXgxQmhhUTFmYVM0NTFFbkRXd1NpU0NmU1E?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 21 Sep 2026 23:53:29 GMT"
     },
     {
-      "title": "\"삼성·LG에 안 밀리네\"…2030 '중국산 TV' 사는 이유 [텔레비전(戰) ②]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFaEd3SV9MSXdnUmxYc2lvMzlNUVF2MmlJNDM1aEFXZ3VRSWhOMFEwQ3pYdG1YZjIyYWxNV1dfeFhWTXN1SFpZaGU4R1FhR1lVblRqWUhBcEs3dw?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 21 Sep 2026 21:00:09 GMT"
+      "title": "JP모건, 피크아웃 우려 과도...삼성전자 비중확대 제시 [B급기자의 B급리포트]",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBVVlNQbFowaF9tQ214THBMRE5SNmpuZmpndGZfd1JLM293QzJGVVg3TFNxS2szS3pRUGdndmlqbVYxc0pSTElmMk80ZWhySkU?oc=5",
+      "source": "v.daum.net",
+      "date": "Mon, 21 Sep 2026 23:21:29 GMT"
+    },
+    {
+      "title": "삼성전자, 독일 뢰네에 '빌트인 가전' 쇼룸 오픈…유럽 시장 공략",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5veFNCMURHU2E4SXNleExSUlJHTXZ5dWMxVkEtSjlDMzk5alRHTWJrc0hZSUU1Q2ZyZUVDQVJ1WkVralhiSmZjSmxoLXp4SDloWDlVeTdQQW1yQkVTSThsXw?oc=5",
+      "source": "아시아경제",
+      "date": "Tue, 22 Sep 2026 00:16:54 GMT"
+    },
+    {
+      "title": "삼성전자, 유럽 빌트인 주요 시장 독일에 빌트인 가전 상설 쇼룸 개관",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPc3hram1MMFJlVktDZWFZSmMtdEdPT1ZiaWNiODZEcVJFXzhhQXRVcnZSV00yeHZqNjBCcWNlV3ZyNURrbHRRaG1fNmw5cGdkOWhpcGc2MFJXYklzT0dDNGh3WnU4ME8yd2otR2RwOGlBRHp0b3BoMVUxZ0ZzMnlrbi1jT044aG4yRHlieHhCWktnczRUMi1pOHJJRWtENmNCSDVTTEtEUlJtTUVNaXNEdWxnVlVUTFZ1S0VxMFdFVU8wZl9hcDcxY3phemRPcjJjYUJoLXRDcVhuSkhCaDRLTEcwWE9keGZxQ0x6SzVRNmIzYzZrOGdwX3BZR0ZmOEQ0MUViVVFYdHU1SDE3Z3hpbmJCN0RzdTVCNDNTRkRXb05UbkoyNWJIejZESURzZ1NUb3J1cGhiTnkxSkRDZmJRdDhOMk5RNUk?oc=5",
+      "source": "Samsung Global Newsroom",
+      "date": "Mon, 21 Sep 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 독일 빌트인 가전 쇼룸 개관",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYcmlwUXR3MHpxX0pQTDFuU1l3c3lPZDcyWl9uci16dndFLTF6RzRfR0RuYVgtUGNDOUZnbmZ5Um1UT3RSaVVKQ2liZGlMWXI4WGo4SUNn?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 21 Sep 2026 23:55:40 GMT"
     },
     {
       "title": "삼성전자, 5% 급등 '27만전자' 회복…SK하이닉스 0.6%↑(종합)",
@@ -63,36 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90eTMxdG9zLUh2NzFDbi04emZXbE9CT3IyMFNJd09YUDRSQk51ZkdiUGtMTG1lamVRMnk1alBIZXZiT3pzN1RiS0Uxay1KVi1lR3U1a1dvNWxPT1hFaEtpb2IwSGRpVXduS2R30gFwQVVfeXFMUFloVXFPMWdiaDN2Ymh2VU4wdFBoVWZzMVA3SUpWWWlscjl4OU05QWhZTmo4MUR6UmR1YVlaajMyY0x6ckpUT3kyUzd5N0Z1aUo4YU1xZkFRWlRfNEViSWxmM05heUpDenF1amN3OEJrUw?oc=5",
       "source": "머니투데이",
       "date": "Mon, 21 Sep 2026 21:00:00 GMT"
-    },
-    {
-      "title": "매년 깎던 삼성·SK…협력사 단가 인상 받아줬다",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTFMzekgwdDdCZmQ5QldVaGJseUczbjV3U1BQb2h4bmNwMXYzdklrSmVmUHVnOU9WX08yV3JmNG5xeUQ5YzBHaWhtSjBkTWtiUG5CZnVXb2NwU0xKRVFOcnJWQk5LTWJUVlJSRjBiaDNBTlV6cjhwLTZPcjZMeUFEYw?oc=5",
-      "source": "네이버 프리미엄콘텐츠",
-      "date": "Mon, 21 Sep 2026 22:05:09 GMT"
-    },
-    {
-      "title": "“삼전 1000주면 460만원”…역대급 배당 앞두고 28일 ‘막차’",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQWtYRGpTR0FwTUtUak5ZM2wwc1ZpazFsMlFwYkpIOGZJdnotazl1Q0FDQnZLTjZZQkJKRWZneUZhOXR6cm5Mbk0zdVE2MXh3Q2hzZDE3ajh4SUFvT0lySFRGQTBFZ2lqNDQxVVNjcHlHM3FvdWZEUG1rZ01aUFVZdA?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Mon, 21 Sep 2026 00:45:20 GMT"
-    },
-    {
-      "title": "코스피, 1%대 상승 '7천 선' 탈환...삼성전자 급등",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44dWhfejNQTFNSQ1RxNU1rMmhZSk9XS1Ztd0pqZGxSTUo3UjlDU1R3Njh4ZlhLYmQ2VkpKazFPUkpIQzJPcTdPb0FJT21PaWVKWm5rSktJcFNyQ2U0VXc?oc=5",
-      "source": "YTN",
-      "date": "Mon, 21 Sep 2026 07:37:00 GMT"
-    },
-    {
-      "title": "KAIST 신임 이사장에 '반도체 주역' 권오현 前 삼성전자 대표이사 회장 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0TXNRay1DcmpOb2tSTzVLVTRFQUdWS1hKdFlma3RPeXFEdkp4Z1ZYTDBhRDRvTGdYNi10LUJhWDh5dUxRQ1huOTQ5RFpCRTlEQlBvRVhFbHZ5UVV4SVB4OG9SYTZ1NXPSAWxBVV95cUxPemt6NzI2eXFsTDJNQU01ajBPSmg3Wjhaal9LWXdKMEo1SkM0QmxfMTFrUnRUUVlLZkxfWUhpbmI2cDlyS3V3VzNaT3VELUxDS2VoX2JSSHFidldQY3gwSmlCUGpJNURvQnpPTlE?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 21 Sep 2026 08:07:21 GMT"
-    },
-    {
-      "title": "카이스트 신임 이사장에 권오현 전 삼성전자 회장 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNc3lsbDZ5aHpXcXRBdmY3cHBMa0kxTVYwT2JEQUcyVXFHMjVKNmsxV1VuQ2RsLXRzX29UMW1jRWhhdUtHWEs1TWtrTFloODdsNE91dllueTVKajRiSkVnLUpuYnRESmRWdFVkQnZVS3h3dDNzRDJKWWR3cXZ5cy1INXRZNFoxREp4WkJhWNIBoAFBVV95cUxQTFBENmJRUGJJbVh5eW1fVUp6NUZfVHM0TGJhRElPS2hGTHVndTlVNlV4NHIxTDA3UWg1WE1uLTQ4Z3Z0TVJrYXU1UE4taWVNWVBpMXZpNVczdDBzdF9DVzBMdFk5WlRmOU5vNlJXOFJIcE9STEZTaXE2R3EtM05ra21FalZmWE9WVXljLUFKelg1OWxZTXZKN2gtUzhPdjVH?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 21 Sep 2026 07:58:00 GMT"
     }
   ]
 }

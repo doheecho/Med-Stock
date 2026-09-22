@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T22:58:58+00:00",
+  "updated_at": "2026-09-22T00:44:22+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 487045.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-18",
+  "as_of": "2026-09-21",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 487045,
-      "date": "2026-09-18",
+      "date": "2026-09-21",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -41,7 +41,71 @@
       "src": "yahoo"
     }
   ],
-  "consensus_rows": [],
+  "consensus_rows": [
+    {
+      "firm": "BNK투자",
+      "date": "2026-09-14",
+      "target": 270000,
+      "prev_target": 300000,
+      "chg": -10.0,
+      "opinion": "보유",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "대신",
+      "date": "2026-09-08",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "미래에셋",
+      "date": "2026-09-07",
+      "target": 400000,
+      "prev_target": 370000,
+      "chg": 8.11,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "DB",
+      "date": "2026-09-07",
+      "target": 360000,
+      "prev_target": 360000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "KB",
+      "date": "2026-09-04",
+      "target": 600000,
+      "prev_target": 600000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "LS",
+      "date": "2026-08-31",
+      "target": 450000,
+      "prev_target": 400000,
+      "chg": 12.5,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "삼성",
+      "date": "2026-08-24",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    }
+  ],
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX"
