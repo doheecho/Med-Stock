@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T00:06:55+00:00",
+  "updated_at": "2026-09-23T00:21:40+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -55,7 +55,7 @@
     {
       "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVT3F0N2EtcG5jNHR4ZmlvR2F5UkFSQlJvM3lNUVRRS290WXQySFpTQkRISmdIbHl4NXFEb2prb2lISV9YUUZrcEVrSUVfWE43d0NWLVNSMzczN1XSAWBBVV95cUxQZUNJZGJHNy1ZNHQzQVZDRjg4S2JtVnc5cG9fUG9jMzJfWERHSDV0cVdwZmdDNVIwVTUtTFhQUWZVb1N2bTMtdTh1dE5sdGpnWHZZRVZoV3VpOTd0SXVZRk8?oc=5",
-      "source": "연합뉴스",
+      "source": "yna.co.kr",
       "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     },
     {
@@ -63,12 +63,6 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xN0Y1N3Q1SnVveFNwS3pNOFQ3dS1uTzhCdG9MdW9yZl9QSldXZTExZV93S0xESnhzLU9YNU5MbmhBU2JGVF94c2lhVUNYeDdwaDdxVGFzS0pBeW5nZURwSU5iVkFRQ1BF0gFuQVVfeXFMTUpIUVl4YzkzRkJjSDN4R0J4Wno2YTlPNjhwUENNeEdaQWlkMDZ1bjhoSzRZY09fdl95ek9GMmd2RU0zTGQyc1NFb2ljRkxha1p4M2JYXzdlRTJodGdCR08tYk9oOVRuVFBUbVc2R1E?oc=5",
       "source": "mt.co.kr",
       "date": "Wed, 08 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title": "코스피 200보다 더 빠진 ’KODEX 200’…전 거래일 착시 영향 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE56cUNIZmlOZnpuU09pWDVXbnhTWFBEV2tYcG9pUFFublFXOWtnTU1oOVBWUUJZUXBXb0JDXzBxSHU5TENsbG54SlV3TTBMR2lpMzl3dWdfR1dmQTJsNkpKUlJnZEwzTU5rQW1CeUNSdkk?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Mon, 03 Aug 2026 07:00:00 GMT"
     },
     {
       "title": "삼성운용 'KODEX 200커버드콜액티브' 첫 월배당…분배율 2.0%",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmWFlUdlFMVUVkWHhKS1phX1JCWmtlekVLUDN1dlFWM01SeEE3ZUh1cVZBYVVJNXdSN3BDWjZCWU0tTWNLUV9EVnVGRDIwMFFkMUl3MS13?oc=5",
       "source": "news.dealsitetv.com",
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 200커버드콜액티브(0219E0)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XY3ZhX0l1NWlJMmFmbWdVQTVnMEt6RklacVZRYWI5YzV4TkluanM2U2ppOVd2cnlCVUcySURpekNQMUgyc1JoNE1OcGd5NjM4NUpSR01XTG9xQQ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 14 Jul 2026 04:07:58 GMT"
     }
   ]
 }
