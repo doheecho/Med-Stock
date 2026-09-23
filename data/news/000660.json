@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-23T00:21:37+00:00",
+  "updated_at": "2026-09-23T09:54:03+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "술 때문에 억대 성과급 놓쳤다…SK하이닉스 신입 4명 해고된 이유",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54VktPMGZteXllV2NVSUdGUFFoUnlRSmVtbERRdENaUlJmSjE2Nm1oNlNGT091aVExTXBoZ056cWkwTHktbjJEbkdYNHFNWGV2R1HSAVNBVV95cUxQVTdsamxNWGlqVzB6bUpvYlRYZ3ZvTlZjWkZTZW52UjlYQzctNmJSVUF2X3dqZERvdDRZQVItZXlZSW5ZcUo5eUMwUE5uWk83a0Rydw?oc=5",
+      "source": "서울경제",
+      "date": "Tue, 22 Sep 2026 16:00:00 GMT"
+    },
     {
       "title": "SK하이닉스 신입사원 4명 해고…\"인생에서 가장 비싼 술\"",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlNWdZSFpHcHE2V0lCaWhTRE15VnAyZFBwUWJoenN6ZlJLRnNDaUJnQWU0cndMT2pIb00wSFFYamhBamxQX3ZiSHJUODlKaEIzQ1QyUXpzYWRvVnVIQy0xMFdVVEVQeHM?oc=5",
@@ -11,16 +17,10 @@
       "date": "Tue, 22 Sep 2026 01:02:00 GMT"
     },
     {
-      "title": "술 한 잔에 수억 날아갔다…SK하이닉스 신입사원들 해고된 사연 [지금이뉴스]",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1hQXo4bVFfWVhRc1U4bVRyUW1KbVJBOHdiZ3EtODlQTUotMWwxcVJmUDBHS1IwSGtPQVdRbk90ZXFZRHRGNm5fMnI3ZkZweExjbDdFbXdSa2V0MEZaRnpKeGJlZmN0clVPRmFTXzFrTTFCb1hPd1E?oc=5",
-      "source": "YTN",
-      "date": "Tue, 22 Sep 2026 06:20:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 신입사원 4명 연수 중 해고…무슨 일?",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hSGNtYzMxdXhid0VTSzVEZjc4MHJPaWliMDBfN253OFVHQ1BqcDZ4MXdrcVRtSTN3QzJySHpNX2dXOXhZVHQ3WUdMWHo3eHhsdWc4UktHSWtoTGhRemtN?oc=5",
-      "source": "조세일보",
-      "date": "Tue, 22 Sep 2026 22:35:00 GMT"
+      "title": "[이 시각 핫뉴스] 연수기간 술 마신 SK하이닉스 신입 4명 해고 外",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1iNmxjZlc3MF9pYmZWY3JSRjFQbzU5OVlPWWFyX1VFZXVac3k4dHVKZThfMGZ3UldwaU5nSDA2emFZcDF4LVgzRDZOMHcwZjQ?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 22 Sep 2026 20:47:15 GMT"
     },
     {
       "title": "SK하이닉스 ADR, 美 반도체지수 조기편입…개미 '최애' SOXL에도 담겼다",
@@ -29,10 +29,10 @@
       "date": "Tue, 22 Sep 2026 02:20:00 GMT"
     },
     {
-      "title": "‘서학개미 최애’ SOXL에도 SK하닉 담겼다…美 ETF 줄줄이 편입",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Od18yUUF6OF9xSWhHNlkyT2xIR242RU5HVl8zN1k3elhSenB3YTZDTjVjR2EzT1pYZDV2RkN1anJLQ2hJRmxwaGYyeFp1MENra0N6ODRZRVc4dFlSNVBOa0xDNUx3dm5OeUViVTl0SVlLVlU?oc=5",
-      "source": "마켓인",
-      "date": "Tue, 22 Sep 2026 05:46:21 GMT"
+      "title": "서학개미 몰리는 반도체 3배 ETF 'SOXL'…SK하이닉스 담았다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mTmxqdGsyYUdxSDJFMktnaG9MTV9qSWFGR3BJNXZiMV80OXh3UmNadEw5UGMwSzZZWGlfNEJGeXd0ZUxQT0pueWZUYnhNcElBNnZob2N3clh0UQ?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 22 Sep 2026 07:42:49 GMT"
     },
     {
       "title": "미국서도 한국서도…SK하이닉스 ADR, ETF 편입 연이어",
@@ -42,57 +42,57 @@
     },
     {
       "title": "‘초호황’ 하이닉스, 공사비는 ‘어음’으로…중소하도급에 부담 전가?",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XS3VQNkl4NU9fbG9LWnkyNnplZnpjUFJ3eXkxM3F6bkZRU3JPSXB1Sjk2YzAxSVZ3ZGQ1dmpsbFFNNzdka3hNTWJ4eXdtR0VrRGQxelJoTnhoZ1k?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5FZ0pqNHhadVRTcFRTY0I0T1hEeTdGLXdzaEtaX3VkWUdQMUczYWx6OGRteURjcFBIeDh4WEx4VFRLaHp1NFE?oc=5",
+      "source": "v.daum.net",
+      "date": "Tue, 22 Sep 2026 12:37:11 GMT"
+    },
+    {
+      "title": "\"메타가 불 지폈다\"…삼성전자·SK하이닉스 다시 '들썩'",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LNUZxNkFTZ2k2Z0d1QkJCdFVkSGx1dW9UcVR0bG9DbDN1OS0tTHhrcG5kN0dwVXNmdm8tS3NCV3pBcG5wVHZMTjRuaE1ZVzNKWVVOZFdPUlVMUQ?oc=5",
+      "source": "한국경제",
+      "date": "Wed, 23 Sep 2026 00:34:44 GMT"
+    },
+    {
+      "title": "환경단체, 안전보건법 위반 SK하이닉스 규탄",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lZWdUSHl5bEZReU1aZUExLWNGVHBGSDNON0RuVDRsNnpKVHNUWlMtSklXTTEzaFpqNFJIb3FWSDhoVXpyV21QNUlEd1g3Y1hBZUxhSnhUcW1hRU0?oc=5",
       "source": "KBS 뉴스",
-      "date": "Tue, 22 Sep 2026 22:33:00 GMT"
+      "date": "Wed, 23 Sep 2026 01:28:00 GMT"
     },
     {
       "title": "SK하이닉스(000660)",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUHpBLVljZW5rTkJGdmh6QzVKQUVjOHV6SUMtRlFSU1BHSXdmMzFSLUxaMTFLTW9HcDFrdnhUeU0yR2dGR09fYldSLTBxaHQ2UEI5V3ZURzRpN3ExcnBxd1ppblJESW5aOHlSQTQtNkxkZlhLTnpXeUFwWVBjcUNBZ19JVGRHMkVYOTFfNlhvd3YxNll6b0FZ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQV00ybGxRblBRdmFseE9ubnkwd0pTMVBDa0hxUFV4bVZQOGF3MTdPd2JRRnIwT0NrQU5yWU40bzd1dmtiRFV6dzdwand1a0xhVENDODE1MUtGNlNGSFhuX3VfVjE1bDEzd3g1RUoySGVBZ3d3dGlja25GSEVBcWI1R0U0clcxeXVMZDVmMVZrSjdlUktDc2dN?oc=5",
       "source": "매일경제 마켓",
-      "date": "Tue, 22 Sep 2026 15:29:37 GMT"
+      "date": "Tue, 22 Sep 2026 15:29:39 GMT"
     },
     {
-      "title": "삼성전자·SK하이닉스, 반도체 수요 증가 기대감에 동반 상승 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ubW5mdnNpUHdtYkctQV8yWnFPQ0Y4bE1ESmJiOE55TlFVLVZGWHZtS1VVT3Z6SzV2cUNYU205ay11ZWItczhqNmwwUl9XZTl0VEVnOU9UX2pQR19wemx3d2ppT2VOcjZl0gFuQVVfeXFMUEc2YUhkMUtXNGJVNkgwRTFCUzEyb2g3OHd6MWt5LUVqRXZLZGVWU2xIcE40ZDhmUlkxYzFIYWwzLXBXckNScEd5Q0ZiM2c2d0NuMkRjUmMxQnBTQTNTemVUeGhUTldBMlFKNVBYaUE?oc=5",
-      "source": "mt.co.kr",
-      "date": "Wed, 23 Sep 2026 00:09:36 GMT"
+      "title": "추석 연휴 앞 코스피 ’전강후약’…7,000선 사수",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91T0QtT1VOcXpVcUJfdWRzdGdPSU9ISE5ucjZiTHVsYmgzdlQ2TEdkVExSdVQ1ZUt1Q1J4cW9SMW5pWjZQSHFmcUZwRndyaEl5YnpwZmswcXJMcDNDNVdvX29zU3daeXM?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 23 Sep 2026 07:10:00 GMT"
     },
     {
-      "title": "안성 조합장들 “SK하이닉스 오폐수 직방류 상생협약 파기하라”",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XMlY5THJyR3BHUk40TnM4cXl0NzFzM0Vfa2lMcWxaSjhQdjkzY2RqQUEwMF9fbGVtU3YyYkN4Q1RtdjVveXJQWFNTdkJyMFFmNExtNUlFM3FJVVk0VEFNcV9qWWtkN2pWeFIwSWJ6MVA?oc=5",
-      "source": "인천일보",
-      "date": "Tue, 22 Sep 2026 01:22:00 GMT"
+      "title": "중국 CXMT 5세대 D램 \"삼성전자나 SK하이닉스와 비교 어렵다\" 평가, 기술력과 수율 불투명",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5rR05XLXVEOFVFVmh0QmhLVEt3Tk1LLW52cjBMWlJOdUJSMExybXZxaGF4ZUtXRUJKOWptaElfWWdDQnpDMTZKMVJNaElNcklYLTl3VzJEdkNkLVYyUVZoMV9WVFl5bFpRSVFUV3hmeUdkMnc?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Wed, 23 Sep 2026 01:26:17 GMT"
     },
     {
-      "title": "학벌·스펙 지우고 실력 겨룬다…SK하이닉스, AI 해커톤 2026 개최",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1HaWRJdjhvdG1QbzlWY2pJYmJOU2J3NDNKdm53bHpEM05DZFhvdFU4MnBiTS1uTHNrLTlLeHVlZFJqNUdYdmtzR21renpxLVRMaFBweHlkV1Nya1ZnWXlHdTFWYXFZNzZ5aEduM0FJRmnSAXRBVV95cUxQX3pyUzBkTEJXNlFTcC16RTBWZlJCek9aazQ1Um1kZG9fT1JadDdlSXE4X1RvZUo1bVlNNS1jVFFLSFNrUFpOaHdLQkhlRFNzQW1VaVNxNm05UEZsNjl1QUM0THZWYTR5UEhWdy1Pam9rVFpCRQ?oc=5",
-      "source": "IT조선",
-      "date": "Mon, 21 Sep 2026 05:34:02 GMT"
+      "title": "美 반도체주 일제히 상승…마이크론 5%·SK하이닉스 3.45% 급등",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44ZDJiX2JVXzJtSk0zd3V4Q1ZDMWpwdUt0S2ZvT1NnQkNycnNpNkpibVgtSkpTS1lIXy1kLVZWNGtqR09Vbk1KQkZiMVMtQ19qZm02OG5WaDMxbzJOWVJRMGRUbEM3dlXSAWxBVV95cUxOV2R4V0xiMnJHRFlvWVg5TEFMcThreWdGZGF6UFotTG5rM2gwak5kUmd3S3FrbVFBMGJSQVliSjVReTNKMm1pcXJxT3c3bmxPcm1OeWE2a0RQSGYwNjNJdXM3dGRBdUR4MU1EZ24?oc=5",
+      "source": "뉴스1",
+      "date": "Tue, 22 Sep 2026 20:49:53 GMT"
     },
     {
-      "title": "“학력·경력 모두 안 본다”…SK하이닉스, ‘총 상금 1억’ AI 해커톤 개최",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1iUGNjbzRNbGk2bFd5Z3BvNHhmM2x1TFM5UHpPQTdOOVV6bHl0VmtsRThVb0p5VW1pX2RJblV2R05UQVlSOUtMNm11bzRPTjByMElaQ0NVc0FlMXNtYWJxd0ZvTUFZNkFKMmpMbkxScHc0QUNsS1HSAWZBVV95cUxOTGNHdWhwNnlKR2JsOFZCQldnSWVSejFDUXFESUdJVjFoc2pPREh3cklSVzdTYlhTQ0UxaWNhRXpzdjFNbkM0WjA3T3dybVg3aFJUX2p0dDQ4elBpbzRkSTg3V2VzUHc?oc=5",
-      "source": "동아일보",
-      "date": "Mon, 21 Sep 2026 08:05:47 GMT"
+      "title": "[오늘 이 종목] 반도체 훈풍에 삼전닉스 주목…LFP 수주 · AI 웹툰도 눈길 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BMm1GeHVEYVVrVk02OU83cG0zdU1QSkxhQk9fZGcyWVVDUVE4QUoxLW13V2FMT3JtalpGRkI2VGI1UWMyU0ZlMVo1TXVqaU5yMTdxRktIZk1YOFk0al9oWV9aTFdsRXVk0gFuQVVfeXFMT2ZwZFpPSTkxZUVocHdpd3NJdmUxRmYxaEx6WEw3c054SVF3aHhNdG56N2xiek4zbTdDNWhKUlZBZHpjVU5KNFpfNkZ0MWpQeUFPR2VUSDZ1OVpZQUt5Rm5BSDZjYlktaTV4V1FhRWc?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 23 Sep 2026 02:31:36 GMT"
     },
     {
-      "title": "SK하이닉스, AI로 R&D·제조·영업 연결…‘AI 컴퍼니’ 구축",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WZE9vcFp5dW5ZeTJFZ3pwNUZNaFptWGg2MWs0U0tidWhDN0ZMcGQ0aHB6Vk9ONzJ5TThrTVVxc1V4YnpTNk1JNzdxZGRTZ1VIcS0xbEk0M1RvNnNnYTk2VXNobTQxRFNnbXlaZEozRG8xVEU?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 21 Sep 2026 19:00:07 GMT"
-    },
-    {
-      "title": "키움증권배 철권 스타즈컵…DRX '무릎' 출격해 SK하이닉스 주식 쏜다",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqa2lKd3Vla0dkVXB4ZFFKWmpCTmg4clRxSUVoc2Z5ekh6V290OXgtcXowdHRhOUVCUVU3SmhBbVNwazNBV1E0N0hlWnBReEVGalRRdkpGOW9zam5F?oc=5",
-      "source": "뉴스핌",
-      "date": "Wed, 23 Sep 2026 00:01:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 “차세대 메모리로 새 AI시대 개척”",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aRVhkWG9VcnZQczVXY3VseDMyQ1dfbVY2ZHhoaW5ULTRrckpzOGlDZXA5NW1BOThhY0ZsT0xsZ0lSX2twQWNqT19vS0lteVJVd0RPeFJCY1JMeTVMdmYyaTdSak9aeDZpNFlOTHRWaFNrS3MwQUHSAWZBVV95cUxOYk5kN01WZDJnUTVVOTJLSms1WVp1VWdGVDI4QVY0dW8tN2VFWEhqelBCeWk5YkJEc1M2QldVWXFSSTgxZ0k5cHd4bHVGckR2cV9CVGR2Z3ZybURmckRDc1ZGeW5NbWc?oc=5",
-      "source": "동아일보",
-      "date": "Mon, 21 Sep 2026 15:30:00 GMT"
+      "title": "현금 두둑한 SK하이닉스, 다음 승부처는 CVC다",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMkY4bnV1bjNaalUzcjlpdmc1SWFjNXZIdGQzM3FFQlFBRGVRRlhtTEVjNldWdFc4X19obVc2aHRhZDVaSzFpb2xkOVZuWUxBOXg3TlM5Nk4ybjZwNWFBcmpybjM0OGdRRkRsU2tKMVFtX2x4aXV6eHhkNmxRVWNXMw?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     }
   ]
 }
