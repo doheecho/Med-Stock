@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T09:55:07+00:00",
+  "updated_at": "2026-09-24T12:51:59+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
@@ -9,6 +9,60 @@
       "url": "https://finance.yahoo.com/video/ai-magic-sends-markets-higher-143210140.html",
       "source": "Yahoo Finance Video",
       "date": "2026-09-23T14:32:10Z"
+    },
+    {
+      "title": "AMD's Six-Day Rally Finally Hits a Pause",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amds-six-day-rally-finally-122023912.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-24T12:20:23Z"
+    },
+    {
+      "title": "Micron's Memory Boom Is Showing Up in Prices",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-memory-boom-showing-prices-121026224.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-24T12:10:26Z"
+    },
+    {
+      "title": "How Micron Stock Could Rise Another 50%",
+      "url": "https://www.barrons.com/articles/micron-stock-price-rise-50-per-cent-39518b23?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-09-24T11:25:00Z"
+    },
+    {
+      "title": "Zacks Investment Ideas feature highlights: GLD, QQQ, USO, MU and TWLO",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-093400194.html",
+      "source": "Zacks",
+      "date": "2026-09-24T09:34:00Z"
+    },
+    {
+      "title": "Zacks Earnings Trends Highlights: Micron, Nvidia and Alphabet",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-earnings-trends-highlights-micron-091700727.html",
+      "source": "Zacks",
+      "date": "2026-09-24T09:17:00Z"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Micron Technology, Costco Wholesale, Interactive Brokers, Canterbury Park and Stran & Company",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-090800241.html",
+      "source": "Zacks",
+      "date": "2026-09-24T09:08:00Z"
+    },
+    {
+      "title": "MU, SNDK Extend Slide For A Second Day As Memory Rally Fizzles: Micron Results Next Week To Test AI Demand",
+      "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-extend-slide-for-a-second-day-as-memory-rally-fizzles-micron-results-next-week-to-test-ai-demand/cZM7vdgRBBU",
+      "source": "Stocktwits",
+      "date": "2026-09-24T08:19:31Z"
+    },
+    {
+      "title": "3 Stocks That Get Paid More When Memory Prices Rise. I'd Buy Only 1 of Them.",
+      "url": "https://www.fool.com/investing/2026/09/24/3-stocks-that-get-paid-more-when-memory-prices-rise-i-d-buy-only-1-of-them/",
+      "source": "Motley Fool",
+      "date": "2026-09-24T08:02:01Z"
+    },
+    {
+      "title": "Earnings Outlook Remains Upbeat: A Closer Look",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-outlook-remains-upbeat-closer-220500751.html",
+      "source": "Zacks",
+      "date": "2026-09-23T22:05:00Z"
     }
   ]
 }
