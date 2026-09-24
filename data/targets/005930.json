@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-23T12:57:08+00:00",
+  "updated_at": "2026-09-24T00:26:06+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 487381.0,
-  "target_high": 560488,
+  "target_avg": 493864.0,
+  "target_high": 567944,
   "target_low": 400000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,13 +18,13 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 487381,
-      "date": "2026-09-22",
+      "target": 493864,
+      "date": "2026-09-23",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "야후 평균",
-      "target": 475850,
+      "target": 478628,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -42,6 +42,24 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "유안타",
+      "date": "2026-09-23",
+      "target": 630000,
+      "prev_target": 530000,
+      "chg": 18.87,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "키움",
+      "date": "2026-09-23",
+      "target": 350000,
+      "prev_target": 350000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "대신",
       "date": "2026-09-22",

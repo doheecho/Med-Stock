@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-23T12:57:57+00:00",
-  "as_of": "2026-09-23",
+  "updated_at": "2026-09-24T00:27:13+00:00",
+  "as_of": "2026-09-24",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 283731640.64,
-  "total_pl_close": 153466430.36,
+  "total_value_close": 283732110.44,
+  "total_pl_close": 153466900.16,
   "total_pl_pct_close": 117.81,
   "positions": [
     {
@@ -51,8 +51,8 @@
       "eval_value_close": 83085000.0,
       "pl_close": 50453759.0,
       "pl_pct_close": 154.62,
-      "target_avg": 487381.0,
-      "target_high": 560488,
+      "target_avg": 493864.0,
+      "target_high": 567944,
       "target_low": 400000,
       "opinion": "매수"
     },
@@ -119,16 +119,16 @@
           "quantity": 9.0,
           "buy_date": null,
           "cost_basis": 2456.28,
-          "eval_value_close": 9395.64,
-          "pl_close": 6939.36,
-          "pl_pct_close": 282.52
+          "eval_value_close": 9865.44,
+          "pl_close": 7409.16,
+          "pl_pct_close": 301.64
         }
       ],
-      "last_close": 1043.96,
+      "last_close": 1096.16,
       "cost_basis": 2456.28,
-      "eval_value_close": 9395.64,
-      "pl_close": 6939.36,
-      "pl_pct_close": 282.52,
+      "eval_value_close": 9865.44,
+      "pl_close": 7409.16,
+      "pl_pct_close": 301.64,
       "target_avg": 1515.0,
       "target_high": 2200.0,
       "target_low": 361.0,

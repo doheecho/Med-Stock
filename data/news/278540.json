@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T12:57:19+00:00",
+  "updated_at": "2026-09-24T00:26:22+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -29,9 +29,15 @@
       "date": "Mon, 23 Feb 2026 08:00:00 GMT"
     },
     {
+      "title": "KODEX MSCI Korea TR(278540)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lallReExvNW80ZzZkU3JvQlJwWndaRmoyeHJfVW95R2lMOUFZTHJXdEVDeVdBWkl0cjJrcV9qWi1FZmx3SkV0dlpEZ1JTOEVzODh2WVVVTVEtQQ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Sun, 23 Apr 2023 11:13:00 GMT"
+    },
+    {
       "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF - 조선비즈",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
-      "source": "biz.chosun.com",
+      "source": "Chosunbiz",
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
@@ -41,15 +47,9 @@
       "date": "Tue, 27 May 2025 07:00:00 GMT"
     },
     {
-      "title": "'육천피' 코스피 인기에 글로벌 개미들 'K-ETF' 주목",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIaDVidUFsakFiQ3pIYlhmaFZ4S2lBNVVUdnpMd1dFNmlTXzlvcGpxNlgtMS02SVZQd0djQXlsUkhzYTUweGhQRHI2ZHhaWXA1cUZuRFEzdHVaYVh5VG5z0gFkQVVfeXFMTzZfOWdKclk3ZDRVemhubkVybEFJSmw1cGlFSjZhQ3E1N3NpbXRQRC1wdUJGWjlKUm1zN1pYd3BGR0VQRF91emlocnJSODNuREh6UG9hVXF3VkpUSlRkal9oY3pLSQ?oc=5",
-      "source": "뉴스1",
-      "date": "Wed, 29 Apr 2026 07:00:00 GMT"
-    },
-    {
       "title": "외국인이 ‘토탈리턴 ETF’ 집중 매수하는 이유는",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qM2JaOUw3N2hFa0lzSGtlQlJaQ045dXBIWGNEaVk5XzBBdFZFVXhmekREVEIzVVdGOThYWTVQOTFlTHNIWjF6MUUwUm0xeGtYMGN2RW45WU52bnl2YVVLag?oc=5",
-      "source": "asiae.co.kr",
+      "source": "아시아경제",
       "date": "Thu, 23 Mar 2023 07:00:00 GMT"
     },
     {
@@ -61,7 +61,7 @@
     {
       "title": "삼성자산운용 \"핫 종목 편입 코덱스ETF 7종 추천\"",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5sQndiLVM0akJSajlYcmVBU0xtSDl6U0s4ZDNfYThvQzM1VGpYSE13UERVeXFLNUR2NEJyYjdKUEtXZ1BBUVltQnYydGhSVmkzWWN3TS03LXpFRDV0MVBOTNIBeEFVX3lxTE5Ka3M1RjJnTEs2RVlSSUFpbUxJMGp3STZhM0tBTWl5VTlFSDBNY3BzOWs3MmJiWkZMZWloOEsxOFhjS2ZnTlF2R0REcks5TWVFRjRpXzRRRkd6UmtEbmhzLWYwb0x1clJ6U2VQT3NjeF82WnZuUVU5Tw?oc=5",
-      "source": "뉴시스",
+      "source": "newsis.com",
       "date": "Wed, 21 Apr 2021 07:00:00 GMT"
     },
     {
@@ -89,10 +89,10 @@
       "date": "Thu, 06 Oct 2022 07:00:00 GMT"
     },
     {
-      "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
-      "source": "매일경제",
-      "date": "Wed, 20 Nov 2024 08:00:00 GMT"
+      "title": "07일, 거래소 외국인 순매도상위에 운수장비 업종 3종목",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5La0NZdFVMTGxqRHpqY203djJPOE1nX3B4eEctX1N6WVA4QlNpZVZ5d05wZ3ZHS2tlZnJOaHUxNy00dEFiZG1OMm1RR2FhWk9pQWpvQl9YbThJZw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     }
   ]
 }

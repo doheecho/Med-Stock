@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T12:57:12+00:00",
+  "updated_at": "2026-09-24T00:26:13+00:00",
   "source": "yfinance",
   "target_high": 2200.0,
   "target_low": 361.0,
@@ -8,7 +8,7 @@
   "num_analysts": 46,
   "opinion": "strong_buy",
   "opinion_score": 1.3469,
-  "current_price": 1096.16,
+  "current_price": 1071.88,
   "analyst_targets": [
     {
       "firm": "최고",
