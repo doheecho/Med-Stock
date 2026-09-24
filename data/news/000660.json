@@ -1,27 +1,9 @@
 {
-  "updated_at": "2026-09-24T14:21:47+00:00",
+  "updated_at": "2026-09-24T22:37:22+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
-    {
-      "title": "삼성전자, 연휴 앞두고 3%대 급등마감…SK하이닉스도 1.2%↑(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBmajhqSjJuVzRKeWVJRVVWdDhVaGhlVUtFRjZrczNLbEgtekhwTVdUNmgtelQ0aU9yQ3BPOXZGdWo4VHBuWWc?oc=5",
-      "source": "v.daum.net",
-      "date": "Wed, 23 Sep 2026 06:54:00 GMT"
-    },
-    {
-      "title": "\"메타가 불 지폈다\"…삼성전자·SK하이닉스 다시 '들썩'",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LNUZxNkFTZ2k2Z0d1QkJCdFVkSGx1dW9UcVR0bG9DbDN1OS0tTHhrcG5kN0dwVXNmdm8tS3NCV3pBcG5wVHZMTjRuaE1ZVzNKWVVOZFdPUlVMUQ?oc=5",
-      "source": "한국경제",
-      "date": "Wed, 23 Sep 2026 00:34:44 GMT"
-    },
-    {
-      "title": "“삼성전자 딜 하나만 따면 일년 농사 끝난다”... ADR 발행설·분할설 들끓는 까닭 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSVZjaTg3bmZIY1JBN0RJNDRDeFVGN09iaWdyUGFWVWZHWGJjTHFfTEl5ZlUxelc1NFlyMTVrb09NTWpEWkRJZ2pNZEVCS1dCeXdNaTJSbzVpX2lZTzdqY1ZTcVV0RERoLUJRZkliRndpVVRGbzJwMVJuUmFxOWdLaEkwbVJ6eFnSAZsBQVVfeXFMUHl3VkdNcHhlWk9UYmRQOE9fYnNGOU1HQ1g2V1VYSWk5bWhOemN0SUN3bGR4dExGdHNXbnEzRHBpR2VudjFtSl9iZEZLbER6OE56QTBDcDlhZV9tT2RQUHJFTks2d2dEclJlTmktSl9DTGtlVk9UT3ItN1hDUG1uTTNzal9Fbm56cnVoMkV4d29zUVc4RUZENEJwUFk?oc=5",
-      "source": "biz.chosun.com",
-      "date": "Wed, 23 Sep 2026 22:02:00 GMT"
-    },
     {
       "title": "SK하이닉스 신입사원 4명 해고…\"인생에서 가장 비싼 술\"",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlNWdZSFpHcHE2V0lCaWhTRE15VnAyZFBwUWJoenN6ZlJLRnNDaUJnQWU0cndMT2pIb00wSFFYamhBamxQX3ZiSHJUODlKaEIzQ1QyUXpzYWRvVnVIQy0xMFdVVEVQeHM?oc=5",
@@ -35,10 +17,28 @@
       "date": "Tue, 22 Sep 2026 16:00:00 GMT"
     },
     {
-      "title": "\"수억대 연봉 날아갔다\"…SK하이닉스 신입 4명 결국 짐 쌌다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE10aWFReURrM0R5SUx0NExYOFRLZ0U5ek9hQXNKODVJYkJ3X0JPeVJ2bkY3LXA0a1F3N0VHTS1GdGdCRVB0UlpOOGEzUlVxcFNBdTN1VUtyNGtNdw?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 22 Sep 2026 10:12:19 GMT"
+      "title": "SK하이닉스, 신입사원 4명 연수 중 해고…무슨 일?",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hSGNtYzMxdXhid0VTSzVEZjc4MHJPaWliMDBfN253OFVHQ1BqcDZ4MXdrcVRtSTN3QzJySHpNX2dXOXhZVHQ3WUdMWHo3eHhsdWc4UktHSWtoTGhRemtN?oc=5",
+      "source": "조세일보",
+      "date": "Tue, 22 Sep 2026 22:35:00 GMT"
+    },
+    {
+      "title": "\"메타가 불 지폈다\"…삼성전자·SK하이닉스 다시 '들썩'",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LNUZxNkFTZ2k2Z0d1QkJCdFVkSGx1dW9UcVR0bG9DbDN1OS0tTHhrcG5kN0dwVXNmdm8tS3NCV3pBcG5wVHZMTjRuaE1ZVzNKWVVOZFdPUlVMUQ?oc=5",
+      "source": "hankyung.com",
+      "date": "Wed, 23 Sep 2026 00:34:44 GMT"
+    },
+    {
+      "title": "SK하닉 이어 日 키옥시아도…메모리 기업들 왜 美증시로?",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QNWlKSXZ4UnEtN05DcnlEZS1RNGdlT0p6VDZ1WnpJWmpreks2dDNoWV9DTkpPVEVXVHR0NWx5SWg0bjZLdW8yNkROc04xSVU?oc=5",
+      "source": "v.daum.net",
+      "date": "Thu, 24 Sep 2026 21:03:04 GMT"
+    },
+    {
+      "title": "“삼성전자 딜 하나만 따면 일년 농사 끝난다”... ADR 발행설·분할설 들끓는 까닭 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSVZjaTg3bmZIY1JBN0RJNDRDeFVGN09iaWdyUGFWVWZHWGJjTHFfTEl5ZlUxelc1NFlyMTVrb09NTWpEWkRJZ2pNZEVCS1dCeXdNaTJSbzVpX2lZTzdqY1ZTcVV0RERoLUJRZkliRndpVVRGbzJwMVJuUmFxOWdLaEkwbVJ6eFnSAZsBQVVfeXFMUHl3VkdNcHhlWk9UYmRQOE9fYnNGOU1HQ1g2V1VYSWk5bWhOemN0SUN3bGR4dExGdHNXbnEzRHBpR2VudjFtSl9iZEZLbER6OE56QTBDcDlhZV9tT2RQUHJFTks2d2dEclJlTmktSl9DTGtlVk9UT3ItN1hDUG1uTTNzal9Fbm56cnVoMkV4d29zUVc4RUZENEJwUFk?oc=5",
+      "source": "Chosunbiz",
+      "date": "Wed, 23 Sep 2026 22:02:00 GMT"
     },
     {
       "title": "\"성과급 받고 팔자 고치자\"…추석 귀향 대신 자소서 쓰는 직장인들 - 머니투데이",
@@ -53,10 +53,10 @@
       "date": "Wed, 23 Sep 2026 21:00:04 GMT"
     },
     {
-      "title": "이닉스(452400)",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbFdVd1VxVzRod2M5YzRXVXk2ZXJtYnZ5eHRQTHBlQXUwcnU3MjZzZFhwTjVTUDNEekg5X0xXLWZEcXMzV05qSThpTFphaFU5ZFFkSXFiOC10Rko0REJ5QnpUZUN5b05TNzlyd2Z2czN3dVZnZlpCdEM4NnhfSkRvTUw2cmVTQVNNQ0lJOUp4c2lxaVc5bjctWQ?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 23 Sep 2026 16:11:09 GMT"
+      "title": "출시 넉 달 삼전닉스 2배 ETF…결국 반토막 '씁쓸한 추석'",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxUkY2VmhNRkZuMUpMZEZad1BJdXRQVUdNdUVudDRuc0Z1SGg5WXB2b0Q3MnphX2x0b2JPN3RuOGdwU2FnT1kxcGl5ZFNLRmhrQnAycE5ZZkN0Z05vVmpZ0gFkQVVfeXFMT3BpQ1VKVmM1WEI3LVJmdzRlMUFLTVF1cFVERjNTWngyMHV0X0J0Rm1IeVYzcFluYVNQOERkam1FSGJ1SWtwUk11bnpTYklCVWR6SE1HSzJjWTZ0bGV5VW5OVHUwSA?oc=5",
+      "source": "뉴스1",
+      "date": "Thu, 24 Sep 2026 21:00:00 GMT"
     },
     {
       "title": "중국 CXMT 5세대 D램 \"삼성전자나 SK하이닉스와 비교 어렵다\" 평가, 기술력과 수율 불투명",
@@ -77,22 +77,22 @@
       "date": "Thu, 24 Sep 2026 12:29:58 GMT"
     },
     {
-      "title": "마이크론 발 뺀 RTX 50 공급망… 삼성·SK하이닉스 독점판 굳힌다 - g-enews.com",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV1FkSVNQbWxlMlZaQUhYakV4SE15bFdOZFlDUXlPeUFqREJGaHVCaVFaUlRFNnRDX1FmUGN1WkZGQVY2OWh4NHE3ajRKUVlqcEViMjZZeU1LOUxlbWhoUS1OMGpOZG5qNUliTkF0MXBXRktUNlQ1R0RER2lidXRIajI5MXFGR0Uz?oc=5",
-      "source": "g-enews.com",
-      "date": "Thu, 24 Sep 2026 02:10:06 GMT"
-    },
-    {
-      "title": "‘SK하이닉스 ADR, 이 정도일 줄’ 프리미엄 무려 40% 육박…3배 레버리지 ‘속슬’에도 편입[투자360]",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RTkdUMVlERjVQV2VXWm5YV1pDYl9vMUlXNzBRb1UtakVPbHFsN1JzZUQzUkVYUS1qWDJNYVphSGMyN2JPWlJhVmswMVRZOEE0c1lsZ2dR?oc=5",
-      "source": "헤럴드경제",
-      "date": "Wed, 23 Sep 2026 04:00:00 GMT"
-    },
-    {
       "title": "SK하이닉스 ADR, 美 반도체지수 조기편입…개미 '최애' SOXL에도 담겼다",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tanVmMWxzWkg0dnluTW9hVkhrQWpNcjl0M1VmbS1EME5pYVhOcE5ib2dMb1gtajB5dy1JZjJ6VE00ZVVrZ3JRQTFqbmRDeVJmNXpwWlpvTGNmQjgyc0s1eXdCQnQ1YnNUamlUSXBYZEE?oc=5",
       "source": "연합인포맥스",
       "date": "Tue, 22 Sep 2026 02:20:00 GMT"
+    },
+    {
+      "title": "아동부터 시니어까지…SK하이닉스, 'AI 사회적 가치' 새 장 열었다",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJcThPUG1nckhXLTJEeE85Q3NwaEJGUVdTOE5MelpUV3lFVlJEY2JUSUQtcmdiVlJ5dW1uaHV1SU1xVXEyN1ViSG5QOWxIZEwxYzlBdzJwNHE4bTdZc1NUV1l4RTFXcWNYc3M3X25nNTZlLXh6?oc=5",
+      "source": "파이낸셜포스트",
+      "date": "Thu, 24 Sep 2026 21:10:10 GMT"
+    },
+    {
+      "title": "SK하이닉스(000660)",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNFpJbk1QX0F6REFKYVEtdk0wYWMyYVpoM05lZW5oWWs5VGxhVlFTLTdZVUF2T0ZTZ1Jua19qejhsU00zYmpHWl9RUVdiVm8xczRHVjRxdUJCWjN6VURXQW92aVRGbTJDZ1lMOHZLVFpaMEk0WG9YLXpmQkNYWm1sOTdhY054eklmS0hHOGRGMUh0Q2lLQmFsNmd3?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 22 Sep 2026 15:29:37 GMT"
     }
   ]
 }
