@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-24T02:33:24+00:00",
+  "updated_at": "2026-09-24T09:55:04+00:00",
   "source": "yfinance",
   "target_high": 2200.0,
   "target_low": 361.0,
-  "target_avg": 1515.0,
+  "target_avg": 1515.5435,
   "target_median": 1545.0,
   "num_analysts": 46,
   "opinion": "strong_buy",
@@ -17,7 +17,7 @@
     },
     {
       "firm": "평균",
-      "target": 1515.0,
+      "target": 1515.5435,
       "url": "https://finance.yahoo.com/quote/MU/analysis"
     },
     {
