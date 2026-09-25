@@ -1,9 +1,39 @@
 {
-  "updated_at": "2026-09-25T10:09:34+00:00",
+  "updated_at": "2026-09-25T12:54:38+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Stock Market Today: Dow Rises On U.S.-Iran Peace Hopes; Micron, Sandisk Rally (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-micron-sandisk/?src=A00220&yptr=yahoo",
+      "source": "Investor's Business Daily",
+      "date": "2026-09-25T12:06:45Z"
+    },
+    {
+      "title": "This Week In AI Chips - Secure AI Integration Advances with VAST DataEnclave Launch",
+      "url": "https://finance.yahoo.com/technology/ai/articles/week-ai-chips-secure-ai-113717596.html",
+      "source": "Simply Wall St.",
+      "date": "2026-09-25T11:37:17Z"
+    },
+    {
+      "title": "AMD Just Joined Nvidia in the $1 Trillion Club. At $614, Wall Street Is Paying Too Much for a Distant No. 2.",
+      "url": "https://www.fool.com/investing/2026/09/25/amd-just-joined-nvidia-in-the-1-trillion-club-at-6/",
+      "source": "Motley Fool",
+      "date": "2026-09-25T11:23:00Z"
+    },
+    {
+      "title": "Micron Likely to Beat Q4 Earnings Estimates: How to Play MU Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-likely-beat-q4-earnings-112000154.html",
+      "source": "Zacks",
+      "date": "2026-09-25T11:20:00Z"
+    },
+    {
+      "title": "Meet the Super Semiconductor ETF With 34.7% of Its Assets Parked in Intel, AMD, Micron, and Nvidia",
+      "url": "https://www.fool.com/investing/2026/09/25/meet-semiconductor-etf-347-intel-amd-micron-nvidia/",
+      "source": "Motley Fool",
+      "date": "2026-09-25T10:05:00Z"
+    },
     {
       "title": "Should Investors Worry About Michael Burry's Big AI Stock Shorts",
       "url": "https://www.fool.com/investing/2026/09/25/should-investors-worry-about-michael-burrys-big-ai/",
@@ -33,36 +63,6 @@
       "url": "https://www.thestreet.com/investing/bank-of-america-reiterates-buy-micron-stock-earnings",
       "source": "TheStreet",
       "date": "2026-09-25T03:07:00Z"
-    },
-    {
-      "title": "Is Micron (MU) Quietly Recasting Its AI Memory Strategy With New Leadership and 512GB DDR5?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/micron-mu-quietly-recasting-ai-021239442.html",
-      "source": "Simply Wall St.",
-      "date": "2026-09-25T02:12:39Z"
-    },
-    {
-      "title": "Prediction: $5,000 Invested in Micron Today Will Be Worth This Much by 2030",
-      "url": "https://www.fool.com/investing/2026/09/24/prediction-5000-invested-in-micron-today-will-be-w/",
-      "source": "Motley Fool",
-      "date": "2026-09-25T01:20:00Z"
-    },
-    {
-      "title": "Titans of Tech Attend State Dinner Honoring China’s Xi",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-24-2026/card/titans-of-tech-attend-state-dinner-honoring-china-s-xi-pgk4d9DY6Eju4Y3F7zXz?siteid=yhoof2&yptr=yahoo",
-      "source": "The Wall Street Journal",
-      "date": "2026-09-25T00:24:47Z"
-    },
-    {
-      "title": "Forget Betting on Micron Alone: The $26B Memory ETF Owns MU, SK Hynix, and Samsung at a September Discount",
-      "url": "https://247wallst.com/investing/etf/2026/09/24/forget-betting-on-micron-alone-the-26b-memory-etf-owns-mu-sk-hynix-and-samsung-at-a-september-discount/",
-      "source": "24/7 Wall St.",
-      "date": "2026-09-24T21:31:56Z"
-    },
-    {
-      "title": "Microchip Technology, Skyworks Solutions, and Universal Display Shares Are Falling, What You Need To Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microchip-technology-skyworks-solutions-universal-212858687.html",
-      "source": "StockStory",
-      "date": "2026-09-24T21:28:58Z"
     }
   ]
 }
