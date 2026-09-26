@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-25T12:54:41+00:00",
+  "updated_at": "2026-09-26T00:35:11+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
     {
-      "title": "거래대금 2조원 넘긴 KODEX 200…코스피 대형주 따라 0.60% 상승",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9XQmcwTGFhbEJERkdaT290azZ5V2lUblduMmZKMlpoa056QVRlVmx2Y0RBSG5GMTNKUmRpM2FyVjFNQ1Vzb2JKOGg0aEdjdUhQUmpmTERVaGJxenJTSDNVTzN5eEZVV1ZQaHpXY0RCTHl5Z9IBckFVX3lxTE9XQmcwTGFhbEJERkdaT290azZ5V2lUblduMmZKMlpoa056QVRlVmx2Y0RBSG5GMTNKUmRpM2FyVjFNQ1Vzb2JKOGg0aEdjdUhQUmpmTERVaGJxenJTSDNVTzN5eEZVV1ZQaHpXY0RCTHl5Zw?oc=5",
-      "source": "잡포스트",
-      "date": "Wed, 23 Sep 2026 05:50:40 GMT"
-    },
-    {
       "title": "개미는 연휴 전날까지 ‘곱버스’ 베팅…6거래일 동안 1300억 원 샀다 [이런국장 저런주식]",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mcUVNWWZaT1NwSnhxTE9yNVVCRXppbUpTVE5UbFhxaWR2cU04d2FZekJNLXlTZ1hmeXM5MXNkT0hCa2NFUDN4Zy1TOWdENm84OHfSAVNBVV95cUxQaGw1TkVuWGlBY2RiQ2VwemdMaXlhQ1QzUjdTWEF3dUo5UzNQUVNKWkN0QnV2aVNtQWc2UkRkem00OUtiZVRrVFFpOGhtQlp2M1czSQ?oc=5",
       "source": "서울경제",
       "date": "Wed, 23 Sep 2026 21:30:00 GMT"
+    },
+    {
+      "title": "코스피200 추종 KODEX 200, 11만2005원으로 0.27% 상승 - job-post.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fRHBOVEZXMWZ5WDV4WVN0M2h4TW5GNEp6aUhvVjJDR2FUXzBKVXNBeGxXTktQcXBialE5Qy0xWWVvODZBNGxPQ1E5WmN4UUhCdmhUMFpqbERNVzBEZkdSVHlVMlZuNk9wTnVEQmt30gFyQVVfeXFMT183cndaOHc5ckVVMWFNS2tTWU4yMjFXQlZDQUFpa0ZCVUxOTE11cXVMOEFvWk5ORnpiVEZhWGVNTXhGREJ4QW5pLTJkYm8xdGRXNFBPYzNfT204RVU4SzlqMFk0WUVxOWJ3aGplZlhOMkx3?oc=5",
+      "source": "job-post.co.kr",
+      "date": "Tue, 22 Sep 2026 06:26:06 GMT"
     },
     {
       "title": "[ETF머니플로우-9월3주] KODEX 200타겟위클리커버드콜 순매수 1위 탈환…TIGER 미국S&P500 4계단",
@@ -35,22 +35,16 @@
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "KODEX ETF 순자산 174조원… AI 칩·파킹형 상품 선보여 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR0V0MnhuUVZxTEotNVhXNzExVW1FV2Rjek1SOWxDQllTb3lFOVg5NDdoeHVZQ3gxZmJYV0JORmZ6ZXhWZVBtZlhVN1FLYjRPU2RxUFdkc0tXNGRORkdiTVZzYXFPcUllY1FRb295cDZYMnBpMER1b3F5X2lyZE8yUTEyaWlfNjA40gGcAUFVX3lxTFBQZVNJT1dObnBlRnhGeDNsNVJlOHdPenRSSTNadDdHMUo5dWJrejRJbXl5M1dybXVJNlNKQUxZTWx3VDlEN09zNzFQVFlpNEtBZFhFTXZ2eXZ6TlRMb2lzQW5BaVNXeHN6ODBtcTJWMnlwQ3B3c0Y4VDdsOEJDX3I1QVhaOGN2dFJqT2JzanhCaEFyeHBtUXBlek42NA?oc=5",
-      "source": "Chosunbiz",
-      "date": "Thu, 17 Sep 2026 15:30:00 GMT"
-    },
-    {
-      "title": "KODEX 200커버드콜액티브(0219E0)",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XY3ZhX0l1NWlJMmFmbWdVQTVnMEt6RklacVZRYWI5YzV4TkluanM2U2ppOVd2cnlCVUcySURpekNQMUgyc1JoNE1OcGd5NjM4NUpSR01XTG9xQQ?oc=5",
+      "title": "삼성운용 ‘KODEX 200커버드콜액티브’ 첫 월배당…주당 153원 지급",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oTVZGZVZnX2pIQkhJaDBoYUVvdDNsY19qY1lwS3Q3bHpha3NnMXpfblIyeGp0d1RQVFlHMFZGN3lUQ3RuTlRjZGxIbGZfWjFkcnc?oc=5",
       "source": "매일경제 마켓",
-      "date": "Tue, 14 Jul 2026 04:07:58 GMT"
+      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "16년 전 '나스닥100 VS 코스피200' 1억원 투자...승자는?",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWUJENThDRDF6NTJ5VjFHbkt6bnM3Ukp3ZmRXUW5PaDlzajY5MzRfYUJ2OUg2bFh4SXB6SGQzaDBoejVnSVBlYkF5Z3ZyWUUyeTlJOUExTzhmb2doUXVrRU5CTG5BVVF6aVBIT2tSYjk3bk5pUWctb0xPRTBXNE54cg?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Sat, 19 Sep 2026 05:35:13 GMT"
+      "title": "KODEX ETF 순자산 174조원… AI 칩·파킹형 상품 선보여",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNDZNWG9OTEZ4QVBBMC1QNzNCZjZOWWZNZFdsaEVTN0RoNDd3dXRmbnQyQUpNTmZJOXB4M1pHcFhvV3hCOXpJQ09KazFTTnRpbWVtYkQyRHBjNHE5ekVJR0tZa0RqcGZFQXhHX3ZJSEg4c0VXb0hpUWRyVkdSeExJdw?oc=5",
+      "source": "조선일보",
+      "date": "Thu, 17 Sep 2026 15:43:42 GMT"
     },
     {
       "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
@@ -71,10 +65,22 @@
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "코스피200 추종 KODEX 200, 11만2005원으로 0.27% 상승",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9fN3J3Wjh3OXJFVTFhTUtrU1lOMjIxV0JWQ0FBaWtGQlVMTkxNdXF1TDhBb1pOTkZ6YlRGYVhlTU14RkRCeEFuaS0yZGJvMXRkVzRQT2MzX09tOEVVOEs5ajBZNFlFcTlid2hqZWZYTjJMd9IBckFVX3lxTE9fN3J3Wjh3OXJFVTFhTUtrU1lOMjIxV0JWQ0FBaWtGQlVMTkxNdXF1TDhBb1pOTkZ6YlRGYVhlTU14RkRCeEFuaS0yZGJvMXRkVzRQT2MzX09tOEVVOEs5ajBZNFlFcTlid2hqZWZYTjJMdw?oc=5",
-      "source": "잡포스트",
-      "date": "Tue, 22 Sep 2026 06:26:06 GMT"
+      "title": "삼성운용, 'KODEX 200커버드콜액티브' 상장…\"월 분배금에 초과 수익\"",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdUVCZ2dpaTEydVBhUUxpckFOTlluQVc3Y0ZseGh3Z0h2S1dRMEZFNU1zenRHdTlSMG9DbUxKMmZwYWh3ZHM4LUlnMmZoVG0wWnNVLUpJTnUwU2VZLVROV3ZiRTJ5UG44c1NKUHdPeEhpZ3ZUWFlaU0o5R1ZxUGtkS3NpaXItZnpf?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "거래대금 2조원 넘긴 KODEX 200…코스피 대형주 따라 0.60% 상승 - job-post.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iaFV4TFhINFpCRlIyQXBfLUtmUjRyT1ZQRkhRV1VFRXlJbjV2dXh4X2dkdHpDNVY5Q1BEMlNGUkExR2NRRFJRdGx5c29oal95WGVXcHFEVnJDUlNIdnpHanpyaWtpYjJXMkl1V2F30gFyQVVfeXFMT1dCZzBMYWFsQkRGR1pPb3RrNnlXaVRuV24yZkoyWmhrTnpBVGVWbHZjREFIbkYxM0pSZGkzYXJWMU1DVXNvYko4aDRoR2N1SFBSamZMRFVoYnF6clNIM1VPM3l4RlVXVlBoeldjREJMeXln?oc=5",
+      "source": "job-post.co.kr",
+      "date": "Wed, 23 Sep 2026 05:50:40 GMT"
+    },
+    {
+      "title": "KODEX 200커버드콜액티브(0219E0)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XY3ZhX0l1NWlJMmFmbWdVQTVnMEt6RklacVZRYWI5YzV4TkluanM2U2ppOVd2cnlCVUcySURpekNQMUgyc1JoNE1OcGd5NjM4NUpSR01XTG9xQQ?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 14 Jul 2026 04:07:58 GMT"
     },
     {
       "title": "\"주도 섹터 투자에 배당까지\"…KODEX 200커버드콜액티브 상장 - 머니투데이",
@@ -83,16 +89,10 @@
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "“7천피 밑도는데, 무조건 더 오른다”…횡보하는 코스피에 레버리지 베팅",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBDZ3ZiSHZpelNOVUVmbkYtOFZGVnVLV3d5X3pGQlNQMU11XzRkd2JVWFMzSGp2WHB1QlZGQWVhTE1xOFpuMmRrcms0dlZfQi1Hc3c?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 18 Sep 2026 02:39:10 GMT"
-    },
-    {
-      "title": "KODEX 200커버드콜액티브, 첫 월배당 실시… 주당 153원 지급 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE02YjlXTFp3UUhNeWNTRjBOV3JCZUx6TTNzQVFmVnVOclNDcnA1a1VfRk1fOE5vM0pVcU9qcVc0ZTJTQkZVNFJWSjZwY09scVdvZUFPd3BxX2dYRGxqWWxqNXY2WkVkekVR0gFuQVVfeXFMTmdCM0NHS1hlOE8wU2pRdWRhZGM1Y0FURko0U2FSal93QUNwN2x1TWRtdy1fQk5hWWJ4eXk4SGNuV0o0bi1UbnJrRXJ2cXJPby1mdEFDenZKQ1dIYjdpdXMwZkNZYzZZSHRFdFRGT1E?oc=5",
-      "source": "머니투데이",
-      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
+      "title": "KODEX 200커버드콜액티브, 순자산 5000억 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52TmxDdXpvaExOZ2ViY2pwN192QXhGRDZsQlBxUk5wU09PblhBYTVmSkdiMk1aclNKUjh5RlVzeHRST3J5dnE4Q2prRlZBNGxvTnfSAVNBVV95cUxPc1QtQjc5bEl1V2JPNDF5VnNrYk5TLWdFcjQ2bEt1bVN3SXJBWTJ5N1Y1UjRZNy0wTVk3NG5qVFFySTd3T0x1VzVkc0hZODQtMTd0aw?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     }
   ]
 }
