@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T00:35:13+00:00",
+  "updated_at": "2026-09-27T00:28:40+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -18,8 +18,8 @@
     },
     {
       "title": "“삼전·닉스 쓸어 담자”…MSCI 코리아지수 기반 ETF 뭉칫돈",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCckg5dmRtNHRIMnNVbzJ3eW5iVUVWQUxJNHQ3QUEtc0ozWFh2Ry01UzQyOEJoelppdURGRk1hdUtvUk1yYTBVeUF2enNUSkdvb2lyLTA3OE9NYVZtaFhwanVtUGl2d29R?oc=5",
-      "source": "매일경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9qZS1pZ0ZuX1dxeHo1QTRWcW1JTEdtSDlzbW5Yel9rcU1xRXpCNFRoVnhrLTVUWjlPRmNVQ0ZQejdYc1hjdEE?oc=5",
+      "source": "v.daum.net",
       "date": "Sun, 26 Apr 2026 07:00:00 GMT"
     },
     {
@@ -53,12 +53,6 @@
       "date": "Tue, 27 May 2025 07:00:00 GMT"
     },
     {
-      "title": "'육천피' 코스피 인기에 글로벌 개미들 'K-ETF' 주목",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIaDVidUFsakFiQ3pIYlhmaFZ4S2lBNVVUdnpMd1dFNmlTXzlvcGpxNlgtMS02SVZQd0djQXlsUkhzYTUweGhQRHI2ZHhaWXA1cUZuRFEzdHVaYVh5VG5z0gFkQVVfeXFMTzZfOWdKclk3ZDRVemhubkVybEFJSmw1cGlFSjZhQ3E1N3NpbXRQRC1wdUJGWjlKUm1zN1pYd3BGR0VQRF91emlocnJSODNuREh6UG9hVXF3VkpUSlRkal9oY3pLSQ?oc=5",
-      "source": "뉴스1",
-      "date": "Wed, 29 Apr 2026 07:00:00 GMT"
-    },
-    {
       "title": "외국인이 ‘토탈리턴 ETF’ 집중 매수하는 이유는",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qM2JaOUw3N2hFa0lzSGtlQlJaQ045dXBIWGNEaVk5XzBBdFZFVXhmekREVEIzVVdGOThYWTVQOTFlTHNIWjF6MUUwUm0xeGtYMGN2RW45WU52bnl2YVVLag?oc=5",
       "source": "아시아경제",
@@ -83,16 +77,22 @@
       "date": "Mon, 22 Aug 2022 07:00:00 GMT"
     },
     {
+      "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
+      "source": "인포스탁데일리",
+      "date": "Tue, 24 Dec 2019 08:00:00 GMT"
+    },
+    {
+      "title": "삼성자산운용 \"핫 종목 편입 KODEX ETF 7선 추천드려요\"",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14UkxNN2ZreEIzNXhlREttZmNPZUU1YXZha0o4UkZqTkhuZEZ4OXFtS1E4dW9CX0Z3WnpjS2tJUi1IWXdkWnMyam9TSXpCeFFkWTVFcVhmVHJxLTVEMlhfeGZHaDFwaEJUN3BBM0Y3WVpRZHp0NlZHN0dLc9IBgAFBVV95cUxPQzM1emhLWnhGd0Q4RUtyU1RJQ1EwSDNiWElDaVBtUlFVV2l1ajJ3NTJxWVpVTGlfUFJKNUFUbzRfdWp6SUJBUm55OGYwdEZhX250MEl4VXRXSzJ2MEg4RzdVWUFLdVIzQ2ZWaGZwVy1BNENDbTc3Vk9OY29aWGxKcg?oc=5",
+      "source": "뉴데일리",
+      "date": "Wed, 21 Apr 2021 07:00:00 GMT"
+    },
+    {
       "title": "삼성자산운용, KODEX 7종 보수 업계 최저수준으로 인하… 장기 수익률 제고할 것",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UNkZrd2VzRGtGLWVMWUl2VTN4TjZDOURYRkJfdDVMUWlzZHFFUllkRzJtU0dtZ3N3b0ROZXU0UTlGLVJVVTlVQjJHNXFKdTR4VUNTSWhaQ3N6UdIBWEFVX3lxTFBpWVFucmtyN1ZpQ0xQUkdWNDFWQzd5NEgwNlIwT3M4MjFrWE9qUzMxRHJSZERzWVNTeTBkYWROa21sM2NPY1JHTzlscUxfMkVTVlBKaUlaWC0?oc=5",
       "source": "아주경제",
       "date": "Thu, 06 Oct 2022 07:00:00 GMT"
-    },
-    {
-      "title": "07일, 거래소 외국인 순매도상위에 운수장비 업종 3종목",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5La0NZdFVMTGxqRHpqY203djJPOE1nX3B4eEctX1N6WVA4QlNpZVZ5d05wZ3ZHS2tlZnJOaHUxNy00dEFiZG1OMm1RR2FhWk9pQWpvQl9YbThJZw?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     }
   ]
 }
