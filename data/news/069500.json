@@ -1,14 +1,62 @@
 {
-  "updated_at": "2026-09-27T00:28:38+00:00",
+  "updated_at": "2026-09-28T00:34:46+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
     {
-      "title": "외국인은 '레버리지'·개인은 '곱버스' 베팅…승자는",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LekI3c3dwa2x0UFdIMUFTUTdsU0NUV1AwWDhfZUNDV3dlLWxLT1JaSU1Qcjhoc0wwcXNLcWdFRkYzdDJvaXZyN0pZVHphaGlZMUE?oc=5",
+      "title": "올해 주요자산 수익률 1위는 ‘KODEX 200’…금-비트코인은 마이너스",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MVHRnZ3o1Zmd2a0ZNZ09HOU11R29DczFJSDdqMU0yUlU1YkE4QVNQcW1iYzc1SWFnQklqT2xNNjNyaFZHNnRnY3ZWWQ?oc=5",
+      "source": "v.daum.net",
+      "date": "Sun, 27 Sep 2026 05:30:47 GMT"
+    },
+    {
+      "title": "외국인은 '레버리지', 개인은 '곱버스'에 베팅…9월 승자는",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CYVB1WUdHM3ByUHFOaWQtVm92TXR5MG1aczdzOUt3SWNoaWlrTGQwX0NQUnhhZkdzd0tndEgxaC1peTZoR05VOWdJQ3MycEVyeW9nWTE0Q1pNZw?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 27 Sep 2026 07:54:46 GMT"
+    },
+    {
+      "title": "레버리지 산 외국인 vs 개인은 곱버스 베팅…수익률 승자는 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ3pRbzlCZk8xRlRkcWY0UGJfNXFGdXR6Sm1WM0ZjWXJHZ2hCajBmbVA3aWMzNHp3RkZCX0F4NVRUX2hGUjlNT1ZEVW5mbHNqVlU0UER2VTBlZ3M0a3E1TXJEWXoxbS0zamFPQ0lQWTRxUjl1M2VabG1SVGdRa1FkR0VxYlRFSU1X0gGcAUFVX3lxTE41V3lBOHN3T1RkUGJLNm5XMmdUdzluYUJqWVFTTUNQSkZXREFlN1hSdTN3RjBPbHd6XzlfNzZyY3F2Z3IyNHZKamstYmp3OW9hTEYxLWZ4bUY4MHRiWG9OU213TGFvWGQ3d2tXbFlNUVNBcVN4XzBQRUppV050R2pEN2JlSXdGZTVGOFFYam53bTJBbUZwLTd0VG1LNg?oc=5",
+      "source": "Chosunbiz",
+      "date": "Sun, 27 Sep 2026 01:34:00 GMT"
+    },
+    {
+      "title": "“둘 중 하나는 땅을 쳤다”…외국인은 ‘레버리지’ 개미는 ‘곱버스’ 베팅",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qRWY5QnI5Z1FxV2k3ZS01VmIwbmdnT0NyWDUwaUxTMTBTQVBacENQYXpGaF9FYzFHUnpiTDBmWWE0OVF2OC01b25OYk43ejNINkE?oc=5",
       "source": "매일경제 마켓",
-      "date": "Sat, 26 Sep 2026 23:00:05 GMT"
+      "date": "Sun, 27 Sep 2026 02:20:37 GMT"
+    },
+    {
+      "title": "증시 방향 놓고 엇갈린 베팅…외국인은 '레버리지', 개인은 '곱버스'",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1uSEVrVVBZdng2eHAzSGhNNDF4WTMzZkpwaFp0cjhsWHZLQWpac0c5eHktZy0tX3d4WkRhVWhzY0hzZG9KcjB1TFJTREJuNmZHZVRWWVZhWVNnck4wOUZxQ2tjcHRoNjhvOHo2NUY3QUkwZjNmZDd5WtIBeEFVX3lxTE1uSEVrVVBZdng2eHAzSGhNNDF4WTMzZkpwaFp0cjhsWHZLQWpac0c5eHktZy0tX3d4WkRhVWhzY0hzZG9KcjB1TFJTREJuNmZHZVRWWVZhWVNnck4wOUZxQ2tjcHRoNjhvOHo2NUY3QUkwZjNmZDd5Wg?oc=5",
+      "source": "뉴시스",
+      "date": "Sun, 27 Sep 2026 02:42:56 GMT"
+    },
+    {
+      "title": "외국인 ‘오른다’·개미 ‘내린다’…엇갈린 ETF 베팅 결과는",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vTzk0N2NzcmhuaU90MnJXSnQtMmJQSnFPWGVhUjlpRUh5X2VhbUJaWmxCYVpFbjEyZkwtZXotZ3VsS2J6clZTazE5b1I2ZFIydjFhb0JrY29NcF84RTdUdjh1ZzVGSm56Z0ZuUGFJTFdGZTTSAXNBVV95cUxPb085NDdjc3JobmlPdDJyV0p0LTJiUEpxT1hlYVI5aUVIeV9lYW1CWlpsQmFaRW4xMmZMLWV6LWd1bEtienJWU2sxOW9SNmRSMnYxYW9Ca2NvTXBfOEU3VHY4dWc1RkpuemdGblBhSUxXRmU0?oc=5",
+      "source": "시사저널",
+      "date": "Sun, 27 Sep 2026 03:11:04 GMT"
+    },
+    {
+      "title": "\"예금보다 40배↑\"…코스피200 ETF, 올해 재테크 수익률 1위",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56R19RdUFrLWdjQ3Z0TlZ5QVFHbHNMZ0M1UUJsaWJ2QnRXVjc0amR1aTdVWjdWMll6SXVWYWhBdXplNnh2elpQSkdLRFVYQjdLWmxyNmtYN3VHSXQwT1M0WHZFNi1hdFl1M3RlMzN6TQ?oc=5",
+      "source": "조세일보",
+      "date": "Sun, 27 Sep 2026 00:48:46 GMT"
+    },
+    {
+      "title": "외국인은 '레버리지' 개인은 '곱버스' 베팅…수익률 승자는?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORzU5VzQtS3p1YklxT21PbU5EaGFJakxNWkRlZER1dllyeDVnY0htUVhuT0VMa1lUYUU3b1E3ZFFjTkcyalMxWndDS01UVVhWenI1cl93QjRwalU3eFNOXzdDQV9rSHo0c2x5T2RGalhaQVZ3cWhhM3o5NnJ4am9jLQ?oc=5",
+      "source": "edaily.co.kr",
+      "date": "Sun, 27 Sep 2026 07:37:34 GMT"
+    },
+    {
+      "title": "외국인은 상승, 개인은 하락에 베팅…9월 ETF 수익률은 외국인 쪽",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80OEJZS0tHVG5NY3U1V09peVJyTWUwVkFLTm1vVjhra1NYUUcwMG5VTVREeUxYVC1Sd25QQWVYZ2FhMll2QjJWMU1zZGtaQXVMeEtEN0VXc1lsSEpYRDlEcTRoNDFZMTVXUHRYdzJUc24?oc=5",
+      "source": "비즈중앙",
+      "date": "Sun, 27 Sep 2026 06:36:36 GMT"
     },
     {
       "title": "외국인은 ‘레버리지’, 개인은 ‘곱버스’에 베팅했다…9월 승자는? [투자360]",
@@ -23,76 +71,28 @@
       "date": "Wed, 23 Sep 2026 21:30:00 GMT"
     },
     {
-      "title": "코스피200 추종 KODEX 200, 11만2005원으로 0.27% 상승",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fRHBOVEZXMWZ5WDV4WVN0M2h4TW5GNEp6aUhvVjJDR2FUXzBKVXNBeGxXTktQcXBialE5Qy0xWWVvODZBNGxPQ1E5WmN4UUhCdmhUMFpqbERNVzBEZkdSVHlVMlZuNk9wTnVEQmt30gFyQVVfeXFMT183cndaOHc5ckVVMWFNS2tTWU4yMjFXQlZDQUFpa0ZCVUxOTE11cXVMOEFvWk5ORnpiVEZhWGVNTXhGREJ4QW5pLTJkYm8xdGRXNFBPYzNfT204RVU4SzlqMFk0WUVxOWJ3aGplZlhOMkx3?oc=5",
-      "source": "잡포스트",
-      "date": "Tue, 22 Sep 2026 06:26:06 GMT"
+      "title": "외국인은 ＇레버리지＇·개인은 ＇곱버스＇ 베팅…승자는",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9aU1VjeEpjeC1kbXpja1NyNG9sdFBxSFl6TU1lOTFKQTFHaEJiSXBscDRLZjB5alVJVGlTN0F0RGdSSy1OSWp0azdMdThkeUxJZ3E3NDF5RlVDSWlWYWVUbTAxWHE0SGZtOEJhcnVkWDdzY1B1Z0htN2MyNWo?oc=5",
+      "source": "한국경제TV",
+      "date": "Sat, 26 Sep 2026 23:00:00 GMT"
     },
     {
-      "title": "'주도주 집중' KODEX 200커버드콜액티브 ETF, 14일 상장 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xN0Y1N3Q1SnVveFNwS3pNOFQ3dS1uTzhCdG9MdW9yZl9QSldXZTExZV93S0xESnhzLU9YNU5MbmhBU2JGVF94c2lhVUNYeDdwaDdxVGFzS0pBeW5nZURwSU5iVkFRQ1BF0gFuQVVfeXFMTUpIUVl4YzkzRkJjSDN4R0J4Wno2YTlPNjhwUENNeEdaQWlkMDZ1bjhoSzRZY09fdl95ek9GMmd2RU0zTGQyc1NFb2ljRkxha1p4M2JYXzdlRTJodGdCR08tYk9oOVRuVFBUbVc2R1E?oc=5",
-      "source": "머니투데이",
-      "date": "Wed, 08 Jul 2026 07:00:00 GMT"
+      "title": "외국인은 상승에, 개인은 하락에 베팅…9월 ETF 수익률 엇갈렸다",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZX0dYTERtNElKeHQ2Qkg1WnVGZ2NjVXpiX2JsRC16dVVyOVNpN01jSUFGemlVbGx0QU9YS2pEN0Vzak9EYTlxTklWYWdsZlZTWVBMRlhWd2YyOUhyaGVQbnE4OTZBNlNL?oc=5",
+      "source": "키즈맘",
+      "date": "Sun, 27 Sep 2026 02:24:10 GMT"
     },
     {
-      "title": "[ETF머니플로우-9월3주] KODEX 200타겟위클리커버드콜 순매수 1위 탈환…TIGER 미국S&P500 4계단",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pVTlncnBWNDgtZHdJcHY0SlE2Y2NHNDNFVk41OVJDaGVGMVREWXVGd2gwcnBqbTU0Qi1LT0pxMC12Yi1rci1JclJZZUR4QWd6S2FySHpWSVU3NWI4R1BrU2x2eUpBNG1yZ0I1VW96OWc?oc=5",
-      "source": "신아일보",
-      "date": "Sat, 19 Sep 2026 05:00:00 GMT"
-    },
-    {
-      "title": "삼성운용, 'KODEX 200커버드콜액티브' ETF 신규 상장",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmWFlUdlFMVUVkWHhKS1phX1JCWmtlekVLUDN1dlFWM01SeEE3ZUh1cVZBYVVJNXdSN3BDWjZCWU0tTWNLUV9EVnVGRDIwMFFkMUl3MS13?oc=5",
-      "source": "DealSite경제TV",
-      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title": "KODEX ETF 순자산 174조원… AI 칩·파킹형 상품 선보여",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNDZNWG9OTEZ4QVBBMC1QNzNCZjZOWWZNZFdsaEVTN0RoNDd3dXRmbnQyQUpNTmZJOXB4M1pHcFhvV3hCOXpJQ09KazFTTnRpbWVtYkQyRHBjNHE5ekVJR0tZa0RqcGZFQXhHX3ZJSEg4c0VXb0hpUWRyVkdSeExJdw?oc=5",
-      "source": "조선일보",
-      "date": "Thu, 17 Sep 2026 15:43:42 GMT"
-    },
-    {
-      "title": "삼성운용 'KODEX 200커버드콜액티브' 첫 월배당…분배율 2.0%",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fT2pqQ2VhcmZxTkppVnZDckUxVWMzSHJQR1ByMHFlMjVwWWxKWVpXSlVCRnQ4Q29tQThlTjdSWDlNQkk3WEREN013VUNJREhMRzdqZEVCa29DLUtfaGc1cg?oc=5",
-      "source": "메트로신문",
-      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVT3F0N2EtcG5jNHR4ZmlvR2F5UkFSQlJvM3lNUVRRS290WXQySFpTQkRISmdIbHl4NXFEb2prb2lISV9YUUZrcEVrSUVfWE43d0NWLVNSMzczN1XSAWBBVV95cUxQZUNJZGJHNy1ZNHQzQVZDRjg4S2JtVnc5cG9fUG9jMzJfWERHSDV0cVdwZmdDNVIwVTUtTFhQUWZVb1N2bTMtdTh1dE5sdGpnWHZZRVZoV3VpOTd0SXVZRk8?oc=5",
-      "source": "연합뉴스",
-      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
+      "title": "레버리지 담은 외국인 vs 곱버스 탄 개인…수익률 따져보니",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OeFZQMkcxcHNZbEpUc0hEVGUxN1F3VkcwQnMtVU1YMzdRZ2VraGhSMjl2T2Z4MUJwZGxMbzZleWVyZHBlaG8zaGEyYnUwWWVVVmpMbEZFOWcyWUdST2o3cnRfWDh0ZUkxTkdlVVRaNnZLTVk?oc=5",
+      "source": "한국경제TV",
+      "date": "Sat, 26 Sep 2026 23:30:00 GMT"
     },
     {
       "title": "거래대금 2조원 넘긴 KODEX 200…코스피 대형주 따라 0.60% 상승",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iaFV4TFhINFpCRlIyQXBfLUtmUjRyT1ZQRkhRV1VFRXlJbjV2dXh4X2dkdHpDNVY5Q1BEMlNGUkExR2NRRFJRdGx5c29oal95WGVXcHFEVnJDUlNIdnpHanpyaWtpYjJXMkl1V2F30gFyQVVfeXFMT1dCZzBMYWFsQkRGR1pPb3RrNnlXaVRuV24yZkoyWmhrTnpBVGVWbHZjREFIbkYxM0pSZGkzYXJWMU1DVXNvYko4aDRoR2N1SFBSamZMRFVoYnF6clNIM1VPM3l4RlVXVlBoeldjREJMeXln?oc=5",
       "source": "잡포스트",
       "date": "Wed, 23 Sep 2026 05:50:40 GMT"
-    },
-    {
-      "title": "삼성운용 ‘KODEX 200커버드콜액티브’ 첫 월배당…주당 153원 지급",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oTVZGZVZnX2pIQkhJaDBoYUVvdDNsY19qY1lwS3Q3bHpha3NnMXpfblIyeGp0d1RQVFlHMFZGN3lUQ3RuTlRjZGxIbGZfWjFkcnc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title": "\"주도 섹터 투자에 배당까지\"…KODEX 200커버드콜액티브 상장 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tYlpwU1poOGZwTlUyb3NDRzZ6bnBUZDJMdldDYkxiNUktTjU3QTY4RnhQT0k2UmFJS2RWMmdWT1Vvakx1NzdHS0xrOURwVjZBeHJhZVFPemFuejZwdVJ6REpjSUJnS0dm0gFuQVVfeXFMTzJ5WG9uRXRxVmI1ZU10cUpFSS1kYlJJeUdKd21XMy1qVnBCeW52VG5meUx1cVRCTkNPbDFnd3lEMGhleG5uMXlRVE9MOWxQbGU5UC1lcVBoMmlmQ0tCdHNGblFOMkZBdVNTbHZFRXc?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title": "KODEX 200 2.08% 상승…코스피200 대형주 강세 반영",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0zRGlzdlc1Z1d1TVhtQkpUR0R0NGd5OTlod0ttREpVRTdvMG1NM0pEUld5MHZ1ZjNGbnBRUmN3dzBONWtEbFFaUF80Q2N6WFcyZ1Z6S0oxMlUxU3RrRlBYUHg0Y3lqV0doLThWbzNB0gFyQVVfeXFMT3MwcGEtVTZMbDRKczhJenEyR0N2OHBRU1RhTk95VFg0aDJDWm4ycEtJSHowZEM1WV9vbjFPOVlqYXpYZ3l2QTJzQnlReFlwMVVVUEtaSXdRdnVpZE8tRkhMWlhjc0hyRnNMcEN0cjZBUUJn?oc=5",
-      "source": "잡포스트",
-      "date": "Mon, 21 Sep 2026 06:26:23 GMT"
-    },
-    {
-      "title": "KODEX 200커버드콜액티브(0219E0)",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XY3ZhX0l1NWlJMmFmbWdVQTVnMEt6RklacVZRYWI5YzV4TkluanM2U2ppOVd2cnlCVUcySURpekNQMUgyc1JoNE1OcGd5NjM4NUpSR01XTG9xQQ?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 14 Jul 2026 04:07:58 GMT"
     }
   ]
 }
