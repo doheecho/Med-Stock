@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-09-28T11:41:05+00:00",
+  "updated_at": "2026-09-28T15:48:41+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "Chip stocks fall as AI breach fuels safety concerns, but Nvidia bucks the trend: Chart of the Day",
+      "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-ai-breach-fuels-safety-concerns-but-nvidia-bucks-the-trend-chart-of-the-day-151753993.html",
+      "source": "Yahoo Finance",
+      "date": "2026-09-28T15:17:53Z"
+    },
     {
       "title": "2 key checks for the AI trade and the economy: What to watch this week",
       "url": "https://finance.yahoo.com/markets/article/2-key-checks-for-the-ai-trade-and-the-economy-what-to-watch-this-week-100000239.html",
@@ -11,58 +17,52 @@
       "date": "2026-09-27T10:00:00Z"
     },
     {
-      "title": "10-Year Yield Tops 5%, Mag 7 Lead Stocks, Oil Price Uncertainty: 3 Charts To Watch This Week",
-      "url": "https://stocktwits.com/news-articles/markets/equity/10-year-yield-mag-7-lead-stocks-oil-price-uncertainty-3-charts-to-watch/cZMSqz8RBQ7",
-      "source": "Stocktwits",
-      "date": "2026-09-28T10:59:35Z"
+      "title": "Stock Market Today: Dow Dives, Gold Stocks Melt; Chips Tumble But Nvidia Rises On This Move (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-oil-prices-treasury-yields/?src=A00220&yptr=yahoo",
+      "source": "Investor's Business Daily",
+      "date": "2026-09-28T15:37:55Z"
     },
     {
-      "title": "Micron Stock Is Falling but This Is the Next Catalyst",
+      "title": "Micron's 279% Rally Faces an 8.6% Earnings Test",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-279-rally-faces-8-151149863.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-28T15:11:49Z"
+    },
+    {
+      "title": "SK Hynix Drops 6% as Bloomberg Puts $100B Value on Potential Solidigm IPO; Micron and Western Digital Fall 4%",
+      "url": "https://247wallst.com/investing/2026/09/28/sk-hynix-drops-6-as-bloomberg-puts-100b-value-on-potential-solidigm-ipo-micron-and-western-digital-fall-4/",
+      "source": "24/7 Wall St.",
+      "date": "2026-09-28T15:03:41Z"
+    },
+    {
+      "title": "Micron stock target raised at Baird on higher DRAM pricing assumptions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-target-raised-baird-145153912.html",
+      "source": "Investing.com",
+      "date": "2026-09-28T14:51:53Z"
+    },
+    {
+      "title": "SanDisk's 600% Rally Is Heading Into a Big Memory Test",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sandisks-600-rally-heading-big-144707244.html",
+      "source": "GuruFocus.com",
+      "date": "2026-09-28T14:47:07Z"
+    },
+    {
+      "title": "Samsung and SK Hynix Fell Over 5%. Here’s What Micron’s September 30 Report Must Show",
+      "url": "https://www.tikr.com/blog/samsung-and-sk-hynix-fell-over-5-heres-what-microns-september-30-report-must-show?ref=yahoofinance",
+      "source": "TIKR",
+      "date": "2026-09-28T14:41:26Z"
+    },
+    {
+      "title": "Why Is Micron Stock Slipping Before Earnings?",
       "url": "https://www.barrons.com/articles/micron-stock-price-ai-earnings-9aacdfd8?siteid=yhoof2&yptr=yahoo",
       "source": "Barrons.com",
-      "date": "2026-09-28T10:45:00Z"
+      "date": "2026-09-28T13:53:00Z"
     },
     {
-      "title": "US Equity Investors to Focus on Surging Treasury Yields While Looking Out for Crude Oil Prices, Micron's Results This Week",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-investors-focus-surging-101358726.html",
-      "source": "MT Newswires",
-      "date": "2026-09-28T10:13:58Z"
-    },
-    {
-      "title": "MAG 7 Voices: Jensen Huang, Elon Musk, Mark Zuckerberg Shape A Week Of AI Debate",
-      "url": "https://stocktwits.com/news-articles/markets/equity/mag-7-voices-jensen-huang-elon-musk-mark-zuckerberg-shape-week-of-ai/cZMSpltRBQ3",
-      "source": "Stocktwits",
-      "date": "2026-09-28T10:05:49Z"
-    },
-    {
-      "title": "Intel, Sandisk, Chevron, Boeing, NIO, and More Stocks That Explain Today’s Market",
-      "url": "https://www.barrons.com/articles/stock-movers-4aac0ea6?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-09-28T09:52:00Z"
-    },
-    {
-      "title": "Stocks to Watch: Intel, Meta, Oracle",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-28-2026/card/stocks-to-watch-intel-meta-oracle-xDbPWFTyOj0RjkaIT9a7?siteid=yhoof2&yptr=yahoo",
-      "source": "The Wall Street Journal",
-      "date": "2026-09-28T09:48:48Z"
-    },
-    {
-      "title": "Jobs Report, Micron Earnings: What to Watch This Week",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-28-2026/card/jobs-report-micron-earnings-what-to-watch-this-week-sFloTXzrAvibHuV0jEFv?siteid=yhoof2&yptr=yahoo",
-      "source": "The Wall Street Journal",
-      "date": "2026-09-28T09:05:39Z"
-    },
-    {
-      "title": "Nasdaq, S&P 500 Futures Fall As Oil Spikes On Trump’s Snub To Iran: MU, NVDA, SKHY, SPCX, NIO Stocks In Focus",
-      "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-sp500-futures-fall-as-oil-spikes-on-trump-snub-to-iran-mu-nvda-skhy-spcx-nio-stocks-in-focus/cZMSFEIRBQR",
-      "source": "Stocktwits",
-      "date": "2026-09-28T08:36:48Z"
-    },
-    {
-      "title": "Stocktwits Tech Watch: Micron’s Q4 Report, OpenAI Developer Conference Keep AI Trade In Focus This Week",
-      "url": "https://stocktwits.com/news-articles/markets/equity/stocktwits-tech-watch-micron-s-q4-report-open-ai-developer-conference-keep-ai-trade-in-focus-this-week/cZMSZVwRBft",
-      "source": "Stocktwits",
-      "date": "2026-09-28T07:00:50Z"
+      "title": "Prediction: This Will Be Micron Technology’s Stock Price by the End of 2026",
+      "url": "https://www.fool.com/investing/2026/09/28/prediction-this-will-be-micron-technology-s-stock-price-by-the-end-of-2026/",
+      "source": "Motley Fool",
+      "date": "2026-09-28T13:52:01Z"
     }
   ]
 }
