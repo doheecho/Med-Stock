@@ -1,20 +1,38 @@
 {
-  "updated_at": "2026-09-28T00:34:46+00:00",
+  "updated_at": "2026-09-28T11:41:07+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
     {
+      "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한주간 뭉칫돈 이탈",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lQXVsekNFTXNsWUdYUDB0N2RSOXFrMXpJLTl5N0hxbHB2U2NBRmV2bVpRWHN5emdMME5lUkRFVnVMaWxPY19ZN3FHN0ZuT2V3M21uRURJcl85aHpCSno3R9IBYEFVX3lxTE1lQXVsekNFTXNsWUdYUDB0N2RSOXFrMXpJLTl5N0hxbHB2U2NBRmV2bVpRWHN5emdMME5lUkRFVnVMaWxPY19ZN3FHN0ZuT2V3M21uRURJcl85aHpCSno3Rw?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 28 Sep 2026 07:44:15 GMT"
+    },
+    {
+      "title": "KODEX 200 2.69% 하락…대형주 약세에 11만105원 - job-post.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WSmNvamNleXd0UHB6d1duQ0o2QjhYVnlDOC1aNGJ3a1NZdUtUeTFLeExtNUdCYWpOc3A4OGJ3TUZjdktJTzJPNkhDWGUtcUJFV3kyZGtQeklqd0xlbzZYbWdSR0VrbElCd0ctUWdSN0JQd9IBckFVX3lxTE9WSmNvamNleXd0UHB6d1duQ0o2QjhYVnlDOC1aNGJ3a1NZdUtUeTFLeExtNUdCYWpOc3A4OGJ3TUZjdktJTzJPNkhDWGUtcUJFV3kyZGtQeklqd0xlbzZYbWdSR0VrbElCd0ctUWdSN0JQdw?oc=5",
+      "source": "job-post.co.kr",
+      "date": "Mon, 28 Sep 2026 05:32:24 GMT"
+    },
+    {
       "title": "올해 주요자산 수익률 1위는 ‘KODEX 200’…금-비트코인은 마이너스",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MVHRnZ3o1Zmd2a0ZNZ09HOU11R29DczFJSDdqMU0yUlU1YkE4QVNQcW1iYzc1SWFnQklqT2xNNjNyaFZHNnRnY3ZWWQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BazZJY3lYWVdSZjVOQ3dDUFo4dldPSktxbkUtU1lKRlVid1l2bjdRanlRQ3VQZlBYQXU2aU5FNXloemR4OXJfdTdjaVB2a2c?oc=5",
       "source": "v.daum.net",
       "date": "Sun, 27 Sep 2026 05:30:47 GMT"
     },
     {
-      "title": "외국인은 '레버리지', 개인은 '곱버스'에 베팅…9월 승자는",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CYVB1WUdHM3ByUHFOaWQtVm92TXR5MG1aczdzOUt3SWNoaWlrTGQwX0NQUnhhZkdzd0tndEgxaC1peTZoR05VOWdJQ3MycEVyeW9nWTE0Q1pNZw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 27 Sep 2026 07:54:46 GMT"
+      "title": "\"지루한 박스피 탈출\"…개미들 美 ETF 쏠림 심화",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA1eVRJdm5lSUZvaTlZSWE2T3l0MjVRbFZPLW1Qdk1KbTBoTUNsSlJlV0RGZVowSGFSVS1QeHdwVi1aUnNNQndKT3RHSER3ZVYxU0tlczF5dk5zMmtsYW9YRXdXMFU5Q1lmUXVRQ1haNmo3REhYMWxTMNIBeEFVX3lxTFA1eVRJdm5lSUZvaTlZSWE2T3l0MjVRbFZPLW1Qdk1KbTBoTUNsSlJlV0RGZVowSGFSVS1QeHdwVi1aUnNNQndKT3RHSER3ZVYxU0tlczF5dk5zMmtsYW9YRXdXMFU5Q1lmUXVRQ1haNmo3REhYMWxTMA?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 28 Sep 2026 01:12:26 GMT"
+    },
+    {
+      "title": "무려 은행 예금의 ‘40배’···올해 재테크 수익률 1위 상품은 ‘KODEX200’",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE80MHpuSG45VXh3STNTcEJVMTdxZ0NibjJ0X0pEdlRDRDRaenlBa0c4YndGY1VBQWRlYUg4dkxZcW1pUzN0eVYyUjZUY3lmYkRjTHE4aW1LYXQ5Z9IBX0FVX3lxTE5GalFqcE5yaV9TQVhHUHdRS1NQNnN3ZkxHd01DY2xWQTktNlhWeDZTd0JRZDEyaFVoZV9TejZJRzg2LXdVS1dZVTZCT3lZY3NiYnJ0cVJSLWdhMEszcUpz?oc=5",
+      "source": "경향신문",
+      "date": "Sun, 27 Sep 2026 01:44:00 GMT"
     },
     {
       "title": "레버리지 산 외국인 vs 개인은 곱버스 베팅…수익률 승자는 - 조선비즈",
@@ -23,10 +41,46 @@
       "date": "Sun, 27 Sep 2026 01:34:00 GMT"
     },
     {
+      "title": "정기예금 대신 '이것' 담았더니…내 통장에 40.6배 수익 꽂혔다",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1yeExucllPUGZPVmtJdDM0N3RsNXdQRy1abHk3QjFHVS1qd0VhR050bVI2UjlDb3RfVkphUnNfak5UMElydk1xd0FnMDJ1bFRPeHg1dG1B?oc=5",
+      "source": "위키트리",
+      "date": "Mon, 28 Sep 2026 01:35:00 GMT"
+    },
+    {
+      "title": "외국인은 '레버리지'·개인은 '곱버스' 베팅…승자는",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LekI3c3dwa2x0UFdIMUFTUTdsU0NUV1AwWDhfZUNDV3dlLWxLT1JaSU1Qcjhoc0wwcXNLcWdFRkYzdDJvaXZyN0pZVHphaGlZMUE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Sat, 26 Sep 2026 23:00:05 GMT"
+    },
+    {
+      "title": "올 수익률 1위 ‘코스피200 ETF’, 정기예금의 40.6배",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9UMDltekFONDFwR3NGa2Z6d0xZcEpCU0o1UWY4Mm1GWXhOM2x3S1hGZlFCZjlxQjRRWFRubGUycWpNaXo0a25kaVU5UlJpMVU?oc=5",
+      "source": "v.daum.net",
+      "date": "Sun, 27 Sep 2026 15:31:59 GMT"
+    },
+    {
+      "title": "폭락장 겪었어도… 올 최고 수익 자산은‘코스피200 ETF’",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFUFRjbm5TbzNjQ29CMXNsRldSZ3VvRkU4X3p6dWJiZENuODVrQjdvQ25obDFiemh3Ym5Nd3RYa0ZxX05HRHpnRWFLNXRZd3c?oc=5",
+      "source": "v.daum.net",
+      "date": "Sun, 27 Sep 2026 15:26:08 GMT"
+    },
+    {
       "title": "“둘 중 하나는 땅을 쳤다”…외국인은 ‘레버리지’ 개미는 ‘곱버스’ 베팅",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qRWY5QnI5Z1FxV2k3ZS01VmIwbmdnT0NyWDUwaUxTMTBTQVBacENQYXpGaF9FYzFHUnpiTDBmWWE0OVF2OC01b25OYk43ejNINkE?oc=5",
       "source": "매일경제 마켓",
       "date": "Sun, 27 Sep 2026 02:20:37 GMT"
+    },
+    {
+      "title": "외국인은 '레버리지', 개인은 '곱버스'에 베팅…9월 승자는",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CYVB1WUdHM3ByUHFOaWQtVm92TXR5MG1aczdzOUt3SWNoaWlrTGQwX0NQUnhhZkdzd0tndEgxaC1peTZoR05VOWdJQ3MycEVyeW9nWTE0Q1pNZw?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 27 Sep 2026 07:54:46 GMT"
+    },
+    {
+      "title": "\"예금보다 40배↑\"…코스피200 ETF, 올해 재테크 수익률 1위",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56R19RdUFrLWdjQ3Z0TlZ5QVFHbHNMZ0M1UUJsaWJ2QnRXVjc0amR1aTdVWjdWMll6SXVWYWhBdXplNnh2elpQSkdLRFVYQjdLWmxyNmtYN3VHSXQwT1M0WHZFNi1hdFl1M3RlMzN6TQ?oc=5",
+      "source": "조세일보",
+      "date": "Sun, 27 Sep 2026 00:48:46 GMT"
     },
     {
       "title": "증시 방향 놓고 엇갈린 베팅…외국인은 '레버리지', 개인은 '곱버스'",
@@ -39,60 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vTzk0N2NzcmhuaU90MnJXSnQtMmJQSnFPWGVhUjlpRUh5X2VhbUJaWmxCYVpFbjEyZkwtZXotZ3VsS2J6clZTazE5b1I2ZFIydjFhb0JrY29NcF84RTdUdjh1ZzVGSm56Z0ZuUGFJTFdGZTTSAXNBVV95cUxPb085NDdjc3JobmlPdDJyV0p0LTJiUEpxT1hlYVI5aUVIeV9lYW1CWlpsQmFaRW4xMmZMLWV6LWd1bEtienJWU2sxOW9SNmRSMnYxYW9Ca2NvTXBfOEU3VHY4dWc1RkpuemdGblBhSUxXRmU0?oc=5",
       "source": "시사저널",
       "date": "Sun, 27 Sep 2026 03:11:04 GMT"
-    },
-    {
-      "title": "\"예금보다 40배↑\"…코스피200 ETF, 올해 재테크 수익률 1위",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56R19RdUFrLWdjQ3Z0TlZ5QVFHbHNMZ0M1UUJsaWJ2QnRXVjc0amR1aTdVWjdWMll6SXVWYWhBdXplNnh2elpQSkdLRFVYQjdLWmxyNmtYN3VHSXQwT1M0WHZFNi1hdFl1M3RlMzN6TQ?oc=5",
-      "source": "조세일보",
-      "date": "Sun, 27 Sep 2026 00:48:46 GMT"
-    },
-    {
-      "title": "외국인은 '레버리지' 개인은 '곱버스' 베팅…수익률 승자는?",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORzU5VzQtS3p1YklxT21PbU5EaGFJakxNWkRlZER1dllyeDVnY0htUVhuT0VMa1lUYUU3b1E3ZFFjTkcyalMxWndDS01UVVhWenI1cl93QjRwalU3eFNOXzdDQV9rSHo0c2x5T2RGalhaQVZ3cWhhM3o5NnJ4am9jLQ?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Sun, 27 Sep 2026 07:37:34 GMT"
-    },
-    {
-      "title": "외국인은 상승, 개인은 하락에 베팅…9월 ETF 수익률은 외국인 쪽",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80OEJZS0tHVG5NY3U1V09peVJyTWUwVkFLTm1vVjhra1NYUUcwMG5VTVREeUxYVC1Sd25QQWVYZ2FhMll2QjJWMU1zZGtaQXVMeEtEN0VXc1lsSEpYRDlEcTRoNDFZMTVXUHRYdzJUc24?oc=5",
-      "source": "비즈중앙",
-      "date": "Sun, 27 Sep 2026 06:36:36 GMT"
-    },
-    {
-      "title": "외국인은 ‘레버리지’, 개인은 ‘곱버스’에 베팅했다…9월 승자는? [투자360]",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xQ2NTOWY3aFdNNURUVElqUk45VlFOUDkxUjcza1cwYmxWc0FWem1ZbjhRdkVJZEN3c2xfOGMwbUdyMFhLY2NDRG9rNVh6MW1MWWU1UFJR?oc=5",
-      "source": "헤럴드경제",
-      "date": "Sun, 27 Sep 2026 00:03:27 GMT"
-    },
-    {
-      "title": "개미는 연휴 전날까지 ‘곱버스’ 베팅…6거래일 동안 1300억 원 샀다 [이런국장 저런주식]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9mcUVNWWZaT1NwSnhxTE9yNVVCRXppbUpTVE5UbFhxaWR2cU04d2FZekJNLXlTZ1hmeXM5MXNkT0hCa2NFUDN4Zy1TOWdENm84OHfSAVNBVV95cUxQaGw1TkVuWGlBY2RiQ2VwemdMaXlhQ1QzUjdTWEF3dUo5UzNQUVNKWkN0QnV2aVNtQWc2UkRkem00OUtiZVRrVFFpOGhtQlp2M1czSQ?oc=5",
-      "source": "서울경제",
-      "date": "Wed, 23 Sep 2026 21:30:00 GMT"
-    },
-    {
-      "title": "외국인은 ＇레버리지＇·개인은 ＇곱버스＇ 베팅…승자는",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9aU1VjeEpjeC1kbXpja1NyNG9sdFBxSFl6TU1lOTFKQTFHaEJiSXBscDRLZjB5alVJVGlTN0F0RGdSSy1OSWp0azdMdThkeUxJZ3E3NDF5RlVDSWlWYWVUbTAxWHE0SGZtOEJhcnVkWDdzY1B1Z0htN2MyNWo?oc=5",
-      "source": "한국경제TV",
-      "date": "Sat, 26 Sep 2026 23:00:00 GMT"
-    },
-    {
-      "title": "외국인은 상승에, 개인은 하락에 베팅…9월 ETF 수익률 엇갈렸다",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZX0dYTERtNElKeHQ2Qkg1WnVGZ2NjVXpiX2JsRC16dVVyOVNpN01jSUFGemlVbGx0QU9YS2pEN0Vzak9EYTlxTklWYWdsZlZTWVBMRlhWd2YyOUhyaGVQbnE4OTZBNlNL?oc=5",
-      "source": "키즈맘",
-      "date": "Sun, 27 Sep 2026 02:24:10 GMT"
-    },
-    {
-      "title": "레버리지 담은 외국인 vs 곱버스 탄 개인…수익률 따져보니",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OeFZQMkcxcHNZbEpUc0hEVGUxN1F3VkcwQnMtVU1YMzdRZ2VraGhSMjl2T2Z4MUJwZGxMbzZleWVyZHBlaG8zaGEyYnUwWWVVVmpMbEZFOWcyWUdST2o3cnRfWDh0ZUkxTkdlVVRaNnZLTVk?oc=5",
-      "source": "한국경제TV",
-      "date": "Sat, 26 Sep 2026 23:30:00 GMT"
-    },
-    {
-      "title": "거래대금 2조원 넘긴 KODEX 200…코스피 대형주 따라 0.60% 상승",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iaFV4TFhINFpCRlIyQXBfLUtmUjRyT1ZQRkhRV1VFRXlJbjV2dXh4X2dkdHpDNVY5Q1BEMlNGUkExR2NRRFJRdGx5c29oal95WGVXcHFEVnJDUlNIdnpHanpyaWtpYjJXMkl1V2F30gFyQVVfeXFMT1dCZzBMYWFsQkRGR1pPb3RrNnlXaVRuV24yZkoyWmhrTnpBVGVWbHZjREFIbkYxM0pSZGkzYXJWMU1DVXNvYko4aDRoR2N1SFBSamZMRFVoYnF6clNIM1VPM3l4RlVXVlBoeldjREJMeXln?oc=5",
-      "source": "잡포스트",
-      "date": "Wed, 23 Sep 2026 05:50:40 GMT"
     }
   ]
 }

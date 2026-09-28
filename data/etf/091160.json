@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T00:35:15+00:00",
+  "updated_at": "2026-09-28T11:41:47+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "base_index": "KRX 반도체",
@@ -9,91 +9,91 @@
       "code": "005930",
       "name": "삼성전자",
       "weight": 19.03,
-      "price": 280250.0,
+      "price": 270000.0,
       "prev": 286500.0,
-      "change": -6250.0,
-      "change_pct": -2.18
+      "change": -16500.0,
+      "change_pct": -5.76
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "weight": 18.04,
-      "price": 1814000.0,
+      "price": 1761000.0,
       "prev": 1863000.0,
-      "change": -49000.0,
-      "change_pct": -2.63
+      "change": -102000.0,
+      "change_pct": -5.48
     },
     {
       "code": "042700",
       "name": "한미반도체",
       "weight": 10.31,
-      "price": 243000.0,
+      "price": 233000.0,
       "prev": 243000.0,
-      "change": 0.0,
-      "change_pct": 0.0
+      "change": -10000.0,
+      "change_pct": -4.12
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "weight": 6.58,
-      "price": 211500.0,
+      "price": 208000.0,
       "prev": 209500.0,
-      "change": 2000.0,
-      "change_pct": 0.95
+      "change": -1500.0,
+      "change_pct": -0.72
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "weight": 4.44,
-      "price": 129000.0,
+      "price": 123700.0,
       "prev": 132400.0,
-      "change": -3400.0,
-      "change_pct": -2.57
+      "change": -8700.0,
+      "change_pct": -6.57
     },
     {
       "code": "039030",
       "name": "이오테크닉스",
       "weight": 4.06,
-      "price": 476500.0,
+      "price": 467500.0,
       "prev": 479500.0,
-      "change": -3000.0,
-      "change_pct": -0.63
+      "change": -12000.0,
+      "change_pct": -2.5
     },
     {
       "code": "000990",
       "name": "DB하이텍",
       "weight": 4.06,
-      "price": 129900.0,
+      "price": 125600.0,
       "prev": 131700.0,
-      "change": -1800.0,
-      "change_pct": -1.37
+      "change": -6100.0,
+      "change_pct": -4.63
     },
     {
       "code": "222800",
       "name": "심텍",
       "weight": 3.78,
-      "price": 151600.0,
+      "price": 145100.0,
       "prev": 149400.0,
-      "change": 2200.0,
-      "change_pct": 1.47
+      "change": -4300.0,
+      "change_pct": -2.88
     },
     {
       "code": "058470",
       "name": "리노공업",
       "weight": 3.72,
-      "price": 73100.0,
+      "price": 71000.0,
       "prev": 74600.0,
-      "change": -1500.0,
-      "change_pct": -2.01
+      "change": -3600.0,
+      "change_pct": -4.83
     },
     {
       "code": "403870",
       "name": "HPSP",
       "weight": 3.64,
-      "price": 55600.0,
+      "price": 55400.0,
       "prev": 55600.0,
-      "change": 0.0,
-      "change_pct": 0.0
+      "change": -200.0,
+      "change_pct": -0.36
     }
   ]
 }
