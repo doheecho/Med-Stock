@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T01:49:19+00:00",
+  "updated_at": "2026-09-29T11:18:33+00:00",
   "items": [
     {
       "key": "KOSPI",
@@ -40,9 +40,9 @@
     {
       "key": "SOX",
       "name": "필라델피아 반도체",
-      "price": 12465.2412,
+      "price": 12465.2402,
       "prev": 12668.929,
-      "change": -203.6878,
+      "change": -203.6888,
       "change_pct": -1.61,
       "fmt": "pt"
     },
@@ -58,82 +58,82 @@
     {
       "key": "USDKRW",
       "name": "원/달러",
-      "price": 1358.88,
+      "price": 1355.05,
       "prev": 1354.51,
-      "change": 4.37,
-      "change_pct": 0.32,
+      "change": 0.54,
+      "change_pct": 0.04,
       "fmt": "krw"
     },
     {
       "key": "EURKRW",
       "name": "원/유로",
-      "price": 1544.0,
+      "price": 1536.5,
       "prev": 1545.78,
-      "change": -1.78,
-      "change_pct": -0.12,
+      "change": -9.28,
+      "change_pct": -0.6,
       "fmt": "krw"
     },
     {
       "key": "JPYKRW100",
       "name": "원/엔100",
-      "price": 860.4,
+      "price": 859.3,
       "prev": 860.2265,
-      "change": 0.1735,
-      "change_pct": 0.02,
+      "change": -0.9265,
+      "change_pct": -0.11,
       "fmt": "krw"
     },
     {
       "key": "GOLD",
       "name": "금 선물",
-      "price": 4157.7998,
+      "price": 4187.1001,
       "prev": 4168.3999,
-      "change": -10.6001,
-      "change_pct": -0.25,
+      "change": 18.7002,
+      "change_pct": 0.45,
       "fmt": "usd"
     },
     {
       "key": "SILVER",
       "name": "은 선물",
-      "price": 61.03,
+      "price": 61.18,
       "prev": 61.22,
-      "change": -0.19,
-      "change_pct": -0.31,
+      "change": -0.04,
+      "change_pct": -0.07,
       "fmt": "usd"
     },
     {
       "key": "WTI",
       "name": "WTI 선물",
-      "price": 93.86,
+      "price": 91.75,
       "prev": 92.6,
-      "change": 1.26,
-      "change_pct": 1.36,
+      "change": -0.85,
+      "change_pct": -0.92,
       "fmt": "usd"
     },
     {
       "key": "BTC",
       "name": "비트코인",
-      "price": 112843976.0,
-      "prev": 114520992.0,
-      "change": -1677016.0,
-      "change_pct": -1.46,
+      "price": 113780232.0,
+      "prev": 113562704.0,
+      "change": 217528.0,
+      "change_pct": 0.19,
       "fmt": "krw0"
     },
     {
       "key": "ETH",
       "name": "이더리움",
-      "price": 3625316.75,
-      "prev": 3643340.25,
-      "change": -18023.5,
-      "change_pct": -0.49,
+      "price": 3680424.25,
+      "prev": 3656562.5,
+      "change": 23861.75,
+      "change_pct": 0.65,
       "fmt": "krw0"
     },
     {
       "key": "XRP",
       "name": "리플",
-      "price": 2003.2594,
-      "prev": 2058.8191,
-      "change": -55.5597,
-      "change_pct": -2.7,
+      "price": 2041.7069,
+      "prev": 2034.9244,
+      "change": 6.7825,
+      "change_pct": 0.33,
       "fmt": "krw"
     }
   ]
