@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T15:48:35+00:00",
+  "updated_at": "2026-09-29T01:49:00+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3296818.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-23",
+  "as_of": "2026-09-28",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3296818,
-      "date": "2026-09-23",
+      "date": "2026-09-28",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-09-28",
+      "target": 3200000,
+      "prev_target": 3200000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "BNK투자",
       "date": "2026-09-14",
       "target": 1480000,
@@ -50,15 +59,6 @@
       "chg": 0.0,
       "opinion": "보유",
       "prev_opinion": "보유"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-09-08",
-      "target": 3200000,
-      "prev_target": 3200000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "미래에셋",
