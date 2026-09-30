@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-29T14:16:33+00:00",
+  "updated_at": "2026-09-30T01:14:54+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3296818.0,
-  "target_high": 3791341,
+  "target_avg": 3275909.0,
+  "target_high": 3767295,
   "target_low": 3100000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-28",
+  "as_of": "2026-09-29",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,13 +18,13 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 3296818,
-      "date": "2026-09-28",
+      "target": 3275909,
+      "date": "2026-09-29",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "야후 평균",
-      "target": 3184026,
+      "target": 3141025,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     },
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "DS투자",
+      "date": "2026-09-29",
+      "target": 2640000,
+      "prev_target": 3100000,
+      "chg": -14.84,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "대신",
       "date": "2026-09-28",
