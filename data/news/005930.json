@@ -1,68 +1,56 @@
 {
-  "updated_at": "2026-10-01T01:14:30+00:00",
+  "updated_at": "2026-10-01T11:34:36+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자, 갤럭시 신작 3종 공개…태블릿·이어폰·스마트태그 출격",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GejRpbVAzbEVHdG5tT2FaMEN3aDlWVDdvT1BwSkQ2anlMU3hMYVRTRkFISFhnNzY5Vm80MEZmbkw5bUdZWVB4dHlJd18yTjg?oc=5",
-      "source": "v.daum.net",
-      "date": "Thu, 01 Oct 2026 00:41:04 GMT"
-    },
-    {
-      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’ 공개",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOVU5WHowVGdiRHRNeTdDanVuSlRFWENEM3pBbUNwS0w2LUtjb0NIQnIxNGhwekhSVEU1ZGJ4VlhhZzIzSEJLN3RvM1NBeDNJa0kzLWNGcElKQUliUE9LN1Y3bGN0M2puTHdHak9vRmY2ODdfdDF5X1l1S3cwOTFoaVFaUkVkNldibzlzUG9ibUIxS3E1YUJLM29yUnRPZ1ZEZXU3SlZ0TER2ZjJZal80V1RKZEVraUhnaWZvbGtuZVdkYmVSdjdBektxWHdaS2pCZjRJbkdCTFlEZ25CVzNkT0ZuYy1acm5k?oc=5",
-      "source": "Samsung Global Newsroom",
+      "title": "삼성전자, 갤럭시 최초 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 공개",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOSE5BbzJraEhFQ2tmcENoQlZKMlF4bzM5Nk41OUN4ZzQzTTJnWjNsNWM0T3VBQ010LU1HYUtLQk5sSjNuRThuZTJnTDZOdTk4NVg0eXE2MzVlV0pTb0xEQllFREdEWndlZEhjSVFWcXFqYmhFSk9JRU5abVJZWHl5OWw2ZVJMV19FMWVMQjVCdUxKUTdFYjNjLWJpd0xqd3dZUndPaDNubzhKYUlnYUNaN1dRb3R5YmxvczFWU0FSNldyNll1U1pjWGdjbmQxUWNwV0pHWmQtTndhNURUZk5XaHZTYVZ1clFVcE1nUDNLa01yMkNwcmhFZ3hfQnlvWGFQZXBCbUJWRUpBdm9SX3RycWZRWE5ndWI3OU5QaU1oQWszYXZmdzZpMTZTMkZZeHFfU1ZlT3ZmRC1CWHVkSnJJUEw0SXRSQUk?oc=5",
+      "source": "news.samsung.com",
       "date": "Wed, 30 Sep 2026 23:00:00 GMT"
     },
     {
-      "title": "삼성, 첫 클립형 무선 이어폰 출시…갤럭시탭·스마트태그도 공개",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtZEktVDdMOU94cGdkb0RaV2ZBNVlNdU9UZ2RCWl9vbERPQVhlX0VGek52WUxhR0x6dmMwemZHSVpWcERSYmJrQmV6eU56RlpZV1dWaUk5UjJkSHFoYXBZZQ?oc=5",
-      "source": "아시아경제",
-      "date": "Thu, 01 Oct 2026 00:50:19 GMT"
+      "title": "“삼성전자 100조 시대”…반도체 호황 언제까지?[이상현의 전자수첩]",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1pVmJOa2NQR0NEZnZEcVlDeU1mckhSVEozU2lhN1NTalBnTWU0RkgxRnBzdDlJRUZUWlpWcHFhN0VxYVJCeW1SdGlrTktZQQ?oc=5",
+      "source": "dt.co.kr",
+      "date": "Wed, 30 Sep 2026 21:00:00 GMT"
     },
     {
-      "title": "“삼성전자, 2나노 파운드리 수율 60% 근접”… 전성비 개선에 총력전 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQkczTTA0Nl8wNmd6V255dHZNUGRVdHEwUW1JR2dKS0swSDAyWUZ3QTcxQm51eFJ6blhEQ1IxQ2phWURYM3pXTGhLbEN6SnNHUXMtRUtHbDNRVl9hLWZTQjVjZDlJV2JwRTRtTkxkeFZNZDhFZFZ6SWgzUlB4SU4xMExB0gGWAUFVX3lxTE5qZFhmM1p6QnV6NEtESFpGRk5iZW1MN3VrQlZEemMwZ3JuMVdtSUU2eENwdHNzeFFldW9jcVNUcEZWMVdkSHVaRzVWZjhjN2ZkTWlIQWxyY0p6SC1jOHVETUl6cmVCZlhoQzhEWmZLQlNwRGx0RU93Z1YtcUhCQWRpcTFrVGZPSkwtMjRKX3pnVEUyc0J3Zw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Tue, 29 Sep 2026 01:17:00 GMT"
-    },
-    {
-      "title": "파리크라상, 신임 대표에 강신봉 전 삼성전자 부사장 내정 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiNlhjUktLZFBMMGtuWEdXZ1ItdGtiMVF0cTlYMUZSUVV1a1ZQWUhGVURETFJ3Mk1PSmVldHVWczFGTm1HZzljTk1OWENyXzhVRlBKSVlPVnV6LTFyZE5Cb05FQTY5T1lZX0HSAW9BVV95cUxNMmZmWWdYeV9CeGtESmFGd2VuT2EydW0xa2VoaW5JRTJPUTE4S2ttMm9rMWh4SXo1d1U2cEFoMUI4bXZjaWM1aHd5S3FIU2s4WWdJaVNkZGdzLV9jQ2NEQTVJalZ5OC0zWk1YR2VGQkU?oc=5",
-      "source": "머니투데이",
-      "date": "Thu, 01 Oct 2026 00:23:15 GMT"
-    },
-    {
-      "title": "파리크라상, 신임 대표이사에 강신봉 전 삼성전자 부사장 내정",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qdWl2OEt2VlBJeGlBVHpLLUF1MTdfN3R5ZzZhTE1uZVlZQzFtRnlhX1kzUkZvRHp5WHFFMHYxTUEzcmJiMEdIQTNDVVdQYTA?oc=5",
+      "title": "삼성전자, 실적 우려에도 목표가 ‘굳건’ [오늘, 이 종목]",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90R1p4WFFuUmRlbDhzaTJPbTRpLWdEWXFuNXZ5TXNqdFA1alRSMU9mSk5yVF9fZHFDWG5VOG43ODZEVjNGaEE?oc=5",
       "source": "v.daum.net",
-      "date": "Thu, 01 Oct 2026 00:53:01 GMT"
+      "date": "Wed, 30 Sep 2026 06:42:07 GMT"
     },
     {
-      "title": "파리크라상, 신임 대표에 강신봉 전 삼성전자 부사장 내정 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMWhmR1RLRGtEOUdWcmhFWkVacjB1T0hTTTlUNmdXVTJlV25ISHJiNFJvSzRwTDNzUEZvQ1c2WUhBMWJzaXRHczhUSjNZVjd4NEZCcnAyVEJmLUxhUzVkMFo2VmdTY00yeTNOTFlDRTNlNjJLbzZ0NHpVTHpfcGd5ZmNVVHhtd9IBmgFBVV95cUxOZTQ0ZnhUQ0dpUWx2dDNXLXVYaUNaa2tCZXlpa29aZXZDM3UxUXNtcGNBcDE3clRJcS04RjJCRDg1cXEwUTFWRUg0SzZ2blU5RHd0eWJRV0J2bHJDN2xFOWh2WW1BNTlEUDA5T19WZGdpa2hPYXB1cFRNcmNoTHZDWE00Q0NKaDJuTzkyVHdnc25iRTZCVm5yNUdB?oc=5",
-      "source": "Chosunbiz",
-      "date": "Thu, 01 Oct 2026 00:41:00 GMT"
+      "title": "“삼성전자 분기 영업익 100조원 돌파 전망”…목표가 53만원 유지",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBPZlo0QVo2Qjgzd0ZwWkRnYmFTVE1JVFZjZUNBWDE4T0o3VjVGdHJ0OXFrR0tYb3doQ0RVQXRicjAyRDRhYlgzQXg2aWVRLUtFOXc?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 29 Sep 2026 23:38:32 GMT"
     },
     {
-      "title": "삼성, 영국박물관서 KH 컬렉션 순회전 개막 기념 갈라 디너 개최",
-      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPOUlkYkhwUTZTVTVjYzBIc2pUV0FmVHFCWFo3TEdfaDU4X05PQzhjbl8zUVdkLTN2OHZYNExRTlF3dHE4SWFJakxFakllQXBYTmUxSFZrbDg3RWZFUTlaYm5ObTB0T3UtcjEzbzgzWHNoT3pleS1qOUZWOEhyUlpKQXdKTGdpQTQ3Vm16MnY5MlVaQWc0S0ktNWQ5TjIzSVFLdXRhZnE1d2ljdnlOZGRJMnNaSWZLVXhCSW5TTkZtdGZvRFpCckJxdkQzMXc0MHhBX0Q3clJSOWVDaU9GQWQteTlJdUhtTVFBMTZzRzc1aVlQLW9QNTJRRFpuV1VaQTZvUUZYVUJGZ1FhckkyX1g2YmNEalJzV2szUDNlbHFFaHJWTXYzZlZzUU9vdU9sNnZwOVJNbDV1WGltUy1WLVBsMVNzV2t3c2dmRXRz?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Thu, 01 Oct 2026 01:00:00 GMT"
+      "title": "반도체값 폭등에 삼성폰 가격 또 올라…갤럭시 S26 15만원↑",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBveV9VemJkeHU0VTNIaGJkNzQzZGJQVUlicXh0MTZTZ3hHUnQxbXpKNUk1LWFCTjB5ZUhGMG1DcnYyTzhHX3NfNTRxaFp4eDBDSC1WVnU3bHdGUQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 01 Oct 2026 10:57:23 GMT"
     },
     {
-      "title": "‘韓 2000년 역사’ 유럽에 알린다…이건희 특별전 英 개최",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE03eXB6WExsZi01bmh5QW1IdzJMNTByQ3ZyY181WEJzOFdRanNkNG1tel8tTXp3TkV4cTNVMGVtV0ZtTWlXcGhRMlNHLVVhaUU?oc=5",
+      "title": "삼성전자, 1일부터 '갤S26' 가격 인상",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5EXzRmTFdUQUdrX3JBaVgzQTItbXlDd1o3N1NNZlR2QTMwNGRUaXFDNGVkMFpTRVRLaHBhOWVDd2pxbGQtZWc?oc=5",
       "source": "v.daum.net",
-      "date": "Thu, 01 Oct 2026 01:01:44 GMT"
+      "date": "Wed, 30 Sep 2026 21:01:13 GMT"
     },
     {
-      "title": "삼성 영국서 '민간외교' 확대, 이재용 \"예술과 문화는 보존하고 함께 나눠야\"",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45WGxvMHNLVGpIeFl1bHZsNmlpTnY4VUYxbWwwOGsxUWRZODg1UWNVSXBIb1MxM0tkUWR0ejlxWDZxb3RsMVN2THhtSnZobE9RU29OTnZidm84RWozUk1xLWtZZ01YWkJtSldLNUstVERsMUU?oc=5",
-      "source": "businesspost.co.kr",
-      "date": "Thu, 01 Oct 2026 01:00:00 GMT"
+      "title": "삼성전자, 갤럭시 S26 시리즈 15만원 인상...D램·낸드 가격 상승 탓",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Bb0RUcklqcUNkdFkwSUFNd25vM0JkR21Ea2VrTGFKSGhMbjRCb3hkcjl4cUVBNzdYalduejk0VzJHSDBMcUVlWUsyRkZGUDlKaVY0SUFlMGFEcmg1?oc=5",
+      "source": "newspim.com",
+      "date": "Thu, 01 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "title": "\"100조 풀자 '내 몫' 셈법\"…삼성전자 주주환원에 갈린 주주들",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNHVhb0EwREVVSkcxSEtrcHRQVmFzX1RiZ3NTdlZ2THRoNm9DNnliOHpHYlprTHRvbmtRN1dNdUR5YWotdko5NmxWMW5ucXpuM0YwMTdab3NpaTdibEZJbU9ZMWstSURlbWpENlFJOElyWFhYdWFwLXVxeW1fTmRpZFpEMA?oc=5",
+      "source": "인베스트조선",
+      "date": "Tue, 29 Sep 2026 05:34:00 GMT"
     },
     {
       "title": "KB증권 “삼성전자, 하반기 70조 현금배당 가능”",
@@ -71,28 +59,40 @@
       "date": "Wed, 30 Sep 2026 23:47:06 GMT"
     },
     {
-      "title": "[김대호 진단] 반도체열전 (59) HBM... SK하닉 vs 삼성전자",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGxRTUxjcE00WEYyOE95M2k1a09mMVdHNzhoR2RBWDYyNDkzc3dVNjNYN2VST0JIN3NyZVhMMWtaNnJWRFlzSlByZDRzZHd3R0VpSzlvb3pIZDNwZEkyZDBrSWd6cjNTM3V1VFZfM0x3c2QxbE91SGpGYjR4RjBWbF9vNGk?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Wed, 30 Sep 2026 15:00:00 GMT"
-    },
-    {
-      "title": "D램 품귀에 돈 쌓이는 삼성전자…“주주환원 4배 전망” [오늘 나온 보고서]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zNE1pUzllWWdiUHBZWnJKaDNMeVhEV1FabWlMZlptVTA1eC1FLWh5T3REZGY3bWJwXzljdUFwbGlhZzE2UjNpRnYwY0lqc00wcXc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Thu, 01 Oct 2026 00:01:08 GMT"
-    },
-    {
-      "title": "“삼성전자, 내년 HBM 가격 2배 뛴다…D램 공급 부족 장기화”",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBuRmxZcG9PNjZfaUh4Vm05NHFFWlF0UGQyY2xuVG44WjRuNDdOejNwU09ySXo5N1ljVVlFaUlKdjFuOEp2ZjVhVnBsVEtjZTJBajk2UENSZkV0S2FQYTNybDRlSmRwVHVkd0tMRTBxSEliaFU?oc=5",
-      "source": "마켓인",
-      "date": "Thu, 01 Oct 2026 00:05:34 GMT"
+      "title": "삼전 자사주 매입 '종료'...외인, 바통 이어받나",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yWU1YV1dQNnlRQjZZTkQ3akI3TmdUcDZzekNtX29JM1duUDBSVDlGTWwwUllSeTJVbk1aRVdqbEdkNzJkZmVnX0R6T3JLcEE?oc=5",
+      "source": "v.daum.net",
+      "date": "Thu, 01 Oct 2026 08:40:35 GMT"
     },
     {
       "title": "삼성전자, JBL 80주년 특별 기획전…인기제품 할인도",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVck92UFg4YzRJWUpWSHd3c2ZYNXJFanVBeWFOTmRya2QtNTBDWHI1V2l3OTF1NGJ0WUhROXpreUlDSFZlVFppNWhpY1BTdU9OUnB0alNZa0VBM0nSAWBBVV95cUxPM0RrZDllSzVlUWVVdlU0cnFzLUUzX0RZdTlneF9BMnZweU9MeXpITHA1ekk2LS1JU2hTSldaVHZwd3RPSm1kZWFPWkZma29GQjEyMFR0VDZnWU91NVJ3Yko?oc=5",
       "source": "yna.co.kr",
       "date": "Wed, 30 Sep 2026 23:20:59 GMT"
+    },
+    {
+      "title": "삼성전자, JBL 80주년 기념 특별 기획전 진행",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOaWJmV2hZaVpqc3VmT3BMYlo1V011a2xCTXI5X00tQndYNlNNamM2Rno4Zmlhd3VINmRRYS0waFFIWnlQTDNJaHFNQzQyaFVPTGZ4OXd1TWhoS3FvbmNDMTBhZ1dqby1mczZTT0xrdUFfVlFydFZLSFluNzZEZGs0d2FzeW9HOG56MkN0S0YwR29fWjl0WkE0NzVqbGNEaWxsTEtJNTN2QkI5MDBWcV85WkJENFRQYl9ZOUZvNEE4Sk5FOWJDLWZfaWJBNWEyQUZJMjh5cEFxQXg5X1FvS24tUDBWTXpqeHZOblNkaGwxOEpyV0Y5dS0tX044eC02b2JZbTJHWg?oc=5",
+      "source": "news.samsung.com",
+      "date": "Wed, 30 Sep 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, JBL 창립 80주년 기념 ‘특별 기획전’ 진행…최대 48% 할인",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yajc3bWw0WmxldUlweWRHUENXQjhqMWpfUEZTNmlPQ01oc1llTEhMOXpvX1dwNVF6STBqbWRCMUFZdkhQdmdOcmhLT3dxTXdZVnJacTRzVzFEMlp2WENJeUZZODRwRGxvM2taeGF3?oc=5",
+      "source": "중부일보",
+      "date": "Thu, 01 Oct 2026 08:41:00 GMT"
+    },
+    {
+      "title": "파리크라상, 신임 대표이사에 강신봉 전 삼성전자 부사장 내정",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qdWl2OEt2VlBJeGlBVHpLLUF1MTdfN3R5ZzZhTE1uZVlZQzFtRnlhX1kzUkZvRHp5WHFFMHYxTUEzcmJiMEdIQTNDVVdQYTA?oc=5",
+      "source": "v.daum.net",
+      "date": "Thu, 01 Oct 2026 00:53:01 GMT"
+    },
+    {
+      "title": "파리크라상, 신임 대표에 삼성전자 출신 강신봉 전 부사장 내정",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBIbXUzLWhreFk1YnF0S3lQUTJ0Q2g3cWRrZnZhVTRabkNQZmxJUzFzZ3JYSDJDU0prc2dRVW5PaVV3TXE4OEZ2OWhHdDQ5c2pvdnZ4NHdzZG1Xb2ZZLVZoVFZvTllwZG1PNGo4YjczQlTSAXRBVV95cUxOVlktMV9wZHg4OHgyWlJYRlpvY0dRNjQwb2NMZ2dNdHBsVUoxOUltakkydnUtY3dWU1hzTHZaQlZJemxqTmZzRDJ0QXhoZURRQ3NZd1prcUFpVmF2ZG9ZbGdjYUh5OHdMQ3N3Ri1fcWRxZ01OdA?oc=5",
+      "source": "IT조선",
+      "date": "Thu, 01 Oct 2026 08:30:36 GMT"
     }
   ]
 }
