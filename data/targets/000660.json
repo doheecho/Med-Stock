@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-30T14:07:55+00:00",
+  "updated_at": "2026-10-01T01:14:26+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3275909.0,
-  "target_high": 3767295,
+  "target_avg": 3276957.0,
+  "target_high": 3768501,
   "target_low": 3100000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,8 +18,8 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 3275909,
-      "date": "2026-09-29",
+      "target": 3276957,
+      "date": "2026-09-30",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -42,6 +42,33 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "신한투자",
+      "date": "2026-09-30",
+      "target": 2700000,
+      "prev_target": 2700000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "유안타",
+      "date": "2026-09-30",
+      "target": 3300000,
+      "prev_target": 3300000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-09-30",
+      "target": 3400000,
+      "prev_target": 3400000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "DS투자",
       "date": "2026-09-29",
