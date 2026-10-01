@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T11:34:42+00:00",
+  "updated_at": "2026-10-01T14:42:25+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -13,13 +13,13 @@
     {
       "title": "[ETF 시황] 코스닥·반도체 ETF 강세…2차전지·건설 테마는 약세",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwcC1rSXR1LWRCbmtJUUxlYXFKaHRicTFVSnZmRU54SDRXY1p3OTlpdXBzY213Wk5iZTNUdGdoU1g4NVZ1SHdJbHVFamtNWmxOdzFzYi1kT0VCcjIz?oc=5",
-      "source": "newspim.com",
+      "source": "뉴스핌",
       "date": "Tue, 29 Sep 2026 06:58:00 GMT"
     },
     {
       "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한주간 뭉칫돈 이탈",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZVjF2X1ZxRlJJenh6dTd3VDlhYlZWbzk5Y0xMdUJPRHY2ZE44eEtqY1JVcU4zRWhGbF94YURoZXJMbHJJRWg2LTI3bjJNQkg0azNKYXpFQktwVDDSAWBBVV95cUxNZUF1bHpDRU1zbFlHWFAwdDdkUjlxazF6SS05eTdIcWxwdlNjQUZldm1aUVhzeXpnTDBOZVJERVZ1TGlsT2NfWTdxRzdGbk9ldzNtbkVESXJfOWh6Qkp6N0c?oc=5",
-      "source": "yna.co.kr",
+      "source": "연합뉴스",
       "date": "Mon, 28 Sep 2026 07:44:15 GMT"
     },
     {
@@ -33,12 +33,6 @@
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zSW9IckZIbjlZWmZzQnZFX2hiVWNfSE82MndfVTNGM2pGSzRNc3RfYzNpejBQT1g0aU9KdDBVU0dnbWhjNHg1Y2JkR0ZPanEySHFZYmtUU0hQLThS?oc=5",
       "source": "티제이비",
       "date": "Mon, 28 Sep 2026 08:08:48 GMT"
-    },
-    {
-      "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한 주간 뭉칫돈 이탈",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBIOTJOTzFETldHYjhlQjVqQ1NqMmN0Y3JsbUYyYmszbWFvcjZkWUhlM1dkUFRTUlkySmZNR0xKTy02Y1lyZXc?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 28 Sep 2026 08:06:00 GMT"
     },
     {
       "title": "KODEX 美반도체, SK하이닉스 ADR 편입",
@@ -59,9 +53,15 @@
       "date": "Mon, 28 Sep 2026 23:30:14 GMT"
     },
     {
+      "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한 주간 뭉칫돈 이탈",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ2h6NEtNZEV4VGo0U0hleU9yUUd0UW1CZWxJd1VpeEtOMjljVUNmblpsRDlxYjctaWwzR1RCd1kzZ0hFajNpT3Q1emJ6ekxwaUpKQU5PSThiTUdBWUpFcHJlN2dLNmVuSEtCeTN0dWJ5UTNTaDE4dFdWaEo5TUlYQ2I1TTI3dw?oc=5",
+      "source": "news.sbs.co.kr",
+      "date": "Mon, 28 Sep 2026 08:04:15 GMT"
+    },
+    {
       "title": "삼성자산운용, KODEX 미국반도체에 SK하이닉스 ADR 편입",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzbG1PQlJfZ0g5WUUxdGVEb09QX0p4SktreE5TbkhkcjdDeDlYaWJxaUpjSXl3cTE2ZGxWZGl2VFMzQl9BNkgwVXRNQ204empzU3NDRnR1SkZ5Qm11dG1uazZoNG9RWThtbG9mNVl6MThNd9IBdkFVX3lxTFBLOHJhaDJJY2FHcFRNUkl2bFlhMnEwOHlNLWJudlZUWU5DYmk4aUR5SU1FR09jMkdDMlR3dDl2el9tRFJQd1cxWG4xOS1iMVJtV2t1WUZJbE8yaGdwVEZhb3U3NUIyOUt0VjI1cTdmMUFtOE15ZEE?oc=5",
-      "source": "포춘코리아",
+      "source": "fortunekorea.co.kr",
       "date": "Mon, 21 Sep 2026 07:59:15 GMT"
     },
     {
@@ -73,7 +73,7 @@
     {
       "title": "삼성운용 KODEX 미국반도체, SK하이닉스 ADR 신규 편입",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aRFpuUHNMRHZ4eGEzdnBiSWpRek1GRDZEdDFQb3RLTVdKbjNsdVdpQUJmQzJCX1Y3TW5MVnhVSWI0M2JiSjlIV1VtdV94ejRlcGtTWndnaldQa03SAWBBVV95cUxQeXBkRng4dVBicG1MbGZGcWtNN3dwcXJka2Z1SWRBUG9DaE5RUmhYVGl2SEhpMENQd2Myc21SZ3p1LS05OTFkNDBVRWFHNVZBWnlnQmc4QmUtMXFEaGY5ckg?oc=5",
-      "source": "yna.co.kr",
+      "source": "연합뉴스",
       "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     },
     {
@@ -89,9 +89,9 @@
       "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성운용 'KODEX 미국반도체' ETF, SK하이닉스 ADR 편입",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hcEw1OGN2LXpubzl0RmdycjNFSDBJUVZJRE84cEJfVzNMaVBaZ1VMNFh6dUhVOHhvdGVUd0RHenlYNEFtTExzanZpOHJScGJPbFVkWV8xQUVLVVRLQ0NLNA?oc=5",
-      "source": "asiae.co.kr",
+      "title": "삼성운용 KODEX 미국반도체, SK하이닉스 ADR 편입",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTy1va28zOTE0SGd3ZTgtYl9SSFFvZENPNWtIOHRHMEEzdjcwOEVpNTY5MS1xRFVDa0c0S0ZveXF5dFJqclpNdFctTUh1dGtXZi1aTkl0RFVodGxY?oc=5",
+      "source": "뉴스핌",
       "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     }
   ]
