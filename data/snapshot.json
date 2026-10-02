@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-02T11:03:19+00:00",
+  "updated_at": "2026-10-02T14:04:25+00:00",
   "as_of": "2026-10-02",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 280919816.51,
-  "total_pl_close": 150654606.23,
+  "total_value_close": 280919746.22,
+  "total_pl_close": 150654535.94,
   "total_pl_pct_close": 115.65,
   "positions": [
     {
@@ -119,16 +119,16 @@
           "quantity": 9.0,
           "buy_date": null,
           "cost_basis": 2456.28,
-          "eval_value_close": 9876.51,
-          "pl_close": 7420.23,
-          "pl_pct_close": 302.09
+          "eval_value_close": 9806.22,
+          "pl_close": 7349.94,
+          "pl_pct_close": 299.23
         }
       ],
-      "last_close": 1097.39,
+      "last_close": 1089.58,
       "cost_basis": 2456.28,
-      "eval_value_close": 9876.51,
-      "pl_close": 7420.23,
-      "pl_pct_close": 302.09,
+      "eval_value_close": 9806.22,
+      "pl_close": 7349.94,
+      "pl_pct_close": 299.23,
       "target_avg": 1520.0217,
       "target_high": 2200.0,
       "target_low": 361.0,

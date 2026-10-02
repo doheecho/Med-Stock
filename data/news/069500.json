@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T11:02:33+00:00",
+  "updated_at": "2026-10-02T14:03:32+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -29,12 +29,6 @@
       "date": "Thu, 01 Oct 2026 01:26:00 GMT"
     },
     {
-      "title": "삼성자산운용, KODEX 커버드콜 2종...월 2회 분배 조합 제시",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wVlIxb245QjBpRUxTOVFSdTE3RmNkZC1ZZjU4aW9NM3VDeVdKLVFnMXJsbGZOczM4cV9HaEVfVEwxeFVsaWJPUGpPQkRQY1I2NVptb05aSjMzRlRRM0dycWNfMTVNMmFTTTY3Z0diU2lFd2ptdkcw0gF3QVVfeXFMTXBWUjFvbjlCMGlFTFM5UVJ1MTdGY2RkLVlmNThpb00zdUN5V0otUWcxcmxsZk5zMzhxX0doRV9UTDF4VWxpYk9Qak9CRFBjUjY1Wm1vTlpKMzNGVFEzR3JxY18xNU0yYVNNNjdnR2JTaUV3am12RzA?oc=5",
-      "source": "pinpointnews.co.kr",
-      "date": "Thu, 01 Oct 2026 11:26:02 GMT"
-    },
-    {
       "title": "삼성자산운용, 국내 커버드콜 ETF 2종 조합 제시…월 2회 분배금 추구",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HT3V2UGZTLWNGbTBuV0ExNXpMZnV0dVpCeHljSDlvdUl6MW0xTmVRbmdZM1YzaG9qSS1Rb1NwZkcxS2pORnhrdjJlUThOamt3N2h1NXQyX0tRMnpjamhpdnNsaGU?oc=5",
       "source": "매일일보",
@@ -43,8 +37,14 @@
     {
       "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한주간 뭉칫돈 이탈",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZVjF2X1ZxRlJJenh6dTd3VDlhYlZWbzk5Y0xMdUJPRHY2ZE44eEtqY1JVcU4zRWhGbF94YURoZXJMbHJJRWg2LTI3bjJNQkg0azNKYXpFQktwVDDSAWBBVV95cUxNZUF1bHpDRU1zbFlHWFAwdDdkUjlxazF6SS05eTdIcWxwdlNjQUZldm1aUVhzeXpnTDBOZVJERVZ1TGlsT2NfWTdxRzdGbk9ldzNtbkVESXJfOWh6Qkp6N0c?oc=5",
-      "source": "yna.co.kr",
+      "source": "연합뉴스",
       "date": "Mon, 28 Sep 2026 07:44:15 GMT"
+    },
+    {
+      "title": "삼성자산운용, KODEX 커버드콜 2종...월 2회 분배 조합 제시",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wVlIxb245QjBpRUxTOVFSdTE3RmNkZC1ZZjU4aW9NM3VDeVdKLVFnMXJsbGZOczM4cV9HaEVfVEwxeFVsaWJPUGpPQkRQY1I2NVptb05aSjMzRlRRM0dycWNfMTVNMmFTTTY3Z0diU2lFd2ptdkcw0gF3QVVfeXFMTXBWUjFvbjlCMGlFTFM5UVJ1MTdGY2RkLVlmNThpb00zdUN5V0otUWcxcmxsZk5zMzhxX0doRV9UTDF4VWxpYk9Qak9CRFBjUjY1Wm1vTlpKMzNGVFEzR3JxY18xNU0yYVNNNjdnR2JTaUV3am12RzA?oc=5",
+      "source": "핀포인트뉴스",
+      "date": "Thu, 01 Oct 2026 11:26:02 GMT"
     },
     {
       "title": "삼성자산운용, 코스피200 커버드콜 ETF 결합한 ‘월 2회 배당’ 전략 제시",
@@ -83,16 +83,16 @@
       "date": "Thu, 01 Oct 2026 08:05:58 GMT"
     },
     {
-      "title": "폭락장 겪었어도… 올 최고 수익 자산은‘코스피200 ETF’",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFUFRjbm5TbzNjQ29CMXNsRldSZ3VvRkU4X3p6dWJiZENuODVrQjdvQ25obDFiemh3Ym5Nd3RYa0ZxX05HRHpnRWFLNXRZd3c?oc=5",
-      "source": "v.daum.net",
-      "date": "Sun, 27 Sep 2026 15:26:00 GMT"
-    },
-    {
       "title": "삼성자산운용, 국내 커버드콜 ETF로 '월 2회 분배금' 조합 제시",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05azd5WnhMd0FicWhpbS1SZDJvb1pRSFBtU0R3c1FWM1NkejZUMUpJanBJdk0tZ1g1T0g1TEhhb09CMDVySUJGc2UwU2FmWGZCb2w5MFVEVkJMdVdZWjFqZjNpWkw2bHZ3VUpKUG9yNU85Y1XSAXNBVV95cUxNOWs3eVp4THdBYnFoaW0tUmQyb29aUUhQbVNEd3NRVjNTZHo2VDFKSWpwSXZNLWdYNU9INUxIYW9PQjA1cklCRnNlMFNhZlhmQm9sOTBVRFZCTHVXWVoxamYzaVpMNmx2d1VKSlBvcjVPOWNV?oc=5",
       "source": "초이스경제",
       "date": "Thu, 01 Oct 2026 02:12:41 GMT"
+    },
+    {
+      "title": "폭락장 겪었어도… 올 최고 수익 자산은‘코스피200 ETF’",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFUFRjbm5TbzNjQ29CMXNsRldSZ3VvRkU4X3p6dWJiZENuODVrQjdvQ25obDFiemh3Ym5Nd3RYa0ZxX05HRHpnRWFLNXRZd3c?oc=5",
+      "source": "v.daum.net",
+      "date": "Sun, 27 Sep 2026 15:26:00 GMT"
     }
   ]
 }
