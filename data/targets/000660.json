@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T14:42:15+00:00",
+  "updated_at": "2026-10-02T01:36:41+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3276957.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-30",
+  "as_of": "2026-10-01",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3276957,
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-10-01",
+      "target": 3200000,
+      "prev_target": 3200000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "신한투자",
       "date": "2026-09-30",
@@ -79,15 +88,6 @@
       "prev_opinion": "BUY"
     },
     {
-      "firm": "대신",
-      "date": "2026-09-28",
-      "target": 3200000,
-      "prev_target": 3200000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "BNK투자",
       "date": "2026-09-14",
       "target": 1480000,
@@ -111,15 +111,6 @@
       "target": 2300000,
       "prev_target": 2000000,
       "chg": 15.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "LS",
-      "date": "2026-08-31",
-      "target": 2400000,
-      "prev_target": 3300000,
-      "chg": -27.27,
       "opinion": "Buy",
       "prev_opinion": "Buy"
     }

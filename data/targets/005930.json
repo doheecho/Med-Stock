@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T14:42:10+00:00",
+  "updated_at": "2026-10-02T01:36:37+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 489762.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-09-30",
+  "as_of": "2026-10-01",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 489762,
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -43,6 +43,33 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-10-01",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "하나",
+      "date": "2026-10-01",
+      "target": 480000,
+      "prev_target": 480000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-09-30",
+      "target": 530000,
+      "prev_target": 530000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "신한투자",
       "date": "2026-09-30",
       "target": 450000,
@@ -56,15 +83,6 @@
       "date": "2026-09-30",
       "target": 630000,
       "prev_target": 630000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "NH투자",
-      "date": "2026-09-30",
-      "target": 530000,
-      "prev_target": 530000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
@@ -95,15 +113,6 @@
       "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-09-22",
-      "target": 560000,
-      "prev_target": 560000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "BNK투자",
@@ -140,15 +149,6 @@
       "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
-    },
-    {
-      "firm": "LS",
-      "date": "2026-08-31",
-      "target": 450000,
-      "prev_target": 400000,
-      "chg": 12.5,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     }
   ],
   "ticker": "005930",
