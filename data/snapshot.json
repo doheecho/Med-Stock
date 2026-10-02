@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-02T01:37:28+00:00",
+  "updated_at": "2026-10-02T11:03:19+00:00",
   "as_of": "2026-10-02",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 279830016.51,
-  "total_pl_close": 149564806.23,
-  "total_pl_pct_close": 114.82,
+  "total_value_close": 280919816.51,
+  "total_pl_close": 150654606.23,
+  "total_pl_pct_close": 115.65,
   "positions": [
     {
       "ticker": "005930",
@@ -21,9 +21,9 @@
           "quantity": 181.0,
           "buy_date": null,
           "cost_basis": 21415739.0,
-          "eval_value_close": 49594000.0,
-          "pl_close": 28178261.0,
-          "pl_pct_close": 131.58
+          "eval_value_close": 49956000.0,
+          "pl_close": 28540261.0,
+          "pl_pct_close": 133.27
         },
         {
           "account": "미래에셋(RIA)",
@@ -31,9 +31,9 @@
           "quantity": 5.0,
           "buy_date": null,
           "cost_basis": 1810470.0,
-          "eval_value_close": 1370000.0,
-          "pl_close": -440470.0,
-          "pl_pct_close": -24.33
+          "eval_value_close": 1380000.0,
+          "pl_close": -430470.0,
+          "pl_pct_close": -23.78
         },
         {
           "account": "NH투자증권",
@@ -41,16 +41,16 @@
           "quantity": 104.0,
           "buy_date": null,
           "cost_basis": 9405032.0,
-          "eval_value_close": 28496000.0,
-          "pl_close": 19090968.0,
-          "pl_pct_close": 202.99
+          "eval_value_close": 28704000.0,
+          "pl_close": 19298968.0,
+          "pl_pct_close": 205.2
         }
       ],
-      "last_close": 274000.0,
+      "last_close": 276000.0,
       "cost_basis": 32631241.0,
-      "eval_value_close": 79460000.0,
-      "pl_close": 46828759.0,
-      "pl_pct_close": 143.51,
+      "eval_value_close": 80040000.0,
+      "pl_close": 47408759.0,
+      "pl_pct_close": 145.29,
       "target_avg": 489762.0,
       "target_high": 563226,
       "target_low": 400000,
@@ -70,9 +70,9 @@
           "quantity": 70.0,
           "buy_date": null,
           "cost_basis": 33350520.0,
-          "eval_value_close": 128310000.0,
-          "pl_close": 94959480.0,
-          "pl_pct_close": 284.73
+          "eval_value_close": 128940000.0,
+          "pl_close": 95589480.0,
+          "pl_pct_close": 286.62
         },
         {
           "account": "미래에셋(RIA)",
@@ -80,9 +80,9 @@
           "quantity": 4.0,
           "buy_date": null,
           "cost_basis": 9373444.0,
-          "eval_value_close": 7332000.0,
-          "pl_close": -2041444.0,
-          "pl_pct_close": -21.78
+          "eval_value_close": 7368000.0,
+          "pl_close": -2005444.0,
+          "pl_pct_close": -21.39
         },
         {
           "account": "NH투자증권",
@@ -90,16 +90,16 @@
           "quantity": 6.0,
           "buy_date": null,
           "cost_basis": 13860000.0,
-          "eval_value_close": 10998000.0,
-          "pl_close": -2862000.0,
-          "pl_pct_close": -20.65
+          "eval_value_close": 11052000.0,
+          "pl_close": -2808000.0,
+          "pl_pct_close": -20.26
         }
       ],
-      "last_close": 1833000.0,
+      "last_close": 1842000.0,
       "cost_basis": 56583964.0,
-      "eval_value_close": 146640000.0,
-      "pl_close": 90056036.0,
-      "pl_pct_close": 159.15,
+      "eval_value_close": 147360000.0,
+      "pl_close": 90776036.0,
+      "pl_pct_close": 160.43,
       "target_avg": 3276957.0,
       "target_high": 3768501,
       "target_low": 3100000,
@@ -148,16 +148,16 @@
           "quantity": 37.0,
           "buy_date": null,
           "cost_basis": 551670.0,
-          "eval_value_close": 273985.0,
-          "pl_close": -277685.0,
-          "pl_pct_close": -50.34
+          "eval_value_close": 272320.0,
+          "pl_close": -279350.0,
+          "pl_pct_close": -50.64
         }
       ],
-      "last_close": 7405.0,
+      "last_close": 7360.0,
       "cost_basis": 551670.0,
-      "eval_value_close": 273985.0,
-      "pl_close": -277685.0,
-      "pl_pct_close": -50.34,
+      "eval_value_close": 272320.0,
+      "pl_close": -279350.0,
+      "pl_pct_close": -50.64,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
@@ -177,16 +177,16 @@
           "quantity": 130.0,
           "buy_date": null,
           "cost_basis": 12308790.0,
-          "eval_value_close": 14441700.0,
-          "pl_close": 2132910.0,
-          "pl_pct_close": 17.33
+          "eval_value_close": 14567800.0,
+          "pl_close": 2259010.0,
+          "pl_pct_close": 18.35
         }
       ],
-      "last_close": 111090.0,
+      "last_close": 112060.0,
       "cost_basis": 12308790.0,
-      "eval_value_close": 14441700.0,
-      "pl_close": 2132910.0,
-      "pl_pct_close": 17.33,
+      "eval_value_close": 14567800.0,
+      "pl_close": 2259010.0,
+      "pl_pct_close": 18.35,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
@@ -206,16 +206,16 @@
           "quantity": 250.0,
           "buy_date": null,
           "cost_basis": 26574000.0,
-          "eval_value_close": 37535000.0,
-          "pl_close": 10961000.0,
-          "pl_pct_close": 41.25
+          "eval_value_close": 37195000.0,
+          "pl_close": 10621000.0,
+          "pl_pct_close": 39.97
         }
       ],
-      "last_close": 150140.0,
+      "last_close": 148780.0,
       "cost_basis": 26574000.0,
-      "eval_value_close": 37535000.0,
-      "pl_close": 10961000.0,
-      "pl_pct_close": 41.25,
+      "eval_value_close": 37195000.0,
+      "pl_close": 10621000.0,
+      "pl_pct_close": 39.97,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
@@ -235,16 +235,16 @@
           "quantity": 37.0,
           "buy_date": null,
           "cost_basis": 1613089.0,
-          "eval_value_close": 1469455.0,
-          "pl_close": -143634.0,
-          "pl_pct_close": -8.9
+          "eval_value_close": 1474820.0,
+          "pl_close": -138269.0,
+          "pl_pct_close": -8.57
         }
       ],
-      "last_close": 39715.0,
+      "last_close": 39860.0,
       "cost_basis": 1613089.0,
-      "eval_value_close": 1469455.0,
-      "pl_close": -143634.0,
-      "pl_pct_close": -8.9,
+      "eval_value_close": 1474820.0,
+      "pl_close": -138269.0,
+      "pl_pct_close": -8.57,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
