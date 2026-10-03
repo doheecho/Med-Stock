@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-10-02T14:03:27+00:00",
+  "updated_at": "2026-10-03T01:05:51+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’ 공개",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOVU5WHowVGdiRHRNeTdDanVuSlRFWENEM3pBbUNwS0w2LUtjb0NIQnIxNGhwekhSVEU1ZGJ4VlhhZzIzSEJLN3RvM1NBeDNJa0kzLWNGcElKQUliUE9LN1Y3bGN0M2puTHdHak9vRmY2ODdfdDF5X1l1S3cwOTFoaVFaUkVkNldibzlzUG9ibUIxS3E1YUJLM29yUnRPZ1ZEZXU3SlZ0TER2ZjJZal80V1RKZEVraUhnaWZvbGtuZVdkYmVSdjdBektxWHdaS2pCZjRJbkdCTFlEZ25CVzNkT0ZuYy1acm5k?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Wed, 30 Sep 2026 23:00:00 GMT"
-    },
     {
       "title": "삼성전자, 갤럭시 최초 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 공개",
       "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOSE5BbzJraEhFQ2tmcENoQlZKMlF4bzM5Nk41OUN4ZzQzTTJnWjNsNWM0T3VBQ010LU1HYUtLQk5sSjNuRThuZTJnTDZOdTk4NVg0eXE2MzVlV0pTb0xEQllFREdEWndlZEhjSVFWcXFqYmhFSk9JRU5abVJZWHl5OWw2ZVJMV19FMWVMQjVCdUxKUTdFYjNjLWJpd0xqd3dZUndPaDNubzhKYUlnYUNaN1dRb3R5YmxvczFWU0FSNldyNll1U1pjWGdjbmQxUWNwV0pHWmQtTndhNURUZk5XaHZTYVZ1clFVcE1nUDNLa01yMkNwcmhFZ3hfQnlvWGFQZXBCbUJWRUpBdm9SX3RycWZRWE5ndWI3OU5QaU1oQWszYXZmdzZpMTZTMkZZeHFfU1ZlT3ZmRC1CWHVkSnJJUEw0SXRSQUk?oc=5",
@@ -17,10 +11,16 @@
       "date": "Wed, 30 Sep 2026 23:00:00 GMT"
     },
     {
-      "title": "삼성폰 어디서 왔지?…러시아서 애플 제친 갤럭시",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CNXZiV3I4bXFGSVptMnQ2dm92SHNOb3p5TEpjeTNTTUhYdHE5aU5JZmsyTnA4V1o2cVNMQk5UbjhrU29veUVrS0RFQmpYYnM?oc=5",
+      "title": "삼성전자, ‘갤럭시 탭 S12 시리즈’ 공개",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOVU5WHowVGdiRHRNeTdDanVuSlRFWENEM3pBbUNwS0w2LUtjb0NIQnIxNGhwekhSVEU1ZGJ4VlhhZzIzSEJLN3RvM1NBeDNJa0kzLWNGcElKQUliUE9LN1Y3bGN0M2puTHdHak9vRmY2ODdfdDF5X1l1S3cwOTFoaVFaUkVkNldibzlzUG9ibUIxS3E1YUJLM29yUnRPZ1ZEZXU3SlZ0TER2ZjJZal80V1RKZEVraUhnaWZvbGtuZVdkYmVSdjdBektxWHdaS2pCZjRJbkdCTFlEZ25CVzNkT0ZuYy1acm5k?oc=5",
+      "source": "Samsung Global Newsroom",
+      "date": "Wed, 30 Sep 2026 23:00:00 GMT"
+    },
+    {
+      "title": "메모리 반도체 값 '나비 효과'…삼성 '갤럭시'도 천정부지",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5vOEE1VmpMNmRFbUlSWDVWdjVrUTBKVjBLZjJYNGY5enJNa0pvRGhoUmFrNDFKaWlhcUlnRElBQldYNXREbjN4Vy1WM292WUk?oc=5",
       "source": "v.daum.net",
-      "date": "Fri, 02 Oct 2026 06:48:01 GMT"
+      "date": "Fri, 02 Oct 2026 23:02:05 GMT"
     },
     {
       "title": "삼성전자, 자사주 계획물량 모두 매입…수급우려 커지나(종합)",
@@ -29,46 +29,34 @@
       "date": "Fri, 02 Oct 2026 01:30:45 GMT"
     },
     {
-      "title": "\"항상 주변에 삼성·국정원이 있다고 생각하라\"",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBVFhvSnFibFh6OGt5b18zaFZLTjdRRndRak9yYnFxb3VGNHdIMFJtQ09HdW95SWJ4SEM0eXdScVFFMW1UZFpHSTZZUmRKTDROcVNLazFR?oc=5",
+      "title": "연간 설비투자 '2배' 늘리는 마이크론…삼성·SK 압박",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tOXJGOU9JbTdjTjVTdnV2UUlxQTBRN3FKSFdMTFZmeG1lMjNrQS00anZyMFlOTy1ham9zM28ta0hqUjhMbGtQX3dfZTV5UThtUGRWdjBR?oc=5",
       "source": "지디넷코리아",
-      "date": "Fri, 02 Oct 2026 13:03:36 GMT"
+      "date": "Sat, 03 Oct 2026 00:00:01 GMT"
     },
     {
-      "title": "AI 칩 ‘받침판’ 40배 커진다… 삼성전자, HBM4E 발열 문제 해결에 고심 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSGFEcHBJUDZDZXZUamRlRUR3N2swTXdYaU8xekJoLWdUOHNZSGlLeEVQVUstcG1rLXJ6dE50MldQdkd5NExrT3psMUw3QTg1VE14MlFlZjcxbktIc2xQaC1XMm9DdU16dVllMDJGZWt0eUdrUTVCMkNMVXhWbFc2QUtR0gGWAUFVX3lxTE9uSDFsdmJ3bVo4c0s1eG9GZzJROW1BMEd1VEIxQ3JjUDlEM3lNUUdRNWlBTm1uYjZxbTRiUXJPbE4xLXFfdTI4MkVPSDdFb1FuREJRQ0hRckY1RVhxV2NCc1JRQW8wVE5JUlBxSFU3eWNmYzQyRkM5dHVhOTBhN3psWVB0N0xYZUVIek05YVhLcEVBczFKdw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Fri, 02 Oct 2026 06:21:00 GMT"
+      "title": "삼성전자 3Q 영업익 105조 전망…메모리 영업이익률 70~80%대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NNXJKMVpiZUZ6eWdmZW1YYUxZNmtodmZCREJaOXREb3RjS1gtMmhTVUk2U29VS05mSloyWGVucHpaTUJJN2tLOHVvSEN3X3c5Uk1ETmdOTExBbDJ3TDlTOWJhSmVKUUJCa2N3WnNOOWg?oc=5",
+      "source": "연합인포맥스",
+      "date": "Thu, 01 Oct 2026 23:24:00 GMT"
     },
     {
-      "title": "삼성전자, 3분기 매출 1000억 달러 돌파...두분기 연속",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjTFh3Sml0OGdyakRwcmNUTFUwTUo1VmgxR3RBd2s5a3ZEMm1RbTBxdUxTYzVLZVdra0FYZzlzb1FKeHlHUEJ3S1hmWHYwV0U?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 02 Oct 2026 06:01:13 GMT"
+      "title": "SG, 삼성전자 온양캠퍼스에 ‘에코스틸아스콘’ 1차 시공 완료",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yeUlDTnZ6TE51RjJld1FYNG1iakg3eXRNQngwbmc2aFhYTDBLc01OWDdnWkkxeTUyZHFnay1ERDQ3Y2NocWpPSGU1VFFBSE8wU2c?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Fri, 02 Oct 2026 01:16:22 GMT"
     },
     {
-      "title": "[단독] 삼성, 내년 HBM4 가격 3배 높인다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PbG5TdklTMnVyWmEtOW1VNGpaT0tfMmRJNGt1OXVIM09icEhjWTZOMEp1U1F6UG9KODBaVVI1SW1HNnZlZDNtUmpORlRlZUViTDRjVUJ3?oc=5",
-      "source": "매일경제",
-      "date": "Fri, 02 Oct 2026 06:20:29 GMT"
-    },
-    {
-      "title": "\"내 통장엔 특별성과급 몇억?\"…삼성전자 다음주 세부기준안 공개 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00aWszTTItQk14LWVJSnpocEcwNGswQzl0cTNlVTVVYkVLa0lVYUxMUGo1Sk9jUy1WUF9JakQwY2M4Ql9KSmYzTFNNRTAza0xtMjhKb3lVWmhBSlhtbjZCSEVtNU9KWllTZkVONNIBckFVX3lxTE1hUXVveG1VWHkwUnNSNjNDdXF1NDhPekoxc2JCU2l0YzE4Yk1wUFkzOHNQajAwQ3ZGZE41SmYtdDY1M0F0azF3Q2xYWXh1a2F4bXYtN0VfSk5rbEN5MU5aZHR5cmVTemZPNXFQMEJTOXRLdw?oc=5",
+      "title": "[더벨]SG, 삼성전자 온양캠퍼스에 에코스틸아스콘 1차 시공 완료 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16NURrd2hfSV84OHAyY0YwXzhPVWtCb19VaUdVOU5HamZvX25BX3NRWU1aODBGVWw1Rm9LWE9MeXpPZ2tTV3ViSkNDOE5MVDlydTNGaXEzNHJHeFZzUkZoSXd6MUtkV3BZ0gFuQVVfeXFMT3hmbjJlMTVkd3ZtVjlJNXRvSEpZSWpkM1N4R0Iyc2ZER1ZXSGM0U3FRVmVmRHF5cWFvdzYwMUR4YTZ1ZGVZZlA1ZUk5WkhhVk5mX3hrUmMxY3lfSGtBbGxQUDNkVi1VN1cxanZIWUE?oc=5",
       "source": "머니투데이",
-      "date": "Fri, 02 Oct 2026 06:47:37 GMT"
+      "date": "Fri, 02 Oct 2026 01:28:04 GMT"
     },
     {
-      "title": "\"수억 달린 성과급에 조마조마\"…삼성전자 성과급 기준 7일 안내",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNXFYOG1IdGtZTnlLUldMNHBjVHBYUlh5OHV5Qmh5OXdhdHpmWDR1VXZYYmhjck53a25QMmNOQkQ2MTZXWEI1OXVXc0dkc2hUcjF0aEpya1oyWjdIc1NWYzF1SGt6QTh4QUNLRVN2UXJZZWVyY00wd3BtT2VBWDA2eQ?oc=5",
-      "source": "edaily.co.kr",
-      "date": "Fri, 02 Oct 2026 02:48:14 GMT"
-    },
-    {
-      "title": "삼성전자 반도체 특별성과급 세부안 공개 임박…'지급 기준'에 이목 쏠려",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6cTFTZEV0eVZtWWJ4em9xNVI1ODBjMlNfWkhvZ0Y4dkliUHlEcGdSRTc4MzVkN2pWM2VFdEIyQkdaVVQtUnh0QmpwaFE0NDQySDZXa1lfZk9JYlExam5yRdIBeEFVX3lxTE8zczZpa3NZR3A5OF9jTWdmVGFsdXlseEtxRVc5dGhaNzZiUXBLT3lPMkQtajNIb0ZneWJqRldoOHdvdXpBbVQyRWhSY2lweHhpMDVxalI5XzdLd3FiRmRGM25VLVJIMjl6Qk9ZMHEzNl9ybkVtdS1ybA?oc=5",
-      "source": "뉴시스",
-      "date": "Fri, 02 Oct 2026 02:18:14 GMT"
+      "title": "SG, 삼성전자 온양캠퍼스에 ‘에코스틸아스콘’ 1차 시공 완료",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9DX2htMThTdVE3SEFZTWZ3alVUTVJjQzBQM3FmejMzWWF0REtwRWZGOTdtb0UxZnY2RjhyU3NhRWZma2Z5RHZJS3pPVHJHeHdlTmfSAVNBVV95cUxOTzdjVmltQWhmTy1mWnQ2d3RtVmEyRDc2NlNqMkJORHpZUGp4NE1MSVVkdWxLZ3F4dkU3ZEs5dGNUYUdOdF9QQWdoYjg0czBUS25aYw?oc=5",
+      "source": "서울경제",
+      "date": "Fri, 02 Oct 2026 06:04:28 GMT"
     },
     {
       "title": "주형철 경기도 경제부지사 반도체산업 현장행보…삼성전자 평택캠퍼스·방류수 관리현장 점검",
@@ -77,22 +65,34 @@
       "date": "Fri, 02 Oct 2026 00:07:00 GMT"
     },
     {
-      "title": "“삼성전자 현저한 저평가 상태…목표주가 46만원 유지” 증권사 전망",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LTVNGbDBuVEJHVXppU0MzZVFoZ05xTjZiQWJ0Q1dVVkw1VTlWdjNHc1VBaVd3MktHV1FlRXA4b2RaWkdHeUNzaEprdFhEQzUtMmc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 02 Oct 2026 00:00:14 GMT"
+      "title": "코스피 7,000선 회복…연휴 후 삼성전자 실적 발표",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PdFVmREh6bWt5OGdJdGtmMXAxdjRWa1hfbEpYdUEyMXc5RUh5aXJwaFZkNHlOTDZsaV9UV1NSZXB4bzBUdkxMeURJU3p1MWs?oc=5",
+      "source": "v.daum.net",
+      "date": "Fri, 02 Oct 2026 12:09:17 GMT"
     },
     {
       "title": "삼성전자 반등에 7000피 복귀…오늘 밤이 중요한 이유 [마켓시그널]",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wRGZfY2E3d2RvYnlxbU9wSnV4T0J6NTdHZGcxMm5tYkwyRVpHaEVLZnY0Z0FfYXRMOGZoV1FpTWg5S2lmMGRpWDJhZ3VOdEZaMVHSAVNBVV95cUxNcXgxcU81dFFZb3YzVUNwc0JJNnotZnl6eU9rMUdJZTRBUXZab05maHlDMzBHd2lsX1BoMEhyMEdRckYtejdZN1R0WFJ3UmNfVl9sWQ?oc=5",
-      "source": "sedaily.com",
+      "source": "서울경제",
       "date": "Fri, 02 Oct 2026 07:53:15 GMT"
     },
     {
-      "title": "[주간증시전망] 7000선 회복한 코스피⋯다음주 삼성전자 잠정실적 발표",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5naGVtZmk5SkFqUFFwdDdNZFdwS29FckFVRTlKUUNza3JCU0loME9jRWsxdXlSckkxY2FBYmtxcWNwd1llQTJqTWN3Vnh6bTg?oc=5",
-      "source": "v.daum.net",
-      "date": "Fri, 02 Oct 2026 12:24:04 GMT"
+      "title": "[개장시황]코스피, 하락 출발…삼성전자 약세·하이닉스 강보합",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CWUJkWVplb0xQZlBGQlJrU1FERFBkMEQ2eGlJajFSQUZjYTVpWUgxTnlObkRNd1FzbWptd0g1WE9CYm42WUxrV29BR0V6MHBQSXpTaDlhMXplNkxDOXltSHlCeE0xQ2VGcXU3eNIBcEFVX3lxTE1vMWsySHNMemlNWnNNcXAxSEhXbGhfcEZzb0tCS1JkbldBVVFQZl9pTDU0QlNRbWdDZmxMb0NoMnZCalVKU0F1M0N2ekRjbEYwWTlNMUxGVDNndHY3SjRCbUdWblJpYVMwN2JIVTk5eGU?oc=5",
+      "source": "namdonews.com",
+      "date": "Fri, 02 Oct 2026 00:15:00 GMT"
+    },
+    {
+      "title": "AI 칩 ‘받침판’ 40배 커진다… 삼성전자, HBM4E 발열 문제 해결에 고심 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSGFEcHBJUDZDZXZUamRlRUR3N2swTXdYaU8xekJoLWdUOHNZSGlLeEVQVUstcG1rLXJ6dE50MldQdkd5NExrT3psMUw3QTg1VE14MlFlZjcxbktIc2xQaC1XMm9DdU16dVllMDJGZWt0eUdrUTVCMkNMVXhWbFc2QUtR0gGWAUFVX3lxTE9uSDFsdmJ3bVo4c0s1eG9GZzJROW1BMEd1VEIxQ3JjUDlEM3lNUUdRNWlBTm1uYjZxbTRiUXJPbE4xLXFfdTI4MkVPSDdFb1FuREJRQ0hRckY1RVhxV2NCc1JRQW8wVE5JUlBxSFU3eWNmYzQyRkM5dHVhOTBhN3psWVB0N0xYZUVIek05YVhLcEVBczFKdw?oc=5",
+      "source": "Chosunbiz",
+      "date": "Fri, 02 Oct 2026 06:21:00 GMT"
+    },
+    {
+      "title": "\"내 통장엔 특별성과급 몇억?\"…삼성전자 다음주 세부기준안 공개 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00aWszTTItQk14LWVJSnpocEcwNGswQzl0cTNlVTVVYkVLa0lVYUxMUGo1Sk9jUy1WUF9JakQwY2M4Ql9KSmYzTFNNRTAza0xtMjhKb3lVWmhBSlhtbjZCSEVtNU9KWllTZkVONNIBckFVX3lxTE1hUXVveG1VWHkwUnNSNjNDdXF1NDhPekoxc2JCU2l0YzE4Yk1wUFkzOHNQajAwQ3ZGZE41SmYtdDY1M0F0azF3Q2xYWXh1a2F4bXYtN0VfSk5rbEN5MU5aZHR5cmVTemZPNXFQMEJTOXRLdw?oc=5",
+      "source": "머니투데이",
+      "date": "Fri, 02 Oct 2026 06:47:37 GMT"
     }
   ]
 }

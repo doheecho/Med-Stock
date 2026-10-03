@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T14:03:17+00:00",
+  "updated_at": "2026-10-03T01:05:42+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 489762.0,
@@ -43,13 +43,22 @@
   ],
   "consensus_rows": [
     {
-      "firm": "대신",
-      "date": "2026-10-01",
-      "target": 560000,
-      "prev_target": 560000,
+      "firm": "삼성",
+      "date": "2026-10-02",
+      "target": 400000,
+      "prev_target": 400000,
       "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "IBK투자",
+      "date": "2026-10-02",
+      "target": 460000,
+      "prev_target": 460000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
     },
     {
       "firm": "하나",
@@ -61,10 +70,10 @@
       "prev_opinion": "BUY"
     },
     {
-      "firm": "NH투자",
-      "date": "2026-09-30",
-      "target": 530000,
-      "prev_target": 530000,
+      "firm": "대신",
+      "date": "2026-10-01",
+      "target": 560000,
+      "prev_target": 560000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
@@ -83,6 +92,15 @@
       "date": "2026-09-30",
       "target": 630000,
       "prev_target": 630000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-09-30",
+      "target": 530000,
+      "prev_target": 530000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
