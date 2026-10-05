@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T00:48:56+00:00",
+  "updated_at": "2026-10-05T12:14:43+00:00",
   "as_of": "2026-10-05",
   "basis": "close",
   "total_cost": 130265210.28,
@@ -129,7 +129,7 @@
       "eval_value_close": 9674.01,
       "pl_close": 7217.73,
       "pl_pct_close": 293.85,
-      "target_avg": 1520.0217,
+      "target_avg": 1521.7609,
       "target_high": 2200.0,
       "target_low": 361.0,
       "opinion": "strong_buy"
