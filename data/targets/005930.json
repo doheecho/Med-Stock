@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T12:13:35+00:00",
+  "updated_at": "2026-10-05T16:19:58+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 489762.0,
@@ -158,15 +158,6 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "KB",
-      "date": "2026-09-04",
-      "target": 600000,
-      "prev_target": 600000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     }
   ],
   "ticker": "005930",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T12:13:50+00:00",
+  "updated_at": "2026-10-05T16:20:12+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -41,9 +41,9 @@
       "date": "Mon, 28 Sep 2026 07:44:15 GMT"
     },
     {
-      "title": "반도체 ETF가 휩쓸었다... 상위 10개 중 9개 차지 [주간 ETF] - m-i.kr",
+      "title": "반도체 ETF가 휩쓸었다... 상위 10개 중 9개 차지 [주간 ETF]",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1PV21sOVFLSXpZWDZWakpZaWpFR1R4TWVHVW53Nk11dlZweWFwX0NGX2hsQTRDY3ZSNTFNTDJZbnNvbllOTG1mS01uU3h0d0R2QUdBMldWMnl2N1VVRWdHaXZ3bU0?oc=5",
-      "source": "m-i.kr",
+      "source": "매일일보",
       "date": "Sun, 27 Sep 2026 23:59:09 GMT"
     },
     {
@@ -71,12 +71,6 @@
       "date": "Sun, 20 Sep 2026 23:54:15 GMT"
     },
     {
-      "title": "\"국장·반도체 팔고 미국장으로\"…코스피 7000 무너지자 ETF 뭉칫돈 이탈",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sdVVvbGJlOTkyTkZpSUZBcFBrWjhVcnhob2tSa2U1UWRvOG00bmtmZ2dPY25oN0NLU1F6UVVGeTI2MF9TbklQeGVJSk9URXlCX3daX2lHaHAwdjM0ampJd2I2a2hKZHp1a0g2cG5pdw?oc=5",
-      "source": "뉴스퀘스트",
-      "date": "Mon, 28 Sep 2026 23:30:14 GMT"
-    },
-    {
       "title": "[9월 ETF 결산] ㊤ 반도체가 상위 20개 중 14개··· DS, 첫 ETF로 1위",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9WcFZOZU1NY1daTXdhUDhVdmloMUdVaDNWMVZEajhfZVRMVkk5a2tHemNwWXNRbVJJdktuUDJsNUdjVDg2alpTc1pyZGktVHhvZ2pQRmladkVrZzEyWk9zZWRCdDlZZi11OXRocmdyZzNuaVXSAXdBVV95cUxNdEUwTU5DODB3dVFrTUotRllfcDNfcV9YQnhCQThSWmpiWXFKUmI2Nlg1WW41MHpDREdjV3MwQnNmclprcUQza3hQeUVvekI5d1JLRFpoSzNBSXVzNEpvSENOLUloTV9VRXZNNm1jQTRDWmltUFkwVQ?oc=5",
       "source": "여성경제신문",
@@ -92,6 +86,12 @@
       "title": "삼성운용 'KODEX 미국반도체' ETF, SK하이닉스 ADR 편입",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hcEw1OGN2LXpubzl0RmdycjNFSDBJUVZJRE84cEJfVzNMaVBaZ1VMNFh6dUhVOHhvdGVUd0RHenlYNEFtTExzanZpOHJScGJPbFVkWV8xQUVLVVRLQ0NLNA?oc=5",
       "source": "아시아경제",
+      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성운용 KODEX 미국반도체, SK하이닉스 ADR 편입",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmTy1va28zOTE0SGd3ZTgtYl9SSFFvZENPNWtIOHRHMEEzdjcwOEVpNTY5MS1xRFVDa0c0S0ZveXF5dFJqclpNdFctTUh1dGtXZi1aTkl0RFVodGxY?oc=5",
+      "source": "뉴스핌",
       "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     }
   ]
