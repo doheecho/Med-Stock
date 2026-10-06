@@ -1,80 +1,62 @@
 {
-  "updated_at": "2026-10-06T02:14:09+00:00",
+  "updated_at": "2026-10-06T11:59:40+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자 자사주 매입 막바지…내주 '수급 공백' 첫 시험대",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WVzRpMDM0OWpsTjZBR0RSMDctRFRubUJFN0VfV1VfZUtKTTRxdzhtTFMyYjhWYlRzdmQ1dE43Y0E3T3NJQzlyRTRxVlRoQkp2Y29PTFI1b3g4RnA0NVhza2cxcXRyVDVHVGdubTNLZ0I?oc=5",
-      "source": "연합인포맥스",
-      "date": "Sun, 04 Oct 2026 23:10:00 GMT"
+      "title": "\"삼성전자 주가 내년 50만원 갈 수 있다\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMFFEcEhHamk1TzA2eHpOalVJdWtydW8zNUlQU0owLWQ0aVM0QmZXblJhOXQxUDBpam5xS0xCVGZiWnFCLXAxcTNib0dRVmNGRGtuSUwtTksxWGtKZk10cmUtLXc3RGZVMDZ2U3kyTjJwVHQzVGtIREg0ekluMDB0ag?oc=5",
+      "source": "조선일보",
+      "date": "Tue, 06 Oct 2026 00:36:00 GMT"
     },
     {
-      "title": "금리에 발목 잡힌 코스피…삼성전자 '100조 영업익' 구원투수",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBUHIyWjBJUlBDanBPU0M0RUh6ZzVaSmRFQUo3eV9yY2ZvWmQtQVM2WFUwdklvd2JJNGF5QTI3MGt3SFExZHFUZ25LaUdIWEE?oc=5",
+      "title": "삼성전자, 3분기 또 ‘새 역사’…국내 기업 최초 분기 영업익 ‘100조 시대’ 연다",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9rVllVUzdjcWVUb1Y4c242OVJOVmhvX09uVkZhdjZWRE5mODBrQnBiTjdLaExic1JNb3lHM3RFd3BzQUUyZGc?oc=5",
       "source": "v.daum.net",
-      "date": "Sun, 04 Oct 2026 21:02:00 GMT"
+      "date": "Tue, 06 Oct 2026 01:01:15 GMT"
     },
     {
-      "title": "신보, 삼성전자 평택 P5 팹 전기공사 수주",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50TjRTYWZwdGtISFRwdGpwMXpSSW1IbE5TZFBMLU8wd2hydkFmS3BDVkgzZnhJU0F3bGFlT2hzYzNtQVloRnRXLUFicDhBc3pSUU9IRkRaWW5GOTc5TTdSNzkwMDBHRm5EXzhvVNIBcEFVX3lxTE9TNHBId2NFVzk2VWhvWFpYWVVmV3R6Q1ZrT2Y0MG5oQkY1U1ZkaG9ua1NKR3JZeDVEX3dyWHRjQWZ5Nmo5LVlpWm8zWmQwRG1HWEstVjF4WkViRXczUDNhZEdsQ3ZHWllrWTh3LUFfTEI?oc=5",
-      "source": "전기신문",
-      "date": "Mon, 05 Oct 2026 23:32:11 GMT"
-    },
-    {
-      "title": "삼성바이오 노조, 삼성전자에 첫 단체교섭 요구",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qYko4Tlp4amszaDVRR2U2TEhMaC1LZUlueXJoN3lkWUxHZTVPcjlud2pJbmg1V3FKN3Zjc2F4UnJobnJzdW1NMkx0Z01kdGM?oc=5",
-      "source": "v.daum.net",
-      "date": "Mon, 05 Oct 2026 23:43:04 GMT"
-    },
-    {
-      "title": "[영상] 세계 무대에서 빛난 기술 국가대표들… 삼성전자와 함께한 ‘2026 상하이 국제기능올림픽’ 도전기",
-      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQNGFUcF90OS1LSVFXN3NIeHJMZlNGUGtlZG5HUHBBVDBGUGp1SERnMGFsdG1GTUxYdHVJMDZlNzVEX3kxcVRDYzB0WHozd3hsUjJzZm4zMHhreUVPQVY5cXdvZEZoOFhLLTItcWFfeFd2TE1yelBST1FUYUNzWUMxbVZ4TlpCXzhBd3VETkRiY3doQ3MzTVV3dDQ2OFV6VFNsOWZNamVBRnRvMTVoay14WF9KYlBldUJoQVR4MmxwNGpVRzhYR3hXZGV3OGRySjdOdUhkbDVYemg4ckUtSjNWNlBjMGp5TlBTdmRsV0xqb1pueFJWaFlNamVIYWJjR0ZlMUQ0NGgwcEFOWmJSY0tKNkJHcXBrdTBwaWFZVHpxU1piLWJ0amVwbEVLT2lveF9ubUtIQWZXb2Qxdw?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Mon, 05 Oct 2026 23:00:00 GMT"
-    },
-    {
-      "title": "\"삼성전자·SK하이닉스 다음은?\"…테마주가 아닌 진짜 차기 주도주를 잡아라",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TQlFHYUN5ZDFNZXdPRUN6aHNwbWg0TEV2aE5pdmZZVWI2VHQtM0VoV0lCR0ZFRVNjRzZ5QkdKOTNKeUZyaS1nYXBYRmpaOUtoNzV3UXdkNXBoblBqNkpya9IBeEFVX3lxTFBGNGlreUpWNW5mTXlrbmdjamdtSGJXbE4xS21qR0dKd0VaRFpjYkozSXVPU0NJZWJocXJvR1FHNFlnZ0tjU3ZoLXZjNlZZM1Nhc0dfc05DTzVyRG9DUS1LdjlvWXNRLVNSZVF1Z1djOHE2MXl6VEJqTQ?oc=5",
+      "title": "삼성전자, 이번주 3분기 성적표 나온다…韓기업 최초 '영업익 100조' 돌파 여부 주목",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BbUlCRVRjS0Utb2E2bnRkLWhuVmM1SGE0UEZYTTd3LW1kNW00N2hjdmhleDZ4RVh4WW1JUGVkb0hoYURxUE5rRFZiR2FWZjFhdHR6RDE2Y0NpMldzVnI3OdIBeEFVX3lxTE9keE83b2dZMnVoWXpyd0pGTmwyZnNMZ3ZPTzVrY0doUlpRVU5UUGVxZ2g4OUVSRlZ1cnBUQ1EwT2lCQ2FiOGU4NEZYOVpUMVdheWFfdTVkTFQtSTR0d1VlMXE4Nzk1U3Nya2lMejFZN2FkTjhGYlREdA?oc=5",
       "source": "뉴시스",
-      "date": "Mon, 05 Oct 2026 15:36:00 GMT"
+      "date": "Sun, 04 Oct 2026 20:00:00 GMT"
     },
     {
-      "title": "초고수의 선택은 삼성전자...\"매크로 불확실성의 도피처는 반도체\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41YUZPVTVTcE5xRzFlc2k1R0paR1hnaDFRLXBqaUFwV29XZG1CbFEySXdKbzl6U0JxbWJUM1AyRldBcENXc2lXbkpHM1ZGYzVDVmRhUVpnV1Rpdw?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 05 Oct 2026 05:23:13 GMT"
+      "title": "삼성전자, 3분기 반도체 성과급만 '11조' 전망…역대급 이익에 비용 부담도↑",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sdUVwc09EOWVicXMyQ1dWRTVTS3I2VkJHSEctbTY5eF9Ydkd0ejRiM2hfNkg2WTJtbWNQUGVjWXZRd05WTS1tMDh5ajVSN1V5TGRGU0ZIdUVmTHo5NWxsaS1DNGMwNWFt?oc=5",
+      "source": "녹색경제신문",
+      "date": "Tue, 06 Oct 2026 04:18:57 GMT"
     },
     {
-      "title": "삼성전자, 용인 국가산단 청사진 공개… “360조 투자·160만명 고용 창출”",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zUXhfOFlMTXZVblBHT0FVMjFlTTFJUFYxOGFkZmxKMDJQaXg4R01HSU0wMVJTdzQyblMtZTFoeHpzWDQtb29ReGJIbkZnN0tFU0lWWXFEaElsYTQ?oc=5",
-      "source": "경기일보",
-      "date": "Mon, 05 Oct 2026 02:15:43 GMT"
+      "title": "삼성전자 노조위원장 '장인 회사 계약 의혹'…경찰, 고발인 조사 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mUHhKREFtY2ZhZEZVNmxZczFxMFlrRlh2dVJ3Z3NrZnBrN21IQ1BUZ3lzMmN5dlZScTRiSVN1ZzZLMkp6Sl81NGhhYmowMWFPYVBTMlJkRU1hSFZpWWN6ZVFOSnc0Qy1MZmtZ0gFwQVVfeXFMT1FLLWlBdUk5VDdtTzdpODJsVHpIUVZqQ1lkMHB1NWJoMFdlUEFuajZESFdKYml3VHVXQmxTMlJ0blhHRFB1dWV2V0wzSTF0MWE4ek5IbmhGdDNfZXZ4TXVqYlQxazhxdVNiNXNUTEFGWg?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 06 Oct 2026 05:41:33 GMT"
     },
     {
-      "title": "삼성전자, 용인 과학축제서 ‘반도체와 지역이 함께 만드는 미래’ 소개",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80X1puZ1NpNmpXUG1WN1YwQU43MGVQbEIyZG5OY2NjcVF3aFdfSFdKMERvZFN6MTQxZFVXZFIwOU5PdGN3YXFNdFZ5S0l4MmoxRmI4V3BVdlNVeWRjSjFKN1FLUm43aUN0Y2VZV3dKYw?oc=5",
-      "source": "기호일보",
-      "date": "Mon, 05 Oct 2026 00:26:00 GMT"
+      "title": "경찰, ‘장인회사 계약 논란’ 삼성전자 노조위원장 수사 착수",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fcnNvSFN5V0ZEazVBQTZhVnp3Y1JpM3BQT2ZBX1ZlY0R0TVhyRFExT3kxek5wV0lsSHl3VTZRT3BpaGxnUlNiSzRLTTRLZl8tUnfSAVNBVV95cUxPMUlLbG8tcjZtSzhUX04wM2hJZWhxNFdlOHdNNWRjVmJRcEg5X2tPVWREZVg4aFlEWVlRQWVhbG8ybmMxNzlmU2tsQ3N6Rm5VQVROMA?oc=5",
+      "source": "서울경제",
+      "date": "Tue, 06 Oct 2026 05:50:03 GMT"
     },
     {
-      "title": "삼성전자, 용인과학축제서 국가산단 청사진 등 ‘반도체와 지역이 함께 만드는 미래’ 제시해 인기 몰이",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wSENyUmxQYV9GMzV4MmZmOWxfY0pOU0NWXzNidmdoTHVqRWk2VkVqZjdBNHhTVEwwa3pBVFd6SC1HaEFLM1gtTXJMWjZQQkk?oc=5",
+      "title": "국감 출석한 삼성전자 노조위원장…\"장인 업체 계약 인정했었잖아요!\" 여야 질타",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBBUlQxeDZyUE5UU2dDM210VExHUllpR2VnMGtfRTM0NVNBWldubkx0WFRCNnRGZTFBbXdrbTRncHR2RUNkbldrZg?oc=5",
+      "source": "뉴스1",
+      "date": "Tue, 06 Oct 2026 10:31:33 GMT"
+    },
+    {
+      "title": "반도체 강대국 만든 ‘최고 듀오’ 삼성전자와 경기도 [2026 창간특집]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9TUEQ2RzdVb1ItWnJQZ1JJM2x5TTNIZmVkM1lhODYwYmw0Qk9DVG55MTAyMXFoVm1UckZ4RElQenVyNGo4d3dOSVlGMGo3bmhpbVE?oc=5",
+      "source": "경인일보",
+      "date": "Tue, 06 Oct 2026 11:10:18 GMT"
+    },
+    {
+      "title": "삼전닉스 앞지른 ‘소부장’… 해킹사태로 떠오른 ‘보안’",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NVkV0Y2cxRE85V2FxRjk1WTdjVTQwWUZkTjN3ekJHaHVRQ3ptOTlzUE5MbVRMdU1NWHNRNkFETHk5RU5keWlGRVVTZGZQQ1E?oc=5",
       "source": "v.daum.net",
-      "date": "Mon, 05 Oct 2026 04:27:04 GMT"
-    },
-    {
-      "title": "천옌순 BOE 회장, 내주 방한…삼성전자와 관계 강화",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBCUmFTOUNKdUlIZmdaTHhoeEtxRGRGRDFfOG54RmFUWWE1bEVFd3FhbnQ5MFhHTHZBNEJ0bmZJR1JzWl9WSDYzUTZCMWFPUQ?oc=5",
-      "source": "전자신문",
-      "date": "Mon, 05 Oct 2026 07:00:00 GMT"
-    },
-    {
-      "title": "[ZD브리핑] 'AI 페스타 26' 개막…국감·삼성전자 실적도 주목",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCNFFCRV9RRjBtSVBaNHgxdXp2QmpsV1BjQjdYMVkwc2tIeDBhVkpGN3pidmZMb0VpbkwxYjZIUnFvdjZ4b1BVX2FYSGtNYWdCX1FSNVBR?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 05 Oct 2026 04:01:24 GMT"
+      "date": "Tue, 06 Oct 2026 11:03:53 GMT"
     },
     {
       "title": "삼성전자, ‘갤럭시 탭 S12 시리즈·스마트태그3’ 국내 출시",
@@ -89,10 +71,28 @@
       "date": "Mon, 05 Oct 2026 23:23:55 GMT"
     },
     {
-      "title": "삼성전자보다 '2배' 넘게 던졌다…외인 지분율 50% 무너진 ‘이 종목’",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tOGtvYUtPeVZyOUNJZ2ZzSDJkeU5YVlRFZXY2OThXOTFhRWlVSlNKQzJIOWIzTzhObTJRLXpLSFRZakhLSTd1MDlYOTFudlE?oc=5",
+      "title": "태블릿·이어폰·위치추적기까지…‘갤럭시 생태계’ 힘주는 삼성전자",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fQmF1VFI3TjRodGZQWVNQa01LcjRlOWhVRy1OcDB0Wm5YTkFtWlBxeU9mamNma0NIdk5hNnU2azVSOVRKaXl4RU5JZTBnbGM?oc=5",
       "source": "v.daum.net",
-      "date": "Sat, 03 Oct 2026 21:38:32 GMT"
+      "date": "Tue, 06 Oct 2026 08:18:07 GMT"
+    },
+    {
+      "title": "신보, 삼성전자 평택 P5 팹 전기공사 수주",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50TjRTYWZwdGtISFRwdGpwMXpSSW1IbE5TZFBMLU8wd2hydkFmS3BDVkgzZnhJU0F3bGFlT2hzYzNtQVloRnRXLUFicDhBc3pSUU9IRkRaWW5GOTc5TTdSNzkwMDBHRm5EXzhvVNIBcEFVX3lxTE9TNHBId2NFVzk2VWhvWFpYWVVmV3R6Q1ZrT2Y0MG5oQkY1U1ZkaG9ua1NKR3JZeDVEX3dyWHRjQWZ5Nmo5LVlpWm8zWmQwRG1HWEstVjF4WkViRXczUDNhZEdsQ3ZHWllrWTh3LUFfTEI?oc=5",
+      "source": "전기신문",
+      "date": "Mon, 05 Oct 2026 23:32:11 GMT"
+    },
+    {
+      "title": "D램 최고가에 마이크론 호조에도 삼성전자·SK하이닉스 전망치 조정…원인은?",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOV2JEeG1WWERxSXRPVExxcWw4RHo1UzJveFlwUE8wVmNjMXh2aHBmRVh5bDVyLUdsZ2paZ0QwMHlwbDFMUjJ3aFA5SU9DYnBYb242N3QtUFFYaEIzQ0xKcEkwY2JIQzNyUVo0LXo0S1FCQjMxUUpERmtCZUpDem8tTG9sd0dpQQ?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Mon, 05 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "title": "글로벌 반도체 업황 기대감에도 삼성전자·SK하이닉스 주가 정체된 이유",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WelNFZkE1UzgtcG40SW9EaGR6djJpZlRtQ2NxN3FGNDJ0NEZJaU41SjBmT3lueXgzVE43UHAwdzNCWDRIdEVTeERIYUhsMk93aUZma2VacDNoLS02NlUzZA?oc=5",
+      "source": "뉴시스",
+      "date": "Tue, 06 Oct 2026 08:20:00 GMT"
     }
   ]
 }

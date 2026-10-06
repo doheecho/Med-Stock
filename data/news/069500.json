@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-10-06T02:14:13+00:00",
+  "updated_at": "2026-10-06T11:59:44+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
-    {
-      "title": "코스피는 7000에서 고군분투하는데… 개미는 '이것' 담아 수익률 '쑥' - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBaeDBlTHlXNFRBenFCRFFvNUN2R2NORTFuWF9ZZnpONm5IVlh1NnNQY2JkMm9MNEVwa055NlNKbng0dlR5Y3czUkt4YzFfb29TZzFRQktLbzdmd0lvVklEMHhGRml3cjBVOTJhb3hB0gFuQVVfeXFMUFp4MGVMeVc0VEF6cUJEUW81Q3ZHY05FMW5YX1lmek42bkhWWHU2c1BjYmQyb0w0RXBrTnk2U0pueDR2VHljdzNSS3hjMV9vb1NnMVFCS0tvN2Z3SW9WSUQweEZGaXdyMFU5MmFveEE?oc=5",
-      "source": "머니투데이",
-      "date": "Fri, 02 Oct 2026 22:00:00 GMT"
-    },
     {
       "title": "삼성자산운용, 코스피200 커버드콜 ETF 결합한 ‘월 2회 배당’ 전략 제시",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBMVXRYU3h0bmJBQ3o0N3VTcXJoMGQyUGFhc2hZaGNlY1p4UzF1cTJzcm5rM3NvS3ZkSmkxUHFETktYSE1HdDl5WjdTaXM1dzhXUkEwNEdn?oc=5",
@@ -29,12 +23,6 @@
       "date": "Sun, 27 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성운용 KODEX 커버드콜 ETF, 개인 자금 몰려…월 2회 분배 조합 제시",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxY3JYVEE1MllRSzFWb0JmUlU5eHdiUkJ6RkxaempWWE5VbTZNbWZHVThrRUlwaUVkdzM4cHNiWWtIQ1h2REJoLWZvQ2tvMU1IUnBzLVNIeHhHZw?oc=5",
-      "source": "브릿지경제",
-      "date": "Thu, 01 Oct 2026 00:50:00 GMT"
-    },
-    {
       "title": "KODEX 200 11만원대 강보합…거래대금 2조원 넘어",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DUndCRW9XN29oMWZPWkk0eWE0QUd2RWtLa0FvdFRYbkVBemZTb2wwZlBQVUxwR3ZwSzFtR0NHeWR3R0hHOTB3emhTRHM1UkZROVFJTTVnTC1feFlwdTAxTWVPZmF1aUY0di1WMDN30gFyQVVfeXFMUFc1eGg5YVZQNUV4Vm1tTmx3N19RSWtpVWdwQm4tSjRUbDVGclJyMXRibWxpMzl6VHZqa3MyNndOZFVqZ29hWG1UZFhNaEg4M0NTX2x6WGd0RUxHWEJxVm1YSHpUMHhaRzZMaDc2N3hFY3N3?oc=5",
       "source": "잡포스트",
@@ -45,6 +33,12 @@
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrdEZkU2dHbGhaVFcybU5USVlGR0JGVDh4YXpDNnAwa1M5YTdRMWtMNFFDdkozeEs3aTRBczFueFBTbzJuSHZVeHBIR1RuMjJmVnR3VlBlQ3dXa1h0YUtMLTl3?oc=5",
       "source": "아시아경제",
       "date": "Thu, 01 Oct 2026 01:26:00 GMT"
+    },
+    {
+      "title": "소리와 움직임을 조절하는 mt-007 토토 환경 설정",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZkJjQ1BheW9iQVp4VHJ2VXh2MHRFQXk3LUM4ZVM3bGtXeXdOaS13LW5WY0R6ZENXZTJCakpMUGRqYmZDY3EtQWd6Ui1ZQ2Nodko2dlExZkJKUTZSMVBsVHZvWlg2ZzVxX0J1ZGF5Rk5vb2Y3X0FOaGh5Y0Qwd0pnWklONTcydW1JQl9xYWI2MmVQdlFNZXdkX0JiQVRpMFVvb2p1UnpNRG44NVhJQWRkUEg3U3dGeXUxdXM0ek4wWlVfa3c?oc=5",
+      "source": "Calgary Roughnecks",
+      "date": "Fri, 02 Oct 2026 18:53:14 GMT"
     },
     {
       "title": "국장 ETF도 ‘선택적 안전 선호’…개미, 대형주 팔고 머니마켓 샀다",
@@ -63,12 +57,6 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HT3V2UGZTLWNGbTBuV0ExNXpMZnV0dVpCeHljSDlvdUl6MW0xTmVRbmdZM1YzaG9qSS1Rb1NwZkcxS2pORnhrdjJlUThOamt3N2h1NXQyX0tRMnpjamhpdnNsaGU?oc=5",
       "source": "매일일보",
       "date": "Thu, 01 Oct 2026 02:06:00 GMT"
-    },
-    {
-      "title": "소리와 움직임을 조절하는 mt-007 토토 환경 설정",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZkJjQ1BheW9iQVp4VHJ2VXh2MHRFQXk3LUM4ZVM3bGtXeXdOaS13LW5WY0R6ZENXZTJCakpMUGRqYmZDY3EtQWd6Ui1ZQ2Nodko2dlExZkJKUTZSMVBsVHZvWlg2ZzVxX0J1ZGF5Rk5vb2Y3X0FOaGh5Y0Qwd0pnWklONTcydW1JQl9xYWI2MmVQdlFNZXdkX0JiQVRpMFVvb2p1UnpNRG44NVhJQWRkUEg3U3dGeXUxdXM0ek4wWlVfa3c?oc=5",
-      "source": "Calgary Roughnecks",
-      "date": "Fri, 02 Oct 2026 18:53:14 GMT"
     },
     {
       "title": "삼성자산운용, KODEX 커버드콜 ETF 조합 제시…월 2회 분배금",
@@ -93,6 +81,18 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zSk9qRmQtby01T3BJa0oyM2kyLVVqMkRITWRjQ256b0NicnBMWFVfT1VZdkRkUERmYUZENHRFTGJTVFBWUzlIUVFYQU44a2tmaFdfWUVlQTdjSVpRSXpjOWtEeE16UXVMYnZnQ3VLZkbSAXRBVV95cUxNUFZTUmVuSUROeGJhYkhzdE1rX0xLVlFCVWdJVnJqNW9YbDJFX3NwZkhGVUxoYmxqV2pQQ21ULVgzZWFPbm0yTk9DTGIwY2sxTWxLVV9aYkRWMWR5X1hIQTh2NVNvRFNWZndZWlNfTGEtWDVDVA?oc=5",
       "source": "pointdaily.co.kr",
       "date": "Thu, 01 Oct 2026 00:20:50 GMT"
+    },
+    {
+      "title": "\"주도 섹터 투자에 배당까지\"…KODEX 200커버드콜액티브 상장 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tYlpwU1poOGZwTlUyb3NDRzZ6bnBUZDJMdldDYkxiNUktTjU3QTY4RnhQT0k2UmFJS2RWMmdWT1Vvakx1NzdHS0xrOURwVjZBeHJhZVFPemFuejZwdVJ6REpjSUJnS0dm0gFuQVVfeXFMTzJ5WG9uRXRxVmI1ZU10cUpFSS1kYlJJeUdKd21XMy1qVnBCeW52VG5meUx1cVRCTkNPbDFnd3lEMGhleG5uMXlRVE9MOWxQbGU5UC1lcVBoMmlmQ0tCdHNGblFOMkZBdVNTbHZFRXc?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성운용 KODEX 200커버드콜액티브, 순자산 5천억 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVT3F0N2EtcG5jNHR4ZmlvR2F5UkFSQlJvM3lNUVRRS290WXQySFpTQkRISmdIbHl4NXFEb2prb2lISV9YUUZrcEVrSUVfWE43d0NWLVNSMzczN1XSAWBBVV95cUxQZUNJZGJHNy1ZNHQzQVZDRjg4S2JtVnc5cG9fUG9jMzJfWERHSDV0cVdwZmdDNVIwVTUtTFhQUWZVb1N2bTMtdTh1dE5sdGpnWHZZRVZoV3VpOTd0SXVZRk8?oc=5",
+      "source": "연합뉴스",
+      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     }
   ]
 }
