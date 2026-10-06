@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T16:19:58+00:00",
+  "updated_at": "2026-10-06T02:14:02+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 489762.0,
@@ -31,8 +31,8 @@
     {
       "firm": "미래에셋증권",
       "target": 400000,
-      "date": "2026-09-07",
-      "url": "https://finance.naver.com/research/company_read.naver?nid=96027"
+      "date": "2026-10-06",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=96444"
     },
     {
       "firm": "야후 하단",
