@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-06T14:25:26+00:00",
+  "updated_at": "2026-10-07T01:27:09+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 489762.0,
-  "target_high": 563226,
+  "target_avg": 495227.0,
+  "target_high": 569511,
   "target_low": 400000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-06",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,13 +18,13 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 489762,
-      "date": "2026-10-02",
+      "target": 495227,
+      "date": "2026-10-06",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "야후 평균",
-      "target": 477517,
+      "target": 478628,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -42,6 +42,42 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "교보",
+      "date": "2026-10-06",
+      "target": 500000,
+      "prev_target": 500000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "한화투자",
+      "date": "2026-10-06",
+      "target": 580000,
+      "prev_target": 580000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "미래에셋",
+      "date": "2026-10-06",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "SK",
+      "date": "2026-10-06",
+      "target": 610000,
+      "prev_target": 610000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
     {
       "firm": "삼성",
       "date": "2026-10-02",
@@ -61,6 +97,15 @@
       "prev_opinion": "매수"
     },
     {
+      "firm": "대신",
+      "date": "2026-10-01",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "하나",
       "date": "2026-10-01",
       "target": 480000,
@@ -70,10 +115,10 @@
       "prev_opinion": "BUY"
     },
     {
-      "firm": "대신",
-      "date": "2026-10-01",
-      "target": 560000,
-      "prev_target": 560000,
+      "firm": "NH투자",
+      "date": "2026-09-30",
+      "target": 530000,
+      "prev_target": 530000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
@@ -97,13 +142,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "NH투자",
-      "date": "2026-09-30",
+      "firm": "DS투자",
+      "date": "2026-09-29",
       "target": 530000,
       "prev_target": 530000,
       "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "유진투자",
@@ -113,15 +158,6 @@
       "chg": 0.0,
       "opinion": "STRONG BUY",
       "prev_opinion": "STRONG BUY"
-    },
-    {
-      "firm": "DS투자",
-      "date": "2026-09-29",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     },
     {
       "firm": "키움",
@@ -139,15 +175,6 @@
       "prev_target": 300000,
       "chg": -10.0,
       "opinion": "보유",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "미래에셋",
-      "date": "2026-09-07",
-      "target": 400000,
-      "prev_target": 370000,
-      "chg": 8.11,
-      "opinion": "매수",
       "prev_opinion": "매수"
     },
     {

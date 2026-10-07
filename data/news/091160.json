@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-10-06T14:25:38+00:00",
+  "updated_at": "2026-10-07T01:27:25+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
-    {
-      "title": "[ETF업&다운]3분기 엇갈린 반도체…삼전닉스 빠지고 소부장 버텼다",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yWEVFWHY0cHBQZ2lmbEotbmtOOUJ2RXBYbEpEQ1ZfZU9uSUlLaVIweDUybDVZOURmN1c3OHI3Z1JrQnp0c3JUbThZYjF2QVYwSUtxRjNwX2pVWHV4RENLcnNGbTHSAWRBVV95cUxOMlhFRVh2NHBwUGdpZmxKLW5rTjlCdkVwWGxKRENWX2VPbklJS2lSMHg1Mmw1WTlEZjdXNzhyN2dSa0J6dHNyVG04WWIxdkFWMElLcUYzcF9qVVh1eERDS3JzRm0x?oc=5",
-      "source": "뉴스1",
-      "date": "Mon, 05 Oct 2026 21:00:00 GMT"
-    },
     {
       "title": "옮겨간 반도체 투심… 메모리 뛸 때, 소부장 날았다",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93Q0dQRjBBcEw4TU52MWR5Q09KNTYxOFJQX1BOU0JhVkJvODVpRTdVODA4MkJUUGlyR1A1RGk4QlhaTHVrM3FYUWM0c25EYVZxdWZsUGp0SENtSTE4XzNqbzdmcDNOTmJDTHlrSTkydmPSAXRBVV95cUxQOTJiakN3d2l2OTBXSkN6Y0dxaGJiMmlBSlozTzZQZmNSNDBlS2FRZHZnUFJ5OVlEeElZQ1Y3WmIzM0ZCeWNwSHVvUWRSQUJOS3Zxb3RVSWZ1N0Q0aUxDY3hXcGpMTFFiM1FEOFBLTVBtTTBDdg?oc=5",
@@ -17,16 +11,28 @@
       "date": "Tue, 06 Oct 2026 06:00:54 GMT"
     },
     {
-      "title": "[ETF 열전] 코스닥이 돌아왔다…레버리지 5종 '줄세우기'",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQcHUzMWFmUWFOUzNNbHM5QnYzczBoNDNJdHZKRWVHSFdRVW5Ia1ByRnljY1JvUW40OWNKR01sVUJmQnpaeldudzg1OFo3dzlPUlB3YTU5R21HRGhEVTE0YmNQRXAyNGNTQV9hVjQ0Z9IBc0FVX3lxTFB0b0xQb2oyUDhTc2tpR0tGUmx4bXNKQzJ4elByWHM5QkZETDRTS3UxRkx2WHZUU0FtRXkyUy14WElSVDhIbWExaDlhN09uMFlhVzhtdVdlNlJJU2xSSVNoQXk5WWtXUE5HOHNRTEFFVFNSSW8?oc=5",
-      "source": "뉴스웍스",
-      "date": "Tue, 06 Oct 2026 01:35:00 GMT"
+      "title": "[ETF업&다운]3분기 엇갈린 반도체…삼전닉스 빠지고 소부장 버텼다",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yWEVFWHY0cHBQZ2lmbEotbmtOOUJ2RXBYbEpEQ1ZfZU9uSUlLaVIweDUybDVZOURmN1c3OHI3Z1JrQnp0c3JUbThZYjF2QVYwSUtxRjNwX2pVWHV4RENLcnNGbTHSAWRBVV95cUxOMlhFRVh2NHBwUGdpZmxKLW5rTjlCdkVwWGxKRENWX2VPbklJS2lSMHg1Mmw1WTlEZjdXNzhyN2dSa0J6dHNyVG04WWIxdkFWMElLcUYzcF9qVVh1eERDS3JzRm0x?oc=5",
+      "source": "뉴스1",
+      "date": "Mon, 05 Oct 2026 21:00:00 GMT"
     },
     {
       "title": "[월간 ETF] 9月, ‘KODEX 반도체레버리지’ 수익률 톱 41.73%...반도체 ETF 상위권 장악",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jRWQ1OGFoNFpuNFBMQVdsZFVYSUw3QU96UXhOdS1FWERFUnlxcjMxYld3U0VEaC1TVUhYSGxDSUZmRnUwbG1XSDJtQmVTenpib3hMaA?oc=5",
       "source": "더밸류뉴스",
       "date": "Thu, 01 Oct 2026 07:41:34 GMT"
+    },
+    {
+      "title": "개미는 반도체 ‘팔자’…美 지수·파킹형에 몰린 돈 [ETF 지형도 변화]①",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuMFUtM3FvWTJ6V09sc3RWaUdReEtVTjRfYUk4VmlzU3NZZnY1NEMyd0s1QVRXejhmZXZWa2FPRHdvZkZPSTdQeGVCTkdndWVGRWNWRGdKSHBNckRMaUUyV3NFYnBjU3JUZTRGb2JB?oc=5",
+      "source": "이투데이",
+      "date": "Tue, 06 Oct 2026 20:00:00 GMT"
+    },
+    {
+      "title": "[ETF 열전] 코스닥이 돌아왔다…레버리지 5종 '줄세우기'",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQcHUzMWFmUWFOUzNNbHM5QnYzczBoNDNJdHZKRWVHSFdRVW5Ia1ByRnljY1JvUW40OWNKR01sVUJmQnpaeldudzg1OFo3dzlPUlB3YTU5R21HRGhEVTE0YmNQRXAyNGNTQV9hVjQ0Z9IBc0FVX3lxTFB0b0xQb2oyUDhTc2tpR0tGUmx4bXNKQzJ4elByWHM5QkZETDRTS3UxRkx2WHZUU0FtRXkyUy14WElSVDhIbWExaDlhN09uMFlhVzhtdVdlNlJJU2xSSVNoQXk5WWtXUE5HOHNRTEFFVFNSSW8?oc=5",
+      "source": "뉴스웍스",
+      "date": "Tue, 06 Oct 2026 01:35:00 GMT"
     },
     {
       "title": "[9월 ETF 결산] ㊦ 반도체 올랐는데 돈은 빠졌다···KODEX 머니마켓엔 1.8조",
@@ -47,16 +53,16 @@
       "date": "Tue, 29 Sep 2026 06:58:00 GMT"
     },
     {
-      "title": "'완전히 발 빼기는 좀'…삼전닉스 18조 던진 개미들 몰린 곳",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMdU15a1pTZ2hScjljVVRza1VUYVdvY3g2V25OUVJoT1M5N0ZKbk9uVEZoNUg1ZmsyRDdvM1VkdTJna3NQZ2Y1ZXcwVUlzSlQxakd6NE41dDY4QQ?oc=5",
-      "source": "hankyung.com",
-      "date": "Thu, 01 Oct 2026 08:11:54 GMT"
-    },
-    {
       "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한주간 뭉칫돈 이탈",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZVjF2X1ZxRlJJenh6dTd3VDlhYlZWbzk5Y0xMdUJPRHY2ZE44eEtqY1JVcU4zRWhGbF94YURoZXJMbHJJRWg2LTI3bjJNQkg0azNKYXpFQktwVDDSAWBBVV95cUxNZUF1bHpDRU1zbFlHWFAwdDdkUjlxazF6SS05eTdIcWxwdlNjQUZldm1aUVhzeXpnTDBOZVJERVZ1TGlsT2NfWTdxRzdGbk9ldzNtbkVESXJfOWh6Qkp6N0c?oc=5",
       "source": "연합뉴스",
       "date": "Mon, 28 Sep 2026 07:00:00 GMT"
+    },
+    {
+      "title": "'완전히 발 빼기는 좀'…삼전닉스 18조 던진 개미들 몰린 곳",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMdU15a1pTZ2hScjljVVRza1VUYVdvY3g2V25OUVJoT1M5N0ZKbk9uVEZoNUg1ZmsyRDdvM1VkdTJna3NQZ2Y1ZXcwVUlzSlQxakd6NE41dDY4QQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 01 Oct 2026 08:11:54 GMT"
     },
     {
       "title": "반도체 ETF가 휩쓸었다... 상위 10개 중 9개 차지 [주간 ETF]",
@@ -65,16 +71,16 @@
       "date": "Sun, 27 Sep 2026 23:59:09 GMT"
     },
     {
-      "title": "KODEX 미국반도체, 'SK하이닉스 ADR' 신규 편입",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTDh0QkZCdFdfWm5EYU5wbF83TXNLcDJBWTZjWjEzRTRSYkFaUG9pVUZiNXdIUDFrS0FPbHdTMUdHSEk2N2dMRmQ4ZFA1c3VQbkZYNUxCaVpXZGFnRER1dDJOX2EwTzhqbDFSZW9UaDBSZmtvN2swMGxyQnhyRmFuOGl6LUlqenM?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
-    },
-    {
       "title": "'삼전닉스' 5%대 급락 예감?…지수·반도체 추종 ETF서 뭉칫돈 이탈",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WUGhTNGREN253N2FXSmFYai1DOXVRNkdqT19UTGZMZGJ3NVFPTGYtS0RKcjhCOE42c2VhUEVZQXFIZU1jOElRTnQtY1B3bnFPYzJ2QnY4dU12STM4eTZXVjhmTWUtMm8ySVE?oc=5",
       "source": "티제이비",
       "date": "Mon, 28 Sep 2026 08:08:48 GMT"
+    },
+    {
+      "title": "KODEX 미국반도체, 'SK하이닉스 ADR' 신규 편입",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTDh0QkZCdFdfWm5EYU5wbF83TXNLcDJBWTZjWjEzRTRSYkFaUG9pVUZiNXdIUDFrS0FPbHdTMUdHSEk2N2dMRmQ4ZFA1c3VQbkZYNUxCaVpXZGFnRER1dDJOX2EwTzhqbDFSZW9UaDBSZmtvN2swMGxyQnhyRmFuOGl6LUlqenM?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     },
     {
       "title": "삼성운용 KODEX 미국반도체, SK하이닉스 ADR 신규 편입",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9WcFZOZU1NY1daTXdhUDhVdmloMUdVaDNWMVZEajhfZVRMVkk5a2tHemNwWXNRbVJJdktuUDJsNUdjVDg2alpTc1pyZGktVHhvZ2pQRmladkVrZzEyWk9zZWRCdDlZZi11OXRocmdyZzNuaVXSAXdBVV95cUxNdEUwTU5DODB3dVFrTUotRllfcDNfcV9YQnhCQThSWmpiWXFKUmI2Nlg1WW41MHpDREdjV3MwQnNmclprcUQza3hQeUVvekI5d1JLRFpoSzNBSXVzNEpvSENOLUloTV9VRXZNNm1jQTRDWmltUFkwVQ?oc=5",
       "source": "여성경제신문",
       "date": "Thu, 01 Oct 2026 08:15:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 ADR, 이제 원화로 투자한다…KODEX 미국반도체 편입",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Td3BOdkJNQ2dTMUJBeVlkWkhqWHVyMllxQkFZQ2pUZV9WYmtKbUZlN3Y5UTFyQ2Q5aVNWT19RcWhqX0Jkc2ozekEtaF9IckhDV1Y0eEJtT2NxQQ?oc=5",
-      "source": "hankyung.com",
-      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     }
   ]
 }

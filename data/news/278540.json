@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T14:25:39+00:00",
+  "updated_at": "2026-10-07T01:27:26+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -13,7 +13,7 @@
     {
       "title": "30일, 기관 거래소에서 TIGER MSCI Korea TR(-1.49%), KODEX 레버리지(-2.22%) 등 순매도",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMXNKMEpGdHRXZHg3UXkta1M5WUNQTGo1U1hVWGI4aHBNWUx0NFFtUDdaUDFRcXpkdF9aZlhudVNzOGdIMW1hRHB0M0FhcXEzcGVSd194SW1KQQ?oc=5",
-      "source": "hankyung.com",
+      "source": "한국경제",
       "date": "Thu, 30 Apr 2026 07:00:00 GMT"
     },
     {
@@ -59,12 +59,6 @@
       "date": "Wed, 29 Apr 2026 07:00:00 GMT"
     },
     {
-      "title": "개미 레버리지에 울 때, 외인은 이 ETF로 웃었다",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4tNk1CampWU0NVTjJuWFFJcXlSNGw2eFpUU2RHbEN6dUtBU09XeGxpbmg0RFRORWpiR2pEcTB2X19obENkX2ZYaVNiV1BBekFNUUE3YWlDbFl2dGNneGZseTJSdEhIajNUZFIzddIBcEFVX3lxTE0tY19MUmFYYV9LYkdLUHUwU0hOYUlqb2JUSkVla0VCNVJHbUFsOGNYVnFyMzh2eW1PbkdyQ1dGeVRPa09VU0UtSTdheG53bFVQNXVScFY1NEMyVXQ3Q0FydUdMYUdjbkFhSXItU28zTTQ?oc=5",
-      "source": "kbanker.co.kr",
-      "date": "Wed, 05 Aug 2026 07:00:00 GMT"
-    },
-    {
       "title": "거래소, ‘KODEX MSCI Korea TR ETF’ 외 1종목 신규상장",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VV1YyclVmd0pETVprQlZ6R0Rma3dHanZlUi1jNU5XZi1ibXlsN2lTWDJaNDlCTW5qZG52NTdjRHl4NnBTcnZaT2J6T19lbzBXQXEyQXJBdjJpVkNoTmplOHBUNk9MYS02STh5T3d3?oc=5",
       "source": "아시아투데이",
@@ -73,7 +67,7 @@
     {
       "title": "세금 나중에 내는 'TR ETF'에 외국인투자자 몰려",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
-      "source": "intn.co.kr",
+      "source": "www.intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
     },
     {
@@ -85,8 +79,14 @@
     {
       "title": "외국인, 코스피 상승 '베팅'…MSCI 코리아 ETF 5700억 담아",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWVdnd3g2RnJLV0RQN21WTDFMa0F0ZVNLQVNwT3d4M2ZKQjdpY0VLV25pVUZNZTJkRTFqam9MRVpTaDlqSWRXV0tFU0dETFl6VWhfM1RtQXQ0dw?oc=5",
-      "source": "hankyung.com",
+      "source": "한국경제",
       "date": "Sun, 01 Jun 2025 07:00:00 GMT"
+    },
+    {
+      "title": "배당 재투자…'토탈리턴(TR) ETF' 투심 몰이",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1nbnR3RnFnQUNSdWVkTjZmQi1tRG9Tc2NLc0Z3Ry1mbFd3WndicjBpUXgyLVpHSDRnWHBhN1ZTT2tna3BsM1d3Ml9qTUZSZDJzemFYWUZualpKcEJrczRlaFBHdHpubVZrVUU3MFBodTVMNjFJOUFPWEhlaHQ?oc=5",
+      "source": "한국금융신문",
+      "date": "Fri, 08 Apr 2022 07:00:00 GMT"
     },
     {
       "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
