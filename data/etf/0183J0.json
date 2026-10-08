@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-07T14:42:34+00:00",
+  "updated_at": "2026-10-08T01:50:45+00:00",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
   "base_index": "Akros U.S. Space Tech 지수(PR)",
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-08",
   "constituents": [
     {
       "code": null,
@@ -37,17 +37,17 @@
     },
     {
       "code": null,
-      "name": "VOYAGER TECHNOLOGIES INC-A",
-      "weight": null
-    },
-    {
-      "code": null,
       "name": "AST SPACEMOBILE INC",
       "weight": null
     },
     {
       "code": null,
       "name": "MDA SPACE LTD",
+      "weight": null
+    },
+    {
+      "code": null,
+      "name": "VOYAGER TECHNOLOGIES INC-A",
       "weight": null
     },
     {

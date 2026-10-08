@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T14:41:19+00:00",
+  "updated_at": "2026-10-08T01:50:25+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3253182.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-07",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3253182,
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -43,6 +43,33 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-10-07",
+      "target": 3200000,
+      "prev_target": 3200000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-10-07",
+      "target": 3400000,
+      "prev_target": 3400000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "IBK투자",
+      "date": "2026-10-07",
+      "target": 4000000,
+      "prev_target": 4000000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "미래에셋",
       "date": "2026-10-06",
       "target": 3100000,
@@ -50,15 +77,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-10-01",
-      "target": 3200000,
-      "prev_target": 3200000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "신한투자",
@@ -74,15 +92,6 @@
       "date": "2026-09-30",
       "target": 3300000,
       "prev_target": 3300000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "NH투자",
-      "date": "2026-09-30",
-      "target": 3400000,
-      "prev_target": 3400000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
