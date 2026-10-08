@@ -1,32 +1,38 @@
 {
-  "updated_at": "2026-10-08T01:50:30+00:00",
+  "updated_at": "2026-10-08T11:58:00+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "[속보] 삼성전자 3분기 영업이익 107조4천억 원‥4분기 연속 신기록",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Cb3ZfUXFMcVd1SDZiSFFrU1Z1b3BxOExWMTdsQlhSbXd5Tktva2xWRk1fbS1RR2lPb0M4YWFHQXNsY2NVYVRiajV4cXlkUmN0Vm1aNndrdW1GdDg5QkpTWTFEc1ZuNVpHVnQwSnpwLUdRTUVN0gF0QVVfeXFMTlduTC04SEpNNVBtMUpCNVR1em1OVDFXT2tKeE4tR0I1RjkwMjU5aldieFIzeThaVzV0LWRjOGppS21Rd1FMZDRUc1BfU0lWaldUSkJvd1ZPbU5KbGNiVVZubDVfUDR3N2kycXRKLWJvV3lUbng?oc=5",
+      "title": "‘영업익 100조 시대’ 연 삼전... 주가는 하락, 대체 무슨 일?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmw3Z3ZmZ19rMDhYZ3RlTjY4Y1Nka0U4UWdyVTFsZWRQbW9uLXQyeDNGLVJXcW5uZjlHUjJubFZTTnJzdVVUd05FTHZQcVpTQTM2VXZ0TGVXcDk4eWs3ZFdVZWtVS3EwT0R2VmNINlJ0RWlkT0Q5VHQ5bVFjZG10Zw?oc=5",
+      "source": "조선일보",
+      "date": "Thu, 08 Oct 2026 00:25:49 GMT"
+    },
+    {
+      "title": "\"도대체 이유를 모르겠다\"…증권가, 삼전 주가에 '멘붕' [분석+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Dd3BYT2NXY3ptMDJUMUtkN0EwM1ozUklhUWRBUFhQOVlPUXdHam9hMzBJeXNTSUFSbkI5M19QN2lnWnYyemZUS2otRDlsdUZkM1g5RHFFRWlYdw?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 08 Oct 2026 04:55:35 GMT"
+    },
+    {
+      "title": "'100조 클럽' 삼성전자, 주가는 약세 … 증권가선 \"아직 저평가\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12NHhzcW1YeGhHLTBUNUZKTGYwZndJTHhHWjZTUUMzTEx4Wl9NMjY2T0VJbXpQSDJyMVBscGlUdlRhdFlhUy1fUVBVZGJHTEFlUEE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Thu, 08 Oct 2026 08:30:10 GMT"
+    },
+    {
+      "title": "삼성전자, 분기 영업익 107.4조원…세계 테크기업 첫 100조 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tdjBmQ0piMkZ0TUFqT293SnMwM01VMG51eUlRYXZzdHpDaXozUmxXTkM1NHlZOVBReHpVNVg4SXJpem84SWdvZDVNbkpFb201dkh4UG1n?oc=5",
+      "source": "중앙일보",
+      "date": "Wed, 07 Oct 2026 23:02:09 GMT"
+    },
+    {
+      "title": "삼성전자 반도체 부문 성과급 최대 7.5억 원‥내년 3월 말 지급",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAwVUt0UEtIYVl3R3pyVGhqbDFBWmZ2dGRFNjlWcVpOd1cxaWhqa2ZHV2UxbEFOZ2NvNm9JSXdXQWNzUTNGTjRab0loWmQyTlR1cjA5RW1Cb012TE9zazBQRWdiU242SzRBb2hXZkpTVGZCWkR40gF0QVVfeXFMUG1wNFBZOUlTUUJ1cDZQNlR4dzdjRVpoUDdmcWl2MnhZZ2tKMUZYZElJb2Q3TEZrUUM0REFORkoyZS1OaVlJWG1TNlFoeXk5aE5DODFoaFdHOTRNRjlsZGRFcTVMQkx2LUJORDJTQ25Da0pDRlA?oc=5",
       "source": "MBC 뉴스",
-      "date": "Wed, 07 Oct 2026 23:31:42 GMT"
-    },
-    {
-      "title": "\"삼전 영업익 100조, 주가는 왜 이래\"...외인 또 던진다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FZU05R1MwTWpSVXhjU1lDeFpUVVY3aUdaLXBqQ0RkekI5RmV1SlJ4a2ZJa2JKR0Y4dl9oZ2Izd0JmWTE2VkZtc0JZOEM3TkJPR1V4blc0NVZjbXM1TUJyN3dYeXFGWEYt0gFuQVVfeXFMTUVQZWNTekM1TzB2TjdSQzl1cE9FOG9hWXMyTHFJX0UtNW9LQzBQbE13d1dIcjFyVUR3SjZuNlZmaXN0Smpqc2JZRFRSbHZRQlg2bE9FblFqX0pfUVk0bDhLVjJLUjd4MWVTdnZvN0E?oc=5",
-      "source": "머니투데이",
-      "date": "Thu, 08 Oct 2026 00:33:56 GMT"
-    },
-    {
-      "title": "삼성전자 실적 발표에도 코스피·코스닥 혼조세",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA5SEhZdVZTMTVwZllVV25LMXBiUkdLdDJhaExKWmxPZTFpbDY4UjVBRjU0WEJ0Yzc4blJ6Z3VzeXExV0JkZ05tZFBTSUs1UUI0VkhuSTdXeV9TdHI0M3c?oc=5",
-      "source": "YTN",
-      "date": "Thu, 08 Oct 2026 00:49:00 GMT"
-    },
-    {
-      "title": "코스피 6770선 출발…삼성전자 잠정실적에도 보합권 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3cGQ2dnNPOGFjRGdTNzh6SkhydU5qRkhyWmxhcWZFVjh2N3VvanhrZTlwallZT2dzN0lTa1JxR01aV0R5OVc3b3lPTUNsUVk5cWRkTjNVZl9ZazdtSW85eXdMZTAzcERkS0lJLXdZUE4?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Thu, 08 Oct 2026 01:11:00 GMT"
+      "date": "Thu, 08 Oct 2026 05:30:34 GMT"
     },
     {
       "title": "삼성전자 반도체 특별성과급 내년 3월말경 지급…전액 자사주",
@@ -35,64 +41,58 @@
       "date": "Wed, 07 Oct 2026 08:33:18 GMT"
     },
     {
-      "title": "영업익 107조 삼성전자, 성과급은 ‘두 회사’…DS·DX 갈등 더 커진다",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9kQUREVGR6RFRpcTFIWVg1NmVHNnU4MGdiQklDMmRDa2RUcGVtLWZhNmwwOW9jRDNxWDZweUFxM2hpTFJNSmxCQUtlbGw0SXFuSEdHZU5hUWNpREE?oc=5",
-      "source": "에너지경제신문",
-      "date": "Wed, 07 Oct 2026 23:42:41 GMT"
-    },
-    {
-      "title": "삼성전자 성과급 내년 3월말 지급…8천만원 연봉시 최대 7.5억원(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KanMxWjV4U3VMcTRUM2RrQ1hxMzgycTNPQVc5ODU4aTlfN2pabWlZR01ZbHBYc1pROXlCOVdXSExhRWNsbElUSlhyNGJGV3NvWkdKQlRKSUhvVHfSAWBBVV95cUxPR2RYV1luZzR6b2NTZFhyZzZ4Tl8xVVFqS3hWbmtfaWtnRTFXb2pNSjhlSkRGVWdOY005RXBBalg1dWxnenUzcWFmWFh1eTVBdWx5Z1JGZHVYR2tNMnExRVg?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 07 Oct 2026 11:04:56 GMT"
-    },
-    {
-      "title": "삼성전자, 내년 HBM4 공급가 대폭 인상 전망… “D램 가격 급등 반영” - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQamZCOFlZNmJKd2Q4dWV6RGZZLUh4Sk9mYnJHaHNObFFVMFdNand4aE4yTXk0WHNDdG5Sek5IdTM2T0JNSE5IV3E1UXNHeVV1WjZVZUE2Tk9FWnRBR20zaHlXM1U3LURWaGhwU3ZxUFhLbDhYYlBtY2c2NzU2bXV3UFNR0gGWAUFVX3lxTE1lQ3dZZjdKdkVwbnplRUtUQ1BrdEszV185bE54cVgzVlBaLUtZWmdNWXpYVXU2aHhZZ2JBUXliMzMzUGkwZGI4UzZ6ZGgzY0N2ZFFIY3RHYzBLcWNnRzNHUG9ILWlFejc3ZUJJcXcyOVJHVWxpVDJ0M094NUhuU1huSUpnbWNxSHNWUDNGc1VFLTJVX3htdw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Tue, 06 Oct 2026 21:00:00 GMT"
-    },
-    {
-      "title": "삼성전자 HBM, 내년 '1위' 올라서나…10월 가격 협상도 주도",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DUkl2QnlveWJ6eTl2Ym1vR3JiYldBSkFVY2lCS0dlY3lqeUFHbzhaamhxRl9YOE85V1A4eEt5LTNCYlQteUItZ0RPNWlPLXM?oc=5",
-      "source": "Daum",
-      "date": "Wed, 07 Oct 2026 01:49:41 GMT"
-    },
-    {
-      "title": "메리츠證 \"삼성전자 3분기 메모리 실적 예상 웃돌아…D램·낸드 가격 경쟁력 지속\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE95UlcyZVNKWTZXWGdwMVZSSU9RVjNJdHlxRjg3VTA5NzNoZ2I5YmdQWEdKVUpiM1dZbjBzeHpuRk5PVkxSVU45WTFPSDJzajZQUkFrSTNHOXEzcmtTdUVNZ9IBeEFVX3lxTE1ZNGF5MWZYcEpLNE5KUjd1cTNtcXNVek9lNldQb3NDMnNsSDM5ZFRqQXZ5MGtudjlrcEVxNnl3WDZ4U3o1X09vUjJoRExCMEpvSU9pazFDaVFaUjV3NUVjeDF1S19zUU56RDZOMlBETDQzQVVxQnFtWg?oc=5",
+      "title": "\"성과급 합산 최소 30억 이상\"…삼성전자 부부가 밝힌 '서민 탈출'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5OENBQkNqU1MtcTJQTTZIRmVIdGVjMWJCZE4tWjVCUzdPZXB5aDlsVF9yT3JzMGJRZ24yS252SUtrcndxV3dDT1NHZ3A5a3d1Rk52MXlzSHV1VHZ1TjY1dQ?oc=5",
       "source": "뉴시스",
-      "date": "Thu, 08 Oct 2026 01:14:46 GMT"
+      "date": "Thu, 08 Oct 2026 11:08:04 GMT"
     },
     {
-      "title": "[굿모닝증시]美 금리 부담에 약보합…삼성전자 실적에 촉각",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OLThabzBHVVhJRE5rX2R0TDFxYk9lNUJtZ0daSGhmRmEyMVctZ3E4YWt0WTBvTmIyTHp3bnBOWHVmcEFqaGpXcXE4WG1HMnpRZ2JCZUVEdFJfVDkxbEJoWA?oc=5",
-      "source": "아시아경제",
-      "date": "Wed, 07 Oct 2026 23:06:11 GMT"
+      "title": "100조 실적 잔칫날인데 삼전 주가는 왜…“극단적 저평가”라는데",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tRFIzeTRLSk16eUFvWEdPQWprdWNNVXR0MEhlby1Fa1lscjNKWUJKVm9GUDhtSWt2S1pNRFM0V09XbnRJUDl5OUYwWUFOREtESGc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Thu, 08 Oct 2026 10:48:52 GMT"
     },
     {
-      "title": "삼성전자, 오늘 3분기 잠정실적…증권가 “지금이 매수 기회”",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBYNTc1TmNtdkwtZG44cUFhSGtLNjczeGxkcTNNZS1kRjZFNDBpVWpPLTFQV1RnMkJpTXR4ekhxc3cxTEJWei1YbTU3d21CMWlr?oc=5",
-      "source": "문화일보",
-      "date": "Wed, 07 Oct 2026 22:41:34 GMT"
+      "title": "[단독]\"팔아도 남는 게 없다\"…삼성, 스마트폰 생산량 30% 줄인다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsY3k3aF9va2hpaWdJdnFQTlAxZXB5ME0wUW5fWkhLSmtCYWxfN2RfNXU1NXBBa2hMRFMxcjhKcnBuOGk0eGdVUEVWV2RGc09VX1J1dmhLX3pWZll3WFpsRGREXzBqaHfSAWxBVV95cUxORWRCNUFxS2tNQkRETVgtc3p2OXRhYkFRY2QxMzhRX2RoNUNIczJuWF92aFF0dkJETldqNlpVVW9YS25WUGRsdlRYNHBrSG9Jdl9QMEdFYkkzUlhjb2RmSS0zVXJ6OGFhb1lybzk?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 07 Oct 2026 19:00:00 GMT"
     },
     {
-      "title": "[속보] 삼성전자, 3분기 누적매출 500조 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0zRUMzTDNLX1JwSW5FbGM5S3JoWU80VWJwODZCVXI2NTFiMHhiQVY3a1F2T25rVTJScWw4elpmSkQ0aTF6NE5xTmhNOEVTWkxOdklMUg?oc=5",
-      "source": "이투데이",
-      "date": "Wed, 07 Oct 2026 22:48:00 GMT"
+      "title": "삼성전자 역대급 실적에도…코스피 6,700선 후퇴",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aR0g5S0hBM3NfY1BhNHRURDByZmh4T2pZdDdwN1k3YUNZYlJ1dzlBMmVRa1d6R3BJVFRFbWFxbmZBOXg0X0hUcmRlcTVZZ1BKTDFFMm5oVjFMT2ZWdE5Kc3o4NE9zcFU?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Thu, 08 Oct 2026 01:42:00 GMT"
     },
     {
-      "title": "삼성전자, 엑시노스 2700 물량 10% 늘려 양산 돌입",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAwUFljRXVfcGpmRmpkTFB2SllWUDctNkFIb0JNUTItQjRmUnMxbGxNSXA0U3A2V3E4QVZCQ2k0bDRrS2VHNnYxWjJDZmkwN09YYTlfOTdVWFFkbmV2T0xvcjRTTUtpQQ?oc=5",
-      "source": "디일렉",
-      "date": "Fri, 02 Oct 2026 09:09:07 GMT"
+      "title": "삼성전자 ‘역대급 실적’에도 코스피 2.62% 급락… 6,625.93 마감",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZQWZLYUZEcFhHS005RkFQam05Y0VOSjdUQUdkYjBGQ3A4UHR6VHoxZEVvUU5XbkhLUkh3Y0xpZzd4UVlrQVNOVGFsUjdCSXhTY256S0pmX3cxUUU?oc=5",
+      "source": "경기일보",
+      "date": "Thu, 08 Oct 2026 07:22:00 GMT"
     },
     {
-      "title": "삼성전자, 갤럭시 최초 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 공개",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOSE5BbzJraEhFQ2tmcENoQlZKMlF4bzM5Nk41OUN4ZzQzTTJnWjNsNWM0T3VBQ010LU1HYUtLQk5sSjNuRThuZTJnTDZOdTk4NVg0eXE2MzVlV0pTb0xEQllFREdEWndlZEhjSVFWcXFqYmhFSk9JRU5abVJZWHl5OWw2ZVJMV19FMWVMQjVCdUxKUTdFYjNjLWJpd0xqd3dZUndPaDNubzhKYUlnYUNaN1dRb3R5YmxvczFWU0FSNldyNll1U1pjWGdjbmQxUWNwV0pHWmQtTndhNURUZk5XaHZTYVZ1clFVcE1nUDNLa01yMkNwcmhFZ3hfQnlvWGFQZXBCbUJWRUpBdm9SX3RycWZRWE5ndWI3OU5QaU1oQWszYXZmdzZpMTZTMkZZeHFfU1ZlT3ZmRC1CWHVkSnJJUEw0SXRSQUk?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Wed, 30 Sep 2026 23:00:00 GMT"
+      "title": "삼성전자 역대 최대 실적에도 코스피 2%대 하락 마감‥금리·유가 영향",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RbGRUWlNUejZLb29Xd2NPamlTNjNuZC1vNkJfOUI4Yzl5a1ZCMmEzSGFyWFlaRHd3YlN1eF80Z2xUd3B4ZTQ2cDdqckhzRGZVMHItRGJtblZjM1Zpb216NzlydTJ0VXItT1lyRTVrdUduelA50gF0QVVfeXFMTXlTaF9BdWV3ZTg0OWpVSUtQT0FaTm15aU1xc1JOcWNabjc0WGd0ZGMzdTRLSmI5ZktoTDdJV2RPNVBDclUzUTRYM00zRzlMb2ZMRnQyZUZWOFA0cEMzT0VTcWxhMDByQkhKWFRINzZMb2x6bjU?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Thu, 08 Oct 2026 07:01:36 GMT"
+    },
+    {
+      "title": "삼성전자 139,000원에 산 10대 '수익률 96%'…60대는 상승후 '매수'",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1IdmVCc1NZTndsSmRidG5hXzRxYzcyd3JJcUxRRW0yUG5FZTBsMkJhYkppRk8zcUdRR1hiN0VUOEgtY3d3M1E?oc=5",
+      "source": "Daum",
+      "date": "Tue, 06 Oct 2026 21:02:23 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 호실적에도 왜 못 가나…\"수급이 얕은 것 말고는 설명할 게 없다\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Wa0lNdC02bzdMOWtZS2hWd3JzTktoekdNQ2tRSC1tODBtU1VpNkdoX0RJbXZ4bl9iYlFBT1dUV0JhN24yTjM0cVNQSjN6YW01R0hYVzE2MllWcVFEczNYVNIBeEFVX3lxTE0wVmlfZVctRTIwbnlnTVdpaDhyTGhMazhHY2kxeFJodnlpWnYwcHdXMWFDNmpicGFTdGhiYWptRmM1Ujh0TW9tRndqcEc4WmtTRXhDRFdoMm4xYmc5a3o0R2pwcWExa0VaeXAzMDdBVkoxN3oyanpZTw?oc=5",
+      "source": "뉴시스",
+      "date": "Thu, 08 Oct 2026 08:12:00 GMT"
+    },
+    {
+      "title": "급락 나온 소부장 기회로? vs 삼성전자·하이닉스로 가야",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzSHYzZTdXdFBIeUlmUzlneHdEazFwZGRQRGVtcWYwZnU0aXg1WC1aN2haUU12a05WTm5iaHNHdzUxc2M0Q2p2N0xRT3pLbGF5WUdIX3EteHdEZjItbWYxTXdUdXlKLTdkaElrVTFPMU3SAXRBVV95cUxQX2NCN2lJVm9WQ1dpRzM0ZnQ0V2ZqbWk4bmFjSmFvclRVVXdvRFVMcVNzc0NfMGR4Nzh4em5xaUY5UER2TUtVMnBFY2dhSUMta083VWw5SWhWSUwwMS11cDdDM2QzanRmUHpiN1dhajAzaXliZA?oc=5",
+      "source": "연합인포맥스",
+      "date": "Thu, 08 Oct 2026 00:16:54 GMT"
     }
   ]
 }
