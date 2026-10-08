@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T11:58:06+00:00",
+  "updated_at": "2026-10-08T14:49:21+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -65,12 +65,6 @@
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
     },
     {
-      "title": "KODEX MSCI Korea TR, 기관 순매도 상위에 신규 등장",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Uk8xZnp1U2tsNVNzVnVCakhmWm0zNWlGS3l6UDMzZDdfS2NfR2QxcFJqdmgxWEtXalVVTnY0bzVJa2dXbUpOeDkyTWlGWmwzazFHTVlEMVJwU09aYVZpdQ?oc=5",
-      "source": "ThinkPool",
-      "date": "Fri, 17 Jan 2025 08:00:00 GMT"
-    },
-    {
       "title": "배당 재투자…'토탈리턴(TR) ETF' 투심 몰이",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1nbnR3RnFnQUNSdWVkTjZmQi1tRG9Tc2NLc0Z3Ry1mbFd3WndicjBpUXgyLVpHSDRnWHBhN1ZTT2tna3BsM1d3Ml9qTUZSZDJzemFYWUZualpKcEJrczRlaFBHdHpubVZrVUU3MFBodTVMNjFJOUFPWEhlaHQ?oc=5",
       "source": "한국금융신문",
@@ -81,6 +75,12 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
       "source": "인포스탁데일리",
       "date": "Tue, 24 Dec 2019 08:00:00 GMT"
+    },
+    {
+      "title": "KODEX MSCI Korea TR, 기관 순매도 상위에 신규 등장",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Uk8xZnp1U2tsNVNzVnVCakhmWm0zNWlGS3l6UDMzZDdfS2NfR2QxcFJqdmgxWEtXalVVTnY0bzVJa2dXbUpOeDkyTWlGWmwzazFHTVlEMVJwU09aYVZpdQ?oc=5",
+      "source": "ThinkPool",
+      "date": "Fri, 17 Jan 2025 08:00:00 GMT"
     },
     {
       "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
