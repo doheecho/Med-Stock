@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T02:02:10+00:00",
+  "updated_at": "2026-10-09T11:51:22+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -9,12 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Rb3Q4d3dVV3BoUE8xY2RFYWdDemliVGdRRk9TMTdicmtLOWdGbHRqOVNteEhBZGo1Z0dqN3RQdDc3YlRRREE?oc=5",
       "source": "브런치",
       "date": "Sat, 02 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "KODEX MSCI Korea TR, 외국인 순매수 상위에 신규 등장",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1tTVRTaVVwXzFQcnBRalZINU9Xa0VqckpuYllGbUJJNHluWXF3bzdER0Z5V0ExR1Q4NWhadUpSOGJMWFNuWll2Yzd1MmZoMDhXeXBwTEY4aExROWhpYlpRUA?oc=5",
-      "source": "ThinkPool",
-      "date": "Thu, 09 Apr 2026 07:00:00 GMT"
     },
     {
       "title": "“삼전·닉스 쓸어 담자”…MSCI 코리아지수 기반 ETF 뭉칫돈",
@@ -47,6 +41,18 @@
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
+      "title": "KODEX MSCI Korea TR, 기관 순매도 상위에 신규 등장",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Uk8xZnp1U2tsNVNzVnVCakhmWm0zNWlGS3l6UDMzZDdfS2NfR2QxcFJqdmgxWEtXalVVTnY0bzVJa2dXbUpOeDkyTWlGWmwzazFHTVlEMVJwU09aYVZpdQ?oc=5",
+      "source": "ThinkPool",
+      "date": "Fri, 17 Jan 2025 08:00:00 GMT"
+    },
+    {
+      "title": "'육천피' 코스피 인기에 글로벌 개미들 'K-ETF' 주목",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIaDVidUFsakFiQ3pIYlhmaFZ4S2lBNVVUdnpMd1dFNmlTXzlvcGpxNlgtMS02SVZQd0djQXlsUkhzYTUweGhQRHI2ZHhaWXA1cUZuRFEzdHVaYVh5VG5z0gFkQVVfeXFMTzZfOWdKclk3ZDRVemhubkVybEFJSmw1cGlFSjZhQ3E1N3NpbXRQRC1wdUJGWjlKUm1zN1pYd3BGR0VQRF91emlocnJSODNuREh6UG9hVXF3VkpUSlRkal9oY3pLSQ?oc=5",
+      "source": "뉴스1",
+      "date": "Wed, 29 Apr 2026 07:00:00 GMT"
+    },
+    {
       "title": "거래소, ‘KODEX MSCI Korea TR ETF’ 외 1종목 신규상장",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VV1YyclVmd0pETVprQlZ6R0Rma3dHanZlUi1jNU5XZi1ibXlsN2lTWDJaNDlCTW5qZG52NTdjRHl4NnBTcnZaT2J6T19lbzBXQXEyQXJBdjJpVkNoTmplOHBUNk9MYS02STh5T3d3?oc=5",
       "source": "아시아투데이",
@@ -75,12 +81,6 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
       "source": "인포스탁데일리",
       "date": "Tue, 24 Dec 2019 08:00:00 GMT"
-    },
-    {
-      "title": "KODEX MSCI Korea TR, 기관 순매도 상위에 신규 등장",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Uk8xZnp1U2tsNVNzVnVCakhmWm0zNWlGS3l6UDMzZDdfS2NfR2QxcFJqdmgxWEtXalVVTnY0bzVJa2dXbUpOeDkyTWlGWmwzazFHTVlEMVJwU09aYVZpdQ?oc=5",
-      "source": "ThinkPool",
-      "date": "Fri, 17 Jan 2025 08:00:00 GMT"
     },
     {
       "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
