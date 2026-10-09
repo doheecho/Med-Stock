@@ -1,62 +1,44 @@
 {
-  "updated_at": "2026-10-08T14:49:14+00:00",
+  "updated_at": "2026-10-09T02:02:03+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "[단독]\"팔아도 남는 게 없다\"…삼성, 스마트폰 생산량 30% 줄인다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsY3k3aF9va2hpaWdJdnFQTlAxZXB5ME0wUW5fWkhLSmtCYWxfN2RfNXU1NXBBa2hMRFMxcjhKcnBuOGk0eGdVUEVWV2RGc09VX1J1dmhLX3pWZll3WFpsRGREXzBqaHfSAWxBVV95cUxORWRCNUFxS2tNQkRETVgtc3p2OXRhYkFRY2QxMzhRX2RoNUNIczJuWF92aFF0dkJETldqNlpVVW9YS25WUGRsdlRYNHBrSG9Jdl9QMEdFYkkzUlhjb2RmSS0zVXJ6OGFhb1lybzk?oc=5",
-      "source": "머니투데이",
-      "date": "Wed, 07 Oct 2026 19:00:00 GMT"
+      "title": "삼성전자 3분기 영업이익 107조4천억 원‥4분기 연속 신기록",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Cb3ZfUXFMcVd1SDZiSFFrU1Z1b3BxOExWMTdsQlhSbXd5Tktva2xWRk1fbS1RR2lPb0M4YWFHQXNsY2NVYVRiajV4cXlkUmN0Vm1aNndrdW1GdDg5QkpTWTFEc1ZuNVpHVnQwSnpwLUdRTUVN0gF0QVVfeXFMTlduTC04SEpNNVBtMUpCNVR1em1OVDFXT2tKeE4tR0I1RjkwMjU5aldieFIzeThaVzV0LWRjOGppS21Rd1FMZDRUc1BfU0lWaldUSkJvd1ZPbU5KbGNiVVZubDVfUDR3N2kycXRKLWJvV3lUbng?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Wed, 07 Oct 2026 23:31:42 GMT"
     },
     {
-      "title": "삼성전자, 분기 영업익 107.4조원…세계 테크기업 첫 100조 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tdjBmQ0piMkZ0TUFqT293SnMwM01VMG51eUlRYXZzdHpDaXozUmxXTkM1NHlZOVBReHpVNVg4SXJpem84SWdvZDVNbkpFb201dkh4UG1n?oc=5",
-      "source": "중앙일보",
-      "date": "Wed, 07 Oct 2026 23:02:09 GMT"
+      "title": "‘영업익 100조 시대’ 연 삼전... 주가는 하락, 대체 무슨 일?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmw3Z3ZmZ19rMDhYZ3RlTjY4Y1Nka0U4UWdyVTFsZWRQbW9uLXQyeDNGLVJXcW5uZjlHUjJubFZTTnJzdVVUd05FTHZQcVpTQTM2VXZ0TGVXcDk4eWs3ZFdVZWtVS3EwT0R2VmNINlJ0RWlkT0Q5VHQ5bVFjZG10Zw?oc=5",
+      "source": "조선일보",
+      "date": "Thu, 08 Oct 2026 00:21:00 GMT"
     },
     {
-      "title": "반도체 ETF 리밸런싱에 변동성 커져…삼성전자 2000억 팔고 소부장 더 담는다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iYmVVbGNvMzI1RklwMlMyMkpCandBdVdSdkgxX1gzOTNLdThubk9qbFh4elFnTDZHaUJfWDUweGNmMUNkUzVQYkNEQVhjZw?oc=5",
-      "source": "전자신문",
-      "date": "Thu, 08 Oct 2026 12:55:00 GMT"
-    },
-    {
-      "title": "\"대체 얼마나 벌어야 오르나\"…삼전닉스 개미들 속타는 이유 [분석+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CNm03MG9DaldVNXFmaHYtRjhzMEZ4dEpCeWpMQzFnbnJ5ZFVESExWMmltUERnNXM3akdROGwxdDdMSlVlVWdtaDIzWGxCQ3BWQkltcDV6aHlqQQ?oc=5",
+      "title": "삼성월렛에 들어온 달러 코인…스마트폰이 해외송금 창구 된다[스테이블코인 레이더]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvS1VFTHFoZ3JPUUR6akFBdS13YkczR2duSWJJendjWmZya21faUhBYUZDcXhqbHZXenROTXFCeVpKV2Uyc245TnBtUTVpQzZFSklLSFNkWFNmQQ?oc=5",
       "source": "한국경제",
-      "date": "Thu, 08 Oct 2026 13:00:01 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 호실적에도 왜 못 가나…\"수급이 얕은 것 말고는 설명할 게 없다\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Wa0lNdC02bzdMOWtZS2hWd3JzTktoekdNQ2tRSC1tODBtU1VpNkdoX0RJbXZ4bl9iYlFBT1dUV0JhN24yTjM0cVNQSjN6YW01R0hYVzE2MllWcVFEczNYVNIBeEFVX3lxTE0wVmlfZVctRTIwbnlnTVdpaDhyTGhMazhHY2kxeFJodnlpWnYwcHdXMWFDNmpicGFTdGhiYWptRmM1Ujh0TW9tRndqcEc4WmtTRXhDRFdoMm4xYmc5a3o0R2pwcWExa0VaeXAzMDdBVkoxN3oyanpZTw?oc=5",
-      "source": "뉴시스",
-      "date": "Thu, 08 Oct 2026 08:12:00 GMT"
-    },
-    {
-      "title": "급락 나온 소부장 기회로? vs 삼성전자·하이닉스로 가야",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzSHYzZTdXdFBIeUlmUzlneHdEazFwZGRQRGVtcWYwZnU0aXg1WC1aN2haUU12a05WTm5iaHNHdzUxc2M0Q2p2N0xRT3pLbGF5WUdIX3EteHdEZjItbWYxTXdUdXlKLTdkaElrVTFPMU3SAXRBVV95cUxQX2NCN2lJVm9WQ1dpRzM0ZnQ0V2ZqbWk4bmFjSmFvclRVVXdvRFVMcVNzc0NfMGR4Nzh4em5xaUY5UER2TUtVMnBFY2dhSUMta083VWw5SWhWSUwwMS11cDdDM2QzanRmUHpiN1dhajAzaXliZA?oc=5",
-      "source": "연합인포맥스",
-      "date": "Thu, 08 Oct 2026 00:16:54 GMT"
-    },
-    {
-      "title": "삼성전자 반도체 특별성과급 내년 3월말경 지급…전액 자사주",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NSjhEV3B2WFgzQzRKYi1jSy1YSkxMaFExSkVnV3piNm9xdFFLbktZTXNBSE1sVURDS2RQR0FYemtqbVdHM2M0UlRwQ0FlU2x5WjYwYVhuR2FaODlzSFVzTlhRWFNGZDBGVF81LW8xcEM?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 07 Oct 2026 08:33:18 GMT"
-    },
-    {
-      "title": "분기 ‘영업익 100조’ 삼성전자…성과급 ‘7.5억’ 실제로 얼마 받나",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMFpEZzk4Zk90SmZxdXRxdjVwSl9nekI4RkpQckg2TU9GUWxkR2ZpVjdtMVJqdDd4RTdtUXJxZXZXWnl5UV92RjdUS3BYVTJzcDk2QzZ2MUtoemxpVHVRN3pvQUdhNVZYT21rVi1hanhlejY0M3BtX01OcU5JeV9ZNQ?oc=5",
-      "source": "이데일리",
-      "date": "Thu, 08 Oct 2026 07:33:52 GMT"
+      "date": "Fri, 09 Oct 2026 00:37:02 GMT"
     },
     {
       "title": "\"삼성전자 들어온 게 인생 최대 업적\"…성과급 30억 받는 부부",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pWnhCSDRKZW5pOGJYQmhjaVFzbXdzQVBjYkFiWTluMDJmNUtLeWFMZENBVlNYZXZuWFEtb05yM2Qxd1BQMmVoX21GZE40ZlhDc0N4VzBrcW1Qdw?oc=5",
       "source": "한국경제",
       "date": "Thu, 08 Oct 2026 08:52:41 GMT"
+    },
+    {
+      "title": "“성과급 7.5억 기대했는데”…삼성전자, 세금 떼고 나면 절반도 안 남나",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMFpEZzk4Zk90SmZxdXRxdjVwSl9nekI4RkpQckg2TU9GUWxkR2ZpVjdtMVJqdDd4RTdtUXJxZXZXWnl5UV92RjdUS3BYVTJzcDk2QzZ2MUtoemxpVHVRN3pvQUdhNVZYT21rVi1hanhlejY0M3BtX01OcU5JeV9ZNQ?oc=5",
+      "source": "이데일리",
+      "date": "Thu, 08 Oct 2026 07:33:52 GMT"
+    },
+    {
+      "title": "최승호 삼전 노조위원장 “성과급 적자 페널티 손본다”…특혜 의혹엔 사과",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wTEJXeFNla1hyZUNTNHlmRnFmbm9Ca2NuRlBaNDdnMlpzOWt3a185VHpWa3psdnBnM0xqU2t4V2pVdzJFb2tiTVVWSlhhM3RteHlCZTZR?oc=5",
+      "source": "매일경제",
+      "date": "Thu, 08 Oct 2026 08:03:01 GMT"
     },
     {
       "title": "삼성전자 ‘역대급 실적’에도 코스피 2.62% 급락… 6,625.93 마감",
@@ -77,22 +59,40 @@
       "date": "Thu, 08 Oct 2026 07:01:36 GMT"
     },
     {
-      "title": "반도체 정점론에도 메모리 수요 여전…삼성전자 호황 내년까지 이어질듯",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qaDlEY3E2UlUyVDJfOFVVOXYyamdpdDVic19EMWJnOW9NTW1yZ2dYN1FSTFNxQlNVTTJhOEJIVXVGbUtKcENtWWVpeWE1Smp6UnMtWEo5bktvSmNvU1BYZEFyM0RldlpCSEZZR3V6RWlqSGNUdWfSAWZBVV95cUxObE44M2pkb1NTUkxlZTR0dEZfLW9vcFhGeTR6UFRmVGVsbnpaR0pwZUZlRC1kc0h5LVRZcy1sa0tKUXI4WW56UDdlYlRmU0gxY1hwYnRsbG5sZUVXSkw3LUxnMGhubGc?oc=5",
-      "source": "동아일보",
-      "date": "Thu, 08 Oct 2026 07:09:38 GMT"
+      "title": "삼성전자 'AI구독'으로 가전 침체 돌파구 모색, 노태문 B2B로 확장해 '조 단위' 사업 키운다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAwQzFfc3dKNlBSVDFLYzE2WVNZbTRZenNjb1ZHeHJmRkVjdmZWaUp0MXRUYmZkTFh4ZDBicUl0bndnUkVfZjdKUVlBeHJzMjRjY1d2V0JYRzRvOWYzMHktdmlMQVhpaHlfYVFmZkxsSHZfaU0?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 08 Oct 2026 21:00:00 GMT"
     },
     {
-      "title": "삼성전자 139,000원에 산 10대 '수익률 96%'…60대는 상승후 '매수'",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1IdmVCc1NZTndsSmRidG5hXzRxYzcyd3JJcUxRRW0yUG5FZTBsMkJhYkppRk8zcUdRR1hiN0VUOEgtY3d3M1E?oc=5",
-      "source": "Daum",
-      "date": "Tue, 06 Oct 2026 21:02:23 GMT"
+      "title": "삼성전자·SK하이닉스 호실적에도 왜 못 가나…\"수급이 얕은 것 말고는 설명할 게 없다\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Wa0lNdC02bzdMOWtZS2hWd3JzTktoekdNQ2tRSC1tODBtU1VpNkdoX0RJbXZ4bl9iYlFBT1dUV0JhN24yTjM0cVNQSjN6YW01R0hYVzE2MllWcVFEczNYVNIBeEFVX3lxTE0wVmlfZVctRTIwbnlnTVdpaDhyTGhMazhHY2kxeFJodnlpWnYwcHdXMWFDNmpicGFTdGhiYWptRmM1Ujh0TW9tRndqcEc4WmtTRXhDRFdoMm4xYmc5a3o0R2pwcWExa0VaeXAzMDdBVkoxN3oyanpZTw?oc=5",
+      "source": "뉴시스",
+      "date": "Thu, 08 Oct 2026 08:12:00 GMT"
     },
     {
       "title": "'100조 클럽' 삼성전자, 주가는 약세 … 증권가선 \"아직 저평가\"",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12NHhzcW1YeGhHLTBUNUZKTGYwZndJTHhHWjZTUUMzTEx4Wl9NMjY2T0VJbXpQSDJyMVBscGlUdlRhdFlhUy1fUVBVZGJHTEFlUEE?oc=5",
       "source": "매일경제 마켓",
       "date": "Thu, 08 Oct 2026 08:30:10 GMT"
+    },
+    {
+      "title": "[속보]삼성전자, 3분기 매출 195조...누적 매출 500조 돌파 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWZTB2VXdEV01TWFFVcFdmUXAtNGNGWXh5aTk4TWVVUHlCMGtMV1c1bEpjZUt0ZlpidHF0WW1nczVkN0NWdGZ3WDNFeUVGbXFGa3JuY29NQ3J4dFhZZmYzYXhJQkgwWXlzc25YQtIBckFVX3lxTE5ESWJvZnpHb015T2hOMHR5OG8xWGQta1M2ckpldXhxcVkzT0VVbjd6QURsZE9PTDdudzY3VktKV09DaVZtU3g0R2xQRUdHWTg2MkRJVDJCM21PbTBtX01rZDJwWnRLZWJhWllscjlIbTJhdw?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 07 Oct 2026 22:49:01 GMT"
+    },
+    {
+      "title": "美빅테크, 빚내서 AI투자… 삼성전자, 세계 5대 데이터센터와 5년 계약",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KMUxTQUtKdTM2SS1HTUNLOXR3NXB4bW0tYTdZeElmbVJ6MW5tcWFaRnNZX2lhVi16Zm1WMTFaRVlWYkVrUmJQcVl1X0ctRnJQ?oc=5",
+      "source": "문화일보",
+      "date": "Thu, 08 Oct 2026 03:08:15 GMT"
+    },
+    {
+      "title": "삼성전자, 분기 영업익 100조 돌파…국내 기업 최초",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YbFNfbHdnN0pDa0xfbXFITnUzMnA1VnpteTYyQmZUWHMtd1d5dW9SUlE0TFpFVmJvZWVXLUVNdmlhNlM5UWgyMzBBME1fQWVSa0RXNnp6dm8xS1ZCOG13RGp6dmFRdzdBQ1E?oc=5",
+      "source": "한겨레",
+      "date": "Thu, 08 Oct 2026 11:50:00 GMT"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T14:49:09+00:00",
+  "updated_at": "2026-10-09T02:01:59+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3253182.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-08",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3253182,
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -43,19 +43,28 @@
   ],
   "consensus_rows": [
     {
-      "firm": "대신",
-      "date": "2026-10-07",
-      "target": 3200000,
-      "prev_target": 3200000,
+      "firm": "유진투자",
+      "date": "2026-10-08",
+      "target": 3700000,
+      "prev_target": 3700000,
       "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
+      "opinion": "STRONG BUY",
+      "prev_opinion": "STRONG BUY"
     },
     {
       "firm": "NH투자",
       "date": "2026-10-07",
       "target": 3400000,
       "prev_target": 3400000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "대신",
+      "date": "2026-10-07",
+      "target": 3200000,
+      "prev_target": 3200000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
@@ -113,15 +122,6 @@
       "chg": 0.0,
       "opinion": "보유",
       "prev_opinion": "보유"
-    },
-    {
-      "firm": "DB",
-      "date": "2026-09-07",
-      "target": 2300000,
-      "prev_target": 2000000,
-      "chg": 15.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     }
   ],
   "ticker": "000660",

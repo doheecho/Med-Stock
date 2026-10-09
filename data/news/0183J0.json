@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-08T14:49:18+00:00",
+  "updated_at": "2026-10-09T02:02:08+00:00",
   "ticker": "0183J0",
   "name": "TIGER 미국우주테크",
   "market": "KRX",
   "items": [
     {
-      "title": "[마켓H] 인기 테마만 보이면 우르르…ETF 시장 덮친 '베끼기 경쟁'",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IamJ1anN6bDBYZndtTkhBVUtaeFdmaXYwS1JIOV9VMVhRaWlZNmdJTk5mT05tbWVlWlJhZkxWTDdXdTRIdnBINklKSDFBcGFOQk50LXpjZDJ6Q2lRNWdOUTU2eTdsS0JnWHA5R09hSdIBb0FVX3lxTE1IamJ1anN6bDBYZndtTkhBVUtaeFdmaXYwS1JIOV9VMVhRaWlZNmdJTk5mT05tbWVlWlJhZkxWTDdXdTRIdnBINklKSDFBcGFOQk50LXpjZDJ6Q2lRNWdOUTU2eTdsS0JnWHA5R09hSQ?oc=5",
-      "source": "한스경제",
-      "date": "Thu, 08 Oct 2026 08:28:23 GMT"
-    },
-    {
       "title": "테마 떴다하면 찍어내는 ETF … 하위 50개 순자산 고작 1700억",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lYThKcGdILWw1R2RvemtUeHFNekVfMVBPcnI4ZTQxV0FEUXJMei1KSmN3UENjcTVGYXBieHN5ZE01eE42enlWeTNRbFY3cmFxdlE?oc=5",
       "source": "매일경제 마켓",
       "date": "Wed, 07 Oct 2026 08:50:36 GMT"
+    },
+    {
+      "title": "[마켓H] 인기 테마만 보이면 우르르…ETF 시장 덮친 '베끼기 경쟁'",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IamJ1anN6bDBYZndtTkhBVUtaeFdmaXYwS1JIOV9VMVhRaWlZNmdJTk5mT05tbWVlWlJhZkxWTDdXdTRIdnBINklKSDFBcGFOQk50LXpjZDJ6Q2lRNWdOUTU2eTdsS0JnWHA5R09hSdIBb0FVX3lxTE1IamJ1anN6bDBYZndtTkhBVUtaeFdmaXYwS1JIOV9VMVhRaWlZNmdJTk5mT05tbWVlWlJhZkxWTDdXdTRIdnBINklKSDFBcGFOQk50LXpjZDJ6Q2lRNWdOUTU2eTdsS0JnWHA5R09hSQ?oc=5",
+      "source": "한스경제",
+      "date": "Thu, 08 Oct 2026 08:28:23 GMT"
     },
     {
       "title": "우주 ETF 투자자들 ‘울상’···예상하지 못했던 스페이스X 블랙홀 효과",
@@ -41,12 +41,6 @@
       "date": "Mon, 15 Jun 2026 07:00:00 GMT"
     },
     {
-      "title": "[단독] TIGER 미국우주테크, 스페이스X 상장 당일 편입 철회",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vWU1OMHZwVk5sd0pCemV1SGlaendMQXhYYnd5b1I2RXNPRUl2WmdtcUJqMXM0Sl9rYUJQbnRkMVFJUTRJdVJkZXZBbXA2azlkY0HSAVNBVV95cUxPMXM5OXFpQmdXWnI3UDM2OU0zeDZlWkJiS2VGbldPWHJRSENTNGtNUXFENkM0QVBTYS10bXlBamYtZ1pBYW81eFgtRU9kLVN0R3d0WQ?oc=5",
-      "source": "서울경제",
-      "date": "Fri, 12 Jun 2026 07:00:00 GMT"
-    },
-    {
       "title": "스페이스X 상장 한 달…개인투자자, '우주 ETF' 5천억 던졌다",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5bkV2MDY2ZG8xNGtFc0tVU0k3dnpOa3c5elZkaFZ6QUlSQndweVoxd3MyNEZTUWVYbFVOU3NTd2U2alZXb1EyUzJWVWdqbDhfWGcyWjNNUF8zcGc?oc=5",
       "source": "연합뉴스",
@@ -57,6 +51,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PUm02Ri10SlB2c3BYUTgtemFzU3NFSWwtSm9pbl9BRmdNMWN2STNiT1Q4Tm9kNGVnNklhYWpoTFdHbC1GenZMdE5lTWVqOGhEX19qMlFhbjQ?oc=5",
       "source": "조세플러스",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "title": "[단독] TIGER 미국우주테크, 스페이스X 상장 당일 편입 철회",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vWU1OMHZwVk5sd0pCemV1SGlaendMQXhYYnd5b1I2RXNPRUl2WmdtcUJqMXM0Sl9rYUJQbnRkMVFJUTRJdVJkZXZBbXA2azlkY0HSAVNBVV95cUxPMXM5OXFpQmdXWnI3UDM2OU0zeDZlWkJiS2VGbldPWHJRSENTNGtNUXFENkM0QVBTYS10bXlBamYtZ1pBYW81eFgtRU9kLVN0R3d0WQ?oc=5",
+      "source": "서울경제",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT"
     },
     {
       "title": "스페이스X 덕 볼 줄 알았는데...'-19%' 비명 터진 우주 ETF, 왜 - 머니투데이",
