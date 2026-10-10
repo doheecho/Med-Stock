@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T14:33:52+00:00",
+  "updated_at": "2026-10-10T01:42:00+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -9,6 +9,12 @@
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Rb3Q4d3dVV3BoUE8xY2RFYWdDemliVGdRRk9TMTdicmtLOWdGbHRqOVNteEhBZGo1Z0dqN3RQdDc3YlRRREE?oc=5",
       "source": "브런치",
       "date": "Sat, 02 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "30일, 기관 거래소에서 TIGER MSCI Korea TR(-1.49%), KODEX 레버리지(-2.22%) 등 순매도",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IMXNKMEpGdHRXZHg3UXkta1M5WUNQTGo1U1hVWGI4aHBNWUx0NFFtUDdaUDFRcXpkdF9aZlhudVNzOGdIMW1hRHB0M0FhcXEzcGVSd194SW1KQQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 30 Apr 2026 07:00:00 GMT"
     },
     {
       "title": "“삼전·닉스 쓸어 담자”…MSCI 코리아지수 기반 ETF 뭉칫돈",
@@ -29,28 +35,16 @@
       "date": "Mon, 22 Jun 2026 07:00:00 GMT"
     },
     {
-      "title": "외국인, 코스피 상승 '베팅'…MSCI 코리아 ETF 5700억 담아",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWVdnd3g2RnJLV0RQN21WTDFMa0F0ZVNLQVNwT3d4M2ZKQjdpY0VLV25pVUZNZTJkRTFqam9MRVpTaDlqSWRXV0tFU0dETFl6VWhfM1RtQXQ0dw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 01 Jun 2025 07:00:00 GMT"
-    },
-    {
-      "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
-      "source": "Chosunbiz",
-      "date": "Sat, 08 Apr 2023 07:00:00 GMT"
-    },
-    {
       "title": "KODEX MSCI Korea TR, 기관 순매도 상위에 신규 등장",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Uk8xZnp1U2tsNVNzVnVCakhmWm0zNWlGS3l6UDMzZDdfS2NfR2QxcFJqdmgxWEtXalVVTnY0bzVJa2dXbUpOeDkyTWlGWmwzazFHTVlEMVJwU09aYVZpdQ?oc=5",
       "source": "ThinkPool",
       "date": "Fri, 17 Jan 2025 08:00:00 GMT"
     },
     {
-      "title": "'육천피' 코스피 인기에 글로벌 개미들 'K-ETF' 주목",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIaDVidUFsakFiQ3pIYlhmaFZ4S2lBNVVUdnpMd1dFNmlTXzlvcGpxNlgtMS02SVZQd0djQXlsUkhzYTUweGhQRHI2ZHhaWXA1cUZuRFEzdHVaYVh5VG5z0gFkQVVfeXFMTzZfOWdKclk3ZDRVemhubkVybEFJSmw1cGlFSjZhQ3E1N3NpbXRQRC1wdUJGWjlKUm1zN1pYd3BGR0VQRF91emlocnJSODNuREh6UG9hVXF3VkpUSlRkal9oY3pLSQ?oc=5",
-      "source": "뉴스1",
-      "date": "Wed, 29 Apr 2026 07:00:00 GMT"
+      "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
+      "source": "Chosunbiz",
+      "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
       "title": "거래소, ‘KODEX MSCI Korea TR ETF’ 외 1종목 신규상장",
@@ -63,6 +57,12 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
       "source": "www.intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
+    },
+    {
+      "title": "외국인, 코스피 상승 '베팅'…MSCI 코리아 ETF 5700억 담아",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWVdnd3g2RnJLV0RQN21WTDFMa0F0ZVNLQVNwT3d4M2ZKQjdpY0VLV25pVUZNZTJkRTFqam9MRVpTaDlqSWRXV0tFU0dETFl6VWhfM1RtQXQ0dw?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 01 Jun 2025 07:00:00 GMT"
     },
     {
       "title": "배당 재투자…'토탈리턴(TR) ETF' 투심 몰이",
@@ -89,10 +89,10 @@
       "date": "Wed, 20 Nov 2024 08:00:00 GMT"
     },
     {
-      "title": "07일, 거래소 외국인 순매도상위에 운수장비 업종 3종목",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5La0NZdFVMTGxqRHpqY203djJPOE1nX3B4eEctX1N6WVA4QlNpZVZ5d05wZ3ZHS2tlZnJOaHUxNy00dEFiZG1OMm1RR2FhWk9pQWpvQl9YbThJZw?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
+      "title": "'과세 피하자' 外人 KODEX 200 ETF '팔고' KODEX 200TR '사고'",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXQTVOVzR5bXpUVUtDa1BLdGRCVVQ4YmxUekk1dnBoWEV4LTZVWW9tdk43bzhqY0ZMR0hjS2JLcEN0cW55NVhBd25FTjZvUjhYR1Bn?oc=5",
+      "source": "네이트",
+      "date": "Wed, 23 Mar 2022 07:00:00 GMT"
     }
   ]
 }
