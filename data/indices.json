@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T01:42:10+00:00",
+  "updated_at": "2026-10-11T00:53:08+00:00",
   "items": [
     {
       "key": "KOSPI",
@@ -58,10 +58,10 @@
     {
       "key": "USDKRW",
       "name": "원/달러",
-      "price": 1340.02,
+      "price": 1340.9,
       "prev": 1342.99,
-      "change": -2.97,
-      "change_pct": -0.22,
+      "change": -2.09,
+      "change_pct": -0.16,
       "fmt": "krw"
     },
     {
@@ -85,55 +85,55 @@
     {
       "key": "GOLD",
       "name": "금 선물",
-      "price": 4220.2998,
+      "price": 4216.2998,
       "prev": 4157.0,
-      "change": 63.2998,
-      "change_pct": 1.52,
+      "change": 59.2998,
+      "change_pct": 1.43,
       "fmt": "usd"
     },
     {
       "key": "SILVER",
       "name": "은 선물",
-      "price": 61.11,
+      "price": 60.67,
       "prev": 59.064,
-      "change": 2.046,
-      "change_pct": 3.46,
+      "change": 1.606,
+      "change_pct": 2.72,
       "fmt": "usd"
     },
     {
       "key": "WTI",
       "name": "WTI 선물",
-      "price": 91.66,
+      "price": 91.85,
       "prev": 91.49,
-      "change": 0.17,
-      "change_pct": 0.19,
+      "change": 0.36,
+      "change_pct": 0.39,
       "fmt": "usd"
     },
     {
       "key": "BTC",
       "name": "비트코인",
-      "price": 110693072.0,
-      "prev": 109780168.0,
-      "change": 912904.0,
-      "change_pct": 0.83,
+      "price": 111140264.0,
+      "prev": 110648392.0,
+      "change": 491872.0,
+      "change_pct": 0.44,
       "fmt": "krw0"
     },
     {
       "key": "ETH",
       "name": "이더리움",
-      "price": 3337143.25,
-      "prev": 3322467.75,
-      "change": 14675.5,
-      "change_pct": 0.44,
+      "price": 3355496.0,
+      "prev": 3331715.5,
+      "change": 23780.5,
+      "change_pct": 0.71,
       "fmt": "krw0"
     },
     {
       "key": "XRP",
       "name": "리플",
-      "price": 1879.282,
-      "prev": 1853.4978,
-      "change": 25.7842,
-      "change_pct": 1.39,
+      "price": 1873.5067,
+      "prev": 1870.3749,
+      "change": 3.1318,
+      "change_pct": 0.17,
       "fmt": "krw"
     }
   ]

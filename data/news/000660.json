@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-10-10T01:41:54+00:00",
+  "updated_at": "2026-10-11T00:52:53+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "SK하이닉스는 왜 솔리다임을 상장하려 하나…4가지 이유[biz-플러스]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBnVEQ3aF9rVDJUZnpISmRmcEIwemkxU3A4WE5kMWkxSDdzQjFCRUtkVUVwRm5ER241Z28ya3ZvLUltZDMxdkRqQnJIeHprMnJ3NWfSAVNBVV95cUxPaXFQSDhEQUdQbmZrN2ktVzBMZTZKZUxsUl9HaDhKUWJiYnBfdFoyVFJ2UEhBdWJSa1dDUW9OWTZfRDVvTjRhUXd4cWRRQ2VIMldJUQ?oc=5",
+      "source": "서울경제",
+      "date": "Sat, 10 Oct 2026 02:00:01 GMT"
+    },
     {
       "title": "블룸버그 \"솔리다임 美 상장 주관사 선정\"… SK하이닉스 주주가치 훼손 논란 가열 By 인포스탁데일리",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHWnNXQU5oZTIxd3A1THVlZENwdHVkZUQwX0xYUmNNLXVHa3ZsV1FYem5ZVmpWaHpEUlVFSjI1UDEwOFdnZEtTVW0wVlF3ck4yOXE2VkppWXBqcHpvYTZyLWNLLXgxMFozNm90REJpczA?oc=5",
@@ -17,28 +23,28 @@
       "date": "Thu, 08 Oct 2026 02:48:21 GMT"
     },
     {
-      "title": "몸값 134조원…SK하이닉스 솔리다임, 美 IPO 주관사 선정",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TNkhySjJ3bTVZM1hQaTkxX3cxT2d0bWZlN3pqelRsODVZMlRtSXdnejBrNTZxSmpGVDFBUnFGbEVTbXBxM3J0SENiYzZ1cldDX1h2VWg3RndpQQ?oc=5",
-      "source": "한국경제",
-      "date": "Thu, 08 Oct 2026 00:56:16 GMT"
-    },
-    {
       "title": "\"최태원 회장님 믿습니다\"…SK하닉 '400만원 간다'는 이유 [종목+]",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XcXJRVGRqM3ZsLXRsOGtQTTRMbV9ETE1ySHRRMGpuUTBFTVc0dDNodmdLT1VZM1Y5bDgxVEZWeUU2aTNCY2VwU3FvMllPenE3Z0gyRVVjYnpadw?oc=5",
       "source": "한국경제",
       "date": "Wed, 07 Oct 2026 13:00:03 GMT"
     },
     {
-      "title": "삼전닉스 대신 방산·반도체 테마형으로…변화하는 레버리지 ETF 판도",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqWk9zMTUwRWtUZE1EYXNnckdES1RFa2ltdHI4NzNQa3hxelRwTkM5Zk9WVU5aa05FWGhaTmxYUHdxUDlKUllDbTFndzlqUGpMN3c?oc=5",
-      "source": "매일경제",
-      "date": "Sat, 10 Oct 2026 00:05:32 GMT"
+      "title": "삼성전자·SK하이닉스 하락에도 KRX 반도체 11.4% 올라…소부장이 끌었다",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ULVBFRF9rY05tQnpWQ3k5cDBROHNoRDJLenFHdnY1Wklxd3Nqd3BpMXdkb055WnAwNnVSTHJSTTFpZVpfVXFIdE5GdWs5RTAzMzZpazB6QV9TUGZ6ZVpISGl3?oc=5",
+      "source": "매일신문",
+      "date": "Sat, 10 Oct 2026 22:21:35 GMT"
     },
     {
-      "title": "삼전 살까, SK하닉 살까…여의도 전설은 ‘이 종목’ 찍었다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1md3RBaUJ4QkoyLVFsTEhBWFRFbzBnQkd2Y3hfY0Vlb1h4bkNPWWFNWXRUUXBkLWl2MnpWTWpKQzkwVndlRHp2V2FTWHh4bzVDc1ZwejNB?oc=5",
-      "source": "중앙일보",
-      "date": "Thu, 08 Oct 2026 20:00:02 GMT"
+      "title": "“100조 벌어도 싫다”…삼성전자·SK하이닉스 떠나는 외국인들",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5uUXVwcUhTbnVUMllISG4xT0ZaYWR2YUg1bTRxZWlYLU5WODk1aUxaWUZCZ2hpNXNJMnFja09DdXFuREEyNnc1clBnTjVtT3NiVkhwR2RFYk9JOVBmLVo4NVdrdw?oc=5",
+      "source": "에너지경제신문",
+      "date": "Sun, 11 Oct 2026 00:10:14 GMT"
+    },
+    {
+      "title": "\"대체 얼마나 벌어야 오르나\"…삼전닉스 개미들 속타는 이유 [분석+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CNm03MG9DaldVNXFmaHYtRjhzMEZ4dEpCeWpMQzFnbnJ5ZFVESExWMmltUERnNXM3akdROGwxdDdMSlVlVWdtaDIzWGxCQ3BWQkltcDV6aHlqQQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 08 Oct 2026 13:00:01 GMT"
     },
     {
       "title": "\"팔면 80% 남는다\"…HBM 날개 단 SK하이닉스, 역대급 수익성 예고 By EBN",
@@ -47,52 +53,46 @@
       "date": "Sat, 10 Oct 2026 00:10:00 GMT"
     },
     {
-      "title": "최태원 회장, 광주 반도체 부지 직접 챙긴다…오늘 첫 방문",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0tdnhwVHk2dk81U0cyWXp1dkRhWE9oWnpaNzlCY21mbUhBVXFSbUVJRnpjVHJsS3dibUpKT1JPNGVSd2ZHS3hTVVU1SWw1aDlENm9felJJZXozT2NLTUVNNV9BQkxsbmNERUlLa3BJZzdaM3M?oc=5",
-      "source": "마켓인",
-      "date": "Fri, 09 Oct 2026 05:45:55 GMT"
-    },
-    {
-      "title": "광주 부지 찾은 SK그룹 최태원 “호남권 반도체 클러스터 속도감 있게”",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Dc0NmVnV0QnJ5djA4ZGZKck13U0VhTEp1T2RZTG5HRjQ5VmZXbk9NVS1Pd19QZDktMGhobmY0aGhnamk4UGM3QTcxLUZmZw?oc=5",
-      "source": "전자신문",
-      "date": "Fri, 09 Oct 2026 07:54:19 GMT"
-    },
-    {
-      "title": "[속보]최태원, SK하이닉스 경영진에 \"서남권 반도체 최대한 속도감 있게 진행하라\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82Z1gtU3NYY240a1Y3dHhXdnlER1ZWQlpfcE1LcXlJN2h1UVJlTWNrR0h5T2JveHl4ZzFZZklkTW5Pd3FPTXhHMS1RUXZHMjlHN3liRzZ6bEtVQQ?oc=5",
-      "source": "파이낸셜뉴스",
-      "date": "Fri, 09 Oct 2026 07:29:05 GMT"
-    },
-    {
-      "title": "“아이들에게 아빠 왜 죽었는지 알려줘야”…SK하이닉스 집단 산재 신청",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tdG1WVWh3ZmpQUTFYY3EyM0J2eWg5M19DbmNBaGJuVzBYV29iZUhYdGN4MXd1ZE02Tk5RQjl1aEQtOS1VVFBOX3I2d1ltZktRMjFUYVUzMHZDUdIBX0FVX3lxTE52T0N0Y1dBYVNxQW1WMUV4LVVwMVNpN3hERjFONm9Mck1MYnpSNTNjcXBXeE92RVhGWDhGR2xYR2RuRDlZQUc4S2FtWVV6ckxfejV5Nl9STDZCUHJ0bkVn?oc=5",
-      "source": "경향신문",
-      "date": "Wed, 07 Oct 2026 07:44:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 노동자 3명 '뇌종양·유방암·림프종 피해' 집단 산재 신청 나서",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5LbHRycDNuYmNfWV9QcnZBdEtZeUpyVTI5WmNUM3VSN1J1YVV4czUtLXI2ZjlHWXllSTMxa0kzZ25NT01uNm1FNmJjb2hRaE9naVJVSGxBbEFBbzNDa0lQeldMZEs3ODR1bmQ5SUlxcXVka0R4YktF0gF3QVVfeXFMTXZiRHgybFFMX2QwbmNGMVRsN3lPbndjVHBuR09ISy11Qjg3aEQxR0ZXdk5xTDVTWXN0cUZpMXg5UUpRREo4TklUVlNMRWdMRDJpXzB5dl9jNGt0MzU0NHNEbVlLLWFlZWxoLWszOHJtWjdyQzRnaXc?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Wed, 07 Oct 2026 04:33:53 GMT"
-    },
-    {
-      "title": "늘 바삐 일하고 얻은 건 ‘암’…“SK하이닉스 산재 인정하라”",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGZ0hhRWVSUUl1aWxnVFc5TGc2dU95YktIVDdDVVRVZmozQmJkNHVNLURVTGlVMUVWd1RBdWVOYWRNSjIxcXNmV1FHQWFuOXY3R2VGaHlCdTFpQdIBX0FVX3lxTE5PTEZDZHd0WGtUUUxaamhDRnlReE8wVU9vTzRnMkI3Z2t6aWRBbW5EYUFLUnNIU2VvX29sT1VYQUtkVmdneFp6UFJ4cDVsX0ZRTVNoQ2k5YWhLaUFGNnRR?oc=5",
-      "source": "경향신문",
-      "date": "Wed, 07 Oct 2026 12:22:00 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 호실적에도 왜 못 가나…\"수급이 얕은 것 말고는 설명할 게 없다\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Wa0lNdC02bzdMOWtZS2hWd3JzTktoekdNQ2tRSC1tODBtU1VpNkdoX0RJbXZ4bl9iYlFBT1dUV0JhN24yTjM0cVNQSjN6YW01R0hYVzE2MllWcVFEczNYVNIBeEFVX3lxTE0wVmlfZVctRTIwbnlnTVdpaDhyTGhMazhHY2kxeFJodnlpWnYwcHdXMWFDNmpicGFTdGhiYWptRmM1Ujh0TW9tRndqcEc4WmtTRXhDRFdoMm4xYmc5a3o0R2pwcWExa0VaeXAzMDdBVkoxN3oyanpZTw?oc=5",
-      "source": "뉴시스",
-      "date": "Thu, 08 Oct 2026 08:12:00 GMT"
-    },
-    {
-      "title": "AMD 리사수, 삼성전자 전영현·SK하이닉스 곽노정과 회동",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05UVNlVXNZaHRsQmJncFUya2dRc1V6RE9SZWJPNmQ4Z25BaHRTcWVBMGhhZno2bkJaRzh0RVJZUVZCTWlRbk5CTURWdnRKZWVEWW5TVm95Tl9sTFXSAWBBVV95cUxOTzItTGtxR0ZwbC10WjF5dlRDQ2Q4MjJRSFlERGZwQ19MRjNLNTJMZGtQZ2tLbUVub21TNU12LW9VY3VsTWxnR1JiNDJuQlJZNUp0bko5ZzY1NHlwX1B6dWU?oc=5",
+      "title": "'꿈의 영업익' 달성한 K-메모리…SK하이닉스로 바통이을까",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44MUo4M1E1dUdiMlZNZFlKQkxaOUppUXhZSmY0cDNMYUhNZm9jbEZnQXpmeEVwcWxRUmtldWNaQ2NnZ2hYMk9LTWdVaF9Yb2FCQkJabVRmRnNBaDTSAWBBVV95cUxOby1EaEhGalVxenZxRVEtQVo5ODBMS2dEaGNBRTRfWnJYQmV0SmhuakJWMFJLNXVEYjBWeXR2eFhjSTFQREc0Zy1KazhuLTdzNlNJdjgxazVsajVCZm40alc?oc=5",
       "source": "연합뉴스",
-      "date": "Wed, 07 Oct 2026 06:05:10 GMT"
+      "date": "Thu, 08 Oct 2026 21:31:00 GMT"
+    },
+    {
+      "title": "SK하이닉스 이르면 28일 실적 공개…영업이익률 80% 돌파하나",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tamp6bnRqYkRhc2RENFNOeGJZR0M1akR0aDNGdVlxWlcxY3RLT2trS1JWbVI5RzlQT3A1NF9NVnVVeFZGMzNhc3NhNTlUSUpKTmtOWGpaSUViVDRRaXBhNEhPQk8?oc=5",
+      "source": "뉴스1",
+      "date": "Sat, 10 Oct 2026 21:30:00 GMT"
+    },
+    {
+      "title": "\"'1970년대 데자뷔' 인플레 폭풍에도…삼성·SK하이닉스는 버틸 것\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15UmxaVW5JenZPR1Exb2gydnd0c3ZLaFlDS213SGpoWW03Z19OYUlPQ2RDcTZFdWNfUXZ2ZVliaUR2S1Z3dVp1VEl3Rkw2djlQNnhmSUZZNzRqNFBZaVRrSNIBeEFVX3lxTE5YbU5FdWRoVDBQZ0xJeWwxbzdYWlR5VlFPV3p3X3FhZDFsZ1lJdUFKREV4TGxESy1INmtVaTlnN3NDNWJDbmZ2cTAtcmJEWVdrR19oQWw0MXpOWXk1YUdna3U1QmpPenU2a2ZjejVWSzB5LTVzQW1LTg?oc=5",
+      "source": "뉴시스",
+      "date": "Sat, 10 Oct 2026 15:00:00 GMT"
+    },
+    {
+      "title": "삼전 살까, SK하닉 살까…여의도 전설은 ‘이 종목’ 찍었다",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1md3RBaUJ4QkoyLVFsTEhBWFRFbzBnQkd2Y3hfY0Vlb1h4bkNPWWFNWXRUUXBkLWl2MnpWTWpKQzkwVndlRHp2V2FTWHh4bzVDc1ZwejNB?oc=5",
+      "source": "중앙일보",
+      "date": "Thu, 08 Oct 2026 20:00:02 GMT"
+    },
+    {
+      "title": "민주당 안성시지역위원회, ‘SK반도체 방류수 대책위원회’ 출범",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TTlRFYkdoV1RlRURBTC1Ndm1ZNkd5ajZUVmExRjNIZVQ0WWNiUHZWWXpIcXZqTlhxWFR0aTExOXc0SnBVLWtGeWtGQVZNVkpuSF9NdUdwVlExSDZHNmp5S3ZoMFVUWHVZRUEtVmFmQQ?oc=5",
+      "source": "기호일보",
+      "date": "Sat, 10 Oct 2026 04:38:25 GMT"
+    },
+    {
+      "title": "ASML 부품값 10% 인상에도 삼성·SK하이닉스 수용… 반도체 공급망 전반으로 연쇄 파장",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUkdGc0loYnRNNzRsMm16aGJEalRaeURTWERkSmZ3MHVxS0RVdzgwVDhacFVEWkV1VGhhNGh3eTJJeWVOOE1tSzlMbmpFN25Ub1pzcktkM2tfOWx5RnprYzJnYUFXTk9IMERON0haUUtRTDBXV0p2bEZUcm1UNW1HdkE2d09uX0I0?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Sun, 11 Oct 2026 00:32:04 GMT"
+    },
+    {
+      "title": "삼전닉스 대신 방산·반도체 테마형으로…변화하는 레버리지 ETF 판도",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqWk9zMTUwRWtUZE1EYXNnckdES1RFa2ltdHI4NzNQa3hxelRwTkM5Zk9WVU5aa05FWGhaTmxYUHdxUDlKUllDbTFndzlqUGpMN3c?oc=5",
+      "source": "매일경제",
+      "date": "Sat, 10 Oct 2026 00:05:32 GMT"
     }
   ]
 }
