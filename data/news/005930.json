@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-10-13T02:59:47+00:00",
+  "updated_at": "2026-10-13T09:02:56+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "[속보]홍라희 관장, 이재용 회장에 삼성전자 지분 2.6조 규모 증여",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13Wk9CLXM5RWtFb2pwOGpBUm9VT2U5RlZhbXZzeXZrNHpiOHFSMTlYaFlTV3hDZjJvSkItSUZsb3p0c1VhQ2VJT1VrVl83d1pXcGRGLXhUNXU1OXZqZmYzcE5xcGtSdGdpaHE0NQ?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 13 Oct 2026 08:23:53 GMT"
+    },
+    {
+      "title": "[속보] 홍라희 관장, 이재용 회장에 삼성전자 지분 2.6조 규모 증여",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13bEdIR2h1Zmp6eDRNWmRGREhtWWtJbWZfQ0paYm9NaUU4N3kxd2sycmhoRG5VaVhnUkFSQmY5RXZUTnQ3dFF4T0dZQUxlVDlmb3lmRDFRRWpKZw?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 13 Oct 2026 08:13:15 GMT"
+    },
+    {
+      "title": "이재용, 모친 홍라희 삼성전자 주식 2.6조 증여받는다",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2QS05dF9sVWdHNFZTSlJ1YUlxeG9udGpaX1ctTWlFOTlXd1V5dXNYRXlkRk5xSXJLYXR5MUlyRk9jZVNyR085ZlpiWDYxT2t6WkRxbWpyYWtNWVU?oc=5",
+      "source": "경기일보",
+      "date": "Tue, 13 Oct 2026 08:47:48 GMT"
+    },
     {
       "title": "HBM 다음은?...삼성전자, 차세대 AI 메모리 제품군 확장",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12b2FRWHAwLVAyV2RiNnV6d2ZpeDVkQ1h4Z0x0Q01DRnNsYWRheVBwUE5xcnhvOXJnRzl2SEZYNjR1ODhWNTJSNzBUaW5tRExNOGZ6NkRB?oc=5",
@@ -11,34 +29,34 @@
       "date": "Tue, 13 Oct 2026 01:12:57 GMT"
     },
     {
-      "title": "삼성전자·SK하이닉스, 중국 경쟁 우려로 급락",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBlSS1uTVF6U0YtZ1lueXNDck1NaElnUUwwdlZqdzRBVW5aZGlUN0RhUXVUaHEya3V4Qkc3empwbmttQmtnYnBXZzFTVUx6dEtrc3pULXUxa01uTklESXJxUnV2TFNoT2lHS2lxY1FBbUg?oc=5",
+      "title": "삼성전자, HBM 넘어 메모리 확장·저장까지 공략…AI 전략 다변화",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aelBsTFVzWUNFUlhSZGtvN1c4bzkzMTlOcVVYMndlTGpETENqMzlLUGpyeXpLbzcxbEdGdUlYQktxNDhUX0UzMVhncm00TzdkMmg5MFgtUlVsYzNnLTREWW85a2h2di04?oc=5",
+      "source": "녹색경제신문",
+      "date": "Tue, 13 Oct 2026 02:32:59 GMT"
+    },
+    {
+      "title": "삼성전자, AI 메모리 새 전략 공개…차세대 기술 ‘총망라’",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzM0hxTW5DWFdOUWZFd0xjNXhmUjZaMjVmd25LZEUtQzhESkpBQ3QwdFYzZEc4eWRwNUJycDFyY3daVE1DaTNZR3BtTTNUVVptYS1BVlBwU3g3OEU?oc=5",
+      "source": "경기일보",
+      "date": "Tue, 13 Oct 2026 08:51:38 GMT"
+    },
+    {
+      "title": "'장중 7% 급락' 코스피, 6천 회복하며 마감‥삼성전자 7%↓·SK하이닉스 10%↓",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sVndVemNfRk1HNTJjMmdsaEdEQWI4TUtUdmZzSGVmcGppWURybFloTFJMRXlFelRXME9vbzRfX2JsdkpiSjVrRWtrTnI3T2tQcjJaa0lObklFc0J4bXY5Rl9LR2RCb0V0ZGdqSEw2ZlE5M2dy0gF0QVVfeXFMTnpucFZ5c3lHeWlROUQ3WFlNQWtPczdaZnhNRzUwbDJFZnlwS0ZDdEFVX1BUV0JjeTg0M3hwczJXWUJTNUVueU9EcHNzQ0RKWFNTTlpsWFpzRi0wWmM5bXdBaG1MV1cyQWlHcHQ0dU1TMEhaWDQ?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Tue, 13 Oct 2026 07:05:49 GMT"
+    },
+    {
+      "title": "코스피, 장중 6000선 붕괴...삼성전자 7%, SK하이닉스 9% 폭락",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNX1ZrR21rNE9XV3BrWmd5Z19hMUIyNlNiT3lxbFFFN21LOWxfb1dyNmpaOEROeXdiOTl5YW8zM0dqU2tmcFJLdGJtNzRJeVJ2MURlQlFVbUVtYWJwalo5MzhjaFFTb2tyM0VNSmtObFE0RzhGeGFXNDlLM2ZzdzNzRkVZR2s1XzBQVnNF?oc=5",
+      "source": "조선일보",
+      "date": "Tue, 13 Oct 2026 00:07:00 GMT"
+    },
+    {
+      "title": "하이닉스 10%·삼성전자 7% 급락…실적 호황에도 반도체 PER 4배 붕괴 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1HckJQX0ZWdUNqQTRNY0NNOWVVR2NkWnhqOTByczhyNjJHdWlYWFBxdGxPbjMyeHNmeEItSkVBX1ItcTdWQXN1dTNnQU5fX2JOUGpaSGd6NXdaZUdJVm9aaU93cXdnR3dObVpzS2dKS0I?oc=5",
       "source": "Investing.com 한국어",
-      "date": "Tue, 13 Oct 2026 02:47:00 GMT"
-    },
-    {
-      "title": "삼성·LG 미래 기술이 한곳에…'KES 2026'서 AI 혁신 경쟁 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93M1pNUEhUMWVFZ25nWmFXMXZoMUpWWGdmTGNXVXpPcXVKOVdEajRHb3UxOVNySmk0YTdvd2UtaU1uSC15S2R1QVdFWGJiS0dkXzYzZWZMRzVwNXc2TzVYQUFHbHZqMW9GbW56U9IBckFVX3lxTE9QaGJIdVQ2ODZhRGZPdDB1UnYxZE80U09xMUxzZXJqUWN0YTRkTmRobm9sdE5WQVJBUTg0OEhNN1RDMzdsYWVsRXBJNDVBdWlLQllwQmtucE45M2psR2hUMl9oVFhacE5XU0hxZEl4UDVkdw?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 13 Oct 2026 01:00:00 GMT"
-    },
-    {
-      "title": "\"주방부터 데이터센터까지\"…삼성·LG전자, KES 2026서 미래 AI 기술 대거 공개",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rX3VaeXVhdUd1SDVCQjVBMFNBbHNJMm1LQ1V2cE9vUDdyYUdYQ0NodjFfU1ZMZDhoR0kyTzExT09FYkpZVW5fMUNTczlzTG9DRjMxX3VwdHNjZExHYUdxVtIBeEFVX3lxTE1nQWRKQTNZZEE1OVF1TE1FeF9tZk50VjFSZUUzQmpFUE5sUTJraDJDN2VuYVBtWXZ6bXRFc3dKVktKWG5pbmJMcFZrXzVNT0g5NTlCam9BUUc2OWRGVVNiZm5zOWpKNm96ek9vTVYwb1ZFamdPUTdXQQ?oc=5",
-      "source": "뉴시스",
-      "date": "Tue, 13 Oct 2026 01:03:47 GMT"
-    },
-    {
-      "title": "삼성전자, ‘KES 2026’ 참가… 일상에 스며든 AI 라이프 공개",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNZXFhbmc1R2wyaTk0U2NsS2ZOM0F3QkpKVXBGb2JpVUVyUHFvWjVkeW1CaXoyb3dvamozYUdwa2tMZDFiTV9VRTZ3SC10OEVHdkF5X253N3ZGYjM2YmVQVFY1bDFpQktYbmxxMGxFUkFIcWJPX2dTUXIyY3JuYjF6SkExSXhYdzhRTU5kRHNSTmxscVRveEEyeGxybWVMZGtjR3hLMlBzX3RSd2ptWENfdW1nZVdoWEN5SDVpZTN4M0VYdlNNNUNKNHA5cVlkQzAtRmlMaFlxR08wVkhHNVAtS2M3M3FHTFhDdVdXa0dWOGx4TDAyc01McVlibXEwZU9iVnZzZVY5dHZrVk50dmRIQl8taktlSUZkNWZ3ZHJIMzhHSXZ5?oc=5",
-      "source": "samsung.com",
-      "date": "Tue, 13 Oct 2026 01:00:00 GMT"
-    },
-    {
-      "title": "원화값 1330원대 강세…삼성전자 배당·美 금리가 변수",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE82LXA2RlMxXzhxYUJVV0VLQ2Zzb1hOSTVuQVVXZG5INFl5bzhJTHN2MTVLd3pUekg3ZE56NGN0ZjhFX3JLSm1hbVQ1ZFd2a0trNXc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 13 Oct 2026 00:52:55 GMT"
+      "date": "Tue, 13 Oct 2026 07:11:00 GMT"
     },
     {
       "title": "'광고판도 해킹하는 시대'...삼성전자, 유럽서 사이니지 보안 리더십 다진다",
@@ -47,46 +65,28 @@
       "date": "Mon, 12 Oct 2026 07:00:00 GMT"
     },
     {
-      "title": "일 잘하는 메모리 부장은 14억?…삼성 성과급 잔치 뒤 받을 청구서 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41WVdlTnh5MDdNWXpfSmtmQldFSXQwWFlsNXVZNWhnYk51N0RBSHpXU1BTQVVPNEE4cml0QUJEZ2MtV3AzcXVmUGVGVUN2X1pwQjl3UDZVcTc3SnV6TnBwUng1aVRZQUwwWjYzbdIBckFVX3lxTE0zdElsOVNUQ1BrN085WmJvaXNOeld6bnBXR244bk00ZGdRTWhJQUR3X0wybU9peTdCVGRONlZQbk5DLW9yMFlRRUx4VjM3ZDBRSXh3WkhBdGlhdWxkQjlRZEYxUlgybi1CWnV4RW45Ni1kZw?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 12 Oct 2026 23:00:00 GMT"
+      "title": "AI 입고 일상 속으로⋯ 삼성·LG, KES 2026서 미래 기술 격돌",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8welFYUTdsQ1dObGp5Qk9CbElOS1Z0QTlDRWROVE9vYThuZ0Y5Q2g2NEh0X1RYMGlGRXVsN2ZvTE9VWTI4Qko2Tlo5R3NoZ2g4bTRYN3BmMnE1Zw?oc=5",
+      "source": "브릿지경제",
+      "date": "Tue, 13 Oct 2026 05:31:00 GMT"
     },
     {
-      "title": "삼성전자, 반도체 협력사 임직원에 커피차…\"고맙습니다\"",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lTl9sbktJS0FHYUQ2U1VfZGpOMU41VXdDYlVCUWh0dnhISWpNVncwYUZNam9OeFhvMXZ6XzMyZFBmN2NNbEtiVzdEQjlRS0NmRWhSSUN0dXFnelVKV3dWNlM3c1I1S1E4a0N3MndGYUhKVzQ?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 12 Oct 2026 23:37:02 GMT"
+      "title": "삼성전자, 반도체 협력사 5만8000명에 '감사'…연말까지 상생 행사",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBSZzVpTHB3Qkt2QkRxVlRWS3dNVU9LdVpBSG5FVlZaYUZXTWJYQ05PTERCUllRWXhXR0dpVmZPaU5lR2Z6SjlEeVliNHg3dw?oc=5",
+      "source": "전자신문",
+      "date": "Mon, 12 Oct 2026 23:55:41 GMT"
     },
     {
-      "title": "삼성전자, 반도체 협력사 임직원에 커피·영화 쏜다…\"오늘도 고맙습니다\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xVkZKSUhuN3NKMWRhLURkdEpCTVdNOXNqSUhJVWNLT2FrS2FBR0JJLTFTZkYzYmJmRXRPZVJaWXRPYnVfRzVpZmZxeG4zN2t5NkNHTjJPRkpTaS1iV2EwUg?oc=5",
-      "source": "아시아경제",
-      "date": "Tue, 13 Oct 2026 00:37:38 GMT"
+      "title": "삼성전자, 반도체 협력사 직원에 감사 이벤트…커피차-영화관람 지원",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10bE9EVHFnRjZYNll4dGhYdHkxNkd4UVRYZ2hTUV9ucTV3dkstWWxsZE01WTZYX3hDSlhfaUxPMmhUOEUtNXZHTTFxbXdyNnFSS3RvU2tBQURERUxzaG04SXlrV0REMW9EN19uajhwaGVJYWJDYUHSAWZBVV95cUxOc0R5RW03U0hvU2pVTmVwV1FnQmM2dlRITTBiUFk1VlZJN1hUdklERldNdEhsdHZyMVpiYXBrY05FbF9UUlFUTFk3M1ZMRW5PZlVkMm5ISEw3VHlhRFlPYXZwdm1NNEE?oc=5",
+      "source": "동아일보",
+      "date": "Tue, 13 Oct 2026 05:49:00 GMT"
     },
     {
-      "title": "삼성전자 DS부문, 협력사 임직원 위한 이벤트 실시",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBmZ0h4cWtwVUk5ZDczdWZ4OXYwU1Byb2w5RHZLb25rQk1jdHlISmhLX2N2amt3T2tjWWpuQVlLbU9tcjFtRzZXV0RWdnRqelc5TUdjU20tT3ZueFlvV1N2eHBIWXNmMWY1V240VC1PWQ?oc=5",
-      "source": "기호일보",
-      "date": "Tue, 13 Oct 2026 01:58:00 GMT"
-    },
-    {
-      "title": "“주식 도대체 왜 떨어지는데요”…삼성전자 100조 실적도 못살리네",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PcE5TODEzNFpDYjEyQl9uVzBUT2xwc0RwT3RDb2ZlV2tJbDhIZ0tjaVB5R2dIdDlUWHRhN2xXNlVDMmJLN29rN2JJZUJjZUJGSGc?oc=5",
-      "source": "매일경제",
-      "date": "Mon, 12 Oct 2026 10:05:38 GMT"
-    },
-    {
-      "title": "“외국인 계속 팔더니”…삼성전자 外人 지분율, 17년 3개월 만에 최저수준 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRXFuZDNnMG51TTI3SERWcS1oVDlScHg2Y1p0LXk5T3ZWWXdhZEd1MmllYnM5YzZUbFpBb2pxX1lhWGtZRGZmeTlwNEJUeEo4VzdYV0NkWjFtbHBHQ3dFRE91WUI2bVBvdnhwNUxueVBHaEIwWlB3V2oxck1vUXZEZktnRW1SYkpO0gGcAUFVX3lxTE9vRFdBZHlYWGhBaUt6Ui1seHRybHpray1UdUhMbTJQb2F4T0ZXVVdlZEdIQnJ4WVBrYnhTUTVnRTJNZ213Y0U5QjRzeXQtd0RlTXZlTk9jNzFremhQbmtXN0E4Z0FqQl85VEZNR01XUVFzZ3hISWo1dW1aVGJ6Z2F4ekFQYzFLV2pJWTJsR2NrNHM5QWtlbjFiX1Y3Vg?oc=5",
-      "source": "Chosunbiz",
-      "date": "Sun, 11 Oct 2026 04:12:00 GMT"
-    },
-    {
-      "title": "삼성전자 주가, 오늘 급락한 이유는?",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1HRi1FRjNCTEpXdXExWEtqdkFUV1lSTUUzYmxfRnJRYllOMENmQlJIRm02c1RCb1RRTmpGY0NCTWVBVGE1VXRHVTVZUUY2VlJEWEdlbXBDRTV1d3lsczkxb3ctajFaUTJEMWpLUWFwUjZFY1A1SDdj?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Tue, 13 Oct 2026 02:32:00 GMT"
+      "title": "협력사 찾아간 삼성전자 커피차…연말엔 가족과 ‘무비 데이’",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3ZGtYcDZ1dHpkcS11Skd1RDN4X0NfRlZWSTY3UXhyOEJJZ1BYWHhmV3d0Mk9TendUZmc3U0RsaHhOeW1GS25MdVR1QXpmLTE2cVhQenNTTDVOdlE?oc=5",
+      "source": "경기일보",
+      "date": "Tue, 13 Oct 2026 07:21:16 GMT"
     },
     {
       "title": "[단독] ‘주 60시간’ 삼성전자 연구직 또 ‘과로사 산재’…메가특구 노동특례 우려 커져",
