@@ -1,20 +1,44 @@
 {
-  "updated_at": "2026-10-14T01:09:02+00:00",
+  "updated_at": "2026-10-14T10:04:46+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "홍라희 관장, 이재용 회장에 삼성전자 지분 2.6조 증여",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdDItRmJBYmxLOEU3a1Rja1hEbWJrMXN6ZGotNmQ3Qi16Y0ZINUVZd0Zld19ETlhjTkpndVkwODBaNF9XQnE3SmNMa1V4NWUyakZ3ZlBhb1hld0RKVWc0NnlFY3ZiczluM3I4NFQyX2JES0thcU9YVkhoVHlBNGxQTG9CMGZZazRVUU1CejV6SQ?oc=5",
-      "source": "조선일보",
-      "date": "Tue, 13 Oct 2026 09:50:59 GMT"
+      "title": "이재용 회장, 홍라희 삼성전자 주식 2.6조 증여받아",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wdlRBV19YbnNxOWJMTHJ1X1V5bFppeTZLQngyN09WLVVaSUdrc1Zjay1ZN3d3QnJzdHlmMldRR2swQmUydUxPSTMxZ19lcENxeWZxWGVlRnJ5NVNMUnc?oc=5",
+      "source": "YTN",
+      "date": "Tue, 13 Oct 2026 08:36:00 GMT"
     },
     {
-      "title": "삼성전자, 건강한 생활 습관을 이끄는 삼성 헬스 앱 업데이트",
-      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQUXFEdzJKTXZxQ1RSc0dILXF0SG9tMjQ4Uk11b1E1SnpDNnR5ekRqRUxvTUljWkRtMzcyNUNpWTBVbWZ0eG0wd29jdElQX0txWUl2b0w2MW5HX2V4TUM1NHlVbmstaHdDTDJKeHdDNE1tREg4TDk4anJwS0szclEtSHdWWG1GUUptczFXcHJjVDAyLUNTUFRBcklWUTdsSllTMHhpQVhNWUV4eEdtcEVvQ3RneFFfOFJUbUFsX3A2UHJ4LWQ2QzdrNGU5YXl5WFJncFNXSEVKTVpZYngzemc0M0RqU1hkbXBkOXc5ZHAtWFdpVk0xWjdxMThSbU1ZSU9hbFpMeEx3SWRsaGpCaGNmUnd1dmRjenl4VDBLenhNcTE4OFZTVFBsazlhaFFPYklSLWFxR1RtNmRKM1dFbm50VGh6M2gxZnlY?oc=5",
-      "source": "samsung.com",
-      "date": "Tue, 13 Oct 2026 23:00:00 GMT"
+      "title": "홍라희 관장, 삼성전자 주식 2.6조 증여…이재용 회장 지분 1.75%로 확대",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50aXNaVDFIVE5Sd3o3cnRoX2l2NURtWE5BM3UxLWVGc2dEMko1R2t6Tk9nemFGVXJHNm5fQzVNTGQyeHZ2dUJHWExGTXE0UQ?oc=5",
+      "source": "전자신문",
+      "date": "Tue, 13 Oct 2026 08:48:12 GMT"
+    },
+    {
+      "title": "이재용, 日체류 중 삼성 경영진 집결",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RVmRaalBZSm42aGUzVG83Y19PQk0zZzktbzJTZUhlNjBDZlEyT2dWa2I3Y2UtbmhzZU14elpncE9JVDItNllpTmhwNlBPWGRmNXNWenEtV0wyUQ?oc=5",
+      "source": "한국경제",
+      "date": "Wed, 14 Oct 2026 09:27:47 GMT"
+    },
+    {
+      "title": "[포토] 삼성전자의 차세대 메모리",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MeEhST3dnMFFkckxrMmowUktIXzdoWl9iTnJWT0hTY29fTnR4My1STVQzMjJXcnozaXlHQmtxb014cDlCNFJDRHJzYjl5dw?oc=5",
+      "source": "전자신문",
+      "date": "Wed, 14 Oct 2026 05:33:35 GMT"
+    },
+    {
+      "title": "삼성전자, 건강 앱 수면·러닝 기능 업데이트",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMGtPdGtsUkFBUHAtaWdyME5TS3VXcTRoSjkwOGZidm9MWDF3S3h0dWRjbFpPY1QtR2FSdE53eENvWU9WNzdTVmFkcFhBbmtUaW14VzZBSy1qQzE2bklrVUVFNmhrajVVTjNfVVFQc3Q0eC14Q0pOUFZYQURhQ3N0MHlwUQ?oc=5",
+      "source": "조선일보",
+      "date": "Wed, 14 Oct 2026 01:29:43 GMT"
+    },
+    {
+      "title": "12단계 러닝 코치·수면 균형 그래프까지…삼성전자, ‘헬스 플랫폼’ 고도화",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9wX0w5aDRBS3UwTUJMdHptNjFlT2RxVl9HUG1sYlU3MlFZWWNPamV4T09xcWVCLU5rb2RTd1loZE83TldkQUsweHFJdnIyYzR3WDBvWHZtYnQyUGI0TjJsV2RvbGhpMmxoMEhpYU0tLW9BN2hsMFHSAWZBVV95cUxNY2lud29rUGNGY3dvaGdZQnVPWDVzMkFtOU9BMWs2cUNEb3ZVWlRjZHZxZjA1eXNRQmpCYXU0WWJVc3B4MnpSalhfMHVaUW9lc0ZrSFV1Q2FFT21NYXNNZnd3SVVVUXc?oc=5",
+      "source": "동아일보",
+      "date": "Wed, 14 Oct 2026 07:09:17 GMT"
     },
     {
       "title": "삼성전자, 수면·러닝 코칭 강화 '삼성 헬스' 앱 업데이트",
@@ -23,76 +47,52 @@
       "date": "Wed, 14 Oct 2026 00:05:21 GMT"
     },
     {
-      "title": "삼성 헬스, 수면·러닝 맞춤 코칭 강화…운동 수준별 훈련",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1SVlpFOU0zWGZGUnptLWllUm9PN2xoN1FfVFJ2QUstZUttWVZvTUNQenhDMHBpcHBRemRpN2kwdU5GTkFWWTZrUnk1SG0xdHpRQmc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 13 Oct 2026 23:33:20 GMT"
-    },
-    {
-      "title": "英 헤지펀드, 삼성전자에 “미국 ADR 상장해 우선주 매입하라”｜Global Money Club",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mRVdWZlQ0bm1qclJtNG90dHNoNlNlUk9IYVlnWmdXRTBGMlhvTF9Kc1Q4eFVSeXhTZjV4bWZpQ1AxTlVUY0FaVVpCR0Z6WVN5YTI4LTJLZTV1NGM?oc=5",
-      "source": "중앙일보",
-      "date": "Tue, 13 Oct 2026 23:17:19 GMT"
-    },
-    {
-      "title": "'장중 7% 급락' 코스피, 6천 회복하며 마감‥삼성전자 7%↓·SK하이닉스 10%↓",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sVndVemNfRk1HNTJjMmdsaEdEQWI4TUtUdmZzSGVmcGppWURybFloTFJMRXlFelRXME9vbzRfX2JsdkpiSjVrRWtrTnI3T2tQcjJaa0lObklFc0J4bXY5Rl9LR2RCb0V0ZGdqSEw2ZlE5M2dy0gF0QVVfeXFMTnpucFZ5c3lHeWlROUQ3WFlNQWtPczdaZnhNRzUwbDJFZnlwS0ZDdEFVX1BUV0JjeTg0M3hwczJXWUJTNUVueU9EcHNzQ0RKWFNTTlpsWFpzRi0wWmM5bXdBaG1MV1cyQWlHcHQ0dU1TMEhaWDQ?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Tue, 13 Oct 2026 07:05:49 GMT"
-    },
-    {
-      "title": "삼성전자, 갤럭시 DDI 위탁생산 UMC·글로벌파운드리스 이원화 검토",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzenk2c0tQaTg0bm5PQks5T3VzbHZud2xWVkZxZ0k0V2lLVWx3TjRGX2VTam9xSk1PU095VjdYcnJqbS1iOU9HQW9ONVlOdzZDWUJMV1ZB?oc=5",
-      "source": "지디넷코리아",
-      "date": "Tue, 13 Oct 2026 23:36:57 GMT"
-    },
-    {
       "title": "[횡설수설/김창덕]“중국의 삼성전자가 되겠다”는 CXMT 쇼크",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WekJuRjA1OVlUWTQ2OF9peGFRSl94MVhoTElweGEzSzFYNkYxREdFeHBJUUF3UHgtMDBBc3U3cGtFcENVdDk4azZNUFN3NmFQbjZkdU5Xd1lnZkdEMVBnY3VleGpzRWtoTnF3eFhuZ3NhOVlZWkHSAWZBVV95cUxNUnBsZ2JETm1QVHFJZWZnbXVjdGxONkRTLWowLTl6Q3NGY2ZMTUZiS1ZHbC1FWHVSNjl0bmNVNDhNYUlFTWs4TG03aFpaeFpqRzhjWkQtd0lrZUpYbDdfX1BvbF9Kdmc?oc=5",
       "source": "동아일보",
-      "date": "Tue, 13 Oct 2026 14:18:00 GMT"
+      "date": "Wed, 14 Oct 2026 00:31:57 GMT"
     },
     {
-      "title": "삼성證 \"中 CXMT 리스크, 더 반영할 이유 없어…반도체 소부장 주목\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Ua1UyMGUxejRSTU5ITFg2S0xOeGtBTzNUMHMwWkJITUdqbUpXTVhFeXdlV2lKbXhXVm8xQ2NiU0dTdTUtbm1Jd0NESXNTOWVhQVpCeU1MNXN0cW10NTlrdtIBeEFVX3lxTFAxN0RjdzFpNW9OUXpUeW40WEQ1R0F0dmY1UXIxTHFsQjJIT3oyQnBwdGdwM3E4NGdESllKSHVJLWlUU3l2SDBIQWpmNFJ3U1g1ckJ1YWZ2T1YxdnlvNVNIeFVJOHhVUnFhbERXY19GRWtvSXJqNWRYbA?oc=5",
+      "title": "삼성전자, 차세대 '4F² VCT D램' 개발 재확인…CXMT 메모리 추격 대응",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XTnUzTzRROFhWMEo1ZEdsVHB4Y0JCUHVKS0RJa0RRckxFeXFQSHNuUTF1eDdBTE1JdnlzTTE1RXMtbjFOcGc0MERUdV9GQWRYNTAzaU9n?oc=5",
+      "source": "지디넷코리아",
+      "date": "Wed, 14 Oct 2026 08:48:00 GMT"
+    },
+    {
+      "title": "[현장] 中창신메모리 '4F²' 기술 충격에…삼성전자 송재혁 사장 \"우리도 열심히 개발 중\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GdV8xcFFfemxtTG5jSHBCTE9QbVlWT09mTGc2VlJwYklidmFLUjFwRnMtcVMxN0J0aWRONHl1MzYzSDV5NDlha0cyR0ZpV2NXNHVXcDJRd052Uk16Z2FfbtIBeEFVX3lxTFBSMkFjT0VncVhoMENlYWt2NmQ4VU9pTFJnNFhOXzJha2dhOUl5b2Q0N05mZmR0UzNXd3gteDVTN3VPQUNoQWFsZzZ1em01MkVIWmR4RnBqN1pLcDJnM0pXSVN3cDVjOU5lOFE5UXd3d0RqdjRXTGFSTQ?oc=5",
       "source": "뉴시스",
-      "date": "Tue, 13 Oct 2026 23:07:36 GMT"
+      "date": "Wed, 14 Oct 2026 07:58:47 GMT"
     },
     {
-      "title": "中 차세대 D램, 삼전닉스 주도판 흔든다?…\"기술격차 3년\" 업계 선긋기 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGZE5NWFB1MmgwZjZ2YWdqYl9XamNORTBzS2Zxb3ZwdHhqWWJRc0U2a2t5ZlE2VUFDT1l5YUxLTEQ0Z05kMXk0ODZ6OUxUTTlyMWxOWVpoQWpmVWwwUUI4akYzMDdzZDVY0gFuQVVfeXFMTkc5Rnc2ek9rNy00amdwbFBaZDU1blI1ODBoclpMUzVOQy0xTWlscENENUhJUjVJbU93UzV0UzNoMk11dm1WaTZuRzBkN1FVRHlELThlWkVJVUU0enFxQldEUnI3WkEtNmZTdTR6dGc?oc=5",
-      "source": "머니투데이",
-      "date": "Wed, 14 Oct 2026 00:26:54 GMT"
+      "title": "삼성전자 DS부문, 용인 복지기관에 친환경 차량 전달",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oRmtOTnNkank4VF9IVG9ycG1IbHdHOERWY1MyLUppOVlNSGhDSjhLU1dJVEdWUjZNRDRHZ0w1WmttNDQzT1hJOFlqWHBBRUd3ZmfSAVNBVV95cUxOMXZSNUNETHV3Y1NPVlNIYWFNbm45QklyOGhvU1Y3TXdsSHVtc0RQdnc4SmFWYU4yQnNDS2N0SDZLQWQ1NXJHeWYzWTM5MFlPcmEzVQ?oc=5",
+      "source": "서울경제",
+      "date": "Wed, 14 Oct 2026 09:03:20 GMT"
     },
     {
-      "title": "삼성전자 'HBM5·CXL' 새 AI 메모리 전략 공개",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aaTR4U2FjUnhoTEo2dXh3SXNMYTNwN2FVc3ptbWZpY1EzcExuQ3lLWjFWNUEyTkdFRjVwSWJuajBERmhKS0Z0R3VncnNRdk9sZ0tfcGxhWUtWWEFtV2NMVGdNdFdsRTE1V2lfbDdoSQ?oc=5",
-      "source": "인천일보",
-      "date": "Tue, 13 Oct 2026 09:37:00 GMT"
+      "title": "삼성전자·SK하이닉스, 자사주 안전판 사라지자 두 달치 반등세 모두 반납",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdnFuMTJoT0E4azNDdEZlMlVhaktYUW84V0ZDTDZZVGE0czh1cUY0QlFGUTRnMTVKUk5ObnFoeUViakhQMUZEb1RqTmM4dlEzN1duM2VGcFFmTEFhbDByRmZXWXkxdV9UeWhtbFlPaHVyNlNQSE9fQXBEbHhaYTlWVDc4VQ?oc=5",
+      "source": "인베스트조선",
+      "date": "Tue, 13 Oct 2026 04:35:00 GMT"
     },
     {
-      "title": "삼성전자, AI 메모리 새 전략 공개…차세대 기술 ‘총망라’",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzM0hxTW5DWFdOUWZFd0xjNXhmUjZaMjVmd25LZEUtQzhESkpBQ3QwdFYzZEc4eWRwNUJycDFyY3daVE1DaTNZR3BtTTNUVVptYS1BVlBwU3g3OEU?oc=5",
-      "source": "경기일보",
-      "date": "Tue, 13 Oct 2026 08:51:38 GMT"
+      "title": "올해 상장사 자사주 소각 62조원…삼성전자·SK하이닉스가 절반",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5DZU9pRWFxSDg1b0dhT3NHX0cya2pvakEyMERaa1BVMkg2eHVuRmFaaDM2SWZQUUloMS13RUVGaDZYWkhsWHlueldRYTR2N1ViQlhULXBibEhKb0Y5SklsdzlhNGVEdVpRNEZ5ZmdrcGtoZ0E?oc=5",
+      "source": "마켓인",
+      "date": "Wed, 14 Oct 2026 00:28:20 GMT"
     },
     {
-      "title": "삼성전자 'S·M·P' 3색 카드 꺼냈다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PZmhHekNSUzhBRlY1bFZqNXhuSGVZbG9vdEZrZkIxdkd2WUQzQms4U3kxMnZZVDR1d0UwX2l4TU1xcUxLeVFvZldEbWxPcWZwbnp6aUpCTmU4cy1uZnNsVjl0dDhHek12aUZPcdIBckFVX3lxTE1qR2p4M2ZMQ2FkTkdxSWFsRHBINW1KczctdUdPa1B1ZXI3Qlk5d1JxOTF4M0Zhd1NUc0NldmpZejR3Tm04aHVOZHJsR3Etd1J2LXNJZlpicVYwcXh5VjFVZnEzZ0dFTm51dnF3TVE4VGR4UQ?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 13 Oct 2026 18:50:00 GMT"
+      "title": "올해 자사주 소각 62조원… 삼성전자·SK하이닉스가 절반 차지",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FRkpsQjBGd2pkbnF4SUxWTWYyMTY2RWNtVHE1N3JTeHhwX0JqMWkxWm0yNm0xRnZNY2VLaWhkVEw2cDZpMHNoZDJ2Y0VCT2JTRDhHQzZoeGV2YnBIRDAyV0xjRG5ROFJIWEE?oc=5",
+      "source": "천지일보",
+      "date": "Wed, 14 Oct 2026 02:00:00 GMT"
     },
     {
-      "title": "\"삼성전자 당분간은…\" 충격 전망에 '반도체 돈잔치' 딜레마",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yU3d6bndGdjVNRG1leFNkOEpoZEd4UWg2NzJMalVYSE1xTWUzX1dBdGl4RGM3RDNuRkhrUjJwZFVrQnNJY0NMYTI3bDBMMmc3TTZSS3laRm5mZw?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 13 Oct 2026 03:07:43 GMT"
-    },
-    {
-      "title": "삼성전자·LG전자, 코엑스 한국전자전서 AI 기술 총망라",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4weElvQlhTZmk5RllmNTdrdnB3Ukw5dWx2azZ2NUhyUWdQZFZ2X2hWOWc3UDNwOTdvM1NXMEFqRWp6LWxUbnR4X1RXaFZValluZmFSV3BRbXQ2TlRERnQwb0k1TXczQUJIZUdwMHpDek8?oc=5",
-      "source": "연합인포맥스",
-      "date": "Tue, 13 Oct 2026 01:01:27 GMT"
+      "title": "\"삼성전자 7만원, 하이닉스 20만원\"…반도체주 전망에 무슨 일이",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWdzRkNGNmMXl4OEV1T1JMTU9pRW9jMXV6VlVnbHJxbF9ZQmptMHZfbjlQMFBpdTJHNXNNVHFZRzFKSkN2Y2NXbkxUblVMclVDWjZ2UUFSUHNHZw?oc=5",
+      "source": "파이낸셜뉴스",
+      "date": "Wed, 14 Oct 2026 05:28:29 GMT"
     }
   ]
 }
