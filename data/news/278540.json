@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T10:04:51+00:00",
+  "updated_at": "2026-10-14T13:01:04+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -21,6 +21,12 @@
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBtQ2lJUnNVc0VtMnNyRlRqRHBkaVdjb2g0X0tUQTRBM2VmOFVKMWppUUFwN2ZHbGNoXzdnWDNSZ3FCVGZIQlhpeFh2cVlOOHZRWG5pOA?oc=5",
       "source": "매일경제",
       "date": "Sun, 26 Apr 2026 07:00:00 GMT"
+    },
+    {
+      "title": "07일, 거래소 외국인 순매도상위에 운수장비 업종 3종목",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5La0NZdFVMTGxqRHpqY203djJPOE1nX3B4eEctX1N6WVA4QlNpZVZ5d05wZ3ZHS2tlZnJOaHUxNy00dEFiZG1OMm1RR2FhWk9pQWpvQl9YbThJZw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     },
     {
       "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF - 조선비즈",
@@ -59,12 +65,6 @@
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
     },
     {
-      "title": "외국인, 코스피 상승 '베팅'…MSCI 코리아 ETF 5700억 담아",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWVdnd3g2RnJLV0RQN21WTDFMa0F0ZVNLQVNwT3d4M2ZKQjdpY0VLV25pVUZNZTJkRTFqam9MRVpTaDlqSWRXV0tFU0dETFl6VWhfM1RtQXQ0dw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 01 Jun 2025 07:00:00 GMT"
-    },
-    {
       "title": "`팔고 떠나라` 공포지수 꿈틀, `인버스` 몰린 개미…뜨거웠던 4월 증시, 5월엔 쉴까",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9mSDIyZjdiT0E2elFKZFVBYVRnRFZNWWdZSUh4dEgzY3o5aTItbmpWNDBXUlBQUjIzLVVJalV3Tk9zeUJVY25RLWZmVjBJWFJNWjhLanZ6RGFydE43R2lwMWNzZlQ5U1hVQWl4UzlWMlRVQTlv?oc=5",
       "source": "부산일보",
@@ -83,10 +83,10 @@
       "date": "Wed, 29 Apr 2026 07:00:00 GMT"
     },
     {
-      "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5RWlJkUUc1NE9tTUVRSThTWTNhU2Qzb0dvOVBpbWZVdVQ0c1ZqR3MyMHQzRkNDWU5jWVNMQzdyQTlWRko5blA5bUpKQ0huY1ZE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 20 Nov 2024 08:00:00 GMT"
+      "title": "ETF ‘500조 시대’ 눈앞… 삼성·미래 ‘수성’ 속 한투·KB·신한·타임폴리오 ‘영토 확장’",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jS09zQlFRNXhDM2wzN3U1bExkeHRwWDA1NXEyU1FLdEt6M25TU3JvbW5QVjJ1RWtTSDRVU2VSU1JyRGxsNjVydV9reW1DSS02N1dWcGctZWd0REktdnpraU9LN2Z0UFg4ZmRCNkFKUGdXVFXSAXdBVV95cUxOUERTbnRHTm8xTzhKMUQ0WjlmV1o4MndQYUtIZkJhYVBUUUVlemo3UFhmLWlYQVN5OUgzMXhPdmY1V0RqM0VYS1VHS3RXZ3lqRV9KajhtNXRKeUZDUTVkRV82VWJ2NjdtQjhHYmIyLTBhNXVOTGhhaw?oc=5",
+      "source": "핀포인트뉴스",
+      "date": "Sun, 10 May 2026 07:00:00 GMT"
     },
     {
       "title": "외국인, 올해 국내 주식 200조 넘게 팔았지만 ETF 계속 샀다(종합)",
