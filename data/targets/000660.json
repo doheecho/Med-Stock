@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T15:14:06+00:00",
+  "updated_at": "2026-10-14T01:08:58+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3257727.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 3257727,
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "하나",
+      "date": "2026-10-13",
+      "target": 3600000,
+      "prev_target": 3600000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "SK",
       "date": "2026-10-12",
