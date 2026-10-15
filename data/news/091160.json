@@ -1,26 +1,32 @@
 {
-  "updated_at": "2026-10-15T00:28:29+00:00",
+  "updated_at": "2026-10-15T09:48:27+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
     {
-      "title": "[ETF 시황] 2차전지株 상승에 관련 ETF 7%대↑…반도체 레버리지는 '약세'",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fZlU3elRxX0tRQVBOSmxDZGJxNWp3dkFpb1M2M2Npemc1VGlTb3lTVDBjVEhHMWlMTlNnTDZfeENON09OWjJRdEhCMmZKX0dtREFTM2JZblM3andz?oc=5",
+      "title": "[ETF 시황] 반도체株 급락에 레버리지 ETF 22%대↓…인버스는 21%↑",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1YQTlSajFzaGJ3RHVFSS1VTEJWb0N0S1RoaEtRTUdiU21FRF9qRFJFZFQzdkNuM0d6cmpSWl9YNUVkeTdLM1VhaWxuejc5d2FROC1SdGFZMnVXSnhX?oc=5",
       "source": "뉴스핌",
-      "date": "Wed, 14 Oct 2026 07:23:00 GMT"
+      "date": "Thu, 15 Oct 2026 07:51:00 GMT"
+    },
+    {
+      "title": "폭락장에 '하락 베팅' 인버스로 뭉칫돈 몰려…레버리지ETF는 수익률 -20% '와르르'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RNlVDNDlIT3c1X1lzdTE1dWRRQnlHQ3BQT2V1TVFRRGZvdjNrUVRMdE9zbmJTMHFCZmI5TlQ3Vi1zMnZtOVpYZUpWZUJKNl9Qa1JuUlN5RjRMdEFES3NaMdIBeEFVX3lxTE5aRFhWVF9udm5aSHlMUEoxeHc2dDZXd0RDbGZBLXptVm1yMVVZWDRZd1A0Z1RuTFUwbnZoSUU3UENqTTJfNVdJMDl5M3d3cWw4VzQ1SXlhaEx4LTJiRFdVZ1pnYzVXb1FPTmRXbS01aE5udVpBTGFQVw?oc=5",
+      "source": "뉴시스",
+      "date": "Thu, 15 Oct 2026 01:29:59 GMT"
+    },
+    {
+      "title": "검은 화요일 개미는…‘코스피·반도체 레버리지’ 베팅",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jRDlEOUJWcG5hMWtGbm1sTUhRdml6QkVjTVc1TFV0ZzZRMjVtMlBmc1BhS1dwSDRLY1RvZ3pkRVFwckdYSk5ubkhOSV9oVzB1d0HSAVNBVV95cUxNOHo3elRyalpsZU13ZWdpT05feHVjRnhrUGNvd1AtMGJQWG9YcFIyeDNMX1oxbEh6TVNpbktaY2pQUnhTREtmY1JhR1JzQUxiWTU0VQ?oc=5",
+      "source": "서울경제",
+      "date": "Wed, 14 Oct 2026 08:51:37 GMT"
     },
     {
       "title": "개인, 상승장에 베팅하며 레버리지 6000억 담았지만…코스피 6거래일째 하락",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qT0pZZE45ZmF5eGlpYXI5ODRVRS13OFI1LWxpR2lMS01reUkwQk1fSUNHcGREblpkUGJTQ0U5VGdoeDdPa2EtdTNPY0xjN1daZ1BUS3JmVDFDTmxwNTFKMnRKcU5OS1M3Rm1jXw?oc=5",
       "source": "굿모닝경제",
       "date": "Wed, 14 Oct 2026 08:30:31 GMT"
-    },
-    {
-      "title": "검은 화요일 개미는…‘코스피·반도체 레버리지’ 베팅",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04ejd6VHJqWmxlTXdlZ2lPTl94dWNGeGtQY293UC0wYlBYb1hwUjJ4M0xfWjFsSHpNU2luS1pjalBSeFNES2ZjUmFHUnNBTGJZNTRV0gFTQVVfeXFMTTh6N3pUcmpabGVNd2VnaU9OX3h1Y0Z4a1Bjb3dQLTBiUFhvWHBSMngzTF9aMWxIek1TaW5LWmNqUFJ4U0RLZmNSYUdSc0FMYlk1NFU?oc=5",
-      "source": "서울경제",
-      "date": "Wed, 14 Oct 2026 08:51:37 GMT"
     },
     {
       "title": "코스닥·반도체 탈출한 개미들… 美 지수 ETF에 꽂혔다",
@@ -33,6 +39,12 @@
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jRWQ1OGFoNFpuNFBMQVdsZFVYSUw3QU96UXhOdS1FWERFUnlxcjMxYld3U0VEaC1TVUhYSGxDSUZmRnUwbG1XSDJtQmVTenpib3hMaA?oc=5",
       "source": "더밸류뉴스",
       "date": "Thu, 01 Oct 2026 07:41:34 GMT"
+    },
+    {
+      "title": "[ETF 시황] 2차전지株 상승에 관련 ETF 7%대↑…반도체 레버리지는 '약세'",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fZlU3elRxX0tRQVBOSmxDZGJxNWp3dkFpb1M2M2Npemc1VGlTb3lTVDBjVEhHMWlMTlNnTDZfeENON09OWjJRdEhCMmZKX0dtREFTM2JZblM3andz?oc=5",
+      "source": "뉴스핌",
+      "date": "Wed, 14 Oct 2026 07:23:00 GMT"
     },
     {
       "title": "'하락 예감?' 코스피·반도체 추종 ETF서 한주간 뭉칫돈 이탈",
@@ -50,7 +62,7 @@
       "title": "[ETF업&다운]3분기 엇갈린 반도체…삼전닉스 빠지고 소부장 버텼다",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IWkdjUUxlX2FySzQ4YU81MmZGU285eHFNUTQ1S2syOG56aGUxSHhWdzBvbVA2UkpWRnoxMFhLcEp1VC0xbXhULVgxa0tCcjR1ZjQxMS1yOHRJYzh6VG1J?oc=5",
       "source": "뉴스1",
-      "date": "Mon, 05 Oct 2026 21:00:00 GMT"
+      "date": "Tue, 06 Oct 2026 07:00:00 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스 담고 월배당까지…삼성운용, ‘KODEX 반도체타겟위클리커버드콜’ 출시",
@@ -77,22 +89,10 @@
       "date": "Mon, 21 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성자산운용, KODEX 미국반도체에 SK하이닉스 ADR 편입",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzbG1PQlJfZ0g5WUUxdGVEb09QX0p4SktreE5TbkhkcjdDeDlYaWJxaUpjSXl3cTE2ZGxWZGl2VFMzQl9BNkgwVXRNQ204empzU3NDRnR1SkZ5Qm11dG1uazZoNG9RWThtbG9mNVl6MThNd9IBdkFVX3lxTFBLOHJhaDJJY2FHcFRNUkl2bFlhMnEwOHlNLWJudlZUWU5DYmk4aUR5SU1FR09jMkdDMlR3dDl2el9tRFJQd1cxWG4xOS1iMVJtV2t1WUZJbE8yaGdwVEZhb3U3NUIyOUt0VjI1cTdmMUFtOE15ZEE?oc=5",
-      "source": "포춘코리아",
-      "date": "Mon, 21 Sep 2026 07:00:00 GMT"
-    },
-    {
       "title": "삼전닉스 팔아 치운 개미들, 반도체서 탈출?…알고 보니 '양손투자' - 머니투데이",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tUXYyV3NPRTVBa2RiLWZwcjQ1N3RsbEF1RUJhNWdaLXZoenRsOGpZVzNDM3dJR0I1ZlRLTldJZTIycEhFdzVqMnl5ZEg0NE1pcDRpYTA0S0d5YmlnWVJqYkoybEE5TTFP0gFuQVVfeXFMUE5raktldmlCNEJzb1R1RDdpLTdFczFDWFhOX2hfQk03VzhueFpXYzAxSEVGejYweUJ5bjJVYnpsQVA3WV8xdWllTUdmb0xKNko2VWpuRjJNNnZqNDd1X0J3Z015Qm8yMnJEX1RWMUE?oc=5",
       "source": "머니투데이",
       "date": "Thu, 01 Oct 2026 07:00:00 GMT"
-    },
-    {
-      "title": "[ETF 시황] 코스닥·반도체 ETF 강세…2차전지·건설 테마는 약세",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwcC1rSXR1LWRCbmtJUUxlYXFKaHRicTFVSnZmRU54SDRXY1p3OTlpdXBzY213Wk5iZTNUdGdoU1g4NVZ1SHdJbHVFamtNWmxOdzFzYi1kT0VCcjIz?oc=5",
-      "source": "뉴스핌",
-      "date": "Tue, 29 Sep 2026 07:00:00 GMT"
     }
   ]
 }

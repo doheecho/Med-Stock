@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-10-15T00:28:24+00:00",
+  "updated_at": "2026-10-15T09:48:23+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "\"SK하이닉스 '美 투자할테니 中 공장에 반도체장비 허용' 요구\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zTXRja2s5N0JJVkd1eGdVVVpOTjd5RXdYVWluWXFNYVd0NjJnQ1BscFVBUW1JVUE5QnBiU1o4NnBQNW9PazdjbVlheUR4bmxuWEdOSVh1UVMyTDRDdXc1ZE9Jb2FrRFpW0gFuQVVfeXFMTVZwNFEzV1JWcmpULUJuYko2bmxDRzd4SGE2dmVtRTgtVWRmZXlKRjZtbUkxbHpJbEZkU0dWbW9PMGlwNUpLY3FRaDhmWlZ3TzJpYzZvN0tpM1JhVjRIVDlmZTQwSC1Kd1dTTjRjRmc?oc=5",
+      "source": "머니투데이",
+      "date": "Thu, 15 Oct 2026 07:49:56 GMT"
+    },
+    {
+      "title": "로이터 \"SK하이닉스 미국 정부와 반도체 공장 건설 논의\", 중국에 반도체 장비 반입 허가 조건",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4tc0l2cXJJeFMxNFJ1ZVhiYVRrTUJoM3BGSm5BZENOcDlpaWJVcDBYZURPUHJUenBtSFpLbEp5UEZvcmgxQXdUbTNMN1RZZlRkRXhvX09ZYkRtbzFNNFdCSXFjalVDMVNFdWxXSFRSQ2JlUW8?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 15 Oct 2026 04:49:08 GMT"
+    },
+    {
+      "title": "로이터 “SK하이닉스, 美 공장 투자 조건으로 中 다롄 장비 반입 요청”",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwaGZOanVqOUVBN0podmpFbFpJNjdDcG9tWWJpLWpWVmp6QlppdkdXTUY1YUZ3U2JOVkJfMFNEd1VUWExTOEp3YjRVcmozZnEzdXpFVWw4YnlERXIta2d2alRwMjNTY3M0alZDQi02aFLSAXRBVV95cUxPTFdKSWc4bEk5WkVHQ1ZHblcxRlRpMVNmcGlfTTFpOTVNUTNJdnVwNUdIeUlVb1ZRblotQVdZRFF2Y0pGSWl2YjBENDBCeENTTlJBcXd0a2lUMlJHZjZaQTVHeHZpcEIwOWpxc2lPMzJucEVZRg?oc=5",
+      "source": "IT조선",
+      "date": "Thu, 15 Oct 2026 08:21:38 GMT"
+    },
     {
       "title": "삼성전자·SK하이닉스 저격한 머스크…\"마이크론 메모리 가격만 적당\"",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8yZGJLcmVJVHJyRnpWVlAycWc2RkF3dklKV0diUXhJN1N0TFh6Wi16Qm5hSG1tUXlnZ0VZeE40c2dUalE4dWliendrMEo4WV9BN0wxTmVCbk9CQWpKSmZTWkxFcXNPdjZNWGhJNDIxNnU?oc=5",
@@ -11,40 +29,22 @@
       "date": "Wed, 14 Oct 2026 06:40:00 GMT"
     },
     {
-      "title": "SK하이닉스 \"2030년 AI 인프라 성능 규모 20배 확대 전망\"",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGNWVfMm5MU1FHaUM3aTd4VlpJc1RZVVdSU096dHZtMTBSa1NwTzFTRWo2VDlXYkZydE5CQmg1VjRXOTI5dHdvYWtVWldLU0Fsb3NvV1ptVGktek3SAWBBVV95cUxPX3VWbS1LOVJOOGJzTDNlV3ZLVGRHemtQZkM5N1dNRERVRHRrZ25xbHlBcWlsdGhpbV9LeFU3bndZeWhhOEoxN21XVjE0ekNqdzl3YnRsNHVRRUFhdFk4bE8?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 14 Oct 2026 03:30:01 GMT"
-    },
-    {
-      "title": "SK하이닉스 \"데이터 이동 병목, 3D D램·HBF로 해결\" [1분 브리프]",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5cmhYMU9DZTVsSG9IQmpXb0NyX0xMbGo5RUlWbDdlcWxOckdWeEFMX2lzNlJNdm5FdXhyMEc3U1RoX0g0QktFUklaYXRTU2JfanRzbkdmZnZHWGVGOHFiTg?oc=5",
+      "title": "\"삼성전자 7만원, 하이닉스 20만원\"…'역대급 실적'에도 어두운 전망, 왜",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE42a2VKbE04czhuZmVoNVBqQXYxQWNjWXNfeGhMWTQtaWNYV05QcXJZRy1hc21pWGtVN2VwZHh4alhhOGlSMUJLWnc2WW5BeV93Ym9teWJMMFZSM2pSZzZxdQ?oc=5",
       "source": "아시아경제",
-      "date": "Wed, 14 Oct 2026 23:00:00 GMT"
+      "date": "Thu, 15 Oct 2026 05:20:02 GMT"
     },
     {
-      "title": "초고수의 선택은 SK하이닉스…삼성전자·LG엔솔은 순매도",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoRVMwaUYtQ2JZd3U4Z0tGVHBGS0xlMGRLeVR2Uy1xWU5kc25WWTEyaHNQdWxld1ZZVmdjNnB1ZWRfRTBKTGNiUmdxVGhMR2htY2NoeUlYcl9lQQ?oc=5",
-      "source": "한국경제",
-      "date": "Wed, 14 Oct 2026 23:51:21 GMT"
+      "title": "“삼성전자·SK하이닉스 지금이 저점 잡을 때… 용기 내볼 시점”",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OZ1h2OC1zSUhJX1lTM3hfX2JXSTFSNG55emV5ZkE2UUlxVnY3UEpIV2VHNWxoYThLeTRhRWpHc3hfQUxIT2h1WlRDSzRsRm45NHZzYnBYVGVycGpwdVBPRXMxaUZmS2JU?oc=5",
+      "source": "주간동아",
+      "date": "Wed, 14 Oct 2026 22:00:02 GMT"
     },
     {
-      "title": "[특징주] 삼전닉스, 프리마켓에서 6~7% 급락 …SK하이닉스 시가총액 1000조 하회",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMXBVcU5UNzJhejlkRXdFSTNjekNWd1NoWmVPTmw1QlpfSVVoSC1tWXZRVVhUdGdnZ05HNzVMUTZSeFcwYzZReTVsbUcwdWlqX1JLa1dKLXNkdFhPenpEbk9GRW5TRVhOQ2JIQzJtZVhnODI4cm00Z2d6YmdVSHZzUzB5M0VyNFMw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Thu, 15 Oct 2026 00:01:00 GMT"
-    },
-    {
-      "title": "삼전·닉스의 '검은 목요일'…다시 '21만전자·130만닉스'로 고꾸라져[핫스탁]",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1tWFo1dmhaRmhuQUtrRkVqZmVnTGhNODhvVXJwUlM5eDNtc1diZ0tJR3IyRTJ4VEJXTG9hMlFMM2JhR0NpUnVIMzdSTUVYd1JOcjN5YTIyMWJSQ1Z3N25ITtIBeEFVX3lxTE80QkxUNDdGYUY4aVA1VXc1VFZxWkJfRXU1LWJaVllTYWVTY2JJTU9rQVN5MWlENF9Vc0NyU1RhbkpWb1NhMFBSNVNmQVljSnhlYXlMeDhnRnBEMjBERnlfeVZsc1gtR1N4QXVTV1RUMkpzYkdtRFVTOA?oc=5",
-      "source": "뉴시스",
-      "date": "Thu, 15 Oct 2026 00:19:11 GMT"
-    },
-    {
-      "title": "삼전닉스 프리마켓서 동반 급락…SK하이닉스 시총 1000조 원 하회",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jS3UweFNwX0NJS2h4MnVKZTVaMFlFMnhMdFdaZVFRSHRtcnM5ZTgzSVQwbU96eHdqMGJucHJoRE50SXhaOVZsLUduNmUtbnFvYzQxcVRCNWkwdXdRY0c3a0FSN0tyMW14dEtlVWdMbGUzRkt2?oc=5",
-      "source": "부산일보",
-      "date": "Wed, 14 Oct 2026 23:44:22 GMT"
+      "title": "“삼성 7만원·하이닉스 20만원”…이주완의 반도체 거품론, 과거 전망은 맞았나",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51dGVGeUg4eUdObVMzSG5iLXlEWnIxaEVlSFQyR0RobHpzaXp1RUk1bjJyM1ozd2dicXJRQmRFVkZXNHlUQ3hWUEYyT0NXM09HUzB2WWNWaGlrMHczZUE?oc=5",
+      "source": "주간경향",
+      "date": "Thu, 15 Oct 2026 08:49:00 GMT"
     },
     {
       "title": "SK하이닉스는 잡음 끊이지 않는 '솔리다임 상장' 왜 밀어붙일까",
@@ -53,46 +53,46 @@
       "date": "Tue, 13 Oct 2026 00:15:00 GMT"
     },
     {
+      "title": "SK, 솔리다임 중복상장 따져보니…총수는 이득, 주주는 손해",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LY3RNVTNpRDhoRnp4Tzh0d1dzaTNmYnVzRGtBMWlqeGFiQlV3ckJQSmdlTzdEdmhFd2lUeXowS2Y1Mm5BdW51REZ6NnFmRldkZHZZUEFJUEt3SWsxdVJrbjVOaDEwaDg?oc=5",
+      "source": "한겨레",
+      "date": "Thu, 15 Oct 2026 03:08:00 GMT"
+    },
+    {
       "title": "[단독] 위약금 20억이면 ‘솔리다임’ 상장?… “중복상장 제재 실효성 없다”",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uMTRadWp2dUVPTEFTdzJlc09fYmtqWWZyVjJ3RzV6SGhhYkdPVDlLdXhHNndIcDU1Z2dmYzFqeFdTbWJOeEN0cUNRbmdCYXhVMnJGY2lxekzSAVRBVV95cUxOVkJNaFFrbEZfQXlRZEtobTlvZzItTVlHUUJBY3d4bENRem9IVGFsVV84aVhYcjZ3VXNXLWhXeWsyNUstT1dJcC1Qdkc3Q0Z3UEg1MVI?oc=5",
       "source": "세계일보",
       "date": "Wed, 14 Oct 2026 08:58:28 GMT"
     },
     {
-      "title": "SK, 솔리다임 중복상장 따져보니…총수는 이득, 주주는 손해",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LY3RNVTNpRDhoRnp4Tzh0d1dzaTNmYnVzRGtBMWlqeGFiQlV3ckJQSmdlTzdEdmhFd2lUeXowS2Y1Mm5BdW51REZ6NnFmRldkZHZZUEFJUEt3SWsxdVJrbjVOaDEwaDg?oc=5",
-      "source": "한겨레",
-      "date": "Wed, 14 Oct 2026 13:18:00 GMT"
-    },
-    {
-      "title": "“삼성전자·SK하이닉스 지금이 저점 잡을 때… 용기 내볼 시점”",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ldEJlR3U3V1B2UEtzSFRpeDNNODBpWDZWd2ViRFJRTmViVHV4djYtU2pRV0ttSkczLUVnOG9aQkRjNk9UMnZrOWdmRzI4aW11M1Z5Qm5n?oc=5",
-      "source": "주간동아",
-      "date": "Wed, 14 Oct 2026 22:00:02 GMT"
-    },
-    {
-      "title": "하나증권 \"삼성전자 SK하이닉스 주가 단기 낙폭 과대, 실적·주주환원 따른 투심 회복 기대\"",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1XbmhkTHk1QVd5U05ENV8xcFhaU1VuME8wZlJUSVc3VmxZdWRIX1lHeVJRZEVCVmhuODAwRng5TDVIcHpGOTk1OTZmRzM2TTBOeGRoVVZSek9vUDlkUWNaemNrb1pRRl92SkR3bjI5ejBqODA?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Wed, 14 Oct 2026 00:03:27 GMT"
-    },
-    {
-      "title": "SK하이닉스 주가, 오늘 왜 급락했나?",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zalp4ZC12OWVaVTZQMThhYWpfTnNreEUtQ1A5Y3phcWp2S19SV0pfRUF3Sk54NHVNM2t2ZUZqQmp2MWotVUtwaFZ0akFuZW9kb0xNSkNpcmtRb2ZYM3BrQTNYXzh4WnMwb3NmUFJDZUg2aGRZV2FF?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Tue, 13 Oct 2026 02:31:00 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스, 자사주 안전판 사라지자 두 달치 반등세 모두 반납",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdnFuMTJoT0E4azNDdEZlMlVhaktYUW84V0ZDTDZZVGE0czh1cUY0QlFGUTRnMTVKUk5ObnFoeUViakhQMUZEb1RqTmM4dlEzN1duM2VGcFFmTEFhbDByRmZXWXkxdV9UeWhtbFlPaHVyNlNQSE9fQXBEbHhaYTlWVDc4VQ?oc=5",
-      "source": "인베스트조선",
-      "date": "Tue, 13 Oct 2026 04:35:00 GMT"
-    },
-    {
-      "title": "청주시, SK하이닉스와 894억원 규모 공업용수 공급 협약",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MNWtwcWFGS0RneVY3OGQwSXlYSnpOSEp0SWxRTlpZa3YwdDhZUjdNTVBQakpWXzJjbXZiQUtKMTA4a0FZMHJnTFBpUGRpa0JCT1E?oc=5",
+      "title": "“정말 나와선 안될 상품이었다”…하이닉스 레버리지, 상장일 대비 70% 폭락",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NcWxCNUhKZzJqVnVmTXh6c1JVTVdIbE92UFQ5M3Q0OGV5M252aFMzTjVEVU1KakVTdzJsTWVwSlkxLV9nNWNsS0ZwRktrMlVCV3c?oc=5",
       "source": "매일경제 마켓",
-      "date": "Wed, 14 Oct 2026 08:17:25 GMT"
+      "date": "Thu, 15 Oct 2026 03:54:08 GMT"
+    },
+    {
+      "title": "[속보]SK하이닉스 8%↓ 미국발 충격에 급락…코스피 매도사이드카 발동",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBrWmdJT0dkWmdEZW55aEtwOXdHSVAyOE1JeU5fMnFnbDI2UVF1U205dUtiN3VXY1M3SnJ6ck52Q1NyOE1HdHdPcVJlb082dkw3?oc=5",
+      "source": "문화일보",
+      "date": "Thu, 15 Oct 2026 00:18:49 GMT"
+    },
+    {
+      "title": "하이닉스 11% 폭락, 삼성전자 9%↓…7월 말 이후 낙폭 최대(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GOUZCUjgyb0FFYWpkdnhYRzhQa1FndExZVWlRNmhLRzZOWktKczFnX3pnYWk4dm1YNllmTkdWOWZpUmxTeHFzTURJa1V5N19feTZlTDRKTG54Q1XSAWBBVV95cUxOa01vWjRoWmZXQklXTHJxeFFWZ0txYVFMN2h3OGhudlQ0MV9NajgxYXFOU2c1eHlWeXNkX0dSd2FJUmNEeGdLOHZNOGVUTVVIcDdkOE1iWG9ILUF6Qy1aZkc?oc=5",
+      "source": "연합뉴스",
+      "date": "Thu, 15 Oct 2026 07:06:43 GMT"
+    },
+    {
+      "title": "코스피 시총 넉 달 새 2868조 증발, 삼전닉스만 1997조원 날아갔다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwT05Ra0diMG5zblFFX1IyNVdaVWp3Y0pkZm1BWlNQQmtFazFjNVBCRU55QUxXdm1wSkdLc0pGUjhpMkhtMEc2OHlvSm0wdm1FMzc4YTVjdDVKTkhPeXloTGhmMEFKNjlB0gFuQVVfeXFMTy1GcUF4LXJ3UWR1UUxUMDZoQzlMUDQzR3dyYjVYQVloM09Pc2d6VDloVHBVYXA0MG14SFo4aTdOVDR5c1ZVcEF0Y0xDVnF0bFFlRUhnYXN0bE8wMjZDV0dtX1BvM21BZ2lZSWxVeVE?oc=5",
+      "source": "머니투데이",
+      "date": "Thu, 15 Oct 2026 08:13:46 GMT"
+    },
+    {
+      "title": "SK하이닉스, 43년 역사 담은 ‘초심 프로젝트’ 전시 개최",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93NkQ0UWtEbnVWWEc0ZWJkcks4WkY1S080MFZoZnNmRlFvNjg5TTZWTmw0dWVIc1V5MTN3SWN2NWVFUUV2b2lKUG9fc1k3eXROcFNrOFFuNjBFLTk4UGt4S1dXaFlnRjVacldpY0pZTG1DZm8?oc=5",
+      "source": "마켓인",
+      "date": "Thu, 15 Oct 2026 08:07:26 GMT"
     }
   ]
 }
