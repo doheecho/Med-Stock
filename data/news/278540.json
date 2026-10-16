@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T09:41:57+00:00",
+  "updated_at": "2026-10-16T12:40:24+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -33,12 +33,6 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIaDVidUFsakFiQ3pIYlhmaFZ4S2lBNVVUdnpMd1dFNmlTXzlvcGpxNlgtMS02SVZQd0djQXlsUkhzYTUweGhQRHI2ZHhaWXA1cUZuRFEzdHVaYVh5VG5z?oc=5",
       "source": "뉴스1",
       "date": "Wed, 29 Apr 2026 07:00:00 GMT"
-    },
-    {
-      "title": "외국인, 올해 국내 주식 200조 넘게 팔았지만 ETF 계속 샀다(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yVHlvaEJFbU1iVkduX1hDb0RmcGFmc3lSODQwQkRQaUlFRWhEVWt4NlhLZEtQNHVyMThRRzBtdmlJbFZkQnhCQkw3TWhQWE5JdnpiX1lpR0FXZHg1UmZtM9IBYEFVX3lxTE8yVHlvaEJFbU1iVkduX1hDb0RmcGFmc3lSODQwQkRQaUlFRWhEVWt4NlhLZEtQNHVyMThRRzBtdmlJbFZkQnhCQkw3TWhQWE5JdnpiX1lpR0FXZHg1UmZtMw?oc=5",
-      "source": "연합뉴스",
-      "date": "Tue, 13 Oct 2026 08:08:57 GMT"
     },
     {
       "title": "개미 레버리지에 울 때, 외인은 이 ETF로 웃었다",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GSUp5MnJRZW90MTZmTGpqUVdQSnl3TTFjamFsaldwMXdBWWZrRVphWVhOWHJ2RWRyMjJYSGdEblVaT1pqSXRGZDZvX1lzOE4tbGRfbUFwY1lGQdIBWEFVX3lxTE01ZjQ3NlZNZVR0X1RTWDZpVTZfeWVSejJWdEhCVWttQ2tmOWV1OC1aQndwRVEtWnNuckNIUGcxWDl4aXlyQmtXcWt2RlpRZUEyWmxNa25XN2E?oc=5",
       "source": "아주경제",
       "date": "Wed, 29 Apr 2026 07:00:00 GMT"
+    },
+    {
+      "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
+      "source": "매일경제",
+      "date": "Wed, 20 Nov 2024 08:00:00 GMT"
     }
   ]
 }
