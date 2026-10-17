@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T12:40:12+00:00",
+  "updated_at": "2026-10-17T00:20:55+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3257727.0,
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-10-15",
+      "target": 3200000,
+      "prev_target": 3200000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "하나",
       "date": "2026-10-13",
       "target": 3600000,
@@ -83,15 +92,6 @@
       "date": "2026-10-07",
       "target": 3400000,
       "prev_target": 3400000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-10-07",
-      "target": 3200000,
-      "prev_target": 3200000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"

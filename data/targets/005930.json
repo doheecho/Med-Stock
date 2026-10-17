@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T12:40:06+00:00",
+  "updated_at": "2026-10-17T00:20:47+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 495227.0,
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-10-15",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "KB",
       "date": "2026-10-12",
@@ -115,15 +124,6 @@
       "prev_opinion": "BUY"
     },
     {
-      "firm": "대신",
-      "date": "2026-10-08",
-      "target": 560000,
-      "prev_target": 560000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "메리츠",
       "date": "2026-10-07",
       "target": 500000,
@@ -137,6 +137,15 @@
       "date": "2026-10-06",
       "target": 610000,
       "prev_target": 610000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "미래에셋",
+      "date": "2026-10-06",
+      "target": 400000,
+      "prev_target": 400000,
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
@@ -160,13 +169,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "미래에셋",
-      "date": "2026-10-06",
-      "target": 400000,
-      "prev_target": 400000,
+      "firm": "유안타",
+      "date": "2026-09-30",
+      "target": 630000,
+      "prev_target": 630000,
       "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "신한투자",
@@ -176,15 +185,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "유안타",
-      "date": "2026-09-30",
-      "target": 630000,
-      "prev_target": 630000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "키움",
