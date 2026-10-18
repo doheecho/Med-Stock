@@ -1,86 +1,14 @@
 {
-  "updated_at": "2026-10-17T00:21:03+00:00",
+  "updated_at": "2026-10-17T23:59:07+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
-      "title": "Mapping the Market: Micron shares appear set for further losses",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlZwdXhDclVXOTh0V3VReV9vNzkwMjROYWI5ZDdqc3ItdU4yNGJ5ekRBaUxCZUVfWGVIQWhhZE5nMzlpOXBrbHltTHhRMWUtTUlvTEQxeTc5a3VtMTl5bXNCcC1EMk9uZ1hHeDFORVVFYTR3dm1nYnJLbU12U1RzRmpNRmlaeXFvR2JLWA?oc=5",
-      "source": "Reuters",
-      "date": "Thu, 15 Oct 2026 10:02:33 GMT"
-    },
-    {
-      "title": "Micron Stock Is 25% Below Its June Record. Is It a Buy Now?",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0lUT20yajk5NTVPVTdPOUpueW1HZU45R2x0VWY2a0wyRGxTSmNwdkxMWjFta1lCNnR6YmtfMmpHV2I0ei1Sb0ZQNjVMd2ZqTWJlSEpfVV9Hc2JKbDhVMGtBeFQyMUJGcnNuSTJLSHdFUVVoVkE5T18tbjFSc3hpQjBDY1NtemlyQXBtdHR4Q2VLREFhcWZ6TFFqd01TcC1J?oc=5",
+      "title": "If I Had to Pick 1 Tech Stock to Hold Through the Next Recession, It Would Be This One",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaHNlendXRlRVaVh6X2I0aUZYUkVVZFhCX3lyNXMtc25QblpXa1JsRGJVWEFkZ1ZTMFp4ZGVpcmc4blhiLU9yMlpMV3g5ZG1Ca0taWXV0bWNCQXJpX0JVb21MaU14TVJtS242WVNqZUw5SHFyQzdrQmt2WjZmQXdjSC1RQjR5T1ZmZlJR?oc=5",
       "source": "The Motley Fool",
-      "date": "Fri, 16 Oct 2026 08:37:00 GMT"
-    },
-    {
-      "title": "Micron Stock Has Some Eye-Popping Analyst Targets. Here’s My Price Prediction",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQm1QWkM2RlBjalJqYnJoeWhfa2YyT2pWdFpXbXJCNE1mOWR0blFDNXRRUll3cGFJWld5ZGVWRjJVeEE2X3h3enRzYzVsRm52OC1JUlNpN243eTZlbGJES21jRXA0TjZBbDg5ZzZaNUdiX1ZSWjhsMjVVcnBpdDB5OGRJMkRCbDJoZGJ1RVQxdkRhdkJJLVpmMFhhZy1vRTVMNkhfajBNX2hoakxCOG4wbFhNX1RadmxIYU5r?oc=5",
-      "source": "24/7 Wall St.",
-      "date": "Thu, 15 Oct 2026 15:30:00 GMT"
-    },
-    {
-      "title": "Micron to Hit $3,000? That's How High One Analyst Thinks the Stock Could Go",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSEN6SWE5a29wNkpnTjBaUmQ4YjIxdVdKWGJoZmlmbExFSGI3Y3JyWktJXzd5bF9nLXM0RGhsMGhkLWFWLTFVeGFEUkoyd3dnSl9qRkttUjdWbzB6YTVoOU8xWW1FX292Q3g4R1dGTk1jd1F3c1VDcW42cnF4UWdOR0NPUHdybDQ0M2lRR0l1TzA?oc=5",
-      "source": "Yahoo Finance",
-      "date": "Tue, 13 Oct 2026 15:40:01 GMT"
-    },
-    {
-      "title": "Micron Technology adds to recent weakness, slips another 4% (MU:NASDAQ)",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSDh0ZEZzQl9JbDJablNMcDV2UGJsYTJIY1dPZTVKY1A3dzA4Q0pEOU92cV9QanBVRE9VTjZYTldKY0p1UTlJdjhRVGRYN08wZ3ZDWUV0cENLNm9HWlhuZ3FaaVJtMy04aWRYaElfZmpGZ0o4ck9HVWhMQ2I5dzdneVhBTnZ5OU9uNUczWmlxLXNLMVM1UmhBdm4tOA?oc=5",
-      "source": "Seeking Alpha",
-      "date": "Tue, 13 Oct 2026 21:09:39 GMT"
-    },
-    {
-      "title": "Micron Stock Extends Multi-Day Losing Streak: What's Going On?",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPY21oSzZld3hCam8wQ0VlTHMzMGZEaWVaVkt0cnFTWnl1MUR3c0NWYnRFa3JfMkdUM0dRUTl3Uzg0N3ozM0pncFBqcmdyWERoUzlDMENDUUVnZlRFSHJ0X0lzWUJpbktKQkZUa2VfVFRob2twbGFRWjhXV00wSFlzdlV5T2ctUzkxOHJmd0xwd05ISlNfaUVTQ0NsbzNQUnhLTGZnbWZnRzBxUHlsc245QVlvalhTU2gwcENLcQ?oc=5",
-      "source": "Benzinga",
-      "date": "Tue, 13 Oct 2026 14:54:24 GMT"
-    },
-    {
-      "title": "Why Is Micron Stock Still Dropping?",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVTBMeGcxaEdOLURGdzdyaHBJalRfckoxOE5lUXoyMGVSaFNmMVRkTFU4a2V1ZkdpZ1FRZ1RCdk5CSG0wSTBxNms4d21kOXNjWko2NEhjYVZieEo0c25KU2d6bjk5WmZhYWdnWk1NU1VOeHlCSUZlaEpnT2xqYlVPdnA3UQ?oc=5",
-      "source": "The Motley Fool",
-      "date": "Thu, 15 Oct 2026 15:55:00 GMT"
-    },
-    {
-      "title": "Micron Just Raised Its Buyback Authorization to $35 Billion. Prediction: It Spends More Buying Back Stock in the Next Year Than in the Past 8 Combined.",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQUDlKaVJtUm9WSlB4TC04UVB4UDBwQWNYMjllVF9ydDg2ZVd3QzVJS3U0MFhpY19HMzhINDM1cWI5SElGbExmTDhsYXBCU01ITHh3WXFjeXZOdmpCYzRPZUcxMm16ZFAtbTJHYjh3RFlTb0NyUUtVdWx5ZTk4STRpUjNBbnFVb3B4SWN6cUxvMHg3T3ZRY3BsenpmQ2tkOS1tM2QyUndfeG55QzA4c2hjUVF3MDhqMnJyTmUtYVRNT0lmc3JWN0xXeHNxXy1fVVBNYlBRTGVJQnVrWWFVTmN6ZUt1YWRoV05XYm15VEFfaGtnT1pUVlc2bXd3QXp0T0UybFBVYk9ZUGJaT3pXWF9vd2owcEQtUnpxa0c4ZzdR?oc=5",
-      "source": "The Motley Fool",
-      "date": "Tue, 13 Oct 2026 21:37:00 GMT"
-    },
-    {
-      "title": "Micron stock tumbles despite analyst calls semiconductor selloff overblown",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOUM5aHhPZU5PWjluOGlOZkk4cFFfZGhzRWZhdFprUWUyT0x1Y0xiTUgyODd4MTcxV3hPUW40OUhwdTBZb3dFbzlQVXdTdzJhdjgwREVjanFBcElNQnZUV0JWVXpZODczUE9CNkZ5cXRwX0ZRSi1vX1Y3RDBub2dTSVZVR1BrZzhoUC1LY05fd3ZIeThJdnRGMmk3OV96UkYtSDRJ?oc=5",
-      "source": "Yahoo Finance",
-      "date": "Fri, 16 Oct 2026 19:42:25 GMT"
-    },
-    {
-      "title": "Why is Micron Technology stock sliding today?",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTkNKb0RLTm1YTTJKSWpvX0Z4STVjNUZsaDRNbVdXWmJpVEhTdEIwSkpZSzVjRE5YeVNCbUhzcWt2WTc4OF9xcTBJcEVNcllYeS05bTJwNnBrTEwtTFFfX2huQ1VSanFHWnN2c05TOG1OTDk2RTdteWt3b1ZfdlY0M0RCN1RVSkNPVVJjMGZuY2FOTVBzUTA2anVvMURmZF9VZVlibDNMSXdpQQ?oc=5",
-      "source": "Investing.com",
-      "date": "Fri, 16 Oct 2026 14:22:55 GMT"
-    },
-    {
-      "title": "How Much Upside Is Left In Micron Stock?",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX05HNFlWcXRIQWdpUkRUbDVWbEM5eUdtRERmN3NJUFNkTkJCOWZlWVBERUNDY1B4Yy03YS1lem56c3M0eFdnMVVUNncwMk5nb0NPSE82M3pkTU9IS0VaZFZtY1RjRFhoVG5TUXcyVlp0MlRjLURLVWlHbUlITnFiOUJPWE1fTzV4aG56Z0R2LUx0dEdDMHE5WmNoV3ZYNXc?oc=5",
-      "source": "Trefis",
-      "date": "Fri, 16 Oct 2026 14:07:07 GMT"
-    },
-    {
-      "title": "Micron Stock Slides Again Thursday: What's Going On?",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLTBwVElTQmVQVXJ0eHFJY25fVWxTb2FIanl4a09LLWNFZ0Q5Q0ljZS1LN0VPUVBoRmMzd3o5bWFvOFpnNkl5WmlkenVHclR1a01zVHNzd2I4M0xiY2pWM2xOTEZaTkNQVkRYZmo2dkVvLTdEMU5nT0pnbGFwWUFIMkpIRmJ6UUF4b3VTS09nT3VXQUZmOXMtZ29wMGw4U0NQS21sSA?oc=5",
-      "source": "Benzinga",
-      "date": "Thu, 15 Oct 2026 09:47:10 GMT"
-    },
-    {
-      "title": "Micron: Why You Should Buy Before Dec'26 (NASDAQ:MU)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONEVudVk1eU9qN3lMTXd3Nms3NDVfMzNRbS1Ldjcwd0ZPdExXLTNaMXY1alM3bWxmWmZGYTU2WWJnc0NsbkJCVkZ1Ym5Wc0preEJnTWRabmhBUmluWU1yZ09mZlkzcFh6ajJiM1lmVXJjQU1BS1lyZnZoQVl0Q1BLQ2trN3Rmdw?oc=5",
-      "source": "Seeking Alpha",
-      "date": "Fri, 16 Oct 2026 15:24:48 GMT"
+      "date": "Sat, 17 Oct 2026 13:20:00 GMT"
     },
     {
       "title": "Here is What to Know Beyond Why Micron Technology, Inc. (MU) is a Trending Stock",
@@ -89,10 +17,82 @@
       "date": "Fri, 16 Oct 2026 12:00:08 GMT"
     },
     {
-      "title": "Micron Stock Slides As China’s CXMT DRAM Breakthrough Rattles Traders",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ic3NZQU9SUV81WWN1XzI5clJTODBqNEkxV3gzUkg2WEpkcHlZcnVDOXN3XzFWbzhYRXVoQjFibVJFa2xRZWlQNWVOd3VuanRZSURaTW5QRWpvSEI1TlhFRzJBRGE0dGFocnNYdFZwamZVTmJwZ19hRDVqcw?oc=5",
-      "source": "Timothy Sykes",
-      "date": "Fri, 16 Oct 2026 12:33:00 GMT"
+      "title": "Mapping the Market: Micron shares appear set for further losses",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlZwdXhDclVXOTh0V3VReV9vNzkwMjROYWI5ZDdqc3ItdU4yNGJ5ekRBaUxCZUVfWGVIQWhhZE5nMzlpOXBrbHltTHhRMWUtTUlvTEQxeTc5a3VtMTl5bXNCcC1EMk9uZ1hHeDFORVVFYTR3dm1nYnJLbU12U1RzRmpNRmlaeXFvR2JLWA?oc=5",
+      "source": "Reuters",
+      "date": "Thu, 15 Oct 2026 10:02:33 GMT"
+    },
+    {
+      "title": "Micron Stock Slides Again Thursday: What's Going On?",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLTBwVElTQmVQVXJ0eHFJY25fVWxTb2FIanl4a09LLWNFZ0Q5Q0ljZS1LN0VPUVBoRmMzd3o5bWFvOFpnNkl5WmlkenVHclR1a01zVHNzd2I4M0xiY2pWM2xOTEZaTkNQVkRYZmo2dkVvLTdEMU5nT0pnbGFwWUFIMkpIRmJ6UUF4b3VTS09nT3VXQUZmOXMtZ29wMGw4U0NQS21sSA?oc=5",
+      "source": "Benzinga",
+      "date": "Thu, 15 Oct 2026 09:47:10 GMT"
+    },
+    {
+      "title": "Why is Micron Technology stock sliding today?",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTkNKb0RLTm1YTTJKSWpvX0Z4STVjNUZsaDRNbVdXWmJpVEhTdEIwSkpZSzVjRE5YeVNCbUhzcWt2WTc4OF9xcTBJcEVNcllYeS05bTJwNnBrTEwtTFFfX2huQ1VSanFHWnN2c05TOG1OTDk2RTdteWt3b1ZfdlY0M0RCN1RVSkNPVVJjMGZuY2FOTVBzUTA2anVvMURmZF9VZVlibDNMSXdpQQ?oc=5",
+      "source": "Investing.com",
+      "date": "Fri, 16 Oct 2026 14:22:55 GMT"
+    },
+    {
+      "title": "Micron Technology Stock Slides 16% Over 5 Straight Down Days",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaHFMZGdCeklrRWFsWloyOVRTQV9zVE5BNU5JcHBMaDJGZ2NIcThiVGpDWUxFcTJJVmhmNnpQa0ptY2dTajFKZ1Z6T0FXcXhTQWFqckkzSTdJSGZHcW93VWU4NWhNVkRDU3BRWTIwYV9EekQ1eVlob19EcVJjNDlOUEFsWTc0T2FQVklGQVNaVWZ6R25FTjdXb3FfVzZFZGcyZTJFRDM1ZjJHT2hUUnl2cnVycjNnVWtYU2c?oc=5",
+      "source": "Trefis",
+      "date": "Thu, 15 Oct 2026 05:26:31 GMT"
+    },
+    {
+      "title": "Micron Stock’s Drop Triggers ‘Buy the Dip’ Calls. No One’s Listening.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8xSUt3YVV0N3FhRFU4cTItNHB3UTJyMHUwY1NCbERhVG90SmVFcHowWnFLNUJRY2wzLXpaSHZyRzNKejBva3B0aEdRVnpqQ0V0NXIyUWpxWHhHRU94WWFkdDdOT1BreHhvU2RFV3Q0b0RYZzczT1JSTA?oc=5",
+      "source": "Barron's",
+      "date": "Fri, 16 Oct 2026 17:59:00 GMT"
+    },
+    {
+      "title": "Micron Technology (MU) Stock Faces Fresh Pressure After Rival DRAM Breakthrough",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQS2ZUb0ZfaTc0WXl2YlQ3Y2x5SjkxaFBNYnZ0aUpSNDRkMFN0Z3lHMEpIQVNjRXdCTWIxbFhlUUJ5amR1OVRJbHZHdEdzTW1kenZhbW9mQ0VRMjhfbk5ZWDRPM21DejVtRnQ0ZTh4cDFCWUgtNXFZNUFocklDSmpWSmZLdlcyX1BpLU5JT3IySlNLazE2ZXl6UlhldGFiYUxocFZqUExoVHFjV21iRnpvS1B3aGJJcGNxODJkaVpTUDc3UTBWV0pLeGloN1hkOHZWbVNESGdB0gHbAUFVX3lxTE5od0hRMkhYR1l1MUhRVkNveURsSjg4dXVoNjZiLXY4R0NqaGM3Y2dlSWNIZmNJVWR0WVBNdFdpMXNwV2k1c19jeG90UTNXZWNjNzR6YU4wRERrdXFqem9SU25PR1MtejM4ZWtLeVE0RWFzZmZGb2VudGs4WmtudU4zQXdKcWZXcS01OVIwSGpzV055TkdsQVdPMm0yQ29QR3FtNzhTTV9nMlA3WTZzQTVnYjA4UGNxcGFYWUt2MWotZ2xHUXVrQTl2cXpNZ01KQXJQQkR3VWlBQVN1OA?oc=5",
+      "source": "Simply Wall Street",
+      "date": "Thu, 15 Oct 2026 17:27:10 GMT"
+    },
+    {
+      "title": "I Just Bought Micron Stock. Here's Why",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdDZvT3I1OXpUN3hwS2xocHdoem9qeUdPeWlINnIwV2JtTVY0TzFiZVlGMlh6SWtKZnRlZTBmd0VDWFM4Q3oxcFo4NnBaX2pWWjBCMkRFZmlmNW03UzJtNnN2Yl9JMUktRHZqa3hrNFNGS2hkc2dvU2FQS2dBSlhLUEdhSmQ1eHZHVEFnVERtdTFId1dvMzVmY3hDWQ?oc=5",
+      "source": "Yahoo Finance",
+      "date": "Thu, 15 Oct 2026 20:05:00 GMT"
+    },
+    {
+      "title": "Why Is Micron Stock Still Dropping?",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVTBMeGcxaEdOLURGdzdyaHBJalRfckoxOE5lUXoyMGVSaFNmMVRkTFU4a2V1ZkdpZ1FRZ1RCdk5CSG0wSTBxNms4d21kOXNjWko2NEhjYVZieEo0c25KU2d6bjk5WmZhYWdnWk1NU1VOeHlCSUZlaEpnT2xqYlVPdnA3UQ?oc=5",
+      "source": "The Motley Fool",
+      "date": "Thu, 15 Oct 2026 15:55:00 GMT"
+    },
+    {
+      "title": "Why is Micron Technology stock down today?",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTlV6eldZM290Wi1RcUJkTG9oc21sOUV5OFVvd3V6cUZoQVFHTExreDM3NV8xY0lXUm43NWJPS2Q3YUFmUmppeDZWZmhzbGhPQTUwcE9xY19Pb0p6QWIxbDhuOG4tal9faHBwQW9sbmhscmlFb0tqbWRwS1k5NGpNaXk5LXV5WktnWXh4UXU2T3EtVzdabHNHOWRVa1ZsUTlQN3FwMUFB?oc=5",
+      "source": "Investing.com",
+      "date": "Thu, 15 Oct 2026 08:47:38 GMT"
+    },
+    {
+      "title": "How Much Upside Is Left In Micron Stock?",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX05HNFlWcXRIQWdpUkRUbDVWbEM5eUdtRERmN3NJUFNkTkJCOWZlWVBERUNDY1B4Yy03YS1lem56c3M0eFdnMVVUNncwMk5nb0NPSE82M3pkTU9IS0VaZFZtY1RjRFhoVG5TUXcyVlp0MlRjLURLVWlHbUlITnFiOUJPWE1fTzV4aG56Z0R2LUx0dEdDMHE5WmNoV3ZYNXc?oc=5",
+      "source": "Trefis",
+      "date": "Fri, 16 Oct 2026 14:07:07 GMT"
+    },
+    {
+      "title": "Micron Stock Is Up 385% in One Year. Buy Now or Wait for a Pullback?",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQei1LR1MwM3ZaWUhlRmtVMDNpNERON2RvaWxMSXd6SUh2VEZQNk90YUt6NkNuVUpKaFlkeDN3NUV2UXJCYW02d2piNEJqdURSLVB1VDFQb3NGTGlPY0hrTlFqZlpESzVtSVdmRGRQNURGTEJxaDV5aGUzVzEwNkprQ0k5Z2ZVSmlUdmlTZ3M2R05STUE?oc=5",
+      "source": "Yahoo Finance",
+      "date": "Fri, 16 Oct 2026 16:46:31 GMT"
+    },
+    {
+      "title": "Micron Is Down 23% From Its High. History Suggests This Is What Happens Next.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTkRqNGdUd3dpWFZOOTNkRkVzanIxZU8zTEsxcmRGVEhoTUFBWTc3X2tvaUkwYWtTd05TN2ttUk5fN3FjTi1tM2toU1laQ1J6QVpObk1PYU84T3ZRSklDcG45TjZFaFN1c2RnVExhNHNYVmg1V0JscVJfdk9BRkEtODQ0cERfb0FUVXkwQTVqZEFjX0FveDNfbQ?oc=5",
+      "source": "The Motley Fool",
+      "date": "Fri, 16 Oct 2026 05:30:00 GMT"
+    },
+    {
+      "title": "Why Is Micron Stock Still Dropping?",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNME1JMkU0M1dLOUNjV2dzUDJ3RGMyWXd4cV9KaUVVcEpueDQtWUkyWHh4SW5RYlpTRDlETW5CM3FBUnFwaTl1MkJEblZsd3BybzVzOFhUWWpodkI5VGtBZ01kaWp6Rk5lV1Q3TGxOSXVoN2NrNGJZSjMxdW9wWTJhdXZ5bU9XdGFvYzIwanZ3a1VPSVhGTFc1R250cTk?oc=5",
+      "source": "Yahoo Finance",
+      "date": "Thu, 15 Oct 2026 15:15:36 GMT"
     }
   ]
 }

@@ -1,33 +1,9 @@
 {
-  "updated_at": "2026-10-17T00:21:00+00:00",
+  "updated_at": "2026-10-17T23:59:04+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "이재용 막아선 삼성전자 동행노조 \"돌아온 것은 침묵과 부상\"",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA4ZWFWVGNRNm5PU051dTgwaGVLd2FVZWpnd3lOU1Q1bFA1RTg4NkNNbnJvODU0T0Z5RGFZVlhJd3QxeEdVNmR4WXEzXzk5LWNYcnVoRmZKN2ZYMkdhNXNhLTd6UXRPa0FhTDltbDhZV3Q?oc=5",
-      "source": "연합인포맥스",
-      "date": "Fri, 16 Oct 2026 05:58:00 GMT"
-    },
-    {
-      "title": "삼성전자 회장 이재용 , 중동 체류 임직원에게 선물·편지 전달",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52d2U5eUd1SFY0U2wxU3hwYzZNeTJuX2RZWHdmYzZFcW9yRTlsM0h4OGRycWQtNjJPbTM5WHhZSjJvcjA1M3lmWWt1SU8xSnN2bG4xclJ5Q21QYXFTV1VUY1dfWmtlSzh2TXV2VTJMZHVqX0E?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Fri, 16 Oct 2026 06:06:05 GMT"
-    },
-    {
-      "title": "이재용 회장의 홍라희 여사 삼성전자 주식 매수거래를 통한 교훈 [기고]",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE15TWVDd0t1UmJHOGhaWjJLdXl0aG9vb0NDQXhyTC16Yjg0YUQ0a2ZaZ1VPOVRkS3NHdWlpd3hxTDQ5RkM1QzdDUlRfelRpQXFDU28zSTRzNFVzblJXYS13?oc=5",
-      "source": "MTN 머니투데이방송",
-      "date": "Fri, 16 Oct 2026 01:37:39 GMT"
-    },
-    {
-      "title": "삼성전자 또 일냈다…\"올해 최고의 발명품\" 극찬 쏟아진 정체",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85SnRHb3gzMGc5M1RyT3V5enMyZWtkTUNBZzA1LTJlMlNuTXJqaHM3c3NldVlwOFlQbnJSR0JVS0lxZ2ZrdFN0OHVNUUVsb0U1S2N4aks5VmZrdw?oc=5",
-      "source": "한국경제",
-      "date": "Fri, 16 Oct 2026 01:53:19 GMT"
-    },
     {
       "title": "삼성전자, 갤럭시 S26 울트라 등 3종 美 타임 ’최고의 발명품’ 선정 By EBN",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mYnd3bXpDWVR6RHRmdm1nTFVZLVd1aDAyOWFtQnotVEF4Y2pjUUlDRlY0Yl9aYm1PZmVwUkhhRnJ0bHZDSHRlTGluN1dsekJKdHdma0RDd0Vqc2NQRVJ0ckhtYmFfc0RRRndUeE00RXg?oc=5",
@@ -41,22 +17,70 @@
       "date": "Fri, 16 Oct 2026 01:18:51 GMT"
     },
     {
-      "title": "[흔들리는 갤럭시 왕국⑥] 삼성 갤럭시 23%·애플 22%…세계 1위 격차 고작 1%p",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yRmlyZTlDb1FTcGNNRlh3NlVBclY2QzRjNGg3ZFFLQzh5TGZjZlhaWWxNVzhtczRrZDFlRFZDZmNhX3FmYVl3d3ZlbnhPRER1U3JhSGwwZXVGU0ExLWtpdUItQW_SAWhBVV95cUxQUW10SGF3cmk0STVOcGs2RVFTMTg3aDVkbTlJdUtxNTFMU1p4MjVCMk8tUU1iNDFvSWdHS2VZZ3R4dGhIRGtaU0Zwc24wdmJ5M1lNbWtvamdNanBnRjdwT0dFa0I4TXBOVQ?oc=5",
-      "source": "경인방송 뉴스",
-      "date": "Fri, 16 Oct 2026 23:00:00 GMT"
+      "title": "삼성전자 또 일냈다…\"올해 최고의 발명품\" 극찬 쏟아진 정체",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85SnRHb3gzMGc5M1RyT3V5enMyZWtkTUNBZzA1LTJlMlNuTXJqaHM3c3NldVlwOFlQbnJSR0JVS0lxZ2ZrdFN0OHVNUUVsb0U1S2N4aks5VmZrdw?oc=5",
+      "source": "한국경제",
+      "date": "Fri, 16 Oct 2026 01:53:19 GMT"
     },
     {
-      "title": "메모리 폭등에 폰 출하 20% 급감…삼성·애플 양강 체제로 재편?",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1HbG9lUkp1T1Y1VGVWUUdGZTBXY0dfZFdYaEhoMS1VVUZGSGdRSFEyMDZ6aHlEUzJlZjlIS1pZUE1XclJvMmhCWTBZTU9lbVhYSXlsZVJjUTkzUlg0d0NOVEJ5RU1zVFhGMHA2WGhUeEPSAXRBVV95cUxOUExEZUpfV3pSZlhkSG42Nmc3blFNemk4UVBXbHNyUWdySGtzeXhRZ2RJNmhadUtJam5raFRDdm9iYXQ4SUxyQ1pvY2FScXBZcTUwODVKSHpvNDYxREJkT0VycnRhM0NaM2EzMkJoUWJCWUdQTA?oc=5",
-      "source": "IT조선",
-      "date": "Fri, 16 Oct 2026 21:00:00 GMT"
+      "title": "“중국 반도체 추격 우려 과도…삼성전자, 비중 확대 기회”",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSjkwWVczRDh4UlQzS2JFaTk2SzdQYmhNclZzV2tGbDhKeHF1ZklCYV9Hal9kMmc2UDREcVZ4TUV1QUdpb2VHN1pXY05fMUQ0cmFIa1E1eWM2a2xMeDgtNFNxQzkxc3lvTnRIMWJzaFIzWk1EY1Z2RGNkTGsxVVdwVg?oc=5",
+      "source": "이데일리",
+      "date": "Wed, 14 Oct 2026 23:30:37 GMT"
     },
     {
-      "title": "메모리값 급등에 스마트폰 시장 위축···삼성, 1위보다 수익성 방어",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8zSWJlc09zZWlaNWtZQ0V1QXM4UjdYWDlVakI1M2xXbFdDQ21LSFpkenNiWmR0VGJZdkROYTlTQkRSMXd0OFRKVGo5Mk5HTGx4aUlBWS12R3FKdVYxUnZLNEpQc3VsV2pXT3c?oc=5",
-      "source": "뉴스웨이",
-      "date": "Fri, 16 Oct 2026 06:00:10 GMT"
+      "title": "이재용 막아선 삼성전자 동행노조 \"돌아온 것은 침묵과 부상\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA4ZWFWVGNRNm5PU051dTgwaGVLd2FVZWpnd3lOU1Q1bFA1RTg4NkNNbnJvODU0T0Z5RGFZVlhJd3QxeEdVNmR4WXEzXzk5LWNYcnVoRmZKN2ZYMkdhNXNhLTd6UXRPa0FhTDltbDhZV3Q?oc=5",
+      "source": "연합인포맥스",
+      "date": "Fri, 16 Oct 2026 05:58:00 GMT"
+    },
+    {
+      "title": "막오른 삼성전자 내년 임단협 논의…DS·DX 노조간 전운 고조",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NQVBBanl6NlAzazdFWHhuWmppa0FqN205UkE2ZEZHNEZBWC10OERyaHZ6N1JsMFlwTV9fOXVfS203OTBjcmZKbzZfbmlQejJCdGc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Sat, 17 Oct 2026 21:15:01 GMT"
+    },
+    {
+      "title": "삼성전자 노조와 닮았네…대만서 벌어진 '뜻밖의 사태' [김대영의 노무스쿨]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96NEtwMDFLMEs3YXY4dkN1QVFqSHJrN0hmWVh0eXZKdlZmYW84dy1KQXZPMF82U2czbl83dDRsUGNlenpEMnotSzFrU3V3a1g1T1hDVm5BNFVrdw?oc=5",
+      "source": "한국경제",
+      "date": "Fri, 16 Oct 2026 06:24:57 GMT"
+    },
+    {
+      "title": "분기 영업익 세계 1위 삼성전자, 주가는 왜 또 폭락한 건데?",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUVd4UlcyOERaZC1leldsOGJPU1hRTmR5UU5RS2YtRXlfVkRYOGhMYTBCckVEU0tmZlZVRzZWdXNHSUlhZnQ1cnlTN2p5U1NWQzIwNXVqSFlBLVA0VnVNek9tV3RYYWNiQm1wUGtnRnJzOERQTnppUDJweXd0Z3hkdWtCNA?oc=5",
+      "source": "인베스트조선",
+      "date": "Thu, 15 Oct 2026 02:59:00 GMT"
+    },
+    {
+      "title": "삼성전자·하이닉스 주가, ELS 상환 기준 밑돌았다…연말 평가도 부담",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5rN0N5OUhKOU1aUzlmdUxPamVPNWQzWnVlWnc3NW1iTEN0MjF5eVdxV2pVcWN1SFJyczcxbnJpb19rTUd5TkFTbzlTVG1NS3dyQnfSAVNBVV95cUxOcHd3M04xUy05RHJKZW5qSkF6MHFmcDdxb29rMVBXcFhmR05oWkE4MlJQNmY0ZFEwbzJKS0dRSnpNa3NTaGFKdEdnNTVxOG9EU1ROZw?oc=5",
+      "source": "서울경제",
+      "date": "Sat, 17 Oct 2026 05:31:33 GMT"
+    },
+    {
+      "title": "[경제뭔데]분기에 100조 버는데 외국인은 왜 삼전닉스를 파는 걸까",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkR2VRZ0RFWkoycmt4TVZkN1BKTHluclphZ0kzVFBvSUFHeWdxS09PT29SSUVWUTlHcTFpOWU2aWprRXpVVjUyVG5LNVZtWW9RYmVHaXN5ZXBFQdIBX0FVX3lxTE9ibTJWVVFxRVFibjNXbGZRcDdwMjlzVnNzLTJ3RWE4eXZ2VDlDWTJIWTFQUnhuVGFoZldSWnl4SU1TTVgybC1KVzI0UHFsMUVEd0I2cXhucmpJMlBzS0x3?oc=5",
+      "source": "경향신문",
+      "date": "Sat, 17 Oct 2026 21:00:00 GMT"
+    },
+    {
+      "title": "세계 최고 분기 영업이익 기업은? 삼성전자가 Nvidia 앞질러",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51UTJVNnlDU19xVFFSTUhOYlFnWmVaZDBkb09ZTVh5WEZMWWxBZWRweWJHS3VLdkxlUUtoZ1J5SWV6U2llMm1fcnR6azUzd1lTMkdnV2F0ckJtRm95bFNCaWIyT053NzlTYU1hd1E1bDQ?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Sat, 17 Oct 2026 13:12:00 GMT"
+    },
+    {
+      "title": "삼성디스플레이, 'NPE' 네오레이어 특허 반격 확대",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Fazd4TXNhS0JTY2tXMFp4VXFjYjc5NXpqZzB2aTVnc2c4YUNNNG1JYS1laV9ENHo3SEo3cFp2S0UzS0tUZWdqWTdHcTNuOUI4ZENwZDh3?oc=5",
+      "source": "지디넷코리아",
+      "date": "Sat, 17 Oct 2026 00:44:58 GMT"
+    },
+    {
+      "title": "삼성전자 옆 1800가구 단지 '아크메르 동탄'…국평 17억에도 관심",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ba2JWRkFFYkttTk9Sa0wyaS1FUWRXZDFyaGRpU25qd2FPWUtsX2FTaGFGUGpwenZDb3RJb3RWTXZKcndyaDVRbjdIMGFzMFhieWdzaldLSlVoaG8?oc=5",
+      "source": "뉴스1",
+      "date": "Fri, 16 Oct 2026 23:30:00 GMT"
     },
     {
       "title": "[현장] 토마토 알아보는 냉장고, 문자 보내는 차창…삼성·LG의 AI 신기술",
@@ -65,34 +89,10 @@
       "date": "Fri, 16 Oct 2026 21:00:00 GMT"
     },
     {
-      "title": "“삼성 7만원·하이닉스 20만원”…이주완의 반도체 거품론, 과거 전망은 맞았나",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51dGVGeUg4eUdObVMzSG5iLXlEWnIxaEVlSFQyR0RobHpzaXp1RUk1bjJyM1ozd2dicXJRQmRFVkZXNHlUQ3hWUEYyT0NXM09HUzB2WWNWaGlrMHczZUE?oc=5",
-      "source": "주간경향",
-      "date": "Thu, 15 Oct 2026 08:49:00 GMT"
-    },
-    {
-      "title": "이달 시총 678조 증발…삼성전자·SK하이닉스 반전 조건은?",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxSFNjMVprSUhWSzREMjhGbk44X3p4b3RFM054Z3pWWW5JS29xNVZoMHEzYUoyVzVxTnZrMTN5cjRzM0FPblBLenpjVnJRTFQwVmc4aw?oc=5",
-      "source": "이투데이",
-      "date": "Fri, 16 Oct 2026 07:30:00 GMT"
-    },
-    {
-      "title": "\"반도체 만들 전기부터\"…삼성·SK, 발전 인프라 확보전 [에너지 발전 각자도생②]",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OQm1oMkdwekZHYTNfdUVNVTI1V3M4blVjRkFkekd3MTBQc0s0dndLSGZhekExUWhsWXhjUjZ6NTdCWWU1LWh0a29TTWlScXdzajlzekVRN3hUaU5mMEhlZdIBeEFVX3lxTE9KTFhqVGI0R3VCRmhZQVJJcEgxdU9TWWVLSlIzVEJsbmdRTzFJRGE5T2Y4VWVybnROVUpXSzRkdHZEN1k1dldjcW53VWhQRzgySl8ta0hVYWpsTGYxQVAyWDdBRVJUdWRvT0ZTZ1JlRFp0Y05VRXphQw?oc=5",
-      "source": "뉴시스",
-      "date": "Fri, 16 Oct 2026 22:00:00 GMT"
-    },
-    {
-      "title": "“10만원까지 빠져라, 주식 더 받는다”…삼성전자 직원 익명글에 뿔난 주주들",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9KT2pnbVBGQ3Q4akozVEpXS3NTaF9uRUQ5ZnYzMGxTMWJKMHA1UzJtbEg3cXlqbUpkWmVPbW1Gc2YyeDJCRGlsemFLNUx2UFRkUU5wSw?oc=5",
-      "source": "매일경제",
-      "date": "Thu, 15 Oct 2026 10:51:46 GMT"
-    },
-    {
-      "title": "\"10만원까지 가라\"…주가 폭락에 웃는 삼성전자 직원들, 왜?",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uZWdERGxiLXZXa0NRRlFRSXlyU0Rjakh4ellsb1dRLVVkYlRuWWY2aVBwaHBiRHp6cXRnV21hQXdCU1VYblpVNE82MTlCNFoxWDBtOURYeGE1Zw?oc=5",
-      "source": "한국경제",
-      "date": "Thu, 15 Oct 2026 13:32:30 GMT"
+      "title": "\"삼성전자 직원, 경솔한 발언\"...평론가도 분노한 게시글 [Y녹취록]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MZG84TmM0dnJnU09RZ1RETUgxR25yaURNSklnVE1CVHlhZktRaWZEV09YMHpRYm1Ma2laZEJUM0Z2OTcySkhCbG8yNWUtZFNHNnJXcEZ6ekc2RWpZM2c?oc=5",
+      "source": "YTN",
+      "date": "Fri, 16 Oct 2026 04:42:00 GMT"
     }
   ]
 }
