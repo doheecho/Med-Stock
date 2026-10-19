@@ -1,44 +1,32 @@
 {
-  "updated_at": "2026-10-19T10:42:34+00:00",
+  "updated_at": "2026-10-19T14:54:38+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "안철수 “이 대통령, SK하이닉스 손자회사 ‘솔리다임’ 미국 증시 상장 반드시 막아야”",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DS1FGNFRiWlo1T1pHN1NGT1lQU2tLN0lFVnBxNXBMZkNqR1JBV1RrS1pja051SG9yMjBaMEYxLWR1UlR6dnRxN2FjWG4yZkU5bzNxbzM0R3RkQdIBX0FVX3lxTFBsaTl3d1VKT2ZUWjhYS0Y5N18ybG5hakFZQW0tRTU3OVM4TUktYWxUWVJaZl9TVTVHMzlQR0Y2Vk04cFQ2SThUblhQLU9WVU5WUjM5S3d6NF9aT1MyX2g0?oc=5",
-      "source": "경향신문",
-      "date": "Mon, 19 Oct 2026 02:01:00 GMT"
+      "title": "SK하이닉스 손자회사 '중복상장' 논란에...금감원 \"문제 있어\"",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBKeUJuWEdfWVdzWEE4S2VZUXV3ZnBkS0RMWEUxdjR4NXNJLU5PVGdvVnQ0dXNpaVVzcU5FT05yNzlSX1hQX1RlWnhoMXNqcDRZR19LQXhXbXljMGl2aFE?oc=5",
+      "source": "YTN",
+      "date": "Mon, 19 Oct 2026 13:55:00 GMT"
     },
     {
-      "title": "성과급은 직원에게, 주가 손실은 주주에게?…SK하이닉스 국회 청원",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSW9PTXAycllXRjlKWnVLUWZpNXlmTjRFMHV1a2RQQzdUOHVsZmdfTm5tdEtsaHA0UHVxdVJFakpMNW9faDR4VWk0N2RWN1NQS1Uyd1dFVnpBa0JLSzRiSXQ4dk8wVktZcFI0cmNQekpOQUZlVWF1YkpuNVJLSV9kSQ?oc=5",
-      "source": "이데일리",
-      "date": "Sat, 17 Oct 2026 10:11:47 GMT"
+      "title": "SK하이닉스 주가 폭락 속 최태원 회장이 청년들에게 던진 메시지는",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43bXVUaVJwUGNEV2ZkSDNwdUJqcmw3Sm53Z1pxY3pHTUVKUVNkdWFiVFZseGgtV1BDWnNJZzVrNDBfUGFDOVVLZDFqT3NraHJmV1ZYMVhjcXBvN28?oc=5",
+      "source": "경기일보",
+      "date": "Sun, 18 Oct 2026 03:31:58 GMT"
     },
     {
-      "title": "실무형 AI인재 뽑는다더니…SK하이닉스 해커톤은 왜? [테크 자잘자잘]",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01RVJDZVlTOXhqZXgzUmNlR2g5NDBUZFZpMy1PanVsTXdQVEhuU00zbkVHWTVsa0NZT3lsTXhXNzVDb2wtSWpBUUF3aTJXN1NhTzIwUWJ5OVhMMlVOa09Rcg?oc=5",
-      "source": "한겨레",
-      "date": "Mon, 19 Oct 2026 09:27:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 또 사상 최대 실적 예고…HBM4·메모리값 상승 '겹호재' - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55ajAxV1lYRTJkUGpqY2lPdWZZYldYTzJZTkVDazk3Zks3cVF0QnpxOEhLdlIydFZ5a0tONlY0SVVrc2I3UElxVkx2NHl0dFhOVmVuMWFxN0NwUFVORzlMZkJ0bEQ5aG9YajVqT9IBckFVX3lxTFBLeTZpY0thY2NSOFIwNGN3blcxdVpDUjkxQUh1Q3Z2N3d3SlRlRGw1RHZZUGo3U0NueFdDZ2NBdkRNR2JmT2F6SnNEb082dDZ0M2hGTUw5d2tSN2J6MjJwREEtU0RWdGp4azdqRW5CY2Vjdw?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 19 Oct 2026 08:20:00 GMT"
-    },
-    {
-      "title": "[퇴근길머니] SK하이닉스 주주들 ’긴장’…폭락장 뭉칫돈 어디로",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1GVWIxcktyZUkyc0pmdzVJWGVqQnh2MDZmb0ViaV9DVzVvcUNrN25aVmt2Q0t3akhZRFpGaV8wT1p6dUZ4UUNZY0VGNXNxWlNjYXdiZ2ZnVzlhSHNYdU9RR0Ytanh4UzQ?oc=5",
-      "source": "연합뉴스TV",
-      "date": "Mon, 19 Oct 2026 08:18:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 반도체 소부장에 2조원 규모 금융지원…공급망 강화 나선다 By 알파경제 alphabiz",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93anVzSVVKblBNd3NIaGJqMVBLRWpMWDFmU21wQXFxR1V4cjhRc3BiNVZpRnhlalo3cGtMak5MeFIzTkpncE5LbzV6MjcxSzhrWFpRU2dIT1g5bklmZlJXRHpXUHA5bThiX2tYUnZ0dks?oc=5",
+      "title": "SK하이닉스 주가, 오늘 급등한 이유는? By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xZjBYWGlLREpzQkVneXhJUzBfcDRVZU1pR0NCTmp5N0JfQVk5UFM3UVFHVUxRVFhsY0Q2SW55bU1QQkxsQlkyano0MWN4Q0JZZ3luaHBEbTJ0dUVzNG42Y0tnUWZra3JQdHhBUWludTUyeEVDRTJz?oc=5",
       "source": "Investing.com 한국어",
-      "date": "Mon, 19 Oct 2026 09:22:00 GMT"
+      "date": "Mon, 19 Oct 2026 14:13:00 GMT"
+    },
+    {
+      "title": "SK하이닉스, 소부장 협력사에 2조원 규모 금융 지원",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfUFdLaTdYWUk4aFNITjNmakt6Zkw2aWEzUG40Y2ZpdVRaZ21SWUlHUUFTWXVBNm1ubXB2TUpDVHFKRnFDREZobjVydkpsNkhMLUlMdXJCa3JpT2J0RTE1b1EwOWR1MVNnLTVJaVc4RHpLc256QXfSAWZBVV95cUxQSjBZbnB6R3VYTGk4YVhXVENZZXhGcnBHSzlkSWZGdEUxZVdYNERHREJSRmxZUTJRNWdZVnVTQnZQbGVYNTVQeVhxTFFHQldEZUU1M29ZN21sZl9xUDd0OHZ2OFNVQ0E?oc=5",
+      "source": "동아일보",
+      "date": "Mon, 19 Oct 2026 07:45:50 GMT"
     },
     {
       "title": "SK하이닉스, 2조원 규모 ‘수출공급망 강화보증’ 출범…소부장 자금난 해소 - 조선비즈",
@@ -47,10 +35,16 @@
       "date": "Mon, 19 Oct 2026 06:05:39 GMT"
     },
     {
-      "title": "우리은행, SK하이닉스와 반도체 협력사 금융지원",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXcE9BZTdBMGhtbFYtVjJKVDN5emQ0NTdaSzh1bWN2UG1KeXVBZmxxSDVRd3FNdFlZS294NmJlbFZpdDVyRDlZT3Z4NHNWUGJqNEw3N19QV3AtZm9YS01FT1JPZw?oc=5",
-      "source": "에너지경제신문",
-      "date": "Mon, 19 Oct 2026 09:09:37 GMT"
+      "title": "SK하이닉스, 반도체 소부장 지원에 2조원 투입…상생 생태계 강화",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB6SDVXVWRCR1dISm1hdnJvbllSYWJieS0wT2NiSUs5eUVlTkk2X0FrS0IwUHd1WTZHaFBSdjcwWnJHV1VlWV9RdTF3V3lRZw?oc=5",
+      "source": "전자신문",
+      "date": "Mon, 19 Oct 2026 06:00:00 GMT"
+    },
+    {
+      "title": "영업익 '76.9조' 6번째 신기록 쓰나…'겹호재' SK하이닉스 4Q도 질주 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55ajAxV1lYRTJkUGpqY2lPdWZZYldYTzJZTkVDazk3Zks3cVF0QnpxOEhLdlIydFZ5a0tONlY0SVVrc2I3UElxVkx2NHl0dFhOVmVuMWFxN0NwUFVORzlMZkJ0bEQ5aG9YajVqT9IBckFVX3lxTFBLeTZpY0thY2NSOFIwNGN3blcxdVpDUjkxQUh1Q3Z2N3d3SlRlRGw1RHZZUGo3U0NueFdDZ2NBdkRNR2JmT2F6SnNEb082dDZ0M2hGTUw5d2tSN2J6MjJwREEtU0RWdGp4azdqRW5CY2Vjdw?oc=5",
+      "source": "머니투데이",
+      "date": "Mon, 19 Oct 2026 08:20:00 GMT"
     },
     {
       "title": "메모리 장기계약 2035년까지 연장 가능성, 삼성전자와 SK하이닉스 호황 지속 청신호",
@@ -59,40 +53,46 @@
       "date": "Mon, 19 Oct 2026 00:57:59 GMT"
     },
     {
-      "title": "삼성전자, 상승전환해 1%대 강세 마감…SK하이닉스도 0.4%↑(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oUUx1MUZ3NHFaUFBwWDlLd0wtMlYwdTNpUGxVQUl4YzFvOHo4a2pzSDc4R3JzVVZybUtCZXA3NXlmWk9IXzNOaFF0dTQ4ek8tTmEwZkllQnd6aHfSAWBBVV95cUxOWWs5aWU2MmQ2enBpYUxYWWZCV2JiaF8zQkc0N0xXSjA0RlZSZWF5M1Z3SDhuM2RFejNmYmpvTWFfN1JrQzJpME14anN5RkNLTDN4Q3JyTHFnUzYwajhYaFQ?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 19 Oct 2026 07:11:36 GMT"
-    },
-    {
-      "title": "\"실적은 최고인데 주가는 폭락\"…삼성전자·SK하이닉스 반등 시점은",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Ra3pTUDlQUnFjcVpxamkwWFRtSUM1T2QtUWdZX3hfczg1eWRjSUEtVmQzNDV1MVY3V0FSYVM2ZXNEY2x6S2prNEVQZDlLV21adkN6eHVialRuT1M1MjJmSNIBeEFVX3lxTE9tSkhhdlBJM3Bva0s3ZmlhWWFCN2t5Tm5CRm82WmFFVDlEMGZndjZRUXRxcEdxNFVUdGI4djg3bGY1aENsN3daREx3VGVvWnJEMjF4WWRkX2hrYjJnMzdaeXRTM05paGNkaGVsNno3ZHFRVjBGZ19UWA?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 19 Oct 2026 03:40:00 GMT"
-    },
-    {
       "title": "121명당 1명꼴 ‘바늘구멍’ 대기업 임원⋯SK하이닉스 증가폭 1위",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83MHRyV1dTcUNOSkFIT0NXOUoxZmg5M2ZMMnZheVlnYWtWUW5teXBCc2w5NFM1NzNWR0E0LXJNQlc1ejV2dDlnb0ZfY2JDcFNWS21ZcmdKVFhWQQ?oc=5",
       "source": "브릿지경제",
       "date": "Sun, 18 Oct 2026 23:30:00 GMT"
     },
     {
-      "title": "SK하이닉스, HBM 조직 늘리며 임원도 35%↑… 현대차·LG전자는 줄였다",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83SHBESE44Zy1pdVFiR3dQNHVfdzhJQU51cllqenNSSFcyQzhqT0NpMG9hRnljX1lNVDJ3cnJGT2lpT09iN2c2RzFuUjlyRExaeUpWSG9hMDFCaFNhLW5vaEtIVFVvQ2Qt?oc=5",
-      "source": "녹색경제신문",
-      "date": "Sun, 18 Oct 2026 23:27:27 GMT"
+      "title": "SK하이닉스 1년 새 임원 72명 늘 때…삼성전자 1명↑",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1UUEpTMXhaSm1GalRDS0xKamZsdzVSQlNKTHpLQUFnLVNYc1FOb1V6QzFscXpOVS1yRjdvZFRyYXByeTZjc3NULVZSV3FKdU9md1BEekdub0VLS0NtWnd6VWZaaE9jaXpZbFE?oc=5",
+      "source": "한겨레",
+      "date": "Mon, 19 Oct 2026 04:58:00 GMT"
     },
     {
       "title": "100명 중 0.8명 구멍 뚫어야 대기업 임원…SK하이닉스 최다 증가",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LNGV1RHF6YVVwczZ6dDh5R2NNeVdHMkZZbkMzSDJWM0RuUWxMSnBMek9YT0RWdXBmekhSSkFrVnJNejlLMUROS2l0Nng4ZzZ5cE96TnlxeFNfX2PSAWBBVV95cUxObFBLUVdtZ2F6YzdZVUpMbGRRa3JzaUJNRUJLTUszeEVIazFMSlBHR3Y5dVNrMzI5eklmQjVIYlFGVE14a3VLd0dtc2N0M3dUeVc4VTN5Y25sYVhka2k3elQ?oc=5",
       "source": "연합뉴스",
-      "date": "Mon, 19 Oct 2026 01:48:55 GMT"
+      "date": "Sun, 18 Oct 2026 21:00:03 GMT"
+    },
+    {
+      "title": "성과급은 직원에게, 주가 손실은 주주에게?…SK하이닉스 국회 청원",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSW9PTXAycllXRjlKWnVLUWZpNXlmTjRFMHV1a2RQQzdUOHVsZmdfTm5tdEtsaHA0UHVxdVJFakpMNW9faDR4VWk0N2RWN1NQS1Uyd1dFVnpBa0JLSzRiSXQ4dk8wVktZcFI0cmNQekpOQUZlVWF1YkpuNVJLSV9kSQ?oc=5",
+      "source": "이데일리",
+      "date": "Sat, 17 Oct 2026 10:11:47 GMT"
     },
     {
       "title": "캐시 우드 \"메모리 악순환\" 경고…SK하이닉스, HBM 초격차로 돌파",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORTF4cFFkcEU2ZWxsWnNKcXFEYnBRVnJQN3FZdDl5elpOWEVMbHB3SHFkUFlUMEk3OFBVN1BBbUZSazBLdnVGWEt4LTYxSnlOYlZscERrZlNXZDdrQ2NBaE5XZVBaelpYc2JlZXJjeTVObjhkU3kzZ3lGM21fMU5WLUg3eVBuU3pH?oc=5",
       "source": "글로벌이코노믹",
       "date": "Sun, 18 Oct 2026 04:23:17 GMT"
+    },
+    {
+      "title": "스펙 떼고 연 ‘SK하이닉스 AI 해커톤’…참가자 불만 속출 왜? [테크 자잘자잘]",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01RVJDZVlTOXhqZXgzUmNlR2g5NDBUZFZpMy1PanVsTXdQVEhuU00zbkVHWTVsa0NZT3lsTXhXNzVDb2wtSWpBUUF3aTJXN1NhTzIwUWJ5OVhMMlVOa09Rcg?oc=5",
+      "source": "한겨레",
+      "date": "Mon, 19 Oct 2026 09:38:00 GMT"
+    },
+    {
+      "title": "삼성 107조 이어 SK하이닉스도 '역대 최대'…3분기 영업익 77조 전망",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBGeUF6cENodDVDMFg3QVFWRkhkNXA2MXZGUkVqd1E0dURLdFpRT3RHcWRFZDhSR1dMazFpRnRnY3AtYUhzc0hGXzQzOA?oc=5",
+      "source": "아이뉴스24",
+      "date": "Mon, 19 Oct 2026 05:29:53 GMT"
     }
   ]
 }

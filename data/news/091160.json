@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T10:42:39+00:00",
+  "updated_at": "2026-10-19T14:54:43+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -15,6 +15,12 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kbjBpdFV3VXpjaE5QbDgtY3JTTjVOb0J5a3pCNE1Rc0dhNHM2VXZ2NDhqdldtUkliazRBcjRqZjI4bXJ6ZlRkRTV2WUdSYzZYeDN3OE9ITHBabWtGWk50eVF0Sy1va0ZvS1E?oc=5",
       "source": "비즈워치",
       "date": "Sat, 17 Oct 2026 00:00:02 GMT"
+    },
+    {
+      "title": "외국인, 반도체주 8조8523억원 매도… 지수형 ETF는 순매수",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PVTFwaDkzaVRnN2c2MmVOX01uY2FKSWU4RE1WWnlmR0FNWjE1YVJRd1lLSUVhOENRSXZJRE4yOW12QUtFMUp0R3pKdG1nbXJwcmVuZVdmcFdja0NETlJ2eExDZEMzRnV4dUE?oc=5",
+      "source": "한국면세뉴스",
+      "date": "Mon, 19 Oct 2026 06:13:58 GMT"
     },
     {
       "title": "\"2배·3배 레버리지ETF 담았는데\"…'곡소리' 나는 동학개미·서학개미",
@@ -47,16 +53,16 @@
       "date": "Wed, 14 Oct 2026 08:51:37 GMT"
     },
     {
-      "title": "개인, 상승장에 베팅하며 레버리지 6000억 담았지만…코스피 6거래일째 하락",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qT0pZZE45ZmF5eGlpYXI5ODRVRS13OFI1LWxpR2lMS01reUkwQk1fSUNHcGREblpkUGJTQ0U5VGdoeDdPa2EtdTNPY0xjN1daZ1BUS3JmVDFDTmxwNTFKMnRKcU5OS1M3Rm1jXw?oc=5",
-      "source": "굿모닝경제",
-      "date": "Wed, 14 Oct 2026 08:30:31 GMT"
-    },
-    {
       "title": "[월간 ETF] 9月, ‘KODEX 반도체레버리지’ 수익률 톱 41.73%...반도체 ETF 상위권 장악",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jRWQ1OGFoNFpuNFBMQVdsZFVYSUw3QU96UXhOdS1FWERFUnlxcjMxYld3U0VEaC1TVUhYSGxDSUZmRnUwbG1XSDJtQmVTenpib3hMaA?oc=5",
       "source": "더밸류뉴스",
       "date": "Thu, 01 Oct 2026 07:41:34 GMT"
+    },
+    {
+      "title": "개인, 상승장에 베팅하며 레버리지 6000억 담았지만…코스피 6거래일째 하락",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qT0pZZE45ZmF5eGlpYXI5ODRVRS13OFI1LWxpR2lMS01reUkwQk1fSUNHcGREblpkUGJTQ0U5VGdoeDdPa2EtdTNPY0xjN1daZ1BUS3JmVDFDTmxwNTFKMnRKcU5OS1M3Rm1jXw?oc=5",
+      "source": "굿모닝경제",
+      "date": "Wed, 14 Oct 2026 08:30:31 GMT"
     },
     {
       "title": "[9월 ETF 결산] ㊦ 반도체 올랐는데 돈은 빠졌다···KODEX 머니마켓엔 1.8조",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Kc0Z1VF9yZjVONV9IeTRXTkRSV2xBV1RXWGJxUk5jRVdTNkdTWUc2cHFJS2tjNDdySmFfZnM3T0lBdElFd016WHM2R29FcDVhTDNXXzlpSmxnOGktLV9GUGdtLWxsNUFXRlAxWk1B?oc=5",
       "source": "아시아투데이",
       "date": "Sun, 11 Oct 2026 08:38:22 GMT"
-    },
-    {
-      "title": "[ETF 시황] 2차전지株 상승에 관련 ETF 7%대↑…반도체 레버리지는 '약세'",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fZlU3elRxX0tRQVBOSmxDZGJxNWp3dkFpb1M2M2Npemc1VGlTb3lTVDBjVEhHMWlMTlNnTDZfeENON09OWjJRdEhCMmZKX0dtREFTM2JZblM3andz?oc=5",
-      "source": "뉴스핌",
-      "date": "Wed, 14 Oct 2026 07:23:00 GMT"
     }
   ]
 }
