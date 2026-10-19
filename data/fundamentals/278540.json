@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-17T23:58:29+00:00",
+  "updated_at": "2026-10-19T00:08:53+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
-  "as_of": "2026-10-18",
+  "as_of": "2026-10-19",
   "high_52w": 54500.0,
-  "low_52w": 17800.0,
+  "low_52w": 17850.0,
   "source": "naver"
 }
