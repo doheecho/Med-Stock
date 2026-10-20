@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-10-19T14:54:37+00:00",
+  "updated_at": "2026-10-20T01:03:48+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "[단독] 퇴근 없는 신입 온다…삼성의 ‘24시간 일하는 로봇’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tZkZTdXAtaldmQk5mdExHSER0Qy1MbGtUSXQ3ODdKbGFZYWlEbDU3LTFQMGxqNnFxVUl4cGZoTktBV3ZCYS1Ba2JqNzVjVUY4d2Y2OUZn?oc=5",
+      "source": "중앙일보",
+      "date": "Mon, 19 Oct 2026 20:00:01 GMT"
+    },
     {
       "title": "[단독] 삼성전자, ‘차세대 HBM’ TSMC와 함께 만든다",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3WldhTWZaaEVTWHNENi1FYXF3OERPQmN2ekIxMjhZd044R0dldVNDNkQzZ05lU3IxY253aGVXMV82U0xfT0dtM1lEV1duLU1PMmfSAVNBVV95cUxOUUpRSU10YXg2LXh0MDRsMEt0WGtveGNqVXJOSmJ2c3N5NHpXYTZvM0Z3TTAxZ2xmT01NRXdTRHlVVjhzTUxURFYtalpYWEFlcW9RUQ?oc=5",
@@ -11,34 +17,64 @@
       "date": "Sun, 18 Oct 2026 07:47:48 GMT"
     },
     {
-      "title": "삼성전자, 상승전환해 1%대 강세 마감…SK하이닉스도 0.4%↑(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oUUx1MUZ3NHFaUFBwWDlLd0wtMlYwdTNpUGxVQUl4YzFvOHo4a2pzSDc4R3JzVVZybUtCZXA3NXlmWk9IXzNOaFF0dTQ4ek8tTmEwZkllQnd6aHfSAWBBVV95cUxOWWs5aWU2MmQ2enBpYUxYWWZCV2JiaF8zQkc0N0xXSjA0RlZSZWF5M1Z3SDhuM2RFejNmYmpvTWFfN1JrQzJpME14anN5RkNLTDN4Q3JyTHFnUzYwajhYaFQ?oc=5",
+      "title": "삼성전자, '아트 바젤 파리' 출품작 19점 아트 스토어에 공개",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxRUxfVktZWHA0OV9TODdiQjZMV0FXdTR6STNMVG9ZazZQd2J2MFRzWHc3U3dJZU55WmZ0WlotNTZMN0ptQXNydFktYlRETmZhOTh1TmJMWE1nZ1JmdlE1ZFd3WGRERDgzeExLa1ByNnhxeDQ?oc=5",
+      "source": "마켓인",
+      "date": "Mon, 19 Oct 2026 23:32:46 GMT"
+    },
+    {
+      "title": "삼성전자, 삼성 아트 스토어에 ‘아트 바젤 파리 2026’ 컬렉션 공개",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOekk3Q0t2dWl6ZkpuNTVQWVRHZ2hwR19VUjVPdVBiN1BFNWUwT1F0blkxOHZycmdqSy05N1RpeFBmVlhMSE5sUjloRjkxeUtCTnBMeXk0VDVlV2F0ZG5PNE5QOWowUWRpWTB0TG1FZ0VYNllWeDVHb1B6VG1vd3pHMk81NV8ySTVMYnpxemJqMmMyeW5wZmx5NFRNa2cwRG8zRzlVdk5XOHZrVS15YkcwQjgtOHJxdF9wcjY1ZHpyOHc3cXFyTDd3eThvODJtQzRNWnZCX0s1X1VMRHBDRTUzMlVYOGNOUUFaLTI5SEFYWUdiWXZFYzQzMmU0NG9nZ1d0NUhrRTI5RnZQcjZHaHg3XzdjckRNMTdGZlRYN3Z5OURtdG5pbEJNd1ZoeXVPdDdRZi1MazUyZDJ2WDdPcEhpRGhn?oc=5",
+      "source": "samsung.com",
+      "date": "Mon, 19 Oct 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 삼성 아트 스토어에 '아트 바젤 파리 2026' 컬렉션 공개",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBmdnlpSWhBMnROQy1RTWQxUE8ybFU2Y0o5N19UcnAydjNxRkQ1RHZaRjNreGV6bUtCSEN5ZVZ5aTluT0tvc3dkaTBRX19sUQ?oc=5",
+      "source": "전자신문",
+      "date": "Tue, 20 Oct 2026 00:41:49 GMT"
+    },
+    {
+      "title": "삼성전자가 투자한 美 ‘엘리먼트 바이오사이언스’社, 서울에서 글로벌 로드쇼 ‘Shift Your Science’ 개최",
+      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOdzRNWmNCUHFuVkxCYkp4TDAwQmdiY0NtSlFpdXJxTlNyRF9wdkZObjF4LWpJN1Q1blVNZkJERVZnSWFZNDUxNW4yY2lmN3BZQUxQQlA2MndYMXFMNmtpUlhNZ0psYk9QbFRqWnBDN1lWbXdwSTQyZ1FhV3Q5VmtXbGdqVnI0b21rYTlVMGRrNzlPdW9adzBWNXZ2X3cxajNaTTNzSUpSeHhJOTlPTnJzME5Zbm9SSUVVdURleGlub2pTdEJvSTZqSU1zcGZOMmlnQ2VsRjdEdkpXd0FTUGFqcklCLVppTXdFMFplNkhOSENSUll2a2RqbVNsaUpnRFRod1R1SnV5RHl3cElza0pRSWhsS3JmMWRfaFdWZ2FFbk5oS2pEemtUbGJwbFlZd1NSR09GS1k5T245ajZadUNDcGxTUQ?oc=5",
+      "source": "samsung.com",
+      "date": "Mon, 19 Oct 2026 23:19:04 GMT"
+    },
+    {
+      "title": "삼성전자의 엘리먼트, 100달러 유전체 분석 장비 선보인다",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiaWYwZW1BaHplcWo4bklWdTFWUWtHVHl4akhtOE5RN2lmN0hxODBtTHNZbzVGdDE3dGd1U0RiakQ3YzZ2d3U1UFpLWF9GU1Nodnh3M3dWdUkweGJk?oc=5",
+      "source": "뉴스핌",
+      "date": "Mon, 19 Oct 2026 23:38:00 GMT"
+    },
+    {
+      "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zV2ZBZ1dNV1d1Z0NCVFZTY2wwRHd5NGVOV1pJN3BqT3JGT1JHakhuU2VJclZEdFlLRWNFSlVqQXQ5UDljSzdscFd3Ti1WV1gzVGhMa3prMmVRUjjSAWBBVV95cUxQS29kdFFVWGxOc3hSbG92N3JnRG9SbVhFdkJvV2pjZ3ZlVW04SEUzTG1MQUFhSVRZVGVoMzA4X3plbC1LMVNQZkdjbnRCQzFmb2RyamhZRlBrM0Z2NDdVTlc?oc=5",
       "source": "연합뉴스",
-      "date": "Mon, 19 Oct 2026 07:11:36 GMT"
+      "date": "Mon, 19 Oct 2026 23:43:26 GMT"
     },
     {
-      "title": "코스피 3.17% 떨어진 5488.41로 거래 시작...삼성전자·SK하이닉스 장초반 급락 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMDZaTTIzdnlDUmxPc2dVNWhWR3VKVERrdHhIVkF6YU83WE5JYUNCX05uUFV4SzVXTkhWTGhHVEh1a1B5T1NhLXkxOFhoTGh0a3B3TDZocUNGYlI5OUJFSjM1a1NjQkxvN1VkUks3cWpTcGJpVWxWMnVDdnlfSHltS3gtY0NrWHFn0gGcAUFVX3lxTE1HdEdKZnpYMDR1TE8tak5pRnBubDNRRjRyZmc4QUJhQnp6ZG1ZdkhfZ2hUTWFVZW9UNDUwdjZ2SGtKWk5KTmZqVENMYWJhd3RZbjhrclhiTnlvZ3pTaTl0NGJ4RGlONDlqN3V0d0xmYjRaVkQtX05MZzVCNkVSRVdWa1EwRXFmOUJ3dGQyNk5OLXFMRU9vZkZUaDlPeA?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 19 Oct 2026 00:01:00 GMT"
+      "title": "삼성전자, 글로벌 5개 권역서 '각양각색' AI 가전 체험 행사",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9URWRveTA5NWpfYXhGcUxodC1UT2VEX2xOa0JZZmxCZk5xRW91MlItOHJEUDE1T19IYXZaRUIzN3YzdmcyZFBuaWFxNG5MSzZ2bDdIMEc5eFRBOGdoaHd3OGhtRkVJa3FhMGRfY0tiTjl4UVk?oc=5",
+      "source": "마켓인",
+      "date": "Mon, 19 Oct 2026 23:58:11 GMT"
     },
     {
-      "title": "메모리 장기계약 2035년까지 연장 가능성, 삼성전자와 SK하이닉스 호황 지속 청신호",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wd0xyWkhJTG1WbGtVZkEzSFdSUnN2M2hhczM0T0JtMC0tSkFvdHZ0RGQ0ZTVFQUV6RVF6Q1JRYVNHRE56MVQ1R2FRNWxBNEtSVS0weVk2ZnprUVJIRFhzNWhaNzBITXZnQVdPUkZkZThiZmM?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 19 Oct 2026 00:57:59 GMT"
-    },
-    {
-      "title": "[박래혁의 테크오딧세이] 삼성전자와 TSMC의 HBM 공조...엔비디아가 바꾸는 반도체 질서",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kLXdGMlp0d25FdmRtd3ktcjd5RjhhRldsa0JFRG84aW5ZRkFQVjkyaFZCaW1yd3ZVRVhveHptdGNEcXQ2Zl93eG1LOVcwMWZYOU1WNDZmR2IwUUN4NGFEWERpbGNLTGtrV3d5aw?oc=5",
-      "source": "알티케이뉴스",
-      "date": "Mon, 19 Oct 2026 13:32:21 GMT"
-    },
-    {
-      "title": "‘미래 내다본 거인’ 故이건희 삼성 선대회장 6주기… 이번주부터 추모 행사",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByT3ZvYXFfd0V0czBxZXg3MHBfOGJwUVhiNjVtOHdBaldGUXpGRzg5MXFySk9MVE90VEN5NUdVbVgtejYzZkRCbDNFUWVTQWR2NVY3MmVFRDLSAVRBVV95cUxQSC00UHhEY0sxU25yMGJlcEFxWUxObUYzekZrWlhFSTJrd3RXUGEwN09fMDNRLXZFd0VMX1FfMTY0b0RZZVNtbTBKdUlOeDdPSDltMC0?oc=5",
+      "title": "7만전자 외친 전문가의 1년 전 ‘삼성 파운드리 철수 권유’... 결과는 글쎄? [반도체 투자 리포트]",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBiMG12MWJEeVRNN3NfQURSUVlTX3YzXzdhS2V4OFBTRjE3ZFFKS2J5U0RQTmx1ODZNd1gwSkpoR0FVUUZfTDlGU1c0RTBOQW5fUmFqU0d1Y1fSAVRBVV95cUxNT3ZKR2tjS0liWG1rY05Oa1YtVFNYYzE1SEJPcEdtMG1wRmhDdFFUbnE3MjNZbkpUSWhST3B6cXE2YmRudFp5dGNzRTczU2ZpRi1Melo?oc=5",
       "source": "세계일보",
-      "date": "Sun, 18 Oct 2026 03:52:34 GMT"
+      "date": "Sun, 18 Oct 2026 20:17:59 GMT"
+    },
+    {
+      "title": "삼성, 내년 폴더블폰 6종 내놓나…‘갤럭시Z 슬라이드’ 등장 전망",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9jZlRTRmRicEJMQWo2MzV1OElmZ0s2VUVZY2t5S2ItME1ITHZnWlBITmR2VlB3Mjl4SktUWjJkanFQUUNwS2tzd2VtYmFkWGxUeWtrS0hR?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 19 Oct 2026 03:31:24 GMT"
+    },
+    {
+      "title": "저평가된 삼성전자, 배당보다 소각이 낫다는데…주주환원 셈법은",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85a21GUjE1Zm0tZU5oWUo2SUhtVV8teFNxWUNDYmVuWHM0alVlUHZ3ZXJ2dmZZUHRoQWR6T19XMXlJdjBGU0NpckxZMksxQnA3bGxNdVY3N202c2NNUFp3dWxpTVVwTnhnbDJRSENIT0k?oc=5",
+      "source": "연합인포맥스",
+      "date": "Mon, 19 Oct 2026 00:16:00 GMT"
     },
     {
       "title": "삼성전자, 99개 기업에 기술 126건을 무상으로 나눈다",
@@ -57,42 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9RU1BXMVFuUDFDU1M0VzlYNVNLdFp6SEwzanpsN0U1Y0hlQW82SWE4aEoweXVCeXhRZnZKSTZiQWtXam5tWnl1cUMyY1Nkdw?oc=5",
       "source": "전자신문",
       "date": "Mon, 19 Oct 2026 06:07:23 GMT"
-    },
-    {
-      "title": "삼성, 내년 폴더블폰 6종 내놓나…‘갤럭시Z 슬라이드’ 등장 전망",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9jZlRTRmRicEJMQWo2MzV1OElmZ0s2VUVZY2t5S2ItME1ITHZnWlBITmR2VlB3Mjl4SktUWjJkanFQUUNwS2tzd2VtYmFkWGxUeWtrS0hR?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 19 Oct 2026 03:31:24 GMT"
-    },
-    {
-      "title": "저평가된 삼성전자, 배당보다 소각이 낫다는데…주주환원 셈법은",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85a21GUjE1Zm0tZU5oWUo2SUhtVV8teFNxWUNDYmVuWHM0alVlUHZ3ZXJ2dmZZUHRoQWR6T19XMXlJdjBGU0NpckxZMksxQnA3bGxNdVY3N202c2NNUFp3dWxpTVVwTnhnbDJRSENIT0k?oc=5",
-      "source": "연합인포맥스",
-      "date": "Mon, 19 Oct 2026 00:16:00 GMT"
-    },
-    {
-      "title": "삼성전자, 반도체 방류수 PFAS 저감 기술⋯ 내년 8월 평택부터 적용",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HNEpXcmkzbHF1Q0dxQS1oalRsMTJpNUdTQ2RqVko2OW1NRmFaZ2UzSG9RNGNXeTZWVlA1RGFoNFRQU3FsemRNSWJtaFFPMFJ4UG9la25KQkV1QQ?oc=5",
-      "source": "브릿지경제",
-      "date": "Mon, 19 Oct 2026 07:16:00 GMT"
-    },
-    {
-      "title": "\"고덕산단 방류수서 PFAS\"…삼성전자 \"주요 원부자재로 미사용\"(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84bVBUei1FazRWM3BvYmVLazB3UWRzTHFwMm9YNTA5RFFSNzRNRjR6RzVsWnVFdlBqY1JWN004OVJGT2J1Z1VzY3dNNTJQSG1YOTBXY2JsQkdMbGPSAWBBVV95cUxNV0QtTDd4VHRmWWJiU0RiQ1dIZFRnM1BkTEd5Z0pnS0NWdXAtNWlPMkJnaUZFMDVTRFpqdHM3QkwyeUxzQWZjZC1XRF9vOFlWVmV2WVd6UlkxX1NKdWFRZ0c?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 19 Oct 2026 04:49:35 GMT"
-    },
-    {
-      "title": "“쌀과 채소, 민물고기 유통되는데...” 삼성전자 입주한 고덕산단 방류수서 ‘좀비 화합물’ PFAS 17종 검출",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8yS0JNMXo4ZHFkZXVDR2YwVzVrNVpSTTdUNEt6bnBMME1vUm5LOFJEY3dPV3BPM2ZtREFnbVZvR2MyQlg3YkQ3eTRuVHBiYVd6TkZNclMxQ0Ffd9IBX0FVX3lxTE9EQ19aSFNESXEwdUwtbXRody1RdU9iZngza3k4c0cxczY0MEdpMkYtQl9nbDNibVJLVGt6WlhjR2hXTkYyeTNFazNwWEN4TkpDUkh4ZGFaRkEwNFlWSVVZ?oc=5",
-      "source": "경향신문",
-      "date": "Mon, 19 Oct 2026 08:10:00 GMT"
-    },
-    {
-      "title": "일론 머스크의 메모리 저격, 알고 보니 삼성 파운드리 단가 압박 전술",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTmg1Sk9nbUcyZGNiLUQ2T2xWUU5IMHRmdm1LMEFCZkpWdi1rZFFFT2lxSlg5NndGRFhPWlhrWG94Vi1NXzgzLXNocm40Q1ZSQW03Q2NYSFNtTlEzRGZiTGNHNkE3RG5JNGNCSzM5UXctbzVQM3V2TnRhSE9HZDljMDFrTkNOWXox?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Sun, 18 Oct 2026 22:08:17 GMT"
     }
   ]
 }

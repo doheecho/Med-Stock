@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T14:54:26+00:00",
+  "updated_at": "2026-10-20T01:03:38+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 495227.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-16",
+  "as_of": "2026-10-19",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 495227,
-      "date": "2026-10-16",
+      "date": "2026-10-19",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "미래에셋",
+      "date": "2026-10-19",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "대신",
       "date": "2026-10-15",
       "target": 560000,
@@ -50,15 +59,6 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "KB",
-      "date": "2026-10-12",
-      "target": 600000,
-      "prev_target": 600000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     },
     {
       "firm": "유진투자",
@@ -95,6 +95,15 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
+    },
+    {
+      "firm": "KB",
+      "date": "2026-10-12",
+      "target": 600000,
+      "prev_target": 600000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "BNK투자",
@@ -137,15 +146,6 @@
       "date": "2026-10-06",
       "target": 610000,
       "prev_target": 610000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "미래에셋",
-      "date": "2026-10-06",
-      "target": 400000,
-      "prev_target": 400000,
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"

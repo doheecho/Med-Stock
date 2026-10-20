@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-10-19T14:54:42+00:00",
+  "updated_at": "2026-10-20T01:03:54+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
-    {
-      "title": "국내 증시 흔들리자 ETF 판도 요동…TIGER·KODEX 초박빙 경쟁",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xMUdJNzlpNDJ4dG1lS0RpdUc2cVR3d3lYMEZKUlkzVzNZSHB3Zjd0aTZYRzRxdWstSVlVOXV5QXBldEtOR3pfd2xsVFpid25kRndxYWJVN182RkxN?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 19 Oct 2026 01:35:00 GMT"
-    },
     {
       "title": "한주간 외국인 '삼전닉스' 9조 팔면서도 ETF는 지수 상승 '베팅'",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56MjNfcGNpckUzdWI5bjltbWc3X3lTZlZwUi0tMXlSMkNXNkFkZnNzRkU0Ti1nUkRreVYzRnlKWlJvYVBSbUpJN0NIVEY2ZlQ2Wi0zSXRtZlB2bFXSAWBBVV95cUxNOXlJb1gwSDAwdEo4cFNtT2F3VXdQa0Q1Tnd6UUlPMUxnMjdWVEtYdkJfcEp0MWxyTDJfby1VZWQteldIRkExUlJKS0JtYktkbGlnakpJSkY0cDFXaTZveFk?oc=5",
@@ -17,16 +11,28 @@
       "date": "Mon, 19 Oct 2026 05:54:08 GMT"
     },
     {
-      "title": "증시 급변동에 ETF 1위 경쟁 가열…KODEX·TIGER 엎치락뒤치락",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE03eWV0YW9wR19ibkN3dXNvaV9oUkthbm5Bb0FGSWtyR3I1TXlaQ1E0RGlhX2c0XzR1cGF3T0gzVFJ1V1Y2Tk9DRHVpOGVoRmVJZXItTGhiczYycGZqcjg4d1hB?oc=5",
-      "source": "아시아경제",
-      "date": "Mon, 19 Oct 2026 00:03:00 GMT"
+      "title": "[ETF머니플로우-10월2주] KODEX 200 순매수 1위…TIGER 미국S&P500 6계단↓",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00QnRCM0ZrUWhjYzhYVEpsUV95bXBPQ2U4c1FINnpiMEgtd2l4eTVqSUtqYjA4cmI2MW0zNGRiMXM5TmRHZi15QVYwcVhkOWlKb1NxbVQzTXVfeDVOaTQyMUJscDNVb3lIMkRxanJqdng?oc=5",
+      "source": "신아일보",
+      "date": "Fri, 16 Oct 2026 23:00:00 GMT"
+    },
+    {
+      "title": "국내 증시 흔들리자 ETF 판도 요동…TIGER·KODEX 초박빙 경쟁",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xMUdJNzlpNDJ4dG1lS0RpdUc2cVR3d3lYMEZKUlkzVzNZSHB3Zjd0aTZYRzRxdWstSVlVOXV5QXBldEtOR3pfd2xsVFpid25kRndxYWJVN182RkxN?oc=5",
+      "source": "뉴스핌",
+      "date": "Mon, 19 Oct 2026 01:35:00 GMT"
     },
     {
       "title": "코스피 급락에 ETF 순위 대격변…미국지수·파킹형 약진",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9oRUtiaGpqbDVNUjhkakRiTFhYa21jMHZEclVGRnRKZ3ExaERVU1dCdnNXYzY5SlRMQnB1emFhaU4wQUhrVzZZOU12a0tDQld4YXBaTUJNZGVHTkppTnRMRmRxZ1p3X1I5RlVyMDh2Q0Rua29P0gF0QVVfeXFMT2hFS2JoampsNU1SOGRqRGJMWFhrbWMwdkRyVUZGdEpncTFoRFVTV0J2c1djNjlKVExCcHV6YWFpTjBBSGtXNlk5TXZrS0NCV3hhcFpNQk1kZUdOSmlOdExGZHFnWndfUjlGVXIwOHZDRG5rb08?oc=5",
       "source": "산경투데이",
       "date": "Mon, 19 Oct 2026 01:55:27 GMT"
+    },
+    {
+      "title": "증시 급변동에 ETF 1위 경쟁 가열…KODEX·TIGER 엎치락뒤치락",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE03eWV0YW9wR19ibkN3dXNvaV9oUkthbm5Bb0FGSWtyR3I1TXlaQ1E0RGlhX2c0XzR1cGF3T0gzVFJ1V1Y2Tk9DRHVpOGVoRmVJZXItTGhiczYycGZqcjg4d1hB?oc=5",
+      "source": "아시아경제",
+      "date": "Mon, 19 Oct 2026 00:03:00 GMT"
     },
     {
       "title": "[가장 보통의 투자] 200개 기업 나눠 샀는데 절반이 반도체? ETF 분산투자의 착시",
@@ -47,24 +53,6 @@
       "date": "Mon, 19 Oct 2026 02:37:07 GMT"
     },
     {
-      "title": "TIGER미국S&P500, 8개월 만에 KODEX200 제치고 순자산 1위",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43V0RKcTNvRTd2c1ZJVE1EY2oyUGJoOWJvd19QYllmUzRram5UU1ZaQWIzaVZxVl9wdEJIeUFWSUlTM2laRGtYdTlNQnRVWThwWFBKTE1XTFNna0FWLWxwNXhWTzI?oc=5",
-      "source": "서울경제TV",
-      "date": "Sun, 18 Oct 2026 23:39:37 GMT"
-    },
-    {
-      "title": "[ETF 열전] 반도체 폭락에 인버스만 웃었다…하이닉스 하락 베팅 64%",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBkVkhnVUxRZnF0NVRETkNfMjg4RWVlb1V0UXp6bmJRb1RiVVdFY2t4V01WMEw4TzNteG41Q3lwSkE5ZXY2MzVMY0ZWN3huWU9pUVJJR3pfaVdNaGUzb0F3dG8xRXozMm1mRHVoa1h2UQ?oc=5",
-      "source": "뉴스웍스",
-      "date": "Mon, 19 Oct 2026 01:00:00 GMT"
-    },
-    {
-      "title": "[ETF머니플로우-10월2주] KODEX 200 순매수 1위…TIGER 미국S&P500 6계단↓",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00QnRCM0ZrUWhjYzhYVEpsUV95bXBPQ2U4c1FINnpiMEgtd2l4eTVqSUtqYjA4cmI2MW0zNGRiMXM5TmRHZi15QVYwcVhkOWlKb1NxbVQzTXVfeDVOaTQyMUJscDNVb3lIMkRxanJqdng?oc=5",
-      "source": "신아일보",
-      "date": "Fri, 16 Oct 2026 23:00:00 GMT"
-    },
-    {
       "title": "‘겁 없는 개미들’ 폭락장에 레버리지 베팅",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8wcC1qbWt2QlRQem1pMGhQYklPbE9OU21LWFpJd2xuVkJuQzZ2Z0xDMVp6UGc5SFdfQmtVY0lkaDQtLXZxNzNGWWsxRm1wVUtwdjlHQV9ISEV3QmxENnBWOUZic0w?oc=5",
       "source": "매일일보",
@@ -77,22 +65,34 @@
       "date": "Sun, 18 Oct 2026 04:39:01 GMT"
     },
     {
+      "title": "TIGER미국S&P500, 8개월 만에 KODEX200 제치고 순자산 1위",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43V0RKcTNvRTd2c1ZJVE1EY2oyUGJoOWJvd19QYllmUzRram5UU1ZaQWIzaVZxVl9wdEJIeUFWSUlTM2laRGtYdTlNQnRVWThwWFBKTE1XTFNna0FWLWxwNXhWTzI?oc=5",
+      "source": "서울경제TV",
+      "date": "Sun, 18 Oct 2026 23:39:37 GMT"
+    },
+    {
+      "title": "[ETF 열전] 반도체 폭락에 인버스만 웃었다…하이닉스 하락 베팅 64%",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBkVkhnVUxRZnF0NVRETkNfMjg4RWVlb1V0UXp6bmJRb1RiVVdFY2t4V01WMEw4TzNteG41Q3lwSkE5ZXY2MzVMY0ZWN3huWU9pUVJJR3pfaVdNaGUzb0F3dG8xRXozMm1mRHVoa1h2UQ?oc=5",
+      "source": "뉴스웍스",
+      "date": "Mon, 19 Oct 2026 01:00:00 GMT"
+    },
+    {
       "title": "증시 급락에 레버리지·파킹형 ETF 동반 인기…반등 기대와 관망세 공존",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2ODRMdDEtT0xtQl9fai1KM2tESGRaZFNFZTdyWHE5Q1lnUkY0NGlmZFNwbVVRSTlNbkJ3VkJsQlluR3p4VFd4OTk2VUlkZHhEUVJ3THVCeUjSAVhBVV95cUxQdjg0THQxLU9MbUJfX2otSjNrREhkWmRTRWU3clhxOUNZZ1JGNDRpZmRTcG1VUUk5TW5Cd1ZCbEJZbkd6eFRXeDk5NlVJZGR4RFFSd0x1QnlI?oc=5",
       "source": "아주경제",
       "date": "Sun, 18 Oct 2026 01:48:20 GMT"
     },
     {
-      "title": "외국인, 반도체주 8조8523억원 매도… 지수형 ETF는 순매수",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PVTFwaDkzaVRnN2c2MmVOX01uY2FKSWU4RE1WWnlmR0FNWjE1YVJRd1lLSUVhOENRSXZJRE4yOW12QUtFMUp0R3pKdG1nbXJwcmVuZVdmcFdja0NETlJ2eExDZEMzRnV4dUE?oc=5",
-      "source": "한국면세뉴스",
-      "date": "Mon, 19 Oct 2026 06:13:58 GMT"
-    },
-    {
       "title": "\"급락장 소나기 일단 피하자\"…'방어형' ETF, 이달 순설정액 '쑥'",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZZVFPa3RxQnZFLWxvbzJpVmFaRFJQb0luY1ZEVWozMVdsM3NzMHUyRVRHbDVmeHFoZHp5QmNjZWhUeHczRXBoS0pDZWV5T0FjcnBmajZvaU5qMDZranNyVtIBYEFVX3lxTE9ZZVFPa3RxQnZFLWxvbzJpVmFaRFJQb0luY1ZEVWozMVdsM3NzMHUyRVRHbDVmeHFoZHp5QmNjZWhUeHczRXBoS0pDZWV5T0FjcnBmajZvaU5qMDZranNyVg?oc=5",
       "source": "연합뉴스",
       "date": "Sat, 17 Oct 2026 21:15:02 GMT"
+    },
+    {
+      "title": "코스피 급락에 파킹형 ETF로 자금 몰려…변동성 장세에 ‘대기’",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxYTBDWXRqQVhVMUd1d1MzOTh5ZGoyLTFKLUE3RnJoZG9HdU5lbThpbjB5QWU1bnYwQnpQTjN2M20xWTV6ekhWMjhENjFEZDEydmN0Znp6bm4tWnhUekUta09HMEY?oc=5",
+      "source": "서울경제TV",
+      "date": "Sun, 18 Oct 2026 00:50:03 GMT"
     }
   ]
 }
