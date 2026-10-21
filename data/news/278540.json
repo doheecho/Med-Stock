@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T12:54:01+00:00",
+  "updated_at": "2026-10-21T00:33:45+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -9,12 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Rb3Q4d3dVV3BoUE8xY2RFYWdDemliVGdRRk9TMTdicmtLOWdGbHRqOVNteEhBZGo1Z0dqN3RQdDc3YlRRREE?oc=5",
       "source": "브런치",
       "date": "Sat, 02 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "“삼전·닉스 쓸어 담자”…MSCI 코리아지수 기반 ETF 뭉칫돈",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBtQ2lJUnNVc0VtMnNyRlRqRHBkaVdjb2g0X0tUQTRBM2VmOFVKMWppUUFwN2ZHbGNoXzdnWDNSZ3FCVGZIQlhpeFh2cVlOOHZRWG5pOA?oc=5",
-      "source": "매일경제",
-      "date": "Sun, 26 Apr 2026 07:00:00 GMT"
     },
     {
       "title": "ETF ‘500조 시대’ 눈앞… 삼성·미래 ‘수성’ 속 한투·KB·신한·타임폴리오 ‘영토 확장’",
@@ -41,22 +35,16 @@
       "date": "Tue, 07 Nov 2017 08:00:00 GMT"
     },
     {
+      "title": "코스피 199조 던진 외국인 이건 계속 샀다는데…10조 가량 담은 ‘ETF’",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTUE1YVktdWFoWjhYOUxhNlV6RDVWR2NpTjZVNEd0ZDd1cWN4aDJ1VHNZVDl5UkpIeWpEWmQtS2dRZTJRUVVQeEJZemEyUnZZaFE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 13 Oct 2026 02:22:04 GMT"
+    },
+    {
       "title": "세금 나중에 내는 'TR ETF'에 외국인투자자 몰려",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
       "source": "www.intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
-    },
-    {
-      "title": "[상반기 ETF 결산] ㊦ '20조 블랙홀' KODEX 200의 독주···삼성·미래 양강 속 중소형사 '틈새 공략'",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0Rm4tWFE1b1MzNlJDV1lLYmY0M3dEcTVFcXRIZ0xuckMySUd1eUV3Njhod1Q5Rk9iSHc2LTBpZzhONTluOHg3eDYwNVlXRm9OSHlfZi0tUU5lN2dVOVRYRWxUZTRpWlIybEtVSmc3Q3R6Nk3SAXdBVV95cUxNU2w2Unl0MEphTEdYYkxNU0pfSGpFcUJRSy13WlpkTW1BekdGRmU3OUVwNldXM3JnT0NINXo5aDFMQVRhYmVzb3VLX25lRUNfRHNlT0Q3bzV5NzlIdXctWlVSLUxZQlVqdnloYmJZNmJJdzJoYzJjQQ?oc=5",
-      "source": "여성경제신문",
-      "date": "Mon, 29 Jun 2026 07:00:00 GMT"
-    },
-    {
-      "title": "​과세 피하자 外人 KODEX 200 ETF 팔고 KODEX 200TR 사고",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
-      "source": "아주경제",
-      "date": "Wed, 23 Mar 2022 07:00:00 GMT"
     },
     {
       "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
@@ -65,16 +53,22 @@
       "date": "Tue, 24 Dec 2019 08:00:00 GMT"
     },
     {
+      "title": "​과세 피하자 外人 KODEX 200 ETF 팔고 KODEX 200TR 사고",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
+      "source": "아주경제",
+      "date": "Wed, 23 Mar 2022 07:00:00 GMT"
+    },
+    {
       "title": "07일, 거래소 기관 순매수상위에 전기,전자 업종 6종목",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mc2tpTEhBRmZlRExEeThnMEt5S2hIbENnYU5PbVV4V21NWVAtYkQ3LVpBeHRXTjlScVd2c19fNUJJRHhkMEdaczJuVVNzN20wN1FDbVI5SnlKS1FiZXVOeTJCNHlaMkxu?oc=5",
       "source": "씽크풀 AI",
       "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "코스피 7000선 근접 속 변동성 재점화…개인 곱버스에 6454억 베팅",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PSl9nclk4djhmb0ZfaEcwNktXZ2prdGhUVHFWSHRPZi1SYi0xaG5hMkQyblcwbUxZMGtVal9IQnNMaF9GTnFKSmVrbHFjZ1htLXpiVlVucXZ3UzFFN1RXWW9NUUw?oc=5",
-      "source": "베타뉴스",
-      "date": "Fri, 01 May 2026 07:00:00 GMT"
+      "title": "올 투자 성적표… 외국인·기관 '쓴맛' 개미는 '죽을맛'",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ucFJSMHE5MGhnN3Q5ZGxEelFzT21nSGlWUHk2UHR1aU5UTkxqUVF6RlFOQVN6RHJJODdmdjhnYTVyMG9yUkNVbnJoMA?oc=5",
+      "source": "Daum",
+      "date": "Wed, 21 Dec 2022 08:00:00 GMT"
     },
     {
       "title": "코스피 7,000선 코앞인데···곱버스 베팅 '개미' 6,400억 던졌다",
@@ -83,10 +77,16 @@
       "date": "Fri, 01 May 2026 07:00:00 GMT"
     },
     {
-      "title": "코스피 199조 던진 외국인 이건 계속 샀다는데…10조 가량 담은 ‘ETF’",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTUE1YVktdWFoWjhYOUxhNlV6RDVWR2NpTjZVNEd0ZDd1cWN4aDJ1VHNZVDl5UkpIeWpEWmQtS2dRZTJRUVVQeEJZemEyUnZZaFE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 13 Oct 2026 02:22:04 GMT"
+      "title": "삼전·닉스, 현물은 팔고 ETF는 산다…개미들의 '양손투자'",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14eWtUOE1yS2owaFcxM3pOb0FXekplekszcVVzNmY3T1E2Z3NhWk95cWxlaE5yZ2l4aW52RWZCeXpERTE2bWFkYmM5ekg2Vjk4X3U2SXUyazQ2NDBN?oc=5",
+      "source": "https://spt.co.kr/",
+      "date": "Thu, 01 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "title": "자진 상폐 SNK에 600억 베팅한 기관들… 공개매수 실체는 몰라 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNEpUVUVTSHVpVFo3eE9USDhuZVJUbXF3QU44S2lzQUdGM1NIVzN4SDJOTVZuczNJRl94cEpPNkgzSURaTzNlZm9Hd3RtMmEtT2JjRlNjV1J5cEhYQURBWFdRcC1manFVTTl3V3JCVkotZkJVbmExV29VUHFkTzEzWnMwMnlOVkdf0gGcAUFVX3lxTE1aVWZOdVFyb2ZURjRPWjBtTW1wUUlDSFY2TDg3cDVsQkJVcm5QMGwzSHE2WGxqZmJJQ25zVHdpd2wtSExMc0tEYmFfbEwzZHJEWFN2RnRpRml4b2hLd0M3WTBySzdjVjEzUnlyaXJTSVVsQ2FzdVB6UFlXeTB4TU9XZDJwTExhNmVhRW5HSHdzRG9RSHYzNkJ1TGg2Zg?oc=5",
+      "source": "Chosunbiz",
+      "date": "Wed, 22 Dec 2021 08:00:00 GMT"
     },
     {
       "title": "주식형 ETF 팔아치운 개미, 채권형·MMF로 몰렸다",
