@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-10-21T00:33:38+00:00",
+  "updated_at": "2026-10-21T10:02:29+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "[단독] 삼성전자, 차세대메모리 핵심 개발인력 ‘성과급 차별’ 없앤다",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA4WVZMdmtqb3ZHNUpmVjAwdE5JbVBVMzgwQkxKdl9lVzhRcFpSLThBbFJmcFQtY3RRWGNRcXk5UFJSaHJwVzd4U3hTWFVKbUtuLU5LZWRn?oc=5",
+      "source": "매일경제",
+      "date": "Wed, 21 Oct 2026 01:41:12 GMT"
+    },
+    {
+      "title": "삼성전자 반도체, 신제품 개발 '코어팀' 가동해 보상 강화",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Oc3lxWUxtN0ZuMExraVptMGdaMmoxY3kxdnV6ZmZ3ZkNTWWJ4NlYzVWQ4RWc3Y2FDZjV1X3BMc2pyQjhrVEVLRVdCdDJzVVI5azBpbFJQRW1JMzTSAWBBVV95cUxONUFTaGNHZlBLR01pSmdLd19zbkJfclVpSGhHNnd5VGhUaDNNNnNsaDdLc01ZekZ3cGZ2T3hCTnJRbkM5dmRZa2tHTm9wWVNIWE4wVWlzRHZwZ0U3WEU2NV8?oc=5",
+      "source": "연합뉴스",
+      "date": "Wed, 21 Oct 2026 06:34:53 GMT"
+    },
+    {
+      "title": "삼성전자 반도체 신제품 개발팀 정비…성과급 체제 강화",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aQnFXQ2JZVW1OdjRuQjRkOWZyZEJmaURMdFg0aDFtejQ4aEhHZWpOc194bjJKalFoMUF4aFplVlR5US1aTWxzdUp0cjRlSFM4b21jNWtBUVVVOENwQVh4VzlBOVJiMkk?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 21 Oct 2026 07:25:00 GMT"
+    },
     {
       "title": "삼성전자, 모뎀도 2나노 간다...올해 4나노 M2700은 MX 테스트 통과",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iYVpmS2RLVVpjRW5JclF6bmMyc2VPYkFEMlUxVW9BSGwybVhSVklYX084NTVBbDVxYVEwT05qV2NKZnBXcVFUNVE4LTljR1V4cWdwV2ZVYkI5clR1Sno5NENYYTE0dw?oc=5",
@@ -11,76 +29,34 @@
       "date": "Tue, 20 Oct 2026 08:46:59 GMT"
     },
     {
-      "title": "[단독] “우리 강점은 역전”…삼성 ‘24시간 일하는 로봇’ 온다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tZkZTdXAtaldmQk5mdExHSER0Qy1MbGtUSXQ3ODdKbGFZYWlEbDU3LTFQMGxqNnFxVUl4cGZoTktBV3ZCYS1Ba2JqNzVjVUY4d2Y2OUZn?oc=5",
-      "source": "중앙일보",
-      "date": "Mon, 19 Oct 2026 20:00:01 GMT"
-    },
-    {
-      "title": "“일상을 더욱 풍요롭게”… 삼성전자, 전 세계 63개국 ‘삼성위크 2026’ 실시",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPeXFvZHF0TGtYdHpnLXVqZUZWVVVXcnpDMDZRMEloMmhldW1HZTA0M2tjUXMyTlBDTVVpdUNncUVLZUlUUGxzVXh0X1kxMlVRTEVXQmxWanpJMEF0V2FRc1NNRVo5aVBXZFBQbmNXWnJKXzJrTm1XNThJM0JGNjN1THFnRE9rRVJsZ2JXYkI0bzJMaHJCaDBoajhERGRNTl9LUWlWUC1EeFAyTTNDYlZ1ZncxeHIwM0dJSUEwNGRvVWNTeHRCVjMtRjRIa0M3Q3J3RC1RQ3lJdWhzNjBBZkJGTmZrRDRqZURlcjg2ajRkUHNGMUV4TzZDakNwSlRERURsandlZlVRbEMzakUtcDFZU2EtbmROeGNyOEoyT1EwR0tWdWJ5bXhYeGtqU0czNmw1NFE?oc=5",
+      "title": "삼성전자, JBL 80주년·바워스앤윌킨스 60주년 특별 기념 행사 개최",
+      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxObllqMDdRR1ptQ09wbWgxNFNJSmZtYkxldFpKZnU4UWh6dHpvVlM1YU1XcUxVT3ZYYXV1U1NZMnVsRUhwRjFJLWhiVHdRNVgyUW56dUVEd0ltRWdJYzc0SUg3ZXFNR0x0cWlHamxYNmNUYjVlNVNQZUh1NWVNNUhRbHlsTEcybDY1VE9tNlhmdXdfYkQ4WndYb21jZmhqakdhTzV2X2hkQlhnQm01TFRfak5iTV9fS01LZ1h2Z0ZwTThOelVKbWRwZDVlY1ZnNmtwVlZ1aVVBcXhyLThUb3lmcm1IZHJkakdxODZwendtMFRZTFJELTNYVktnNGhxZFV6TjNsOW4wOENremJxdkdobUxKdnNmdmNzdzgyREMtWjhkSzFMZ3dnR21mOEdYQlo3SDl4NEdURXEyQnRCeTB1N3ozaTdQT0w5Nlc0?oc=5",
       "source": "samsung.com",
-      "date": "Tue, 20 Oct 2026 23:00:00 GMT"
+      "date": "Wed, 21 Oct 2026 09:00:00 GMT"
     },
     {
-      "title": "삼성전자, 창립기념일 앞두고 '삼성위크' 실시",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02ZkgwMFpCVVlKX0FrZFREQk5mbEdBYklSYVRvZ0hmTXZyOVFwZFk1OWtQbUlXTFBKS1lWS3VxMHl4aV9TM0hLX1RNWEpPRFNPRnRjbTI1dUMtM1djT1RIYkRMTU1ZQ3I3Mi1QLTNPb2VWTFU?oc=5",
-      "source": "마켓인",
-      "date": "Tue, 20 Oct 2026 23:56:36 GMT"
+      "title": "JBL 80년 역사 서울에…삼성전자 기념전 개최",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ySnk0eGVyam1VSDFtcGpTS0NFcGpsRGZhMFRGYUF3amlwNXVQN1hMaFI4c2pwOXBGZ05tdDZmblpmQW5WU1d3clVXelh2VS1jc0RmSWJJY2VVdHBpUjFxWQ?oc=5",
+      "source": "뉴스토마토",
+      "date": "Wed, 21 Oct 2026 09:00:00 GMT"
     },
     {
-      "title": "삼성전자, 창립기념일 앞두고 63개국서 '삼성위크 2026' 돌입…\"구매 혜택 제공\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCSnRxWVdSSldQSVBieVFFUGpUdDJQVlRGYnAtLTlIOEFpbE5qelNSREdfZFl6T281UWVzNFFCbGxXM1JZQW5pWVBEM2o5QUZaa3BCbmRTa2dEbVJXeVpuZtIBeEFVX3lxTFBGVldfSDd4V1F0TVRLdXNORWJMYUJvX0JIZ0lRUDRETEtMTGZUUUJPZjdwTldja3RWaWd4VFN5ZlJnTVpqdE5GeW5vc1VtUDBadHZ5c0xNMXZYTklBYy1CTTVBN2NjaEdTbUZhVjlwbU5qRGFGTjJmZw?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 21 Oct 2026 00:16:00 GMT"
+      "title": "‘사운드 레전드’를 한자리에…삼성전자,JBL80주년-바워스앤윌킨스 60주년특별전",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ld3NvSG94MGVtM1ljN3B1ZXNlMEdIclRlQzhsdDJFc3VSTGdPcGRvM2xpcFFUeENURTNzVVVvRlYyRFFadVNJUkdfdEdSYnJsNEo4WFdB?oc=5",
+      "source": "중앙일보",
+      "date": "Wed, 21 Oct 2026 09:00:00 GMT"
     },
     {
-      "title": "마이크론 파업 예고…삼성전자·SK하이닉스 반사이익 기대",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zTWNnOU1Lc0Q2eEFqcGtYeUJITWRxNXpRVlhuZE5DXzhnV01oN1Iza3J0TFg2czV3ODJXUTVtdDNyY01paERDRUd4ak1yMmVxUkQtUVFKTE5jT29hUGdTQ0VUMXY3Wm1ZbTlSQmhOOXo?oc=5",
-      "source": "연합인포맥스",
-      "date": "Tue, 20 Oct 2026 23:44:39 GMT"
+      "title": "(단독)금감원 \"삼성생명, 삼성전자 지분 처분 가능성 반영해야\"",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NjFseUwxckxCb2lOVWJIb3VtLUVCdEg5dEhoWWhRZmpHTEh6U3ZRLVEyMUFDOFZDWl95b0x6aWxVM21RTVlJUVJWS0pHcWdwT2duWW9iNWlyTi1MYWRF?oc=5",
+      "source": "뉴스토마토",
+      "date": "Wed, 21 Oct 2026 08:20:33 GMT"
     },
     {
-      "title": "\"삼전닉스처럼 '영업익 N%' 성과급 달라\"…마이크론 대만 공장 '파업 초읽기'",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1Z0huMTBBLUQ1NExVeGhJazFEb1BNYlBVMGRZeVp2Mi12R1FWLV95TXZaV1lsZl8wRXFsQmxnbUNhQXZTT1BndTMzc0pVQmYwcWNTZlBsOTdSZw?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 20 Oct 2026 23:58:00 GMT"
-    },
-    {
-      "title": "마이크론 대만 노조 22일부터 파업, 삼성전자 SK하이닉스 수준의 성과급 요구",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qNmRsaHowd1pCeTVVM0JUZXhXaGFVdlRGQjdWZmVjSlVTbERhZm1lLUl1Q1p2N2tzNFF6clZDeXlXVDBpTVhkUEtHVlhpdlRMUW55MUI2VWoyTTJuak5iTm5reDRjeHc4R0tHU2ozZmZyX1E?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Tue, 20 Oct 2026 04:56:43 GMT"
-    },
-    {
-      "title": "[속보]삼성전자 3.8%↑ SK하이닉스 5.9%↑ 출발",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9WTDVpdGluaThoSHlSbmNDckRacG9qcWhrYjNXbndHck1vSURSdXh3RThlRk11YW50R1dIeGJiMXpoYjc3Vm43ejY5QzRMbVJscTN0eDFvMXE4TWZNMnpYZtIBeEFVX3lxTE9RY2JOZllxRXhLWXpVek5nZ1BzdURRODczeTdjZVY2cndMSW5KZXRfM3RQN2N2dGhTRnNKSEo4REd3cFphQmNkdF8tSlV6ZjFxeTBaNWZYcFlrcWJYd01RRmZHaV9oVlpHWEMwYXhoVmJlM3daamZhLQ?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 21 Oct 2026 00:03:40 GMT"
-    },
-    {
-      "title": "美 AI 서버 실적 호조에 삼성전자 4%·SK하이닉스 5%대 반등 [이런국장 저런주식]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jT3Y0SHdXQVFkX1RFSFVGZUtaTHJUSk9UZ21nUTctSDV2WUVMOWZWQVd4Xy1UVDBmeFNnZm11VXlfbTRidzB6WXo0YUllU1JWcVE?oc=5",
-      "source": "서울경제",
-      "date": "Wed, 21 Oct 2026 00:18:33 GMT"
-    },
-    {
-      "title": "SK하이닉스 3.6%·삼성전자 2.84% 상승, 검색 상위주 동반 강세",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9KTXlKblFpeC1udlVWMVhZMXB2djZlaVQ2TV95Q0pQdEZZODFXeElKZXd4UF9NejhNekNiWE9fVnhZUDJTMlJYcXZsUmlxMFA0TlVPWkdjMTE5TDgxcEZfdUlHbkRwVk8tYlpackRZdGZFb1dXWXF0MC1zc1Zrdw?oc=5",
-      "source": "서울신문",
-      "date": "Wed, 21 Oct 2026 00:12:37 GMT"
-    },
-    {
-      "title": "삼성전자 주가 19% 떨어졌는데…KB증권 “내년 이익성장 이미 확보”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sZDM4NW1oVDFHcURZSDZsbnpxMVNjeDg5bmRIY2s3S1J0TG1rNUNkY2IyMzRwUHVfWng5WGt5VlNTSzF5UU42U0dYQjJudkxNMkE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 19 Oct 2026 23:59:31 GMT"
-    },
-    {
-      "title": "\"삼성전자, 내년 영업이익 555조…사실상 이익 증가 확정\"-KB - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiMjVBVGFTdF9fUGJqODQwaWpvWk45OFZvR25NdUpJcHpiRGMxY091ZGpNZXhYcWVOdHd4MnJMWlhBM3duaGVISEJabWIzLUZEYW5QdlYySExDOFhELXQwTnNVNzZJTnQx0gFuQVVfeXFMTUhTaDFwOW5uN0xRQ0F2Uks0djlBTzgyemJZMGk0T3FjMG9sSjFfZXJUc0hQVlliQVpKU1dtakxzMlMzQjN6VEp3UlBLTy1pUmlDbjZZSHAxSEtpLTRIMHFUT0JNSC1BQThPNm1hSnc?oc=5",
+      "title": "\"백덤블링 해도 병뚜껑은 못 열더라\"…삼성의 '남다른 로봇' 전략 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EQ0ZHM1Y4VjdJOW1HS3BOazBOakFlLU9FaGdjOXBubDlYZWFSVkxsb0wxS1FfY01ZendyZlVkT21JbkJlXy12Z2ZIRTFOY0ZpT2gtaTExX0VjbGFWeV9ucGhBZ0hGalM5V2NNSNIBckFVX3lxTE0xSFhSckowQ2xWcUUxclhZR2liZGljX2J4RGFkSV81QVJYUEhVX2NXOE03ZXVZcHhrVVJDRHFzNWtGdWJlYnJXLTRfbmFManQxdFhZVWFLSC1majhMcktkMS1ncjNmRUhGVGw1clJ1QTU5dw?oc=5",
       "source": "머니투데이",
-      "date": "Mon, 19 Oct 2026 23:52:35 GMT"
+      "date": "Wed, 21 Oct 2026 08:50:00 GMT"
     },
     {
       "title": "\"삼성전자, 실적 성장성 확보… 내년 영업익 555조원\"",
@@ -89,10 +65,34 @@
       "date": "Tue, 20 Oct 2026 15:35:00 GMT"
     },
     {
-      "title": "\"대표직 제안도 거절\"…삼성 부사장이 '중소기업' 향한 이유",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mcjFlVWJDUFdDYVlQRHJvaFFVS2JIVDVJMkxyS2tHTGMzRDAxYnFZQUhlZk5haGd4STFPMWRRMFU4OVYyX3pNNkdyM3FPYjdocUZlQ1ZsYWZvUQ?oc=5",
+      "title": "\"이어폰 귀에 꽂지 마세요\"…삼성이 내놓은 20만원대 신제품",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YVG41czdKak5KZzNhanI3MF92SHRGSC00c1pqMWFnelZxV1V2eDczQ01XV2F0RnpFbEJjR1lRNG9va2tSQl82LUpia21zNV9pbzR4cXQ4b1JxQQ?oc=5",
       "source": "한국경제",
-      "date": "Tue, 20 Oct 2026 09:26:25 GMT"
+      "date": "Tue, 20 Oct 2026 07:07:29 GMT"
+    },
+    {
+      "title": "인터엑스, 삼성전자 음성인식 특허 확보…독자 AI 언어모델 기반 Enterprise AX 2.0 고도화",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE41RmVfOXRDUVBTdTRKVl9wNTEzWmZYTHJfR19SWGJfWk5GcXF3dEpnLUNEN254LUFXNUJzcVl5UEp6N2hMTm1aR1lyWlE1Zw?oc=5",
+      "source": "전자신문",
+      "date": "Wed, 21 Oct 2026 08:10:37 GMT"
+    },
+    {
+      "title": "[속보]삼성전자 5.7% SK하이닉스 5.8% 상승 마감",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qNk1iUk8yelE3ZzJkZGo3NndMWm9zSW9qN29qSXJjaWxuQlVhQW1Pd0ZYWTVQbmFYUHpWRmtHQzFNNWpsWXVhT1ZUaFVQZ3EzaEhteE5USGx3WGdHN2ZZQ9IBeEFVX3lxTE1GVk92TEhsYjB6TkdfcWpZSUlHdG5la0xEYkJXQlNEX0xKQXFKMTJPYlV2dXFXWlNfemZYckstMVZnODY3MzA5ai01bHJoU0FQSkl1UGZ0Y3FObG1VZDhSdlhGaDd4NlZWdW1peTNrNVlFbTFqZm96Zg?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 21 Oct 2026 06:31:34 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스, 中 공장 고도화",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9JZFIxTDRSZFctemw2TEJZa044YkxBNVAxNEJsdDRKczRwUjVGQm9RZTV0UXE4SjNqOVBpTXF2SVQwNmhCMGIyd1BxVTlheEdJTG1CeUlOelNneThpTVYzczhIRVJ2R09SZkdDaVRB?oc=5",
+      "source": "아시아투데이",
+      "date": "Wed, 21 Oct 2026 08:19:59 GMT"
+    },
+    {
+      "title": "삼전닉스 반등에도 갈 길 먼 주가…증권가 목표가 '요지부동' - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YRVdJVndnSk5uaHM5YjlUQU91LWhkWjE4eU5GdF9GMzFrY3dBOFROU3VLSmFZazJfZTNla0k1MXNBMjAweFRpdVJyX2VVdzV5Z0QyMHBCdzloT2VoSkFXREpfY1BBS01x0gFuQVVfeXFMTS1xWHFxT3hqUWE5MHkySWQ5bDFkdlVFVml6Rm9FaDRKaG9VM1dSRlVoa2IyT2kyQmlVaC1aWFRkWHh2dU9ZUWwtWFR2NnU1NkdySlFOMkRSOVFNaGZoSkpmSDFSOEN4U2cyNkRIS0E?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 21 Oct 2026 07:41:15 GMT"
     }
   ]
 }
