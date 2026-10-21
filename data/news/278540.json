@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T10:02:35+00:00",
+  "updated_at": "2026-10-21T13:06:48+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -35,16 +35,16 @@
       "date": "Tue, 07 Nov 2017 08:00:00 GMT"
     },
     {
-      "title": "코스피 199조 던진 외국인 이건 계속 샀다는데…10조 가량 담은 ‘ETF’",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTUE1YVktdWFoWjhYOUxhNlV6RDVWR2NpTjZVNEd0ZDd1cWN4aDJ1VHNZVDl5UkpIeWpEWmQtS2dRZTJRUVVQeEJZemEyUnZZaFE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 13 Oct 2026 02:22:04 GMT"
-    },
-    {
       "title": "세금 나중에 내는 'TR ETF'에 외국인투자자 몰려",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
       "source": "www.intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
+    },
+    {
+      "title": "코스피 199조 던진 외국인 이건 계속 샀다는데…10조 가량 담은 ‘ETF’",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTUE1YVktdWFoWjhYOUxhNlV6RDVWR2NpTjZVNEd0ZDd1cWN4aDJ1VHNZVDl5UkpIeWpEWmQtS2dRZTJRUVVQeEJZemEyUnZZaFE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 13 Oct 2026 02:22:04 GMT"
     },
     {
       "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
@@ -57,12 +57,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
       "source": "아주경제",
       "date": "Wed, 23 Mar 2022 07:00:00 GMT"
-    },
-    {
-      "title": "코스피 7000 눈앞…변동성 반등 속 개인은 ‘하락 베팅’ [이런국장 저런주식]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HWHFWSHFCLVJGaFdyaEVlMzREQjJMY2RQZ3BtVWRMOTdVdWRkTmxYSDRsaFBMMmlReW5hb2ptZVVDd3hxd3ljTHNteGh3ZFlIeEHSAVNBVV95cUxQQnFCa0FpdVB2NTZ0WGV2cVd4eFFuOVJaZ0V6ZWhFeFRLcWhqR2hPMi0tMk1kcy1GRXRvYXFRdm9MaEZNN1hzU2diTXlIV1kwN01abw?oc=5",
-      "source": "서울경제",
-      "date": "Fri, 01 May 2026 07:00:00 GMT"
     },
     {
       "title": "07일, 거래소 기관 순매수상위에 전기,전자 업종 6종목",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
       "source": "매일경제",
       "date": "Wed, 20 Nov 2024 08:00:00 GMT"
+    },
+    {
+      "title": "23일, 거래소 외국인 순매수상위에 운수장비 업종 3종목",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBrRENCTGpuQU1ZTFdyS0NKTVh6UkFpRGhRVVlIUk1mZEJlRGxiYi1lWTY5c3J0X21oOXhWUHRRSWZpYUJaYUlxSVhKWW5hWmI5QmRNVlpKVUxQdmFOVXBBaXFWM1FPYzZz?oc=5",
+      "source": "씽크풀 AI",
+      "date": "Sun, 30 Aug 2026 05:39:07 GMT"
     }
   ]
 }

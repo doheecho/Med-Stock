@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T10:03:18+00:00",
+  "updated_at": "2026-10-21T13:07:29+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
@@ -9,10 +9,10 @@
       "code": "005930",
       "name": "삼성전자",
       "weight": 35.19,
-      "price": 223000.0,
+      "price": 223500.0,
       "prev": 209000.0,
-      "change": 14000.0,
-      "change_pct": 6.7
+      "change": 14500.0,
+      "change_pct": 6.94
     },
     {
       "code": "000660",
@@ -27,10 +27,10 @@
       "code": "005935",
       "name": "삼성전자우",
       "weight": 4.73,
-      "price": 172300.0,
+      "price": 172400.0,
       "prev": 163200.0,
-      "change": 9100.0,
-      "change_pct": 5.58
+      "change": 9200.0,
+      "change_pct": 5.64
     },
     {
       "code": "402340",
@@ -45,10 +45,10 @@
       "code": "009150",
       "name": "삼성전기",
       "weight": 2.29,
-      "price": 1169000.0,
+      "price": 1184000.0,
       "prev": 1125000.0,
-      "change": 44000.0,
-      "change_pct": 3.91
+      "change": 59000.0,
+      "change_pct": 5.24
     },
     {
       "code": "105560",
@@ -63,28 +63,28 @@
       "code": "005380",
       "name": "현대차",
       "weight": 1.47,
-      "price": 309000.0,
+      "price": 310000.0,
       "prev": 305500.0,
-      "change": 3500.0,
-      "change_pct": 1.15
+      "change": 4500.0,
+      "change_pct": 1.47
     },
     {
       "code": "055550",
       "name": "신한지주",
       "weight": 1.36,
-      "price": 91400.0,
+      "price": 91500.0,
       "prev": 91500.0,
-      "change": -100.0,
-      "change_pct": -0.11
+      "change": 0.0,
+      "change_pct": 0.0
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "weight": 1.19,
-      "price": 555000.0,
+      "price": 557000.0,
       "prev": 555000.0,
-      "change": 0.0,
-      "change_pct": 0.0
+      "change": 2000.0,
+      "change_pct": 0.36
     },
     {
       "code": "086790",
