@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-22T10:03:01+00:00",
+  "updated_at": "2026-10-22T13:08:07+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
     {
-      "title": "“분명 나눠 샀는데 한곳에 몰렸잖아”…ETF 분산투자의 함정",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBwem5aUmx2Tk8tdHFMS1FJc015TmF1d3hGcjVNbzVuS3AydFM0VUlodXotQXZjejJmSnJtYU1oTl84bGhuT2p6cGxOT2xWdnI2LXc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 20 Oct 2026 07:08:45 GMT"
-    },
-    {
       "title": "낙폭 커지자 베팅도 커졌다…국내외 레버리지 쓸어담은 간큰 개미",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kdWRTYkhDWUtZN3h4bllWSnlRYlJXdWhfY3VWNzZYekVTZGgxY21Nb0VieF9mR0hDR3d5cXYxUUx3SnhiOU9aMm9FX080WWp2RlpfVXhnblM4MUJlbC1kZEVaeldZdWVEcjYxOU5uU19sZw?oc=5",
       "source": "KB Think",
       "date": "Wed, 21 Oct 2026 00:47:33 GMT"
+    },
+    {
+      "title": "겁도 없이, 지르는 개미들 … 레버리지 ETF가 순매수 1위",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0yRnE4V3lBLXFCbFdhOUw1ekJHTEVsWUxzLVlVTE5nWVhTbzZmT3k5aDRfRWRZVFM0NWJGcDBVNWdtRjk5eU91R255ZkhfRldJTlE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Mon, 19 Oct 2026 08:40:33 GMT"
     },
     {
       "title": "소부장 늘렸더니...하이닉스 25% 빠질 때 -9% '선방'한 반도체 ETF",
@@ -59,12 +59,6 @@
       "date": "Sun, 18 Oct 2026 04:39:01 GMT"
     },
     {
-      "title": "겁도 없이, 지르는 개미들 … 레버리지 ETF가 순매수 1위",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0yRnE4V3lBLXFCbFdhOUw1ekJHTEVsWUxzLVlVTE5nWVhTbzZmT3k5aDRfRWRZVFM0NWJGcDBVNWdtRjk5eU91R255ZkhfRldJTlE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 19 Oct 2026 08:40:33 GMT"
-    },
-    {
       "title": "외국인, 반도체주 8조8523억원 매도… 지수형 ETF는 순매수",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PVTFwaDkzaVRnN2c2MmVOX01uY2FKSWU4RE1WWnlmR0FNWjE1YVJRd1lLSUVhOENRSXZJRE4yOW12QUtFMUp0R3pKdG1nbXJwcmVuZVdmcFdja0NETlJ2eExDZEMzRnV4dUE?oc=5",
       "source": "한국면세뉴스",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQY2F6VWJaZDkxWC1FcU42Ml9INDVnaXh4aWN5RWVWV1dscFloalh0WEt2bWJfcGU1TEp4dUdGWmlhUVl3QXpkeEd6TnA3WmxDRzdMQ1RqUFZNaHJ2cjVtMVdpd3l5NUJaUEhRdGtoNFRkRUlSOW92d05GcTFQQ2NTYkgxX1dET2Zp0gGcAUFVX3lxTE1RNHN6NVBwNG1GTzY5YWZpdUliOXd5RmFfT1M3U0Qyc2ZXallDeXB1VVlwWUpvSUIxWGhjSlRza3FfalJzYWpoX2ZBY3NMeGltbFpVcE1ZVWxCaEJpTndZOW9xVmJGR0gxdFlBZ3FXa2NCak5KMURRclA4RTVabXNlTmtHYml0NG4wOXI5TTJIZkNod0EtV3BndTRkNA?oc=5",
       "source": "Chosunbiz",
       "date": "Fri, 09 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 美반도체, SK하이닉스 ADR 편입",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1RY0hCUTlmcGQtRHQ2bEJMdjJiRkhTdUZ2eDNSWE9YOVRubURvVnZVMUhFY25xV3ZhMTBFTm1UZUZ0Q1FJQmFiWXZDSWtsdjdlTll5T0JKZnB2N1FZRE1TWkdkRUtqUl8zZDNMQmw1bUNDRjktT1lUdTh3?oc=5",
+      "source": "서울신문",
+      "date": "Tue, 29 Sep 2026 07:00:00 GMT"
     }
   ]
 }

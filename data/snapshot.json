@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-22T10:03:37+00:00",
+  "updated_at": "2026-10-22T13:08:59+00:00",
   "as_of": "2026-10-22",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 199471123.03,
-  "total_pl_close": 69205912.75,
-  "total_pl_pct_close": 53.13,
+  "total_value_close": 200626123.03,
+  "total_pl_close": 70360912.75,
+  "total_pl_pct_close": 54.01,
   "positions": [
     {
       "ticker": "005930",
@@ -21,9 +21,9 @@
           "quantity": 181.0,
           "buy_date": null,
           "cost_basis": 21415739.0,
-          "eval_value_close": 38553000.0,
-          "pl_close": 17137261.0,
-          "pl_pct_close": 80.02
+          "eval_value_close": 38824500.0,
+          "pl_close": 17408761.0,
+          "pl_pct_close": 81.29
         },
         {
           "account": "미래에셋(RIA)",
@@ -31,9 +31,9 @@
           "quantity": 5.0,
           "buy_date": null,
           "cost_basis": 1810470.0,
-          "eval_value_close": 1065000.0,
-          "pl_close": -745470.0,
-          "pl_pct_close": -41.18
+          "eval_value_close": 1072500.0,
+          "pl_close": -737970.0,
+          "pl_pct_close": -40.76
         },
         {
           "account": "NH투자증권",
@@ -41,16 +41,16 @@
           "quantity": 104.0,
           "buy_date": null,
           "cost_basis": 9405032.0,
-          "eval_value_close": 22152000.0,
-          "pl_close": 12746968.0,
-          "pl_pct_close": 135.53
+          "eval_value_close": 22308000.0,
+          "pl_close": 12902968.0,
+          "pl_pct_close": 137.19
         }
       ],
-      "last_close": 213000.0,
+      "last_close": 214500.0,
       "cost_basis": 32631241.0,
-      "eval_value_close": 61770000.0,
-      "pl_close": 29138759.0,
-      "pl_pct_close": 89.3,
+      "eval_value_close": 62205000.0,
+      "pl_close": 29573759.0,
+      "pl_pct_close": 90.63,
       "target_avg": 495227.0,
       "target_high": 569511,
       "target_low": 400000,
@@ -70,9 +70,9 @@
           "quantity": 70.0,
           "buy_date": null,
           "cost_basis": 33350520.0,
-          "eval_value_close": 85750000.0,
-          "pl_close": 52399480.0,
-          "pl_pct_close": 157.12
+          "eval_value_close": 86380000.0,
+          "pl_close": 53029480.0,
+          "pl_pct_close": 159.01
         },
         {
           "account": "미래에셋(RIA)",
@@ -80,9 +80,9 @@
           "quantity": 4.0,
           "buy_date": null,
           "cost_basis": 9373444.0,
-          "eval_value_close": 4900000.0,
-          "pl_close": -4473444.0,
-          "pl_pct_close": -47.72
+          "eval_value_close": 4936000.0,
+          "pl_close": -4437444.0,
+          "pl_pct_close": -47.34
         },
         {
           "account": "NH투자증권",
@@ -90,16 +90,16 @@
           "quantity": 6.0,
           "buy_date": null,
           "cost_basis": 13860000.0,
-          "eval_value_close": 7350000.0,
-          "pl_close": -6510000.0,
-          "pl_pct_close": -46.97
+          "eval_value_close": 7404000.0,
+          "pl_close": -6456000.0,
+          "pl_pct_close": -46.58
         }
       ],
-      "last_close": 1225000.0,
+      "last_close": 1234000.0,
       "cost_basis": 56583964.0,
-      "eval_value_close": 98000000.0,
-      "pl_close": 41416036.0,
-      "pl_pct_close": 73.19,
+      "eval_value_close": 98720000.0,
+      "pl_close": 42136036.0,
+      "pl_pct_close": 74.47,
       "target_avg": 3257727.0,
       "target_high": 3746386,
       "target_low": 3100000,
