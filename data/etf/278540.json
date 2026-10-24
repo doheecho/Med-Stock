@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-23T12:48:54+00:00",
+  "updated_at": "2026-10-24T00:32:46+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "constituents": [
     {
       "code": "005930",
       "name": "삼성전자",
-      "weight": 35.69,
+      "weight": 35.62,
       "price": 213500.0,
       "prev": 214500.0,
       "change": -1000.0,
@@ -17,7 +17,7 @@
     {
       "code": "000660",
       "name": "SK하이닉스",
-      "weight": 24.02,
+      "weight": 24.91,
       "price": 1263000.0,
       "prev": 1234000.0,
       "change": 29000.0,
@@ -26,7 +26,7 @@
     {
       "code": "005935",
       "name": "삼성전자우",
-      "weight": 4.77,
+      "weight": 4.76,
       "price": 166200.0,
       "prev": 166600.0,
       "change": -400.0,
@@ -35,7 +35,7 @@
     {
       "code": "402340",
       "name": "SK스퀘어",
-      "weight": 2.46,
+      "weight": 2.52,
       "price": 764000.0,
       "prev": 749000.0,
       "change": 15000.0,
@@ -44,7 +44,7 @@
     {
       "code": "009150",
       "name": "삼성전기",
-      "weight": 2.27,
+      "weight": 2.21,
       "price": 1111000.0,
       "prev": 1146000.0,
       "change": -35000.0,
@@ -53,7 +53,7 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "weight": 1.89,
+      "weight": 1.82,
       "price": 153000.0,
       "prev": 157900.0,
       "change": -4900.0,
@@ -62,7 +62,7 @@
     {
       "code": "005380",
       "name": "현대차",
-      "weight": 1.43,
+      "weight": 1.39,
       "price": 293000.0,
       "prev": 300500.0,
       "change": -7500.0,
@@ -71,7 +71,7 @@
     {
       "code": "055550",
       "name": "신한지주",
-      "weight": 1.33,
+      "weight": 1.29,
       "price": 88000.0,
       "prev": 90000.0,
       "change": -2000.0,
@@ -80,7 +80,7 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "weight": 1.14,
+      "weight": 1.1,
       "price": 117000.0,
       "prev": 120000.0,
       "change": -3000.0,
@@ -89,7 +89,7 @@
     {
       "code": "006400",
       "name": "삼성SDI",
-      "weight": 1.1,
+      "weight": 1.04,
       "price": 484500.0,
       "prev": 515000.0,
       "change": -30500.0,
