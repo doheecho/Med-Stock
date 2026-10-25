@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T00:31:50+00:00",
+  "updated_at": "2026-10-25T00:15:41+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 495227.0,
@@ -185,15 +185,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "키움",
-      "date": "2026-09-23",
-      "target": 350000,
-      "prev_target": 350000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     }
   ],
   "ticker": "005930",
