@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:00:38+00:00",
+  "updated_at": "2026-10-26T14:31:08+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "base_index": "KRX 반도체",
@@ -9,19 +9,19 @@
       "code": "005930",
       "name": "삼성전자",
       "weight": 18.75,
-      "price": 214000.0,
+      "price": 213500.0,
       "prev": 213500.0,
-      "change": 500.0,
-      "change_pct": 0.23
+      "change": 0.0,
+      "change_pct": 0.0
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "weight": 16.15,
-      "price": 1291000.0,
+      "price": 1290000.0,
       "prev": 1263000.0,
-      "change": 28000.0,
-      "change_pct": 2.22
+      "change": 27000.0,
+      "change_pct": 2.14
     },
     {
       "code": "042700",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:00:24+00:00",
+  "updated_at": "2026-10-26T14:30:55+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "base_index": "코스피 200",
@@ -9,28 +9,28 @@
       "code": "005930",
       "name": "삼성전자",
       "weight": 34.43,
-      "price": 214000.0,
+      "price": 213500.0,
       "prev": 213500.0,
-      "change": 500.0,
-      "change_pct": 0.23
+      "change": 0.0,
+      "change_pct": 0.0
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "weight": 24.86,
-      "price": 1291000.0,
+      "price": 1290000.0,
       "prev": 1263000.0,
-      "change": 28000.0,
-      "change_pct": 2.22
+      "change": 27000.0,
+      "change_pct": 2.14
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "weight": 2.43,
-      "price": 775000.0,
+      "price": 776000.0,
       "prev": 764000.0,
-      "change": 11000.0,
-      "change_pct": 1.44
+      "change": 12000.0,
+      "change_pct": 1.57
     },
     {
       "code": "009150",
@@ -63,37 +63,37 @@
       "code": "055550",
       "name": "신한지주",
       "weight": 1.23,
-      "price": 86500.0,
+      "price": 86400.0,
       "prev": 88000.0,
-      "change": -1500.0,
-      "change_pct": -1.7
+      "change": -1600.0,
+      "change_pct": -1.82
     },
     {
       "code": "068270",
       "name": "셀트리온",
       "weight": 1.05,
-      "price": 190200.0,
+      "price": 190000.0,
       "prev": 192600.0,
-      "change": -2400.0,
-      "change_pct": -1.25
+      "change": -2600.0,
+      "change_pct": -1.35
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "weight": 1.02,
-      "price": 484500.0,
+      "price": 484000.0,
       "prev": 484500.0,
-      "change": 0.0,
-      "change_pct": 0.0
+      "change": -500.0,
+      "change_pct": -0.1
     },
     {
       "code": "086790",
       "name": "하나금융지주",
       "weight": 0.98,
-      "price": 113200.0,
+      "price": 113300.0,
       "prev": 117000.0,
-      "change": -3800.0,
-      "change_pct": -3.25
+      "change": -3700.0,
+      "change_pct": -3.16
     }
   ]
 }

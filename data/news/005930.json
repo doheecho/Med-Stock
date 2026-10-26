@@ -1,56 +1,38 @@
 {
-  "updated_at": "2026-10-26T10:59:55+00:00",
+  "updated_at": "2026-10-26T14:30:26+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "'이미 팔았는데'…삼성전자 100주 배당금 100만원이라고?",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iTFd1MWpKckQ2a3R5bTIwSDBwUGFIVDlIX3JsaDVjSWxubVJCS1hfU0FNQ09VeHlqNkdmSzYwcktibF9GVlhJemNTNWVjSTRKbXBaSkRrZGQ1UQ?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 25 Oct 2026 02:43:36 GMT"
-    },
-    {
-      "title": "\"메모리반도체 장기 계약도 불황 막기 역부족\", 삼성전자와 SK하이닉스에 새로운 시험대",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WNGhwNDItRnAzbjJVZklQTnBPWkFMZDd6WHlLLWROQlVHYlJMdjJWcUtBOWxTXzhkT0JoZDVnOThtdlNHOU43Rkh3UmJkcGNGV0RDcDE4YmxlSUR5cGFKWWhaSGcwWDJLS21yYUNBb29PZVU?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 26 Oct 2026 02:39:38 GMT"
-    },
-    {
-      "title": "실적 발표 앞둔 삼성전자·SK하이닉스, 추가 주주환원책 주목",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lNjE2Y1Vod3VmRU1seFcwbnFLZnZTdzEySFNmSGl4ZWU3cXRaX05zd0Nxb3UzbnNGVFpBWVlJRWFGeVBUX1BwQmZ0bWkzQlhhdDgzcDdiU0dyT1lWY1k1V3NacFg?oc=5",
-      "source": "매일일보",
-      "date": "Mon, 26 Oct 2026 08:17:28 GMT"
-    },
-    {
-      "title": "[금융 한 입] 삼전닉스 실적발표 임박…이번엔 주가도 웃을까",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE16Zmg2M1BHQkgyVGVzNVo3c2NkSFV4TVZBb3ZBM1dVN2pqdHN6S1ZpMFQ1YjhnTmdCN242UkYwSVY4T2RkT25uMTMtaloyRzg2QjZwMVZJTEdZX1ZGNHJGbEJBaFJUUzlpUFNR?oc=5",
-      "source": "BBS불교방송",
-      "date": "Mon, 26 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "title": "삼성·현대차 맞트레이드까지… 귀한몸 된 로봇 인재",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5wbGZtVUpLelhSdWFXYVRnTGhhckh5Tk10TzNfbUJsbjNwcVVjb21KUDY4X2xSUU4xMGl2TFZlTUlFRFB3aUZzMndQeUpYdw?oc=5",
-      "source": "www.dt.co.kr",
-      "date": "Mon, 26 Oct 2026 09:54:43 GMT"
-    },
-    {
       "title": "“갤럭시A 20% 감산”…삼성, 칩플레이션 대응",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAxVHF3UjVLRXZoSkJpV2dNMVVtczUwQ0hwY0dwUzZ3SlEwQXZKVUxCeDBRemoyNUcySExxMzRGN21Xb3l3U2ViTGhBc2R4QQ?oc=5",
       "source": "전자신문",
-      "date": "Mon, 26 Oct 2026 10:37:41 GMT"
+      "date": "Mon, 26 Oct 2026 13:37:42 GMT"
     },
     {
-      "title": "삼성전자, '삼성기술전'서 HBM5 전시…전영현 등 DS 경영진 참석",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE40SmJaTFV6TDNTc3pPaHc2R2ljWHY2QkxOMkRTTy1HOTZ2eG9rUXhET21fQWNIdDVRQnFmY1dGM0dIcWcyN0FCYTBjbw?oc=5",
-      "source": "아이뉴스24",
-      "date": "Mon, 26 Oct 2026 02:09:31 GMT"
+      "title": "삼성 ‘엑시노스 2700’, 내부 시험서 퀄컴 최신 AP 앞서…멀티코어 성능 약 20% 우위 - 조선비즈",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdWtRTVZOejB2dEQ4anFVM0loSkUxUFNxWEc2UmtCSW44dF9hYjV1RUFHSVJCbEVnb1dkV1k3ZHRNZF9JMm50ZEhTUGlfanF5SXRBdjZiYW1GWEZJSnpkUklJVFF0bmNWMUVYVjJ5TXBxazRwd1B5QlBPemhJeWQ2STFB0gGWAUFVX3lxTFBJeHI5WlBGa1lHUjR0RFNMQ3hqeTZBdDFhMFRpWGVjLWxwalRPa1NmVEtDbzBIM19tRl9MamlsWVNURjFsX0VFdVM1VlFxaVoyclNRY3RfTEdTWlNxX0cyby1OMWJlQUVacE40WU5BSHhvNUxmY09pSVR6eTFMcUEwdVotNzQyNlBHRjhwZ1lOMVU0YW5Tdw?oc=5",
+      "source": "Chosunbiz",
+      "date": "Sun, 25 Oct 2026 01:12:00 GMT"
+    },
+    {
+      "title": "[단독] \"年 4% 금리가 어디냐\" 삼성전자도 예금 수조원 추가",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVZ0lVcDZpMHZIblFKcXlGbVA4bS00VEdQaV9Od1RLLW9tWDhmSmJEMFFvMEgwS1VHdm5sME16bmdjbFExbS13djVURk9RczVxZTdZVjlDaEdDQQ?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 26 Oct 2026 07:40:04 GMT"
+    },
+    {
+      "title": "삼성전자는 왜 HBM 25% 프리미엄 관측에 휩싸였나… 납기 신뢰와 4나노 무기화",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbFBsTjNOdUZhVThrUWhFUDhUNGdKb09OWWRVVTZBWDNJakREOGYwWG5Yd3h6NkFZbHhCRWpqY21rTkJlUTRWRXZqZXFON1poLXBIeUtjWjRHdDBuUUpXR3FhdE9Pcm51ZlVTdjY3UTZVdzdremhVaWFSMHk3d19qOHBBZkYxekI1?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Mon, 26 Oct 2026 00:52:06 GMT"
     },
     {
       "title": "삼성·SK, 내년 2분기 HBM4 8단 양산 출하...엔비디아향 공급",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50U2g0aW54WkhLakl3Z1lYN3EtN1k0MWR0RU11dnpMQm0xTXN2Vm9xcEZyWjRpd3ozbUhnc2d2Z3RuZ0FGRTFvblFNUGk0d0wzZ1RJN3pR?oc=5",
       "source": "지디넷코리아",
-      "date": "Mon, 26 Oct 2026 09:45:08 GMT"
+      "date": "Mon, 26 Oct 2026 05:21:51 GMT"
     },
     {
       "title": "GPU 위에 쌓는 '3D 적층' HBM 경쟁 본격화, 송재혁 삼성전자 'zHBM' 상용화 속도낸다",
@@ -59,15 +41,21 @@
       "date": "Mon, 26 Oct 2026 06:13:30 GMT"
     },
     {
-      "title": "\"저 삼성전자 다녀요\" 자랑에도 데이트 실패…인기남 조건 보니",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTlBhQ1lxZkF5RDRlS0JxTE5XVzVtTFVVcl9QZ1d2ZEdoVkRRVEFVWDQ1YVFVUDkwbUFKV1g3S0ZFTFpuV3dNYUpOMDZyYzdaeWNuY0I5NkRmOGtWOVdzazd5YUNaSzBOYUppQ2EwZ0ctcXpmTENLZDllRWpVRG9zUQ?oc=5",
-      "source": "이데일리",
-      "date": "Sun, 25 Oct 2026 21:14:21 GMT"
+      "title": "[ZD브리핑] 최대 실적 SK하이닉스‧삼성전자…주가 견인할까",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43YkthM2d2b2FWTU5hMm5PUmhwM2k3M1I0ZkQ3ZE84c0ZlOE44UVBWWmZKUmdMdXI0eWZRUlFvbVVMS2NSR2xUdWhKbDctRWVGSzY0Wjln?oc=5",
+      "source": "지디넷코리아",
+      "date": "Sun, 25 Oct 2026 04:56:42 GMT"
+    },
+    {
+      "title": "삼성, 귀에 거는 첫 클립형 무선 이어폰 ‘버즈 온’ 출시",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ldnJGa0JjOUpyMllxOEJTSkR6cWNpU0xVTFlYT0pycHZYN1k1N0xIVVc1aDBLbEhBeld6d01ZM01xazgyOTVfcXhJRnByZllJNkd1LXNkMHhKUdIBX0FVX3lxTFBOSjFSZE1QSERjMmxWaF83dnZ5cUxXaXl6TkNVdGgyUFg2cm1UV0g4X21WaWI0RmoyV0dCOFU1S1RXWkxYOG5SbTZUNlRXa2I4UHFMZDVtNGVqd0VQbzFr?oc=5",
+      "source": "경향신문",
+      "date": "Mon, 26 Oct 2026 01:39:00 GMT"
     },
     {
       "title": "\"삼성전자, AI로 반도체 신물질 개발 3년 단축 목표\"",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yZXkyRTFYa09wZEc5bHhrRnQyRGpTdTVpSXR5M0Z5YW51NnIwQkNtdzVhSDNLSll3UW5rZVQ0YnRGbFdDV2MyMHZPaFkxVS1WUUtuNUVpR2JYdTDSAWBBVV95cUxQdWI2cHBlMmc3WjUxekFzdlZUTmpOUDNHVWttMHlWelpvTEZVVEVrQXEyMXRaSzBoQ3FBbUhBaWpZVjlPMGpQaVVSSXo4dlo4YTJ4dkxsOTFLNDlPYlZpM2Y?oc=5",
-      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE90Q1g0ZnROdHpfaXVNdlNlLUk3RTVJaDRXQnJXVHRJZEt0bzVBUkpuRWR4R2VyUi1YTDRSbmQ0ZEJ4VWJwMGlmQ3ZnNy14bG5wUGc?oc=5",
+      "source": "매일경제 마켓",
       "date": "Mon, 26 Oct 2026 02:33:30 GMT"
     },
     {
@@ -77,22 +65,34 @@
       "date": "Mon, 26 Oct 2026 06:35:00 GMT"
     },
     {
-      "title": "삼성, AI로 연구 효율 높인다…소재 조합에 AI 활용",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5INnhQTDRlMWZPWUdOSC1jZzZ4c1p1VDdENnFGREM4ZmljcVVUc1FNYVZmdkFCdzV0OWhLa0JjdUpxNTM0dVd3ZnhJaTdWN1hoM29Eang3Qm5ZQmFINDlTRFdnUDY?oc=5",
-      "source": "매일일보",
-      "date": "Mon, 26 Oct 2026 07:41:01 GMT"
+      "title": "삼성전자, AI로 반도체 신물질 개발 기간 5년서 2년으로 줄인다",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPLTFNbExER1pXVG03WFI4djZBY2dONVlBUU1JWFNjeUQtd2Z1VXNmTTdhZ0NvenBIeDRucXdOZGRJVkxfekR5X2dOOGFNemZadEJoTUhydTc5cFFBTlpfdkhkNkFWWTFNb0FWdG1UZkFlYTZ6ZHV1LVlNZmdIdmVRenJtcFNFdw?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Mon, 26 Oct 2026 06:05:29 GMT"
     },
     {
-      "title": "2026 춘천마라톤, 삼성전자 남녀 동반 우승 쾌거",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5yNU5WcFNDXzlSTWhfcWZmZ2p5eTZfSC1KNkFNaXFIb2lyd2dkaGt5em1XUkFMWi1ONFA4UHltZXEtYzhpNU1VM3NSWDdKcmJwXzFoTlNBdkZrUGFvQ3UtMGtB?oc=5",
-      "source": "스포츠월드",
-      "date": "Sun, 25 Oct 2026 23:00:00 GMT"
+      "title": "아이씨에이치, 삼성전자 1차 벤더코드 취득…해외 영업망 확장 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pS3NtS19PczlvUUJEOWJTdEFsdEtQaVBINjBjenNlS2diTlF5b2xoS2ZXVFRaY2RGenN2RU9GU2tTZWJZcTVFdHV2SjM0RkY1dGF6Z0UwRVViMnNuV2hfd3U4OXVYYWJ10gFuQVVfeXFMTS04S0ZOVU15Y2dwTVVGV2pmTjdnWHVhUGJRY2ZsUTgydkEzNHhOb1N5MWpSam1Zc3pVVkYxVkl6SnpwZ3JzaU5EbE1fU29MUzJqZFRNcUR1V1FuanhQMC1SNXFSWHl2YUhZWWZBMmc?oc=5",
+      "source": "머니투데이",
+      "date": "Mon, 26 Oct 2026 06:11:13 GMT"
     },
     {
-      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tbC1lb0JaQlVGRmFnVlhpSjVfQ050YUN1OG84eFBLbl9lN0FGMGZkV2gxaGJMb2pSSnZzdmZ2aW1JdC1Gd0o1TGROelhlczc2NERSRlZ3SmRsQkU?oc=5",
-      "source": "경기일보",
-      "date": "Mon, 26 Oct 2026 06:38:53 GMT"
+      "title": "[개장시황] 코스피 5500선 위태…삼성전자 1%대 하락",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE56cU40VVBjNVlOTTU5R2JXRFl5WXYtbEFyUTdDVjlRRExlcndOcHo4VVlyWTFHaGZOQXdYUklTZjdsVDJOUzVXNmNNTVdpNzFlVTlCakx3d0J1VktM?oc=5",
+      "source": "뉴스핌",
+      "date": "Mon, 26 Oct 2026 00:13:00 GMT"
+    },
+    {
+      "title": "삼성전자",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcUtFd2pzUE9ERjFMRXV5eTN2Vk40OTE1NkF0ZmdqVW9QMnpOY0JUekxqMFFFZ1kxdzUwb0ozQ3gtNG50TFdvbnl2X1dJSVhUYnhZcG51aVVyZzd6RlpXS2V0Ry1SeHZGVmJoNmtnaERsS3FBSjZwTDV1VWJHc0x3UUVTODB6VmpFbkg3QWlrMFNQMGtVbC04?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Mon, 26 Oct 2026 01:10:30 GMT"
+    },
+    {
+      "title": "[마감시황] 삼성전자도 못 버텼다…외국인 팔자에 5500선 붕괴",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50enI0Y01vVDJwTlFvb2NZSFFtR2NJM3J3d3hJUUlCWEdBWlFrOW1UcFFkVXVrWHBUUHh5a0RCRklMWDZTUzhsY21vLWdrbkFrT3pTVFRDbWtaOFV0aWhjRmhiUGlQMGc?oc=5",
+      "source": "자본시장뉴스",
+      "date": "Mon, 26 Oct 2026 12:18:54 GMT"
     }
   ]
 }
