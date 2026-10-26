@@ -1,9 +1,39 @@
 {
-  "updated_at": "2026-10-26T00:09:37+00:00",
+  "updated_at": "2026-10-26T10:59:56+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "SK하이닉스, 16조원 규모 특별배당설에 \"확정된 바 없어\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wRHh3THJTbnhCdGt3NWtRRjhkdHdweDdmWnZZaUxEUXJyS2JENXI1cmlNdnRfWmlaZ0lyaGRPdERvMUlYTDVfX1kwVkJES1ZlSjdMNk9QM2pOdw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 26 Oct 2026 06:17:30 GMT"
+    },
+    {
+      "title": "SK하이닉스, ‘초심 Crafted by SK hynix’ 전시 개최… 관람객과 함께 반도체 위에 초심을 새기다",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBHeGU0NmVLUzM0TEswVVdzMVQyZEctNzFMZWN4TUxEaXlnd3BQLXY2elBoNXV0LTFtdElNaE8yNVh0V1NOUFdObnExN01Uc0V2Uk9aNGFacFIxeVhlUmN3eDcyWUtOWGtF?oc=5",
+      "source": "SK hynix",
+      "date": "Mon, 26 Oct 2026 05:24:07 GMT"
+    },
+    {
+      "title": "SK하이닉스 레버리지 ETF, 미국 상장 석 달 만에 청산",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBJa2F5cHR3LVc3T2pOWGQ0Vnh0RTBLY3FYX1NSc2NPNVRqa1JZRDZLNnhmdWdYRG5oVEVhT1libjB1YmVPcVBVMmNkM3NxQUpRQUt1ME1nVnZVeTlyN1FPN3lQa3BpdlljZmxvVW1TZGJPS0lE0gF0QVVfeXFMT2xEenFtYTNEclVnTDlqWU9OZXQzQy1mTkdyYmlhLWZhUkZZdzZGNF9kY2RXMzZFSDJnWTlVeWprcVdtY1U4eXN5dEpPUURYTUl0dUF1aGI2cFFvVDBaUU5HZnRxTXVjWDhqeS1aSC1odzdwVEs?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Mon, 26 Oct 2026 06:23:28 GMT"
+    },
+    {
+      "title": "SK하이닉스 레버리지 ETF, 美 상장 석달만에 청산",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BSGo1YzJKV2x0QUM0elplbkZfRE4wTnJ4X0F6V2YxNFgyOThIYkVEczdySjQ0MF9CdENVZmp4dVNYdmM3MGZDUmJRWjVlQXZ3SU1OWGlKNEFfWVXSAWBBVV95cUxORVBYVXdJNjFSQ0g5eWEyM0NCRGplbS1oakV6ZVMxYlF4Xzd2VzB4czlqdy1ZVzk2WUF0S08yenk5TGhYZ3dOZ3h6a1VjUjNqczh6R0Yzc1A3dTgtZ0pWT00?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 26 Oct 2026 05:52:26 GMT"
+    },
+    {
+      "title": "AI 투자열기 주춤… SK하이닉스 美 레버리지 ETF 2종 청산",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5LVnh4dG1FMDJTMFh1TDN6REs3TG43SDdiLU1vVGM1X0VFOVNfcy1RZnE5cnJkQ21HbGNMRFVVTWJ0Z0x4Q000RjdRdGV2NnZwR2hoLU9OOEdQMzk3UVlaN3hnSTdhbVRmcE1hcGl5U1XSAXRBVV95cUxNTVBXTkZZTTlFRWNHSnJEVU1SRjRKQkRoZFdVUDBTcjNKRFhOYjF2d3FNNS1GOXZlUEw5SVVvSGdOZTlJVzYyZkxMeHdmcUFzQ3lqbFJsVmE5ODNFdDI5aW5abENJM19obkdCQUVqWWNfWVo2Qw?oc=5",
+      "source": "IT조선",
+      "date": "Mon, 26 Oct 2026 08:19:58 GMT"
+    },
     {
       "title": "[ZD브리핑] 최대 실적 SK하이닉스‧삼성전자…주가 견인할까",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43YkthM2d2b2FWTU5hMm5PUmhwM2k3M1I0ZkQ3ZE84c0ZlOE44UVBWWmZKUmdMdXI0eWZRUlFvbVVMS2NSR2xUdWhKbDctRWVGSzY0Wjln?oc=5",
@@ -11,22 +41,40 @@
       "date": "Sun, 25 Oct 2026 04:56:42 GMT"
     },
     {
-      "title": "SK하이닉스, 솔리다임 IPO 검토 중단…실적발표서 투자 재원 해법 내놓나",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Wd01PM0lDcTh6UC1LemV1cElVUXdobGp5NzZkdk9uSk1sb09wNHRNMnIwWGVaNVg1R29YdEV0SGF0dXJiaW96azV4WFF1QWYwU3pvMU00RmRYOFNJWjdwT9IBeEFVX3lxTE9EU3RUWno5dzFTT3REVTBabE1vUktCeVl0c0FIbjdCOVJtWVRlckRWQldhcjRIZ1l3TUE5WHdYdlZoVVU1aDcwZkloYWRTYWE1V3IxcU9xWlBKVzAyT3pKTngxNkNDUVRQRzdxeWNEWXU0bnpndHNUQg?oc=5",
-      "source": "뉴시스",
-      "date": "Sun, 25 Oct 2026 10:13:29 GMT"
+      "title": "삼성전자·SK하이닉스 영업이익 180조 전망...주주환원책 '주목'",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50c0ZDdkhfWFhTal9uQlVaalJWZEJqRERZTC1Lc1haeGF6eGVEdm5LNUxJVGZDWUtja1ZnWU1BU3BaRGZQT3NIUGN4dHRCRlM4ZFptUHRYTEtxVFJ2ZFE?oc=5",
+      "source": "YTN",
+      "date": "Sun, 25 Oct 2026 10:02:00 GMT"
     },
     {
-      "title": "SK하닉, 3Q 컨콜서 추가 주주환원 발표…키옥시아 지분차익 배당 주목",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9DZk1Rb1NwY0sycEl1SXkyZ2xLZ1k5LWF4YlV1N09ERWI0OXhiMEhKUk5rcV9sVzZsMlZ3Z0N2MVQ5Qlc4X3J2ektGTjJGRUh5X1lISmpBLUtraTBweS1BcHozUnp5UEU2OGdhelBoVTc?oc=5",
-      "source": "연합인포맥스",
-      "date": "Sun, 25 Oct 2026 23:40:17 GMT"
+      "title": "\"메모리반도체 장기 계약도 불황 막기 역부족\", 삼성전자와 SK하이닉스에 새로운 시험대",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WNGhwNDItRnAzbjJVZklQTnBPWkFMZDd6WHlLLWROQlVHYlJMdjJWcUtBOWxTXzhkT0JoZDVnOThtdlNHOU43Rkh3UmJkcGNGV0RDcDE4YmxlSUR5cGFKWWhaSGcwWDJLS21yYUNBb29PZVU?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Mon, 26 Oct 2026 02:39:38 GMT"
     },
     {
-      "title": "고점 대비 56% 급락 SK하이닉스…이번주 실적발표 반등 계기되나",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yTk5RZV9EbHpnbHFKU0NaVmhkaWRZVkpHeXNMX0t5ZGpxekgyOTA0aUNIN25VeVE3TDdDM095anJNTDlldWxUNjRzenRrOGVONDRJSDh2M3ZjRGfSAWBBVV95cUxQcjRaaGhLaHMxWDdDYlFHZl9feThJcGdDN1UxNWxvZE0wcXAxamZzbE1YNUgtTzdTYWd5VHFrcTlvbUgyRnFiZGIyX0ZPSURJTE8zYzR1MzBScndJemtsZmQ?oc=5",
-      "source": "연합뉴스",
-      "date": "Sat, 24 Oct 2026 21:05:01 GMT"
+      "title": "솔리다임 IPO 검토를 중단합니다 장기 성장과 주주가치 제고 노력은 이어갑니다",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMZW9fZDVjQkxvZmpDMWNBSjBEdUgwelNGYUpmbzk2TE05WnlaMXh1QWEzWjB1VmoybG9wMkJaTUliM1QtdkRHZ2E3UQ?oc=5",
+      "source": "SK hynix",
+      "date": "Thu, 22 Oct 2026 22:33:41 GMT"
+    },
+    {
+      "title": "삼성·SK하이닉스 곁으로…도쿄오카, 시총 스미토모화학 제쳤다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MaGhhZWttMmk3bmhCNDIyOXRpY3FobWFzVXd3azVpa01SejNvbExaMkdjNHNMRktlQlJBcV9mYlV4TFZOaF9iUHd3dzdfc1FZOWl0QlhWVndEdw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 26 Oct 2026 03:00:07 GMT"
+    },
+    {
+      "title": "SK하이닉스, 베어 플래그 80% 완성 - 매시 업데이트",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9aZUowS3ZDVDByek01c3owUXlQWUFSZFQxTWlZdGxTeXltNWdxZ01naHZLLXFNWmhqbHZVWDFiRkFFUGZtalRiOWR5bTdPci14RnBnUE1KU2xGa0lHVnhucmE4UXFJdmNsdkhybjVUd1EwUDMyajh3?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 26 Oct 2026 05:02:00 GMT"
+    },
+    {
+      "title": "하이닉스·삼전 담던 초고수, 두산도 샀다 [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81b1RXdFprMFpLeE1rejZYSmFCUHhJTGVsblh6U1JuQlRmdEhtU0w2Rk05bzY0YTFnUnh1ekt0ZENZMV9wVXhfb180SGo2OEVHd1E?oc=5",
+      "source": "매일경제",
+      "date": "Mon, 26 Oct 2026 06:35:56 GMT"
     },
     {
       "title": "고점서 반토막 난 SK하이닉스…실적·주주환원에 쏠린 눈 [코주부]",
@@ -35,64 +83,16 @@
       "date": "Sun, 25 Oct 2026 21:30:00 GMT"
     },
     {
-      "title": "FOMC·삼전닉스 실적 발표… 코스피 '빅이벤트' 버텨낼까 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9aVFY0Yi1GQVM3WGc5RnZKelh3N0NjbzRHdDczMHZUTTVWNzJCM0F2R1JKVVpnaHl1NnpESURFbjQ3Z3ZpdjN3QUdCcnp3bUlCWGN5MmRYaEl0OGEzdl9wTTZTYmhRUkhL0gFuQVVfeXFMT2o4Q2tZX0MyU0c4QXN0dzhsSGlXU1lFT3V2T2UzeVVhdUtTem5vNlI4ODNKc1g0RWpMcnFBN21ZTTV5RkhWSkVwdDZrVThHOTNEUlFzbDhEMkIxa0NseEEyMUJEOHF0YWt1VEowWUE?oc=5",
-      "source": "머니투데이",
-      "date": "Sun, 25 Oct 2026 18:28:00 GMT"
+      "title": "SK하이닉스, 여의도 IFC몰서 ’초심’ 전시회",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5DN3F5SGZpZFhjdUVhZGNhcWwwMmlSYm51eXFVUlYzblp0aHlieHpldmlVRVNobEtYdG9BZmg5MGdhY3JDTWFUdDR6eGhGUGF0WHZtNE9pUmhJcWk0bURndzFDbnFNVkU?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Mon, 26 Oct 2026 06:31:00 GMT"
     },
     {
-      "title": "김보라 안성시장, SK하이닉스 방류수 논란에 “시민께 심려 끼쳐 죄송”",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrT3QtTDI0cFpzN0FlaFhEd1RBVU80VFc3OEJaX2tBamw4ejRMWFBvWWJJTFNoUEFRWW1QcXlaSUpneEp3UXdIdmgwOGdDQmJrd24yQ3hWdEV4b2s?oc=5",
-      "source": "경기일보",
-      "date": "Sun, 25 Oct 2026 04:12:24 GMT"
-    },
-    {
-      "title": "마이크론도 '성과급 갈등' 몸살, 파업 전운…삼성·SK하닉 반사이익?",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NbkxMTldwcXFoY0hpMXBhUFVLdWtPb2hNelBISWtVNUlkcE5vTnAyZk1kNk8teVRPTG9rY1o2LWRublNSclZuX1VKZzZIbm43XzhVclZxUFZxcHdW?oc=5",
-      "source": "부산파이낸셜뉴스",
-      "date": "Sun, 25 Oct 2026 22:30:00 GMT"
-    },
-    {
-      "title": "\"세상 물정 모르는 러\" 메모리 수입금지 해제? [여의도 Pick!]",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VTFdEZ0RxdHpNUWV5SkQ1dUFEaU5xdExNbC13clV5Z0FLUkZoTF9xZ0RZbXRhQmJ6T3ZqTHlMRXFWOFFIY3Z0Mnh5Z1Y3cjJ1RFJhVWpKMDBXNWRIQVlv?oc=5",
-      "source": "MTN 머니투데이방송",
-      "date": "Sun, 25 Oct 2026 23:16:50 GMT"
-    },
-    {
-      "title": "'괴리율 46.8%' 한국서만 헐값 거래되는 SK하이닉스…격차 벌어진 이유는?[주末머니]",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9rZGF6RXk2U1Uzemlfb2FENmVha3lRcFVZNTJ0cHZkd3JOS0xDQWZoM0c0ZGdKa1lSaW5zSElSb3ctM2lqc1cyancwQ3UwcDhXS2MtQ0dQQlBxTUd6ZVk0cXNR?oc=5",
-      "source": "아시아경제",
-      "date": "Sat, 24 Oct 2026 02:00:00 GMT"
-    },
-    {
-      "title": "KIC 주식운용 부장, SK하이닉스로…지방 이전론에 커지는 인력 유출 우려",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdzJ5QXhZTmxIWWNORV95RU85Z2FQSEVRQkZEd0hHNWtPRnQ3UU5OR3VuZEpPUmFoUGJ0YWFwQXk3YTB4a2tUZXBrZTAxZGoxNEhOVUJOZEJGYTlWVG1kQkZXakRJM3Flajh5V1JqbW5XZTBISEtDQ0g5ZU5nekowR0dnMA?oc=5",
-      "source": "인베스트조선",
-      "date": "Thu, 22 Oct 2026 05:27:00 GMT"
-    },
-    {
-      "title": "＇300만원＇ 바라봤던 개미들…＇반토막＇ 주가에 증권가 전망은",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTM3l3dzltbURMR2tOLXNMUnBCQ0lpakpEcFB5ZUFOOE9DdFV5REx3OWtqczRJRHR2aEVhVjlMcndvZTlZSlBCUldKWmJUZEdNTHBnTzVRQTBsY05CVmdLYnlQTnd4NjRjY0JscEtqR2JOZXZnUTRV?oc=5",
-      "source": "한국경제TV",
-      "date": "Sun, 25 Oct 2026 03:01:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 주가 전망 : 10월 28일 실적발표가 반등 추세 이끌까?",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeDdkcmpZVmRMSlFNR0ZPWTU4eTRBWXRKVk9xUFlETzJtUG9kcmtLWkpmTTRlbEJTSjRTOEJIY3BBOUlMbjdBNGpkV0lSNTlxRng1M0d1cWVJc2h6eXNjQkItLUtYQl9ZWkw3NF9vc0Z4em82eEQ0dW1XZ2FtSG0ySTJ1NA?oc=5",
-      "source": "네이버 프리미엄콘텐츠",
-      "date": "Sun, 25 Oct 2026 06:04:00 GMT"
-    },
-    {
-      "title": "주가 폭락에도 삼전 67만·하이닉스 470만원 유지…노무라는 뭘 봤나 [숫자 뒤의 진실]",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaYmctU2lBc2VKbUlDc2ZGV0dFdWpTMWlTRXBNak8ydTJxbGJJTkR4V1Z4WmdqbFpVeTRpQTRnNG16MkFERjFtOS1yQVlzVHI5b0RGeGNfa2c?oc=5",
-      "source": "세계일보",
-      "date": "Sun, 25 Oct 2026 20:00:00 GMT"
-    },
-    {
-      "title": "5300선 찍고 반등한 코스피…삼성전자·SK하이닉스 주주환원에 쏠린 눈",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aVVBMaTR1cjBaTFc5VEN6V1RlWnVfN2VQQmJMc0Y4T0s1cVNZSlRsQWhYZWpwV3htXzZ5dEozaUt4V0NfTGs0OXBCeDFDMFRobHdCbWZTYjZBUQ?oc=5",
-      "source": "경북매일",
-      "date": "Sun, 25 Oct 2026 23:48:00 GMT"
+      "title": "[오늘의 삼전닉스] SK하이닉스 추가 16조 주주환원 기대감, 급등 신호탄?",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QZ29KWU0xOUtRa2tKSm9ZOWJmMk1Ial9pdmRlMWhXQ3hhLW9DUXhFdUJ2ZG1US1d2ZXJHQzVPY2RIVVhSMzlCSkw3YzJJUmxnUlc2aDVTUEZzLUE3ODlKbUVR?oc=5",
+      "source": "이코노미스트",
+      "date": "Mon, 26 Oct 2026 02:29:00 GMT"
     }
   ]
 }
