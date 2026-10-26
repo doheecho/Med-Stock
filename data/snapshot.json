@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-25T00:16:37+00:00",
-  "as_of": "2026-10-25",
+  "updated_at": "2026-10-26T00:10:35+00:00",
+  "as_of": "2026-10-26",
   "basis": "close",
   "total_cost": 130265210.28,
-  "total_value_close": 202545447.95,
-  "total_pl_close": 72280237.67,
-  "total_pl_pct_close": 55.49,
+  "total_value_close": 205178217.95,
+  "total_pl_close": 74913007.67,
+  "total_pl_pct_close": 57.51,
   "positions": [
     {
       "ticker": "005930",
@@ -70,9 +70,9 @@
           "quantity": 70.0,
           "buy_date": null,
           "cost_basis": 33350520.0,
-          "eval_value_close": 88410000.0,
-          "pl_close": 55059480.0,
-          "pl_pct_close": 165.09
+          "eval_value_close": 91140000.0,
+          "pl_close": 57789480.0,
+          "pl_pct_close": 173.28
         },
         {
           "account": "미래에셋(RIA)",
@@ -80,9 +80,9 @@
           "quantity": 4.0,
           "buy_date": null,
           "cost_basis": 9373444.0,
-          "eval_value_close": 5052000.0,
-          "pl_close": -4321444.0,
-          "pl_pct_close": -46.1
+          "eval_value_close": 5208000.0,
+          "pl_close": -4165444.0,
+          "pl_pct_close": -44.44
         },
         {
           "account": "NH투자증권",
@@ -90,16 +90,16 @@
           "quantity": 6.0,
           "buy_date": null,
           "cost_basis": 13860000.0,
-          "eval_value_close": 7578000.0,
-          "pl_close": -6282000.0,
-          "pl_pct_close": -45.32
+          "eval_value_close": 7812000.0,
+          "pl_close": -6048000.0,
+          "pl_pct_close": -43.64
         }
       ],
-      "last_close": 1263000.0,
+      "last_close": 1302000.0,
       "cost_basis": 56583964.0,
-      "eval_value_close": 101040000.0,
-      "pl_close": 44456036.0,
-      "pl_pct_close": 78.57,
+      "eval_value_close": 104160000.0,
+      "pl_close": 47576036.0,
+      "pl_pct_close": 84.08,
       "target_avg": 3257727.0,
       "target_high": 3746386,
       "target_low": 3100000,
@@ -148,16 +148,16 @@
           "quantity": 37.0,
           "buy_date": null,
           "cost_basis": 551670.0,
-          "eval_value_close": 221815.0,
-          "pl_close": -329855.0,
-          "pl_pct_close": -59.79
+          "eval_value_close": 224035.0,
+          "pl_close": -327635.0,
+          "pl_pct_close": -59.39
         }
       ],
-      "last_close": 5995.0,
+      "last_close": 6055.0,
       "cost_basis": 551670.0,
-      "eval_value_close": 221815.0,
-      "pl_close": -329855.0,
-      "pl_pct_close": -59.79,
+      "eval_value_close": 224035.0,
+      "pl_close": -327635.0,
+      "pl_pct_close": -59.39,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
@@ -177,16 +177,16 @@
           "quantity": 130.0,
           "buy_date": null,
           "cost_basis": 12308790.0,
-          "eval_value_close": 11319750.0,
-          "pl_close": -989040.0,
-          "pl_pct_close": -8.04
+          "eval_value_close": 11285300.0,
+          "pl_close": -1023490.0,
+          "pl_pct_close": -8.32
         }
       ],
-      "last_close": 87075.0,
+      "last_close": 86810.0,
       "cost_basis": 12308790.0,
-      "eval_value_close": 11319750.0,
-      "pl_close": -989040.0,
-      "pl_pct_close": -8.04,
+      "eval_value_close": 11285300.0,
+      "pl_close": -1023490.0,
+      "pl_pct_close": -8.32,
       "target_avg": null,
       "target_high": null,
       "target_low": null,
@@ -206,16 +206,16 @@
           "quantity": 250.0,
           "buy_date": null,
           "cost_basis": 26574000.0,
-          "eval_value_close": 26897500.0,
-          "pl_close": 323500.0,
-          "pl_pct_close": 1.22
+          "eval_value_close": 26442500.0,
+          "pl_close": -131500.0,
+          "pl_pct_close": -0.49
         }
       ],
-      "last_close": 107590.0,
+      "last_close": 105770.0,
       "cost_basis": 26574000.0,
-      "eval_value_close": 26897500.0,
-      "pl_close": 323500.0,
-      "pl_pct_close": 1.22,
+      "eval_value_close": 26442500.0,
+      "pl_close": -131500.0,
+      "pl_pct_close": -0.49,
       "target_avg": null,
       "target_high": null,
       "target_low": null,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T00:15:56+00:00",
+  "updated_at": "2026-10-26T00:09:43+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -29,6 +29,12 @@
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
     },
     {
+      "title": "TR(Total Return), 너의 정체는?",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04THcwS3JIV3JiY0s5NXR2b0EtZWwwYzktQU1JM2FIZkt1WkZ3elZzZ3l0NEViNk8yV28wLXBFTGtxU1Y5aDVqc0p5ZkF1SUc3ZUE?oc=5",
+      "source": "브런치",
+      "date": "Thu, 02 Jul 2026 07:00:00 GMT"
+    },
+    {
       "title": "거래소, ‘KODEX MSCI Korea TR ETF’ 외 1종목 신규상장",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VV1YyclVmd0pETVprQlZ6R0Rma3dHanZlUi1jNU5XZi1ibXlsN2lTWDJaNDlCTW5qZG52NTdjRHl4NnBTcnZaT2J6T19lbzBXQXEyQXJBdjJpVkNoTmplOHBUNk9MYS02STh5T3d3?oc=5",
       "source": "아시아투데이",
@@ -39,18 +45,6 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
       "source": "www.intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
-    },
-    {
-      "title": "삼성자산운용, '핫 종목 편입 코덱스ETF 7선' 발표",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MTnc2ZEd3Zm1CajRETU4yeDRVOG03UGNUZU5Pdk1LRi1KRlF0U3hBUU9hUVpVWFQ1VWJVQk9OTVF4TGs1UWhCZFJqYVNwdXlsNS1ESFotT0g1QXFPWTZZMEpTMlpLMW1NOVJ3?oc=5",
-      "source": "뉴스저널리즘",
-      "date": "Wed, 21 Apr 2021 07:00:00 GMT"
-    },
-    {
-      "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
-      "source": "인포스탁데일리",
-      "date": "Tue, 24 Dec 2019 08:00:00 GMT"
     },
     {
       "title": "`팔고 떠나라` 공포지수 꿈틀, `인버스` 몰린 개미…뜨거웠던 4월 증시, 5월엔 쉴까",
@@ -65,6 +59,18 @@
       "date": "Sun, 10 May 2026 07:00:00 GMT"
     },
     {
+      "title": "삼성자산운용, '핫 종목 편입 코덱스ETF 7선' 발표",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MTnc2ZEd3Zm1CajRETU4yeDRVOG03UGNUZU5Pdk1LRi1KRlF0U3hBUU9hUVpVWFQ1VWJVQk9OTVF4TGs1UWhCZFJqYVNwdXlsNS1ESFotT0g1QXFPWTZZMEpTMlpLMW1NOVJ3?oc=5",
+      "source": "뉴스저널리즘",
+      "date": "Wed, 21 Apr 2021 07:00:00 GMT"
+    },
+    {
+      "title": "ETF 순자산총액 17년 만에 첫 50조원 돌파… 상장종목수 4개→ 449개",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xNWNzYlhPUVdERm9xRExEMm9MZU5ZaXU5RlBVX2tNTXo4RzlZWFBoOEtBTkV2SE1MOHBaNXpJY0x4RGgzQlhfSUN2TEdhZmdEODR6SVRDdGNQeHE4OFhGX0EySUdydC1hVU82WGFGYUpxTWRR?oc=5",
+      "source": "인포스탁데일리",
+      "date": "Tue, 24 Dec 2019 08:00:00 GMT"
+    },
+    {
       "title": "​과세 피하자 外人 KODEX 200 ETF 팔고 KODEX 200TR 사고",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50ZEptUnRxZFpad0QxVmVqeV9jSUlsdzllSWtxeUpjQ2lEeVRkWDIzTThsQ0JHam5SQjFkNmVpakR2ZWxPQ2prLW9EbEJxMjN1Q2lRcjVoNGg0Z9IBWEFVX3lxTE5sQkhaUUlUZE1nRm9WVkx5YzlISWZaQkllMmdZOHZkVmpkeVR0RWZHWUtMTjV2UElEQUp2YWJuRjVNX1ZnVXl2bE5tM0NTS185NUhtTHpQWVM?oc=5",
       "source": "아주경제",
@@ -77,22 +83,16 @@
       "date": "Mon, 07 Sep 2026 15:47:35 GMT"
     },
     {
-      "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
-      "source": "매일경제",
-      "date": "Wed, 20 Nov 2024 08:00:00 GMT"
-    },
-    {
-      "title": "'완전히 발 빼기는 좀'…삼전닉스 18조 던진 개미들 몰린 곳",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMdU15a1pTZ2hScjljVVRza1VUYVdvY3g2V25OUVJoT1M5N0ZKbk9uVEZoNUg1ZmsyRDdvM1VkdTJna3NQZ2Y1ZXcwVUlzSlQxakd6NE41dDY4QQ?oc=5",
-      "source": "한국경제",
+      "title": "삼전·닉스, 현물은 팔고 ETF는 산다…개미들의 '양손투자'",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14eWtUOE1yS2owaFcxM3pOb0FXekplekszcVVzNmY3T1E2Z3NhWk95cWxlaE5yZ2l4aW52RWZCeXpERTE2bWFkYmM5ekg2Vjk4X3U2SXUyazQ2NDBN?oc=5",
+      "source": "https://spt.co.kr/",
       "date": "Thu, 01 Oct 2026 07:00:00 GMT"
     },
     {
-      "title": "TR(Total Return), 너의 정체는?",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04THcwS3JIV3JiY0s5NXR2b0EtZWwwYzktQU1JM2FIZkt1WkZ3elZzZ3l0NEViNk8yV28wLXBFTGtxU1Y5aDVqc0p5ZkF1SUc3ZUE?oc=5",
-      "source": "브런치",
-      "date": "Thu, 02 Jul 2026 07:00:00 GMT"
+      "title": "코스피 199조 던진 외국인 이건 계속 샀다는데…10조 가량 담은 ‘ETF’",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfTUE1YVktdWFoWjhYOUxhNlV6RDVWR2NpTjZVNEd0ZDd1cWN4aDJ1VHNZVDl5UkpIeWpEWmQtS2dRZTJRUVVQeEJZemEyUnZZaFE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 13 Oct 2026 02:22:04 GMT"
     }
   ]
 }
