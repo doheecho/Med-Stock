@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-26T14:30:14+00:00",
+  "updated_at": "2026-10-27T01:25:52+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 495227.0,
-  "target_high": 569511,
+  "target_avg": 492500.0,
+  "target_high": 566375,
   "target_low": 400000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-26",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,8 +18,8 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 495227,
-      "date": "2026-10-23",
+      "target": 492500,
+      "date": "2026-10-26",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-10-26",
+      "target": 500000,
+      "prev_target": 560000,
+      "chg": -10.71,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "미래에셋",
       "date": "2026-10-19",
       "target": 400000,
@@ -50,15 +59,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-10-15",
-      "target": 560000,
-      "prev_target": 560000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "유진투자",

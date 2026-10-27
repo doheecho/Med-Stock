@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-26T14:30:22+00:00",
+  "updated_at": "2026-10-27T01:26:00+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3257727.0,
-  "target_high": 3746386,
+  "target_avg": 3248636.0,
+  "target_high": 3735931,
   "target_low": 3100000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-26",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,8 +18,8 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 3257727,
-      "date": "2026-10-23",
+      "target": 3248636,
+      "date": "2026-10-26",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "대신",
+      "date": "2026-10-26",
+      "target": 3000000,
+      "prev_target": 3200000,
+      "chg": -6.25,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "미래에셋",
       "date": "2026-10-19",
       "target": 3100000,
@@ -50,15 +59,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-10-15",
-      "target": 3200000,
-      "prev_target": 3200000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "하나",
@@ -115,15 +115,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "신한투자",
-      "date": "2026-09-30",
-      "target": 2700000,
-      "prev_target": 2700000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
       "firm": "유안타",
       "date": "2026-09-30",
       "target": 3300000,
@@ -131,6 +122,15 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
+    },
+    {
+      "firm": "신한투자",
+      "date": "2026-09-30",
+      "target": 2700000,
+      "prev_target": 2700000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
     },
     {
       "firm": "DS투자",
