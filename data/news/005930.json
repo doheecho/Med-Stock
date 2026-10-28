@@ -1,26 +1,14 @@
 {
-  "updated_at": "2026-10-27T13:30:21+00:00",
+  "updated_at": "2026-10-28T01:11:55+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자, 공정위 200억 과징금 불복…‘성능제한 과장광고’ 뭐길래",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFByTm40dDd1WWRaSWhUNm5ycHZHMVp1Wkpac0NoVU55bEJpc2xycE5xR1FlX1hlX1JEeEVjTF9LSVktcHZ5WGhxbUg0aDFsLTE1UGc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 27 Oct 2026 04:25:28 GMT"
-    },
-    {
-      "title": "삼성전자, 클립형 무선 이어폰 ‘갤럭시 버즈 온’ 국내 출시",
-      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQdThLRHk3THlNYmEwS3BZcVlkU3B5SG0zZHJ2MVpjY0tUNDg2ZXFNTi1sandNQlJSTTdYblNkS0Ffd0g3VFJrRl9UOXlfc0E3dHM5bGRleXQya092NXVETC10OFdPbl9tWDAyU2Y3U1E5R3BWaV80YjFGbjNpNUc1b3pDWU85bjZPdGtMX2I2S3N2dFczNEJJdHZFV0Q4OTZiVmZLMkJjMU04U25FTXFIdGQxYzdlb2RXbGp0SzhKTnZxT0FvOFN5YkJlVGZBWllLa3lNR0JMQjRZMWVxY09wZ0NfdTdqWmtqVzhNbHhCMnY2N19fU1A5R3FHaHpYVVg2RTJKYUk4RTlCWEFFemw3MUpCQ0ExbDdLaWg4Y3d5dkQyRGJEamE5cnpZNDlaalNnNkRrOUxVc001Vkk?oc=5",
-      "source": "Samsung Global Newsroom",
-      "date": "Sun, 25 Oct 2026 23:00:00 GMT"
-    },
-    {
-      "title": "삼성전자, 국민카드·아멕스와 '위치확인 가능한 카드' 선보인다",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1sRVVJb25OeGhubHZCRHpFWEQtc1dIOUtHdDQ2NWM5aExZUzlGSURtaEtqbWJRT3RiRzIyN0tlYzliZnZ0V0UzeS1valhIX2FK?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 27 Oct 2026 12:51:23 GMT"
+      "title": "삼성전자, 3분기 HBM 매출서 SK하이닉스 추월 전망…번스타인 분석",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1lNWJxNnVLMXc1dERVV1NHMjVRQWJabGVZZE9OV0JJT1d2R1lmMXZYQTJCQ0pYSXE4Zk1SeWFxLTZra3d1ZjQ1UG5pVQ?oc=5",
+      "source": "아이뉴스24",
+      "date": "Mon, 26 Oct 2026 04:55:51 GMT"
     },
     {
       "title": "삼성전자, HBM 매출 하이닉스 첫 추월 가능성…\"주가 재평가\" [분석+]",
@@ -29,22 +17,10 @@
       "date": "Tue, 27 Oct 2026 13:15:01 GMT"
     },
     {
-      "title": "삼성 HBM 점유율 40% 눈앞…HBM 선두경쟁 본격화",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAzTWJTRFc4a1FZVTI3bUpTYTdoUE05WDNoN1FoYlY5ZUE4SzNHdjFwb1MzV081YjhPdm15QjlZbWhJZ1Y1QXlUSThNV2hkWm02ZXY1ay1PSjdhd1R3RmZQSGNIeGJqQ285TTZKMkpCTFlCdDA?oc=5",
-      "source": "마켓인",
-      "date": "Tue, 27 Oct 2026 07:29:55 GMT"
-    },
-    {
-      "title": "삼성전자, 3분기 HBM 매출서 SK하이닉스 추월 전망…번스타인 분석",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1lNWJxNnVLMXc1dERVV1NHMjVRQWJabGVZZE9OV0JJT1d2R1lmMXZYQTJCQ0pYSXE4Zk1SeWFxLTZra3d1ZjQ1UG5pVQ?oc=5",
-      "source": "아이뉴스24",
-      "date": "Mon, 26 Oct 2026 04:55:51 GMT"
-    },
-    {
-      "title": "[기자수첩] 삼성은 덜어야 했고, 애플은 더해야 했다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VRkE1V1FhUjh1ZlRvY0ZuV21wclhra1BNYjM0UnRLN3JYbVF3Q0RyenItTDQxc3RweGlnOVV6a1hSSVFnUXRiSWxOdmwyM2t6Tk1iaGt3?oc=5",
+      "title": "삼성·SK, 내년 2분기 HBM4 8단 양산 출하...엔비디아향 공급",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50U2g0aW54WkhLakl3Z1lYN3EtN1k0MWR0RU11dnpMQm0xTXN2Vm9xcEZyWjRpd3ozbUhnc2d2Z3RuZ0FGRTFvblFNUGk0d0wzZ1RJN3pR?oc=5",
       "source": "지디넷코리아",
-      "date": "Mon, 26 Oct 2026 17:54:56 GMT"
+      "date": "Mon, 26 Oct 2026 05:21:51 GMT"
     },
     {
       "title": "'삼성전자 기밀유출' 안승호 전 부사장 2심 징역 3년‥법정 구속",
@@ -59,40 +35,64 @@
       "date": "Tue, 27 Oct 2026 02:10:00 GMT"
     },
     {
-      "title": "‘삼성전자 기밀유출’ 안승호 전 부사장, 항소심도 징역 3년",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BWG1zSnlOMkhMb2FlbHdCd3d2czFINl9OMGd1cU5ZaXB1Ql94bXJGcEdFb2QtQTBtWXBlTjJYRVo2Yld3T2RQY2tBN3dXOEVqTHUxMTBQZ190TC04bjVUVWRBMk55TDZJOVZnTThB0gFyQVVfeXFMUFFJT1hSRDBqckJYeXpqdFNjdVNPVnNkX3NJbml2NzY3cUl3bXNoSVQ5UmpmNE95ZDJjM1hjR3ZMUDBEU01nWlp5bHBfajN1dXpCb01IeG4tRHkxaERVX2djOWp4N2RNQnVzQUtWR1MybTZn?oc=5",
-      "source": "법률신문",
-      "date": "Tue, 27 Oct 2026 02:17:36 GMT"
+      "title": "’삼성전자 기밀유출’ 전 부사장 2심 징역 3년…법정구속",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBmb291azRYTGRKTVF2cDdFazVPcGxaX01RODJZbmFYS1NTRU9YWVdNZWFQR3M4b2RST1ExLTJOUktpWUgxYzJaaDhXRkhyU2E2Mkg4X0lGbFJpUkVwU2JkQm5tUlhIcUU?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Tue, 27 Oct 2026 13:59:00 GMT"
     },
     {
-      "title": "공소청, '삼성전자 EUV기술 유출' 산학협력단 연구원 불구속기소",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aa1dDN0dyTGZESXVDNG5YZnc0TDg4a3UtaWJvMGdQamxxX3J4ZEJCMTBkSnREelBOUVdPUnRtWmFvVHdVM2doanZyWldZRUN4SlN0eFhLeUh3ZjTSAWBBVV95cUxPMEYzTjZ6MFVWbFdIbGM5S2gza1JUbXJ6aXdlMktmZWtVd0NjemYwMFRpMlhjRmFTV2pCYlJtQjFRWHk5YUxJSFlUd1VwNHhrbWVoRkJ6d3lPN0FsT3Q5Z3M?oc=5",
+      "title": "삼성전자, 걸그룹 리센느와 '갤럭시Z폴드8' 캠페인",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBUS3AtNk5QcUlVcVlZZWFZbDFMUnJhT256MXM2VTFLRHZPTXljSmhQd3lyYTZacENEUDRERDJIT2tpMVBVeGNvcE8wb3d2UQ?oc=5",
+      "source": "전자신문",
+      "date": "Wed, 28 Oct 2026 00:50:41 GMT"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 찐팬’ 리센느와 ‘갤럭시 Z 폴드8’ 캠페인",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xYmwzbjN2OVlJeGZpWWVPZ1ZPTEhHNkV5cFpMTmZMRHM0RkdmYWp1NGFZUmhfU3dCUDRyQ2JBLXVQQzc5di1FSXdEMGlNWFI0azlTcg?oc=5",
+      "source": "이투데이",
+      "date": "Tue, 27 Oct 2026 23:47:00 GMT"
+    },
+    {
+      "title": "[테크스냅] 삼성전자, 리센느 손잡고 갤럭시 Z 폴드8 알린다",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IWW0tb0VhQmpqbXVOUzM2UHhwSGJBRFAtUWVpbjdHOVI1cm1CMVhmd3ZQdDJvb044WGNaQURvN0xmRS0xTVIzS1l6SzU1eV9Rb0JtSklvdGI5bTjSAWBBVV95cUxNNWI1T3MtRGlldnUyS3YzcnFxZ0theUZqR3g0d1c5VHNBZWFLOWdQX3hObi1sejNUQkFGV1ZWZ2R0a0hJMnRtaUphT2xaeGlVbFE5eHdOQzV5N1hCUlFhcXg?oc=5",
       "source": "연합뉴스",
-      "date": "Tue, 27 Oct 2026 10:25:45 GMT"
+      "date": "Wed, 28 Oct 2026 00:26:16 GMT"
     },
     {
-      "title": "'앤트로픽'발 AI 훈풍에...삼성전자·하이닉스 급등",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0yWGx2ZkFHVE5hWFFQc25uZGZTaTJxSXhtUXJZdEV3ZVRQLVJGNWNvbnZWelE0TWRYaVNpSWVIUTFvMUJFNktCa29fZXMzcFVEN1piYVpWWk1xeTN4SHc?oc=5",
-      "source": "YTN",
-      "date": "Tue, 27 Oct 2026 01:17:00 GMT"
+      "title": "삼성전자, 한국품질만족지수 18년 연속 최다 부문 1위",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83dHZLZ2U5RHJza1h6RGRPdldXTHVHcjM0OVVDZE5fZURVZ0V3Y2tibERSaVh6QUN0TnZHV19WV2ZhYTVQTXpKdFJWVkh1TzgxTktfRVBR?oc=5",
+      "source": "지디넷코리아",
+      "date": "Wed, 28 Oct 2026 00:53:32 GMT"
+    },
+    {
+      "title": "삼성전자, 2026 한국품질만족지수(KS-QEI) 평가서 18년 연속 최다 부문 1위…냉장고 통산 20회 1위 선정",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPRnYyTjFjVlB5LWxma202eFNfbDB3aGNiSEtpSTBfOXVCU0V4TnFucXZjSy1hcEZ1RWMzN3FsMkI3bmMyVUdqWmk5WkxueXczQnJFOEFnWmVGYXlEa0dGU3BDQjk3d2RQUjR4cHpjc0dtMlFOMFhpLVk5aVlJUUVsak93dm1JOW01Y3dwVEJzbEFDalRIT0lybjNGQUFXTVF4UWhoQ1R0ejk0OHJtUldHU1R3T2J4RTdKQWIySHJmM1RRTkF5ZHpCdmZpNXdnaW03a2tpM3JXUXZFOVVCVDlUak1sX0NxQWtuYms0TDFqX2lNenZIaVM3NThtMmZuYTYzUFVrWHdFcWNpV0tQVWdSa0pjUkQ4VmF1Wk9IYWxVQlA4UGxXNHNGNHZjbEhvbktlWjdlMzAwQzlCOFN4Y3c?oc=5",
+      "source": "Samsung Global Newsroom",
+      "date": "Tue, 27 Oct 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 품질만족지수 14개 부문 1위…18년 연속 최다",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KMGxSTVFETVVoM3pOU1kxdExKbVp1bWd3dVYtdnBjeDNydnJ3SFBUTEhRdnpHNGsyYWh4MFBfOXFxdkFJeDBObGh3bmpsNDc1MUNhRkMxWmZFNGxiZ0RaamVlRzRST0Ywc0JMYkVvTlZteEE?oc=5",
+      "source": "마켓인",
+      "date": "Tue, 27 Oct 2026 23:18:41 GMT"
+    },
+    {
+      "title": "특징주, 삼성전자-소캠(SOCAMM) 테마 상승세에 3.9% ↑",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBraXZUeVB6bXdSbG4yc1Q3WE1XMEZJOGlGM1dYWUZDVmVwRS1kdmVxY1MwMUk2Q1l6RTlYbkE5U0NhZ0p6NFJ2Mi1ZRWU3Y0lzcXc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Wed, 28 Oct 2026 00:05:24 GMT"
+    },
+    {
+      "title": "“게임 성능 제한 미고지”…공정위, 삼성전자에 과징금 201억 부과",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2NDJYNi1qZ1dEOVRNWGdDVGk1Tk02NlJWT2VhMHYyTHU2QmU5WEtDQnI3bU9PUnlNNDVXYmxJbE5LYVR0bVg1anY0ZmhrUzNKZlZQNS1pM3RkSnZQOXhHWERhTEl5a3Brb2sxQtIBcEFVX3lxTE9od1NjRnB6OWkzVlg4c3NSZjU3bHk2MXMyRnVMOXhMTG9OTGlZRTA3Qk5nc2JnZlZzeFozdkdPR1UxSmJfYVdEaU5PMGRTSVhBYmFBUDQ5YUNJYlliZG9YSmpuYzhWNHZCRENOY3A2SHc?oc=5",
+      "source": "전기신문",
+      "date": "Tue, 27 Oct 2026 07:47:52 GMT"
     },
     {
       "title": "삼성전자, 동남아 '빨래방' 정조준…상업용 세탁기로 B2B 확대",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5JQVpLWTBHUHBycWRDMFBlVE9iWkN5anZZaDFVWlFVYU5fOVFLcjNGeUFZNUhLUTJValRpdkR0VGJBdVlBajdqZzFDUV80QQ?oc=5",
       "source": "전자신문",
       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
-    },
-    {
-      "title": "삼성전자·텐센트 ‘삼성월렛 머니’ 해외 결제 서비스 지원 업무 협약 체결",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzUll6T3FiUUNWZHYzTG8zWUF6bnZQNzNDcDRjeTVtWTNzbVZEYlNoTzZMVEMtdXd0VHZtTnFNcUZYRWlielZmdTlKeWRjTDNlQ1lLaDNrNTFFRFE?oc=5",
-      "source": "경기일보",
-      "date": "Tue, 27 Oct 2026 00:43:04 GMT"
-    },
-    {
-      "title": "삼성전자, 중국서 삼성월렛 머니 QR 결제 지원",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PSUh6V0Rjcl83NHktUngtN0RpVVhXQ09hZ2FNclAwTE9hTkJ0Uk81TDRVc1dicHNCdTdvbUh5Y3NJR3paZkpMd0tvZjU2NGxoZnJMZ2VZZGE5VnfSAWBBVV95cUxNdncwMUZpSFhfWXM5ZTRWd01nZWt5dDF5eEQ2b2RyTDlQZk5kTmdjdS1iOHgwR1VMQVZnMTRCLWpjZVhzTkR1alNySVN6SlFIYWh3ZExTR0d1bmMyaXNuOTA?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 26 Oct 2026 23:57:01 GMT"
     }
   ]
 }
