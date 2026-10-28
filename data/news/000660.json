@@ -1,14 +1,62 @@
 {
-  "updated_at": "2026-10-28T11:02:18+00:00",
+  "updated_at": "2026-10-28T11:15:43+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "SK하이닉스, 분기 영업익 83조 ‘역대 최대’…주당 2만원 배당",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1KYTNDeWswYkJiZ0ljejlnN2U1QVUwWEowb3lsR1lYbEJySF9zbGxBOFhEZmlfRW9aLXZxM191T2gxYnZxdGFRcWZJSGY3ZFVaWE1VQg?oc=5",
-      "source": "JTBC",
-      "date": "Wed, 28 Oct 2026 01:33:00 GMT"
+      "title": "SK하이닉스, 주당 2만원 현금배당…연간 총 100조원 푼다(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43b3dKZHpzc0x6aHFRc01EX2N1RXFqekU2LVhLUDUzaExERUNTajNicXRvUXNVMXNpNnFnM1c1NWs4TU9TZDVWalJ6czJ5V09UV0tvaVZvQ21qc0XSAWBBVV95cUxPdGtjLVdXQkFDazduLTBhZjBNS0gzbGQ0SXU3YmdSbTdnVkNvUW5lMmVEQ3hSWUV3di01TURydlFfTzRUeTRoODNMRk1ZVjBvQmxXVGlXSklzaTB4RmI4M3Q?oc=5",
+      "source": "연합뉴스",
+      "date": "Wed, 28 Oct 2026 02:04:09 GMT"
+    },
+    {
+      "title": "SK하이닉스 \"2029년까지 3년간 D램·HBM 사실상 완판\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JaE5JUUtSbEZtM2UyTHM0RUQzRllHSnA1SU5NanhBTHQyV1Rra0VGM1ZLSkFWanFqdElhWTRzWk84S2pMNVEwaEVNME9qRGQxWlQyamhNMGoydEnSAWBBVV95cUxPeGRlWFdkZjZKT1ZFa0owaGhrbnp4eEVtZGFqYld6a0dpWGw1SEhwYVk2amVWa18zcXFwQzViMDdmR1dsYXplOW1vejZ2OHpmcTI4N3FkY0lVWnZXT083Mkk?oc=5",
+      "source": "연합뉴스",
+      "date": "Wed, 28 Oct 2026 01:07:48 GMT"
+    },
+    {
+      "title": "SK하이닉스 \"2029년까지 3년간 D램·HBM 사실상 완판\"",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40QS10S3NhYS1jN3M3TjhlbW1WR290U05oTGl1VkNQQ1NSeThXXzJIcTM4VVgtanhoai1UdTN1eXlwdXZXSnhwbC1mU0xEeGhfNDFsZzV0bF9ROU83aFJQcUZPNWY0OXJKZmdqV0Q3cXh3clZC0gF0QVVfeXFMTllPcks4NU1ybXRRdzYyb0hYUU1QcmVYS2JXS3daOWVITTlCNWZWc0duZFI0Q3hPc05wVGl5T2JuZG1WVlFpancwUFFwMjY5eGpFUzZDYVhQelhjalZLWHphMWRpZVkwVTNxRWs3ZDdKNUtUV00?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Wed, 28 Oct 2026 01:33:31 GMT"
+    },
+    {
+      "title": "SK하이닉스 \"2029년까지 HBM·D램 다 팔렸다\"",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jVS1Ma0pyZVVEaEgzZEhQYmFZVUw1WGRpSno0RFpCSG5EUC01bE43RFlubllqOGdnSFJGQXJXUDRVYlNRZnd1SUR0RGJ0a0tacGdUcUtR?oc=5",
+      "source": "지디넷코리아",
+      "date": "Wed, 28 Oct 2026 02:22:30 GMT"
+    },
+    {
+      "title": "SK하이닉스 호실적에 마이크론도 개장전 '강세'…머스크 발언도 호재",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLT2VyaEN1MVJoOURBQXhzdncybTBiY3BlYnhJR0dpMmxNM2RLQzFHdXIyTThna0ZURjJ3eWpERmFtZEppd3g0NU4xWUdYSFM1QjFYaFVzVHFIa3JQMk5nNTljdW40VGdFMEdtWHNKOUkwR1E?oc=5",
+      "source": "마켓인",
+      "date": "Wed, 28 Oct 2026 10:50:06 GMT"
+    },
+    {
+      "title": "SK하이닉스 3분기 영업이익 83조 원 돌파‥6분기 연속 최대 실적",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zbVM1S1BWcE5tMFBldW1IR2tzbkRYVkVBemVOcmE4emdxRXlwanlWSE4tSG5DdFRZX2hqLTNpY3U0ZTJCbEJJYWZCYWRIMXo3bGszTlkzNVJLeXJoZjdOMl9COVFTdlhENVZONExROFN6dHFG0gF0QVVfeXFMT19MQTl5Zl92NEJSR1FwZXhLSnY1LUlSZHd6Wk81U2NMSk1Pd3pXejQ1R3BqblhJOVhGTVU2dzdxWUc0Rk4wSzEzQlU1QVVVNzQ1VnoyS1JveG1kODlKcjRtNHNMNXRONlhzVlh3bEh3NnJtd0M?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Tue, 27 Oct 2026 23:34:53 GMT"
+    },
+    {
+      "title": "\"땡큐 SK하이닉스\" 코스피, 6000 탈환…美 FOMC 다음 관문 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83eDc0cUhnbTg5czFNVVlVM210TkdpTV9aYzREU0twV05JdnNZYWIxSnBKLXlUY0tINDlEYk5tdEJQSXoxSUVYVlN6VFR3cTA5QklBNWxjT1V6SzBYT0c4d3RhTERyM0hY0gFuQVVfeXFMTTdfNklBaUk5M0ZsVl8zd19wTzJ0MDB5UmRUUWU4YWhpT0ttSWs5SHI0b0IwblpPS1BINGN0VXdXcjZCRHpUUk81QUtvMDhsaHVmbXl2LVJlLU5PNGxsTDR0akh4akZ2SUkyS3BsdFE?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 28 Oct 2026 07:31:38 GMT"
+    },
+    {
+      "title": "[속보]SK하이닉스발 호재에 코스피 매수 사이드카…4% 급등",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOQ3BvbWowMHE4Z3N3RDJSd2JYRkRQMWwwbzBiVUdOSmE0Z190S3VyZTY0ejI1bDVDeWlqNTNMdHlmOGpsNEY4Qm0wc3ZDX3F6MWVRLTRvNndPd9IBX0FVX3lxTE5XaE5LMml5Sng3M0RqeG9OWWMzaTRrNS1VRUZzbVpfV3g4M2JaMTdrdkRSU3NsRnd2UktmODg4NlZGRENYeXIzbERfU0tYZjJVdmN3QUU2TTY1NVdFVDN3?oc=5",
+      "source": "경향신문",
+      "date": "Wed, 28 Oct 2026 01:03:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 ‘쌍끌이’… 코스피 6천선 회복",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HRDZ3eUNhYmh0UFRrU29nVmdRdEdpRkRpSWNsYXhxNDZJbDZQNURsdG9kczU2ZDhmUlZRSzJKOVpVNEVDWWxHZGM5a2gtdlgwT1E?oc=5",
+      "source": "경인일보",
+      "date": "Wed, 28 Oct 2026 11:04:56 GMT"
     },
     {
       "title": "추미애, 삼성전자·SK하이닉스에 행정지도···“방류수 수질 개선 요구”",
@@ -17,82 +65,34 @@
       "date": "Wed, 28 Oct 2026 05:54:00 GMT"
     },
     {
-      "title": "SK하이닉스 2026년 3분기 실적발표 컨퍼런스콜 전문",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KUXdTSkZRMnV2SHJlWEx1N1N2Mlk5UjdCb3o0QnNLSkVZY0JJcS1KdW1hRnpDUm9hRW1tREVUU1RfNTRtRTljaVgwcEdSdjN4Tmw0MEpidWw3Z19ZUVB1Mjh6LVQ3dw?oc=5",
-      "source": "디일렉",
-      "date": "Wed, 28 Oct 2026 04:11:14 GMT"
+      "title": "경기도, 삼성전자·SK하이닉스에 반도체 방류수 자체 관리기준 수립 권고",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EdlJxeGxFWFVINHZXaGJfd2R6aWVlTlVleE1UMGpjRGNSSWhZOWVVMTY1dkdOODNqeE1wSXRsZUt5VFdRV0lpNC04NEVpX1BBR1RzQlJ1VURmcGs?oc=5",
+      "source": "경기일보",
+      "date": "Wed, 28 Oct 2026 07:54:17 GMT"
     },
     {
-      "title": "SK하이닉스, 올해 100조 주주환원…지난해 7배 규모 '파격'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3dnhHY3c1bWpSc3M3Smt6eUdITHItSTA4Nnk3ZFVndDM3UlpMaWd2TW9sOXNLaTJSQ3FFOUdCTlRCbVNUcGlNeVBNcnViYnJJbWF2SXpITEdtYlR6YUpST21LZ2JsOVktd1BiRG5KTzU?oc=5",
+      "title": "추미애, 삼성전자·SK하이닉스에 ‘방류수 수질 개선’ 행정지도",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SQVB5TTdsb0VWa2szbDBEQURLei03UHZZVkhOUkE2NnM0SXB4Rms1REVnSThCdUhwVXRhZ0VHLTVYLU1rWnpPdE1hR0NLaEdfcVliLUdpdDNIUHc?oc=5",
+      "source": "KBS 뉴스",
+      "date": "Wed, 28 Oct 2026 07:16:00 GMT"
+    },
+    {
+      "title": "SK하이닉스 올해 100조 푼다…삼성전자 주주환원도 주목",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9rQlFObWhFck9Ra3dvaGlNSFo3cjNoV0Q1SVBVSTdMcHpsbTFZX0NMZGczVW1vck03dHdLNUU4c1FwSGZWMDFsZndhRVBWV0EzMVZnbGdjbHRlYmtNZmF4eWZTN0gyTmM?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 28 Oct 2026 08:17:00 GMT"
+    },
+    {
+      "title": "한신평, SK하이닉스·스퀘어 신용등급 전망 '안정적'→'긍정적' 상향",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KOGtfVGt5c0JRUU1Ob2VzbGs5Y3hfMmxreGNPQURqSE1OVFp4aFNFZXduMTZUeFJqWWVSazh6bEdZeUp0MUd6WVVWdm9lbXBLb20wZEotTFR4bm51QndWODIwQ2x1eWh1U1NlNi1fdGY?oc=5",
       "source": "연합인포맥스",
-      "date": "Wed, 28 Oct 2026 00:12:00 GMT"
+      "date": "Wed, 28 Oct 2026 09:27:05 GMT"
     },
     {
-      "title": "SK하이닉스, 3분기 영업이익 83조 ‘어닝 서프라이즈’",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE45THZxNnRhaDNXakthcXpUNUY0TC1uRGpKU3RrTTRvSEhNck5sQmxld0lKNjFVMkpqb3cyb1VxN1JacTh2SVJRLWFNQ0lhM3drdHhMNjBrclRmNDlzUlpUREVwbFdld3ZEa2c?oc=5",
-      "source": "한겨레",
-      "date": "Wed, 28 Oct 2026 02:34:00 GMT"
-    },
-    {
-      "title": "‘3년치 완판’ SK하이닉스 10%↑…코스피 6000 돌파 마감",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kdjRRMUlLbE9vZGVFTW1RWTNmWElDUWFzUzFmR3FVcUw3TndkODRpMVU0NGpyVWI1dVFqTW5UbmlfVWY2Y3kyWm56UlptdFNvTnUzcHlNaTJuU3BOdHZFbEFWVU1QdmhPQkxNaURxbTZNbUltRmhuRl9pR1hMZw?oc=5",
-      "source": "서울신문",
-      "date": "Wed, 28 Oct 2026 06:49:15 GMT"
-    },
-    {
-      "title": "SK하이닉스, 3분기 매출 '사상 첫 100조원' 돌파…\"2029년까지 D램·HBM 사실상 완판\"",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBCdGsyNERFanM0a21xOS1neXpvTTlNTTBIVHFaZ2lHTHh3dTlPWUxaLTJPYkJIYXV2RGltNTFSYm9WRWpqVnlTYk5ZNnBLVzZpRS13Qm9VMEE3SGpJR0JibFNzWQ?oc=5",
-      "source": "더구루",
-      "date": "Wed, 28 Oct 2026 09:04:32 GMT"
-    },
-    {
-      "title": "[속보] SK하이닉스, 60조원 추가 주주환원…분기배당금 주당 2만원",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SSjh3QzdLRXNDMUZPZlRXcm5Ra0VlVFZ0NnUwTjZhS2Vwd2w4TGlJbVNyTDZOekdRd0FncndWbzZ2T0RSNWJFM1BfZm4zQlg0V2pnYUdHMmxwUdIBX0FVX3lxTFAtWlYzWlhfN2dDWE5neXhjOHh2Mi1qSUEyRV9JeUUybnFIWGNLQVNwdVpJX0NWTXhLellMeGgyRHd5SjFPT3VrQ29RdU5wQ2JiODRrQU4tMlR0cTI5T1NB?oc=5",
-      "source": "경향신문",
-      "date": "Tue, 27 Oct 2026 23:46:00 GMT"
-    },
-    {
-      "title": "[집중진단] 삼전 9%·하닉 11% 폭등…SK하이닉스 ‘100조’ 쏜다는데, 삼성도 통 크게 보답할까?",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IV1JBWVhXeFRZQUJKaVFxbVpNVU5ibmxnX0JtOTI1REFld2czYTdXb01sODcwWHZUTFZUT1NubmFNSzB2MElOSFJSeE1TY0VTX1hpMXIyZ2MwSzhIY3p5UkdPbWwwWk3SAVhBVV95cUxNNWpHbW1PVDNJbzQxUG9HWWRSUG8teXFBN0Y1b2dqZEJIdmVRMVNKaDFHWFU3U3AxOERTelFjT1JaZENoZ3E5dWZrOThsXzBOajNxei02YU83?oc=5",
-      "source": "SBS Biz",
-      "date": "Wed, 28 Oct 2026 10:21:00 GMT"
-    },
-    {
-      "title": "[사설] SK하이닉스, 기술력·주주가치로 날다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE83d1d1dS1wZG1UZjI0b0ZOT2lFNUg0UnEwazVXZUJhdEhPOWQ1cW5zZEFWRURvblk0UWUtX05KVko4V21iZmxfbTQyaVpodw?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 28 Oct 2026 08:00:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 주가, 오늘 급등한 이유는?",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4NkNNVEsxZW9oYjBRdVBTNTluUEpyMFgtNTRPY3poY1dTbnVUbXhwdk5rb0R2eWlkYmlpeWtSXzdsUEtmcXNYb3VFMHhxcm44enFnSVZZMDViOHVDRHRkZ044U1NxUnN3WjVtMm92MFJtZ0JiREdv?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Wed, 28 Oct 2026 08:20:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 100조원 규모 주주환원 추진…현금배당만 30조원",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSEJlQ0xYTkQtbV9OV3UzZTBHUXh2YzlOaWVFZkVmellkMmliNk5SUEJXVk5ZTDZUNi1lbkEzNGxDNkNBQWl4MkswVzhTZzJZbjFUV21qQzBtUEZYR1dxaGdCVGVoUWFhYnhWeDFGZzRNQXQtZWVDTDNFZVhGWW41UDhR0gGWAUFVX3lxTE12bmQxNzdqMWtyR21BMmUtaXZCdTVMSlljWlVSVTk4akUwaWRuSVFNS1VTaGQwOHdzejFRRXd4ZjE3UnNIbzFCYTZPOGEwem9kcHJDTmViOUxNNWVQOXJnTEM2SHBHc3hEejlMMjI4R3E3RHA4cl8waV9mcDgzRll5MmZLYmxvTlY3Vmp0bkwta0ZLTkVZdw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Wed, 28 Oct 2026 00:46:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 분기매출 첫 100조 돌파...60조 추가 주주환원",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZS2hDLVdqQkY4bDFaZFNWck40enNTWXk1UXNteHE1WUZ5WldCOU82Q2FzMnNBcGl4dGQ3c0xKWFp0SHB3LVdVT2RfQ3hpc2VkeG5RZXd5TjlKN3NJVGc?oc=5",
-      "source": "YTN",
-      "date": "Wed, 28 Oct 2026 09:00:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 “3년간 HBM 완판”…메모리 ‘피크아웃’ 일축",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MQ3FhaWg4Zzh1eWstQ3Q3Q0I3aHhldjlWdWhjclY2eDBVREhMYTZ5QWlFLVRRZDlOTUs3NTE5VmpvUlFic3ZXZkxrT2wweVdwb0R5c2RGNGtkQdIBX0FVX3lxTE9VT0xFSGxGY0VNSWhUNU43SlVvU0hrSm92OFhVdFBhLWVBZkpfXzAxZkd4SC1SNmEtOTJvZllXaVFEeHNmd3VSOHFNX3hONmo2MXY1ZTVXNmY5V0ZIU0w0?oc=5",
-      "source": "경향신문",
-      "date": "Wed, 28 Oct 2026 07:59:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 분기 매출 100조 돌파...영업이익도 83조 '최대'",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBJWlBoYWF3YWhWdUx5MXgyQTMyY0p1UmMtQkF2clUwVEx4YlNIUXZaOTlWYVFRVmMtcnhmMDF5LUNKUWdKb0ZwV3NGYmp2WEtFNno3R3ZVU1B3VE9NVXc?oc=5",
-      "source": "YTN",
-      "date": "Wed, 28 Oct 2026 02:46:00 GMT"
+      "title": "곽노정 SK하이닉스 사장 \"솔리다임 IPO 중단…성장 투자는 지속\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBORVRVY3ZLR09aalEzQW51Tmt3dHpLSjhaa3oyXzR0bF9vWVhrVXZ0QS1LWEZVTzkyTW91MU9SX2RFZUwtZ3ZBa1IzTWxJODdoU0JYTFZkM0M0UQ?oc=5",
+      "source": "한국경제",
+      "date": "Wed, 28 Oct 2026 00:30:57 GMT"
     }
   ]
 }
