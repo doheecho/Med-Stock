@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T11:28:19+00:00",
+  "updated_at": "2026-10-29T14:36:26+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -35,12 +35,6 @@
       "date": "Mon, 26 Oct 2026 01:10:00 GMT"
     },
     {
-      "title": "삼성운용 코스피200 커버드콜 ETF 2종, 개인 순매수 4조 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03elhvRmV0bmtEeDJ6dDBqMTNfcUNHODg5Q3llMDJlNXRQZlJvZzJ2LUNOejV5dlptaFM5QWt0SUZjb0prMlVXTW92UjdocXlQQUHSAVNBVV95cUxQdkRRc0hKeEo1cHFIdmZqQ0Fza21RQWNBZ1ZmcFl6alBpcHZyVmdzM09ocGNlVVVZUjMtd2VEMXFjSm92UGtYWnNYbDZzQnNqWWxKNA?oc=5",
-      "source": "서울경제",
-      "date": "Mon, 26 Oct 2026 01:08:38 GMT"
-    },
-    {
       "title": "KODEX 200 9만5545원으로 7.47% 상승…대형주 강세 반영",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuOFpIVWpQenZPYlZ5b3BQNS1IN09sbU9jSkFNbVVvdVNhVFZrYjZuUl9SckQwRjktcTdOSVhPRFdjOTVLZXBKbXlRMDU2ajZjcS1iLVNLNF9VbktXdWNQeE1zcnV3OUJGcnRIWnFiWWlQd9IBckFVX3lxTFBuOFpIVWpQenZPYlZ5b3BQNS1IN09sbU9jSkFNbVVvdVNhVFZrYjZuUl9SckQwRjktcTdOSVhPRFdjOTVLZXBKbXlRMDU2ajZjcS1iLVNLNF9VbktXdWNQeE1zcnV3OUJGcnRIWnFiWWlQdw?oc=5",
       "source": "잡포스트",
@@ -51,6 +45,12 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lUDB0ZGhoZjhoV0g0eVc5RTQtcC1ONl85NEY4UnBJbTZzdkg4SHNIZVM3UjJiVmhYeVQ3ZjVLQ2FfVmY0S09XdG9UanJ6SElyMWJYZkh4dmkxUk93cjJReVRVeVY?oc=5",
       "source": "매일일보",
       "date": "Mon, 26 Oct 2026 04:52:17 GMT"
+    },
+    {
+      "title": "삼성운용 코스피200 커버드콜 ETF 2종, 개인 순매수 4조 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03elhvRmV0bmtEeDJ6dDBqMTNfcUNHODg5Q3llMDJlNXRQZlJvZzJ2LUNOejV5dlptaFM5QWt0SUZjb0prMlVXTW92UjdocXlQQUHSAVNBVV95cUxQdkRRc0hKeEo1cHFIdmZqQ0Fza21RQWNBZ1ZmcFl6alBpcHZyVmdzM09ocGNlVVVZUjMtd2VEMXFjSm92UGtYWnNYbDZzQnNqWWxKNA?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 26 Oct 2026 01:08:38 GMT"
     },
     {
       "title": "삼성운용, 코스피200 월배당 ETF 2종 올해 개인 순매수 4조",
@@ -83,10 +83,10 @@
       "date": "Mon, 26 Oct 2026 01:36:48 GMT"
     },
     {
-      "title": "삼성자산운용, KODEX 커버드콜 ETF 2종…개인 순매수 4조원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aMVp0ejllb2pZajBPcmZySlBMVEl2U1dXbHNKWjk1SHBlbFhEbVQ1M0FKQURQcGp3dm5iWVgwbVNYQThqUTNPOHNmMENyMUVZbS1RSi10cUxRWGhKdGluS0xrZktxdw?oc=5",
-      "source": "PRESS9",
-      "date": "Mon, 26 Oct 2026 01:32:25 GMT"
+      "title": "코스피 흔들려도 매달 '따박따박'…개미들 뭉칫돈 몰린 곳",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Sa3Yza0Iwc2h6bjIxV1JxM0pvbmxXZWQ4TS0xbG50OGFtcDF0VWw2UkNqMUdwRlRpaTJUUFFpMkZXZjVVYTJmQ2JBWE5fY2dpVmV0Q25oejVJZw?oc=5",
+      "source": "한국경제",
+      "date": "Mon, 26 Oct 2026 07:21:56 GMT"
     },
     {
       "title": "삼성자산운용 'KODEX 커버드콜', 순매수 4조원 넘어서",
