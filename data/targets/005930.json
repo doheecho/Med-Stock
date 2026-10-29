@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T14:20:53+00:00",
+  "updated_at": "2026-10-29T01:44:23+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 492500.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -19,7 +19,7 @@
     {
       "firm": "컨센서스 평균",
       "target": 492500,
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "한화투자",
+      "date": "2026-10-28",
+      "target": 580000,
+      "prev_target": 580000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "대신",
       "date": "2026-10-26",
@@ -160,13 +169,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "한화투자",
-      "date": "2026-10-06",
-      "target": 580000,
-      "prev_target": 580000,
+      "firm": "신한투자",
+      "date": "2026-09-30",
+      "target": 450000,
+      "prev_target": 450000,
       "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
+      "opinion": "매수",
+      "prev_opinion": "매수"
     },
     {
       "firm": "유안타",
@@ -176,15 +185,6 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "신한투자",
-      "date": "2026-09-30",
-      "target": 450000,
-      "prev_target": 450000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     }
   ],
   "ticker": "005930",

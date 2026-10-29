@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-28T14:20:58+00:00",
+  "updated_at": "2026-10-29T01:44:27+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3248636.0,
-  "target_high": 3735931,
-  "target_low": 3100000,
+  "target_avg": 3274545.0,
+  "target_high": 3765727,
+  "target_low": 3000000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,30 +18,81 @@
     },
     {
       "firm": "컨센서스 평균",
-      "target": 3248636,
-      "date": "2026-10-27",
+      "target": 3274545,
+      "date": "2026-10-28",
       "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
-      "firm": "미래에셋증권",
-      "target": 3100000,
-      "date": "2026-10-06",
-      "url": "https://finance.naver.com/research/company_read.naver?nid=96445"
-    },
-    {
       "firm": "야후 평균",
-      "target": 3096288,
+      "target": 3145762,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     },
     {
+      "firm": "미래에셋증권",
+      "target": 3100000,
+      "date": "2026-10-29",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=97222"
+    },
+    {
+      "firm": "대신증권",
+      "target": 3000000,
+      "date": "2026-10-29",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=97239"
+    },
+    {
       "firm": "야후 하단",
-      "target": 1535000,
+      "target": 1575000,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "한화투자",
+      "date": "2026-10-28",
+      "target": 3150000,
+      "prev_target": 3150000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "유안타",
+      "date": "2026-10-28",
+      "target": 3700000,
+      "prev_target": 3300000,
+      "chg": 12.12,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "유진투자",
+      "date": "2026-10-28",
+      "target": 3700000,
+      "prev_target": 3700000,
+      "chg": 0.0,
+      "opinion": "STRONG BUY",
+      "prev_opinion": "STRONG BUY"
+    },
+    {
+      "firm": "DS투자",
+      "date": "2026-10-28",
+      "target": 2640000,
+      "prev_target": 2640000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "BNK투자",
+      "date": "2026-10-28",
+      "target": 1650000,
+      "prev_target": 1480000,
+      "chg": 11.49,
+      "opinion": "보유",
+      "prev_opinion": "보유"
+    },
     {
       "firm": "대신",
       "date": "2026-10-26",
@@ -88,15 +139,6 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "유진투자",
-      "date": "2026-10-08",
-      "target": 3700000,
-      "prev_target": 3700000,
-      "chg": 0.0,
-      "opinion": "STRONG BUY",
-      "prev_opinion": "STRONG BUY"
-    },
-    {
       "firm": "NH투자",
       "date": "2026-10-07",
       "target": 3400000,
@@ -115,15 +157,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "유안타",
-      "date": "2026-09-30",
-      "target": 3300000,
-      "prev_target": 3300000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "신한투자",
       "date": "2026-09-30",
       "target": 2700000,
@@ -131,15 +164,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "DS투자",
-      "date": "2026-09-29",
-      "target": 2640000,
-      "prev_target": 3100000,
-      "chg": -14.84,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     }
   ],
   "ticker": "000660",
