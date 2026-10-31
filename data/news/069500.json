@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:28:47+00:00",
+  "updated_at": "2026-10-31T01:31:48+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -21,12 +21,6 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BWDZqSlFMb1Q0c3FNVmJhNjlwOVN0THhFbUJnOEhULVVDcVczWWRVMWMzbjdaTGVBNWhZOGlxYmktSHpRU2h1VVNfUzlUUDltWEZYbFNNOXZ4MTDSAWBBVV95cUxNRGI0VUVaSnpBVEhkUGx2N3luQzZ5dGZuQ0JSSkVoUG0xVVhxOFZLMVZlb1huandPQlBDcktlTkRSNG5aZHR5dlBZMkU5OFo0empGaG9kMTJHREQzYjJzcWQ?oc=5",
       "source": "연합뉴스",
       "date": "Mon, 26 Oct 2026 00:53:06 GMT"
-    },
-    {
-      "title": "국내 ETF 거래 상위권에 인버스·레버리지 나란히…방향성 탐색하는 투자자들",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0WjN5cXJXYUl4OFRFTjYwZWhYZ1J2QUEzOTVLS1dYdXZlUzc1OGdseVJCZEdveXhiNFVqSFZGV0ZSQjZqSXVNdjB3ME1obkUxbzNFZDU4MkszbjAyMm03YjhFTm0tRzZPZWp2ZnZmS0QyUThBT0s00gF3QVVfeXFMUDRaM3lxcldhSXg4VEVONjBlaFhnUnZBQTM5NUtLV1h1dmVTNzU4Z2x5UkJkR295eGI0VWpIVkZXRlJCNmpJdU12MHcwTWhuRTFvM0VkNTgySzNuMDIybTdiOEVObS1HNk9lanZmdmZLRDJROEFPSzQ?oc=5",
-      "source": "핀포인트뉴스",
-      "date": "Thu, 29 Oct 2026 23:36:15 GMT"
     },
     {
       "title": "KODEX 코스피200 커버드콜 2종, 올해 개인 순매수 4조 돌파",
@@ -83,16 +77,22 @@
       "date": "Mon, 26 Oct 2026 00:54:00 GMT"
     },
     {
+      "title": "삼성자산운용, ‘KODEX 코스피200 커버드콜’ 2종 개인 순매수 4조원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96MWhHcEtzUmFUcGlSMzNWeGItMURVZXRMS2hQLXduSnQ0TW11RUZFVFJtUDFBWklYTkVCdFpNR0FMZWpyRmFldWZBYS1nU1BZM2o3NmRR?oc=5",
+      "source": "헤럴드경제",
+      "date": "Mon, 26 Oct 2026 00:44:43 GMT"
+    },
+    {
+      "title": "국내 ETF 거래 상위권에 인버스·레버리지 나란히…방향성 탐색하는 투자자들",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0WjN5cXJXYUl4OFRFTjYwZWhYZ1J2QUEzOTVLS1dYdXZlUzc1OGdseVJCZEdveXhiNFVqSFZGV0ZSQjZqSXVNdjB3ME1obkUxbzNFZDU4MkszbjAyMm03YjhFTm0tRzZPZWp2ZnZmS0QyUThBT0s00gF3QVVfeXFMUDRaM3lxcldhSXg4VEVONjBlaFhnUnZBQTM5NUtLV1h1dmVTNzU4Z2x5UkJkR295eGI0VWpIVkZXRlJCNmpJdU12MHcwTWhuRTFvM0VkNTgySzNuMDIybTdiOEVObS1HNk9lanZmdmZLRDJROEFPSzQ?oc=5",
+      "source": "핀포인트뉴스",
+      "date": "Thu, 29 Oct 2026 23:36:15 GMT"
+    },
+    {
       "title": "“지수 바닥 쳤나?”…9월 관망하던 개미, 10월 들어 ETF 5.5조 ‘폭풍매수’",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1lRDV1NzhsRGxFTS13Y0ZqOFU0bjF0X1pMUk1UaUdUcjlfXzltSDIzeFhjWTcweDZRWEMyc3pMbFk5YzhWenItdnVySkw5b1JNdE5iaGU5dTB2WFFtY3Z6VEdTN19BVlpOalFlNzNYcGhUTzA?oc=5",
       "source": "마켓인",
       "date": "Thu, 29 Oct 2026 05:23:09 GMT"
-    },
-    {
-      "title": "KODEX 200 9만5545원으로 7.47% 상승…대형주 강세 반영",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuOFpIVWpQenZPYlZ5b3BQNS1IN09sbU9jSkFNbVVvdVNhVFZrYjZuUl9SckQwRjktcTdOSVhPRFdjOTVLZXBKbXlRMDU2ajZjcS1iLVNLNF9VbktXdWNQeE1zcnV3OUJGcnRIWnFiWWlQd9IBckFVX3lxTFBuOFpIVWpQenZPYlZ5b3BQNS1IN09sbU9jSkFNbVVvdVNhVFZrYjZuUl9SckQwRjktcTdOSVhPRFdjOTVLZXBKbXlRMDU2ajZjcS1iLVNLNF9VbktXdWNQeE1zcnV3OUJGcnRIWnFiWWlQdw?oc=5",
-      "source": "잡포스트",
-      "date": "Wed, 28 Oct 2026 05:14:28 GMT"
     }
   ]
 }
