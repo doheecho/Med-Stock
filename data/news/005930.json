@@ -1,51 +1,9 @@
 {
-  "updated_at": "2026-10-31T01:31:44+00:00",
+  "updated_at": "2026-11-01T01:00:20+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "57주년 맞은 삼성전자, \"지금은 자축보다 경쟁력 냉정하게 돌아볼 때\"",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOM0pKQmo2bDlNZ1o0ZTd4NVpTSHVzU3FFRzVWQTl0TnJkQnR6OFUzSHdvM2wxU1NudGtMMkdjVWExelk1MkRGelBEYnhEd0NmaGFvMHFLOHJkM3VGczBTU1llSzBTSDlhNzhpYnkwRVBYRV95UmIxMm8tTFFEdzFSd0l4SQ?oc=5",
-      "source": "조선일보",
-      "date": "Fri, 30 Oct 2026 00:16:32 GMT"
-    },
-    {
-      "title": "삼성전자 창립 57주년…DS·DX 투톱 “호황·위기 흔들림 없이 기본 충실”",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OWFhfdXJKZDFIdzRFdHE4REtUTVRSdE1HS05Vcy1IdXM1N2FFMnVJclVDY3N6MWs4LU9CcTh3dGUzM09sQndZRVFhdlgtdHJMVWdIVG1MMkI1elJfalA3UQ?oc=5",
-      "source": "아시아경제",
-      "date": "Fri, 30 Oct 2026 01:08:17 GMT"
-    },
-    {
-      "title": "삼성전자, 창립 57주년에 “지금은 자축하기보다 경쟁력 확보할 때”",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSNlYzYURLakRqMHVhMGQyWXBXMmF3VmR5Z3hoWFFndEFQTVBZUU9Dc0pfYzZGZFN6MWlWTXRZMGx2aWsxcmhBemtQcFIwWmp1dU8tclFsUkhXQdIBX0FVX3lxTE85eUlyU0tXajBuQi10MWNTa1NGWTN3YkVfa1UwWkY2RGRYd0NSc3BwbnBRMFlCakVhSGgzbm1oMW5mSTNQRTdlVjQ4Wi1hYVZiYnJjYlBhcDdiTkJKdzZr?oc=5",
-      "source": "경향신문",
-      "date": "Fri, 30 Oct 2026 02:48:00 GMT"
-    },
-    {
-      "title": "삼성전자 \"HBM4 매출 3배 급증…장기계약 20社로 확대\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YRFd6M1p3SW9wT1NnVTluYUh4TFNSbVlQT3BackVrMXp5NWlwWHhsY3pOeTdpaE9rbkVDRTVGVEZ0M2tmdDlaMUt2Mi1ncklmVFZaSE9IYzBvQQ?oc=5",
-      "source": "한국경제",
-      "date": "Thu, 29 Oct 2026 09:04:17 GMT"
-    },
-    {
-      "title": "네이버, 삼성전자와 갤럭시 Z 폴드8 쇼핑라이브…'리센느' 공연 결합",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xeThTR2dNVlAzN3BVSDlER3ZhTEJCaGdfYS1jSXVFZ1h1UWpNblg2WXFleDVCaHdYWHlyTjVIS3ZmOWJ4R3ViTk13b1JRQQ?oc=5",
-      "source": "전자신문",
-      "date": "Fri, 30 Oct 2026 01:09:26 GMT"
-    },
-    {
-      "title": "삼성 갤럭시Z폴드9 울트라, 얼마나 달라지나",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EbW52UWh5TTZvdmRlYXltT3hGU1pzZkJEUGloUlJ3TXY5TDV4MHh6UVdQM21XZXdkWElndDl4MTVWZEZ6dUdlNzlFRnpWTnFiZUNaM2tn?oc=5",
-      "source": "지디넷코리아",
-      "date": "Fri, 30 Oct 2026 22:59:14 GMT"
-    },
-    {
-      "title": "리센느 공연 보고 갤럭시 쇼핑…네이버·삼성전자 라이브",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tamNZTlY3OVFnRDNrWjZYSW1NN2s4OHktVFJpbXhKX0x1Q25nVEd2ZWQ5c3NSRTN1d3ZUOGhxbEhSaTNoU25DOFhOMjkxb1kxRGc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 30 Oct 2026 04:11:04 GMT"
-    },
     {
       "title": "\"후회말고 삼성전자 사라\"…100조 '뉴노멀'에 개미도 들썩 [강경주의 테크X]",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wVm82ZFlpaUlPQ09xdUlvZThoeEtXSFRvRDZoVkNQQjRySVhiQS1QQWktMUh6OGtxZDlWeE9McG40OWhfWWJNN3BWRkN2YV9PVnRCbjlqN1Nsdw?oc=5",
@@ -53,46 +11,88 @@
       "date": "Sat, 31 Oct 2026 00:30:03 GMT"
     },
     {
-      "title": "가스안전공사·삼성전자, 반도체 사업장 가스안전 강화 맞손",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80aTdSbnBfYTd6QmpsSnU2RkZzSGRKUVZOODEzRFlHM09PTXFuR3M2MHItOXhqeWMtZmY4cDdxS1Vrd3lVX184NjBJV3hxZVFpeGJrUUR6ajdlRUdRcXA1TE1rTEltcWgxTTlZM9IBcEFVX3lxTE12WE1LUnB0WXpvQVAzQVVQSzdrTUF1bkJCUl9fNjFrX2JXUms0UHZSWU5mM2FPTm1fblRNWk45WnJlVzRYSDNhR3RGQ1Z2bVZ1V0pqOG5ldl82NVZlRTd3LVJ4cFRXR0x0NDF6N01JLVQ?oc=5",
-      "source": "전기신문",
-      "date": "Fri, 30 Oct 2026 01:18:13 GMT"
-    },
-    {
-      "title": "[게시판] 가스안전공사·삼성전자, 반도체 사업장 가스시설 안전협약",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzSjE5d3JQY21YeldkSG5UUnBZcmhDZjZVai1fWEtET3JoSklSUHZIeTh6YnByWGg1NDAtRVFuSTNvNm5BNE1sS2RiSnk2WV9VY1E?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 30 Oct 2026 00:00:01 GMT"
-    },
-    {
-      "title": "가스안전공사·삼성전자 '맞손'…국내외 반도체 사업장 가스안전 강화",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5PampSSmZqenp6VHBYLVV6R3Rkbk9fVXQ3bWlQek96NUtCM2tvc0s2T25xVlZqYVh2NENLeFRRWXMyN05QYXE3Y3JyNFlhUk8yblRycWJMRGxlZHFw?oc=5",
-      "source": "뉴스핌",
-      "date": "Fri, 30 Oct 2026 00:00:00 GMT"
-    },
-    {
-      "title": "'마운자로'의 힘...일라이릴리, 삼성전자 제치고 세계 시총 12위",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVW52UDY5U21meHNvS3ktdGdWSjFxYU9zN2xmR3N4dmdWV3hNRUNpUm5nTWo4Y3FNVldjU3p3a3hHenV0cmxya244V2tLQWFSRFlXT2tXWWxWQWFIcWxxai1Ndm0zSDNRN0hjZkpMX3hVMWtMeHpBZlNPMUI4c085SFNpTkVHZ3JFdWhQUw?oc=5",
-      "source": "YTN 사이언스",
-      "date": "Fri, 30 Oct 2026 07:00:38 GMT"
-    },
-    {
-      "title": "삼성전자, 삼성디스플레이 보유한 중국 TCL CSOT 지분 전량 인수",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16c1AwTEhhSndlTUlheFUzU0FQY2F1SXZRbC1ldXBDU2lkRjBfZld5eHZqSGliN0RJaExLQ1JiYWtoVzZEUVdPRHlvZmcxTWQyVVJzdnUwdlkwcmxXUmJpRWIyUWdfOXM?oc=5",
-      "source": "연합뉴스TV",
-      "date": "Fri, 30 Oct 2026 08:02:00 GMT"
-    },
-    {
-      "title": "삼성전자, 삼성디플의 中 TCL CSOT 지분 전량 취득",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42M0RRNTgwM3BaZDFHQmZVYXRoOXg4cWQzYUhEYjRCZkxmUWhLeWRZdjhzWENMdXpia09oZHJZYlVqd2R5TjRYTFpZckZ0a2htY1NIODBDRHFQenF4bGpaalpQeEdrX1V0ZU5obmh3b04?oc=5",
-      "source": "연합인포맥스",
-      "date": "Fri, 30 Oct 2026 08:00:33 GMT"
-    },
-    {
-      "title": "삼성전자, 삼성D로부터 中 LCD 기업 지분 1.27조 매입…저가형 ‘가격 방어’ 나선다",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xbHE0bklQU3lWSkVuRlUzNkJLY05YUDF0NkVSM05mTzdYWG1vWjRFZ3dXUDZyNk1xM2FtVXdQMHNrczZCbjdtS0lySnB5Umx5NFHSAVNBVV95cUxQaTlMc042NjBnZXdodzdURk11NGtrS0JrQW8wT0huMTZobjFrWlVRQ3NMYnotYmVqaHNxZGJUMEF3MEJEamNVaUNoSjdDOTZ0M1VTYw?oc=5",
+      "title": "삼성전자 “내년 HBM 물량 완판…HBM4 비중 60%” [컨콜]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FbHBHZk1NNEtuZi1YSXpObTZoc3hiYTVYOGRLMDJtUFU4UkZsNG83QnBPa0VwTk9EbTAzaG1rYlliVlF0cHhyemZ6T2o2U2FQVUHSAVNBVV95cUxONFM4cUZPc3g3REFwcG12bFdXS2NHdkp5YzZ3ZTcyeWpWc1BNUHlSTFBjZXVpWktGZnU2aDF0MmtlaWp4LWVvT240SnVYTkJYR3pkOA?oc=5",
       "source": "서울경제",
-      "date": "Fri, 30 Oct 2026 08:49:39 GMT"
+      "date": "Thu, 29 Oct 2026 02:00:36 GMT"
+    },
+    {
+      "title": "HBM4 경쟁 새 국면…삼성 추격·SK하이닉스 수성",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfaGFZU2JJWlBUR1ZGeHdiNTBrZEZDMzZXWUdqMXJiaVhFWDIxQ044RmY2S09mUWJXV1dPQUFfSzVGNTV5OVFmYXc5U0hwdWxsbENBQVJkbUdDNnIyZDVra0tSTm9LSnM?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Sun, 01 Nov 2026 00:05:00 GMT"
+    },
+    {
+      "title": "‘역대급 축제’ 엇갈린 표정…SK하이닉스 웃고 삼성전자 고개 숙이다",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1rV0FkQXhZVkxQVDlpZ1dlNHlQb3hCU2Zmb1FvUGNUT0tNbHNJODd0UllnaEQ4UjRjS0xaTlFpcmc0aFVLRUF5MF9tbkExbGxXbjU4dkpJLVlGeFRmRThrWkM5Wm9SN0Rf0gFsQVVfeXFMTzI3QjVCeUthS01JSEs3eEhTTkQzVjBFYlRINWtRNnltWF8yNHAxQkhtVUYwdDF1OXBPaFZDUjdBNlEzUlNQWEdYQk9tdXNxa1FTRHpZbjd6c2ZZUld5LWhYRWRFeVlJZDMyWDBM?oc=5",
+      "source": "블로터",
+      "date": "Fri, 30 Oct 2026 23:00:00 GMT"
+    },
+    {
+      "title": "삼성전자, 과불화화합물 저감기술 개발…내년 평택사업장에 적용",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CZEc1R2dKZ2MzQU5mMFVuTVg5ZUlJRnZlWkM1b1h5STE1cVpSMDdTak44R052UFZZMnpNTy1vMjk2OS04aGJidXVMNkNNN28wc1E?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Sun, 01 Nov 2026 00:09:01 GMT"
+    },
+    {
+      "title": "삼성전자, 서민금융·교육 등에 2300억원 지원…1500억 취약계층에",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LWDRnVTZLNmNJeVNrMlFHdC10bmVjOFVYeTdsUnVKS0JzOHZQaUVwNjBINkw3M1dlbXZTUURVZENHWGxueUNXRmtGTERqS0xkX1ZRdXZmUXQ0S3ZoR3FlSWxzYm8?oc=5",
+      "source": "뉴스1",
+      "date": "Sat, 31 Oct 2026 22:30:00 GMT"
+    },
+    {
+      "title": "삼성 첫 클립형 이어폰 ‘버즈 온’, 온라인 초도 물량 사흘 만에 동났다",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNHpsZlVRS2wyaE4yMHdYWWtFS3VqbTVvSjFOaEtWU3JEeVdWSFhJeGJGR3lmUWFDelRiTHU3alpqbFlOaDdYbU1hNWd1WUh3SDVKanFIdlRKZFhNbzdZQVF0QlNSbmRhdzBneUNPRXFzSjhmOGZhVndYTE1JS0lZLVJn0gGWAUFVX3lxTE9UTXB3cE5UaHJMZENQTm1aVFBBVmQ4YnJ2WWRWOG9TQVNhb2gwOVJZckJHOWU1Q1JkMkVWOWZLd2ZoNW5BUU9Lc0M1VEhrZVZYay1BclNLa2lPVm5NeDhBOUxnTnRWVFhjS0pWbVZCYW9JQS1CZkhnRkNycjRvSHFJenJGczI2cGkwa0NkOVFNSTAxOEx6UQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Sun, 01 Nov 2026 00:19:00 GMT"
+    },
+    {
+      "title": "삼성전자 창사 첫 2개 창립기념사…최대실적 속 '원삼성' 물음표",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA4b09iVWVQMWEyWnVfd2sweGpmSi0xR1BJZzFHUkplYmhyZ2dsd2dFSWJZbnRpOGp4amFRYmNxZC1BNGktcExsTkR5NkVIVXQ0T3hFVkFYSUlFV1nSAWBBVV95cUxOSHExWkpoLUNXeTI2UDBYUk5oZUJ4RjZVQkpqN2lYTW1oallzQUFOaURWZmE0QlR2UnR3RG14OFRCMmotZkE5WTJlN2d5ZjFhR0txdW5ESzBqZG44RWo0T2g?oc=5",
+      "source": "연합뉴스",
+      "date": "Sat, 31 Oct 2026 21:07:01 GMT"
+    },
+    {
+      "title": "삼성전자 3Q 컨퍼런스콜",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVzF4UGdCaXRoUHptbXVodFhacjRHTVpEQ01hdDYtNzVkUk0tcnpuSWFLaGx0TEo1MUdmcHdrYmhwTTNhMkZpRlRNYnNYX0F0TFIwZjNFdEs1MGl3SXI3T2FmUndobnRDM2psQ3pDXzZlNTdSMF9sRzIzdXo2aXZmWlVEMWk?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Thu, 29 Oct 2026 07:23:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 지금이 기회?…\"역사적 바겐세일 구간\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9USnA5NWE3dmUwTGFBczFYU3FLYzFVUVNWODl4SFphYUo2bC1MSFplMjNLb3YxZ0JsdEJZZWQ0Q1IxZDFIWDVxSHlKY0VRR1pvWGZWNnByNmRnLVhiYXJQddIBeEFVX3lxTE9IUlduUUJHWXJPT2w4V0xGYWt0Q2wwZE1pUFlaOE5tQW5veU5sT1VROGJvMnJEWWJ3bTlQM1JGbW0yTXVHS2ZhZGd3OFlwVzhoVlRjZ3JDTExpa3p0cjVxZmtDVnZaekdjOVNDdHhDSFhnNXh6RGItSw?oc=5",
+      "source": "뉴시스",
+      "date": "Sat, 31 Oct 2026 14:10:00 GMT"
+    },
+    {
+      "title": "삼성 사장단, 샘 올트먼 만났다…AI 미래전략 논의(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1iQTNLZlBFbVFkbi1tNzlLQnM4OUhuQjA2bUVGcjJHZWtTdGo1Y3RRNmVrTDBLUEppRjBNeW1RNFZfTXl1SkZFdTNOWDdxMzVPRkE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Sat, 31 Oct 2026 05:36:46 GMT"
+    },
+    {
+      "title": "샘 올트먼 '1박 2일 깜짝 방한'…삼성 사장단에 '코덱스 키보드' 선물",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aY2EzUVVLY0lMWVA1Q0txa25kMFZra19Qd2dKTnRqdW1PM0lGajFVaTFHelpBdWZMS2JCcDFfWXRaUVJ0bTdWWnJsOWFiREVQUmJ0dGNIdS1Tc1lLU1NJLVlUY1A2ZDBGMEE?oc=5",
+      "source": "SBS 뉴스",
+      "date": "Sat, 31 Oct 2026 06:47:58 GMT"
+    },
+    {
+      "title": "샘 올트먼, 삼성 핵심 경영진과 AI 미래 논의… 반도체·데이터센터 협력 확대 기대",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15akN3SkotWnQ1cTRvNUpZNWZBblVzaUJqUWpPSEJOTV9QajVUX2JFMnR0TDY4dVB3UjVEdXh5dDdfYlpDbnFVRG1uSWlxWXJMTjJlWlQwUE1aRHJMRGVLTzE0MGk2cjA?oc=5",
+      "source": "제민일보",
+      "date": "Sat, 31 Oct 2026 21:35:57 GMT"
+    },
+    {
+      "title": "요즘 다 마운자로 맞더니 “삼성전자도 제쳤다”…일라이릴리, 세계 시총 12위로",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE43eHctMXM4dXdiZkM4d2hUSk4yQmZfeHc1NElFbkhqWGhBeHBoRnVlN3loaV9DUy1mSmw5aUdZME51aWRrd1ZlRmwwNnNMdmx6ZlHSAVNBVV95cUxQU3IybmFsMzI5N0c5aldqWm5fRnJmRERsQVdFaDVtRUI2aTdNS21qVEgwWTBJMkFHOHk0endFYmlBQWZBNzRLNEdXMFZtQ2x6ejliOA?oc=5",
+      "source": "서울경제",
+      "date": "Sat, 31 Oct 2026 07:36:58 GMT"
+    },
+    {
+      "title": "57주년 맞은 삼성전자, \"지금은 자축보다 경쟁력 냉정하게 돌아볼 때\"",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOM0pKQmo2bDlNZ1o0ZTd4NVpTSHVzU3FFRzVWQTl0TnJkQnR6OFUzSHdvM2wxU1NudGtMMkdjVWExelk1MkRGelBEYnhEd0NmaGFvMHFLOHJkM3VGczBTU1llSzBTSDlhNzhpYnkwRVBYRV95UmIxMm8tTFFEdzFSd0l4SQ?oc=5",
+      "source": "조선일보",
+      "date": "Fri, 30 Oct 2026 00:16:32 GMT"
     }
   ]
 }

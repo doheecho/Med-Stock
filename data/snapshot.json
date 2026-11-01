@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31T01:32:28+00:00",
-  "as_of": "2026-10-31",
+  "updated_at": "2026-11-01T01:01:13+00:00",
+  "as_of": "2026-11-01",
   "basis": "close",
   "total_cost": 130265210.28,
   "total_value_close": 215164457.66,
@@ -51,8 +51,8 @@
       "eval_value_close": 63945000.0,
       "pl_close": 31313759.0,
       "pl_pct_close": 95.96,
-      "target_avg": 495227.0,
-      "target_high": 569511,
+      "target_avg": 490227.0,
+      "target_high": 563761,
       "target_low": 400000,
       "opinion": "매수"
     },
@@ -100,8 +100,8 @@
       "eval_value_close": 111280000.0,
       "pl_close": 54696036.0,
       "pl_pct_close": 96.66,
-      "target_avg": 3220000.0,
-      "target_high": 3703000,
+      "target_avg": 3097000.0,
+      "target_high": 3561550,
       "target_low": 3000000,
       "opinion": "매수"
     },
