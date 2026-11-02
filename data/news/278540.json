@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T01:00:27+00:00",
+  "updated_at": "2026-11-02T01:28:35+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -17,15 +17,9 @@
       "date": "Sun, 26 Apr 2026 07:00:00 GMT"
     },
     {
-      "title": "배당주에 관심 있지만, 재투자가 귀찮은 당신을 위한 ETF",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
-      "source": "Chosunbiz",
-      "date": "Sat, 08 Apr 2023 07:00:00 GMT"
-    },
-    {
       "title": "세금 나중에 내는 'TR ETF'에 외국인투자자 몰려",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLLXdDbFNoajM5cXRwT21IWGc4a2JoNEtqSDVrSXhpLXoteUMyTVJhUjh5YmFVZnJoenNYYmZfWjJhLTAxa2dRNmM0S1hCUUMzcldTSG1ZVi00emxmNks4dXJDLTY1eEpPTGc?oc=5",
-      "source": "www.intn.co.kr",
+      "source": "intn.co.kr",
       "date": "Mon, 18 Mar 2019 07:00:00 GMT"
     },
     {
@@ -47,6 +41,12 @@
       "date": "Wed, 23 Mar 2022 07:00:00 GMT"
     },
     {
+      "title": "ETF ‘500조 시대’ 눈앞… 삼성·미래 ‘수성’ 속 한투·KB·신한·타임폴리오 ‘영토 확장’",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jS09zQlFRNXhDM2wzN3U1bExkeHRwWDA1NXEyU1FLdEt6M25TU3JvbW5QVjJ1RWtTSDRVU2VSU1JyRGxsNjVydV9reW1DSS02N1dWcGctZWd0REktdnpraU9LN2Z0UFg4ZmRCNkFKUGdXVFXSAXdBVV95cUxOUERTbnRHTm8xTzhKMUQ0WjlmV1o4MndQYUtIZkJhYVBUUUVlemo3UFhmLWlYQVN5OUgzMXhPdmY1V0RqM0VYS1VHS3RXZ3lqRV9KajhtNXRKeUZDUTVkRV82VWJ2NjdtQjhHYmIyLTBhNXVOTGhhaw?oc=5",
+      "source": "핀포인트뉴스",
+      "date": "Sun, 10 May 2026 07:00:00 GMT"
+    },
+    {
       "title": "[22일 기관 순매수 Top 10] 삼성전자 1110억, 삼성전자우 243억, 엔씨소프트 76억, SK텔레콤 60억 기관 순매수 나서…코스닥 시장에서는 비에이치, 셀트리온헬스케어, 와이지엔터테인먼트 상위 종목으로 장 마감.",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02NnBKY0xzZGw2eTdLVVFBUFBQZ05ISWZ2ZzhPdDk2M004WGpYcXp0Y2FBWEllV2tPVjg4cm1XREJSZ2xueW9iUkNNMmwzaVgyWVJCY0NuYlhEWGFBUEd4RXQzWVdlNnNVNzF6c1pSTXBKUWM?oc=5",
       "source": "파이낸셜포스트",
@@ -57,6 +57,12 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
       "source": "매일경제",
       "date": "Wed, 20 Nov 2024 08:00:00 GMT"
+    },
+    {
+      "title": "TR(Total Return), 너의 정체는?",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04THcwS3JIV3JiY0s5NXR2b0EtZWwwYzktQU1JM2FIZkt1WkZ3elZzZ3l0NEViNk8yV28wLXBFTGtxU1Y5aDVqc0p5ZkF1SUc3ZUE?oc=5",
+      "source": "브런치",
+      "date": "Thu, 02 Jul 2026 07:00:00 GMT"
     }
   ]
 }
