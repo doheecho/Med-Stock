@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T13:24:09+00:00",
+  "updated_at": "2026-11-02T17:22:24+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -17,12 +17,6 @@
       "date": "Sun, 01 Nov 2026 23:16:38 GMT"
     },
     {
-      "title": "코스피200 강세에 인버스2X 4.12% 하락…93원",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TejJpX05yb3FEVUZxYktFZlpDdVZTSlhYbnRTMXpMdy1XMks5VWVacWh3N3VBNHdXSVJ1Mjl6bVptR3NRWlRhYkRXb21ZYnREdFg1QXRhUVRlS1gycml5MVlHX2JkM0xvbDZQRnBB0gFyQVVfeXFMTnVIcnlrdmZQTWV1bjFueWVsSlhJOUZuMmdQVndMUHptOWdZTnRFbi1IVU1odlAybm1KZDB5WFNld2dCa3BQX1ZpQjFROEJtSTRiWHVJV1RFOFpHSHFsVzUxOUFmWUZjT2JBNnVhblFIbnN3?oc=5",
-      "source": "잡포스트",
-      "date": "Mon, 02 Nov 2026 06:24:58 GMT"
-    },
-    {
       "title": "반등분 다시 반납한 ETF…KODEX 200, 급락 전보다 14.2%↓",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzVTVHYzZVTkxLdXBSRG9sZWMwSlpLMzBGcTFtMl8zcS14UVRkV29aYnZQWUxWcXNOOUJKYThZZ1hJQWpuOHBqUXBSZUZYS3hydWUyb0tadW7SAVhBVV95cUxQM1U1R2M2VU5MS3VwUkRvbGVjMEpaSzMwRnExbTJfM3EteFFUZFdvWmJ2UFlMVnFzTjlCSmE4WWdYSUFqbjhwalFwUmVGWEt4cnVlMm9LWnVu?oc=5",
       "source": "아주경제",
@@ -33,6 +27,12 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9USFFpRGdISHNaNHZpNzVkeVZoRW9EWHV2ZGVSeE02OFBvMm9DQWRqNkdtXzRiNFFPU3pnVURtUkhJVUpCMVc3Vy1xdzRuZUtaV2h6QUdBMWZtSmxWR2c2WExJazJ5Q05IVGtXa2lsaV8?oc=5",
       "source": "신아일보",
       "date": "Sat, 31 Oct 2026 05:00:00 GMT"
+    },
+    {
+      "title": "코스피200 강세에 인버스2X 4.12% 하락…93원",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TejJpX05yb3FEVUZxYktFZlpDdVZTSlhYbnRTMXpMdy1XMks5VWVacWh3N3VBNHdXSVJ1Mjl6bVptR3NRWlRhYkRXb21ZYnREdFg1QXRhUVRlS1gycml5MVlHX2JkM0xvbDZQRnBB0gFyQVVfeXFMTnVIcnlrdmZQTWV1bjFueWVsSlhJOUZuMmdQVndMUHptOWdZTnRFbi1IVU1odlAybm1KZDB5WFNld2dCa3BQX1ZpQjFROEJtSTRiWHVJV1RFOFpHSHFsVzUxOUFmWUZjT2JBNnVhblFIbnN3?oc=5",
+      "source": "잡포스트",
+      "date": "Mon, 02 Nov 2026 06:24:58 GMT"
     },
     {
       "title": "KODEX 코스피200 커버드콜 2종, 올해 개인 순매수 4조 넘어",
@@ -53,22 +53,16 @@
       "date": "Thu, 29 Oct 2026 05:23:09 GMT"
     },
     {
-      "title": "사모펀드, 코스피 시장에서 KODEX 200선물인버스2X 69.19억원 순매수",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXODJKVE5ic1hEVXJDTDN5eFVtaHNGdnlkTFlhNlFPdWJDWVBKZXI2M2ZZcTNhRlp5T2F4ZmVHdGlMTGM5dkhRUHRicTBNbTlnNXMtUWlUd2NtUl9lcXhaRE0xOE5uZDlK?oc=5",
-      "source": "ThinkPool",
-      "date": "Tue, 27 Oct 2026 21:04:05 GMT"
-    },
-    {
       "title": "국내 ETF 거래 상위권에 인버스·레버리지 나란히…방향성 탐색하는 투자자들",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0WjN5cXJXYUl4OFRFTjYwZWhYZ1J2QUEzOTVLS1dYdXZlUzc1OGdseVJCZEdveXhiNFVqSFZGV0ZSQjZqSXVNdjB3ME1obkUxbzNFZDU4MkszbjAyMm03YjhFTm0tRzZPZWp2ZnZmS0QyUThBT0s00gF3QVVfeXFMUDRaM3lxcldhSXg4VEVONjBlaFhnUnZBQTM5NUtLV1h1dmVTNzU4Z2x5UkJkR295eGI0VWpIVkZXRlJCNmpJdU12MHcwTWhuRTFvM0VkNTgySzNuMDIybTdiOEVObS1HNk9lanZmdmZLRDJROEFPSzQ?oc=5",
       "source": "핀포인트뉴스",
       "date": "Thu, 29 Oct 2026 23:36:15 GMT"
     },
     {
-      "title": "삼성운용, 코스피200 커버드콜 ETF 2종 개인 순매수 4조 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE44X2pQQjNBd1NzNG0yY2F1aG5kOUdwYU5fUXYwMUI3RWlIR1JBOWhyRWpwWFpXdkVDNnY1ZF9vYUl6N0RZcmxBNHdraWI5a1RZMzlhREdNSzFDZHRrSWNGdNIBeEFVX3lxTE5ETEJBWDV1S3RJMjZVYnFoSXRhbUVhWTNBRkRXTVhFUXNaLWFJTTF5WHlDSUNfT2pWT3IwY3pFVmRfTE45TTVhMVFCeDJQQ04tVDFjVjRxc0EtUzJ5R1AxNTJCSGkwS2lXZmdmMHp0bFBPR2pOUTJUQg?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 26 Oct 2026 02:40:54 GMT"
+      "title": "사모펀드, 코스피 시장에서 KODEX 200선물인버스2X 69.19억원 순매수",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXODJKVE5ic1hEVXJDTDN5eFVtaHNGdnlkTFlhNlFPdWJDWVBKZXI2M2ZZcTNhRlp5T2F4ZmVHdGlMTGM5dkhRUHRicTBNbTlnNXMtUWlUd2NtUl9lcXhaRE0xOE5uZDlK?oc=5",
+      "source": "ThinkPool",
+      "date": "Tue, 27 Oct 2026 21:04:05 GMT"
     },
     {
       "title": "삼성운용, KODEX 커버드콜 ETF 2종에 개인자금 4조원 몰려",
@@ -81,6 +75,12 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02dGJGSXgyTFI1Z1o2ZHoxS0VkbUJMQXg5T1VHZllHVmtMQm9ta2dtUUtoaUJPYzM2WkpKQ2xxWTZjRlBzWjZGT2N4c25mRF9xWkE?oc=5",
       "source": "매일경제 마켓",
       "date": "Mon, 26 Oct 2026 07:50:05 GMT"
+    },
+    {
+      "title": "삼성운용 코스피200 커버드콜 ETF 2종, 개인 순매수 4조 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03elhvRmV0bmtEeDJ6dDBqMTNfcUNHODg5Q3llMDJlNXRQZlJvZzJ2LUNOejV5dlptaFM5QWt0SUZjb0prMlVXTW92UjdocXlQQUHSAVNBVV95cUxQdkRRc0hKeEo1cHFIdmZqQ0Fza21RQWNBZ1ZmcFl6alBpcHZyVmdzM09ocGNlVVVZUjMtd2VEMXFjSm92UGtYWnNYbDZzQnNqWWxKNA?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 26 Oct 2026 01:08:38 GMT"
     },
     {
       "title": "KODEX 200 9만5545원으로 7.47% 상승…대형주 강세 반영",

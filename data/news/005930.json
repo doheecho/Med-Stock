@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T13:24:04+00:00",
+  "updated_at": "2026-11-02T17:22:20+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
@@ -17,54 +17,6 @@
       "date": "Mon, 02 Nov 2026 01:10:59 GMT"
     },
     {
-      "title": "‘삼성전자에 갑질’ 美브로드컴 186억원 과징금, 대법서 확정",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pV1g2MDdybHhuUTNtRHRnZnRvaFp4N3A1cDBieVFfaTE5VmxmMmhrLXZvZGdMLTBzVF9sNzdtQlprcmdMNjNRdGE4MjJJcW5pNjJUZ2pLcWRxQjl4bTBSXzdGMUxCZXB6S0RXY1BiYjZESXF2RGfSAWZBVV95cUxOYkdLSnRhUTd0aW1HT2tmSTROMl9NWmdZQUtpME1mZFdtdXlaanpVTzN5UUpTa0pKeFdyclRXc3AzemNOenJFaFZ0ZUxkTEF1V2lQVE9hamZrMUdEdl85SG9VOGU0dFE?oc=5",
-      "source": "동아일보",
-      "date": "Mon, 02 Nov 2026 10:25:00 GMT"
-    },
-    {
-      "title": "美브로드컴, ‘삼성전자 장기계약 강요’ 과징금 취소 소송 최종 패소",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdks4eXpfQk1QdTEtd2QyeTRkVVdMSGRJcmdteWF4MnBzYWtyRXB1S1phc19CUDdKWVdRelpPSmtIRkhMVFpnak1yRDZHQV93YmgyWXg4bGxic05KbHhibm9tcjV0R0hNS1lHQ3NXWERqSVVUQ0E4TnJuZ05rZ0MxZ2o5XzdvQjhITF85YmZB?oc=5",
-      "source": "국제신문",
-      "date": "Mon, 02 Nov 2026 10:33:00 GMT"
-    },
-    {
-      "title": "브로드컴, 과징금 186억 대법서 확정…\"삼성전자에 구매계약 강요\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BUGM1N19tcGN4MkloLV9adFVBLUNsdU13MzVUVkFmM01KQzVaLUYzc0dHNVEzdEc4clk5YmZNZ2V0Mm16SGt3WGRNZS1SaDNDOGhjTEYzbklFRGNha2VWNQ?oc=5",
-      "source": "아시아경제",
-      "date": "Mon, 02 Nov 2026 12:11:19 GMT"
-    },
-    {
-      "title": "스마트폰 시장 위축 속…삼성전자, 3분기 세계 1위 수성",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Cc1k3bWpkUTk0TVhJMGZoUUpvRkx0UWlQbmg5RWIzRUhFN3J3UGRtc3diamh4bVByRmtNNzU5WmlOZFBRNVF1R2RnSGd1SjVVTmk0cmxJOFdyeUdrem9QZktHVDhjVW5Y?oc=5",
-      "source": "매일경제TV",
-      "date": "Mon, 02 Nov 2026 01:03:00 GMT"
-    },
-    {
-      "title": "삼성전자, 글로벌 스마트폰 시장 침체에도 3Q 출하량 1위 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBNVkN2WEx5NHhmZC01MVdTdTZDYk15Mmx0SVR0bUhwaTh6enc0aEdBbzZtQWx1SGRPTzI0LTdaSUdyNEk1OGlkb3FDVE5tYVhwNm5oMW5MRVB0MkhlYzUtbDZxQ2JhSk04S25LR1g1eUI?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Mon, 02 Nov 2026 02:40:00 GMT"
-    },
-    {
-      "title": "‘中 초저가’ 벽 넘은 삼성… 아프리카 스마트폰 시장 선두",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uRXVEVFlLeGpVQzdVQ3NEZXRlQ0dnZGhFSDljVEI2aDV3VXRkZ1dFWkFmZXpqXzY2ZmJvVVIxSWtYWEJZNi1DcktTM1ZwZVF0a1NMZFZRcmjSAVRBVV95cUxNblYxT2l0SlBZdkl6Qy1zWnZRc2k2NU5fVjFnNnJkTENUdHJqWlVuajBpRnFBRnV2c3FPNnhvN21NS3Rkc2dhd042dEZZWTZXU1N3T2w?oc=5",
-      "source": "세계일보",
-      "date": "Mon, 02 Nov 2026 12:00:00 GMT"
-    },
-    {
-      "title": "\"반도체 끝났나\" 했는데…'삼전닉스' 급반등하자 나온 전망 [종목+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JRUZsbzlOajZRYy1UOXpoRHR0RUlrb3M0Nld3ZlZETWcxV18wSFdGZ2FHNmFUZmtlTUVwRzQ1Z2EyZnVLNlNnSURFeHdQWmthN0xqQm1UV2FWQQ?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 02 Nov 2026 13:00:02 GMT"
-    },
-    {
-      "title": "\"5살짜리한테 돈벌라 시키나\"…동요없는 삼전닉스, 왜? - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1tbElteUgzSngySzZXMXFkdnB0R1J3czBac1FXT3dIaFU3Y1FSQm5GelU5MndDbUh1WUZyS29PQlMxeGJSQUx3U0ZPamNuamtPTnZ1ZzBfQm9ReDR5c211eUkwSXJuRWg3NTJVY9IBckFVX3lxTFBXVUJmTHdMSENFclZWZUxiN0lmam05c05tc2U3YWp1Xzk2VHN4aDFLeVUyM2N4SkhuM2EwNUg2Q1JqWkZWM2p4MjAzMy1rTGtGbXdqM3lkVUsxb1QzR3RsT0pVT2t4aXFTejA1WFcxMmladw?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 02 Nov 2026 06:28:59 GMT"
-    },
-    {
       "title": "삼성전자, '2026 다카르 청소년올림픽' 공식 후원",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1oM2x1eTdHamUtamRabTl5SWFleTQ4ZHVtMmpMOTFWQ0ZWYTc1WWQtQlNiY2psbExscTFreTFpaEpFSVlmMWNBdTlWOXdTZw?oc=5",
       "source": "전자신문",
@@ -77,10 +29,16 @@
       "date": "Mon, 02 Nov 2026 01:10:17 GMT"
     },
     {
-      "title": "삼성전자, 아프리카 첫 청소년올림픽서 공식 파트너 참여",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SNXRfa2FVTGpGNThUNTVoQlZzWVBjVGhTZWY1UmpwdUpRekh1empJNENIbjNhdTZPNHl3ekFpeWxBb3pIcHNDYlY0VEZ2TTl3S2FESXE0dFdNb1nSAWBBVV95cUxOQkhNaDRCa0hmVHpyWXlNVGs2T1gyOF8zNnNSd3lBSEVRcGpaRGpzUENEMmRZTFBDN2ZIYU9YbkJ3NVpvNzJqN1hiQ3hzb3I3X3BESmJobDBHMUl1aEJYTWc?oc=5",
+      "title": "삼성전자 ‘다카르 청소년올림픽’ 공식 파트너 참여",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMHpEaXVudVJKZG1jTGtuRXRFVkVZdDViU2E0Skl4V2liU0d3bFhJRl9FdVdnWXRNU3lwM1BWSFJtNmJ6eTJmYjg4MVRCMUpzaGhXRFRqOUNlV2ZGTzFVS3U3MlRvZXN4X21qbjFQWTJSQ012ZENGY1FIdTJmUlhZOW9xNmppZTlfUFV1c053?oc=5",
+      "source": "조선일보",
+      "date": "Mon, 02 Nov 2026 15:34:00 GMT"
+    },
+    {
+      "title": "스마트폰 시장 20% 급감에도…삼성전자, 3분기 세계 1위",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE40bHEzWEZsdVF1U21aZjhYOWFkNTBmdXF0NU9WUmM5Umh1RF9WY3pLdjVhYUFBNzNlRVhpUURrakFtdFpqcmE4dndUYW5faWd4WWtkYkp2NlUwZDTSAWBBVV95cUxQV3BmY014SFlVY1EzT0tmVGZiUThkZ3kzb0Z4YXRLWlM5SUZHQXIwUlZUTjRKdnItUnY1NUxtTVBvY1JBZVp0RzN1N3FBcFZOcmxLT2pYX0tNOEZfSWQ1cnk?oc=5",
       "source": "연합뉴스",
-      "date": "Mon, 02 Nov 2026 09:38:13 GMT"
+      "date": "Mon, 02 Nov 2026 00:50:10 GMT"
     },
     {
       "title": "삼성전자 '월세 지원금' 부정수급 의혹 커지나…평택시가 보낸 공문 [지금이뉴스]",
@@ -89,10 +47,52 @@
       "date": "Mon, 02 Nov 2026 01:50:00 GMT"
     },
     {
+      "title": "‘삼성전자에 갑질’ 美브로드컴 186억원 과징금, 대법서 확정",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pV1g2MDdybHhuUTNtRHRnZnRvaFp4N3A1cDBieVFfaTE5VmxmMmhrLXZvZGdMLTBzVF9sNzdtQlprcmdMNjNRdGE4MjJJcW5pNjJUZ2pLcWRxQjl4bTBSXzdGMUxCZXB6S0RXY1BiYjZESXF2RGfSAWZBVV95cUxOYkdLSnRhUTd0aW1HT2tmSTROMl9NWmdZQUtpME1mZFdtdXlaanpVTzN5UUpTa0pKeFdyclRXc3AzemNOenJFaFZ0ZUxkTEF1V2lQVE9hamZrMUdEdl85SG9VOGU0dFE?oc=5",
+      "source": "동아일보",
+      "date": "Mon, 02 Nov 2026 10:25:00 GMT"
+    },
+    {
+      "title": "‘삼성전자에 갑질’ 美 브로드컴, 186억원 과징금 대법서 확정",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5velFpR05aUWhfVlAzWEZtQWpZc21Od1NmeHM0RVRlLWtRWXVoU0htNEpnb2FDemZXTzh2bm9PWUtibmwySDdncGpmc3JmeUFDNi16bFM3UGZ6ZFNXVmlqb3d4TDNXaThXUGc?oc=5",
+      "source": "천지일보",
+      "date": "Mon, 02 Nov 2026 11:58:04 GMT"
+    },
+    {
+      "title": "美브로드컴, ‘삼성전자 장기계약 강요’ 과징금 취소 소송 최종 패소",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdks4eXpfQk1QdTEtd2QyeTRkVVdMSGRJcmdteWF4MnBzYWtyRXB1S1phc19CUDdKWVdRelpPSmtIRkhMVFpnak1yRDZHQV93YmgyWXg4bGxic05KbHhibm9tcjV0R0hNS1lHQ3NXWERqSVVUQ0E4TnJuZ05rZ0MxZ2o5XzdvQjhITF85YmZB?oc=5",
+      "source": "국제신문",
+      "date": "Mon, 02 Nov 2026 10:33:00 GMT"
+    },
+    {
+      "title": "이재용 삼성전자 회장, 미래 반도체 패키징 기술 일본 현장 점검 – 삼성전자 뉴스룸",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOMUpfV1NVaS1uSE1KWVJRNi10TG5Kdm1RQUNvVUF6RXBXZjgwME8ySExVOXhVUmZPMi1Wdy1xVEJLSmNodlY2bFBlZnpwcmpZM3lvVnozUHEwQmdfUkQzRkZfZG1mMUpxX3pFZHpzb1A1Zm9DR1d0OXo3bDBHcWV4T0Y1WnNyQmJYTENiMDNMUV9DeTNqOEQ3NjBkN2lUbG0xdXpmalRKR1JuY0xMQVZwN0xTZHJOSU5lekx1a3lXOHVhd04yeGRIaHd2cjlqX0cxV3J5dmZkZ3E5X1VRNWJpOXFqN2RHajBEZWM0OWQ3UjJhMWkyeGVwTlo0d2pQRzVzMmtudGQzanlKTXJkYW9BbmFEVDNtM1BSUG56UU5ONEg3Rkx3UExxVEdDNTIzLWQ5SXBNT3F2NlhyeDh4N3Ztdl8xcWtqdDQ?oc=5",
+      "source": "samsung.com",
+      "date": "Sun, 01 Nov 2026 07:21:41 GMT"
+    },
+    {
+      "title": "[유미's 픽] \"이재용이 콕 찍은 구미\"…삼성 60조 투자 시동, 다음은 오픈AI?",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CTS1HZGJQQzZBZVZtUkYzd2pabnZ4MjY3bGRtajg2NVpwVjZ3Yk9IN3NHTHRXclVEb1VIdnVYZnFKVGxtSlN3M3E5d1duN0w5aFEwWnhn?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 02 Nov 2026 08:28:22 GMT"
+    },
+    {
+      "title": "日소부장 협력 속도내는 삼성전자·SK하이닉스…AI 반도체 공급망 확보전",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sVXJqRlkxeHpCQ0lpN1BncHBoVmw1b255UWJhd1BiQlVMMU9FVXdUY25xb1ppY0I0RHhvRmhieXpDUUpWakVMdWNxX25rSU1mVEtzRmZ1RmNaN0FLUTJ6Q9IBeEFVX3lxTE00eVZCSmNTaHhtLS15bGtueVBKY2doMmJLRkFoMHdyRlI3dzBUV24weE1DUEpBTXEwV3Q5bTZWWDNqaWtIVzFiNkd1SU1VMUNJYTRUd2NpaF9Hb1ZGcUR3Umd0U195QkZJSndyTUVPYkN1M21BbHNwVQ?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 02 Nov 2026 07:01:40 GMT"
+    },
+    {
       "title": "TSMC, 美텍사스 투자…삼성 안방서 격돌",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96VDgxNTFJUkRSSnJ3bnNjX3k1b0oxcS1YY3pXUDMtMVV2ekJiTl9KZmt1QUE5Sk5LdHp1M3VZMzgzR2E0LV9iZjJWSGJwUQ?oc=5",
       "source": "전자신문",
       "date": "Mon, 02 Nov 2026 07:00:00 GMT"
+    },
+    {
+      "title": "평택시·삼성전자, 반도체 방류수 미량오염물질 관리 ‘맞손’",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WYk9VTzNMNmctODg4ZGhIY2oxTjBkeEljNmFBTmlfNEUwOEptVTlNLUhvUlRVTUxRWHNaazRMSUo2d293ZnkyZE5BVnBZZmNxUUNIdkprOHBzcTk4R3FJaQ?oc=5",
+      "source": "아시아경제",
+      "date": "Mon, 02 Nov 2026 02:34:09 GMT"
     }
   ]
 }
