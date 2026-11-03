@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T03:27:26+00:00",
+  "updated_at": "2026-11-03T12:44:40+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -41,12 +41,6 @@
       "date": "Sun, 01 Nov 2026 04:22:03 GMT"
     },
     {
-      "title": "코스피200 강세에 인버스2X 4.12% 하락…93원",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TejJpX05yb3FEVUZxYktFZlpDdVZTSlhYbnRTMXpMdy1XMks5VWVacWh3N3VBNHdXSVJ1Mjl6bVptR3NRWlRhYkRXb21ZYnREdFg1QXRhUVRlS1gycml5MVlHX2JkM0xvbDZQRnBB0gFyQVVfeXFMTnVIcnlrdmZQTWV1bjFueWVsSlhJOUZuMmdQVndMUHptOWdZTnRFbi1IVU1odlAybm1KZDB5WFNld2dCa3BQX1ZpQjFROEJtSTRiWHVJV1RFOFpHSHFsVzUxOUFmWUZjT2JBNnVhblFIbnN3?oc=5",
-      "source": "잡포스트",
-      "date": "Mon, 02 Nov 2026 06:24:58 GMT"
-    },
-    {
       "title": "코스피 힘 못 쓰는데 2.8조 몰렸다…개미들 꽂힌 '이 상품' [이수의 ETF줌인]",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56TUFETkRiS2M5UGEtempTQ1B0ZmhqaDNjM0owVS1ycFo2RjRmVjQ3MHJyR2lKUjM5V0RQOWNvM3lPQmFwc1BoTGFOZjZ6SXJVN0l4N2N1NVlWZw?oc=5",
       "source": "한국경제",
@@ -77,12 +71,6 @@
       "date": "Mon, 26 Oct 2026 00:44:43 GMT"
     },
     {
-      "title": "커버드콜ETF인데 '액티브'라고?…상품 줄줄이 나오는 이유",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yckFNMHBEdVpQT2NrQmd3azhHTEhfU1pNbkpvVno4Vm05Y2JadWNLMUwxR2JYY3VEa245SFVLQld4ZU04S2JBQmE4OG1ZclBqQUhHdkJRRTJDbjRkS2RTV3lR?oc=5",
-      "source": "아시아경제",
-      "date": "Tue, 27 Oct 2026 21:55:18 GMT"
-    },
-    {
       "title": "KODEX 200커버드콜액티브, 상장 일주일 만에 개인 순매수 2000억원 돌파 By The Guru",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85WVNYa1ZCWUZkVVZrdTc2aER3OU1ybV8wbFhJbjdKXzZSY0tRdXU0RGJKN05fYTNkMlBHTkpLUFltWnQtZVpJbVRMNDV5cFhuQ19lOHZmaHB3c0hIVmRXUU1DeVZ2NnIwLWVyeS1VSFM?oc=5",
       "source": "Investing.com 한국어",
@@ -93,6 +81,18 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oTVZGZVZnX2pIQkhJaDBoYUVvdDNsY19qY1lwS3Q3bHpha3NnMXpfblIyeGp0d1RQVFlHMFZGN3lUQ3RuTlRjZGxIbGZfWjFkcnc?oc=5",
       "source": "매일경제 마켓",
       "date": "Wed, 29 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "커버드콜ETF인데 '액티브'라고?…상품 줄줄이 나오는 이유",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yckFNMHBEdVpQT2NrQmd3azhHTEhfU1pNbkpvVno4Vm05Y2JadWNLMUwxR2JYY3VEa245SFVLQld4ZU04S2JBQmE4OG1ZclBqQUhHdkJRRTJDbjRkS2RTV3lR?oc=5",
+      "source": "아시아경제",
+      "date": "Tue, 27 Oct 2026 21:55:18 GMT"
+    },
+    {
+      "title": "삼성운용 'KODEX200 커버드콜 2종', 올해 개인 순매수 4兆 돌파",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaNUJoX2U5WTl4QVYzY1JGdVRINncwa2dRbG1rSWVhMWFTOFVCcFhoV2lPTFRtcWtrZlNuM3RCaDY2WkNBcDJyR3ZxV1N3YW9JWFBtSmVNaS1uZ3NyRFliZlpSWnBUbEk3MTMyMkU2bkVaQVE?oc=5",
+      "source": "마켓인",
+      "date": "Mon, 26 Oct 2026 00:46:24 GMT"
     }
   ]
 }
