@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-03T15:26:22+00:00",
+  "updated_at": "2026-11-04T02:10:57+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3097000.0,
-  "target_high": 3561550,
-  "target_low": 3000000,
+  "target_avg": 3092000.0,
+  "target_high": 3555800,
+  "target_low": 2300000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-02",
+  "as_of": "2026-11-03",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -35,6 +35,12 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=97239"
     },
     {
+      "firm": "iM증권",
+      "target": 2300000,
+      "date": "2026-11-04",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=97571"
+    },
+    {
       "firm": "야후 하단",
       "target": 1575000,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
@@ -42,6 +48,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "한국투자",
+      "date": "2026-11-03",
+      "target": 3200000,
+      "prev_target": 4700000,
+      "chg": -31.91,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
     {
       "firm": "교보",
       "date": "2026-11-02",
@@ -115,13 +130,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "SK",
+      "firm": "하나",
       "date": "2026-10-29",
-      "target": 4000000,
-      "prev_target": 4000000,
+      "target": 3600000,
+      "prev_target": 3600000,
       "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "NH투자",
@@ -133,13 +148,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "하나",
+      "firm": "SK",
       "date": "2026-10-29",
-      "target": 3600000,
-      "prev_target": 3600000,
+      "target": 4000000,
+      "prev_target": 4000000,
       "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
+      "opinion": "매수",
+      "prev_opinion": "매수"
     },
     {
       "firm": "IBK투자",
@@ -160,15 +175,6 @@
       "prev_opinion": "보유"
     },
     {
-      "firm": "DS투자",
-      "date": "2026-10-28",
-      "target": 2640000,
-      "prev_target": 2640000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
       "firm": "유진투자",
       "date": "2026-10-28",
       "target": 3700000,
@@ -185,6 +191,15 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
+    },
+    {
+      "firm": "DS투자",
+      "date": "2026-10-28",
+      "target": 2640000,
+      "prev_target": 2640000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     }
   ],
   "ticker": "000660",

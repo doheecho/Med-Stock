@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-03T15:26:14+00:00",
+  "updated_at": "2026-11-04T02:10:50+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 479474.0,
-  "target_high": 551395,
-  "target_low": 400000,
+  "target_avg": 477500.0,
+  "target_high": 549125,
+  "target_low": 370000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-02",
+  "as_of": "2026-11-03",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -29,6 +29,12 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=97383"
     },
     {
+      "firm": "iM증권",
+      "target": 370000,
+      "date": "2026-11-04",
+      "url": "https://finance.naver.com/research/company_read.naver?nid=97570"
+    },
+    {
       "firm": "야후 하단",
       "target": 290000,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
@@ -36,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "한국투자",
+      "date": "2026-11-03",
+      "target": 440000,
+      "prev_target": 650000,
+      "chg": -32.31,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
     {
       "firm": "교보",
       "date": "2026-11-02",
@@ -109,15 +124,6 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "NH투자",
-      "date": "2026-10-30",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "하나",
       "date": "2026-10-30",
       "target": 480000,
@@ -134,6 +140,15 @@
       "chg": -23.91,
       "opinion": "매수",
       "prev_opinion": "매수"
+    },
+    {
+      "firm": "NH투자",
+      "date": "2026-10-30",
+      "target": 530000,
+      "prev_target": 530000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "DS투자",
