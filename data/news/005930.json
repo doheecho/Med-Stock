@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-04T02:11:02+00:00",
+  "updated_at": "2026-11-04T12:57:22+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "[단독] 美서 'HBM 기반' 만드는 삼성 … TSMC 대안 찾는 빅테크 공략",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZaS1GUUh5dzNTbk56OVpBQk9Hc25xVU9FQlM4S24xN2NhOG05VGtOeVlQWkdra3dEMDhpemh2WnFSN0ZubWRIamY4S0dwUUtPSDhxZG53?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 03 Nov 2026 08:35:42 GMT"
+    },
     {
       "title": "삼성, 급하게 'SOS' 보냈지만…대만 업체가 주문 거절한 이유",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xZkxKZ2pXbEN5TVg3SWsyRXMtRjRld3AxdGlaUkZJdTJ4NllnaFdPY0tVWlBSYTlRREpEU0c0V1lGOUk4RVpyQWZQRWVpbFhzaWlLVE44VFhtQQ?oc=5",
@@ -11,10 +17,10 @@
       "date": "Tue, 03 Nov 2026 03:00:07 GMT"
     },
     {
-      "title": "삼성전자, 2030년 8인치 파운드리 완전 철수",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1za01uUTFXdWcyNG1sbWpIRy1jT2hTaEQyVFVTcjAwb0N6amRnTHF3ckpTZl9yTVFKZ0ZZbDNoQnY2QnNLaEt0QjRSdnpmMzJobS1XNkhqcUZVR1J5T2ktbEVQRi0yZw?oc=5",
+      "title": "삼성, 8인치 폐쇄 1호 팹 장비 300대 DB에 통째 매각",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9iOU40VUpWTlMyYW5YdFZabDdXck93RVB1NXJpdDdCdURBS19qSFJFZktMcXY3a2dBRTItbWVxMkZ6ZnNFdnBfYTNSLUpQLWI4bGFMNXFERUxmc1J0S0FNNUtTWk1IUQ?oc=5",
       "source": "디일렉",
-      "date": "Mon, 02 Nov 2026 07:27:41 GMT"
+      "date": "Wed, 04 Nov 2026 09:47:09 GMT"
     },
     {
       "title": "모델 김자연, 70세 손영권 삼성전자 고문과 결혼…25세 차 극복 - 머니투데이",
@@ -23,10 +29,16 @@
       "date": "Tue, 03 Nov 2026 07:50:10 GMT"
     },
     {
-      "title": "삼성전자 TV, 미국 컨슈머리포트 평가서 크기별 전 부문 1위",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52eTBpMlBZcmhUNlRiYmdSNGk2Y3lKcXdEVVBhOHZwbUx3c0h6U3ZNZnNIRmhFNHB2NG11OHo1VXpBNkljRk1pRzVnbFBkZzlUWUFKN0VNcHpndHPSAWBBVV95cUxQdmNnNnJiZnk4OEdDMEhYQ0lQQy1heUZqV2FveEE4RWRPTEpLQ1Jqay1sMWVFRjNqWWtudnN6ZWVxNXAyWVVwaTVGUTVud2RtTUtZeXRKZU9MZW5pYklYMEw?oc=5",
-      "source": "연합뉴스",
-      "date": "Tue, 03 Nov 2026 23:01:00 GMT"
+      "title": "칠순 손영권 삼성전자 고문, 25세 연하 모델 김자연과 결혼",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15Mjh1WjNra2J6eEhiQUdXcDZfeThoU1JTdVRfMXVyYnVMLUoxQmtTd2lWNDhYOGJmSFJoVTlnby1JZGJaWHZxNWZkckxVVlFVX0JaUXdNTFRVakhQWXNST3UxMzctdEk?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 04 Nov 2026 01:29:00 GMT"
+    },
+    {
+      "title": "25세 연하 모델과 결혼한 70세 삼성전자 전 사장…러브스토리 깜짝",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9WemR2MkZ4dFVKaWRQeTdFa3hIcUFwdW1MN2NEZ193UlZndXhsd2V0ZDVGZXVCWUZrWHNOZ0ZZQWZEMmlHUEp6aEhUbWpKejJjQ2loUWx3?oc=5",
+      "source": "중앙일보",
+      "date": "Tue, 03 Nov 2026 23:38:33 GMT"
     },
     {
       "title": "삼성전자 TV, 美 소비자 평가 휩쓸었다…전 크기별 부문 1위 By EBN",
@@ -38,61 +50,49 @@
       "title": "3Q 전자업계 맞대결…TV·가전은 LG, 디스플레이는 삼성 勝",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tUUhpbzBUR1EwM29GUmdKSzRnMmJ0cGdQNFF2LXZxenF3NGJLY3E4aWV4OXdWeGU5MGFDZG5pUVVFQjJDM3lNSzZfek9pQ2lwYU0yUXloRk5nU01GZXAyMWIwTnNZMWR3bXZRdFRPVHE?oc=5",
       "source": "연합인포맥스",
-      "date": "Wed, 04 Nov 2026 00:59:27 GMT"
+      "date": "Wed, 04 Nov 2026 00:59:00 GMT"
     },
     {
-      "title": "TSMC, 삼성전자 美홈그라운드까지 왔다…텍사스서 인재·인프라 혈투",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkQld0MUdod2wyU1ZjRHZvSXBISTd2cXl5ZFlQYk5VYXJwMTRVWUpWbjNiQ1V3dkU4Q0E3VHlLU3BsLWZiZWdMMUxjLWFpNU1pR2lMM2ZzeERoS2VCYm9aWtIBeEFVX3lxTE5QcGhNRTJOS0dpRXlhLTNLOXJxc3FYbjYxbG9XQTVHZUl2NjN5NzZMV0xUNmlucmdjZ3AzXzVMMTVqZHp3a2FxcFFpMVhOVkxCemdKNUpYSWdSY3NyNXpJb0JUVjh5U1NiX0FkZE11WXBZQVZ5ekdGVA?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 04 Nov 2026 01:51:15 GMT"
+      "title": "TV 시장은 정체, 패널값은 부담…삼성전자의 달라지는 수익 전략",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPMzdXNFVrMS10WjI2bmYyME9lbFdNUXdsaDhzMHI3S2VxTzFxTm1BYmFZV1VuWlJOd3JpMTRaZENvOEpqTHRyN0RUUGpmUHFEb19PV2FrSzRVQjNqeHZMRTRkcXdZeVJtY2RwYTFtSl9qc2hLOWZuUy1sSkVuTnhKN1Fub1RaRGR3X2xTVU5PZE55RU83YmJJbjB5dDhCMHJrTTgwMnZMYmh4REFYa0diVzJ0ODZfUzhJSk4zVnl6N0RtM0hzTzcxck55VHAwRFdJVFRqSS1vSjhQM20xOEZwVUduZGVfMlh3YTA0cW9oZ2t2ZEZER0lBYlV1bXFaZEJJWXc?oc=5",
+      "source": "데일리안",
+      "date": "Tue, 03 Nov 2026 21:00:00 GMT"
     },
     {
-      "title": "삼성전자 방어 나선 TSMC..美텍사스 생산거점 '눈독' - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hVjB4SF9uUGplY0tlVkk4cTRZRllzMUNVdTlEbUF1V1VJdUZCbHpTdndVcVlPYTFtdzF4eC1aTHZMYUhYU1AtWGFjb0xkUTNuakZVN1F1QW5Ha0Fmb1pXMWJnUG1ybHpfcUVEb9IBckFVX3lxTFBVLTVKaEpLVHdZVlFIekpDb2l5cVRVaFRoX0JhbzJqYVRtRXpNalpEeGUwMU9rLXM5UmVJZVhMR1VsbzE3dkRLWDVucngtSmNfU1d0WmlWYXdvdnFCa0NLamhSREV5Wk1SRk9mQ2pUTS0xQQ?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 03 Nov 2026 08:40:00 GMT"
+      "title": "\"삼성전자 40% 빠졌는데 반전 온다?\"…증권가서 나온 '파격 전망'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3aGFLV3liVktac2FZMWRmR3E5SUVRNzI2RmVfQkJ2ZkJkNkhIQzVCTVN3M3V1N2ljdXZMemg3UlQtNlp6TC00SEFvOURJWl82RlhRQWdpRzlfbHhoRmlXOA?oc=5",
+      "source": "아시아경제",
+      "date": "Wed, 04 Nov 2026 00:59:41 GMT"
     },
     {
-      "title": "[단독] 美서 'HBM 기반' 만드는 삼성 … TSMC 대안 찾는 빅테크 공략",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZaS1GUUh5dzNTbk56OVpBQk9Hc25xVU9FQlM4S24xN2NhOG05VGtOeVlQWkdra3dEMDhpemh2WnFSN0ZubWRIamY4S0dwUUtPSDhxZG53?oc=5",
-      "source": "매일경제",
-      "date": "Tue, 03 Nov 2026 08:35:42 GMT"
+      "title": "KB증권, 코스피200·삼성전자 연계 원금지급형 ELB 모집",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NRDYwOUN5U0VSYjljOVgxSDExMFRNUGF4VmJZVUdiTEdGQlFsckw5ak9UNXJLa2xiNlBBX2t0YU83WkMtQTh1ZmpRNTlhOHpneXhFcFNETHh2UQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "date": "Wed, 04 Nov 2026 01:12:29 GMT"
     },
     {
-      "title": "KB증권, 코스피200·삼성전자 연계 '수익 참조 상승형 ELB' 모집",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fNkM0dmstaDlhQU9hNjI0Q05Ya0w4MjFuUE5hM1N0Y0hZaHdIdENYc3FYaDdsZUNxLWNJWjBuYlVyd253ZWYtM2JmS2FTWXlKTGRzbldpZWFuQQ?oc=5",
-      "source": "한국경제",
-      "date": "Wed, 04 Nov 2026 00:37:26 GMT"
-    },
-    {
-      "title": "KB증권, 코스피200·삼성전자 연계 '수익 참조 상승형' ELB 모집",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JaFhkZ3FOY2JObkZwNmNhVDI4SEptZmM4Mktzbml3Ti1aeWR3dEMyU0xOVlZLeDBTS3NUdmpJNDdYMmhDWEdMYjZyLWxWdEQ3ZzNMXzE1LUlIcVHSAWBBVV95cUxOWGRIcXVnaU5KOGtlMDhoTzJRaC03VWFhM3pvc3NEWm9TUE5RY1hZZF84M1RrYmhuVExqM0U4WWRoaDZGU0pQaGNVczZ5RjBVYUhsUTFBS1pMYm1iaXBRR3Q?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 04 Nov 2026 01:11:36 GMT"
-    },
-    {
-      "title": "KB증권, 삼성전자 상승 시 최대 연 37% ELB 모집",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zdnJ6R25Yak5hZGliYUx0b2prb1lhMGh6d1NBU1RzQlg4cW5xRWZoQTh4eGhGYXZjTVpRa2c1R1JIX292bDNGTnhmM3F1NE9qYVV5T1R1b2VMdzN6?oc=5",
+      "title": "[리포트 브리핑]삼성전자, 'STRESS TEST' 목표가 370,000원 - iM증권",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwRTZsNEYwMjVwa3piLWtWdUNid2diak5TUFBFMm03ZnhnWm92ZGFFa1p2Umwzc1V4NlpvNmhONUdWSldtN0gyQjhkSzU5Vmp6TUxGNV9WZl9XZWJx?oc=5",
       "source": "뉴스핌",
-      "date": "Wed, 04 Nov 2026 00:44:00 GMT"
+      "date": "Wed, 04 Nov 2026 02:06:00 GMT"
     },
     {
-      "title": "가격 상승 둔화·아쉬운 주주환원…삼성전자 목표주가 낮추는 증권가",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5xOHhjamFrb2Y2SlktZGsxNms1LU9DS2xGUFQxTHBCSkF5T3FCWHZFcmZ4TWRjTXJjU3ZsSUJqcGhlNERpNEtOOXFuNHB5VURMRkhNWWxqY07SAVRBVV95cUxPRTNtY2xwLVdFUk1wM3ExYkRMWHI3eTIwZkx3NGhFc19wUVZETjE5X3ZKRzN1eEVoa0RqZnMydmgxSE82MEx0WFRpVW5xcEtGX24xV3Y?oc=5",
-      "source": "세계일보",
-      "date": "Tue, 03 Nov 2026 02:07:38 GMT"
+      "title": "삼성전자서비스, 서비스품질지수 에어컨 AS 부문 2년 연속 1위",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qTUkzcW1aTTItcGRJd2E2enFTZ1RMSnZxc1JpNWZENmd5aGxUQ20zdmJwUjh3dG5fVHM2TnVoaGVWWjBIaWV1WXA4UWpCMWk1TTZBdExTUC1WUmPSAWBBVV95cUxONEY4RUVVNjduWDVhTHhZMHFzeVlvUWJSbUpmMnFJb2lfSkxTb2lXc25ocE52R3lzN1VIMWp0M3R2VWp2Z0RNb3ctMEoydHVDWlNOUEEwaHQxU3pYajVoUWw?oc=5",
+      "source": "연합뉴스",
+      "date": "Tue, 03 Nov 2026 23:20:09 GMT"
     },
     {
-      "title": "특징주, 삼성전자-반도체 생산 테마 상승세에 3.09% ↑",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FejhrUDJOVDVPaTVoOG5GRWZsZ3pwOXN0NDZSbmZvNGpZVlFtd0NSdk5MMTlaYWZUSzg0bGEtMmNBRU9lNHZmSWVnX2d3RkFRQ3c?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 04 Nov 2026 00:23:47 GMT"
+      "title": "삼성전자서비스, 2026 한국서비스품질지수 에어컨 AS 부문서 2년 연속 1위",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fX05fOHllRExfdXpmWHBSbWdaVC1GcTF0NFJDNFVycmxlTmxhdk1HdndUMzktVjNLNUdyWmlNWHFacWNvOTFxNFhnMkRTTjBuZ3NKLXdXTGxHeExsSFpHTjFJdTBtSExxWmZHUnJ2SQ?oc=5",
+      "source": "기호일보",
+      "date": "Wed, 04 Nov 2026 00:16:05 GMT"
     },
     {
-      "title": "삼성전자 MX, 스마트폰 1위 수성에도 2분기 연속 적자 '곤혹'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wZjlsM2lYbGJJSmdfY19jRXZzNnR2SDJnNk9wcVR5X1o5X1ktOUNUZGx2RmRTbkpYbFBzT3V0VlN6eUd2cjJ1Z2ZlcTJIcHliR1F3c3BneHhRYWZ5RC1lRGR4YnpRVUV4b2RQSE1kTzQ?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 04 Nov 2026 00:30:20 GMT"
+      "title": "삼성전자서비스, 에어컨 AS 만족도 2년 연속 1위",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHMVFnWjRYMGs3cWtJcHlWV09BT2Y3dTRRT1hDSHBUTl9pOUVNang5WDdWZDB0aFJLVHh4TXJJRHZqekxaY1BnSm5UREdaTUFVUGNqOUNWSERVem55QW1PUXh1elN6YU8xZkFZY1JtMFRrTDA?oc=5",
+      "source": "마켓인",
+      "date": "Tue, 03 Nov 2026 23:39:59 GMT"
     }
   ]
 }
