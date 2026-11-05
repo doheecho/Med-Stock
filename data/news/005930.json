@@ -1,68 +1,74 @@
 {
-  "updated_at": "2026-11-04T15:42:34+00:00",
+  "updated_at": "2026-11-05T02:16:52+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "인텔, 서버 CPU 증산에 18A 생산 조정…삼성 파운드리에 기회 될까",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DWkNiZmxiVkZMOTA3T05UWG9OMkoxLWJ6V211YWI3YURUMG9YOUgwNjR5akF4WnI1b3Qyd0V6cTVld0hjV0ZWMUJsT2ZOamUwYmJKS3hpTGZJZmpQRDFxMDhjSVlTVVNP?oc=5",
-      "source": "녹색경제신문",
-      "date": "Wed, 04 Nov 2026 07:02:17 GMT"
+      "title": "“대안이 없다”… 삼성전자, 中 LCD 패널값 인상에 TV 사업 적자 장기화 우려",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVUhsZWhyNjdTVkpPLW1nTWkxTGtvclRFUWZtcUVYamp0SHVLRUNRbmNJa29kdkRZb3U4SnNKczQ0a0tnbmhlWkVrSFgzXzZiZ1I0RzNubnZqek83clFSbU9hNFY0NF91bWNRS1ZuUFpmR0JCa3YtcVdmZVJheE1FRFB30gGWAUFVX3lxTE9jTWtOU0RXcjVwY040bi1iX1hDNTYxZXQxRGdTZ2lpSklkYlN3QngwNGk2VHJOYlJfbkhtZkZlRlNmdXE5eS1ZWEtXTkM1OFBEYW45Ym1tWC05UENNUFJQdDJtX1dycV9zVTBHdjllTG56QXBNSWVDTGJPRXdPaGRUN25KemprSTZSNUxrSXlsQlcxMEUtQQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Wed, 04 Nov 2026 21:11:28 GMT"
     },
     {
-      "title": "삼성, 급하게 'SOS' 보냈지만…대만 업체가 주문 거절한 이유",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xZkxKZ2pXbEN5TVg3SWsyRXMtRjRld3AxdGlaUkZJdTJ4NllnaFdPY0tVWlBSYTlRREpEU0c0V1lGOUk4RVpyQWZQRWVpbFhzaWlLVE44VFhtQQ?oc=5",
+      "title": "삼성 '세계 1위'에도 못 이겼다…애플이 돈 쓸어담은 비결 [테크로그]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qMlZkLTNJbS1VRXhLV0wyamVDRlFfajZjek9xU2IyMl9Yb09vUmdoaWxHdkV5N2hERThGeVY0YkJzMGhpTGJRb1NCeUFxbFBZNzktbWpyZFBzdw?oc=5",
       "source": "한국경제",
-      "date": "Tue, 03 Nov 2026 03:00:07 GMT"
+      "date": "Wed, 04 Nov 2026 08:22:47 GMT"
     },
     {
-      "title": "TSMC, 삼성전자 美홈그라운드까지 왔다…텍사스서 인재·인프라 혈투",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkQld0MUdod2wyU1ZjRHZvSXBISTd2cXl5ZFlQYk5VYXJwMTRVWUpWbjNiQ1V3dkU4Q0E3VHlLU3BsLWZiZWdMMUxjLWFpNU1pR2lMM2ZzeERoS2VCYm9aWtIBeEFVX3lxTE5QcGhNRTJOS0dpRXlhLTNLOXJxc3FYbjYxbG9XQTVHZUl2NjN5NzZMV0xUNmlucmdjZ3AzXzVMMTVqZHp3a2FxcFFpMVhOVkxCemdKNUpYSWdSY3NyNXpJb0JUVjh5U1NiX0FkZE11WXBZQVZ5ekdGVA?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 04 Nov 2026 01:51:15 GMT"
+      "title": "[단독] 삼성전자 '제 6노조' 설립 추진…기존 양대 노조 출신들 뭉쳤다",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBEelU3ekdEQTdIQWNvSjdmODVVY2F5SFFZb2s3S0RZWVVUYmJuSzdoQ25RY050ZmE5Um5hdGJ6Q3hzWDRudkE3OHdlUQ?oc=5",
+      "source": "아이뉴스24",
+      "date": "Wed, 04 Nov 2026 22:00:00 GMT"
     },
     {
-      "title": "\"삼성전자 19만원·SK하닉 90만원이 바닥\"...'손절' 말라는 전문가, \"이때 더 사라\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JV3c4MGpycjNwNDlKZ3lUcERQeThRQ0VfQnk1aklYcC1fZkZFX2NObC1vZlA0S2c5dm5heUhNVGp4YzBIbHN2TzVPekxEek9SQy1YVDZwamY2Zw?oc=5",
-      "source": "파이낸셜뉴스",
-      "date": "Tue, 03 Nov 2026 00:01:49 GMT"
+      "title": "삼성전자 제6노조 설립 추진…동행·초기업노조 출신 주도",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vWXFBbmpVZDV4UWR1eUNCdmpydE9uYWc5Njh2aklxbEllcDBsYk1hSzVUVXYyNTVnX3ZMMWZUbFFJRDR1WWU0QVROS0QyV1ZiQ3VnZERRMUk0VW_SAWBBVV95cUxPR3NlR1BfSXFxSlVGdDVnbE9DcTlyWjhtOE1qTEJWUVFBeUNSbXBiUG00djVOcUJzeHZZUndheWNKSUhzRXFuWFRkWHZDNjNERTJKWG9NUWdnd01ST2VURnE?oc=5",
+      "source": "연합뉴스",
+      "date": "Thu, 05 Nov 2026 00:54:46 GMT"
     },
     {
-      "title": "코스피 3.59% 내린 5648 마감...삼성전자 4.2%, SK하이닉스 5% 급락",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNlFUUjRjZkRYaUpuWTlqbW5TdnliNDdsM19NN0FTSGM0U0dmSE5UbnNKWGFQSVhkakc3Sy1JRXRJWEJLS210UFI2X0ZBdXkyV0dlNUZDRVc1TWg1U3B5ZW1FMjJwSmkyQnJhb0szUU1zdUFIa0Z3OVI2NF9pUmZ0dA?oc=5",
-      "source": "조선일보",
-      "date": "Tue, 03 Nov 2026 07:21:00 GMT"
-    },
-    {
-      "title": "또 '232조 돈방석' 예고 떴는데…삼전닉스 결국 뒤집힌 이유 [분석+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0dU10Yk9HNUxPQV9yQlpXeGMwY1BhUFdNRWhkSjNNb1ZfcWlQRGtHaHFNeGEyaDVoY04zWUVOc2xhdHpSSWVuZ2dxQ2o0MmtnSVg1V3ZTTDNCdw?oc=5",
-      "source": "한국경제",
-      "date": "Wed, 04 Nov 2026 14:32:00 GMT"
-    },
-    {
-      "title": "모델 김자연, 70세 손영권 삼성전자 고문과 결혼…25세 차 극복 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90Vk5YbFp6dlMwdnBNZ2o0RHNHMDNFR0Z3UExaWmVFeGg1a3RmdjNNRmxRNlc2cVk0cjd0amhicDkzRTE0a01Qd2E3ejRHQTBxT3psdmJCbTloOEVubWtSMHlyQ3Rsb0MxdnFn0gFwQVVfeXFMT0FySFVfelJuVi1SX1FzMDZkZFk1NWpzZUN2RTB1WEFiMVJwZl9yUDQydUtPOGlQLXN5dGk2UjFlSGtfOUp3VEFtQ0JkMTkzWXIzR3U2enVackFkdGtYR3E2MHZYVmJZMDdtWlJ3LXFhaQ?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 03 Nov 2026 07:50:10 GMT"
-    },
-    {
-      "title": "칠순 손영권 삼성전자 고문, 25세 연하 모델 김자연과 결혼",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15Mjh1WjNra2J6eEhiQUdXcDZfeThoU1JTdVRfMXVyYnVMLUoxQmtTd2lWNDhYOGJmSFJoVTlnby1JZGJaWHZxNWZkckxVVlFVX0JaUXdNTFRVakhQWXNST3UxMzctdEk?oc=5",
+      "title": "삼성전자에 6번째 노조 추진…’유니온샵’ 설립 신고",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xX3p2S2x6RUVSbTd3cGtTY1JYUzZqVG1lVUNmOXRhMkRzNzZNUklybTRyRzAzY1V1WjJwMDlQNTFLRDlyYlhSbDd1MHFNeWFvZGJ6Mks1SE9HU21ELVhES0xZSTZ0M28?oc=5",
       "source": "연합뉴스TV",
-      "date": "Wed, 04 Nov 2026 01:29:00 GMT"
+      "date": "Thu, 05 Nov 2026 01:52:00 GMT"
     },
     {
-      "title": "25세 연하 모델과 결혼한 70세 삼성전자 전 사장…러브스토리 깜짝",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9WemR2MkZ4dFVKaWRQeTdFa3hIcUFwdW1MN2NEZ193UlZndXhsd2V0ZDVGZXVCWUZrWHNOZ0ZZQWZEMmlHUEp6aEhUbWpKejJjQ2loUWx3?oc=5",
-      "source": "중앙일보",
-      "date": "Tue, 03 Nov 2026 23:38:33 GMT"
-    },
-    {
-      "title": "삼성전자 MX, 스마트폰 1위 수성에도 2분기 연속 적자 '곤혹'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wZjlsM2lYbGJJSmdfY19jRXZzNnR2SDJnNk9wcVR5X1o5X1ktOUNUZGx2RmRTbkpYbFBzT3V0VlN6eUd2cjJ1Z2ZlcTJIcHliR1F3c3BneHhRYWZ5RC1lRGR4YnpRVUV4b2RQSE1kTzQ?oc=5",
+      "title": "라이프운용, 삼성전자에 주주서한…\"주주환원 유보, 독립 검토 필요\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wSGxQTlVEVzg5MnZLclJEWDJGUGowMlBTSkNrSTZmbi1jb1k4bVhqZy1kN1RQTDFaX3h5WFc4Z0ZEMDA5Z09rcmpMWU8tREplRUNxN2VNaHU2OXB1cjc0UkpDTDQ3aHpyZFNDQTlXelPSAXRBVV95cUxQaG53VTR5czRybjB5MzRMSEQwT3J3bk1weUgyODZYdW45cW81VnUzUElFVGNwRVlkQ2diTFZBRm5tWGdrUHlvTTZGUy13cUN1d3phR21hMFRFVUl0U1d1cTRmcnlhd3dZcEg1MGgyWjJLZWVXWA?oc=5",
       "source": "연합인포맥스",
-      "date": "Wed, 04 Nov 2026 00:30:20 GMT"
+      "date": "Wed, 04 Nov 2026 23:43:28 GMT"
+    },
+    {
+      "title": "\"주주환원 유보 검토해야\"…라이프운용, 삼성전자에 주주서한 보내 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90WEFtaEJnY1JpLUIzeGRiQ2dIaHpKdHhEZTBIZEZGd0tZemhaQmpOQjEzSUZ2eUFkMFBYN0VGTjNnT0hZTnE1VmlFNENuT19oQzVCQlROcUdCemFwVEdZQzFnOHR3NF9B0gFuQVVfeXFMTUlnTEZUUXl4dmNDZG5TSlhtX0JFY1NMV2phSWZyTWE3TFpRODFqaEpObG9oMWpIVzFBU3Z5dVc0aEEwYlU5ZTB1RC1ocEZ6SmhiY3ZYV1VBTV9MN3A2TWVrRGNxRnIwanBETDdJNHc?oc=5",
+      "source": "머니투데이",
+      "date": "Thu, 05 Nov 2026 00:02:44 GMT"
+    },
+    {
+      "title": "“주가 1만원 내리면 이재용 증여세 650억↓”…75조 주주환원 이래서 미뤘나",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE44NDBiUUp4aWd2UjdXbEJDM29jcmxPZzR6ZGJMMVpEWjVCNWR0VVp0eThueGZIbDZwVXBBY0I4OEVvR29XOTdxZ1BkX0RhQ180RjIzT1haQ09yNDFTNTEtLTBJeDJHNjRHR2xpTXFEQnJhaDdqUnNJX2VKMA?oc=5",
+      "source": "이데일리TV",
+      "date": "Wed, 04 Nov 2026 23:49:00 GMT"
+    },
+    {
+      "title": "KT·삼성전자, AI로 고속철도 통신 끊김 29% 줄였다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kREJlTGRQS3lINERTa0lSOTRhOUhnR09nb2plZlF3VGFMeXdtRktqc3NZYi1vNXUwNDNPRTJfTnVOZFZ0WFBudTJDekJqY0RIQ2VCNHh0d3ZKMmp1Vjkxai01TUYzOW_SAWxBVV95cUxOWElld0VWS2M1OXFjV0lQNTFNSE5UTFhIVFk2Mi1OZFQxdFVnOGRpSjdaR21OS3UzSjl4endpcXdJNTFFS0wzWm1zbE5ONXpNS1A2LUJmOU1MaWJiQVlwM2QweUF4OHNtdVdQanA?oc=5",
+      "source": "머니투데이",
+      "date": "Thu, 05 Nov 2026 00:36:40 GMT"
+    },
+    {
+      "title": "KT·삼성전자, 고속철도 통신 끊김 29% 줄여",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fczRGcXpMYzZEUUNPcGpFVUtJOFV2OWZIV21MbWh4R0I5dGkwSnhlMGhQTjRheWNkV3l0THB2cXFXdjVSdk5VV1Z4RjBBT3pOdmo1QVM3RXFMOHRrRW1RTjNiMXlaSXRrMjdBMFVXb0LSAXRBVV95cUxQQ2g5VzlXckNOaFM3Q3lJanVWUmUtNjIwTnlEd1NJVlNHenZ6Z3VVeElKaTRKVmlyUUtjOWFFejJpWkZzSDJRQTB1bTRvanZfRVJZRHJ0ZldRMzRCMW82ZTVKLUJNQ3JBSE1UN3JQa3NMaGwyNg?oc=5",
+      "source": "IT조선",
+      "date": "Thu, 05 Nov 2026 01:16:51 GMT"
+    },
+    {
+      "title": "KT·삼성전자, 고속철도 통신 끊김 29% 줄였다",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KXzNtLUpUMGpFYkVxWWFMUVlvUl9ycTJ5elpsbEF5Y0Y4dm5XTm1LNWZLb0ZJYlFmZlJtekpBNldUc0pVWFRlbERoaWpEVF9oUm9QSmZR?oc=5",
+      "source": "지디넷코리아",
+      "date": "Thu, 05 Nov 2026 00:57:43 GMT"
     },
     {
       "title": "삼성·애플, 폴더블폰 '접는 기술' 경쟁 붙었다",
@@ -71,28 +77,22 @@
       "date": "Wed, 04 Nov 2026 07:26:50 GMT"
     },
     {
-      "title": "애플, 글로벌 스마트폰 매출 절반 차지…삼성은 출하량 1위",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51aE11VzZWdmgwcHJFSlV6a3VFS2J0dzhXVU5wYnBaNERQcktYZEpoMW5PZW9RbXo5UGl3STRucmdtWTVWdzBkR2VFVXFIem1SWkNJWVdHN0pxYzDSAWBBVV95cUxPcWd4ZnY5QnQ5N0l2RFBNbFdfdjNhYlBMcTYzeEU1US1leF9sdkVzTGJVTFU0NlZ5UURmbjlKanB0VXZYMk9vN1lGdVZtQ3VaMm16UmVaUTZfdnhMQTVUazM?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 04 Nov 2026 04:56:28 GMT"
+      "title": "칠순 손영권 삼성전자 고문, 25세 연하 모델 김자연과 결혼",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15Mjh1WjNra2J6eEhiQUdXcDZfeThoU1JTdVRfMXVyYnVMLUoxQmtTd2lWNDhYOGJmSFJoVTlnby1JZGJaWHZxNWZkckxVVlFVX0JaUXdNTFRVakhQWXNST3UxMzctdEk?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 04 Nov 2026 01:29:00 GMT"
     },
     {
-      "title": "삼성전자 TV, 美 소비자 평가 휩쓸었다…전 크기별 부문 1위 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9LTkpTRkR2ZjhQVTZkZXFYOXRDSkNNLW55TEQyVUd4Q1R6VDd2T0puSHhCaEdaT3picDZHNWlDWEd1aEozVWpGMFh4Ukk3WkpRMVNyVFhyOHNNYU5EbnRDakZSLW95djZibFY3SUY1eDc?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Wed, 04 Nov 2026 00:31:00 GMT"
+      "title": "모델 김자연, 70세 손영권 삼성전자 고문과 결혼…25세 차 극복 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90Vk5YbFp6dlMwdnBNZ2o0RHNHMDNFR0Z3UExaWmVFeGg1a3RmdjNNRmxRNlc2cVk0cjd0amhicDkzRTE0a01Qd2E3ejRHQTBxT3psdmJCbTloOEVubWtSMHlyQ3Rsb0MxdnFn0gFwQVVfeXFMT0FySFVfelJuVi1SX1FzMDZkZFk1NWpzZUN2RTB1WEFiMVJwZl9yUDQydUtPOGlQLXN5dGk2UjFlSGtfOUp3VEFtQ0JkMTkzWXIzR3U2enVackFkdGtYR3E2MHZYVmJZMDdtWlJ3LXFhaQ?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 03 Nov 2026 07:50:10 GMT"
     },
     {
-      "title": "3Q 전자업계 맞대결…TV·가전은 LG, 디스플레이는 삼성 勝",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tUUhpbzBUR1EwM29GUmdKSzRnMmJ0cGdQNFF2LXZxenF3NGJLY3E4aWV4OXdWeGU5MGFDZG5pUVVFQjJDM3lNSzZfek9pQ2lwYU0yUXloRk5nU01GZXAyMWIwTnNZMWR3bXZRdFRPVHE?oc=5",
-      "source": "연합인포맥스",
-      "date": "Wed, 04 Nov 2026 00:59:00 GMT"
-    },
-    {
-      "title": "TV 시장은 정체, 패널값은 부담…삼성전자의 달라지는 수익 전략",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPMzdXNFVrMS10WjI2bmYyME9lbFdNUXdsaDhzMHI3S2VxTzFxTm1BYmFZV1VuWlJOd3JpMTRaZENvOEpqTHRyN0RUUGpmUHFEb19PV2FrSzRVQjNqeHZMRTRkcXdZeVJtY2RwYTFtSl9qc2hLOWZuUy1sSkVuTnhKN1Fub1RaRGR3X2xTVU5PZE55RU83YmJJbjB5dDhCMHJrTTgwMnZMYmh4REFYa0diVzJ0ODZfUzhJSk4zVnl6N0RtM0hzTzcxck55VHAwRFdJVFRqSS1vSjhQM20xOEZwVUduZGVfMlh3YTA0cW9oZ2t2ZEZER0lBYlV1bXFaZEJJWXc?oc=5",
-      "source": "데일리안",
-      "date": "Tue, 03 Nov 2026 21:00:00 GMT"
+      "title": "25세 연하 모델과 결혼한 70세 삼성전자 전 사장…러브스토리 깜짝",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9WemR2MkZ4dFVKaWRQeTdFa3hIcUFwdW1MN2NEZ193UlZndXhsd2V0ZDVGZXVCWUZrWHNOZ0ZZQWZEMmlHUEp6aEhUbWpKejJjQ2loUWx3?oc=5",
+      "source": "중앙일보",
+      "date": "Tue, 03 Nov 2026 23:38:33 GMT"
     }
   ]
 }

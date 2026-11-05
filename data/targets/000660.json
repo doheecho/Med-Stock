@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-04T15:42:30+00:00",
+  "updated_at": "2026-11-05T02:16:49+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3092000.0,
-  "target_high": 3555800,
+  "target_avg": 3054286.0,
+  "target_high": 3512429,
   "target_low": 2300000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-03",
+  "as_of": "2026-11-04",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -27,6 +27,12 @@
       "target": 3100000,
       "date": "2026-10-29",
       "url": "https://finance.naver.com/research/company_read.naver?nid=97222"
+    },
+    {
+      "firm": "컨센서스 평균",
+      "target": 3054286,
+      "date": "2026-11-04",
+      "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "대신증권",
@@ -48,6 +54,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "iM",
+      "date": "2026-11-04",
+      "target": 2300000,
+      "prev_target": 3500000,
+      "chg": -34.29,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
     {
       "firm": "한국투자",
       "date": "2026-11-03",
@@ -139,6 +154,15 @@
       "prev_opinion": "BUY"
     },
     {
+      "firm": "IBK투자",
+      "date": "2026-10-29",
+      "target": 3200000,
+      "prev_target": 4000000,
+      "chg": -20.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "NH투자",
       "date": "2026-10-29",
       "target": 3400000,
@@ -155,24 +179,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "IBK투자",
-      "date": "2026-10-29",
-      "target": 3200000,
-      "prev_target": 4000000,
-      "chg": -20.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "BNK투자",
-      "date": "2026-10-28",
-      "target": 1650000,
-      "prev_target": 1480000,
-      "chg": 11.49,
-      "opinion": "보유",
-      "prev_opinion": "보유"
     },
     {
       "firm": "유진투자",
@@ -200,6 +206,15 @@
       "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
+    },
+    {
+      "firm": "BNK투자",
+      "date": "2026-10-28",
+      "target": 1650000,
+      "prev_target": 1480000,
+      "chg": 11.49,
+      "opinion": "보유",
+      "prev_opinion": "보유"
     }
   ],
   "ticker": "000660",
