@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-05T13:07:48+00:00",
+  "updated_at": "2026-11-05T15:43:35+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼성, 폐쇄한 기흥 8인치 S7 장비 300대 DB에 통째 매각",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9iOU40VUpWTlMyYW5YdFZabDdXck93RVB1NXJpdDdCdURBS19qSFJFZktMcXY3a2dBRTItbWVxMkZ6ZnNFdnBfYTNSLUpQLWI4bGFMNXFERUxmc1J0S0FNNUtTWk1IUQ?oc=5",
+      "source": "디일렉",
+      "date": "Wed, 04 Nov 2026 09:47:09 GMT"
+    },
     {
       "title": "“대안이 없다”… 삼성전자, 中 LCD 패널값 인상에 TV 사업 적자 장기화 우려",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVUhsZWhyNjdTVkpPLW1nTWkxTGtvclRFUWZtcUVYamp0SHVLRUNRbmNJa29kdkRZb3U4SnNKczQ0a0tnbmhlWkVrSFgzXzZiZ1I0RzNubnZqek83clFSbU9hNFY0NF91bWNRS1ZuUFpmR0JCa3YtcVdmZVJheE1FRFB30gGWAUFVX3lxTE9jTWtOU0RXcjVwY040bi1iX1hDNTYxZXQxRGdTZ2lpSklkYlN3QngwNGk2VHJOYlJfbkhtZkZlRlNmdXE5eS1ZWEtXTkM1OFBEYW45Ym1tWC05UENNUFJQdDJtX1dycV9zVTBHdjllTG56QXBNSWVDTGJPRXdPaGRUN25KemprSTZSNUxrSXlsQlcxMEUtQQ?oc=5",
@@ -11,16 +17,46 @@
       "date": "Wed, 04 Nov 2026 21:11:28 GMT"
     },
     {
-      "title": "[르포] 삼전닉스·마이크론, 중국 수입박람회서 '메모리 모듈' 경쟁",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91aXVBbzVhODNkX0NZVmkyd3JtN3JoaDhiMk1UZGpoNVBtTnFFZzdnNmd4WXg2SFlQRlVGSjhkZjc1TlNtUVZsMFFrZFBCakdOZEVIZmpCeWRpNEnSAWBBVV95cUxNYVJVeTdDSzJiLV9Pb2tuaGRoQ01qNWN3VVhlOVNLSmVSY2YzQWRkNzg5Ny1DanlIMGNTQVBycy1GZVZXanVBaVY3TnRKb0pDVGotUXlGMGJzRnFoUWs4X0E?oc=5",
-      "source": "연합뉴스",
-      "date": "Thu, 05 Nov 2026 11:50:04 GMT"
+      "title": "KT·삼성전자, AI로 고속철도 통신 끊김 29% 줄였다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wZmxlUzc0WFlUVDdNeTF5MjNBR0hnNDN2WURKX3F1cUZKOE9UVGFrSFJtUmlfMTU4RFhkeXRFMGZnaXZyTE5VNVFVeWh0Yk13S0pxNjBuZFNFOWpVUHN1QWNFSUNRV0c1VzhQWNIBcEFVX3lxTE0xUHY0WERzREVzZktZUUxZb1p2ekF5V2ZBWFMybkV1X05fcDYzaFhGam1ZUFA2YXJCeEVJajN4MV9OMEFGZG9sbm5wZWlJazQwYTNGX1dQdEZTNUFHUFZ3T1RMSDVvbHdoU1Nxd3diaXE?oc=5",
+      "source": "전기신문",
+      "date": "Thu, 05 Nov 2026 02:13:11 GMT"
     },
     {
-      "title": "삼성전자 DX노조, 수원사업장 앞 집회…'공정한 보상체계' 요구",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wZjN3SGo2cmltX0RMSUdtbFNPZHBoSjh2c3ktb25YNmZUdjRiVmMxNjNXYUkwNGExZUVuaVVYbUhWVkRBX005cDVXN2pHY1hqZVBfRkxvdzk0aUnSAWBBVV95cUxNOGZabUl1TXI2akRvNlFJZTdNdzdid0tTRkcxUkp4X3ZWbkhiSDNtZ3FDT24yRXo2WGIzOGc1TkpSOEI5TmVqLU05OWpNS1FGSUN5Y0tManJBWE8tZjQyc2E?oc=5",
-      "source": "연합뉴스",
-      "date": "Thu, 05 Nov 2026 09:38:25 GMT"
+      "title": "KT·삼성전자, 고속철도 통신 끊김 29% 줄여",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fczRGcXpMYzZEUUNPcGpFVUtJOFV2OWZIV21MbWh4R0I5dGkwSnhlMGhQTjRheWNkV3l0THB2cXFXdjVSdk5VV1Z4RjBBT3pOdmo1QVM3RXFMOHRrRW1RTjNiMXlaSXRrMjdBMFVXb0LSAXRBVV95cUxQQ2g5VzlXckNOaFM3Q3lJanVWUmUtNjIwTnlEd1NJVlNHenZ6Z3VVeElKaTRKVmlyUUtjOWFFejJpWkZzSDJRQTB1bTRvanZfRVJZRHJ0ZldRMzRCMW82ZTVKLUJNQ3JBSE1UN3JQa3NMaGwyNg?oc=5",
+      "source": "IT조선",
+      "date": "Thu, 05 Nov 2026 01:16:51 GMT"
+    },
+    {
+      "title": "KT·삼성전자, AI로 고속철도 통신 끊김 줄인다",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE16anFRWFJvOGhRUUQ4TDlLUmdqX0MwSF9tRkxTQTBLNnV3UTFzeUh6Um10Y2xZdHBBajZBV203cGZhNmVMaEhvdnNMQUZjUTlSZ1A1Y0JpV0x3Yll5LXMyWXptdmxSOGh4UlJFWUlyWEl5RWhPallLTEpn?oc=5",
+      "source": "로이슈",
+      "date": "Thu, 05 Nov 2026 14:11:10 GMT"
+    },
+    {
+      "title": "서버 병목 해결, 수학 난제 연구… 삼성, 916개 과제에 1.2조원 투입",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPam1nT2VWY1RIN1lJY2k3Ry0zb0lWS1ViNFNzTF82STBiU3JEeFhmX3FpOFJEa1FmQXgzZHJweXpkOXVVN3dvVk9aMVhQbWNmeDFjWk9zUnRfdklWQ2RDeWFzY2U4SVByNVV3MUthcFYydWZfRVo5SjNRUS1JU1VFZHRUYw?oc=5",
+      "source": "조선일보",
+      "date": "Thu, 05 Nov 2026 15:34:00 GMT"
+    },
+    {
+      "title": "삼성전자 주주환원 유보에 증여세 논란…이사회 독립성 시험대",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54V1hjWFlTOGhyOC1LVEs3QUV6aldGcnliamNwaHBZNUQ2R1RsVFZOSVNGZ3pGVFNtU21KZHdaZEVvWTlPY1J0b3NBTXNQV1RxSWVkQ0ZwYUpqSU1HSGJYT3BRXzIxYmxiRUJrOWVZVDM?oc=5",
+      "source": "연합인포맥스",
+      "date": "Thu, 05 Nov 2026 01:43:14 GMT"
+    },
+    {
+      "title": "삼성전자, 75조 주주환원 셈법…보통주 대신 우선주 소각 늘리나",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEV3NITkFDRVhqMTlYOHpxcGl5NEF3VXhCVWpDOHNkU05jU2UxSVZyekUtLUZweGZ4b0hLemF0ZmxBbGY1eFRvdFNsM2l5OWlpbERvVWhRaGZUTUh1?oc=5",
+      "source": "뉴스핌",
+      "date": "Wed, 04 Nov 2026 23:21:00 GMT"
+    },
+    {
+      "title": "\"주주환원 유보 검토해야\"…라이프운용, 삼성전자에 주주서한 보내",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90WEFtaEJnY1JpLUIzeGRiQ2dIaHpKdHhEZTBIZEZGd0tZemhaQmpOQjEzSUZ2eUFkMFBYN0VGTjNnT0hZTnE1VmlFNENuT19oQzVCQlROcUdCemFwVEdZQzFnOHR3NF9B?oc=5",
+      "source": "머니투데이",
+      "date": "Thu, 05 Nov 2026 00:02:44 GMT"
     },
     {
       "title": "코스피·코스닥 동반 5%대 급락 마감‥삼성전자 7%↓·SK하이닉스 9%↓",
@@ -47,52 +83,16 @@
       "date": "Tue, 03 Nov 2026 23:38:33 GMT"
     },
     {
-      "title": "KT·삼성전자, AI로 고속철도 통신 끊김 29% 줄였다",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wZmxlUzc0WFlUVDdNeTF5MjNBR0hnNDN2WURKX3F1cUZKOE9UVGFrSFJtUmlfMTU4RFhkeXRFMGZnaXZyTE5VNVFVeWh0Yk13S0pxNjBuZFNFOWpVUHN1QWNFSUNRV0c1VzhQWNIBcEFVX3lxTE0xUHY0WERzREVzZktZUUxZb1p2ekF5V2ZBWFMybkV1X05fcDYzaFhGam1ZUFA2YXJCeEVJajN4MV9OMEFGZG9sbm5wZWlJazQwYTNGX1dQdEZTNUFHUFZ3T1RMSDVvbHdoU1Nxd3diaXE?oc=5",
-      "source": "전기신문",
-      "date": "Thu, 05 Nov 2026 02:13:11 GMT"
-    },
-    {
-      "title": "KT·삼성전자, 고속철도 통신 끊김 29% 줄여",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fczRGcXpMYzZEUUNPcGpFVUtJOFV2OWZIV21MbWh4R0I5dGkwSnhlMGhQTjRheWNkV3l0THB2cXFXdjVSdk5VV1Z4RjBBT3pOdmo1QVM3RXFMOHRrRW1RTjNiMXlaSXRrMjdBMFVXb0LSAXRBVV95cUxQQ2g5VzlXckNOaFM3Q3lJanVWUmUtNjIwTnlEd1NJVlNHenZ6Z3VVeElKaTRKVmlyUUtjOWFFejJpWkZzSDJRQTB1bTRvanZfRVJZRHJ0ZldRMzRCMW82ZTVKLUJNQ3JBSE1UN3JQa3NMaGwyNg?oc=5",
-      "source": "IT조선",
-      "date": "Thu, 05 Nov 2026 01:16:51 GMT"
-    },
-    {
-      "title": "KT·삼성전자, 고속철도 통신 끊김 29% 줄였다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KXzNtLUpUMGpFYkVxWWFMUVlvUl9ycTJ5elpsbEF5Y0Y4dm5XTm1LNWZLb0ZJYlFmZlJtekpBNldUc0pVWFRlbERoaWpEVF9oUm9QSmZR?oc=5",
-      "source": "지디넷코리아",
-      "date": "Thu, 05 Nov 2026 00:57:43 GMT"
-    },
-    {
-      "title": "삼성전자 주주환원 유보에 증여세 논란…이사회 독립성 시험대",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54V1hjWFlTOGhyOC1LVEs3QUV6aldGcnliamNwaHBZNUQ2R1RsVFZOSVNGZ3pGVFNtU21KZHdaZEVvWTlPY1J0b3NBTXNQV1RxSWVkQ0ZwYUpqSU1HSGJYT3BRXzIxYmxiRUJrOWVZVDM?oc=5",
-      "source": "연합인포맥스",
-      "date": "Thu, 05 Nov 2026 01:43:14 GMT"
-    },
-    {
-      "title": "삼성전자, 75조 주주환원 셈법…보통주 대신 우선주 소각 늘리나",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEV3NITkFDRVhqMTlYOHpxcGl5NEF3VXhCVWpDOHNkU05jU2UxSVZyekUtLUZweGZ4b0hLemF0ZmxBbGY1eFRvdFNsM2l5OWlpbERvVWhRaGZUTUh1?oc=5",
-      "source": "뉴스핌",
-      "date": "Wed, 04 Nov 2026 23:21:00 GMT"
-    },
-    {
-      "title": "\"주주환원 유보 검토해야\"…라이프운용, 삼성전자에 주주서한 보내",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90WEFtaEJnY1JpLUIzeGRiQ2dIaHpKdHhEZTBIZEZGd0tZemhaQmpOQjEzSUZ2eUFkMFBYN0VGTjNnT0hZTnE1VmlFNENuT19oQzVCQlROcUdCemFwVEdZQzFnOHR3NF9B?oc=5",
-      "source": "머니투데이",
-      "date": "Thu, 05 Nov 2026 00:02:44 GMT"
+      "title": "삼성전자 DX노조, 수원사업장 앞 집회…'공정한 보상체계' 요구",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wZjN3SGo2cmltX0RMSUdtbFNPZHBoSjh2c3ktb25YNmZUdjRiVmMxNjNXYUkwNGExZUVuaVVYbUhWVkRBX005cDVXN2pHY1hqZVBfRkxvdzk0aUnSAWBBVV95cUxNOGZabUl1TXI2akRvNlFJZTdNdzdid0tTRkcxUkp4X3ZWbkhiSDNtZ3FDT24yRXo2WGIzOGc1TkpSOEI5TmVqLU05OWpNS1FGSUN5Y0tManJBWE8tZjQyc2E?oc=5",
+      "source": "연합뉴스",
+      "date": "Thu, 05 Nov 2026 09:38:25 GMT"
     },
     {
       "title": "삼성전자 D램 시장 점유율 '38%'…1위 수성",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhT2ZhaTFjczJqU3pvd2UxcHBzeDhodGtENlg5TVhNUExKek1VbjBjNUlqbGVSdGRrcWJmb2Q4alVuUzk0S0VzblpkdUdVQQ?oc=5",
       "source": "전자신문",
       "date": "Thu, 05 Nov 2026 07:56:23 GMT"
-    },
-    {
-      "title": "3분기 D램 매출 369% 급증…삼성전자 점유율 38%로 1위",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyZnJBSlNucUJjSFZyMG92N0gzZG16OGdESXA1dkJPRVI1UzFiQ3V1YU1VZ1hLa1FLLTF4QlR6VkFNYVVNWUpDZ2JwQmEyOGt2bTdyWFhUWWFqX1NHeER0c0NkZ0c4eXZRLTJGb01lb3U?oc=5",
-      "source": "연합인포맥스",
-      "date": "Thu, 05 Nov 2026 07:35:18 GMT"
     }
   ]
 }
