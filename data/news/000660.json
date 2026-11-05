@@ -1,74 +1,32 @@
 {
-  "updated_at": "2026-11-05T02:16:53+00:00",
+  "updated_at": "2026-11-05T13:07:49+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "최태원, SK하이닉스 미국 AI투자법인 이사회 의장 맡아",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBESVdNaWM4OFZCWmFhbDdfUGtQbE0xM3pGMG1FVzl3b0dnSUtHYkp5U3EwSXRwQ0taYjhnOWtaNTEzOS1fX0ctdkZ4blpJRjROeXRkR1ZQU0Q4Z1HSAWBBVV95cUxPYXdCekU4c3dPYXR6MWJtaGlSUTVwWlhMQ0Z5djh3ekRmM011a0xMamtraGRscDUtdkJZc2xzUXVnM0s5RmY5dllNLUJQN3E3WFF3NU9UMWVBa0NRd0h4eGg?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 04 Nov 2026 11:45:38 GMT"
+      "title": "삼성전자 7%·SK하이닉스 9% 급락…코스피·코스닥 잇따라 매도 사이드카",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54SnprMWZWSkp2akl4eDZ6RVRWT0hPTDV4cVNGNDRhdWhNQWNjQ21pV2ZTak1EbFU3U0JkU1hlMTN1RXdNTV83TkpxN01mOHdfWGdoSA?oc=5",
+      "source": "JTBC",
+      "date": "Thu, 05 Nov 2026 05:31:00 GMT"
     },
     {
-      "title": "최태원, SK하이닉스 美 AI투자법인 이사회 의장 맡는다",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vSW9JTWFjTzg2N2lJbGUyV0RscU9UM3hmNHUwckdET3dFdklrSFAzU3poOGxDald5RnB5eTRyQlZvanc5aWdUVGFGbEVPNlg5ZmNJSW5zMmdhcV8tR1JacA?oc=5",
-      "source": "아시아경제",
-      "date": "Wed, 04 Nov 2026 12:22:45 GMT"
+      "title": "[속보] 삼성전자, 장중 한때 20만 원 붕괴...SK하이닉스도 10% 가까이 급락",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9jajRqYWxDem5mOGdRWFBEblpQVjExRXNoaWh6YTZ2ejFRZEl3WnVZXzVoMmVLRnU1QnpEYV9hS0JCUlBOaFYtNWZnUU5SNTBUZXdYTU1zYUpfT1JQbHAwZHJKajJvRmk5UGtta0tPVQ?oc=5",
+      "source": "YTN",
+      "date": "Thu, 05 Nov 2026 06:02:00 GMT"
     },
     {
-      "title": "최태원, SK하닉 美 AI 투자법인 이사회 의장 맡아…곽노정 이사로",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1RbG1ITlNrZGsxUDg0b1BMbXdhZ3NkZmhiVGMxSExTaUY4cnZ1MFB2Z295NnB1T3JBMjROam1XTlpWRm9OUVJsNWRfbGp6RFlxRkZGQmE4TGxLa0hpWTBPdEo1Ry0?oc=5",
-      "source": "뉴스1",
-      "date": "Thu, 05 Nov 2026 01:59:41 GMT"
-    },
-    {
-      "title": "美 상무부, SK하이닉스 中 다롄 공장 증설용 장비 허가 보류…뉴욕 투자에도 영향",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9yNFRqREJWRG5pTnVMVWpldUJsTUdqMkZjT3ZEaWRPVlU4ZWExM1lhRl9YLWplZmR3VXFHOTAtSGh4SVZvbVNHbWxSeTdKQQ?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 04 Nov 2026 00:20:47 GMT"
-    },
-    {
-      "title": "삼성·SK하이닉스, HBM 가격 협상력 확인…AMD \"인상분 고객과 나눠 부담\"",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrRC1RRUhSMXBMcGJ6OGMxb2tfWTM1cU1ERkU2ZWlTdEVhYW1wSUFlUGFkQmlUWEZZWTVTZHFwYUV6cWF6alg2ME1fQXpLVy1PM0xkaVlkWUgtOXZl?oc=5",
-      "source": "뉴스핌",
-      "date": "Thu, 05 Nov 2026 01:37:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 주가 장중 9%대 내려, AI 데이터센터 우려에 삼성전자도 약세",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Gck5HOFFqejZEMlowN0dnYkdHdHJVUXNyZFJFb2JhcjZmSG5GZWZFUXp5SVN0MVVVNDVIcFc4cnpxY3duZ2hLSVRCX3F6bVJQb2xXZ0NxUDFEZ25YbHpwMmVXa0ttZVJEMHVMeWd6Z3h5YWM?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Thu, 05 Nov 2026 01:29:24 GMT"
-    },
-    {
-      "title": "급락 하루 만에 뛰는 삼성전자·SK하이닉스…증권가 “내년 영업익 1000조 돌파” [주가동향]",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16RVVTVWhvRXB1LVF0RUtNcTBIcGlhVFMzd2FGQV9WOGFTVnJnSHRMdDdnNmxNbVFXZVNwbkFXay1wTnZ4b19RRkJoSXMzbzJpUFNqRFcydjBNNkxRV1Jj?oc=5",
-      "source": "조세일보",
-      "date": "Wed, 04 Nov 2026 00:25:00 GMT"
+      "title": "SK하이닉스 주가가 오늘 급락한 이유는?",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Ta00yaU5DZms2NXJ5amxYNGZ3UmN3MXN6RU1wcUxSRHpfQ05XelljUG5lbklDUzFTQm1HcWtQdnRRSGlOWU9fS0IzU0N3TFpJTFRNYVBzMkpJZU8tZVRQWXhKYkgzNDZrSndKWEFxSzEwcXlyWHJ3?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Thu, 05 Nov 2026 03:23:00 GMT"
     },
     {
       "title": "고점 대비 반토막 난 삼전닉스…내년 실적 믿고 지금 사도 될까",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zWXh3a3RhMG5GUC16ak43OS1zWGkzSnh5SGFNRTRvZDkzVmxrWlV3dGFNYlYtQTFYdm4tN2k4b1pueGdtZm8zTWJBNWl6Z3hpeHc?oc=5",
-      "source": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04cVhrdEY0VjNfR2RCWmJjQ3dEWVNFc2djWE4yb1hmWUhXbTlWWllkRllIcHhTWTJhY2FlNGllTllBaTBUNlJONHM4UkYzS0RleEE?oc=5",
+      "source": "매일경제",
       "date": "Thu, 05 Nov 2026 02:00:20 GMT"
-    },
-    {
-      "title": "'美 데이터센터 규제' 우려…SK하이닉스 6% 급락[핫종목]",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE81YXp3eENKeHlBVTNyTUVvb19rMjl2Y3puS1lwUzUxTGF2aThvckVwNFMtdWlXT0hDd0phWjFzc1JlSXNkVGNuY3dRclJuUnhzR2g3NVJHQ0N4Q096RDkw?oc=5",
-      "source": "뉴스1",
-      "date": "Thu, 05 Nov 2026 00:24:10 GMT"
-    },
-    {
-      "title": "이천시의회, SK하이닉스·반도체융복합교육센터 현장 견학",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85dndsZHY3WXhGZExpNkRoZmdBbWlHQTNqQ29qTmVvbk5lVXR6cGxDNEt1ZFpjMDZPSmxXajZEVW9xUGNwb2VleW1zbjJWYXRESlZta180UTg5Mkd4cWZJUHktY0Z1N2sxNUVPWDR3aTg?oc=5",
-      "source": "인천일보",
-      "date": "Wed, 04 Nov 2026 01:55:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 1주도 100개로 쪼개 24시간 거래…“자산 토큰화, 투자자 문턱 낮춰”",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sMEgzR0hvRkk0Q1dMNUtwNFZURFlnTURNZllpTDZoaE00WVhWRjVZTVRSWEJUNTZNbDhKY0lVN0NxNVZLQ1pNUzF1WE5VZw?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 04 Nov 2026 08:59:36 GMT"
     },
     {
       "title": "\"버텨야 한다\"…삼전닉스 급락, 실적 아닌 '이것' 때문이라는데[부꾸미] - 머니투데이",
@@ -77,22 +35,64 @@
       "date": "Wed, 04 Nov 2026 18:30:00 GMT"
     },
     {
-      "title": "SK하이닉스가 지분 인수한 펭귄솔루션스 잠재력에 외신 주목, \"AI 메모리 효율 개선\"",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA1QTZqbnNtYklXMW91OVA0YktvOGtscGt5eGVpOWtrUnY5SUF2dTBPYldRRHVMaGZ3a3FtNlI3RFViU3hxaDBUYkNULV84M05nX09JTzROM04waUhhbVJaZG4wU0JFeUJrV3J4RnYyOUZlVTQ?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Wed, 04 Nov 2026 01:29:19 GMT"
+      "title": "삼성, D램 3분기 점유율 38% 1위‥SK하이닉스 29%로 반등",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JMnEyUFAzZXcyUTJRU1M1TDl0TjlWZEhIQm9VZEFkQmU4MUItYS14QlR4MFJKT0o5OXBIQ3ZIanNRbjJJMW9TUVRDR3BaVTZFaVZVUmhCdWlWT0FDWk85amZmS1V5anJ5OERFY2F2cVY4V1J30gF0QVVfeXFMTnJGUjh0V2czY2tfV3h4eHZVTU5SenpUdGY3UzRPQTZ0NzNsOVI3Q2xGdngza1B2U3h3a2NSeThWcWI0c0VGRUREaTJfTzg4R1NZSDBSRzZyWm0tcHZTa20wWGdJRFNkbFZIbFhIdV9mcS1jbi0?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Thu, 05 Nov 2026 08:05:23 GMT"
     },
     {
-      "title": "SK하이닉스, '솔리다임 IPO' 대안…키옥시아 잔여 지분 '만지작' : 네이버 블로그",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUld3TEpQNThmNklRR2hlNEZocHdnWmFJbkh6YTFxaUVMZ3VTblhGWElSZHFQQ1BQMUZGbEdtdmM2SzNtcTJFTGVKMzBILThORlZnNHhhTzZ0a2g1MTNUTG95VmhPaTA0TDR0SEFSVWN3U2ZGLUp3RlJGU2xpUmZpdnlZOUU4ZmdZWU9BRlNnYw?oc=5",
-      "source": "Naver Blog",
-      "date": "Tue, 03 Nov 2026 06:46:00 GMT"
+      "title": "삼성, 3분기 D램 시장 1위 수성…하이닉스는 격차 좁히며 추격",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNTUVYb0JlN0FvaUhzSTVJd2tGejVZMGNZQ2ZIaDlYOXpfZ00teHZqdVlKbUtIT3RRSE9zMm4yRVBXM3BkalZPNldYUVBFR094WGfSAVNBVV95cUxNellQTzhRWXJmOXl6NVFHQ3RQUmRicjhqX1duVnF3dExCTHBnV01ZeTI3SVdULUNRZkhrYTc1MTBKWWxWREJBZVUxWV9DNXVjcjgwcw?oc=5",
+      "source": "서울경제",
+      "date": "Thu, 05 Nov 2026 07:52:27 GMT"
+    },
+    {
+      "title": "삼성전자 AI 메모리 호황에 3분기 글로벌 D램 점유율 38%, SK하이닉스 29%",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAwQ1k3TFpIR290dTZUQkZsakowZVNEMko3d3dFa19FemduRExEODIzLVVURmdOSDRvVDNObzBIS0d2NzV5SklBRXJVZnczcWZBbnlWakl1S2hNS2FNdjZOV3VmQ0hjSjluaWlvNEJjeDd4eVk?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 05 Nov 2026 07:48:16 GMT"
+    },
+    {
+      "title": "SK하이닉스 60조 뉴욕공장 '무산 위기'…중국 막히자 미국도 접는다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tMDlSdEg2azNtSWhLUzlzcVA0WW1sX2JtMUU1Z3VwMVlIMkthbEhSdWVtS2NPanhULXo3WW1yeVBPVHJfdDlua1B3VGpma3FHOHpsc0x4UVpSTWxNUkozM19GdmlhQktP0gFuQVVfeXFMTWJxaTlpRFVuZDZqQk1ueVhDVTNOck0tb3NCSUd0Mm1TNzZUelpMSTJscVgtZjU3UHpBZ3hQYTlwQzQ4U0dTUUNSTi0yMkpBUjMtOERPVUFpNGQwWWkySU44emNnOUdtTEdQTUlXOHc?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 03 Nov 2026 21:08:22 GMT"
+    },
+    {
+      "title": "미국 장비 못 얻은 SK하이닉스, 中측 “미국 압박에 저항해야”",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ObzhDRm1yRm8zdmU5WDJyZzZKYnBHek9kRzJJdHRjelNEZUJ1YWRhVVRjNVk4WEhiYmFya0oxdF85OTIxUm5IcWtrT3o0di1aSHFKVWVKM1U2TVhXcy03T2RWOHBWbnRfLW1aa1VIQ3M4akU?oc=5",
+      "source": "마켓인",
+      "date": "Thu, 05 Nov 2026 02:30:04 GMT"
+    },
+    {
+      "title": "미, SK하이닉스 중국 공장 장비 반입 제동...뉴욕 공장 투자 차질",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVEZXT1dNTnBPU3F6M2JIT21yUDJMNTZVTDkzSG5pczBCWjJSaEd3LXJDSTBsbVFNLVFxZXB4YUJudG9sbWpGRDJITGlVRnlnWVp5a29EM1lhcWctekFpcXRxRktOWjhzMnNBei0wbVJjUTRISWdLOVFiYjJpQjdMZUwwOWRKU2hrdGQ0SA?oc=5",
+      "source": "YTN 사이언스",
+      "date": "Wed, 04 Nov 2026 02:01:18 GMT"
+    },
+    {
+      "title": "최태원, SK하이닉스 미국 AI투자법인 이사회 의장 맡아",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBESVdNaWM4OFZCWmFhbDdfUGtQbE0xM3pGMG1FVzl3b0dnSUtHYkp5U3EwSXRwQ0taYjhnOWtaNTEzOS1fX0ctdkZ4blpJRjROeXRkR1ZQU0Q4Z1HSAWBBVV95cUxPYXdCekU4c3dPYXR6MWJtaGlSUTVwWlhMQ0Z5djh3ekRmM011a0xMamtraGRscDUtdkJZc2xzUXVnM0s5RmY5dllNLUJQN3E3WFF3NU9UMWVBa0NRd0h4eGg?oc=5",
+      "source": "연합뉴스",
+      "date": "Wed, 04 Nov 2026 11:45:38 GMT"
     },
     {
       "title": "최태원, SK하이닉스 美 AI 투자법인 이사회 의장 맡는다",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9YRDdqMjFuMGlnWUVrbGFMRTdVa2w0QTdlOHM3dFFsalB2S0s5d2ZCS2QyN0ZFcmRhZHl4UkhvcDhDLVhVUTJmWGMxOVltRGRheHRqTVdqdl95VlpaWmZBcGtXcWE1ZDVBQlJjVGNkTjI?oc=5",
       "source": "연합인포맥스",
       "date": "Wed, 04 Nov 2026 23:25:21 GMT"
+    },
+    {
+      "title": "SK하이닉스, 美 AI 투자법인 ‘하이코’ 확정",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TRDdXUjlIRFEyUVo1ODE1UXVHOWxRZVB2MWJWUlJiUzhDakZKQjlSQUF6Mk9BbXNSbTlfbVJlZ056Z2ZhcUhXQXk0QTdYeW9uZHdMeUptNVZFTDlqXzQ1NW9GT2toSVFaWTZoeUFITUrSAXRBVV95cUxPNER1ODJWOEZfSU93U0FBRm8yMmRfMlkzR2JoelQ1dmN5cllpMHRRRTNGSzF1bmpuMGtzNEZ5N1NqYlNaVVlja3JkUy1uRTdQdHplZ05MXzdSdmtveU40OTFlZ0tBUXFfcUs0Mldxa2hYWXMxUg?oc=5",
+      "source": "IT조선",
+      "date": "Thu, 05 Nov 2026 02:01:23 GMT"
+    },
+    {
+      "title": "'HBM 선점' SK하이닉스 HBF로 낸드도 뒤집는다, 곽노정 샌디스크와 2년 내 상용화 '속도'",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1IRzJ6Z2RvWDlYblJUZWs3enQ4RkZsMFY1Tzc2TWV3bTBIWXlkR0kzYUhkeVVVMlNsWVhmZDV4akJINWpBN3FBcVI1ZTV1ekctRGJyU1BtQWh5R2Vfd3A2NTlEYUNsa2E2czh0ZHJVVkY0U00?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Thu, 05 Nov 2026 06:48:20 GMT"
     }
   ]
 }
