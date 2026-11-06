@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T12:52:54+00:00",
+  "updated_at": "2026-11-06T15:18:19+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 472381.0,
@@ -200,15 +200,6 @@
       "chg": 0.0,
       "opinion": "STRONG BUY",
       "prev_opinion": "STRONG BUY"
-    },
-    {
-      "firm": "SK",
-      "date": "2026-10-06",
-      "target": 610000,
-      "prev_target": 610000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     }
   ],
   "ticker": "005930",
