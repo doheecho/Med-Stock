@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T15:18:19+00:00",
+  "updated_at": "2026-11-07T01:49:25+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 472381.0,
@@ -18,15 +18,9 @@
     },
     {
       "firm": "야후 평균",
-      "target": 478771,
+      "target": 475629,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
-    },
-    {
-      "firm": "컨센서스 평균",
-      "target": 472381,
-      "date": "2026-11-05",
-      "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "미래에셋증권",
@@ -49,6 +43,24 @@
   ],
   "consensus_rows": [
     {
+      "firm": "한국투자",
+      "date": "2026-11-06",
+      "target": 440000,
+      "prev_target": 440000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "하나",
+      "date": "2026-11-06",
+      "target": 480000,
+      "prev_target": 480000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
       "firm": "iM",
       "date": "2026-11-04",
       "target": 370000,
@@ -56,15 +68,6 @@
       "chg": -22.92,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "한국투자",
-      "date": "2026-11-03",
-      "target": 440000,
-      "prev_target": 650000,
-      "chg": -32.31,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     },
     {
       "firm": "교보",
@@ -139,13 +142,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "하나",
+      "firm": "NH투자",
       "date": "2026-10-30",
-      "target": 480000,
-      "prev_target": 480000,
+      "target": 530000,
+      "prev_target": 530000,
       "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "IBK투자",
@@ -155,15 +158,6 @@
       "chg": -23.91,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "NH투자",
-      "date": "2026-10-30",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "DS투자",
