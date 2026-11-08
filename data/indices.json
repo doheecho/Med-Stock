@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T01:49:50+00:00",
+  "updated_at": "2026-11-08T01:19:32+00:00",
   "items": [
     {
       "key": "KOSPI",
@@ -31,9 +31,9 @@
     {
       "key": "IXIC",
       "name": "나스닥 종합",
-      "price": 24579.4238,
+      "price": 24579.4297,
       "prev": 24315.0,
-      "change": 264.4238,
+      "change": 264.4297,
       "change_pct": 1.09,
       "fmt": "pt"
     },
@@ -85,55 +85,55 @@
     {
       "key": "GOLD",
       "name": "금 선물",
-      "price": 4079.5,
+      "price": 4074.8999,
       "prev": 4113.5,
-      "change": -34.0,
-      "change_pct": -0.83,
+      "change": -38.6001,
+      "change_pct": -0.94,
       "fmt": "usd"
     },
     {
       "key": "SILVER",
       "name": "은 선물",
-      "price": 51.965,
+      "price": 51.803,
       "prev": 52.233,
-      "change": -0.268,
-      "change_pct": -0.51,
+      "change": -0.43,
+      "change_pct": -0.82,
       "fmt": "usd"
     },
     {
       "key": "WTI",
       "name": "WTI 선물",
-      "price": 90.34,
+      "price": 90.83,
       "prev": 90.52,
-      "change": -0.18,
-      "change_pct": -0.2,
+      "change": 0.31,
+      "change_pct": 0.34,
       "fmt": "usd"
     },
     {
       "key": "BTC",
       "name": "비트코인",
-      "price": 103516944.0,
-      "prev": 103091928.0,
-      "change": 425016.0,
-      "change_pct": 0.41,
+      "price": 103212752.0,
+      "prev": 103303656.0,
+      "change": -90904.0,
+      "change_pct": -0.09,
       "fmt": "krw0"
     },
     {
       "key": "ETH",
       "name": "이더리움",
-      "price": 3058426.5,
-      "prev": 3033316.0,
-      "change": 25110.5,
-      "change_pct": 0.83,
+      "price": 3043782.0,
+      "prev": 3048157.5,
+      "change": -4375.5,
+      "change_pct": -0.14,
       "fmt": "krw0"
     },
     {
       "key": "XRP",
       "name": "리플",
-      "price": 1607.0453,
-      "prev": 1637.1404,
-      "change": -30.0951,
-      "change_pct": -1.84,
+      "price": 1581.0187,
+      "prev": 1606.6632,
+      "change": -25.6445,
+      "change_pct": -1.6,
       "fmt": "krw"
     }
   ]
