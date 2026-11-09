@@ -1,20 +1,14 @@
 {
-  "updated_at": "2026-11-09T13:47:56+00:00",
+  "updated_at": "2026-11-09T17:45:39+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "'갤럭시Z 슬라이드' 이렇게 나온다…삼성, 새 특허 공개",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zTGhycWVCcWZ3M2dxdWJ3eEFwTTUxUDB2bDVrajJZTno4d2YxWXpNUGp6NE1weEg1UG1pRW80TEdTeVU1V0NFeE9NYUNOLVFWc2NGa25n?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 09 Nov 2026 02:13:49 GMT"
-    },
-    {
-      "title": "“삼성전자, 반등에 주목할 때…급락 후 상승 확률 97%”",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOXzJfSWg2QU5hY0gtNFdmaXJleUF3QTIxeThKTnR6UmktQnY4ZEhhSVhwcUJmd3VFOVpmYzAyWHN6S0x3bjR0SFYyR0FYXzd3LUJra2VMT05uMklhUzNrOG1Jb1o2ZTdUODlVaWVGZnRpRnloR2Z1eXFvTl91blhwcQ?oc=5",
-      "source": "이데일리",
-      "date": "Sun, 08 Nov 2026 23:12:56 GMT"
+      "title": "삼성전자 급락에 개미들 고민…증권가 \"17만원대부터 분할 매수\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XVDZXQ21mQ2pWY3huMDZ5dXJIODFTbXZZOVZCbThDTlREaWlIR1lBRU1fclNBcHRyaUkzSVhZUmxDLVZHMnRFY1RhTGlZQXdIZHlCSTRseWtqQQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "date": "Sun, 08 Nov 2026 22:02:32 GMT"
     },
     {
       "title": "고점 대비 반토막 난 삼성전자 주가…여의도 \"이제는 살 때\"",
@@ -23,10 +17,46 @@
       "date": "Sun, 08 Nov 2026 01:15:06 GMT"
     },
     {
-      "title": "삼성전자 급락에 개미들 고민…증권가 \"17만원대부터 분할 매수\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XVDZXQ21mQ2pWY3huMDZ5dXJIODFTbXZZOVZCbThDTlREaWlIR1lBRU1fclNBcHRyaUkzSVhZUmxDLVZHMnRFY1RhTGlZQXdIZHlCSTRseWtqQQ?oc=5",
-      "source": "파이낸셜뉴스",
-      "date": "Sun, 08 Nov 2026 22:02:32 GMT"
+      "title": "\"삼성전자 팔면 후회할까\"…20년 통계 봤더니 '놀라운 결과' [분석+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MNm83X1V3bS1kNFI5aVByQTJCOGRrNU9ka3ViODZ2YTlrUFdxMFQySzBhazdrSkhjd2tDNDFMUzhFUm1SWHNaOTlrajNPWFhaY1RfT1lpbTd2Zw?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 08 Nov 2026 22:34:28 GMT"
+    },
+    {
+      "title": "'갤럭시Z 슬라이드' 이렇게 나온다…삼성, 새 특허 공개",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zTGhycWVCcWZ3M2dxdWJ3eEFwTTUxUDB2bDVrajJZTno4d2YxWXpNUGp6NE1weEg1UG1pRW80TEdTeVU1V0NFeE9NYUNOLVFWc2NGa25n?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 09 Nov 2026 02:13:49 GMT"
+    },
+    {
+      "title": "삼성, 제미나이 탑재한 ’AI 안경’ 오는 12일 사전예약 시작",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PUkRMSHNmUHg3WDNTWnpMSEc1ZF9sbFJ6NWNYdUphLXZWT2JxaUxwWEFtRDNCY2ZTeEZoRXhRb3UyTzFjWGJGU0Z4YnZ2dmhyaVRfZnl3YkRWbE02S2UzbjlHRkxZMk0?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Mon, 09 Nov 2026 05:23:00 GMT"
+    },
+    {
+      "title": "구글 ‘제미나이’ 탑재한 삼성 AI안경 12월 韓출시",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RUG9xbUV0bEtGOGJXdWQ2YkFBYmJfa3RVMmlvNGNZZmljUFlZSjdBaUZFQmV3TnpiaVhVcHhsNnl5dWRWVEFmbXh2czFfSWdnTDhNTjNQM3Q2U0Qyb08xYjhtQVdCbmJWSkVZYXNPMGZ4UHFPdFHSAWZBVV95cUxPZTZPZGxzX2hPOVVRZ19xemdNVm42dE1xNHhQX01NSk5rVEktQjh3VTd6NUR4T1hXdWZza0xFY3VtbXppTm5LbXN2dEZ4NVNLY01EVzVqcl8xWnJqTFN6bXQwT3pIQWc?oc=5",
+      "source": "동아일보",
+      "date": "Mon, 09 Nov 2026 15:30:00 GMT"
+    },
+    {
+      "title": "삼성 첫 AI 안경 12일 사전예약…메타 독주 제동건다",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1aWkhlVElSS3R4dFRzVGk5SzVmUXowY2JOdENkbURQVm92ZzR6dWR6YnpxZVBUSEhqcFF4N3daZjQwZjFPMnROdXA3aFNxVFlsTTB30gFTQVVfeXFMTVpaSGVUSVJLdHh0VHNUaTlLNWZRejBjYk50Q2RtRFBWb3ZnNHp1ZHpienFlUFRISGpwUXg3d1pmNDBmMU8ydE51cDdoU3FUWWxNMHc?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 09 Nov 2026 06:15:05 GMT"
+    },
+    {
+      "title": "삼성·현대차 ‘원팀’ 동맹…미래 모빌리티·피지컬 AI 협력 확대",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EaFFHVkc2U0VqTkV4QlFDRVZSZ3c2Z29YaXFvdk96TWN4LUNDWThOeDR5ZDZPek9nQWluZi0xRkd6X2lZMkVlS2p6RF9neVhYdDUwQXpBUmRHSTA?oc=5",
+      "source": "경기일보",
+      "date": "Mon, 09 Nov 2026 08:00:00 GMT"
+    },
+    {
+      "title": "삼성 야구 12년 만의 우승... 이재용, 직관 왜 안 했을까",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVpzcGlWQXMwUTE0QW5WMTBiM3BVTHEzYlpDdXZNdkNhYXBGbW5hLUVuT0NMNE5uWWhObzFZZHVJMEtVV290dTFZU003V3VtdUxHMUFncERHMVMtajQwWl96TUEySjBNR3k1bk13Y2pOSEg0Tl85Q0E1TmZZWHpUU3Zibm55SmdnOWluVWZLaw?oc=5",
+      "source": "조선일보",
+      "date": "Mon, 09 Nov 2026 09:02:00 GMT"
     },
     {
       "title": "“삼성 우승기념, 48% 파격세일…전기는 63%!” 개미들의 웃픈 풍자",
@@ -41,58 +71,28 @@
       "date": "Mon, 09 Nov 2026 02:36:00 GMT"
     },
     {
-      "title": "\"우승 기념, 주가도 할인하나\"…KS 우승에 소환된 삼성전자 주가",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ieERfRDEwdFoyMDFiQWJNUXQ2S1NlUXd6QXdKSEdSRWlFbE1nZUNUbjRBelhpQlBSMURrMDN2Rlg5OG5adGFVNU43XzdNRkxaRzRsZkl4dzhaeHFwYkpGQ9IBeEFVX3lxTE5lSjl1UEZKaEV5Wi1wblUyZkZ5NVE0RTdwRVhTUFowdVdNTk5ITDdJUW8xaUxsRXBIVGkwMHNEM2dvYzh1UnJld2ZHbTR3RTZubWFWNFp3dngzUWlnRmJVNHI3X1RHdU9fRXVYdTdOcTNaRmVXNEJ5VQ?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 09 Nov 2026 05:31:51 GMT"
-    },
-    {
-      "title": "삼성·현대차그룹 사장단 '모빌리티·로보틱스' 협력 강화, 미래 향해 '원팀'으로",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OS3NaNnhXWDRSNWV3M0lNTldZeFhyUTdSUmV1eHhvR1RzbS1OLUotRWlkMzZHZk1WbW1hTWRLODFtckRGMVUwcFFpbEtYbmtCdl9sejYtYlpUQkllbFdBX3ZKOUhIb2dLamhUazNYMUlXR0k?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 09 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "title": "삼성-현대차, 미래 모빌리티 '원팀' 선언",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYa3N6WE9TTDFUSHFtb0hXdFlFcGZLU3NNS1ExUUhfWHFKdkhpZDJUdmRNcVY1ak5QdlQxNVhJVElsNHg0NjVneEprM0Y5UQ?oc=5",
-      "source": "전자신문",
-      "date": "Mon, 09 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "title": "경쟁자에서 팀으로…삼성, 현대차 경영진 초청 '첫 교류'",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XaThyNmhMdGVUajYxRWZQRE9WSVFVa0d2Mm4zZUN3VEMyekJxcWp1Vno1enZoXzlNRnhKYkFucm1icFRkaHpEQUVNR2xTUDNxbGc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 09 Nov 2026 09:12:31 GMT"
-    },
-    {
       "title": "갤S27 프로·울트라 생산비중 70%로 높인다",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwb1ppalAwOFVROXhwS0dPc2N0ZHdwWTFfdU9DYlk1S0hxV0ROVGdjVVZRX2xWODg1MFJNM2VVMWhKZWNrdUdwc1NCRmRDdw?oc=5",
       "source": "전자신문",
       "date": "Mon, 09 Nov 2026 07:30:00 GMT"
     },
     {
-      "title": "삼성전자, 천장형 디지털 엑스레이 ‘GC85A 핏’ 선봬",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GNjVEWjdXTVlqU0RRQkdpTUJDTk1FM0JUN3BjY003aVhjLXlHY0NZZE16a3p6MXJrdWlHZnNYYzFCMk1ISzRCSHlEYWNFRUpaVjVkWGhSX1R1OFFWSTk0OEZXSWJ3YU43VlFnUzBRRGrSAXRBVV95cUxOM1FNNkpGOVZIQTlCaHllaXRvVkk5WllwYXBsQWpHT3E0bzNTTGh3UTBNdVQ4UjdkaWJGd3MtR3d0UUdEYlh6N3lZeUNldGl0TDg3U0M3djU5SElmWVBia1Z5THJVbUdCZ3BQYWZGcU1Ua1VkUg?oc=5",
-      "source": "IT조선",
-      "date": "Mon, 09 Nov 2026 05:11:37 GMT"
-    },
-    {
-      "title": "삼성전자, 공간 맞춤형 천장 엑스레이 출시…AI로 재촬영 줄인다",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BYUN2aEllZXY5TnhzY3BhbG1Pb2o5TDQxZURkT3NmNzhQX296dkdaMEp1ZXdXSThwYnVxX0UtQ094eUZNWm5MNlMwUWF0Z3RGdW1tS3ZCVGdHUFJIbVZDRzRNQXdkYWlWcWhybzNrV01SQTA?oc=5",
-      "source": "마켓인",
-      "date": "Sun, 08 Nov 2026 23:52:28 GMT"
-    },
-    {
-      "title": "삼성전자, 의료현장 맞춤형 엑스레이 'GC85A 핏' 출시",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51N04wVldhVFhMWndQRGZNUmNrSGlVWEstQVJSeGc0bnpDWFJzVm5NMnh2ZEQ5ZFZZUWdFQ1RSM2hXTU1wem43MmxzRmFFWl8xNW1nalln?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 09 Nov 2026 00:09:37 GMT"
-    },
-    {
-      "title": "[속보]삼성전자 0.64%·SK하닉 0.35% 상승 마감",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ldVBKZlRMZ19jV2tXdG01SUQtSXdUMDRteENaVzhjdjNFUkJUd0lhdm9TU0g0c09nR0RtTllPaF9oVFJfVnp2RGdNNUtRUEhKc2l2R052b3J0M05pWHA1a9IBeEFVX3lxTFBGZXdFT1AwMzdoNW83ZEJOd1AwOGV3Wm1nLU5lNHZVNi1CUVltMzNSVVNhcjFiY2R1NVhoZ0dPeTloLU1tYkQyYjNMUjNjajVlOXMzT0VJSmRaZ2N0RUdEQ1pHdVZMT0pNdkxnZWZVbkI3QjJCdmM0Zw?oc=5",
+      "title": "美 반도체 반등에…삼성전자·SK하닉, 장 초반 상승 전환[핫스탁]",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FUlVlTTRXSzBTS19WMGhIX0VKNEZ4TGlkaElMNnY4U3VsTkNjUjFEaG5wYURtZWJuLXZNMFBRcXVXVVFWOVdaUnBRNjNZWkVXUVJyR2F5cFZNYzl3WnIycNIBeEFVX3lxTE5KTXliY3Z5cmMtTDloc2VhVVliUVd2bHhXTklOWUJzRVhZdHVBR1g5b2VBM0dhY0R5NU0wczBQTTJrZlZVRFFTQ3FFNXlBeWpKNVBMOHFVTEd0dTZFSldmYlF4NG1UU05aMXlndkpDUG1YNG1iRGpTZA?oc=5",
       "source": "뉴시스",
-      "date": "Mon, 09 Nov 2026 06:33:29 GMT"
+      "date": "Mon, 09 Nov 2026 00:23:55 GMT"
+    },
+    {
+      "title": "하이닉스 팔고 삼성전자 담았다…급락 알테오젠도 ‘줍줍’ [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QYnctUDlORW00U3FiMzMwbWFTMW5XMGhqU3NRWk9yQUVEV2EtdmJQVGpQTHpueGw3Z3JkYlZmaHhUbkExcExLeVk0V0FKOTVsX1HSAVNBVV95cUxOS0ZqNFVrUkp4dGVDMHhPUWt4Z3BPVmY1b2piZ1B5VFg1S2pCNzBMQnptb2lacEJzZFNlVmFvNW1lTkhyUHdQQlF0Rms0WlpqeDYwdw?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 09 Nov 2026 02:51:42 GMT"
+    },
+    {
+      "title": "[블루웨이브 청구서②] 삼성전자·SK하이닉스, 미국 AI 데이터센터 규제 변수에 메모리 수요 셈법 복잡해지나",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9MUWlMUmotNjlrUkg0bDFTVVVfRGNseHo5WnV6eW1TWWtHbzhwUngxS3oxTnNLNzZRNzMxdXZORU80ZFNTZFhHNzBnYmVsaGRrTmszcDZWYUUzQlB6YzF1YlU0Q0p5aThGckx6Y2pJQklSY2M?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Mon, 09 Nov 2026 07:57:47 GMT"
     }
   ]
 }

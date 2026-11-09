@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-09T13:47:57+00:00",
+  "updated_at": "2026-11-09T17:45:40+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼성·SK하이닉스 현금 329조…반도체 양강, 투자·주주환원 경쟁도 커진다",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52Q1BzMG5YeHJacDdQcFFsS2p3Q3BGeUNia1R6aUVJVnd1Zm5CbHJMWFBUbGVsZVVwWGU1d1JEMXdyWm9iUjlZMVlDelZsNVdlMkpVbHJn?oc=5",
+      "source": "중앙일보",
+      "date": "Sun, 08 Nov 2026 07:22:35 GMT"
+    },
     {
       "title": "\"SK하닉보다 심할 줄은\"…'474만→161만원' 곡소리 터졌다",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uZFVRTVZPLVRLMWwwaEtNcThxWnlhVkRUSzBtaDlEQ09Bekc4SW8xb0pqMllkY2FZcUIzZTdPNUxHTGJUNTdaRkFXNmR5Qy1QTzJsN1J3a0FrUQ?oc=5",
@@ -11,28 +17,16 @@
       "date": "Sun, 08 Nov 2026 01:06:06 GMT"
     },
     {
-      "title": "삼성·SK하이닉스 안방 넘보나 했더니… TSMC, 3D D램 진출설 선 그어",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0M214OUJuamZ2dW1PNU5fREViWHMyQU0zdUxzal93TzMzeWtGaDZUTUxqVWFsVENHVC1xZGZCMGg1RWtxRTFrQ1M3d2ZPSFByMTY5d3d4Vm42cTFvMkxMRXNQR3hEcURmeVdOOTA5ZmrSAXRBVV95cUxOdWctYmxycmJKWGU1YUkzNXpmQnVBc0VEM1FCcmV4d0lMTWtNY0dDREpzTE5hc013NWlOTW1LR2l6TEdiSEVfTnRTMVlkRjQwTHg1VDgtelE5TWEyZ2FJRTBZN2hQb3Z3SVNzQi1rRUV3VGF4SA?oc=5",
-      "source": "IT조선",
-      "date": "Sun, 08 Nov 2026 04:21:12 GMT"
+      "title": "삼전닉스가 저평가 받는 이유… \"노조 때문\" \"지정학적 위험\"",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOEVkZDdRYTdSQk1INndGWnNIaTlsaG8yWjR6WTJndlh5SWVwQlN3azRWRXI5Q1VQZ0xDSGtWSkxTVzRMdEQ5eWVDVWN1QmZTVWUzaWVJN2JYVDJtVWlZMjhQSDh3Rl9vLUlnd3pVRDNXX09tNFhSZEp6eXo3clRRdXhhVE8zUQ?oc=5",
+      "source": "조선일보",
+      "date": "Sun, 08 Nov 2026 18:04:17 GMT"
     },
     {
-      "title": "TSMC, 메모리 품귀에 사업 진출 검토하나…“삼성·SK하닉에 미칠 영향은 미미 전망”",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96LVpfY3ZoWW5QUGhlZGE3U3BTWTA1dTcxRHBxZzdXdUhfUmlXaGkxSWxUZnpFdXQtR0lTSE0xdWFjUEVPb2twX1c2Q0NFTXBfa05aMnlhZmlqR3NsUzk4dHVzWlR6V0ZyNl9XbmV3?oc=5",
-      "source": "아시아투데이",
-      "date": "Mon, 09 Nov 2026 09:28:23 GMT"
-    },
-    {
-      "title": "엔비디아, AI 메모리 설계 영향력 확대…삼전닉스 생산 전략 주목",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10QTdvZlV3WEp4WVNXakxsLWs1R3hjRkJMNFA3WXBQd2k5U1lBWGZMNlR2dVJ3UmIyOVd3cVdTTkVxOUloNnpUb2dJQ0hka29ETkQ1ZzhjRElDMmhNM1VPZQ?oc=5",
-      "source": "메트로신문",
-      "date": "Sun, 08 Nov 2026 06:36:17 GMT"
-    },
-    {
-      "title": "오를 땐 팔고 떨어지자 샀다…개미, 삼전하닉 집중 매수",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RSklmUGM4WFdnMFZUWDNVYURDcUoxVWhOczUwVmlzRkJfaHpHNW1HNXBQN2x4S0RXVDZFRzN3S0dMMW1JdTJlZnZyNTZ5LWJKai1sZA?oc=5",
-      "source": "매일경제",
-      "date": "Sun, 08 Nov 2026 02:41:49 GMT"
+      "title": "\"주식 열공하는데 왜 나만 잃을까\"…SK하이닉스 250층 물린 8년 차 개미의 '눈물'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LeHdyZlhJWG9ob0dfSy1xb2tkaEtBUFU5M0lnRndjN3NTUmRFUjdnMUxfTTR2WE9DMHBIY25LTWZfeVVlLTlJdnc1b0pGUEMyb0RVZWI5aF82QjQ2elV0QtIBeEFVX3lxTE94em1MZndsdkhXMHR3QmN1Y21WZm5MV2Q2dXV0cWIwcGVBY0d4UFhFSVVQNnJCUEpxVGV3YmxYeFFSMk5pVXRqRlR6SjB6Yk9BSTNMY0VGaHZwS2UwYlpqMlBJVG8wU09qNXlIcTNIQ2hQME5hVDZFbQ?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 09 Nov 2026 15:00:00 GMT"
     },
     {
       "title": "\"주식 갖고 있으라\"던 최태원…이번엔 \"롤러코스피\" 경고",
@@ -41,10 +35,10 @@
       "date": "Mon, 09 Nov 2026 05:29:00 GMT"
     },
     {
-      "title": "코어위브 11월 10일 실적발표 : SK하이닉스 주가 추가 하락할까? 아니면 반등할까? (feat. Soxl 투자)",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdkJzUnU2VHZJTW1PdVJfdUpKdlFsTHJ2X2lNdWxNLXVPbHJvNUdoV25OZkMzS0F3enlZQUROU3hqSWZlQXczSmwwUnJjQTJiUWFZUURTeFByNGFpY1N5cHNnU0tkT3RneTlhV2FUTzcwcmtpcnJ2bGx0QWhxY0J6ZXppWQ?oc=5",
-      "source": "네이버 프리미엄콘텐츠",
-      "date": "Sun, 08 Nov 2026 12:26:00 GMT"
+      "title": "오를 땐 팔고 떨어지자 샀다…개미, 삼전하닉 집중 매수",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RSklmUGM4WFdnMFZUWDNVYURDcUoxVWhOczUwVmlzRkJfaHpHNW1HNXBQN2x4S0RXVDZFRzN3S0dMMW1JdTJlZnZyNTZ5LWJKai1sZA?oc=5",
+      "source": "매일경제",
+      "date": "Sun, 08 Nov 2026 02:41:49 GMT"
     },
     {
       "title": "맞춤형 HBM이 바꾼 SK·삼성 인사…기술통이 미주사업 이끈다",
@@ -71,28 +65,34 @@
       "date": "Mon, 09 Nov 2026 05:53:29 GMT"
     },
     {
+      "title": "삼성, 내년 HBM 1위 오르나…SK하이닉스와 주도권 경쟁 격화",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOcmVFb1M4OThIMzQ0ZWxwbERJSWtVLXE5UW1FNGhaM0ZNTVcxZ0pGczN3LWpGanpMWXhqMkI1MzVnWm02UGVsQ1BRTFcyeG5lYjhmUnM3Y0hvU25vbXlKOQ?oc=5",
+      "source": "메트로신문",
+      "date": "Mon, 09 Nov 2026 06:25:48 GMT"
+    },
+    {
       "title": "[특징주]삼성전자·SK하이닉스, 장 초반 강보합…美 반도체주 반등에 투자심리 회복",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FQkVQdW1mTXVudDhTSmQwdy00UjNPTVlFTVBjYzg5ZXdvUXlCaklDTlh3VXAwbUhUdTRiUFZnd1hQeVo3UzF3U28wSUYxb1NmaHZYenJMRVVPZw?oc=5",
       "source": "브릿지경제",
       "date": "Mon, 09 Nov 2026 00:26:00 GMT"
     },
     {
-      "title": "[AI서울 2026] 엔비디아 “한국, 향후 10년 피지컬 AI 여정의 핵심”",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OQy1UTlpwQmlWVU1SUUZacHVFMEwwSUJkdjk3azNJTmd4NGNZcFlUSGZVWmJpNmZ4VzBybmUwVUhleURWYzZtaFdLdW9vZ0Z1bXBTc3F6dll6ZVE?oc=5",
-      "source": "에너지경제신문",
-      "date": "Mon, 09 Nov 2026 09:34:21 GMT"
+      "title": "[속보]삼성전자·SK하이닉스 3%대 하락 출발",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUaUYtY0stLUNKWkx3cklEMi1RejZQT2g2Uk10UFYzUzRleHpiekZXZW9hU01MWUgza3Ata2RIaExmQjdyQ2RCSTR2alNvNnl1NkI5OXJ0WW9rMDlhX3N5UdIBeEFVX3lxTFBuMnJkSjI0YzFFa3FVZWgyX0ZVWlp2eUpsalJHdk1oUEZoazlVZl9TcVRZMUhpOWo1cHdGOXF1aDFnTXpkMkNWcFpmTEs5RHpZMVJ6dGFnU2tsTTRzRFlDNHY0WEo4VFJIaXEtN1ppenpxTFFJeHNERg?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 09 Nov 2026 00:03:36 GMT"
     },
     {
-      "title": "‘엔비디아 AI 데이 서울’ 개막…삼성·LG·SK도 총출동한다는데",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzS0V3QlRxazdjSXJnaXB3b2FuR0l1ejZTdHBkSmM1ekNWQTNHRHJlMFZ3UHMtQWktUE14U2tEdnlic19IaTUzSElta0ZleEVfUW5HUU5B?oc=5",
-      "source": "매일경제",
-      "date": "Mon, 09 Nov 2026 00:27:41 GMT"
+      "title": "워트, SK하이닉스 설비투자 확대로 실적 개선 \"올 영업익 70억 기대\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wME4wUVlyV1dBRXN6SXhYczJZdkc4MHV4LTVaSEpuV0R4bmtGTmI1Y0M2OVpITHBuWjR0QWZxTTVSRW1Henhka0NnOHNJRE5ubDJaVjI4b0ZGMUNVbkR5RXlVYmRJeHla0gFuQVVfeXFMTVFaOGgyN25QM015RzNISERBQ0s5ZkZoY2pIOERFT1R2dHlUYTBxcGRTTmExV0JlVTl3X3EtYXVWdkVVTGIwRU9qcTU3TWliRjRNZnB2QWxLSjVkeE43VnNZa1ZMbExFRU9HaDdLWkE?oc=5",
+      "source": "머니투데이",
+      "date": "Sun, 08 Nov 2026 23:00:00 GMT"
     },
     {
-      "title": "SK하이닉스, 반도체 공정 분석 30배 가속한 비결은 엔비디아 AI",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9qZGdRazJHQzhmZXZzX2pucVA1ZHE5WDRrLUh4c2kyRWd2UFZELVR6UzlORDhoT3cwM0RvYjVnX3E3Zm5uSjFDbnczdw?oc=5",
-      "source": "아이뉴스24",
-      "date": "Mon, 09 Nov 2026 08:52:49 GMT"
+      "title": "하이닉스 본사보다 ‘셔세권(셔틀버스 역세권)’",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xVC1oQXpTdkxkbzlBWXFKVEpBVVNyN0w1T1VORUE2bW9TYlpMQ3FucERhaXVNU1ZCR3BReVlIUkpLLUIteTRCdTNEdklJV1p3TEE?oc=5",
+      "source": "경인일보",
+      "date": "Mon, 09 Nov 2026 10:32:49 GMT"
     }
   ]
 }
