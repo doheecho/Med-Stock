@@ -1,14 +1,20 @@
 {
-  "updated_at": "2026-11-08T01:19:22+00:00",
+  "updated_at": "2026-11-09T01:39:42+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
     {
-      "title": "블루웨이브 쇼크에 개미 레버리지 반토막…곱버스만 '활짝'",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5CTXZUb0hWYUJEenlESk9IQjVTTVJqWVc5d1NNUTFYR1VQMTBfRjNSaHFVbGpackQ3M2RxZXVYNzUzbHZIV0dTeEU0TUlnUUFmaFYtVVppWFJXQXVsVVl4MVNWRkc?oc=5",
-      "source": "서울경제TV",
-      "date": "Sat, 07 Nov 2026 23:00:07 GMT"
+      "title": "코스피 폭락에 인버스 ETF 독주... 반도체 레버리지 최대 38% 급락 [주간 ETF]",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsUWY4RTV0MWpqbW95dk1PUENpM2o1LUdrN05KeXpjd29yQk91eVpXaEo1MjMtZ0I0Wk5XandrNHRyZHpaSFBVbGFjNGs5Sk5EYkNlOWlRQUliT2RheF9jdHRqSlo?oc=5",
+      "source": "매일일보",
+      "date": "Sun, 08 Nov 2026 23:25:28 GMT"
+    },
+    {
+      "title": "[블루웨이브 쇼크] 삼전닉스 레버리지, 이틀 새 최대 38% 증발 : 네이버 블로그",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZjlfcE4wUW1HOTVtdk9iZ045OVlxSk1VOFE3LU45QW1FM1BYV0ZDVm1qX3JkcklCSkhkQjZ3Q1ZuWmRDYTQ1Sk5NMmFyaVdjSi1LWnBlcGw1Y3VINUs4NnZhalJoYzlMclNYNGFkVG9pQlJYZWtuU2dfZEZxSl9Vd3pFcFpYMlZ3M3k5MG9Yaw?oc=5",
+      "source": "Naver Blog",
+      "date": "Sun, 08 Nov 2026 18:45:31 GMT"
     },
     {
       "title": "[ETF 시황] 반도체株 급락에 ETF 수익률 희비…레버리지 20%↓·인버스 20%↑",
@@ -23,22 +29,16 @@
       "date": "Thu, 05 Nov 2026 02:05:32 GMT"
     },
     {
-      "title": "반도체 ETF 13% 급등... 방산 레버리지는 19% 급락 [주간 ETF]",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1EZG9hNjNWdXVjZk5rcmdOQndSZDdKdC00RlJsNExOUlNuOXhDX2Foc0R5OTM0WlRyWDJJWlVFdm40WDVUdWdTT21rdkxTaE03akE3V2ZFblF1OE5CT0xwMWhla20?oc=5",
-      "source": "매일일보",
-      "date": "Sun, 01 Nov 2026 23:16:38 GMT"
+      "title": "블루웨이브 쇼크에 개미 레버리지 반토막…곱버스만 '활짝'",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5CTXZUb0hWYUJEenlESk9IQjVTTVJqWVc5d1NNUTFYR1VQMTBfRjNSaHFVbGpackQ3M2RxZXVYNzUzbHZIV0dTeEU0TUlnUUFmaFYtVVppWFJXQXVsVVl4MVNWRkc?oc=5",
+      "source": "서울경제TV",
+      "date": "Sat, 07 Nov 2026 23:00:07 GMT"
     },
     {
       "title": "\"바닥인 줄 알았더니 지하실\"…'1조 베팅' 불개미들 날벼락 [분석+]",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YTVI2c1M5ZDJtZ0pualgxRWRiYVZsVTZ4eDhJak1oejV0RXlQU0JwUXJ2RnB2YVZtdEh3cGNHblkxTmc0bzM4cG5mbWpfSHZQMUUwUXJUTjNEUQ?oc=5",
       "source": "한국경제",
       "date": "Thu, 05 Nov 2026 06:18:22 GMT"
-    },
-    {
-      "title": "[ETF 시황] 반도체株 급락에 인버스 ETF 19% '급등'",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YNFgyTHV1UnNHc1g1TW8xZkZ1Z1pSRnZ3eUdfTGt3LWxRUlBMRDc2N25nM29FNmRHUzB0MkVRNHo0eEtnR3VlbGdOWExXbFBWamxyTkR6R2p6aHNX?oc=5",
-      "source": "뉴스핌",
-      "date": "Thu, 05 Nov 2026 07:22:00 GMT"
     },
     {
       "title": "반도체 랠리에 월배당 더했다…삼성운용 ’KODEX 반도체커버드콜’ 출격 By EBN",
@@ -53,16 +53,16 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
+      "title": "[ETF 시황] 반도체株 급락에 인버스 ETF 19% '급등'",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YNFgyTHV1UnNHc1g1TW8xZkZ1Z1pSRnZ3eUdfTGt3LWxRUlBMRDc2N25nM29FNmRHUzB0MkVRNHo0eEtnR3VlbGdOWExXbFBWamxyTkR6R2p6aHNX?oc=5",
+      "source": "뉴스핌",
+      "date": "Thu, 05 Nov 2026 07:22:00 GMT"
+    },
+    {
       "title": "[월간 ETF] 9月, ‘KODEX 반도체레버리지’ 수익률 톱 41.73%...반도체 ETF 상위권 장악",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jRWQ1OGFoNFpuNFBMQVdsZFVYSUw3QU96UXhOdS1FWERFUnlxcjMxYld3U0VEaC1TVUhYSGxDSUZmRnUwbG1XSDJtQmVTenpib3hMaA?oc=5",
       "source": "더밸류뉴스",
       "date": "Thu, 01 Oct 2026 07:00:00 GMT"
-    },
-    {
-      "title": "\"공포에 사라\" 통했다…레버리지 1500억 베팅한 개미 '방긋'",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUJvLW16UHBYdHJjVmxUVEhXZ1d1QmNBX2dOcEJLUUJVd3k4dzFRWU1ZeE9QWUhVSl9mX2RPdm45N0N2QkQ3LVlJczI3S1htdDIwYlBfSTd4c0oyYko0dFdpZGpPdTFVc0FpLU10SF93UnlDeVZjYnQwbUFvWGtRbQ?oc=5",
-      "source": "이데일리",
-      "date": "Mon, 02 Nov 2026 07:28:07 GMT"
     },
     {
       "title": "“반도체 주가 상승도 먹고 월말엔 배당까지”…KODEX 반도체타겟위클리커버드콜 상장",
@@ -71,16 +71,16 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "반등 겨냥 베팅했던 개미 떼돈…코스피, AI 버블론 딛고 W 반등 본격화하나",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BNnBnOXZ2dGZDTlRFZDk0REtSUklKSTlUaUdkWnVHSUVJSmNxaWFsenR0V2dTZkhTajFTUmhORzRGVlBDckVqRmZvM0JvWDM1ZjRMS280bmdvSTFCODlUeHZlNnRaYlo5Z2laT3g1WlZmNHhE?oc=5",
-      "source": "파이낸셜포스트",
-      "date": "Mon, 02 Nov 2026 21:30:00 GMT"
-    },
-    {
       "title": "같은 반도체 ETF인데 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도 | KB의 생각",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42SWdLM0M2R1htdTlOXzdNNmN0cW44c3czeDUxRXg0UkpMbDJFRE01SkN1YjF3NFh1dDVlV2NCRWNiWnZJeVEwM1NOVlZ6SkdOMnhHMlY1anhSRkhJUUZqTEIwdTlYZVBiUVpYRmN3YjhKUQ?oc=5",
       "source": "KB Think",
       "date": "Fri, 29 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "\"공포에 사라\" 통했다…레버리지 1500억 베팅한 개미 '방긋'",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUJvLW16UHBYdHJjVmxUVEhXZ1d1QmNBX2dOcEJLUUJVd3k4dzFRWU1ZeE9QWUhVSl9mX2RPdm45N0N2QkQ3LVlJczI3S1htdDIwYlBfSTd4c0oyYko0dFdpZGpPdTFVc0FpLU10SF93UnlDeVZjYnQwbUFvWGtRbQ?oc=5",
+      "source": "이데일리",
+      "date": "Mon, 02 Nov 2026 07:28:07 GMT"
     },
     {
       "title": "삼성운용, ‘KODEX 반도체타겟위클리커버드콜’ 신규 상장",
@@ -89,10 +89,10 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "코스피·코스닥 레버리지 ETF 급락, 개인 투자자들 현금 고갈 우려",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1YRGwyMVVQU3FDLUo0di1TbTlsNDlKdzFmTHBFS2dNZ1hhTXp0RVAxaUQ5RDNhUU9vNFQxMzk4c2hKejVJdlBRNEhOc2VuOGJlbUNDRlBXMGIwMTJ5QWZydHRDUFZuaEI1WFRXTHI2alFhZTg?oc=5",
-      "source": "스페셜타임스",
-      "date": "Thu, 05 Nov 2026 08:08:38 GMT"
+      "title": "반등 겨냥 베팅했던 개미 떼돈…코스피, AI 버블론 딛고 W 반등 본격화하나",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BNnBnOXZ2dGZDTlRFZDk0REtSUklKSTlUaUdkWnVHSUVJSmNxaWFsenR0V2dTZkhTajFTUmhORzRGVlBDckVqRmZvM0JvWDM1ZjRMS280bmdvSTFCODlUeHZlNnRaYlo5Z2laT3g1WlZmNHhE?oc=5",
+      "source": "파이낸셜포스트",
+      "date": "Mon, 02 Nov 2026 21:30:00 GMT"
     }
   ]
 }
