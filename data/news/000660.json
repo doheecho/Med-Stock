@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-09T01:39:38+00:00",
+  "updated_at": "2026-11-09T13:47:57+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "\"SK하닉보다 심할 줄은\"…'474만→161만원' 곡소리 터졌다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uZFVRTVZPLVRLMWwwaEtNcThxWnlhVkRUSzBtaDlEQ09Bekc4SW8xb0pqMllkY2FZcUIzZTdPNUxHTGJUNTdaRkFXNmR5Qy1QTzJsN1J3a0FrUQ?oc=5",
+      "source": "한국경제",
+      "date": "Sun, 08 Nov 2026 01:06:06 GMT"
+    },
     {
       "title": "삼성·SK하이닉스 안방 넘보나 했더니… TSMC, 3D D램 진출설 선 그어",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0M214OUJuamZ2dW1PNU5fREViWHMyQU0zdUxzal93TzMzeWtGaDZUTUxqVWFsVENHVC1xZGZCMGg1RWtxRTFrQ1M3d2ZPSFByMTY5d3d4Vm42cTFvMkxMRXNQR3hEcURmeVdOOTA5ZmrSAXRBVV95cUxOdWctYmxycmJKWGU1YUkzNXpmQnVBc0VEM1FCcmV4d0lMTWtNY0dDREpzTE5hc013NWlOTW1LR2l6TEdiSEVfTnRTMVlkRjQwTHg1VDgtelE5TWEyZ2FJRTBZN2hQb3Z3SVNzQi1rRUV3VGF4SA?oc=5",
@@ -11,46 +17,34 @@
       "date": "Sun, 08 Nov 2026 04:21:12 GMT"
     },
     {
-      "title": "TSMC, 엔비디아 요청에 3D D램 검토…삼성·SK하이닉스와 경쟁하나",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSZGZTQThOS3ZtN2FUTDJzcG00bHIxVXFMbHN0TzdlQUxTNllMNk5TR1lSZkJWQm1JYkw3U3h1Y0NCMnZZVTVSYUhUeGZCSDJBQm1ZSXRfQjh4MV9ESUw4NFV1Uy1ja2hnSkE?oc=5",
-      "source": "AI타임스",
-      "date": "Sat, 07 Nov 2026 01:19:37 GMT"
+      "title": "TSMC, 메모리 품귀에 사업 진출 검토하나…“삼성·SK하닉에 미칠 영향은 미미 전망”",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96LVpfY3ZoWW5QUGhlZGE3U3BTWTA1dTcxRHBxZzdXdUhfUmlXaGkxSWxUZnpFdXQtR0lTSE0xdWFjUEVPb2twX1c2Q0NFTXBfa05aMnlhZmlqR3NsUzk4dHVzWlR6V0ZyNl9XbmV3?oc=5",
+      "source": "아시아투데이",
+      "date": "Mon, 09 Nov 2026 09:28:23 GMT"
     },
     {
-      "title": "[특징주]삼성전자·SK하이닉스, 장 초반 강보합…美 반도체주 반등에 투자심리 회복",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FQkVQdW1mTXVudDhTSmQwdy00UjNPTVlFTVBjYzg5ZXdvUXlCaklDTlh3VXAwbUhUdTRiUFZnd1hQeVo3UzF3U28wSUYxb1NmaHZYenJMRVVPZw?oc=5",
-      "source": "브릿지경제",
-      "date": "Mon, 09 Nov 2026 00:26:00 GMT"
+      "title": "엔비디아, AI 메모리 설계 영향력 확대…삼전닉스 생산 전략 주목",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10QTdvZlV3WEp4WVNXakxsLWs1R3hjRkJMNFA3WXBQd2k5U1lBWGZMNlR2dVJ3UmIyOVd3cVdTTkVxOUloNnpUb2dJQ0hka29ETkQ1ZzhjRElDMmhNM1VPZQ?oc=5",
+      "source": "메트로신문",
+      "date": "Sun, 08 Nov 2026 06:36:17 GMT"
     },
     {
-      "title": "워트, SK하이닉스 설비투자 확대로 실적 개선 \"올 영업익 70억 기대\" - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wME4wUVlyV1dBRXN6SXhYczJZdkc4MHV4LTVaSEpuV0R4bmtGTmI1Y0M2OVpITHBuWjR0QWZxTTVSRW1Henhka0NnOHNJRE5ubDJaVjI4b0ZGMUNVbkR5RXlVYmRJeHla0gFuQVVfeXFMTVFaOGgyN25QM015RzNISERBQ0s5ZkZoY2pIOERFT1R2dHlUYTBxcGRTTmExV0JlVTl3X3EtYXVWdkVVTGIwRU9qcTU3TWliRjRNZnB2QWxLSjVkeE43VnNZa1ZMbExFRU9HaDdLWkE?oc=5",
-      "source": "머니투데이",
-      "date": "Sun, 08 Nov 2026 23:00:00 GMT"
+      "title": "오를 땐 팔고 떨어지자 샀다…개미, 삼전하닉 집중 매수",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RSklmUGM4WFdnMFZUWDNVYURDcUoxVWhOczUwVmlzRkJfaHpHNW1HNXBQN2x4S0RXVDZFRzN3S0dMMW1JdTJlZnZyNTZ5LWJKai1sZA?oc=5",
+      "source": "매일경제",
+      "date": "Sun, 08 Nov 2026 02:41:49 GMT"
     },
     {
-      "title": "스몰인사이트 \"워트, HBM·ㆍEUV로 공정 영역 확대⋯내년 성장 본격화\"",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAtUVBBdHBpclJzdFVVY2ZSdFNKMXhhWUsyc0pLT194UU5pajE4ajhKbWdtTDFaU1BzRTMwSzFRbFhtNFlQQmNqc1o5OFdPS2dvTkM2Rw?oc=5",
-      "source": "이투데이",
-      "date": "Sun, 08 Nov 2026 23:15:00 GMT"
+      "title": "\"주식 갖고 있으라\"던 최태원…이번엔 \"롤러코스피\" 경고",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mVDNmMldzX2FZemM3NlNyV085NWNyQWNGVXNISkRZakhVZWJvQ2M2Ql9jNlI0TV9tVE1qZVRZYU5XMERCTzdSbzg3XzdlOXV1Qk5XUw?oc=5",
+      "source": "JTBC",
+      "date": "Mon, 09 Nov 2026 05:29:00 GMT"
     },
     {
-      "title": "외인 던질 때 471억 담았다…10억 자산가들이 급락장에 찍은 두 종목",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Wa0kzNG96eWZucTMxbHozRUYxc0E3WTZILTExVDJCMzVKdjVjSWo3Tl9TZC1ubTk0TWVhcUdCeEMzdUtUY1NWMzRVdFB2UWdHeWR0MFhCUkpWZw?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 08 Nov 2026 01:39:31 GMT"
-    },
-    {
-      "title": "‘블루 쓰나미’에 외국인 삼성·SK하이닉스 7.6조 팔아치워",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NdnNWbFpsS0lQZlZHYmV5NHdpWTFwX29WalNGbE1VdXVnMkpmb3BNNDk4UG51VlZvVEVJSVEzRjRNYmcwNEhrODN6UXhKUHZMcEh2M3hwbVd0SXBDbF9FSU8tTHU4c3E2ekE?oc=5",
-      "source": "천지일보",
-      "date": "Sun, 08 Nov 2026 02:12:11 GMT"
-    },
-    {
-      "title": "'오늘은 오를까'…SK하이닉스 담은 1% 초고수들, 반등에 베팅",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MWZjY0xWdWRPMGtoV2JVTXZyN05ISHZ0LTdMTFJzMnB5Z1hiRmJQUlZHSm5SQ3hlNWlWY1JZdWpnTmlEN2IyRHVHZmVwbURjbDkwR1gyZTNBUQ?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 08 Nov 2026 23:54:45 GMT"
+      "title": "코어위브 11월 10일 실적발표 : SK하이닉스 주가 추가 하락할까? 아니면 반등할까? (feat. Soxl 투자)",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdkJzUnU2VHZJTW1PdVJfdUpKdlFsTHJ2X2lNdWxNLXVPbHJvNUdoV25OZkMzS0F3enlZQUROU3hqSWZlQXczSmwwUnJjQTJiUWFZUURTeFByNGFpY1N5cHNnU0tkT3RneTlhV2FUTzcwcmtpcnJ2bGx0QWhxY0J6ZXppWQ?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Sun, 08 Nov 2026 12:26:00 GMT"
     },
     {
       "title": "맞춤형 HBM이 바꾼 SK·삼성 인사…기술통이 미주사업 이끈다",
@@ -59,40 +53,46 @@
       "date": "Sun, 08 Nov 2026 21:09:00 GMT"
     },
     {
-      "title": "삼성·SK하이닉스 현금 329조…반도체 양강, 투자·주주환원 경쟁도 커진다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52Q1BzMG5YeHJacDdQcFFsS2p3Q3BGeUNia1R6aUVJVnd1Zm5CbHJMWFBUbGVsZVVwWGU1d1JEMXdyWm9iUjlZMVlDelZsNVdlMkpVbHJn?oc=5",
-      "source": "중앙일보",
-      "date": "Sun, 08 Nov 2026 07:22:35 GMT"
+      "title": "빅테크 맞춤형 인사…삼전닉스 미주사업 기술통 배치",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wSHNlbktpSGNZZkxZODBPcjNqTlNWZ1VVeWY5Vmw0ZDhtN1FmY1FOZWo1a20ya3B2RGxKQ3dLY21JdGpUcUg3cWZ6T1VwdmgwVGhn0gFYQVVfeXFMTnVZcEo4Q3drRDIwQUNUVFk1RnpnYUtoNk94Nk9yZk1UdDNHRTVLeWZJd2l3S0RJaEhNcS10dEJaWXpQVnJYaDE3OWdKS1l2WUh0YVRsMVliMg?oc=5",
+      "source": "SBS Biz",
+      "date": "Sun, 08 Nov 2026 21:40:00 GMT"
     },
     {
-      "title": "데이터로 증명한 10년의 노력… SK하이닉스, 산업보건 선진화위 운영 성과 공유",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15OWw3MHJZeTJVam5QcGFMOExQSG4xUzk5WW9ReGp4ZDIzM2NWeDNzemFBd29pc1kwdjBxY2U3OTJSNjgtMUJaRHdab25TTXV5ZGpUTmpuMlJ6VFpzdjZ2a29DU2l3aGZGQTRPNnlXYw?oc=5",
-      "source": "SK hynix",
-      "date": "Fri, 06 Nov 2026 00:59:04 GMT"
+      "title": "미국 사업 전면에 '기술통' 내세운 삼성·하닉… '블루 웨이브' 대응 시험대",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YZDV2OGM3X293WmdPNGZNUGJTLTJGdkEtVjRlLXJYWEpsS3VTQnJVajdpNGpxd1NHMVltWFUzVk9tRHNNTFNubXBQdDgxQWVXaW14QmUybFJXTmVSWnZhel9CTGQwRjlzcVdTc3RR0gFzQVVfeXFMTlRSNTZudWg1MTV3ZHZmMUpmcHdUdXJwZVdhT2Q1R3IwVFNzMXhwMHJFVzNxRXI4TTBkal8ySVZVOE9BY2hJODdnaHhTTGpYbXpjeUpyWHpJUVJqeGpGX0dGTHN6U2F2cG9xQjlUbnJITGROMA?oc=5",
+      "source": "한국일보",
+      "date": "Mon, 09 Nov 2026 07:33:00 GMT"
     },
     {
-      "title": "[ETF 열전] '블루웨이브' 쇼크에 인버스 싹쓸이…하이닉스 인버스 45%↑",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE96VXZxNF8wRGlRRDdZcEMzZ3B5YlUxdDFwdEYzdzU4b1A1T21seldBQ0lJUGFKMUk1Mnh6aXJOX3RiaTdpY01BZWE2YzlmTWN3cjNVbEM4QjdRZklDd01ueGIwRjV2NnFRUHV0Ql96Yw?oc=5",
-      "source": "뉴스웍스",
-      "date": "Mon, 09 Nov 2026 01:05:28 GMT"
+      "title": "'젠슨 황 스캔들 파장'에 미국의 중국 반도체 규제 강화되나, 삼성전자·SK하이닉스 메모리 영향 '촉각'",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93X1FTWnZKTTZzY0N3dU5VUk5BQUJIdFFpWTliYndqUHdnRklpZDliXzd6aV96dmF5ejlEQ2g5OGdhY2xCUGpMVzkxY2JHWlVxNjlxZ1BZOXlVWTZ3ak5uaWUzZU92dEplRHctTW1IdjV1NGs?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Mon, 09 Nov 2026 05:53:29 GMT"
     },
     {
-      "title": "“삼성전자·SK하이닉스 개미들 월요일만 기다렸다”…美 반도체주 급반등, 코스피 살아날까",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5makhQajRURlE4WnV4LVdicGxtUFVCMkdhNXhOaFZVY0x3eWU2VkFPSzV5NXdrU3B3dHpLMHJQQmdtcnZIZ1hJU3IwdU5FZGJWb2hISXpub0YxSWRHUmlrTExDQ183anB4NEFkRQ?oc=5",
-      "source": "데일리25",
-      "date": "Sun, 08 Nov 2026 20:25:03 GMT"
+      "title": "[특징주]삼성전자·SK하이닉스, 장 초반 강보합…美 반도체주 반등에 투자심리 회복",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FQkVQdW1mTXVudDhTSmQwdy00UjNPTVlFTVBjYzg5ZXdvUXlCaklDTlh3VXAwbUhUdTRiUFZnd1hQeVo3UzF3U28wSUYxb1NmaHZYenJMRVVPZw?oc=5",
+      "source": "브릿지경제",
+      "date": "Mon, 09 Nov 2026 00:26:00 GMT"
     },
     {
-      "title": "SK하이닉스 목표가 470만 원, 숫자만 보면 놓친다ㅣ월가는 이렇게 읽는다(2화) [매플 위켄드]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HMGNjUkRlUE8wbS1odDdrNUMzeUVMUXZEek5EbVE1eXlaOEJzc1JHbVUwR1JLVUpmdHJ4anpManZKcl9rYkJVaHY5ZEtxeG5hbVE?oc=5",
+      "title": "[AI서울 2026] 엔비디아 “한국, 향후 10년 피지컬 AI 여정의 핵심”",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OQy1UTlpwQmlWVU1SUUZacHVFMEwwSUJkdjk3azNJTmd4NGNZcFlUSGZVWmJpNmZ4VzBybmUwVUhleURWYzZtaFdLdW9vZ0Z1bXBTc3F6dll6ZVE?oc=5",
+      "source": "에너지경제신문",
+      "date": "Mon, 09 Nov 2026 09:34:21 GMT"
+    },
+    {
+      "title": "‘엔비디아 AI 데이 서울’ 개막…삼성·LG·SK도 총출동한다는데",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzS0V3QlRxazdjSXJnaXB3b2FuR0l1ejZTdHBkSmM1ekNWQTNHRHJlMFZ3UHMtQWktUE14U2tEdnlic19IaTUzSElta0ZleEVfUW5HUU5B?oc=5",
       "source": "매일경제",
-      "date": "Sun, 08 Nov 2026 06:03:18 GMT"
+      "date": "Mon, 09 Nov 2026 00:27:41 GMT"
     },
     {
-      "title": "[특징주] 삼성전자·SK하이닉스, 美 반도체주 회복.. 동반 '상승'",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUk81eTZhVkdIbzhPWnVrVzdBaDNMYlJhQjcxNk5heDVuNXh5Z0c4Ni1UMGdab0VaQW5ZdVBTM2gtWmw2RUhPZmg3VnB5WlpzdW5vYmo4b1NGRXJRWmJWcFpCLXNTaWVVemFYZ2tCdG9HeW13S3VqV1dVd3U5b3AtNWc3NnRHNDFj?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Mon, 09 Nov 2026 00:46:40 GMT"
+      "title": "SK하이닉스, 반도체 공정 분석 30배 가속한 비결은 엔비디아 AI",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9qZGdRazJHQzhmZXZzX2pucVA1ZHE5WDRrLUh4c2kyRWd2UFZELVR6UzlORDhoT3cwM0RvYjVnX3E3Zm5uSjFDbnczdw?oc=5",
+      "source": "아이뉴스24",
+      "date": "Mon, 09 Nov 2026 08:52:49 GMT"
     }
   ]
 }
