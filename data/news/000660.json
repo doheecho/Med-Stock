@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-11-09T17:45:40+00:00",
+  "updated_at": "2026-11-10T04:04:52+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼성전자·SK하이닉스 5~8% ‘껑충’…코스피·코스닥 잇따라 매수 사이드카",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5tanliMDVqSjg4blhveGpsc1VVMWNPRzZtMGhidlBGWWN4U21KRHRFNzV5WkhZUVVhSHNuTkZqTEgzaUlCYzVPRUc4TVpSRGw4X1AxTA?oc=5",
+      "source": "JTBC",
+      "date": "Tue, 10 Nov 2026 00:05:00 GMT"
+    },
+    {
+      "title": "코스피 5% 급등에 매수 사이드카…삼성전자 5%·SK하이닉스 7%↑",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wNjFIYjQyUWtoYzJKVW90TmVtbUNEWlVmNE5jWFVlM1pIQTRaTWFJclN6ZTE5bkROTDdfcTJZUkp4ZVQ1SEg0SGFlakNienZMaHJOV1Z6cjU4UQ?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 10 Nov 2026 00:17:31 GMT"
+    },
+    {
+      "title": "삼성전자 5%·SK하이닉스 7% 강세… 코스피 5272선 반등",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQUXBybzRtWHgwUWFHM1MzWGpQSmhMYUlZUTNhamV0dFhtY2NlLWxJbktfcWZOZkZCY3drak5nbWhJQzIyUGNZRk5WQU02aHMyVmFfMFFRMlcyVUJlRko2SHlKVTAzaG5DYVNuVlFSeXhiN0ktX1FyYUtYOFAtQQ?oc=5",
+      "source": "서울신문",
+      "date": "Tue, 10 Nov 2026 00:26:53 GMT"
+    },
     {
       "title": "삼성·SK하이닉스 현금 329조…반도체 양강, 투자·주주환원 경쟁도 커진다",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52Q1BzMG5YeHJacDdQcFFsS2p3Q3BGeUNia1R6aUVJVnd1Zm5CbHJMWFBUbGVsZVVwWGU1d1JEMXdyWm9iUjlZMVlDelZsNVdlMkpVbHJn?oc=5",
@@ -11,16 +29,10 @@
       "date": "Sun, 08 Nov 2026 07:22:35 GMT"
     },
     {
-      "title": "\"SK하닉보다 심할 줄은\"…'474만→161만원' 곡소리 터졌다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uZFVRTVZPLVRLMWwwaEtNcThxWnlhVkRUSzBtaDlEQ09Bekc4SW8xb0pqMllkY2FZcUIzZTdPNUxHTGJUNTdaRkFXNmR5Qy1QTzJsN1J3a0FrUQ?oc=5",
-      "source": "한국경제",
-      "date": "Sun, 08 Nov 2026 01:06:06 GMT"
-    },
-    {
-      "title": "삼전닉스가 저평가 받는 이유… \"노조 때문\" \"지정학적 위험\"",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOEVkZDdRYTdSQk1INndGWnNIaTlsaG8yWjR6WTJndlh5SWVwQlN3azRWRXI5Q1VQZ0xDSGtWSkxTVzRMdEQ5eWVDVWN1QmZTVWUzaWVJN2JYVDJtVWlZMjhQSDh3Rl9vLUlnd3pVRDNXX09tNFhSZEp6eXo3clRRdXhhVE8zUQ?oc=5",
-      "source": "조선일보",
-      "date": "Sun, 08 Nov 2026 18:04:17 GMT"
+      "title": "SK하이닉스 세금만 2조 육박…이천시 곳간의 변화",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oWV9VRDl5dnRYcUoyN1lpX0ZwVWp0WkYwc05JZDRsdlNhMHJPYUQweUlTSm5qRXc0RkxhSXFVbS1EczlaUTFEQ1cwSE80Wjk4bHYyM09vc1N6R2hCYjk1RUdQTXdMWUNaMXRZVWpqQUs?oc=5",
+      "source": "연합인포맥스",
+      "date": "Tue, 10 Nov 2026 03:21:01 GMT"
     },
     {
       "title": "\"주식 열공하는데 왜 나만 잃을까\"…SK하이닉스 250층 물린 8년 차 개미의 '눈물'",
@@ -29,70 +41,58 @@
       "date": "Mon, 09 Nov 2026 15:00:00 GMT"
     },
     {
-      "title": "\"주식 갖고 있으라\"던 최태원…이번엔 \"롤러코스피\" 경고",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mVDNmMldzX2FZemM3NlNyV085NWNyQWNGVXNISkRZakhVZWJvQ2M2Ql9jNlI0TV9tVE1qZVRZYU5XMERCTzdSbzg3XzdlOXV1Qk5XUw?oc=5",
-      "source": "JTBC",
-      "date": "Mon, 09 Nov 2026 05:29:00 GMT"
-    },
-    {
-      "title": "오를 땐 팔고 떨어지자 샀다…개미, 삼전하닉 집중 매수",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RSklmUGM4WFdnMFZUWDNVYURDcUoxVWhOczUwVmlzRkJfaHpHNW1HNXBQN2x4S0RXVDZFRzN3S0dMMW1JdTJlZnZyNTZ5LWJKai1sZA?oc=5",
+      "title": "SK하이닉스 목표가 470만 원, 숫자만 보면 놓친다ㅣ월가는 이렇게 읽는다(2화) [매플 인뎁스]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HMGNjUkRlUE8wbS1odDdrNUMzeUVMUXZEek5EbVE1eXlaOEJzc1JHbVUwR1JLVUpmdHJ4anpManZKcl9rYkJVaHY5ZEtxeG5hbVE?oc=5",
       "source": "매일경제",
-      "date": "Sun, 08 Nov 2026 02:41:49 GMT"
+      "date": "Mon, 09 Nov 2026 00:07:22 GMT"
     },
     {
-      "title": "맞춤형 HBM이 바꾼 SK·삼성 인사…기술통이 미주사업 이끈다",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TNGZadXV1ZXJKcXVOZElYV3dmRURyYmoyeFVXc3Z1TExyWTFYMWg1aG5ER3dMNl91bnBjVWxtTlVRbmRZZlB1eFFudWI0YVo2TklrQnBVMnJSbkHSAWBBVV95cUxOMDRpaE5VMkVkX1pFRHh2YWRubmNzN1VwREdubGFoV3dXY0dYNzF0eFBic2Y5VUZLYi1xS0FqaFNvQmRJZlFkT3dId3JfYjVOQ1ljU0I1RjZjam5hSHdnX24?oc=5",
-      "source": "연합뉴스",
-      "date": "Sun, 08 Nov 2026 21:09:00 GMT"
+      "title": "박세익 \"삼전닉스 물린 분, 절대 시장 떠나지 마세요\"",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWGMxZVJSYkhuaXhscVpFY05NUEtDMHVvVUFvM09ELU5LVjN5XzQwSElwdXNVY18zdlk4enZXTnI4Q1U5RFp3Q3d3SGZRMTYxanNVRWFxUTlHZXFwaUd1aGxGZEZZdThYUWh2UnZsNDlIeU1hYmJKamkzX19Od2VHNA?oc=5",
+      "source": "조선일보",
+      "date": "Mon, 09 Nov 2026 20:34:48 GMT"
     },
     {
-      "title": "빅테크 맞춤형 인사…삼전닉스 미주사업 기술통 배치",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wSHNlbktpSGNZZkxZODBPcjNqTlNWZ1VVeWY5Vmw0ZDhtN1FmY1FOZWo1a20ya3B2RGxKQ3dLY21JdGpUcUg3cWZ6T1VwdmgwVGhn0gFYQVVfeXFMTnVZcEo4Q3drRDIwQUNUVFk1RnpnYUtoNk94Nk9yZk1UdDNHRTVLeWZJd2l3S0RJaEhNcS10dEJaWXpQVnJYaDE3OWdKS1l2WUh0YVRsMVliMg?oc=5",
-      "source": "SBS Biz",
-      "date": "Sun, 08 Nov 2026 21:40:00 GMT"
+      "title": "SK하이닉스: 100조 원 벌고, 100조 원 주주환원해요",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1KaXJ2YUxDVFg0Qm5QVGl4bUpPSUkxOXZLaXpad0JOcVJMNERDRFptSzlqajUweTg0NlloTk9pbXA4Yi1qNE55Rk05a3ZueTR2T1E?oc=5",
+      "source": "네이버페이 머니스토리",
+      "date": "Tue, 10 Nov 2026 00:26:07 GMT"
     },
     {
-      "title": "미국 사업 전면에 '기술통' 내세운 삼성·하닉… '블루 웨이브' 대응 시험대",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YZDV2OGM3X293WmdPNGZNUGJTLTJGdkEtVjRlLXJYWEpsS3VTQnJVajdpNGpxd1NHMVltWFUzVk9tRHNNTFNubXBQdDgxQWVXaW14QmUybFJXTmVSWnZhel9CTGQwRjlzcVdTc3RR0gFzQVVfeXFMTlRSNTZudWg1MTV3ZHZmMUpmcHdUdXJwZVdhT2Q1R3IwVFNzMXhwMHJFVzNxRXI4TTBkal8ySVZVOE9BY2hJODdnaHhTTGpYbXpjeUpyWHpJUVJqeGpGX0dGTHN6U2F2cG9xQjlUbnJITGROMA?oc=5",
-      "source": "한국일보",
-      "date": "Mon, 09 Nov 2026 07:33:00 GMT"
+      "title": "[장중수급포착] SK하이닉스, 외국인/기관 동시 순매수… 주가 +5.72%",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBBSmVQTzltd3BGTTZKR2QyZG5nNVlZa3BINk9KNXNSOFo1bzUtQVVaa3hVUldjX29lWjZDcFBSaTVkWFh4ZVhHVDlGMEw4aG54RHJPdnozRVB6SEp2?oc=5",
+      "source": "뉴스핌",
+      "date": "Tue, 10 Nov 2026 01:33:00 GMT"
     },
     {
-      "title": "'젠슨 황 스캔들 파장'에 미국의 중국 반도체 규제 강화되나, 삼성전자·SK하이닉스 메모리 영향 '촉각'",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93X1FTWnZKTTZzY0N3dU5VUk5BQUJIdFFpWTliYndqUHdnRklpZDliXzd6aV96dmF5ejlEQ2g5OGdhY2xCUGpMVzkxY2JHWlVxNjlxZ1BZOXlVWTZ3ak5uaWUzZU92dEplRHctTW1IdjV1NGs?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 09 Nov 2026 05:53:29 GMT"
+      "title": "SK하이닉스 팔았다…1% 초고수들이 집중 매수한 종목은",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LWWJTVldJRXhGU204d2t6N0NjdHJxYjFzMnd0RmN0UUViRHI2RVctQ0h2Y0Q1S25QUHM4R0lzXzJPNng0UENVZUlma3dqWXh6dlFSWXdqUTBoQQ?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 10 Nov 2026 02:06:37 GMT"
     },
     {
-      "title": "삼성, 내년 HBM 1위 오르나…SK하이닉스와 주도권 경쟁 격화",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOcmVFb1M4OThIMzQ0ZWxwbERJSWtVLXE5UW1FNGhaM0ZNTVcxZ0pGczN3LWpGanpMWXhqMkI1MzVnWm02UGVsQ1BRTFcyeG5lYjhmUnM3Y0hvU25vbXlKOQ?oc=5",
-      "source": "메트로신문",
-      "date": "Mon, 09 Nov 2026 06:25:48 GMT"
+      "title": "소부장은 매수 SK하이닉스는 매도 [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4ydkMtVE1rTWhXeXoyZE80eUw3d1hpUUY1ZmdndEM0RjRmNi1OcTZPYmszN2dCcE9ES3JtTmxWdnBTaXBCQXVnWmRBMXU3N2h1dmc?oc=5",
+      "source": "매일경제",
+      "date": "Mon, 09 Nov 2026 06:29:09 GMT"
     },
     {
-      "title": "[특징주]삼성전자·SK하이닉스, 장 초반 강보합…美 반도체주 반등에 투자심리 회복",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FQkVQdW1mTXVudDhTSmQwdy00UjNPTVlFTVBjYzg5ZXdvUXlCaklDTlh3VXAwbUhUdTRiUFZnd1hQeVo3UzF3U28wSUYxb1NmaHZYenJMRVVPZw?oc=5",
+      "title": "하이닉스 팔고 삼성전자 담았다…급락 알테오젠도 ‘줍줍’ [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QYnctUDlORW00U3FiMzMwbWFTMW5XMGhqU3NRWk9yQUVEV2EtdmJQVGpQTHpueGw3Z3JkYlZmaHhUbkExcExLeVk0V0FKOTVsX1HSAVNBVV95cUxOS0ZqNFVrUkp4dGVDMHhPUWt4Z3BPVmY1b2piZ1B5VFg1S2pCNzBMQnptb2lacEJzZFNlVmFvNW1lTkhyUHdQQlF0Rms0WlpqeDYwdw?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 09 Nov 2026 02:51:42 GMT"
+    },
+    {
+      "title": "삼성전자 주주 797만명·SK하이닉스 346만명⋯대형주에 개미 몰렸다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Qanc4aEREQ1RKbndxNmtORENidHpEbjBBZWRiR0pzMWJZNnViTzh3RWlfM1RKTXFVRDhDWGZoWl9KSVlVMUhuemVYeG85d0FyNGpscGY1d29wZw?oc=5",
       "source": "브릿지경제",
-      "date": "Mon, 09 Nov 2026 00:26:00 GMT"
+      "date": "Mon, 09 Nov 2026 23:20:00 GMT"
     },
     {
-      "title": "[속보]삼성전자·SK하이닉스 3%대 하락 출발",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUaUYtY0stLUNKWkx3cklEMi1RejZQT2g2Uk10UFYzUzRleHpiekZXZW9hU01MWUgza3Ata2RIaExmQjdyQ2RCSTR2alNvNnl1NkI5OXJ0WW9rMDlhX3N5UdIBeEFVX3lxTFBuMnJkSjI0YzFFa3FVZWgyX0ZVWlp2eUpsalJHdk1oUEZoazlVZl9TcVRZMUhpOWo1cHdGOXF1aDFnTXpkMkNWcFpmTEs5RHpZMVJ6dGFnU2tsTTRzRFlDNHY0WEo4VFJIaXEtN1ppenpxTFFJeHNERg?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 09 Nov 2026 00:03:36 GMT"
-    },
-    {
-      "title": "워트, SK하이닉스 설비투자 확대로 실적 개선 \"올 영업익 70억 기대\" - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wME4wUVlyV1dBRXN6SXhYczJZdkc4MHV4LTVaSEpuV0R4bmtGTmI1Y0M2OVpITHBuWjR0QWZxTTVSRW1Henhka0NnOHNJRE5ubDJaVjI4b0ZGMUNVbkR5RXlVYmRJeHla0gFuQVVfeXFMTVFaOGgyN25QM015RzNISERBQ0s5ZkZoY2pIOERFT1R2dHlUYTBxcGRTTmExV0JlVTl3X3EtYXVWdkVVTGIwRU9qcTU3TWliRjRNZnB2QWxLSjVkeE43VnNZa1ZMbExFRU9HaDdLWkE?oc=5",
-      "source": "머니투데이",
-      "date": "Sun, 08 Nov 2026 23:00:00 GMT"
-    },
-    {
-      "title": "하이닉스 본사보다 ‘셔세권(셔틀버스 역세권)’",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xVC1oQXpTdkxkbzlBWXFKVEpBVVNyN0w1T1VORUE2bW9TYlpMQ3FucERhaXVNU1ZCR3BReVlIUkpLLUIteTRCdTNEdklJV1p3TEE?oc=5",
-      "source": "경인일보",
-      "date": "Mon, 09 Nov 2026 10:32:49 GMT"
+      "title": "삼성전자 소액주주 797만명…SK하이닉스 4.4배 급증",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE40VzNBQVpFUHFOWHJ1YXBxYWdqM3BPb29HLS1WOXJUZ2FMenhubjBsdmg2VF9NNFAtZXItSDFuVVdIN010bWxvQ2JUYjBwVl9JT0FnTkI5dkFNdzlM?oc=5",
+      "source": "뉴스핌",
+      "date": "Tue, 10 Nov 2026 00:59:00 GMT"
     }
   ]
 }

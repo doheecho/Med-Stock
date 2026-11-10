@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:45:27+00:00",
+  "updated_at": "2026-11-10T04:04:40+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 472381.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-09",
   "analyst_targets": [
     {
       "firm": "야후 상단",
