@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T04:04:46+00:00",
+  "updated_at": "2026-11-10T13:26:16+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3054286.0,
@@ -18,7 +18,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 3126640,
+      "target": 3100998,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     },
