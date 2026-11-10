@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-10T13:27:08+00:00",
+  "updated_at": "2026-11-10T15:45:09+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-11",
   "constituents": [
     {
       "code": "005930",
