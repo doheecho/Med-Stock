@@ -1,33 +1,9 @@
 {
-  "updated_at": "2026-11-11T01:53:05+00:00",
+  "updated_at": "2026-11-11T12:38:22+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
-    {
-      "title": "[특징주] 삼성전자·SK하이닉스, 美 증시 약세에 동반 하락…외국인 매도 부담",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UcFJhVDlFYm5QLVpleTlwU21GZXBJa0ptWngxWDBzUzd0TmFVUVNWTl8talp5b2lkYkNvSzFQYlJNbWlKZGVsdE5oenIzUjl5LU85TXM1cVljZw?oc=5",
-      "source": "브릿지경제",
-      "date": "Wed, 11 Nov 2026 00:37:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, LPDDR5X D램 안전·보안 국제 인증 획득",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80N0otY0FTNndiaTBLcVV2aHg5RGUyYjVtZnlnRDNxM05iYjd0aWZMcWdHTkZBbGg3TmVSUTJyTTdFSW5sUEVlWGdGS1dBanRmS1JHbEJCOXFIc2ZHSndvT2ZTZks5VXBlN2V1R2dLU1QtbEU?oc=5",
-      "source": "마켓인",
-      "date": "Wed, 11 Nov 2026 00:32:08 GMT"
-    },
-    {
-      "title": "SK하이닉스, LPDDR5X 안전성·보안 입증…피지컬 AI 시장 공략",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NMEJCLXltOXJYX3dKVGc2X0Y2NkhoVEo0aWhmX3Z2WlVTRDhMaXRJRXk2R3lfNVdkdHdFRlpLekpwS0NsN2dkc3RyTC0xZlZINDYzWlJ2R3ZORVlFS0pmUQ?oc=5",
-      "source": "아시아경제",
-      "date": "Wed, 11 Nov 2026 01:30:56 GMT"
-    },
-    {
-      "title": "피지컬 AI 메모리 ‘안전 방패’ 두른 SK하이닉스, ‘오작동’도 ‘해킹’도 막는다",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UZlEwRlhXRkhmX3dhTGFoMWFRVXN2ZmNzNlA5elB1aDRlaTZRSjdwQkJlanc2eXE1X1pFRUJZWVVqME1CdEJzcG5QY1BNLUFra0U5bXltVXdhVEM5NTV3dkt1QQ?oc=5",
-      "source": "에너지경제신문",
-      "date": "Wed, 11 Nov 2026 01:48:29 GMT"
-    },
     {
       "title": "SK하이닉스, '파격적 성과급' 기대감 속 하반기 생산직 채용",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vdGd0a2hvcUc3TFl1SUlOVExDa3NnQUVkaUQ3WE41MjlPLThmSnBxU1NmLVc5RkY2OU4wbl9vZEZkS21BV1JRNGxYQmQxS2Y1LV9nRW9aaVJoSzjSAWBBVV95cUxPQy1lUlk1RDh5aW1tQktCQ09Ed1NjSnM2ZXZWWWJXWW9Id01nQm9BN3htb0hJWVRUR0l4X2xMb3MwS2tkOEVibEw0SG9rbVBWaU4xMUJXUkNrUnhIckpkcWI?oc=5",
@@ -35,28 +11,16 @@
       "date": "Wed, 11 Nov 2026 01:27:13 GMT"
     },
     {
-      "title": "이천시, 하이닉스 상점가 공영주차장 공모 선정…국비 48억 9300만 원 확보",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vM0tqMm9OdEdvX1pfYldVNW1kTHNiTjMzdFJkUUxOXzN6V0NRUGlzOXhIYk13ZTFkSVJkaUZzZU9LX1RSLXlQeTAtMWswQkRYMEVUR0hESEhJR01tZmt4R0JNeW9yMXNtVFRfY3lyZ0o?oc=5",
-      "source": "인천일보",
-      "date": "Tue, 10 Nov 2026 23:58:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 세금만 2조 육박…이천시 곳간의 변화",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oWV9VRDl5dnRYcUoyN1lpX0ZwVWp0WkYwc05JZDRsdlNhMHJPYUQweUlTSm5qRXc0RkxhSXFVbS1EczlaUTFEQ1cwSE80Wjk4bHYyM09vc1N6R2hCYjk1RUdQTXdMWUNaMXRZVWpqQUs?oc=5",
+      "title": "메리츠證 \"SK하이닉스, 내년 국내 주식·ADR 가격차 축소 방안 기대\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kelhpREJSQTUyM2dwcmFIRjZ5cWdodEQzWm95VHdhX1k4TWRiRm1GUE9UdDRHNGdVR3pFbkZHbHdtRENBdkhqdTRZRjIyVlA5TDgxNHZfc2Y0UWJVTm03T1VQSGFRSldIcy1GYTM1NWo?oc=5",
       "source": "연합인포맥스",
-      "date": "Tue, 10 Nov 2026 03:21:00 GMT"
+      "date": "Wed, 11 Nov 2026 06:16:42 GMT"
     },
     {
-      "title": "달러보험에 돈 몰린다…年 6% 확정금리 상품도",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lX3g0bU9ORlZuX0dpQjRHYTVwSXBZdE5rRno1RDdMYXRUM0Q0dnB3a0EtT05xQm9NNDVncXFpckp3Wjk3cEZGeWJyM2pDLXkyc1HSAVNBVV95cUxQVDlsSjVzZkc5aGt3dGc1NW9iUjFlRFhqdFBSSEMtVEkwNXFEU2NaWUplLUI5ajhNR1JfcXE4ZFQzWHlFcHN1TVp1SkwwWUJpVFc3OA?oc=5",
-      "source": "서울경제",
-      "date": "Wed, 11 Nov 2026 01:00:00 GMT"
-    },
-    {
-      "title": "SK하이닉스: 100조 원 벌고, 100조 원 주주환원해요",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SajEwTjlfQ0lkOE9QN0xGNlVLZ1MzckNPU1RLRTM0M0Y0dWlFbTMydWFQVHpnOUljcUNnN2tuRzhNakljcHZtMTZzQTVLZXRlcVd1TWtOU2M?oc=5",
-      "source": "네이버페이 머니스토리",
-      "date": "Tue, 10 Nov 2026 23:34:24 GMT"
+      "title": "SK하이닉스 목표가 '천지 차이'…노무라 470만원 vs 모건스탠리 160만원",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBieFBPRGhBOGY0UUpTRlJSTXkzVzlHZk0zcjRWNDltbTk5SjYtaV9zNVJzQmVGdDBUWklhYzFUUnNDMUpRcDNCMk9ydmQ1U3gzVnc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 10 Nov 2026 08:39:17 GMT"
     },
     {
       "title": "\"반도체 돈잔치 끝이 보인다\"…삼전닉스에 날아든 경고장 [분석+]",
@@ -65,34 +29,70 @@
       "date": "Tue, 10 Nov 2026 13:00:02 GMT"
     },
     {
-      "title": "“삼전 31만원 vs 67만원·닉스 160만원 vs 470만원”…누구 말 믿어야 하나",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ncVU4bVRBUWhPak5BS0V3NHVUYUVmY2FmX3lWOHEybmRIc1VLNzdfNF9ZMHZPano5X1VGSHNWZkpzZFYwakpDYXMxMHZqNm1CUnc?oc=5",
-      "source": "매일경제",
-      "date": "Tue, 10 Nov 2026 23:50:51 GMT"
-    },
-    {
       "title": "“삼전 30만원·하닉 160만원” 목표가 뚝…개미들 “그게 어디냐”",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1MDd6WDYzazkyaDJoZ3FPLWlLejhVeGU1djlsWUJLX2RLLWswMTAyQWpJSnBFMU1hLXVuT0dOOFBuWVlUd2R5VWlrZ1ZQYmZ0MWpLYWZuOHYxQWpZWFNHUkZzQW14QTVsNnJ6NjRZM0FYUlE?oc=5",
       "source": "마켓인",
       "date": "Tue, 10 Nov 2026 21:10:12 GMT"
     },
     {
-      "title": "[분석] 삼성전자·SK하이닉스, TSMC 호실적에 반등 신호탄 쏘나 By FinancialPost",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ySS1uWWNJYlA4WEt5RDNoRHJJT2ZpWllpQjMwSkpWazlDU2twaDhGazNFUUVCc3BBVUdZYWkxb2NKcFhDUTZGM19mQWd1V2VSMjlxRks4SFVESUtJb3ZpT1hRVkgyTWlTMmJ3OFRnODE?oc=5",
+      "title": "SK하이닉스, LPDDR5X D램 안전·보안 국제 인증 획득",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80N0otY0FTNndiaTBLcVV2aHg5RGUyYjVtZnlnRDNxM05iYjd0aWZMcWdHTkZBbGg3TmVSUTJyTTdFSW5sUEVlWGdGS1dBanRmS1JHbEJCOXFIc2ZHSndvT2ZTZks5VXBlN2V1R2dLU1QtbEU?oc=5",
+      "source": "마켓인",
+      "date": "Wed, 11 Nov 2026 00:32:08 GMT"
+    },
+    {
+      "title": "SK하이닉스, 피지컬 AI 메모리 보안인증 라인업 확대",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wc21HbWpOMm9rNXQ5aUFQQmFiN0Z2V1BQNWlQWktRVjBsb2g0MmhQS3pVbWRaeHVsMW5kOHdsbXBmN3B2UGtXYVRTNEJCVEg5STBYQTNB?oc=5",
+      "source": "지디넷코리아",
+      "date": "Wed, 11 Nov 2026 02:59:50 GMT"
+    },
+    {
+      "title": "“오작동도, 해킹도 막는다”… SK하이닉스, 안전 · 보안 국제 인증으로 피지컬 AI 메모리 신뢰성 강화",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uWEg0MlFpUXBoUW1pSklUNXBaSXdyandhM004eS1aZk5lbm85ZkZyM1ZIODZhZ1BHTkVRcnRHT0M3c2lIRTEyeTFnYW5yOEJseEF5dGU2OG9KRmtNd0RPTnJmaU4yclE2cVh0NA?oc=5",
+      "source": "SK hynix",
+      "date": "Tue, 10 Nov 2026 23:59:05 GMT"
+    },
+    {
+      "title": "[퇴근길머니] “24만개 칩 중국으로“…SK하이닉스 목표가 ’310만원 차이’",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xTGZtQmREZ2hvWUprR3VtV3l5VVNXZno4RkJtVEg3ODBOQVVTQ1VCYUloRlk5N2pjWWpKdDdfNG5vYTkzeWRkWWFaU1FpWmJTQk5qcXNnem1lSUp3SHhWT3RxVWRTbWs?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Wed, 11 Nov 2026 08:21:00 GMT"
+    },
+    {
+      "title": "SK하이닉스: 100조 원 벌고, 100조 원 주주환원해요",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SajEwTjlfQ0lkOE9QN0xGNlVLZ1MzckNPU1RLRTM0M0Y0dWlFbTMydWFQVHpnOUljcUNnN2tuRzhNakljcHZtMTZzQTVLZXRlcVd1TWtOU2M?oc=5",
+      "source": "네이버페이 머니스토리",
+      "date": "Tue, 10 Nov 2026 01:16:34 GMT"
+    },
+    {
+      "title": "안성시의회-고삼어업계, SK하이닉스 오폐수 방류 간담회 개최",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ucnZDZkR1bGNlYmdkQlozVVN4RDJqbldwM0dMRnlFQXVtRFg3REVSZWk2aDc3SGN5ZTRXTmZpQW5NaWdkaWxiOTRWMDFpb0JzTUdmYXNoaDMzcTktcVluMzlhVG9BWGxQYlZiMEpacw?oc=5",
+      "source": "기호일보",
+      "date": "Wed, 11 Nov 2026 05:10:00 GMT"
+    },
+    {
+      "title": "코스피, 외국인 매수에 2.60% 상승…삼성전자·SK하이닉스 동반 강세 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByNVNtRWU5bGVEZW1oU29zdlVqWWFOS2NIaWM3NjJnd3VxNGdUbWh6SDBKT3IwbWIyRXZwZEhMbjBka05mZG1HbFR3QzdXM3NiWktKUlJnZjk5RzRSRl8zMmttQXZOZ3d1Ty1kRHBMV0Q?oc=5",
       "source": "Investing.com 한국어",
-      "date": "Wed, 11 Nov 2026 00:10:00 GMT"
+      "date": "Wed, 11 Nov 2026 07:46:00 GMT"
     },
     {
-      "title": "구글 새 AI칩으로 '탈 엔비디아' 가속, 삼성전자·SK하이닉스 HBM 최대 공급처 바뀌나",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1HMERBS05tYlBaZ094MDVhb2dhNXVTaExMNXFnOUUtSEFGakZLUnNtSC1Gbjl0aGVjeWtsczJVUmxFT2FvaG5zMHJLNVZEbUtIa2s2aUJHb3A4cUgzNmVpM011Mzh0ZEhNLWV4UERBR0FhRXc?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Tue, 10 Nov 2026 06:58:05 GMT"
+      "title": "[특징주] 반도체주 강세…삼성전자 5%·SK하이닉스 8% 상승",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5dWdCN1JsNU02LXV3TlBnVG9TclhGbXZoOHJxRDk4YTl6TUpjRERvSnNvSVE3ZWktaVkzZzI1Q19uM2VJcHZpbUpDV1ZNQjJHb2c?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Tue, 10 Nov 2026 00:30:10 GMT"
     },
     {
-      "title": "[특징주] 삼성전자·SK하이닉스, 엔비디아 등 하락.. 동반 '약세'",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUjZySGpHU2tjTnBoVE9uTzdEZmFDbjh5UGVQUXJLbTFoZUpjUWE1TExrZVc2QndzN0xETjIzblRDS2RodXIta1BPT3pFTU5fblViMjVJUmtOTmZOTlBRcEdKZS1NRnZRX0VDQ2wzSTNuc2xsM0E3Q2ZMY0ZUbEVndG5OcVV6ZTg?oc=5",
-      "source": "글로벌이코노믹",
-      "date": "Wed, 11 Nov 2026 00:50:17 GMT"
+      "title": "\"드디어 주가 바닥 찍었나\"…삼전닉스 반등 가를 핵심 변수 [분석+]",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DUzRsOTZRTVhMZkxYWGQ5X2o2ODNBRnF2c0cyQWNZNk5aLUxFRG9NbUxmYjZIY21Cald6UlIzemh6aEZRRDZOVTRBSXpfTFlJUDJZcE0xT3dJUQ?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 10 Nov 2026 21:30:04 GMT"
+    },
+    {
+      "title": "필라델피아 반도체 0.35% 하락…엔비디아·마이크론·SK하이닉스 ADR 약세",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VMm9JTm9ieUlSeElNcGtxMGVCeDJkXzdLaXN4NWZ2eUFvUXJyanFfVFNvTW5YQUNuX3kyR0tLalRSS0d0SWlPQzVQZTl1b2ZJb05XVk94SlA1YkxHcTZIZGNqVjI2cFU?oc=5",
+      "source": "뉴스1",
+      "date": "Tue, 10 Nov 2026 21:28:35 GMT"
     }
   ]
 }
