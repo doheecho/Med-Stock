@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T12:38:24+00:00",
+  "updated_at": "2026-11-11T15:32:45+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -15,12 +15,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NjRwUWlCQ09DeDJkQUp0N0ZtRTdtenppakExTDhQbGx1dFlMOXVQN0NUd2FqMEw5enk2ZkhQV0hlU01zSFYzX1pLaXRuc3YySms5bjQ2MnNTUQ?oc=5",
       "source": "파이낸셜뉴스",
       "date": "Wed, 11 Nov 2026 01:01:13 GMT"
-    },
-    {
-      "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 연말 분배금 확대",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5SnhOMFJxbWxFb0xFUDREX1VxMDlpYWZDdmhDM3JBNzhya1hrNDk0RElLREhJeWkwb2FodWFPdUNHRDVDbHFBZnQwSVhWV1JGNTVRSHZFaWpibTdtRXhCZS1pUjhIZ3Vfb2tRZg?oc=5",
-      "source": "ER 이코노믹리뷰",
-      "date": "Wed, 11 Nov 2026 01:06:22 GMT"
     },
     {
       "title": "개미 뭉칫돈 3조 몰렸다…'KODEX 200타겟위클리' 커버드콜 1위",
@@ -65,6 +59,12 @@
       "date": "Wed, 11 Nov 2026 02:01:14 GMT"
     },
     {
+      "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 연말 분배금 확대",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5SnhOMFJxbWxFb0xFUDREX1VxMDlpYWZDdmhDM3JBNzhya1hrNDk0RElLREhJeWkwb2FodWFPdUNHRDVDbHFBZnQwSVhWV1JGNTVRSHZFaWpibTdtRXhCZS1pUjhIZ3Vfb2tRZg?oc=5",
+      "source": "ER 이코노믹리뷰",
+      "date": "Wed, 11 Nov 2026 01:06:22 GMT"
+    },
+    {
       "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 분배금 확대... 특별배당 반영",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBkMXpFR0tHMWNpcWhSdndWUERfSG9jTlE1N2FMSXlqb091cmFueXpZMzloRVdyUnhBUVYtQ0VDY0cza3EzMzlIZlZaeHBEc0l6YlRJOUxDeEZJb2lOdUlEMW5wTnlhNzUwcW1mazlYcFo?oc=5",
       "source": "시장경제신문",
@@ -77,16 +77,16 @@
       "date": "Wed, 11 Nov 2026 05:32:00 GMT"
     },
     {
-      "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 분배금 확대",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MMk5vV0JjZUxWRjVsM2h3elZLZG5JLVE1d25Hazh2R045YXQwb0taRUZGWUF5NzFoV2tkb2dtRmNDOTFQX2g5YkhfVjQ3X1lDWjdGQzFRVUZ3dWZlWS1kWXNsVDNraEEtVXhPRGVEb2dBUkVnWUUwa3F3?oc=5",
-      "source": "로이슈",
-      "date": "Wed, 11 Nov 2026 02:10:04 GMT"
-    },
-    {
       "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 개인 순매수 3조원 돌파",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFcmdaR2dOMzBXSU95VnZURXIzRHVwd3U5Q1d3LUFwY2huQTFfNWJkOV9XdFdINmtuU2wyeW9SbXVXa0xVMENnYllrbDlYSUlrVDBnc0VKRzlNQmFMVjhVVDhNLTFuenBmLXJtVElva2NZUQ?oc=5",
       "source": "인더스트리뉴스",
       "date": "Tue, 10 Nov 2026 01:58:03 GMT"
+    },
+    {
+      "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 분배금 확대",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MMk5vV0JjZUxWRjVsM2h3elZLZG5JLVE1d25Hazh2R045YXQwb0taRUZGWUF5NzFoV2tkb2dtRmNDOTFQX2g5YkhfVjQ3X1lDWjdGQzFRVUZ3dWZlWS1kWXNsVDNraEEtVXhPRGVEb2dBUkVnWUUwa3F3?oc=5",
+      "source": "로이슈",
+      "date": "Wed, 11 Nov 2026 02:10:04 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스 '특별배당 효과'…KODEX 월배당 ETF 분배금 확대",
