@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T15:44:21+00:00",
+  "updated_at": "2026-11-11T01:52:38+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 472381.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-10",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -42,6 +42,24 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-11-10",
+      "target": 500000,
+      "prev_target": 500000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "DS투자",
+      "date": "2026-11-10",
+      "target": 530000,
+      "prev_target": 530000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "한국투자",
       "date": "2026-11-06",
@@ -133,15 +151,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "대신",
-      "date": "2026-10-30",
-      "target": 500000,
-      "prev_target": 500000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "NH투자",
       "date": "2026-10-30",
       "target": 530000,
@@ -158,15 +167,6 @@
       "chg": -23.91,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "DS투자",
-      "date": "2026-10-29",
-      "target": 530000,
-      "prev_target": 530000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     },
     {
       "firm": "메리츠",

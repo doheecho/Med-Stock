@@ -1,38 +1,74 @@
 {
-  "updated_at": "2026-11-10T15:44:30+00:00",
+  "updated_at": "2026-11-11T01:53:04+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "모건스탠리 '반도체 저승사자', 삼전닉스 30만9천원·160만원으로 하향",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB0LTYyTTRMdzdRMGxIRDhIY0F1V05xYlNnS0EzN3laX08zUmhyUHFEMUNHYlFXRXJJSjhkWkZ3WXBBUWJEckE1c1FJR0dyQzJjcUZHQkU1TjBJZGPSAWBBVV95cUxNYnVuemtzQm5Id2p5WXI5UHF2Sk9mNmtlcDhnSVRfU2hHRkNJb0h1T19hZGExbG5UVnBfekl4cWl4b251NndtbHQ2eFhsSjNHS1FLV2I2cXJCVWh3UmxBQzI?oc=5",
-      "source": "연합뉴스",
-      "date": "Tue, 10 Nov 2026 02:30:02 GMT"
-    },
-    {
-      "title": "‘K반도체 저승사자’, 삼성전자·SK하이닉스 목표가 최대 38% 낮췄다[줍줍리포트]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnljZElOLXZ3VzdrYy1wVDVvMjE2QmNkRTVhMDhFT2ZEOHJfZUN5U2hDeWZzQXpPOU5VRml5VnZzXzU4NVJoeEh0b0U4Q0czUHfSAVNBVV95cUxQX2pxd3ZlWXpMREpzYTJWZUY3NGxPalc5U1FqcHkzNWlSeks4R3h5ZWJ2TmRyVVllQUxLZWFTd2NrWlpENDhWTTJQNERfYS01dGdTRQ?oc=5",
-      "source": "서울경제",
-      "date": "Tue, 10 Nov 2026 08:38:02 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 5~8% ‘껑충’…코스피·코스닥 잇따라 매수 사이드카",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5tanliMDVqSjg4blhveGpsc1VVMWNPRzZtMGhidlBGWWN4U21KRHRFNzV5WkhZUVVhSHNuTkZqTEgzaUlCYzVPRUc4TVpSRGw4X1AxTA?oc=5",
-      "source": "JTBC",
-      "date": "Tue, 10 Nov 2026 00:05:00 GMT"
-    },
-    {
-      "title": "'연말 할인전' 삼성·LG, 남는 장사 될까 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1ZDdzOVpTblM2TGg1TEhIZXdmMUR1U21lTHZMOVZqMmg0VWxMRFUyUlllWGlZUGZqU0FESnprZk5IMzMtdWR5N3F0N3YwdVYzSnd1b3E4UW5PVmczMUpEUlQ5RmVDMGFEUV95Q9IBckFVX3lxTE9seVlYbS1fZnA2c08yS1BPUDBJblRhT1V6YjIxX3RJMHhWN29Gd19YUEZZWTJoZS0yS3dkUWJWeVJHYXZtaUlzQXBiekl3NVNPNjRWaldCamJBT05rVkFYZU5YeWctMTdud2FJTUpfS0ptUQ?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 09 Nov 2026 18:39:00 GMT"
-    },
-    {
-      "title": "[﻿Tech&]혼수 가전부터 결혼 준비를 위한 다양한 혜택까지! 삼성전자가 제안하는 맞춤형 웨딩 솔루션",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNQXE1SU1GbGVQdVZ2czRZRFlOdTNzX3FLRExaNUoydWo5RW5VVFRNOGJfelMtQTRRZkdSRTVCb3RBRVJiSFBtRnhlQzJFOENxUzJ3S05qcUxDM015N1VIbDBnYkJCSWZVM0J3T1Y4cEwwUE1ObFHSAWZBVV95cUxNc3NXWVlZUWtQWEJuSV9IdkNKWjFVRmlpc01HVG5mNFVlN1NmVVA0VmJsLVFESTBYRjRUdE9ZYWJPQWFmaVFqZjJHZ1BrMWpTMEVvTGFMTk1heFNBNjBUTmx0N3ZtN2c?oc=5",
+      "title": "코스피 4거래일만에 상승마감…삼성전자 4%·SK하닉 6%대↑",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1USTlMcUJ2dGJxbndCWGRDakR1dTNLY25pc2VISVVRV25NaWpFbHRhYXRfTEFJV0NDQlMxUWhINzIzNzZNUFJmRzh4N1pjMUV2d3BuYkFFQU5MMjgtazNqcURFcEhPY2V0YUtkczNDSXJvanJjWGfSAWZBVV95cUxNSGhHTlhGcTJFbEVVNUFlR1VkWjNCdWxwNjZVdFNEVXREV25uQmlzaXUzaVBBdWNCUFloZ215QnAtaFlqdDB4ZVBPZ3JBeFRDTUdJQ1ZXWjFFeUp4cFphaXJkVjQzN2c?oc=5",
       "source": "동아일보",
-      "date": "Tue, 10 Nov 2026 15:30:00 GMT"
+      "date": "Tue, 10 Nov 2026 07:46:00 GMT"
+    },
+    {
+      "title": "코스피 4.39% 오른 5239.13 마감...삼성전자 4.7%, SK하이닉스 6.7% 강세",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaElmdVRXUV9ERVNoT3BtZnljWk1nYUdmdnh1UlZtN0VISzFISndXOWNyM25hY2NmX0JSTlFYVXZHUzJTaDhjZmx0SjIxcWtWejVLSEJLNjJ1a1dZRlVyRmwxV3ljczZ3RkNUNXdMN3ctVkZyTFREeGpkVi0yN2pNdEpTT2ZuMTBh0gGcAUFVX3lxTFBNQzd6WXlHZVBTYzFPMDNyLVNJT1BONkpYTTF0ZDlHaUlydXJYOE5vVjhRd2VBVGZtNjVjVl9hb2F2MElQOWFsdzFNeWRCREpIRTl2U2t6S2hfQm9kMTdSYVhyYUlaVjAxekozcElJbUE0MlJMOW1ERDRCamtGVE82V1ZHS2JYenVON1k5bEU2QUNET0pGd21icDVSMg?oc=5",
+      "source": "Chosunbiz",
+      "date": "Tue, 10 Nov 2026 07:38:00 GMT"
+    },
+    {
+      "title": "[특징주] 삼성전자·SK하이닉스, 美 증시 약세에 동반 하락…외국인 매도 부담",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UcFJhVDlFYm5QLVpleTlwU21GZXBJa0ptWngxWDBzUzd0TmFVUVNWTl8talp5b2lkYkNvSzFQYlJNbWlKZGVsdE5oenIzUjl5LU85TXM1cVljZw?oc=5",
+      "source": "브릿지경제",
+      "date": "Wed, 11 Nov 2026 00:37:00 GMT"
+    },
+    {
+      "title": "\"50% 폭락한 삼성전자, 반등 확률 97%\"…지금이 기회?",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOXzJfSWg2QU5hY0gtNFdmaXJleUF3QTIxeThKTnR6UmktQnY4ZEhhSVhwcUJmd3VFOVpmYzAyWHN6S0x3bjR0SFYyR0FYXzd3LUJra2VMT05uMklhUzNrOG1Jb1o2ZTdUODlVaWVGZnRpRnloR2Z1eXFvTl91blhwcQ?oc=5",
+      "source": "이데일리",
+      "date": "Sun, 08 Nov 2026 23:12:56 GMT"
+    },
+    {
+      "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 삼전·닉스 특별배당 반영",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LVjBUeU5UTEw3N3NHRXRMQ1RvaGhMOWU4VzdTMjlqNUd6UEQtbUg0M0FCSVc4cERMeE9JQWFzR3k5V3BlZVBwbkJ0bGp5RUxYZHc4dXJzUzR6VlZtNnUyaQ?oc=5",
+      "source": "아시아경제",
+      "date": "Wed, 11 Nov 2026 00:46:06 GMT"
+    },
+    {
+      "title": "삼성전자 배당금 얼마나 받을까…ETF 운용사마다 다르다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TNS0xQ1pYRGJCUjBfY29NcWZqZm9kS091UDFmYTVkVUR0QW11UElzU1JaNUh5RmIySWR1c2lxUEp5X19WdTlLallJYTRwZTkwRTJMWFJ2amdXZw?oc=5",
+      "source": "한국경제",
+      "date": "Tue, 10 Nov 2026 06:31:39 GMT"
+    },
+    {
+      "title": "삼성자산운용 '코스피200 커버드콜 ETF', 삼성전자 특별배당 반영",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGaWFXcG9MRW14WVphX2tuS29mM2V3cDNTcWhsY25iVGJiUnB4M1NJVlFVYl9oU2t5RzFMMGtmTzVqdFBtS0hMZ0wxYlNiWWFMWGFMZXFsd1FSMTgw?oc=5",
+      "source": "뉴스핌",
+      "date": "Wed, 11 Nov 2026 00:32:00 GMT"
+    },
+    {
+      "title": "삼성전자 나노 노하우·장비, 한국나노기술원으로 이전한다 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wcFdvT3Z5Zzlham0tU19fcjZxQTd6Q3M0eDRtel9DRUtrNS1keFozeDZRSklGT1ZzejhrY05OM3Q4XzRWRzVlVnlIY1F0LVdiNVdWcUtTWGlzZ0xIeFZ2SmVQOGNBVzDSAWxBVV95cUxNSHBuenktM2VFY2QxdVFFRWhIVy02eUU4YXNYcUxKWUVkVkJPZzFLNC1nRGplS1VuRlRRSmFTZmQxNEtBTVprWjlMQlB1VGxZUzh0Zk9UME1abnZqZGVqZkdiMHNBWTJCUDR6SjE?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 11 Nov 2026 01:00:00 GMT"
+    },
+    {
+      "title": "삼성 반도체 '양산 노하우' 공공나노팹에 푼다…중고장비도 이전",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OcDZ0RDQyZ1QtZG9KSVRKQnBCSUpTZUcyT09pQ0FKU09rSEZmVFFMdll3LUI2Q2dPRkpIOUY0RW0xa2x0cGlueE9RMHZqeF9sQnBtLXRRRXliUmJtNVlMa9IBeEFVX3lxTE1pX1BuTndEQjByb1RNeXlsYllqbjU5X0xGZlNlQ19ESlVTUkxDcHZBeVpWQ2ZSc2t1NlZGckF1eUsySEQwUFFCMXpHemhqZC02cS04WmNHaHZnMWZSczVWSEFwS1FUalJfRE9jNTN1clpiVXY4cjFEWQ?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 11 Nov 2026 01:00:00 GMT"
+    },
+    {
+      "title": "과기정통부, 삼성전자와 공공나노팹 혁신 성과 공유… 민관협력 확대",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50VHlBcEFrUVNFc1pqM3d1OU5xbGx5cmxYdGo3VklqS1pQbEtkT2VBM09ONlN5ODRBZHpmdHFuTHNEMkpiSXNocmg0dnN0REQ4Z0sw?oc=5",
+      "source": "데일리안",
+      "date": "Wed, 11 Nov 2026 01:01:00 GMT"
+    },
+    {
+      "title": "딥엑스, 삼성 2나노 칩 'DX-M2' 마스크 제작 착수...내년 4분기 양산",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxUWE1MHV5WW1adzF1eVVfUmxRNFJCZ3I2NnAzZFU5NFJLQjJfQ1o3elZCS1l1NU1fSTRMTnNQYzFKeDdDVkVEWFJyOUszLTdtc2xoMFdvUExPNmlXWTQ1Uzh4S2Vfdw?oc=5",
+      "source": "디일렉",
+      "date": "Wed, 11 Nov 2026 00:59:35 GMT"
     },
     {
       "title": "삼성전자, 첨단 패키징 '3D 큐브-H' 내년 초 개발완료 목표",
@@ -47,52 +83,16 @@
       "date": "Tue, 10 Nov 2026 04:39:00 GMT"
     },
     {
-      "title": "삼성 EUV 블랭크마스크 조달 비상…日호야 \"더 못 늘린다\"",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ZZURwaDJsanlTSlhzaXAyMDE3ZnZkNFE1YUxtbG10WF9hVDMyejM3TFFVbzNhbkREWExVU0VGMlNjT1dkTDQ1d1JxR29pTFJhMWhUV0NXTUktazNpZ1RkN1JpOG55UQ?oc=5",
-      "source": "디일렉",
-      "date": "Tue, 10 Nov 2026 08:47:42 GMT"
-    },
-    {
-      "title": "삼성전자 폴더블폰·삼성SDI UPS용 각형배터리, CES 혁신상(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15d19LeERYNGU1WVRnMEcxZVRtNnNDalNLMlVlTHQ3ODBYdTFEaGVFT0R6cGF0MmFvazhCaVdLbkIwck9xaUJFVURCQWI5V096LWc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Tue, 10 Nov 2026 09:40:30 GMT"
-    },
-    {
-      "title": "삼성전자 폴더블 스마트폰, ’CES 2027’ 최고 혁신상",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wU2NuclhMVEYzNTZOVEsxbTJ4Rl9VeFFBZXpFdEhHYnllbDJBdVI0VFA2ZjBka042TVBndUN0eW5iZmNQaDVpNlJUaTRVTUNwVElHcXJNU0NxR05PMlZoSVRmbDVlY1k?oc=5",
-      "source": "연합뉴스TV",
-      "date": "Tue, 10 Nov 2026 10:06:00 GMT"
-    },
-    {
-      "title": "삼성 폴더블폰·LG TV, ‘CES 2027’ 최고 혁신상",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mb0ZPY0ZiM0lKUndVUEdJcTFXMENRTjFpZ3BmZERsa0cxSk04Q18zU2U5Rm0zT0RYc3g5amM1bkE0N1NhSjlibnlkczhURlplaEHSAVNBVV95cUxQRDRuekZ6VDlQZDZMNHZBdm1BckZ2UFhOeC1Jb3dTNWVteGxsMVExUFV6bTI2QkdvMnRkb05ZRGJYUWJZYnZpN1pKOWd5TkNETkNrQQ?oc=5",
-      "source": "서울경제",
-      "date": "Tue, 10 Nov 2026 09:54:14 GMT"
-    },
-    {
-      "title": "삼성전자, '스타트업 1000개' 키워 미래 기술 협력 넓힌다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PQjhHY0RIRmFzYXh3WkRYeG9kRTQtLW1RZTJOQzNMTHhrU1hoSFpEWnFGS2ZSVEpsbU5UZEh4MDZVQzVuYU0tdEg5eThncmU0UXZTc3RTU1VydXdfcWl2MDRZLURHVm5oc2J3ctIBckFVX3lxTE1pY1o3YmZ2TFF4d05WWjRQTnd1N2pvV3V0Uk1wc19tLXpTd2F2dHYxZ2hwSVRhOEszTWZwSlpsZDVZMklJWERnZ2xfRDZBejNLNHowbGNxSDhFR2l3cUs4R1VVS2l3R1BNaGpva0Z2am91UQ?oc=5",
+      "title": "[적중! 대박 예감] '금양그린파워 삼성에스디에스 삼성전자' 내일장 예감 좋은 대박 종목? - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ESEhWaUtfc0lPVU1IR1FEOVpfdnVDSDFZQXZHLXZSYWdEM0QwdU5zaFFmbm1SdXVRckg1S2tlTWNEUVUwdkpUWWdpdndzYkFxOHVxUGNTWGhXdHl6OV8xMnBHX2xZOTFn0gFuQVVfeXFMT0dFN2dWLWwtdGUwN0VnMmdqSnFMWjFTV2pPcDhFUmdhbGs4cmp4UDduV21fbThRdGkwRDhuY21hMFRBVEdOWG13S0xMQWVtV3RYLThNUEZnWm1QUktqT2pncWdZTy1Nb28wd1I0WGc?oc=5",
       "source": "머니투데이",
-      "date": "Tue, 10 Nov 2026 01:00:00 GMT"
+      "date": "Tue, 10 Nov 2026 21:19:14 GMT"
     },
     {
-      "title": "국민 6명 중 1명은 삼성전자 주주?…상장사 70%는 ‘썰렁’",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BQWdNdldjTEN5d0RFZS0wdzRmeklfb1ctcGVTLUJsZ0dwWHB2cW42NmlFWFhRYm1oQVU1cFRleXgzR0RTSGhmSWJrM09qcVVTb0c5UDAtSkxZalE?oc=5",
-      "source": "경기일보",
-      "date": "Mon, 09 Nov 2026 22:10:06 GMT"
-    },
-    {
-      "title": "국내 상장사 소액주주 18개월 새 24%↑…삼성전자 797만명 1위",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oR093YkNPWmp4YnlxRTZscl85THFnTjd3RFR1dU1kdVF3NnZCbU1qRWJZWTB2cktLLWswdkNRS2NMNUIzSl9FT1I4MEI2YnJoSzd3T3VXRHFJaU3SAWBBVV95cUxQYjV2NWdyQ3dKZld3ZTAtRUt0OXpCelVsTHllYjJqbDVBMl9XbFVqX09lcGUyRFhQaHNwVXR0WnVVcm1tNXRzbVE2dTRXUm1WTF9EMXF2YkxVVVR3RGczY24?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 09 Nov 2026 21:00:04 GMT"
-    },
-    {
-      "title": "삼성전자 주주 797만명·SK하이닉스 346만명⋯대형주에 개미 몰렸다",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Qanc4aEREQ1RKbndxNmtORENidHpEbjBBZWRiR0pzMWJZNnViTzh3RWlfM1RKTXFVRDhDWGZoWl9KSVlVMUhuemVYeG85d0FyNGpscGY1d29wZw?oc=5",
-      "source": "브릿지경제",
-      "date": "Mon, 09 Nov 2026 23:20:00 GMT"
+      "title": "미국 AI 데이터센터 업황 불안해도 반도체주는 '저평가', 삼성전자 SK하이닉스 반등 가능성",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9XRmFhVzN0YUtqZ1psTnc1T2RXNThoWWRUNzAtRHY2dVVYbG16MlYwVktJckRGdTF1Qjk4bjROel9NOF9fTjdDaVJxOGhCWldYMmNLNW5pS3RxaWpIZVhiTmZNdFpZWWdhWE5GaWgtMmMxalk?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Wed, 11 Nov 2026 01:14:18 GMT"
     }
   ]
 }
