@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:43:27+00:00",
+  "updated_at": "2026-11-12T16:09:42+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -83,16 +83,16 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성자산운용 ‘KODEX 반도체 ETF’, 순자산 3조 돌파",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05Zi05WmRXS05IWFdKVWJidWtWOUc2LWpVWkJSMGs1dUc4b0xCNEdqTk05WFhGSS1jdmo1eW5DTV9oRzh1dHV3MUZhVlh1TllVOFRkbzRyRmlwLUN1bHNFbU10TWpZMVMtN3dLcE9uYVNCX0k?oc=5",
-      "source": "마켓인",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT"
-    },
-    {
       "title": "'반도체·월배당' 둘 다 잡는 'KODEX반도체타겟위클리커버드콜' 출시",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1CbGVwTElPN1hMdU13RnhRV05UZFg4bTRKcWFlZHJ3a0hhS3VTVHY0cTZjNjNiSzZ3d1JscFNfSUt1ZG5WRElUcGdUQi1lbFVodWg5UnpiZS1fZ0h3Mkcw?oc=5",
       "source": "뉴스1",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성자산운용 ‘KODEX 반도체 ETF’, 순자산 3조 돌파",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05Zi05WmRXS05IWFdKVWJidWtWOUc2LWpVWkJSMGs1dUc4b0xCNEdqTk05WFhGSS1jdmo1eW5DTV9oRzh1dHV3MUZhVlh1TllVOFRkbzRyRmlwLUN1bHNFbU10TWpZMVMtN3dLcE9uYVNCX0k?oc=5",
+      "source": "마켓인",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT"
     }
   ]
 }

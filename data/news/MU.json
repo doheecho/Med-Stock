@@ -1,14 +1,44 @@
 {
-  "updated_at": "2026-11-12T13:43:25+00:00",
+  "updated_at": "2026-11-12T16:09:40+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
-      "title": "Nasdaq, S&P 500 futures fall as Nvidia turbulence unsettles AI stocks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html",
-      "source": "Reuters",
-      "date": "2026-11-12T12:26:00Z"
+      "title": "Stock market today: S&P 500, Nasdaq pare losses as Nvidia stock slides after CEO Jensen Huang resigns",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
+      "source": "Yahoo Finance",
+      "date": "2026-11-12T11:00:27Z"
+    },
+    {
+      "title": "Nvidia, AMD, CoreWeave, Nebius, Tesla, Strategy, and More Stocks That Explain Today’s Market",
+      "url": "https://www.barrons.com/articles/stock-movers-cd2d0ebf?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-11-12T15:12:00Z"
+    },
+    {
+      "title": "Micron Is Back Above $800 After Its Best Day Since July",
+      "url": "https://247wallst.com/investing/2026/11/12/micron-is-back-above-800-after-its-best-day-since-july/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-12T13:56:58Z"
+    },
+    {
+      "title": "Join The Dip Buyers in Micron If You Dare",
+      "url": "https://247wallst.com/investing/2026/11/12/join-the-dip-buyers-in-micron-if-you-dare/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-12T13:45:55Z"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights iShares Semiconductor ETF, NVIDIA, Arista, TSMC and Micron",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-ishares-134000412.html",
+      "source": "Zacks",
+      "date": "2026-11-12T13:40:00Z"
+    },
+    {
+      "title": "Zacks.com featured highlights include Micron, NVIDIA and Sandisk",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-micron-124400549.html",
+      "source": "Zacks",
+      "date": "2026-11-12T12:44:00Z"
     },
     {
       "title": "Micron Out-Earned Apple Last Quarter, Yet It’s Worth 1/6 as Much. One of Those Two Things Is Wrong",
@@ -33,36 +63,6 @@
       "url": "https://www.trefis.com/stock/avgo/articles/624609/what-does-the-anthropic-ipo-mean-for-broadcom-stock/2026-11-12",
       "source": "Trefis",
       "date": "2026-11-12T12:02:21Z"
-    },
-    {
-      "title": "Anthropic IPO: Buy, Sell Or Hold Nvidia Stock?",
-      "url": "https://www.trefis.com/stock/nvda/articles/624617/anthropic-ipo-buy-sell-or-hold-nvidia-stock/2026-11-12",
-      "source": "Trefis",
-      "date": "2026-11-12T12:02:21Z"
-    },
-    {
-      "title": "Nvidia may oust Jensen Huang. The AI economy isn't ready",
-      "url": "https://finance.yahoo.com/video/nvidia-may-oust-jensen-huang-120000795.html",
-      "source": "Yahoo Finance Video",
-      "date": "2026-11-12T12:00:00Z"
-    },
-    {
-      "title": "2 Memory Stocks to Buy and Hold Through 2030",
-      "url": "https://www.fool.com/investing/2026/11/12/2-memory-stocks-to-buy-and-hold-through-2030/",
-      "source": "Motley Fool",
-      "date": "2026-11-12T11:50:00Z"
-    },
-    {
-      "title": "Nvidia, Dell, Super Micro, Sandisk, and More Stocks That Explain Today’s Market",
-      "url": "https://www.barrons.com/articles/stock-movers-cd2d0ebf?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-12T11:43:00Z"
-    },
-    {
-      "title": "Micron (MU) Has Next Year’s High-Bandwidth Memory Mostly Sold. Can That Anchor a Decade-Long Case?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-next-high-bandwidth-113313288.html",
-      "source": "Insider Monkey",
-      "date": "2026-11-12T11:33:13Z"
     }
   ]
 }
