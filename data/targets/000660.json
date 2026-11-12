@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T02:52:13+00:00",
+  "updated_at": "2026-11-12T13:43:19+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3102000.0,
@@ -17,16 +17,16 @@
       "src": "yahoo"
     },
     {
-      "firm": "야후 평균",
-      "target": 3100998,
-      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
-      "src": "yahoo"
-    },
-    {
       "firm": "미래에셋증권",
       "target": 3100000,
       "date": "2026-10-29",
       "url": "https://finance.naver.com/research/company_read.naver?nid=97222"
+    },
+    {
+      "firm": "야후 평균",
+      "target": 3097152,
+      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
+      "src": "yahoo"
     },
     {
       "firm": "대신증권",
