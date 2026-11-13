@@ -1,9 +1,45 @@
 {
-  "updated_at": "2026-11-13T13:00:37+00:00",
+  "updated_at": "2026-11-13T15:37:52+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
+    {
+      "title": "SanDisk Stock At $937: Why So Cheap?",
+      "url": "https://www.trefis.com/stock/sndk/articles/624470/sandisk-stock-at-937-why-so-cheap/2026-11-13",
+      "source": "Trefis",
+      "date": "2026-11-13T14:56:12Z"
+    },
+    {
+      "title": "Can SIMO's Advanced SSD Solutions Boost Its Enterprise Storage Growth?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/simos-advanced-ssd-solutions-boost-141200417.html",
+      "source": "Zacks",
+      "date": "2026-11-13T14:12:00Z"
+    },
+    {
+      "title": "3 AI Stocks To Watch With Up To 33% Revenue Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-ai-stocks-watch-33-141149484.html",
+      "source": "Simply Wall St.",
+      "date": "2026-11-13T14:11:49Z"
+    },
+    {
+      "title": "What Micron Stock Needs to Mount a Serious Rally",
+      "url": "https://www.barrons.com/articles/micron-stock-price-rally-memory-chips-cb346d83?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-11-13T13:16:00Z"
+    },
+    {
+      "title": "Broadcom And 2 High Growth Stocks To Watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-2-high-growth-stocks-131001434.html",
+      "source": "Simply Wall St.",
+      "date": "2026-11-13T13:10:01Z"
+    },
+    {
+      "title": "The Stock Market Is Bigger Than Nvidia. But What About Anthropic?",
+      "url": "https://www.barrons.com/articles/stock-market-things-to-know-today-2d681ae0?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-11-13T12:38:00Z"
+    },
     {
       "title": "Bill Ackman Explicitly Avoids Micron’s Volatile Cash Flows Focusing Here Instead",
       "url": "https://247wallst.com/investing/2026/11/13/bill-ackman-explicitly-avoids-microns-volatile-cash-flows-focusing-here-instead/",
@@ -17,52 +53,16 @@
       "date": "2026-11-13T12:13:47Z"
     },
     {
-      "title": "SanDisk Stock At $937: Why So Cheap?",
-      "url": "https://www.trefis.com/stock/sndk/articles/624470/sandisk-stock-at-937-why-so-cheap/2026-11-13",
-      "source": "Trefis",
-      "date": "2026-11-13T12:12:51Z"
+      "title": "5 High ROE Stocks to Buy as NVIDIA, Unstable Oil Prices Sway Markets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-high-roe-stocks-buy-121200764.html",
+      "source": "Zacks",
+      "date": "2026-11-13T12:12:00Z"
     },
     {
       "title": "AI Chips Update - Micron Highlights AI Leadership At Investor Events",
       "url": "https://finance.yahoo.com/technology/ai/articles/ai-chips-micron-highlights-ai-113737988.html",
       "source": "Simply Wall St.",
       "date": "2026-11-13T11:37:37Z"
-    },
-    {
-      "title": "Social Buzz: Wallstreetbets Stocks Mixed Pre-Bell Friday; Nvidia to Advance, Microsoft to Decline",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mixed-113527318.html",
-      "source": "MT Newswires",
-      "date": "2026-11-13T11:35:27Z"
-    },
-    {
-      "title": "Micron Stock Is Rallying but the Memory Giant Needs Much More to Hit Former Heights",
-      "url": "https://www.barrons.com/articles/micron-stock-price-rally-memory-chips-cb346d83?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-13T11:33:00Z"
-    },
-    {
-      "title": "Applied Materials’ Earnings Beat Gets Lukewarm Reception as Nvidia Fallout Lingers",
-      "url": "https://www.barrons.com/articles/applied-materials-earnings-stock-price-66c09c50?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-13T11:18:00Z"
-    },
-    {
-      "title": "iShares A.I. Innovation (BAI) Buys $11.9 Million More IQVIA on Nov. 11",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ishares-innovation-bai-buys-11-110425586.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-13T11:04:25Z"
-    },
-    {
-      "title": "Proshares Trust (TQQQ) Sells $16.3 Million of Apple on Wednesday",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-sells-16-110416656.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-13T11:04:16Z"
-    },
-    {
-      "title": "Invesco QQQ (QQQ) Sells Apple and NVIDIA on Nov. 11",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-sells-apple-110314867.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-13T11:03:14Z"
     }
   ]
 }
