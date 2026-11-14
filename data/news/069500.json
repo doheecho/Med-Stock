@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-13T15:37:53+00:00",
+  "updated_at": "2026-11-14T02:16:22+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
+    {
+      "title": "[ETF머니플로우-11월2주] KODEX 코스닥150 순매수 1위…KODEX 머니마켓액티브 9계단↑",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1RMWVfZjdsZDlxLU9ud0RFbnhOYVJDYkJHMmVwVXhrYW9tbmJ5b0VYQ3cyTTJNWlZ6ZlpFdzhzTkJ1M1N0U3QwYUxDTkJoY25qZGZiYVltOFY1cHVmMDh0QmVIRzlZaUxjaTd3c1JJYWw?oc=5",
+      "source": "신아일보",
+      "date": "Fri, 13 Nov 2026 23:00:00 GMT"
+    },
     {
       "title": "KODEX 200타겟위클리커버드콜 분배금에 '삼성전자 특별배당' 반영",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5odm9wWnVEWXVZWTlEcGJmRHNRSUpET1JBZEhKQmY0Q3ZfaVZ3R29oU1l0LXhwOVNiOXRiR0dabFdOUHhzYnpxN3pkajlWVlZ6TEc5TGYxR1dXWFHSAWBBVV95cUxQS1gwaGp4SktYN2ozdEthd0VIWUJWTUlEMWZ1ZUIzX0pzNGdPbG1EVGdqVGJMNUtBdC1UYXhRb01iZlRpSkpKTVlhVmsySURPOXFtRko0b0VKbUc1b3VrOGI?oc=5",
@@ -71,6 +77,12 @@
       "date": "Wed, 11 Nov 2026 12:19:29 GMT"
     },
     {
+      "title": "KODEX 200선물인버스2X, 장중 공방 딛고 2.75% 상승…종가 112원",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yUUZ1WnNOaFRFNUxlR1N3NVBISHF6bnRWZUFyRDNnblF0YVE4NHlFMHVVUjhnMnhxZlk3bUcyNXI2dEhvZi14SklzOUc0VkxoOE1tZVE0TmVndXFWenRVZFMwb0NvY0haUF8zNE530gFyQVVfeXFMT1lJeldYaFAtRkRHdlZNUjhlazZUXzZfUnVOeVZXcl8zSHVYZ3pKU1FaaWs1eDM5NE13SVZWaEtJV0hVSDdMdDl3WmFIdlFXZ3cxOG5CeWpHSEZxS0o4bkxLMnVNN1loNHFLWG1MQ2R1Ujl3?oc=5",
+      "source": "잡포스트",
+      "date": "Fri, 13 Nov 2026 07:11:20 GMT"
+    },
+    {
       "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 연말 분배금 확대",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5SnhOMFJxbWxFb0xFUDREX1VxMDlpYWZDdmhDM3JBNzhya1hrNDk0RElLREhJeWkwb2FodWFPdUNHRDVDbHFBZnQwSVhWV1JGNTVRSHZFaWpibTdtRXhCZS1pUjhIZ3Vfb2tRZg?oc=5",
       "source": "ER 이코노믹리뷰",
@@ -81,18 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1faFpWeWRsMzg2ZWlIMVpNWnZINHhwbVlKdTV4VWE1MmlXNFlyUzI2M01lQnM3Y1RzeUQyN2lQOWlKWV8wM1ZXSDNtOUY4VU1ZY21kRGFJWUduaGgzcDg0WDB3bkpWNnFlODhqRldrUVQ?oc=5",
       "source": "코리아리포트",
       "date": "Tue, 10 Nov 2026 04:00:58 GMT"
-    },
-    {
-      "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 개인 순매수 '1위'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96RldEUG5OYWdpVXVzeEJva3dRWVdZaXpJbXZyM0IzNWI3aE9kc0hTWUxqM1dadnlPN182Y1NBc1JLUnhTVTlQV3NTb3pVbjFjb1pIM1hWTW5EeDNOX29CazJpTXdtQnRVdElvdmdNSWg?oc=5",
-      "source": "시장경제신문",
-      "date": "Tue, 10 Nov 2026 01:07:44 GMT"
-    },
-    {
-      "title": "삼성자산운용, KODEX 커버드콜 ETF 개인 순매수 3조원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zclpHTi1kUnhuMkplWmpqSm9lMjVRaEQyYlRHSmFNellvRERxNnh0YVRNOHZCeW1EV25wNnFoakVfQlJPaEJsb1F2YXJwSG9ocllhZVJaMl9YU0Rx?oc=5",
-      "source": "뉴스핌",
-      "date": "Tue, 10 Nov 2026 00:42:00 GMT"
     }
   ]
 }
