@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T01:53:02+00:00",
+  "updated_at": "2026-11-16T13:33:15+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3062000.0,
@@ -24,15 +24,9 @@
     },
     {
       "firm": "야후 평균",
-      "target": 3097152,
+      "target": 3056127,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
-    },
-    {
-      "firm": "컨센서스 평균",
-      "target": 3062000,
-      "date": "2026-11-13",
-      "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "대신증권",
