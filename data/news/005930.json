@@ -1,27 +1,9 @@
 {
-  "updated_at": "2026-11-16T13:33:20+00:00",
+  "updated_at": "2026-11-16T17:20:16+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
-    {
-      "title": "초고수들 SK하이닉스 '사자', 삼성전자 '팔자'…엇갈린 이유는",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aZ3FCNk9JcWN4RVRuMXhxMnItSTg5aWw4SWdMZWNZU3BGUjMzTVRHV2hwbW9FempSajQ5TlI2ZnFwamdPYlJYeXd6eERNZzhiUzBKMGF5UmRQdw?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 16 Nov 2026 02:09:26 GMT"
-    },
-    {
-      "title": "[속보]삼성전자 4.47%, SK하이닉스 7.89% 급락 마감",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmTEpHYU9aUG5vWkJWX3lLcXlnZzdFczgzUi1DSXVCcGRUS21IZVhxNHZwaTZTaWtDdVZWYTdMZjRiM2FGeV9sMDFQbWFLWE43cjZDdC1TeEFlc1BoaS0zWtIBeEFVX3lxTFBHQm0wTTdrb2VvTUZDOEJMVnJ0V2pIaXNqVWs5TXc5VE1RcF9kbWprdmZlaC1SZE1CMkFxSlVDTXVGeVlRRklxOFktUmJoNmRPazBPR0JVQ05aQm1ZUG1Oam8yOGZfbE05Z3E0MUh6LThrYmpaLWpjag?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 16 Nov 2026 06:34:49 GMT"
-    },
-    {
-      "title": "[특징주] 삼성전자·하이닉스, 장중 낙폭 키워 4∼7%대 급락(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBsZTg3YlZOVVlBeFJSWlZwTzAtN3JGWi1FQVhaODA0aVlYTHBIbWY3eWRaNVA4M3NwTTdMZmhtRV9nWWZqU2otNFpLRndkMkNRNEE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 16 Nov 2026 08:43:37 GMT"
-    },
     {
       "title": "삼성전자 사장단 인사···이재용 회장의 '성과주의 인사' 시험대",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRNDZNNGFOcE9POWtsTHI2MldpSDZjaVJqRGVZSTdGVDFOeVlhOWNteVVYc29TRXJOSEQ0T0lzb1l0Ny1LMjI0Z3I1NTlFQVNiT283TC1jaTQ4MUJ3?oc=5",
@@ -29,28 +11,70 @@
       "date": "Mon, 16 Nov 2026 01:21:00 GMT"
     },
     {
-      "title": "삼성전자, 첫 3분기 누적 매출 500조…D램·스마트폰 점유율도 상승 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9uX0drb05NTU5DYjQwR0g4d25OTl8yQmNzY1FleHBjdHJMM09LNWVVSXA2WDlFYUJMb0xxQVhESEJIRFpvUmduSVVrZTd3YXlqTlIyX0Y1VEt4aTdodW5EY3NCYXBJQnhwRHNmd9IBckFVX3lxTE02eGZBbHhWWEYwbUNvRXZ6ZVVaNF9vQXptaHFRMnl6NDBpRlQydUkxcGxIUU9pMmJPVFU5TVk2c2s0Rnl1LUVWeERGOEw5NmwyUlJRTEVyV25YTUF1T015eFdSVFFadGVpWVFzUXVjXzhWZw?oc=5",
-      "source": "머니투데이",
-      "date": "Mon, 16 Nov 2026 08:22:49 GMT"
-    },
-    {
-      "title": "삼성·SK하이닉스, 역대 최대 시설투자…3분기 누적 88조원",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQeVRwVk5USmt6MzRUSU16LXpVXzA3cW4wUDlRTEJzR1c5NEVIYmQ5WW96VnhBdHBPMGNOejNOR1F2NmtwOTZidUJSMlVwelk4ZndXNWxR?oc=5",
-      "source": "지디넷코리아",
-      "date": "Mon, 16 Nov 2026 12:30:28 GMT"
-    },
-    {
-      "title": "삼성전자 올해 3분기 누적매출 500조…투자 57조·R&D 42조",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PeG9NMkNYWElpRG5taXFBZHIyeGJkRnlBUjc0aFJ0c0l3WkZSM28tbDRiVE0ySml3VTBVUG40TGpQcUJlaVZPX2EyN3F2ekYtQ0xqakZPTnViOVXSAWBBVV95cUxQS01USGppYUNlLU5IVkoyenlnT2ZkU3N1RmNIMkRCajNxdnNWTTZyU0U4emJWUzhLeHVxNnZiUDhwNlE5WkZ0a0FWVU9XZ2c1WDdKX293bExSb0NmV0tFYXg?oc=5",
+      "title": "[특징주] 삼성전자·하이닉스, 장중 낙폭 키워 4∼7%대 급락(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVTnhsSW1JQ0FqUUlHNG4ycFpIVm1DZTVxUUtDUUJHS2ZPUW1meUhTM2h0eHhqQ2FYU1hsQmVGOGNkZnpzZjNuS1Z4QmxOOWdjSlZPQ0tJNjVfVUnSAWBBVV95cUxPYWl4RkVwc3ZtU0x3UTJkdWM4QzBabU9VV3ZhREtMVThYT1pMM3JVMXlwMjVVV0dRU2QycVBNSDI4QVRKNXZ3cTkxa0ZsaGNHeFptWDNqYzFfc2NxUnVhTTM?oc=5",
       "source": "연합뉴스",
-      "date": "Mon, 16 Nov 2026 07:50:30 GMT"
+      "date": "Mon, 16 Nov 2026 08:43:37 GMT"
+    },
+    {
+      "title": "삼성전자 20만원 깨지고 하이닉스 -5%…또 파랗게 질린 코스피",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9fSjdxLVZPMGZlMk5pM0Q0X3RVeUlwaFpJdm9YQWFJTW5WcE56ZzJ5bGhKcnc5eXQyMHpSZEE4RkR1czN0aVlVOEI2S0JOWEdqeU54cXdRVlYycGw0V0JhcW41ZnU2Y3FHa2p5VWhjekRTUXR5dHhXMXpuVDNNZw?oc=5",
+      "source": "서울신문",
+      "date": "Mon, 16 Nov 2026 01:54:41 GMT"
+    },
+    {
+      "title": "“언젠가는 오르겠지”...국내 ‘빚투’ 30% 삼성전자·SK하이닉스에 몰렸다",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNHJnbFQxZGtHYTY1YS1JMngwWEUySGFEMGxtVDBicllZWnF1NlNlNUdfWHZUUWk3YldPSXJxZ3FxZXdPLUQ3aWdTV2R5STRXU0ZFTktHUGdpN0dCWUR2RnJuN0w3SF9MbHY0ZFpVLTNrSF9GVVhWc1ktbWE2WjFSWA?oc=5",
+      "source": "조선일보",
+      "date": "Sun, 15 Nov 2026 01:29:00 GMT"
+    },
+    {
+      "title": "삼성 “소부장-팹리스… 기술-자금지원 확대”",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNem5ycW9aSUFCNGhVcnpENTNXeFg2T3o0ZG5OT2hDWS13QmRzd0dzLUtFNGJNTnNIaDhPR1ByYnVUOVJNYVJxUGdkTTY4X2E1c2U0SnpDM1V6b3lvUXotUDA4U3ppZUY4Y24zMnplaWRIZGVmVUHSAWZBVV95cUxOcy1oSTk2aFgyNFVIeGRZdXdNbV9xTURYVFYxcVVPN3Jjd0ozeThtNEdCdUNVRnVIb0l6elNPQUhQdVVoVUJUQXpPQVdQR0pHOEw1b05aWmZmMUhYb1VHa3RXWFRmbVE?oc=5",
+      "source": "동아일보",
+      "date": "Mon, 16 Nov 2026 15:30:00 GMT"
+    },
+    {
+      "title": "‘삼성전자 AI 안경’, 1차 사전 예약 완판…부정행위 우려 괜찮을까?",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vczNfWU1ydVBBYjQxellzT3JJaW0zTzg1UXVwU3V6cER4OGJuazhvaEc5dmRRNmpqN213N2h5bENFWFo2Qld6R2N5ZThidmRXTlhCS3d3MVF3RThIRFc2dTE5WTZLUU1WNV9yX0lBY9IBZkFVX3lxTE1KR2ljNUlka3M1R2l2dzYwNlpxT2FqUlVZTUhFbkJSUXV2Mk44UXpFanlvS3dDNlZnbVhULXpjTC14NHh5WmJsbnNZb1BGMU9hNkxTWkpHaFpPcHpNb3NyWFdLbXRWQQ?oc=5",
+      "source": "동아일보",
+      "date": "Mon, 16 Nov 2026 07:47:26 GMT"
+    },
+    {
+      "title": "반도체 사업장도 'AI 안경' 경계령…SK하이닉스 반입 금지, 삼성전자도 검토",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtZXFBT3hBRDBuRFd2cFR1MVpjenJQaVBqeVl6amZrVFNmbUtuM09jZzVBVXdjY2hGOGZiWXlOSEdVb3ZSSFl4QXBHeU9oWXdDbWVTSk9qaFo4TWg2dFJaU9IBeEFVX3lxTE5yYm1ldUpoWEozcWJCUzdablJrdzdod3hENkpRQjkwb3drT3d1NGdXcFJDWGoyazZUSXBHOFpDUnUyV0MtZURmdTJQY25qaFpqRTdNYUhYMkRPcG1Xa0E0LUxYWjlDWklPTmlZSmp6Z3d3QVJwM0RtXw?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 16 Nov 2026 02:06:31 GMT"
+    },
+    {
+      "title": "삼성 AI 안경이 삼성 반도체를 훔쳐본다",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVTR5bE91MHNZVFBpdEhHdGlqRzlxSlJtd1NQaUF6eEliR010MUE4Um5KTkp0XzFqNlQtTTFvLUtsRlA0NGFJOTRYMGVZS21CUFBHMVR2c0lrM0p6elA5cXZ1TW9tSFZ3cG81OXoydElSNk5CTVAtRFhRNU1pUDJEeVJ4VFMxQW1YbE9JTk15NA?oc=5",
+      "source": "조선일보",
+      "date": "Mon, 16 Nov 2026 15:51:00 GMT"
     },
     {
       "title": "올해 주가 149% 뛴 AMD…삼성전자도 공급망에 올라탔다",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3QlNGSEU4LWRhNmtBUThrSkJ5S0JvSXM4ODBYYjBKc2dqUHVFam5YWGFUYlBDTF9obDZfdHNCNlRrY0Z4R3JZaE9rWW9HY3pUMkQ2Z2ItNVF1Zw?oc=5",
       "source": "한국경제",
       "date": "Mon, 16 Nov 2026 08:11:09 GMT"
+    },
+    {
+      "title": "삼성전자, 젠슨 황 떠나도 웃는다?…“탈엔비디아 최대 수혜주” [오늘, 이 종목]",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrb19aUnh1UmpqQTU0d2NndjJUMjVheE10Ny1vNGNraXJXNXlTU1oyZVowTTNLX1dWNE8tVDBrX0FBbHFoMHRjOEZUSmZWVkpOV1ZCXw?oc=5",
+      "source": "매일경제",
+      "date": "Mon, 16 Nov 2026 02:42:59 GMT"
+    },
+    {
+      "title": "[아침뉴스] 11/16 KB證 “삼성전자, 脫엔비디아 시대 최대 수혜주… AI 생태계 확장",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWk8zMGZzSFZYWEtaTlUzR2pNSHR3RlYzMVU2N2FlWHhWd2xmaUhJRGlvT0lnTlJWX2Z3bzBFSTdtSzJQLXhNVFUyV0NhSnFBUTdCZ1hPQmNiLTh3RXM4M0ludGN4c1dtZlluMHNLQUUyVjZ0OFVHX1R6aktEMDFlcTk4eGZqVEJwd0RwbXRkaWk?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Sun, 15 Nov 2026 23:24:00 GMT"
+    },
+    {
+      "title": "하나증권 \"엔비디아 고성능 컴퓨팅 최신기술 공개 예정, 관련주 삼성전자 SK하이닉스\"",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBZXJ2ZzZfSjNKQ091OGxacDBOQUpmQzJxRTJ0V2puTDBpaDIwbGxERHNYYXFTRURhWDgtYVBlRmVRdThtU25haHFfRUhXZnRmS0Y2OVktRGg3aHNmbmRDenVpaWg3SEh2UUJsSlJxRWFHX2c?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Sun, 15 Nov 2026 23:44:24 GMT"
     },
     {
       "title": "한국에너지대상 은탑산업훈장에 김영진 삼성전자 파트장",
@@ -69,30 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1LeUszd3FOU2drV0JGY01VbWVzRHlkYjFtNFFRakxaU1ExWXJfN3EzZ1BZVkNBeUdUcWpXSi01cUdjcE9JTERwR0gzX1ZJWjZY?oc=5",
       "source": "문화일보",
       "date": "Mon, 16 Nov 2026 02:45:03 GMT"
-    },
-    {
-      "title": "삼성전자, 젠슨 황 떠나도 웃는다?…“탈엔비디아 최대 수혜주” [오늘, 이 종목]",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrb19aUnh1UmpqQTU0d2NndjJUMjVheE10Ny1vNGNraXJXNXlTU1oyZVowTTNLX1dWNE8tVDBrX0FBbHFoMHRjOEZUSmZWVkpOV1ZCXw?oc=5",
-      "source": "매일경제",
-      "date": "Mon, 16 Nov 2026 02:42:59 GMT"
-    },
-    {
-      "title": "美법원, D램 담합 소송 허용…삼성·SK하이닉스 'HBM 생산' 영향주나",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KMnM0T212RDEzTWs4dzhCUHNEWkVXc0xUVHYyT1hTOVEwYkFxVHEyQ3JlelpTbmJZYnRZSDNldWZOOXFlRXlSNFlSNzBOc1gxWUgtaHJyWFFpUkpS?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 16 Nov 2026 00:42:00 GMT"
-    },
-    {
-      "title": "美 법원, 삼성·SK하이닉스·마이크론 DRAM 담합소송 각하 기각",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwcFVuRDFpbFRtd3lTMnpZOUJsSEhzTTNrQTJENC1OQkFxUFBOM0tvbkNjd1JFSy00ekRvUEgzWDI3UVlCb3Z2Q3dqR0ZDdXdhQVJQNTh0eU1BbnRoakRHLVFCMHd2MVI3aDkzcEtfMmU?oc=5",
-      "source": "연합인포맥스",
-      "date": "Mon, 16 Nov 2026 08:34:39 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 미국서 'D램 담합'으로 피소, 집단소송에 손해배상 리스크 커지나",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ubGdjWFlkaUozVTE3QWNrcG5rakVwUjliRllRQWZQODV4LUZ5MVhLOExLdi11NFFOSFhvRWhWODdzNlVrSzZ3RWFaZnBfbXNTTFJRRld3WVZTN3d4UFJONWNzVWNYQUZ5Y0dRMEJYb21DUEE?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 16 Nov 2026 06:29:35 GMT"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T13:33:25+00:00",
+  "updated_at": "2026-11-16T17:20:20+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -65,6 +65,12 @@
       "date": "Fri, 29 May 2026 07:00:00 GMT"
     },
     {
+      "title": "\"롤러코스피 무서워\"…반도체 반등에도 개인은 안정형 ETF로",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5GZDdaa2J0ZUJwQjdLbVRwNnhVeHNwczh6dnVNZ3BBdHFCQm53WWFReEhDeG9yVl9SVy1ZcmNrQmNDSjhnOU8wdEtnTmc0bjJXSEhwZ3o4bkJ6NGvSAWBBVV95cUxQU3JXQzB3NTIwWDJpV2NBRVhHXzlMYnVldGQ4VjdBUU5XU3VPWWFWR2pfcXNxSDFjbmdDaUI4X0ViOTlQbGRZd1hiX3BLLTNIX1FYZllZT2Y1dEg3WkNmeEQ?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 07 Sep 2026 07:00:00 GMT"
+    },
+    {
       "title": "삼성자산운용 ‘KODEX 반도체 ETF’, 순자산 3조 돌파",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05Zi05WmRXS05IWFdKVWJidWtWOUc2LWpVWkJSMGs1dUc4b0xCNEdqTk05WFhGSS1jdmo1eW5DTV9oRzh1dHV3MUZhVlh1TllVOFRkbzRyRmlwLUN1bHNFbU10TWpZMVMtN3dLcE9uYVNCX0k?oc=5",
       "source": "마켓인",
@@ -87,12 +93,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqSkFsZzBSbTJ5N0hiRUxfWlBwMnFIczJZU01TRHF4RjJxSWlCSS1uRTZJY1FnUUVpMVc1aXVEeEM4dXVyT250enRLQWNnMmRMVmxudmgwOFZ6QQ?oc=5",
       "source": "한국경제",
       "date": "Thu, 07 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "반도체 투자에 배당까지…'KODEX 반도체타겟위클리커버드콜' 상장",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBibGV5ZG0zUGtzMGNZbkx6RXdQV2M5RVBSbFBITVhBZk0zdUdZcDQ5VHgyOFNBdldhWVFVYW4yb29zaHFmWG8wNm1zTy1hdmZpMV9nQzZKSmdHWGZSZ3doZUdB?oc=5",
-      "source": "아시아경제",
-      "date": "Mon, 11 May 2026 07:00:00 GMT"
     }
   ]
 }
