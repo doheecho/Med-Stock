@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T17:20:08+00:00",
+  "updated_at": "2026-11-17T04:26:45+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 468571.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-16",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,15 +18,9 @@
     },
     {
       "firm": "야후 평균",
-      "target": 475629,
+      "target": 467639,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
-    },
-    {
-      "firm": "컨센서스 평균",
-      "target": 468571,
-      "date": "2026-11-13",
-      "url": "https://finance.naver.com/item/coinfo.naver?code=005930"
     },
     {
       "firm": "미래에셋증권",
@@ -49,13 +43,22 @@
   ],
   "consensus_rows": [
     {
-      "firm": "유진투자",
-      "date": "2026-11-12",
-      "target": 560000,
-      "prev_target": 560000,
+      "firm": "NH투자",
+      "date": "2026-11-16",
+      "target": 530000,
+      "prev_target": 530000,
       "chg": 0.0,
-      "opinion": "STRONG BUY",
-      "prev_opinion": "STRONG BUY"
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "LS",
+      "date": "2026-11-16",
+      "target": 450000,
+      "prev_target": 450000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "하나",
@@ -65,6 +68,15 @@
       "chg": -16.67,
       "opinion": "BUY",
       "prev_opinion": "BUY"
+    },
+    {
+      "firm": "유진투자",
+      "date": "2026-11-12",
+      "target": 560000,
+      "prev_target": 560000,
+      "chg": 0.0,
+      "opinion": "STRONG BUY",
+      "prev_opinion": "STRONG BUY"
     },
     {
       "firm": "메리츠",
@@ -166,13 +178,13 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "NH투자",
+      "firm": "삼성",
       "date": "2026-10-30",
-      "target": 530000,
-      "prev_target": 530000,
+      "target": 400000,
+      "prev_target": 400000,
       "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "IBK투자",
@@ -182,15 +194,6 @@
       "chg": -23.91,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "삼성",
-      "date": "2026-10-30",
-      "target": 400000,
-      "prev_target": 400000,
-      "chg": 0.0,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
     },
     {
       "firm": "BNK투자",

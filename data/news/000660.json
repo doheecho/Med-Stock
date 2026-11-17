@@ -1,9 +1,39 @@
 {
-  "updated_at": "2026-11-16T17:20:17+00:00",
+  "updated_at": "2026-11-17T04:26:55+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼전닉스, 현금 규모 가파른 증가세…329조원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JdkNBVU1RU21mWjNPQlJ2Yks3TVVSNU5rNGpHcTJBRThRME02OHFCLWF2SzBveUc3N1B3N1JMUExTOENYVzZOMmJteFQxYkVsS1c2RHJOc2xrVEQ3RDBkNjRTYmw1SU0?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Tue, 17 Nov 2026 01:55:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 보유 현금 329조원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1Y4YVBFblpkU1JSb0pDd2F6by1DdzlKeGRpeVVtSG5UcDZteWlRV3lWS0lEa0NtVU1KZGhydmMxRzFtWVFwZVBUSzZUQ1RJRFRXMnNjV3NpemNvSHpNcTM1MFNKQnBTMnFXajQ5VmFRdjRpVnV1SEs3bFItXzktQ0NxUQ?oc=5",
+      "source": "조선일보",
+      "date": "Tue, 17 Nov 2026 01:09:00 GMT"
+    },
+    {
+      "title": "삼전닉스 현금 곳간 329조 돌파…1년새 193조 급증",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94eHJDd3d3dzFYZWNReWNDMUdVbU9hS3ItRkJFZzhFbXpxZ0Q3SlpoSHZiSUhaWEVJZy16akpKUFpkVE9uWXk4UVI3VXYtdk9XbEJaNk1aV1NqX2fSAWBBVV95cUxOcGJrd3JkNGhpVG8wbkRUMFBBVGV3Y1BSNHpDc2tkbWl6QVJxVUJ3dDl3aGJ0Sy1sUHdqUEVqVkxCX2hhemVRN0Faa200Z011VjU2bkNEMWdLMTdxQ3NieVg?oc=5",
+      "source": "연합뉴스",
+      "date": "Mon, 16 Nov 2026 21:01:00 GMT"
+    },
+    {
+      "title": "삼성·SK하이닉스, 역대 최대 시설투자…3분기 누적 88조원",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQeVRwVk5USmt6MzRUSU16LXpVXzA3cW4wUDlRTEJzR1c5NEVIYmQ5WW96VnhBdHBPMGNOejNOR1F2NmtwOTZidUJSMlVwelk4ZndXNWxR?oc=5",
+      "source": "지디넷코리아",
+      "date": "Mon, 16 Nov 2026 12:30:28 GMT"
+    },
+    {
+      "title": "美 법원, 삼성·SK하이닉스·마이크론 DRAM 담합소송 각하 기각",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwcFVuRDFpbFRtd3lTMnpZOUJsSEhzTTNrQTJENC1OQkFxUFBOM0tvbkNjd1JFSy00ekRvUEgzWDI3UVlCb3Z2Q3dqR0ZDdXdhQVJQNTh0eU1BbnRoakRHLVFCMHd2MVI3aDkzcEtfMmU?oc=5",
+      "source": "연합인포맥스",
+      "date": "Mon, 16 Nov 2026 08:34:00 GMT"
+    },
     {
       "title": "美법원, D램 담합 소송 허용…삼성·SK하이닉스 'HBM 생산' 영향주나",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KMnM0T212RDEzTWs4dzhCUHNEWkVXc0xUVHYyT1hTOVEwYkFxVHEyQ3JlelpTbmJZYnRZSDNldWZOOXFlRXlSNFlSNzBOc1gxWUgtaHJyWFFpUkpS?oc=5",
@@ -11,88 +41,58 @@
       "date": "Mon, 16 Nov 2026 00:42:00 GMT"
     },
     {
-      "title": "美 법원, 삼성·SK하이닉스·마이크론 DRAM 담합소송 각하 기각",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwcFVuRDFpbFRtd3lTMnpZOUJsSEhzTTNrQTJENC1OQkFxUFBOM0tvbkNjd1JFSy00ekRvUEgzWDI3UVlCb3Z2Q3dqR0ZDdXdhQVJQNTh0eU1BbnRoakRHLVFCMHd2MVI3aDkzcEtfMmU?oc=5",
-      "source": "연합인포맥스",
-      "date": "Mon, 16 Nov 2026 08:34:39 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 미국서 'D램 담합'으로 피소, 집단소송에 손해배상 리스크 커지나",
+      "title": "삼성전자 SK하이닉스 미국서 'D램 담합'으로 피소, 집단소송에 손해배상 리스크 커지나",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ubGdjWFlkaUozVTE3QWNrcG5rakVwUjliRllRQWZQODV4LUZ5MVhLOExLdi11NFFOSFhvRWhWODdzNlVrSzZ3RWFaZnBfbXNTTFJRRld3WVZTN3d4UFJONWNzVWNYQUZ5Y0dRMEJYb21DUEE?oc=5",
       "source": "비즈니스포스트",
       "date": "Mon, 16 Nov 2026 06:29:35 GMT"
     },
     {
-      "title": "SK하이닉스 목표 주가 38% 낮춘 모건스탠리, 이틀 뒤 보고서엔 \"코스피 이르면 3년 내 1만선\"",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYXM0N1U3LWV3RXY1MDJGU2FRYldYS0VLUUtkbnNqYW9DcmwwMVV6LTFqNG9IQ3BKa2FSaW5hLWZ3RDBsaV9Ob1BDMTU1ZTNYWjE3bWc5b1Nkc1ZsbkdlX1dRUVBjbDJRdHB5aVE3ZEZ4Y3NLYm80eG1FNXRHQk5pbg?oc=5",
-      "source": "조선일보",
-      "date": "Mon, 16 Nov 2026 08:32:03 GMT"
+      "title": "영업이익률 80% 찍은 SK하이닉스, 순이익 반토막 난 까닭은",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVBuN3dDNnVlZ1BmWlFJUlplR3RuNzd6Rzc5U1lwVFR2Z0ZYbjVIT1ZMRWgtMklRUVFCNUE3Sk95d3BFQzlJbjcxemJ1bFNwQjFaNkhfdXU0VHJKZUNSMG1nLXIwdlItSFpUMmtVQVNEckVNSDBkMDJTNXJvVzEybFNwNlM2dnNx?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Mon, 16 Nov 2026 21:22:05 GMT"
     },
     {
-      "title": "속보 코스피, 5100선 턱걸이 마감...SK하이닉스 7.9% 하락",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBGcWdQUEV2MXQxckY0ZWZ3QWVrR2Z1S3dZNXlXZXNEZ1FhM0FLbVRGZzVzNDRNeTN3OU5HdWJBYkZIRndlQ3NSc2VBaXAwM2drV2lWRlNtcFNUbkxMcXc?oc=5",
-      "source": "YTN",
-      "date": "Mon, 16 Nov 2026 06:40:00 GMT"
-    },
-    {
-      "title": "코스피 5100선까지 밀려…SK하이닉스 6%대 급락",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qMHVtQ0tjYzFHTmRVY3BxanYyRURRWEZSUmRIZV9SMV9mWDZ1VXlpNkVpcXNKb0RpXzllUXBfVm5xbVlEeXlfQmhxM0t6SVg4QWRqSkFQSGpxd3BPVzVrOS1VOG9tdk5CM3c1bmxoRFVvV3c?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 16 Nov 2026 04:31:04 GMT"
-    },
-    {
-      "title": "’젠슨황 쇼크’에 하이닉스 털썩…SK그룹 시총 장중 1천조원 깨지기도",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBCdC1OanBiNXNJMXAyQ3BTV1hPMHNwczYxNThoU2RaV1k1RWpiYmtpWGI4SERWZjl1aUZiLTdUQ3F4R2UzbXFRSlZYemRwVVhBdzZqOERzVlJiMHJlU1BsenZjZVhNV28?oc=5",
-      "source": "연합뉴스TV",
-      "date": "Mon, 16 Nov 2026 07:41:00 GMT"
-    },
-    {
-      "title": "또 급락한 삼전닉스…젠슨 황과 앤트로픽 영향",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55YURHYjNxSVJVQ3h0NC1la0k5SDRLeDZuOExxVjFsZWo1aUs0VmhTb0toTkFIQWtZQjFxZGU0YUpfSVIzWmlWb3kzSWo5SVNFVjlQQ3VwMThZTTQxTFZIOTF3QzZYcElSNWc?oc=5",
-      "source": "SBS 뉴스",
-      "date": "Mon, 16 Nov 2026 15:48:04 GMT"
-    },
-    {
-      "title": "젠슨 황 떠난 엔비디아…삼성·SK하이닉스 'HBM 공급망' 판도 바뀌나",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RM3pGcU55enZLYW5fUDFqLW1wZVQ3RnFudFVWSXYzSTR3MmpuM2FlNXNwcjBOMk5LR3NRSzc0bkNCcXZ5ekRuM3VOcjVUZ1Q2dEVZb1o2UlhUUWZsYm5RY9IBeEFVX3lxTE1IYzVWUkMwdl9TbG16TGZnckxXRml0STBSTWZEam5mQXpYeTk0YXB0bHEzMk5EWUFPbVB2bnIybzBDS0pkODR6ay0yNTZ0dGdWWVdSU0lFYzNGWHpYVEN3bFRTbGl5cjBBZlVNaDhIeFlsQWJiVnMycg?oc=5",
-      "source": "뉴시스",
-      "date": "Sun, 15 Nov 2026 20:10:00 GMT"
-    },
-    {
-      "title": "골조 끝낸 SK하이닉스 용인 1기 팹, 내년 4분기 첫 양산…'트리니티팹'도 베일 벗었다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1OQURMZkNqVDRPY3JKYjBiZWZtM21HX3lEdzZBR2FBRTc4TnFyN3VNdDNyc2U2SXNvMzVjb19RVXFyZEx2cEdWeWNFTkdzQQ?oc=5",
-      "source": "전자신문",
-      "date": "Mon, 16 Nov 2026 00:15:07 GMT"
-    },
-    {
-      "title": "“AI 불확실 우려에도 수요 견고”…SK하이닉스, HBM4 생산능력 더 키운다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12dGhnZ3RNdW53R3pGNXdWUUdiRmlPLV9vMVNNQXVBNGlKNkozUWZVWFRtaVBBb25LcTQwTUhadjZfYWgwSjd0VEFIMkZldw?oc=5",
-      "source": "전자신문",
-      "date": "Sun, 15 Nov 2026 07:30:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 3분기 미국 매출 1년새 102조↑…엔비디아 35조",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vQXhkSEpyZ1FkLXVYMzNHQU9HQkYtNDN0WGhFODVRSF9Vb3dEX095RUctamdTQnYzM3BTWGduUS1IZG9Ub3hWbU5ESVEzVGNJYzctMm9GakU0ZlXSAWBBVV95cUxPTzRzemhuNDM4Y3RSQWFvRWthWVk5SWdNT0hBVGdIMGpTNVdZSlZqUnZzNkRWQUo1TnZKSlR0OWpRUllWM3o5NmlfdmY3MDFPUy1ac0piczdnX1NxWnJxdUs?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 16 Nov 2026 08:10:13 GMT"
-    },
-    {
-      "title": "SK하이닉스, 美 매출 1년 새 102조원 급증…엔비디아서만 35조원",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOVotVHF0V2x1aWhSTF9DSWZEMUxTTlQ5YngyOXVZc21BMjlWT0lPWURpQ2o0ck1LUHVDRDQwajFPZ0RabTRDdjNjd0lqRlZjYlJ6U1gzaTBrWU9USEtmSjhoN2RuTmhoT1lQXzQza2FZSW9Oc01LY0RqNzJibnE2eFpR0gGWAUFVX3lxTE5YYmRBN0hOUEt1QU1lVXlIZlE0cDE1XzIzSEhGYWNCZzdQSVNXa1FiVXB5QUYybjNwQ1k4bXNPb3d1U2dCZEw1RFIxU1p1LXIwMURVaTFKVElzQW1FNGpCQ043cXhsOFlsc3VhODAwQWdNaE8zSG1uaFFOQXh2UUc3VDh6a3NBTV9RQk1SanU4M1VqLXJJdw?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 16 Nov 2026 09:25:00 GMT"
-    },
-    {
-      "title": "SK하이닉스, 올 3분기 누적 설비투자 31조 원 역대 최대",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RMWtsa3VpbHJzamN2ZncydU5Td0U5ZWFfamRnVVp3SU9OSFBnRHRuMEphUlRZZlFvOW94aUdLa3JubWljenltYWxaR0hjMHh5dG00UGc4TDlvREZwLS1OWlFlT1I2TDhya2JzTHpXUlVFaDV10gF0QVVfeXFMTmplSC1iaFNpTVJValBDaEhPaDVkM0tEMlZVN25ZSFEwSUNKRjBoRjFIMDBjQXNfTk9kN0Y5dnBqMEJNUDBCek5uUGxRcTlGdHJPMkJWYmVUNlhtTUdhZVZXZ0w1d1J1Wlc1S0JSaHF0eVp0bmc?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Mon, 16 Nov 2026 10:04:27 GMT"
-    },
-    {
-      "title": "[SK하이닉스 JOB리포트] 디지털 인프라로 AI 시대의 기반을 다지다, 전사적 혁신을 이끄는 ‘IT’",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lSWVHYmJZUEtySzB3cXRtZExJQUV2UXJCdDRkczlTOUpya2ZEWHR6cVNqRWZPV1JSa3hISnR6Zk1DNWFmcXFEanBJY1VrenVOSDk5MlZPUkF1d0NHdzZrSV9Odw?oc=5",
+      "title": "[AI Ecosystem] AI의 완성, 피지컬 AI와 메모리",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB2SWhJRk1Qd3o3RWF6a3NDQUoxOWNPem1rVjZLYkczUFQwTi1rR3VUQUNGQ2dMZjhuMjUwdHkwZFdZQndLOFQwVXJnd04zTktlcnF1eXpILVAwODl0U1hSSw?oc=5",
       "source": "SK hynix",
-      "date": "Mon, 16 Nov 2026 05:00:22 GMT"
+      "date": "Mon, 16 Nov 2026 23:58:19 GMT"
+    },
+    {
+      "title": "소부장에 내준 공장라인… SK하이닉스 ‘반도체 상생’",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1RNnB6cUE4MGR1SDdrcUxDZzJpRndVZEJFRVJ1Xy1oNkg5QVVFaTd5VlBvc3pwRVFQWFpGNjI0OWktUVFpZm1kWWtRRjZYQk94RGtoZi1LNjlGNl9BYnE4NktMTjhzam4wbHZBd0pHcTQxOWs1SjM5TkpuWQ?oc=5",
+      "source": "서울신문",
+      "date": "Mon, 16 Nov 2026 12:33:34 GMT"
+    },
+    {
+      "title": "메모리 공장 속 소부장 실험장…SK하이닉스 ‘트리니티팹’ 가보니",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQmVtMHFDdm85UGswclJXc0FWZjJyR282c1FmRVFXazZhMWNDUl80MFNGdmsyQzl1SjhEdnFnMl92ck93TjBWRHNMZE10REVpeXhlWmtkVEFjcFUyazlWWVBrNko2ODlIaXY4R3hTVWpaMWF3Tng4NUVXRzFnSFNOT2ZkNA?oc=5",
+      "source": "조선일보",
+      "date": "Mon, 16 Nov 2026 00:14:54 GMT"
+    },
+    {
+      "title": "한국 반도체 지속 성장 ‘소부장 생태계’ 공간으로…SK하이닉스 용인 팹 가보니",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qVGpnMGRaNmFjQXVQTTZPZVNCUHhWSmxGcWpoR1JBYzc2a19qQmprVWd1MEJ6cXdRbXpCVV84aEVYYVhPTU9GcVg0ZW1KNk1reWE0ZGUzN0dBZw?oc=5",
+      "source": "경향신문",
+      "date": "Mon, 16 Nov 2026 11:32:00 GMT"
+    },
+    {
+      "title": "[특징주] 삼전·닉스, '젠슨황 리스크' 지속에 장초반 1∼2%대↓",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4yX3hCZklZLTF2Z3VRYVI4UGZHSC1NREl0RWpkSUFvQ2hKSlpaSW9aVUw2emZOaHplWGZycEM0bGRnaHlHQXdGTUUybDVsWkVVSFVTNDE2WklKcnPSAWBBVV95cUxNVTBRWllQenpnVkpXLVVJOFBTYW9NQzhacElqQ1g1YWlkV2RONEVNVmpSbDYwdUhnQTB4TEVZcWctcW5fS1Faak4tYjdvd2JPU0lCVTRzbVlOczVaamg3U2E?oc=5",
+      "source": "연합뉴스",
+      "date": "Tue, 17 Nov 2026 00:17:19 GMT"
+    },
+    {
+      "title": "“하이닉스 하락에 눈높이 낮췄다”…SK스퀘어 목표가 210만→150만원",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GNF9wQjExa0xaLUltblBuUW9fbFdJbWdHNXVwdmN4OWNkZHB1VXI5bFBUZ3ZvZzJ4QUN4U3Z1NG84VUJHZmlKMkViQ0h6UkpPbEE?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Mon, 16 Nov 2026 23:02:58 GMT"
+    },
+    {
+      "title": "SK스퀘어, 3분기 영업이익 7조 9천억원…SK하이닉스 효과",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vblY0cGVlaDVDTFRDdXBXMXl3dllWd2tPNUNVLVV6c2ptYWtvQVNaU0ZheTV4QlQ0N1NTckJNQ0ZUempiS050c3d0al91Mk8zRUJaQnk2U0hydFdGUGNFbTV2ZVhVZlE?oc=5",
+      "source": "연합뉴스TV",
+      "date": "Mon, 16 Nov 2026 08:32:00 GMT"
     }
   ]
 }
