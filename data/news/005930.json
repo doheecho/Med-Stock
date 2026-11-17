@@ -1,38 +1,32 @@
 {
-  "updated_at": "2026-11-17T04:26:54+00:00",
+  "updated_at": "2026-11-17T14:19:02+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자 올해 3분기 누적매출 500조…투자 57조·R&D 42조",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PeG9NMkNYWElpRG5taXFBZHIyeGJkRnlBUjc0aFJ0c0l3WkZSM28tbDRiVE0ySml3VTBVUG40TGpQcUJlaVZPX2EyN3F2ekYtQ0xqakZPTnViOVXSAWBBVV95cUxQS01USGppYUNlLU5IVkoyenlnT2ZkU3N1RmNIMkRCajNxdnNWTTZyU0U4emJWUzhLeHVxNnZiUDhwNlE5WkZ0a0FWVU9XZ2c1WDdKX293bExSb0NmV0tFYXg?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 16 Nov 2026 07:50:30 GMT"
-    },
-    {
-      "title": "삼성전자 사장단 인사···이재용 회장의 '성과주의 인사' 시험대",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRNDZNNGFOcE9POWtsTHI2MldpSDZjaVJqRGVZSTdGVDFOeVlhOWNteVVYc29TRXJOSEQ0T0lzb1l0Ny1LMjI0Z3I1NTlFQVNiT283TC1jaTQ4MUJ3?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 16 Nov 2026 01:21:00 GMT"
-    },
-    {
-      "title": "삼성 AI 안경이 삼성 반도체를 훔쳐본다",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVTR5bE91MHNZVFBpdEhHdGlqRzlxSlJtd1NQaUF6eEliR010MUE4Um5KTkp0XzFqNlQtTTFvLUtsRlA0NGFJOTRYMGVZS21CUFBHMVR2c0lrM0p6elA5cXZ1TW9tSFZ3cG81OXoydElSNk5CTVAtRFhRNU1pUDJEeVJ4VFMxQW1YbE9JTk15NA?oc=5",
+      "title": "삼성전자·SK하이닉스 보유 현금 329조원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1Y4YVBFblpkU1JSb0pDd2F6by1DdzlKeGRpeVVtSG5UcDZteWlRV3lWS0lEa0NtVU1KZGhydmMxRzFtWVFwZVBUSzZUQ1RJRFRXMnNjV3NpemNvSHpNcTM1MFNKQnBTMnFXajQ5VmFRdjRpVnV1SEs3bFItXzktQ0NxUQ?oc=5",
       "source": "조선일보",
-      "date": "Mon, 16 Nov 2026 15:51:00 GMT"
+      "date": "Tue, 17 Nov 2026 01:13:19 GMT"
+    },
+    {
+      "title": "하락하는 삼성전자·SK하이닉스 주가",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBzT0xkMnI5aU56cW5mUFFnNm1DcE9RSV9GMFYwdTFkVG42c0UxNHE4Nzl0ZmF2TmRRMkhuVkxrdHdmeWNwc0tna1EzRQ?oc=5",
+      "source": "뉴스1",
+      "date": "Tue, 17 Nov 2026 00:21:04 GMT"
+    },
+    {
+      "title": "[단독] 삼성전자·애플, D램 장기공급계약 ‘초읽기’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qbmFzeUw0X1VNVlJGOE1ITjhGaXNGZ05SS2ptMmE4OFBZTkxGQ0xYWXNuZ2tLRVhkTkxEcFZNYTdGSkJTRDVLckVuUmpabFRjM1E3X2xn?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 17 Nov 2026 08:00:00 GMT"
     },
     {
       "title": "출하량 급증하는 AI 안경…메타 독주 속 삼성전자 '맹추격'",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Ic19TNVkzZXBsN1diaDg3U0pJbGJGM29ZTWtPQjM2bUZVZDZFR2JsZnZlOVM2bkRLUF9RNnpLcGRGNHd3Uldnc1g4Mkt4ckk2bWVkNS01UU1uMUlJRzNBbnhxZHltcUZGVzR3dUJaWTc?oc=5",
       "source": "연합인포맥스",
-      "date": "Tue, 17 Nov 2026 04:13:29 GMT"
-    },
-    {
-      "title": "‘삼성전자 AI 안경’, 1차 사전 예약 완판…부정행위 우려 괜찮을까?",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vczNfWU1ydVBBYjQxellzT3JJaW0zTzg1UXVwU3V6cER4OGJuazhvaEc5dmRRNmpqN213N2h5bENFWFo2Qld6R2N5ZThidmRXTlhCS3d3MVF3RThIRFc2dTE5WTZLUU1WNV9yX0lBY9IBZkFVX3lxTE1KR2ljNUlka3M1R2l2dzYwNlpxT2FqUlVZTUhFbkJSUXV2Mk44UXpFanlvS3dDNlZnbVhULXpjTC14NHh5WmJsbnNZb1BGMU9hNkxTWkpHaFpPcHpNb3NyWFdLbXRWQQ?oc=5",
-      "source": "동아일보",
-      "date": "Mon, 16 Nov 2026 07:47:26 GMT"
+      "date": "Tue, 17 Nov 2026 04:13:00 GMT"
     },
     {
       "title": "올해 주가 149% 뛴 AMD…삼성전자도 공급망에 올라탔다",
@@ -41,58 +35,64 @@
       "date": "Mon, 16 Nov 2026 08:11:09 GMT"
     },
     {
+      "title": "삼성전자 매도한 주식고수, 삼전 우선주·가격 빠진 소부장 담았다 [주식 초고수는 지금]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56eHA1T2d2azVrU21MY2pOd0ZRVFVkR2RNdUxITmlEUmpNTUpKOC1Ed2hEZDVnanM5THY4cnJMVWFic3l1R1NPaEQ2Mzg2c2JJenc?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 17 Nov 2026 06:18:15 GMT"
+    },
+    {
+      "title": "\"주식으로 1원도 잃은 적 없다\"…곽범, 삼성전자 1억 투자해 번 돈 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wU0pYeXZXU0NEZVRIRDlBYnpoVXRweUEyWnRSR0ZaSmRON3IyQkZwOGlzUGFYMzZtcldyaDdYTXI5c2JhZ2UzLXVWU1p4NVZhdVI4SjYyZDc1azg3ZE1rdk1SdnZKa1RraFZGY3NmQVRvTm_SAXhBVV95cUxPeTNuRGN5RHBHYnNfTWNaWDVBdmdveTNhTF9ISGxHYVZmVktHaEdSQ2x0cm16WUJwUW81cWxwY2lpUEx3TjVvcXZQYmp2RGZKLUU4bFAtMjBwZmVkSXgzejNxYjB1UVVnSG1iaElEbmx0WFowSkhZZ3Y?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 17 Nov 2026 06:05:57 GMT"
+    },
+    {
+      "title": "\"삼성전자 20만원까지 올랐는데\"…1억원 투자한 곽범 반응",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85SWlTSTdjaHo0NFlHclVfMlF6UFNnMklpeW1YZExRak1pUFhMd1RoaVFpU1JsQzBWdXVOQVpxN3RPWVgwNExVb0kxVzRqQ18yamVTS3M5OW9LUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "date": "Tue, 17 Nov 2026 05:51:57 GMT"
+    },
+    {
+      "title": "삼성 차세대 D램 '3트랙' 개발 확정…HBM5는 D0A 웨이퍼 본딩",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE81TVJaYTVZelJrd0U3YmhyV0dkM1JCT1NtZWdlNk1WdUN0SHY4NTdiaUxvdWtuTUxqZlF6OTJ1UG9mMWpNNFZZOGJLWEZZN1F4by1LQzFEbWF3amtvMlJHNlE1UF9KQQ?oc=5",
+      "source": "디일렉",
+      "date": "Tue, 17 Nov 2026 07:34:48 GMT"
+    },
+    {
+      "title": "8인치 단계적 철수 삼성 파운드리...韓 팹리스 \"12인치 전환 정책 시급\"",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzakdwU2tscFlibGU1WkU2MWpjS1YyZ01mdVZSc1MxRVZkYmNiTy1pUWg3MjhYWlpNRTVsQzNiNDhhWFc2eU1QTW83aE5RX2lnVkUyOG5n?oc=5",
+      "source": "지디넷코리아",
+      "date": "Tue, 17 Nov 2026 05:45:13 GMT"
+    },
+    {
+      "title": "[기업] 삼성전자, 청소년 AI 교육에 '갤럭시 XR' 체험 도입",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBiVVZzTEJpaVVONTNub2ZBNU5tLUw4em1VZThaV1hqYWFKdDR4b21Jb3hMNjA0MjU3QnRFbWNRMFBpazFfbXNLVko5ZzliRUJuYjB4WUV3VjNKekZwZnc?oc=5",
+      "source": "YTN",
+      "date": "Tue, 17 Nov 2026 08:11:00 GMT"
+    },
+    {
+      "title": "삼성전자, ‘갤럭시 AI 클래스’에 ‘갤럭시 XR’ 도입… 교실 속 AI 경험 확대 – 삼성전자 뉴스룸",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNZl9KaWlKcTFrRW1Ta1E1ZmNhUUp5YTEyenRRMWo3NnpBbnluYm04UXNqay1ZQkRmeDBucExILVVlNlhQS0ZSVmh3dzhjLW85WU9tZVdmS3czNVB0Rm4wRTQtS0RmMXJRS3RZenB1dVJaUjNuVVlSM0tpVzAtWUdMOFQtcHVCTldPMXg1OVNtMHpyRXA3U3ZsaHhWMEdOOU5fOXBMdmVFZlcxa1o2ZmRacXdFWVoteUduaUZkbzNkbjJ6VmNTS1ctN2dBU1Z3Mk9qeFptUVhGZmJGUHhGQ01TQWRqNmt4ckw3SEpUc3VLbVFibEJyV081S2c5aW5DQVhSVlpIR2t3V3VxdV9IbHNzWExZYktMRW9LNmJiR21DaDFLWVM3RzhZOQ?oc=5",
+      "source": "samsung.com",
+      "date": "Mon, 16 Nov 2026 23:00:00 GMT"
+    },
+    {
       "title": "[포토] 삼성전자, '갤럭시 AI 클래스'에 '갤럭시 XR' 도입",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBCOEljT0xjdWZyNDEzRXNxWVByQzVqcEpoTGhOLW1lS0pBSzl6TVhIeElLSlUwUGpacGs2N0t0VklDc2dpQmdDcFYxb2hoUQ?oc=5",
       "source": "전자신문",
       "date": "Tue, 17 Nov 2026 01:24:35 GMT"
     },
     {
-      "title": "삼성전자, AI 클래스에 '갤럭시 XR' 과정 추가",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1UdzI2R3VnaWg0TkU3Ym1LWTJIVmxrWXM5dVB3OW02SDNfSVU4a3JsRWxfQlFPLVFJbWFlazRUUFNiQ18tUmFBd3gtZ2JWeXBMaGctRHVn?oc=5",
-      "source": "지디넷코리아",
-      "date": "Tue, 17 Nov 2026 00:27:55 GMT"
-    },
-    {
-      "title": "삼성전자, 초중교 교실 찾아가는 AI 수업에 ‘갤럭시 XR’ 도입",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZlUwX243dC1DeVpwU0ppWElDdmFPcjFIZ0NvajFQc2ZkS0o4RzV6UUtveWVmX1QzQXBJNDR6OVN3QlN1cEtKam1vcVVHdzBMTlZmN0pIYkFnVERGcGNhRzNmRlptbXBHb01OUkxJNllpX184eUlBczloaGhycTR6QmZ30gGWAUFVX3lxTFBZYlRFWmJ3azM0cUNWZno3R2ZXWS1ZUDkydUxtOS1fR09xX3FIekQtRDFKcktYWG5hVkwwN20zSG9ET2pzSUFpTS1vZnMyZDNRMlU0NDFUNWRVTEVaenlGcV9JcTRQNVBUSmpMZVM5aXkxODd1T2JVbkpCUFpjaEJiUkdzdzFfdHpyOGNydmFQVHlMRE1IUQ?oc=5",
-      "source": "Chosunbiz",
-      "date": "Tue, 17 Nov 2026 01:01:00 GMT"
-    },
-    {
-      "title": "국민성장펀드, 첫해부터 삐걱…삼성전자도 대출 승인액 20% 그쳐",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NeE1YRmVLd29wd2V2SGFfamdrdzA3N2F3TGhRNWRfSDBsemlKQXpGTDdaUEdrM1BtcVl4TkUwQ1FYNExFbEdJTjBJdE40cG5VMWVRR3U4Y3BoTnRqU0tBQVo3bUZhazA?oc=5",
-      "source": "한겨레",
-      "date": "Tue, 17 Nov 2026 02:11:00 GMT"
-    },
-    {
-      "title": "삼성전자·하이닉스 주식, 이제 잠자는 카드 포인트로 사자 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8yZkdpaHNubE5MMWZpOXdBQjlKMjc4OWpaSVJZZ2pRUVhtZ3lWc0tHUDZnU2lESzdENUluSlo0ck1TV3pZcHJ6Z3BPaEdjTlVkdzBST180QnZWRWFVbzRkbHlCS3A5eXVvWGlr0gFwQVVfeXFMTmc3TDQ5QlZQa0V4SlZ3dU5rUmFaQi0wOUlwdVFmWGZ4QW9uUXdNMmNRZk90T19yLVdtVW56OF9TN3d4QUM5RElleWhsTHRvOGdENUxhWkJxY2w1V3lyR2dnWjlVYWlVakJsRlh1NTVqSg?oc=5",
-      "source": "머니투데이",
-      "date": "Tue, 17 Nov 2026 01:11:02 GMT"
-    },
-    {
-      "title": "갤S27 탑재 비중은?…'엑시노스 양산' 삼성전자, 모바일 칩 반격 나선다",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15VDE4NWxtQ085OXBwRmFDcDRxZUlLaXVnVGtWSjRERnQ0SnROWThtdmd0UVdpXzl4UV9UbDdPQWN3NXcyU2JyWjRVdXV6a0FMZTlTSUhLN25WRTk1N295MNIBeEFVX3lxTE82eFhESDB3ckNjcjg5TGs1a0VUMF9aZjV5bjNhdWRKMWZKZXd6dVc5SlFEcE9VWlJtanlRS1ZNU09ZWlYtY2h0ajc3RUlyZU9oR2RfcGN6ZUIwM3Q2LS0xQ0FLSzFSdl9JVUdzeWJlYXZWaWJWREhxWQ?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 16 Nov 2026 20:00:00 GMT"
+      "title": "삼성전자 3분기 법인세 22.8조…작년의 690배",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ea2I5dlFmbnZWVFZCb0dkTFhlTGsyZS1DYmNfSm9taGtLTjhKSnZITHdLcmtpNERjNVc0eFBuVnpvdWtwYWZKbG1GUjBmVUdtNDFrR2NHR0V3Z3JGY2dCUTJUU2YzUm9BZGNMcXdMc3ZhUGJBZVHSAWZBVV95cUxNLWhjc25fU3YxeDZYbjRXSDc3RGR4YWpSYVY0MGJSQWtJRkpmRjZFMGlrdm9nMlJ2SmVfWGFiNXVCd2d1VDlXd01KNUVYM0hSYTZhYXZrX3RESUVnUkZEamlvWFlJX1E?oc=5",
+      "source": "동아일보",
+      "date": "Tue, 17 Nov 2026 08:40:00 GMT"
     },
     {
       "title": "미·중 반도체 갈등에 자금 이동…CXMT 팔고 삼성전자 담았다 By EBN",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kUnN4aTQ4Ukt3VXZ5dDRpRFc0Sk1qclVJb2NHV2pVMzN0SC1iU29WWWxZTnM5bWRlMS1hLUlZMEQ4dExPdllwYmg4QkRmQ3JRM0wxQkxSRGxJRnJCc3gwSFluQWUtTTI4NTRqU01wQ3M?oc=5",
       "source": "Investing.com 한국어",
       "date": "Mon, 16 Nov 2026 21:55:00 GMT"
-    },
-    {
-      "title": "美법원, D램 담합 소송 허용…삼성·SK하이닉스 'HBM 생산' 영향주나",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KMnM0T212RDEzTWs4dzhCUHNEWkVXc0xUVHYyT1hTOVEwYkFxVHEyQ3JlelpTbmJZYnRZSDNldWZOOXFlRXlSNFlSNzBOc1gxWUgtaHJyWFFpUkpS?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 16 Nov 2026 00:42:00 GMT"
-    },
-    {
-      "title": "美 법원, 삼성·SK하이닉스·마이크론 DRAM 담합소송 각하 기각",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwcFVuRDFpbFRtd3lTMnpZOUJsSEhzTTNrQTJENC1OQkFxUFBOM0tvbkNjd1JFSy00ekRvUEgzWDI3UVlCb3Z2Q3dqR0ZDdXdhQVJQNTh0eU1BbnRoakRHLVFCMHd2MVI3aDkzcEtfMmU?oc=5",
-      "source": "연합인포맥스",
-      "date": "Mon, 16 Nov 2026 08:34:00 GMT"
     }
   ]
 }
