@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-17T17:00:42+00:00",
+  "updated_at": "2026-11-18T03:39:24+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 468571.0,
-  "target_high": 538857,
+  "target_avg": 465714.0,
+  "target_high": 535571,
   "target_low": 370000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-17",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -43,6 +43,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "미래에셋",
+      "date": "2026-11-17",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "NH투자",
       "date": "2026-11-16",
       "target": 530000,
@@ -50,6 +59,15 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
+    },
+    {
+      "firm": "키움",
+      "date": "2026-11-16",
+      "target": 290000,
+      "prev_target": 350000,
+      "chg": -17.14,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "LS",
@@ -88,10 +106,10 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "신한투자",
+      "firm": "한국투자",
       "date": "2026-11-11",
-      "target": 450000,
-      "prev_target": 450000,
+      "target": 440000,
+      "prev_target": 440000,
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
@@ -106,10 +124,10 @@
       "prev_opinion": "Buy"
     },
     {
-      "firm": "한국투자",
+      "firm": "신한투자",
       "date": "2026-11-11",
-      "target": 440000,
-      "prev_target": 440000,
+      "target": 450000,
+      "prev_target": 450000,
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
@@ -158,15 +176,6 @@
       "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
-    },
-    {
-      "firm": "미래에셋",
-      "date": "2026-10-30",
-      "target": 400000,
-      "prev_target": 400000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     },
     {
       "firm": "한화투자",

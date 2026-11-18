@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-17T17:00:47+00:00",
+  "updated_at": "2026-11-18T03:39:30+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 3062000.0,
-  "target_high": 3521300,
+  "target_avg": 3001905.0,
+  "target_high": 3100000,
   "target_low": 2300000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-17",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -49,6 +49,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "미래에셋",
+      "date": "2026-11-17",
+      "target": 3100000,
+      "prev_target": 3100000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "NH투자",
       "date": "2026-11-16",
       "target": 3400000,
@@ -56,6 +65,15 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
+    },
+    {
+      "firm": "키움",
+      "date": "2026-11-16",
+      "target": 1800000,
+      "prev_target": 2100000,
+      "chg": -14.29,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
     },
     {
       "firm": "LS",
@@ -103,15 +121,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "신한투자",
-      "date": "2026-11-11",
-      "target": 3000000,
-      "prev_target": 3000000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
       "firm": "유안타",
       "date": "2026-11-11",
       "target": 3700000,
@@ -119,6 +128,15 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
+    },
+    {
+      "firm": "신한투자",
+      "date": "2026-11-11",
+      "target": 3000000,
+      "prev_target": 3000000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
     },
     {
       "firm": "대신",
@@ -164,15 +182,6 @@
       "chg": 0.0,
       "opinion": "BUY",
       "prev_opinion": "BUY"
-    },
-    {
-      "firm": "미래에셋",
-      "date": "2026-10-29",
-      "target": 3100000,
-      "prev_target": 3100000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     },
     {
       "firm": "한화투자",

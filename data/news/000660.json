@@ -1,26 +1,20 @@
 {
-  "updated_at": "2026-11-17T17:00:52+00:00",
+  "updated_at": "2026-11-18T03:39:35+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
     {
-      "title": "[하이피디아] 데이터부터 팹, 일하는 방식까지… 기업의 체질을 바꾸는 ‘AX’",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4Zjc5dElHMXFTdUFsS1U5OTRuZVFJQ1dsLVVDb2p2WHcwLWdMVkRRQnhZU0J2bk5QbTVtRVJnVXF3Nmd5bEZOcXZ1MUtGS0FQTHBQZzRyaXFFc0c0?oc=5",
-      "source": "SK hynix",
-      "date": "Tue, 17 Nov 2026 04:59:44 GMT"
-    },
-    {
-      "title": "[단독] 美법원, 삼성·SK하이닉스 '되돌리기 어려운 D램 감산' 주목…판결문 입수",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EeHpuNXlqWW1nU1RJMVhtc2tsVXJLeWRpNlVPQkNPWGpXWmdmR0NsckVkWEtkRGg3dy1IdGRhR2dndDB2dFBtbE9aWlA5OG8zdl8yUmRlYWR1Q3I0?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 16 Nov 2026 05:13:00 GMT"
-    },
-    {
       "title": "美 법원, 삼성·SK하이닉스·마이크론 DRAM 담합소송 각하 기각",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwcFVuRDFpbFRtd3lTMnpZOUJsSEhzTTNrQTJENC1OQkFxUFBOM0tvbkNjd1JFSy00ekRvUEgzWDI3UVlCb3Z2Q3dqR0ZDdXdhQVJQNTh0eU1BbnRoakRHLVFCMHd2MVI3aDkzcEtfMmU?oc=5",
       "source": "연합인포맥스",
       "date": "Mon, 16 Nov 2026 08:34:00 GMT"
+    },
+    {
+      "title": "미 법원 “‘메모리값 짬짜미 의혹’ 삼성·하이닉스, 범용D램 장기계약만 거부”",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Sc2xfbUtzcXU1RHVyaXYtNE45QnpxcDZKaFJ2dk1qNk1IY0E5cFlZOEp0R0trcVRlamRxNXpjUVpWZzNzMW5xb0NfS0xmU3JTNmcyWXU0TWtvZ3Z6dzJvQkd6dlBoUQ?oc=5",
+      "source": "한겨레",
+      "date": "Tue, 17 Nov 2026 13:12:00 GMT"
     },
     {
       "title": "美 법원, 삼성·SK하이닉스 등 D램 담합소송 중지 신청 기각",
@@ -29,10 +23,58 @@
       "date": "Mon, 16 Nov 2026 07:59:01 GMT"
     },
     {
-      "title": "“AI메모리 수요 견조… 삼성전자-SK하이닉스 영향력 더 커질 것”",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTTkduZXRXZEduaGRQRFdRUUkxcEFGYWp2aUNDeUFNMkMyLWNEZ09SODkyLUFvd1ZsaU5rN2VOU0stWVAyLU13dnZPZ1lUYzdYMlBxakQxdVg4dlVSSmozN3E3ZXA5bEpYaXlMSEdub3hpdERDRUHSAWZBVV95cUxQN1J1V2xVSHNVS1ZUa1pSX1VITV9qcGZ0ZXJ6dlByUTJWa090b01PUVJxMzZzUTBSbG82aU9vdHNFWWloUGR2RW5tXzl5ME1Wcl9nVzVMZlZ5aXV4Qzk3QldSMDN4anc?oc=5",
-      "source": "동아일보",
-      "date": "Tue, 17 Nov 2026 15:30:00 GMT"
+      "title": "삼성전자·SK하이닉스 보유 현금 329조원 돌파",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1Y4YVBFblpkU1JSb0pDd2F6by1DdzlKeGRpeVVtSG5UcDZteWlRV3lWS0lEa0NtVU1KZGhydmMxRzFtWVFwZVBUSzZUQ1RJRFRXMnNjV3NpemNvSHpNcTM1MFNKQnBTMnFXajQ5VmFRdjRpVnV1SEs3bFItXzktQ0NxUQ?oc=5",
+      "source": "조선일보",
+      "date": "Tue, 17 Nov 2026 01:13:19 GMT"
+    },
+    {
+      "title": "코스피 상장사 3분기 누적 영업익 264% 급증...삼성전자·SK하이닉스가 68% 차지",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0eFQ1SUgtemdLZjlqY251b2ZYUndBNGFydDBPeTNqTXhmaEJyZmhoanM1THFmQUdaVnM4RDBpNGhmcnNyR1phTUI2cFZ3ODllVmo4UU90U2hvMk9WbllZMzJOU2ljVTNq?oc=5",
+      "source": "녹색경제신문",
+      "date": "Wed, 18 Nov 2026 03:00:00 GMT"
+    },
+    {
+      "title": "악재는 다 겪은 삼전닉스, 그럼에도 고수익·넘치는 현금…\"4분기 더 좋을 것\"",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRUxlTFdZWHowREt1ZmVGakdSZTdHUTA0d2sxdFhONUh5UTB2VTRSdkVucWV1dXhFRUp2SUU1aXhweGlJWm5rdEs4ZUtnZ2tHOXlxMkQ4WHpTdTJ3WF9XU1E3MnpvQVRtU0tmUHdXQi1PNW95VzNPZzdNMGtfRW5JZzRWdzFmUQ?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Tue, 17 Nov 2026 05:16:18 GMT"
+    },
+    {
+      "title": "\"10년 모은 4억원이 1억원대로\"…SK하이닉스에 투자한 은행원의 사연",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE92cXMtd294ZDBWQ1l5dGxNZnZob0pNbzRSS2NsYjFJVEN6YTdsUmdreU1EeWxaMGFEblh2cXR0Q2lrczRFcFpKQ29WTWlDUlVZUUwyZHZJMnhrUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "date": "Tue, 17 Nov 2026 23:07:00 GMT"
+    },
+    {
+      "title": "SK하이닉스, HBM4 생산 늘린다",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1kOHpVbkc2aDJlSXpqN1ExaFdYVFJWRThWOFUxOTcwTGMxbzZzMl9JWU5qazRoWUxWS25fUnBrQUV2UGFjVEtHZGVWdWctQQ?oc=5",
+      "source": "전자신문",
+      "date": "Wed, 18 Nov 2026 02:00:00 GMT"
+    },
+    {
+      "title": "[단독] 아이폰 원가 40% 메모리 …'슈퍼甲' 애플, 결국 삼전닉스에 SOS",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNbHNzbW16dm96Rmp6dHhmM2JyNXdEVkp6WG1YY2ZFS0VIRGI1TElyQ1BkbzNVbEpOWjVORHd0dTFMMkJZb1RueHUxTTU0TzE2OGlDLVpR?oc=5",
+      "source": "매일경제",
+      "date": "Tue, 17 Nov 2026 08:30:10 GMT"
+    },
+    {
+      "title": "엔비디아, 메모리 확보에 장기 계약 확대…삼성·SK하이닉스에 호재 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBRazBhT3ZrMFg4aTZsS0luZnVSTGxEZDA4M2c2U001LWxsbjZaNlpkUlV6ZGFBWXh3amdZVTFaaVhNeVFFUk9JcXB0akkwV3plczFZcnNlTGh2VHNaS3c2UndEYXBjZTDSAWxBVV95cUxPVVNnTGRtMjQ1d0UtdEZDOVBPOFg4dXAxbVNzTkF6azJVaXdxZTlEank4Zi1OczF0RXVScmNEMFUwR1RyTzZtcE9fY1c1RVJua0FjYXJMZ3NhaWhqYmhveU1DU2tpeDUyYTBqdnc?oc=5",
+      "source": "머니투데이",
+      "date": "Tue, 17 Nov 2026 22:59:26 GMT"
+    },
+    {
+      "title": "실적 발표 앞둔 엔비디아…삼성전자·SK하이닉스에 영향은",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yMTVNUjAwQl9YMzh4OU51b05IR2U3T1lTeEdQdjJOYmV0dloyNk1IcXItUlVMczZWSkY0ZDBvNUgycEVmVFFoeUpZazhOR1k4ZldxQVpoM1hMUG9JM2JCZNIBeEFVX3lxTE9FSWc5Zk1MdXExOTdQeXc5X0JGdVVmLWFzRTNwSTJ6MS1oa2RDLVdLR01BeWNiNy1hMjBubzduRUlBZllLa0RyU2tVV3IyMWRlZFFzTjBOR19MSWFQRU9iRG1oTFNPSVExdlBDVEwxWVpKT1c3ZDducA?oc=5",
+      "source": "뉴시스",
+      "date": "Tue, 17 Nov 2026 15:00:00 GMT"
+    },
+    {
+      "title": "[특징주] 삼성전자·SK하이닉스 동반 급등…엔비디아 호실적에 투자심리 회복",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TNmFCNnI5QWFsNF9uWTdES29mS3R5NTlnaWRaMmZ0RXBFOUozS2w1dWRfSGROQjZKb0NocFFoZHBmQXFadkR2QldHYXJmUTR3ZzZpRm5XbTFmdw?oc=5",
+      "source": "브릿지경제",
+      "date": "Wed, 18 Nov 2026 00:28:00 GMT"
     },
     {
       "title": "영업이익률 80% 찍은 SK하이닉스, 순이익 반토막 난 까닭은",
@@ -41,58 +83,16 @@
       "date": "Mon, 16 Nov 2026 21:22:05 GMT"
     },
     {
-      "title": "키움證, SK하이닉스 목표가 180만원으로 하향…\"연말 조정 후 반등\"",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95SG5QbWRjRzBNWmo1U21ydUtfbkFSQnhIUnh3R0o2ZjcxMVRWaUhpQ0dZbW1HcFljUlcyZHRZR2pmYnhPQlZXN0R0ODZUbEtDbUdsU0lwTjhjaGdNRExOZmNUUW9xbFk2TFBUTFhQUFA?oc=5",
-      "source": "연합인포맥스",
-      "date": "Mon, 16 Nov 2026 23:35:00 GMT"
+      "title": "코스피, 2% 반등 출발하며 5천 선 회복‥삼성전자 3%↑·SK하이닉스 5%↑",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zakdhWVM2VTBIZDlOU3kxSUM5VTA3LXZoblVuc0VsV2tCNnQ3U0ZtYVdHZmphQ2oycExzTTV2N2VieHdVVXVHZGlmV3ZzVkJhdmVkRDdXLTJfUUZsNEtwbzY1UkpTaDBnVTVEV0Q1MVNKTzNF0gF0QVVfeXFMT2hHX0ZpNU9xSjJwQ19sWDA2R1RkczM3M1g0UlNxb1ZUX0J6X0VUWTZYTDltX01RYnl4SHpZTzlzNmluY3B5MmxyZ1NBSFJ0UzNnTzhiQW93YWYxbVprX3lFdDU5c0I3LVV5QUhpa2l5WUJEZmU?oc=5",
+      "source": "MBC 뉴스",
+      "date": "Wed, 18 Nov 2026 00:33:58 GMT"
     },
     {
-      "title": "키움증권, 삼전 35만원→29만원…하이닉스 210만원→180만원",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WOEN1Njk1X0dvVm81OFl5S0dnRUdTQzdCeHVabGVyVlZvLUFBQVhhb3RlXzlpbVFibnNpMEtOcWY4UlBIUklsSDRqUDJaZzZnc203bzd3bE9RSU3SAWBBVV95cUxNRXFDQUg4RzcxU0Y1MWtIWjNFc0hQZVRXeDdMWW1JWVNMdGxRY3V1LXZGYkpwbkRXeWtlU3JWR2g0NFN1ZGZFMnN2UUF1b3BqNTQ3Y2N6cGQ4WVR4QmdRM3k?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 16 Nov 2026 23:35:26 GMT"
-    },
-    {
-      "title": "“메모리 가격 하락·공급 경쟁 심화”…증권가 ‘삼전닉스’ 목표가 하향세",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjZzM5UVhjVGdVeU0yd3ZwQXJ4WmQxRnRqVWl3dlRSdE9fS3ozUlpWYmZvOHcwVEE2SVlyWm4wZHBNWmgyUm4wX2lBVEpQQmZWY2kxUU5qakrSAVRBVV95cUxOeU1odGI4bV84aHQ4VmU4cWc4R2R4aV9iQklxY0I5Q040dTc4NzVQTlRmb2xhbFRGVXpTRWJMVWFsZmoxVVMtYTRPeXk3QndDdU51bEs?oc=5",
-      "source": "세계일보",
-      "date": "Tue, 17 Nov 2026 02:51:01 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 보유 현금 329조원 돌파",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1Y4YVBFblpkU1JSb0pDd2F6by1DdzlKeGRpeVVtSG5UcDZteWlRV3lWS0lEa0NtVU1KZGhydmMxRzFtWVFwZVBUSzZUQ1RJRFRXMnNjV3NpemNvSHpNcTM1MFNKQnBTMnFXajQ5VmFRdjRpVnV1SEs3bFItXzktQ0NxUQ?oc=5",
-      "source": "조선일보",
-      "date": "Tue, 17 Nov 2026 01:13:19 GMT"
-    },
-    {
-      "title": "삼전닉스 현금 곳간 329조 돌파…1년새 193조 급증",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94eHJDd3d3dzFYZWNReWNDMUdVbU9hS3ItRkJFZzhFbXpxZ0Q3SlpoSHZiSUhaWEVJZy16akpKUFpkVE9uWXk4UVI3VXYtdk9XbEJaNk1aV1NqX2fSAWBBVV95cUxOcGJrd3JkNGhpVG8wbkRUMFBBVGV3Y1BSNHpDc2tkbWl6QVJxVUJ3dDl3aGJ0Sy1sUHdqUEVqVkxCX2hhemVRN0Faa200Z011VjU2bkNEMWdLMTdxQ3NieVg?oc=5",
-      "source": "연합뉴스",
-      "date": "Mon, 16 Nov 2026 21:01:00 GMT"
-    },
-    {
-      "title": "500대 기업 3분기 영업익 236％↑…삼전·닉스 빼면 불과 2％↑",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMWp4NVJDbmU5cmg2bXNMaVlyUmNpM1R3NVBla0doY3czUUJtSjhGckppSDJwWFozRHdobDZxalZVUkNkbndEbEZXZjBMV1Z1Y0tlQmdUSl9sWmQtVmw4OWZwc1BOaG5sdUZBRUhNc2Q0ZmFfRjVibkpfTFhjZXM5NVVsRDBZRDJY?oc=5",
-      "source": "TBS 서울",
-      "date": "Tue, 17 Nov 2026 01:44:00 GMT"
-    },
-    {
-      "title": "SK하이닉스 주가 반등 시 더 빠르게 오를 '이 종목'",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9YcWJkaklVWlFfZGNPQ1hERlBobHEwY1ZMd3ZGc0Q0dFYzWEwzSHRSSmEyckp2eF8xQ0x3VGEtODgwT2FKeHlWR2hIc1NaWG1hOXFaZlZLTnJjUFpoVjJvRE1RRUgwQmF2bnZsQTRBVjJWV0U?oc=5",
-      "source": "마켓인",
-      "date": "Mon, 16 Nov 2026 22:43:41 GMT"
-    },
-    {
-      "title": "“하이닉스 하락에 눈높이 낮췄다”…SK스퀘어 목표가 210만→150만원",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GNF9wQjExa0xaLUltblBuUW9fbFdJbWdHNXVwdmN4OWNkZHB1VXI5bFBUZ3ZvZzJ4QUN4U3Z1NG84VUJHZmlKMkViQ0h6UkpPbEE?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Mon, 16 Nov 2026 23:02:58 GMT"
-    },
-    {
-      "title": "SK스퀘어 3분기 영업이익 7.9조 200% 증가, SK하이닉스 실적 호조 덕분",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBdnh1Y2Z5eFhPQ1ZtWTZEazBfeE5SVHJRNkZaOURNcGVUUnhXQVFFeU1QYXQxUEhsM2h5MjJ6dkJiWjNyWFpQdTJkM2N0a0RDSEpMMTloVy1KSy1ybEw2TUNLLWV4dWZlWVB5WVA2d1RRWnM?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 16 Nov 2026 07:36:54 GMT"
+      "title": "\"떨어지는 칼날 잡으려면\"…삼성전자·SK하이닉스 신규 진입 '신중론'",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05NGUzUGVrNWVTWnRsekJMNk9TV05HYjdWd3JDLTU3VnVFc1JPbnB0cDlCNDBYRjVmZ0xZRWVmV0o0UmF4X2hqUVo5dUZoNWZnNU1xUFphTW5sbjVraTZQSNIBeEFVX3lxTFByVmFkUWtXMjgyb0VkUkEtb1NmdjltSlh6ZEpOOE91ejc1ci1PeW1JTEtSbEZfeG9CNHROSms4bEhYLTFxMGdhck5iMmtSbkVaRVlSSk02NUw4b3N3bFNvM0VrOWNzT2tzVFFCaG1CcFpUcGNlSlZIMg?oc=5",
+      "source": "뉴시스",
+      "date": "Tue, 17 Nov 2026 15:00:00 GMT"
     }
   ]
 }
