@@ -1,26 +1,14 @@
 {
-  "updated_at": "2026-11-18T03:39:34+00:00",
+  "updated_at": "2026-11-18T13:50:46+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
-      "title": "삼성전자·애플 D램 장기공급계약 초읽기",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tR0RwaHE3b2plYVMySVVZQVNBa19hY21za0VKV0U1bEE1cUF0SnhrdTItdm1MZW9keFV1XzNDbVc3R1IzQXpzV3pfVmZjV0FXX01FZGJn?oc=5",
+      "title": "[단독] 삼성전자·애플, D램 장기공급계약 ‘초읽기’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qbmFzeUw0X1VNVlJGOE1ITjhGaXNGZ05SS2ptMmE4OFBZTkxGQ0xYWXNuZ2tLRVhkTkxEcFZNYTdGSkJTRDVLckVuUmpabFRjM1E3X2xn?oc=5",
       "source": "매일경제",
       "date": "Tue, 17 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "title": "삼성전자·애플, 장기 DRAM 공급 계약 체결 임박 By Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9za05tWFNtaDNiOUZfVFBtd3hiWmpua09qY0tlN2NuRTM2TGVZWlh4RWNsVlJXSlRrNE5wOGc0dkZCVTJvdTJZYzhXVjlHNmt4NGYyX25LaFdqRnRLc09Zdm95aHdmZUhiaVZwVUlYQzhfUTNOeFNn?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Tue, 17 Nov 2026 09:45:00 GMT"
-    },
-    {
-      "title": "공급난이 바꾼 '슈퍼 갑' 입지..애플, 삼성전자와 D램 장기계약 조율",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00Y0dKREl0N3gyeEVwSFBJeTZOak1BYzZGTFpYclFveFVDcG4xYnhnNkJXR0MtN0NtT295VjZtb3d1ajFmbzNSOGlvaDJidElDdkE?oc=5",
-      "source": "한국정경신문",
-      "date": "Wed, 18 Nov 2026 02:33:57 GMT"
     },
     {
       "title": "출하량 급증하는 AI 안경…메타 독주 속 삼성전자 '맹추격'",
@@ -29,40 +17,46 @@
       "date": "Tue, 17 Nov 2026 04:13:00 GMT"
     },
     {
-      "title": "코스피, 삼전닉스 독주속 누적 매출 3천조…3분기 실적둔화",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBZnhWVTRvMTk0UE9heUY1SDFJUVoyY0owb3VVSlZLTVpPTVlaVVJ3OU5rQmM5djdDUklUNk4yWURQS2NnVXVvb1Vlc1VDOHdBRHdBeWhSNXFWbjjSAWBBVV95cUxQWUgxalU5YTNvSjQwWm83aHNJNVVRbm92bnVGMkZWRHhVOGpocnFMekUtQ2E5YzRlZld1dllGdHk1YjFYdWh4aEVkanRVUEF4X1BpMTlFX0VzbWV6dEV1c2E?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 18 Nov 2026 03:00:01 GMT"
+      "title": "삼성전자 제7노조 '광주노동조합' 공식 출범…교섭 참여 추진",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBem9JYk9Jd1IyTmIxWEdtZ2tQTU5Zd2p4azZSTXFmWEg0N0NZbzlzVVpuOW5YMjA2WG1uUUxMWndLRUQxMEliVjB0emNVMTZUVGc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Wed, 18 Nov 2026 05:32:43 GMT"
     },
     {
-      "title": "코스피 상장사 3분기 누적 영업익 264% 급증...삼성전자·SK하이닉스가 68% 차지",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0eFQ1SUgtemdLZjlqY251b2ZYUndBNGFydDBPeTNqTXhmaEJyZmhoanM1THFmQUdaVnM4RDBpNGhmcnNyR1phTUI2cFZ3ODllVmo4UU90U2hvMk9WbllZMzJOU2ljVTNq?oc=5",
-      "source": "녹색경제신문",
-      "date": "Wed, 18 Nov 2026 03:00:00 GMT"
-    },
-    {
-      "title": "코스피 상장사, 3분기 매출 ‘1000조’·영업익 ‘250조’ 첫 돌파..‘삼전닉스 이끌어’[코스피 결산]",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNR3F2MXdhd19Gai1LTXlCR0tRYzY4bjFaV2ZJWktlNWJnS2FHRjhrOVVFb2k4WGlUdHBQdlNvUFZiRWliS2UwM0kzZHhiN0tuV1pQb1MyV1ZjdkZac2F4V09XelR0RWVnSHY2Z29lRVFhMkRsb1ZKbXZrVkV4UDJpYg?oc=5",
-      "source": "이데일리",
-      "date": "Wed, 18 Nov 2026 03:09:24 GMT"
-    },
-    {
-      "title": "AI로 방류수질 하루 전 예측…삼성전자 화성사업장 수질관리 대상",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0wWmlLY0NUd01LNVhoSy1QVXJEcUFTcWs4TThsX3M4dFh3czJIVXpmSTh2N29UQ0M4dlkySHN5NDJEWGtQbDBYUGtlNHNiQQ?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 18 Nov 2026 03:23:42 GMT"
-    },
-    {
-      "title": "삼성전자 공급에 해외 수주까지…예스티, 내년 이익 2.5배 뛴다 By EBN",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9JOXBmRi1vMnRlNUVhTHBRNDFtbDNZSGhtNExaWktnQ3JTRmdZSUVNeXhYSEV1c0tkeE5GazAyRGgwSjJGQUMyN1RBZzZzQTJiTWJLMFRXakRQTlZvZlFNb2RIODc0OW5QUmhhcEdvcHI?oc=5",
-      "source": "Investing.com 한국어",
-      "date": "Wed, 18 Nov 2026 02:36:00 GMT"
-    },
-    {
-      "title": "[단독] 호남 반도체 공장 ‘南전北닉’으로 결정",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZkZ4VUJ5YzNPem5Gb0dET3p5TjBxRHhtMXhFZGZuVV9VcDZqWWVNbmwxU1hUMTM0dWJQQnVRUGRZUDFmU1lzTEtuZnVZbVBJWk9tMmJxMmZ5RkJubV8xbzdMSW5FdW56WU4ydHU5c1MxRUlfWW42RVd1bVNuWHRnVmVsRnNYQXVlbG5JODY2aw?oc=5",
+      "title": "[단독] 삼성전자 노조, 조합원 대상 테슬라 등 억대 경품 이벤트",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd05rSFdZeVVKMGFGMkxwYTVxMnJGS2FDbEx4RlN3U2tNOEVUNzRXeGNEdnlQaXpxNUVWOXdXd0FWbFZ1anlEZ0s0V1JnRS1iQ3oxSTRCdjJiMFh3c01KeGRuWE5XQ05KY1o1T0ZwWkp2T0R0TkQyMEswSWhzamlFc3BB?oc=5",
       "source": "조선일보",
-      "date": "Tue, 17 Nov 2026 20:04:25 GMT"
+      "date": "Mon, 16 Nov 2026 05:45:42 GMT"
+    },
+    {
+      "title": "삼성전자 제7노조 출범, 광주사업장 중심으로 조합원 모집",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPNUc3aVpleFFKYUdQSUZrdm16c0lySjk0UzFXeWFET2dBZW0wQ0JQWWJIaTlQaXNDeFJ6QUJReGZBOTdLSFBRTHRieUZBVFZKWTRPVmhrZmlyN2taWFpsYms5RUlfYmhnZzN1anJqN0UyYjA?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Wed, 18 Nov 2026 07:58:56 GMT"
+    },
+    {
+      "title": "엔비디아 독주 흔들리면 구글·AMD로 HBM 공급 분산… “삼성전자가 최대 수혜자”",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNT1Jhang1bkJKcURhVkdlT0t3ckM3ZW44YTg3eHRxenUwM3FVWkJjVG1BUEU2UEROX3RqcFNJeWdXLWdHVU0yU3NVVmU4MExmaXpxQmYzVDZpQXQ5NG9RMndMVDZfbS00MFAyQ2J5YUNxa3AyYVI1ZUEyTERXQWx5SEhR0gGWAUFVX3lxTE1obFFDTnYwVEZSbG1HeXpMZW0xVExRU3JQLXhVOFlid1lCZWl4dTk0SjBpTkY0SFR5UUg4emJnMVN3ZDdBQnluSDRSa2FubUVxZ3RUVEV6cXBvcXl5UFk2cWFaSWtDUV9JU3RuN0xMNlJ2YmxGRUNnZmlIVHItNmFfT3RmaGNQWE1mWVJuMFRFZ0JrNG9Bdw?oc=5",
+      "source": "Chosunbiz",
+      "date": "Mon, 16 Nov 2026 21:03:00 GMT"
+    },
+    {
+      "title": "삼성전자, 2.3% 상승 마감…하닉은 4.2%↑(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0UG54aTJLYVd4UEEwNUFUZS1vcEw4M294a0dmOVd1aDJPamdKNVpnZlVsLWJYSkZXOXpuQko1TUVHUDNIRnJRWDF5RUphQ3RESUhOMFlyMk43WlnSAWBBVV95cUxOV1BhWGdlWV91bFAwLU9GbEJVbFhrRzBFcXdtWTJ3WHpkWTdyby1DX1FRMW9wLUpYMnkxaUF2Rm5UTVAyYnExWXRLa0xYNVZvQ1RnX1ZZTW5mV2c1U1hoS2s?oc=5",
+      "source": "연합뉴스",
+      "date": "Wed, 18 Nov 2026 06:50:20 GMT"
+    },
+    {
+      "title": "낸드 내년 공급과잉에 가격 하락 전망, 삼성전자·SK하이닉스 고부가 eSSD로 수익성 방어 집중",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kcFdINHY4MjBIY1VTRG92OE96RkR3NkwtS29RX08tWTNLaE5TMS1lNm4wN3g4MFBJQ2VVM3UwLXJadG5JeXZFdXk1amRlTXpfcWtOZFRra2FjYVUzREVLRnpLVkl0QWZuSDY0M01MSF9qRjQ?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Wed, 18 Nov 2026 07:37:03 GMT"
+    },
+    {
+      "title": "8인치 단계적 철수 삼성 파운드리...韓 팹리스 \"12인치 전환 정책 시급\"",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzakdwU2tscFlibGU1WkU2MWpjS1YyZ01mdVZSc1MxRVZkYmNiTy1pUWg3MjhYWlpNRTVsQzNiNDhhWFc2eU1QTW83aE5RX2lnVkUyOG5n?oc=5",
+      "source": "지디넷코리아",
+      "date": "Tue, 17 Nov 2026 05:45:13 GMT"
     },
     {
       "title": "삼성전자와 손잡은 보람그룹, '상조 4.0'으로 라이프케어 전환 속도낸다 - 머니투데이",
@@ -71,28 +65,34 @@
       "date": "Wed, 18 Nov 2026 01:49:17 GMT"
     },
     {
-      "title": "\"900조 벌어서 성과급 잔치만…\" 삼전닉스 개미들 '피눈물' [분석+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51ZzN2ZXEyQlZ6SFZjaFBkWTAzT2EtMDctRGtPeF9vZWFxRC1kb1diOW8tcGJCOHVhUUlleVFjdWZzYU1mbWo1bmVIS2JyMnBnWnBIMjVKT25yZw?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 17 Nov 2026 13:00:01 GMT"
+      "title": "삼성전자 현금자산 214조, 작년 2배… 성과급-법인세-외환손실도 급증",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rYXpfRFl2NTNvN1k3WW9tMUVrSUJyMGhTeF9yTkwwTG5NZWh5OE4tS2t0cDBTY0hRM0RBY1pJN0VCYVJ4Y0FkWUttb0tETGZIVHVMckpUaURtQzBWSkR5U3FWcElIbVlMcmxUREdhS2Vjc05Hc0HSAWZBVV95cUxOYjY4ZUVlM2xmeHpCeDZISDhBVWhPeXFCSzN2U0JmT0Y1RDFacVJRWTVrQWlQQ0JJdHhFU0NOZENnaHZSNkc5YUdXUnU5dThzaDY5eDRLQTNJME1Kcjh4Z3BfYm9ZUGc?oc=5",
+      "source": "동아일보",
+      "date": "Tue, 17 Nov 2026 15:30:00 GMT"
     },
     {
-      "title": "삼성전자, 소부장·팹리스 기업 지원 확대…반도체 호황속 ‘상생’ 강조",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1MNVBZc1l1c1NPU3ZwUllkcm5vUHYxcmFyeDlqT1NJNGxtNzVLWVVfakI5NzB2SEZ2V0Y2R19fMEltX1FIa1pQQ1VueDZKSTNvOTJjTm9nN005RHJLYWc?oc=5",
-      "source": "동아비즈니스리뷰",
-      "date": "Mon, 16 Nov 2026 07:06:00 GMT"
+      "title": "삼성전자, 로봇사업 가속도...상용화 일정 빨라진다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16ejhsX3l1SkRINlRCaGxvbGMyYlR3VmtjcjQxTWJjeG9QMHRTTEdWV1p3UFliTW1ZN1RxSXpBMWE1M1I4NmgtRElNekJ2al9VTFd0bjBsc3ktU0tDRVFUeWhMMzBJSENXVnlDSFFYeHjSAXRBVV95cUxQYWlOcWZmcFpyZkE2blVhMnZBRVlvRUZMMWllZ0U2R2hoMWw5bkg0RUJNanZmSUdQeExWWVVkWWZrLThhQnIzcW13c3ZtWGdYb29UUlV2dXNpUFdkcGNPaDR5dG8wMEtPTTM3THRibGRkMGV2dQ?oc=5",
+      "source": "우먼타임스",
+      "date": "Wed, 18 Nov 2026 04:45:59 GMT"
     },
     {
-      "title": "코스피, 2% 반등 출발하며 5천 선 회복‥삼성전자 3%↑·SK하이닉스 5%↑",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zakdhWVM2VTBIZDlOU3kxSUM5VTA3LXZoblVuc0VsV2tCNnQ3U0ZtYVdHZmphQ2oycExzTTV2N2VieHdVVXVHZGlmV3ZzVkJhdmVkRDdXLTJfUUZsNEtwbzY1UkpTaDBnVTVEV0Q1MVNKTzNF0gF0QVVfeXFMT2hHX0ZpNU9xSjJwQ19sWDA2R1RkczM3M1g0UlNxb1ZUX0J6X0VUWTZYTDltX01RYnl4SHpZTzlzNmluY3B5MmxyZ1NBSFJ0UzNnTzhiQW93YWYxbVprX3lFdDU5c0I3LVV5QUhpa2l5WUJEZmU?oc=5",
-      "source": "MBC 뉴스",
-      "date": "Wed, 18 Nov 2026 00:33:58 GMT"
+      "title": "[삼성전자 인사] ’새 판’ 짜면 주가 탄력 받을까…5년 데이터 따져보니 By FinancialPost",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyRFpPR2NaUG9fQUxVT0FialJod3Z1a3ZsclVId1phSFctcE9nQUdtQm9zQnZKSFJ4X3NBMmZnd0NIU25Cd1BZOVN4QlVBdVdId0U5a2FBOFROdTcxbVAyTTE0OTJqTktGNnFFZHA5aXQ?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Wed, 18 Nov 2026 07:10:00 GMT"
     },
     {
-      "title": "[단독] 삼성전자·애플, D램 장기공급계약 ‘초읽기’",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qbmFzeUw0X1VNVlJGOE1ITjhGaXNGZ05SS2ptMmE4OFBZTkxGQ0xYWXNuZ2tLRVhkTkxEcFZNYTdGSkJTRDVLckVuUmpabFRjM1E3X2xn?oc=5",
-      "source": "매일경제",
-      "date": "Tue, 17 Nov 2026 08:00:00 GMT"
+      "title": "\"AI가 AI를 감시한다\"…삼성전자, 무단 행동 차단하는 보안 특허 공개",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHcGxZb1F0aXdpVHVhZXJKUjYxcWNNSnptMzVnb1FiSTBReVMzVnlXUWhJZjVKS250VHVWNmFMVmEyaHVKQTdlZ1BxaVlyQWNGVHI0VmR5Wm9BUHdB?oc=5",
+      "source": "뉴스핌",
+      "date": "Wed, 18 Nov 2026 05:33:00 GMT"
+    },
+    {
+      "title": "[삼성전자 컨트롤타워 해부] 상설화 1년 맞은 사업지원실…노조 대응 박학규 체제 '시험대'",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MVXY1Q2tQMEY5cnJTUGhRZ0tvMTNjeDF1eE1PNThvZWViWEozY005S2NFeGxlaS1CN2x6N2NmV3FJT1FxMXFrNVRBZzU0aFk?oc=5",
+      "source": "딜사이트",
+      "date": "Tue, 17 Nov 2026 22:21:06 GMT"
     }
   ]
 }
