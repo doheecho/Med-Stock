@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-18T16:40:45+00:00",
+  "updated_at": "2026-11-19T03:13:29+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
-  "per": 9.2829,
-  "forward_per": 3.3211,
-  "pbr": 5.6396,
+  "per": 9.4884,
+  "forward_per": 3.3946,
+  "pbr": 5.7644,
   "eps": 74.33,
   "roe": 88.26,
   "debt_to_equity": 3.743,
   "profit_margin": 63.8,
   "div_yield": 8.0,
-  "market_cap": 780682002432.0,
+  "market_cap": 797958864896.0,
   "beta": 2.398
 }

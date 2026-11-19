@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T16:40:54+00:00",
+  "updated_at": "2026-11-19T03:13:37+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 465714.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-18",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -42,6 +42,15 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "한국투자",
+      "date": "2026-11-18",
+      "target": 440000,
+      "prev_target": 440000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
     {
       "firm": "미래에셋",
       "date": "2026-11-17",
@@ -104,15 +113,6 @@
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
-    },
-    {
-      "firm": "한국투자",
-      "date": "2026-11-11",
-      "target": 440000,
-      "prev_target": 440000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
     },
     {
       "firm": "유안타",
