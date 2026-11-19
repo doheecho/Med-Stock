@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T03:13:52+00:00",
+  "updated_at": "2026-11-19T14:21:10+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -9,12 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80Qkw5dVhxMjU4RjRxczlNOUZ1dVZPaGp2NTBKQWpUWXlQQUFBbmVTSHFvWTFQV3FwVDdlZUlqS2ZhS1VWeTVoaE45Vk11NGlSbF9VWWVoWEF6Y0U?oc=5",
       "source": "강원일보",
       "date": "Wed, 18 Nov 2026 01:35:21 GMT"
-    },
-    {
-      "title": "반도체 소부장 ETF 32% 급등... 코스닥 액티브도 반등 [주간 ETF]",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VUi1KNi1UUFR0LXRMSGU3cFNySGVoRXluLU1XSmg4YUhrSEo5X28tMHFWWXZtZmRfMlRxdF9aOFZkMmQ5azBKNkowaG1sZGo5U0lWXzhrTUFsVmtkZF9ybG9VMHk?oc=5",
-      "source": "매일일보",
-      "date": "Sun, 15 Nov 2026 23:17:26 GMT"
     },
     {
       "title": "\"5천피 아래서 사볼만\" \"무한 물타기중\"…개미는 연이틀 레버리지 베팅",
@@ -27,12 +21,6 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jNmNMUGtWXzJ1MHczU19nZFREQlN0ak40MWVXa3NicnhjUll6REllTjlmWmM2aFBqRWVGdWc3X011LXByRm1iY0R1Z2RPcE5BYzBKekhJS19XbDI3X1RFZ2U0bFJZanRyUE9PNXhPemfSAXRBVV95cUxPSVJKYk1mMVJwblhyYlZsY0lUZGxMOTZwN1ZhMzhZTHJuWXBVazRGYzRpdHRGeDNaUkx4TWNKUWlBQWNvX3J3ekJwMnVqaXNWbi1ZOWZHdVlZQVpqaWRfaU9ST2x0b3ZzanYycnc4cjluSXBrTA?oc=5",
       "source": "IT조선",
       "date": "Sun, 15 Nov 2026 21:10:00 GMT"
-    },
-    {
-      "title": "[ETF 열전] 'AI 공포' 일주일 만에 반전…반도체 소부장 32% 질주",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01MGNJNGpwNG1zOTVwbGJHNTVSVDdwQ0VHZVBJRHBJYjVBOEp2cVVMX1Q5dnRTdzdVVUtVRk5oU1JtY3pDOXZTNG1GUFhWV0w5Q1lkYVNfaVd5OF9MbTZRcl9YVmZmRjhYTFpHX1d6OA?oc=5",
-      "source": "뉴스웍스",
-      "date": "Mon, 16 Nov 2026 01:00:00 GMT"
     },
     {
       "title": "반도체 ETF 폭락할 때… 인도 ETF는 ‘두 자릿수’ 수익률",
@@ -93,6 +81,18 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CdFdGdi1ObGtuWDdMX1BsR09HYTdRUEx6SHlpc3dMU0pOZW96Y0x4MkFMalRfenU2WF80UGRjX09NR0wxRE9OSjVWamdrNU9VUks1S3JLTUtqcXk1ZnNOYjZDblhNMVdHY1Z6Vmw1OWdySHc?oc=5",
       "source": "오늘경제",
       "date": "Mon, 11 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 레버리지 ETF로 한미반도체·DB하이텍 주가 폭락?",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0yREFRZS1xRGJZUVh0bjlPWTNpVlN3V3UzYmZIUG93dkRWNUhxZDRRYWd6SldMWWIyU0ZnRFZZNlR2dGUydXNONkhrdHRPMXBNaTBZUzRnV2dySEE4YzFhUmtmVFBOdDQxTVBpNy1JTzRFQdIBdkFVX3lxTE55Y0JJUXAzZG93ME01aUliZlUxQ2RxWlNmTEVsX2VuMy04ZWdJb1o3RzdadEgwbTJlc2gwN3RFUWtSYzJ5WDhUMGVuempNdnVDSjAxWXdMSjFQMEhicmxlNkVlX0pvckgtdlZ4UllkSDBRYkJWa0E?oc=5",
+      "source": "시사저널e",
+      "date": "Wed, 20 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "[단독] \"결국 삼전·하닉\"…KODEX AI 반도체 ETF 대수술 나선다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqSkFsZzBSbTJ5N0hiRUxfWlBwMnFIczJZU01TRHF4RjJxSWlCSS1uRTZJY1FnUUVpMVc1aXVEeEM4dXVyT250enRLQWNnMmRMVmxudmgwOFZ6QQ?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 07 May 2026 07:00:00 GMT"
     }
   ]
 }

@@ -1,38 +1,14 @@
 {
-  "updated_at": "2026-11-19T03:13:49+00:00",
+  "updated_at": "2026-11-19T14:21:07+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
-      "title": "Micron President on the AI gap: \"China is far behind in high-bandwidth memory\"",
-      "url": "https://finance.yahoo.com/video/micron-president-on-the-ai-gap-china-is-far-behind-in-high-bandwidth-memory-220744101.html",
-      "source": "Yahoo Finance Video",
-      "date": "2026-11-18T21:58:17Z"
-    },
-    {
-      "title": "Memory supply constraints will be even 'tighter' in 2027: Micron CTO",
-      "url": "https://finance.yahoo.com/video/memory-supply-constraints-will-be-even-tighter-in-2027-micron-cto-215815321.html",
-      "source": "Yahoo Finance Video",
-      "date": "2026-11-18T21:58:15Z"
-    },
-    {
-      "title": "Stock-Split Watch: Is Micron Next?",
-      "url": "https://www.fool.com/investing/2026/11/18/stock-split-watch-is-micron-next/",
-      "source": "Motley Fool",
-      "date": "2026-11-19T01:03:02Z"
-    },
-    {
-      "title": "Q3 Earnings Strong, Q4 Estimates Slip: What the Latest Revisions Mean for 2027",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-strong-q4-estimates-235100192.html",
-      "source": "Zacks",
-      "date": "2026-11-18T23:51:00Z"
-    },
-    {
-      "title": "Q3 Earnings Strong, Q4 Estimates Slip: What the Latest Revisions Mean for 2027",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-strong-q4-estimates-234800485.html",
-      "source": "Zacks",
-      "date": "2026-11-18T23:48:00Z"
+      "title": "Nvidia, AMD, Micron stocks lead chip sector higher amid Anthropic IPO optimism",
+      "url": "https://finance.yahoo.com/markets/article/copy-nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-134408467.html",
+      "source": "Yahoo Finance",
+      "date": "2026-11-19T13:44:08Z"
     },
     {
       "title": "Anthropic to debut amid security worries and SpaceX to finance GPU rentals",
@@ -41,28 +17,52 @@
       "date": "2026-11-18T22:58:01Z"
     },
     {
-      "title": "The 5 Best Stocks in David Tepper’s Portfolio",
-      "url": "https://www.tikr.com/blog/the-5-best-stocks-in-david-teppers-portfolio?ref=yahoofinance&tlnk=yf-261118-45xgr3mq",
-      "source": "TIKR",
-      "date": "2026-11-18T21:53:55Z"
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise ahead of historic Anthropic IPO",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html",
+      "source": "Yahoo Finance",
+      "date": "2026-11-19T09:09:10Z"
     },
     {
-      "title": "Anthropic Prices IPO at $83 a Share",
-      "url": "https://www.barrons.com/livecoverage/ipo-anthropic-claude-stock-price-ticker/card/anthropic-prices-ipo-at-83-a-share-0vNd7PHGwdn3tbwV085c?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-18T21:47:12Z"
+      "title": "SanDisk and Micron Rise 4% as Anthropic’s Record IPO Revives the AI Trade; Western Digital Gains 5%",
+      "url": "https://247wallst.com/investing/2026/11/19/sandisk-and-micron-rise-4-as-anthropics-record-ipo-revives-the-ai-trade-western-digital-gains-5/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-19T14:11:23Z"
     },
     {
-      "title": "Marvell And Intel Halved: How Long Until They Recover?",
-      "url": "https://www.trefis.com/stock/mrvl/articles/626099/marvell-and-intel-halved-how-long-until-they-recover/2026-11-18",
+      "title": "Wall St set for higher open on AI optimism ahead of Anthropic's market debut",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-jump-anthropics-record-090243474.html",
+      "source": "Reuters",
+      "date": "2026-11-19T13:42:51Z"
+    },
+    {
+      "title": "Premarket movers: Palo Alto soars, chip stocks rally ahead of Anthropic debut",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/premarket-movers-palo-alto-soars-130941709.html",
+      "source": "Investing.com",
+      "date": "2026-11-19T13:09:41Z"
+    },
+    {
+      "title": "Broadcom, Nvidia, and Micron Could Be Setting Up for a Massive AI Rally Before Year End",
+      "url": "https://247wallst.com/investing/2026/11/19/broadcom-nvidia-and-micron-could-be-setting-up-for-a-massive-ai-rally-before-year-end/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-19T13:04:27Z"
+    },
+    {
+      "title": "Almost Every Fed Official Discussed the Risk of an AI Bust, Minutes Show",
+      "url": "https://247wallst.com/investing/2026/11/19/almost-every-fed-official-discussed-the-risk-of-an-ai-bust-minutes-show/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-19T12:57:49Z"
+    },
+    {
+      "title": "Micron valuation looks ‘ridiculously cheap’ as Anthropic IPO could revive AI trade",
+      "url": "https://finance.yahoo.com/technology/ai/articles/micron-valuation-looks-ridiculously-cheap-125036181.html",
+      "source": "Investing.com",
+      "date": "2026-11-19T12:50:36Z"
+    },
+    {
+      "title": "The Dates That Matter Most For Micron Stock",
+      "url": "https://www.trefis.com/stock/mu/articles/626781/the-dates-that-matter-most-for-micron-stock/2026-11-19",
       "source": "Trefis",
-      "date": "2026-11-18T21:29:00Z"
-    },
-    {
-      "title": "Amazon and Google Have a Stake",
-      "url": "https://www.barrons.com/livecoverage/ipo-anthropic-claude-stock-price-ticker/card/amazon-and-google-have-a-stake-mvLhBOWKqZDvar1niKQb?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-18T21:23:02Z"
+      "date": "2026-11-19T12:37:19Z"
     }
   ]
 }
