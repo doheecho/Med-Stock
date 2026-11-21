@@ -1,15 +1,9 @@
 {
-  "updated_at": "2026-11-20T16:19:07+00:00",
+  "updated_at": "2026-11-21T03:08:14+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
-    {
-      "title": "[2026 ETF 어워즈][베스트 패시브 하우스] 첫 200조 찍은 삼성…\"선도 운용사로 투자자 보호하겠다\"",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOU2UzeGUzUkxRNDlPaTJQamJ6dHRXRWZGWHBoc05pVGw4V3kxT2FTY25YMFhjS2JlS3NET0FRakt0WUtOdS1tbjVoWnZsZDdCRkxSclFzUHhHamJTNHh4UC1UdFVQeUdmbV9kTWpTMnNDX0huQVNYSWpGRU5rSkZJTmpGWVZEOGNGdW0wOTNsOA?oc=5",
-      "source": "Naver Blog",
-      "date": "Fri, 20 Nov 2026 12:01:16 GMT"
-    },
     {
       "title": "이달 ETF 시총변화…머니마켓액티브는 '쑥', 지수 추종은 '뚝'",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBpem5GZmVsdm1Ib1lDelZuSzBSNjNYU0xLU0lMLUNiS2V3RVVXY2RkcnhwYWNtNUFNcklweG43ZTZZRGx4MEZTVl9mUzZzOURPYkE?oc=5",
@@ -29,16 +23,10 @@
       "date": "Thu, 19 Nov 2026 03:09:04 GMT"
     },
     {
-      "title": "KODEX 200선물인버스2X, 증시 급락에 11.76% 상승",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wMDY5SE8zYVBfdHVjNE9nQVFjZk5BNWhRQzc3THdHdlRfeDNXbnRHeW42QUVuYVdBOVB2aFJCekxsMUszd1lVZlp5QVdoV0JmMkV3ejNEMzg4OEo1azFEenB6b1JFVC1ULTZ3aElR0gFyQVVfeXFMUFJuQ1RXNUJ1eXNMVUlYUVIwaXVtR1NLam9yazl6TS0zTXRWQXZvOF9qX0hGMDlPV21vMXRwY3pGMkliX0twOUNYaHVHdDgtTlpCdnFGc2MzZjBBcVo5VzBOQnl4RHh5d1VnQ1R6TVBsQ2JR?oc=5",
-      "source": "잡포스트",
-      "date": "Fri, 20 Nov 2026 06:15:53 GMT"
-    },
-    {
-      "title": "\"5천피 아래서 사볼만\" \"무한 물타기중\"…개미는 연이틀 레버리지 베팅",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJakZ2d1VwcjJQME05bUpTOGhxdGhHMTNLTDhheTNNNnR5emFOczhXZ2t1MDVvTkx1bDdFSGstVWxfeXVka01ZUXlPRDBwbWpRYVNRajUxOUdoNUnSAWBBVV95cUxQY3Rrcmx2WjJxMlRYbDh6RnpySHFEZXd0TVNzYXZSMXNabFJxQk1MdlU5S0Q3UmVfVVh3eXp0WS1XUGpsb1pHUEhmc0MwSThMbGFEcmYxN3p6dlRsdXlWSUQ?oc=5",
+      "title": "KODEX 200타겟위클리커버드콜 분배금에 '삼성전자 특별배당' 반영",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5odm9wWnVEWXVZWTlEcGJmRHNRSUpET1JBZEhKQmY0Q3ZfaVZ3R29oU1l0LXhwOVNiOXRiR0dabFdOUHhzYnpxN3pkajlWVlZ6TEc5TGYxR1dXWFHSAWBBVV95cUxQS1gwaGp4SktYN2ozdEthd0VIWUJWTUlEMWZ1ZUIzX0pzNGdPbG1EVGdqVGJMNUtBdC1UYXhRb01iZlRpSkpKTVlhVmsySURPOXFtRko0b0VKbUc1b3VrOGI?oc=5",
       "source": "연합뉴스",
-      "date": "Tue, 17 Nov 2026 07:58:40 GMT"
+      "date": "Wed, 11 Nov 2026 08:00:00 GMT"
     },
     {
       "title": "미래 S&P500vs삼성 코스피200…ETF 왕좌 놓고 초접전[ETF업&다운]",
@@ -53,16 +41,22 @@
       "date": "Sun, 15 Nov 2026 08:47:43 GMT"
     },
     {
+      "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 삼전·닉스 특별배당 반영",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LVjBUeU5UTEw3N3NHRXRMQ1RvaGhMOWU4VzdTMjlqNUd6UEQtbUg0M0FCSVc4cERMeE9JQWFzR3k5V3BlZVBwbkJ0bGp5RUxYZHc4dXJzUzR6VlZtNnUyaQ?oc=5",
+      "source": "아시아경제",
+      "date": "Wed, 11 Nov 2026 08:00:00 GMT"
+    },
+    {
       "title": "올해 주요자산 수익률 1위는 ‘KODEX 200’…금-비트코인은 마이너스",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12dXBLSFFicFc2d3hRRzdqQ2l0WDM0S3dNMEhTWVQwRDcwM2c5NzhBVmtncm85R0YxdnJFYTdvQlNnSVhqamI4WVUyN3A5RC04Z1RfRm9scmVxQXpFUlllZ1BnTW9IOTh3UlI2OWRLQ3pvOUlOTkHSAWZBVV95cUxNTm9fdjZwdzVYWDlueXdhR2VESURsUzg1UnlJdU5NelZ2aXQzTWpvX1NiN3F6M0N1dlB2QS1jTVZ2YVh1enlrTXJCUkpJczVQTmpzcHdSM1ZodmRJRE9iTERzVENNYkE?oc=5",
       "source": "동아일보",
       "date": "Sun, 27 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "삼성운용, 'KODEX 200타겟위클리커버드콜' 삼전·닉스 특별배당 반영",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LVjBUeU5UTEw3N3NHRXRMQ1RvaGhMOWU4VzdTMjlqNUd6UEQtbUg0M0FCSVc4cERMeE9JQWFzR3k5V3BlZVBwbkJ0bGp5RUxYZHc4dXJzUzR6VlZtNnUyaQ?oc=5",
-      "source": "아시아경제",
-      "date": "Wed, 11 Nov 2026 08:00:00 GMT"
+      "title": "KODEX 200 0.31% 하락…거래대금 1조511억원 집중",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84alFmdlJxbEVYakFOWXVhNk1uQzVCVnc5d2RERHNLOEt3WnVlODdVUVZQc2hGbWUzRXhYSjhEY2FIbENsVF9Yb2k3UVpZTklsdUljcHlnU0ljbGFGU1dWQVBYeWlqYkhydkJJckZ30gFyQVVfeXFMTk54LXdLaW51UG5kSHlwT29SUDQ1NjdFdHl0ZU5UMElDcEdhNW4xd1lNbkJldk9iblZrUWU3R2dfSzR5SkhJa1FQSWlackhZTDhNeGVJbFdmYkxXcE41ZXBzNzA0N2VHeUVVbWUwTmtxOTRB?oc=5",
+      "source": "잡포스트",
+      "date": "Thu, 19 Nov 2026 05:27:06 GMT"
     },
     {
       "title": "세금 아낀 PLUS·덩치 큰 KODEX…200커버드콜액티브ETF 보니",
@@ -71,28 +65,34 @@
       "date": "Sun, 01 Nov 2026 07:00:00 GMT"
     },
     {
+      "title": "코스피 200보다 더 빠진 ’KODEX 200’…전 거래일 착시 영향 By EBN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE56cUNIZmlOZnpuU09pWDVXbnhTWFBEV2tYcG9pUFFublFXOWtnTU1oOVBWUUJZUXBXb0JDXzBxSHU5TENsbG54SlV3TTBMR2lpMzl3dWdfR1dmQTJsNkpKUlJnZEwzTU5rQW1CeUNSdkk?oc=5",
+      "source": "Investing.com 한국어",
+      "date": "Mon, 03 Aug 2026 07:00:00 GMT"
+    },
+    {
       "title": "'주도주 집중' KODEX 200커버드콜액티브 ETF, 14일 상장 - 머니투데이",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xN0Y1N3Q1SnVveFNwS3pNOFQ3dS1uTzhCdG9MdW9yZl9QSldXZTExZV93S0xESnhzLU9YNU5MbmhBU2JGVF94c2lhVUNYeDdwaDdxVGFzS0pBeW5nZURwSU5iVkFRQ1BF0gFuQVVfeXFMTUpIUVl4YzkzRkJjSDN4R0J4Wno2YTlPNjhwUENNeEdaQWlkMDZ1bjhoSzRZY09fdl95ek9GMmd2RU0zTGQyc1NFb2ljRkxha1p4M2JYXzdlRTJodGdCR08tYk9oOVRuVFBUbVc2R1E?oc=5",
       "source": "머니투데이",
       "date": "Wed, 08 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "KODEX 200, 대형주 급락 반영해 5.65% 하락",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkekk4aElGazdrWW1IZUNRc01ydEFqNURaUkM0R19wbGxFZzJ5Q1ZQbS1mT0dLR0VBUF9yWTRJdU5pV2dyX2U0TnNvSm1Fa0pCRzFYWF9tYml2QURJVzEtU245djFjTWw2Tzd4WUlB0gFyQVVfeXFMT1NzUTZOckR0alhZdjl0WVJ6NnJIb1Z0N1BwTTBmb184S3pFOUhMMGpnMTBiOXF6R25ldV9iYVVFcmxHZElLbDFhRGZ2amJCeXBTTTRMLW9pUGlyNWVENnFtVHpaU0NPdWFxVmpPb1dpZ053?oc=5",
-      "source": "잡포스트",
-      "date": "Fri, 20 Nov 2026 06:13:37 GMT"
+      "title": "코스피 5,000선 붕괴에도 개인은 레버리지 ETF 순매수",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBDTjBzWWQ5VXJaY2t3dE1TZ0ZzWXp3TnpsSmpwSGZVck1zN1FIS3U2T2Z4OVUyb0FKbVRwLWNxR1pFSEVHbkVkLU1HVndSaVpKb25GRmxjOXQzaWpRZjZMMGtuVzRNLWk3MUpOZ0pNT1hueHc?oc=5",
+      "source": "스페셜타임스",
+      "date": "Tue, 17 Nov 2026 08:46:57 GMT"
     },
     {
-      "title": "KODEX 200타겟위클리커버드콜 분배금에 '삼성전자 특별배당' 반영",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5odm9wWnVEWXVZWTlEcGJmRHNRSUpET1JBZEhKQmY0Q3ZfaVZ3R29oU1l0LXhwOVNiOXRiR0dabFdOUHhzYnpxN3pkajlWVlZ6TEc5TGYxR1dXWFHSAWBBVV95cUxQS1gwaGp4SktYN2ozdEthd0VIWUJWTUlEMWZ1ZUIzX0pzNGdPbG1EVGdqVGJMNUtBdC1UYXhRb01iZlRpSkpKTVlhVmsySURPOXFtRko0b0VKbUc1b3VrOGI?oc=5",
-      "source": "연합뉴스",
-      "date": "Wed, 11 Nov 2026 08:00:00 GMT"
+      "title": "ETF 투자자도 '삼전닉스 배당'에 웃는다…분배율 5배 껑충",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdTRTblN5ZnNFZlpkcThGMVlCOGNvVTYyb3VNN3h3R2NfSldfNGl2YzN1ZndZRjk5VHQ5VktNNDk0a0VOVkVaaTF6aHg5RlR0cm5tRjB6cngtbENNWGxUa2NzS25BYWNHSkk0clNrZlVnNHFtTTdMR2N1V3p3Mnk3ag?oc=5",
+      "source": "이데일리",
+      "date": "Mon, 16 Nov 2026 07:38:27 GMT"
     },
     {
-      "title": "삼성운용 ‘KODEX 200커버드콜액티브’ 첫 월배당…주당 153원 지급",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oTVZGZVZnX2pIQkhJaDBoYUVvdDNsY19qY1lwS3Q3bHpha3NnMXpfblIyeGp0d1RQVFlHMFZGN3lUQ3RuTlRjZGxIbGZfWjFkcnc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 29 Jul 2026 07:00:00 GMT"
+      "title": "삼성운용 KODEX 200타겟위클리커버드콜, 순자산 5조 넘었다",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wSmU0X3NJaXpMaGdNb3hQSzRGbDBDd0k3T2p3dmpfOXVaQ1k5RF84UndEanU2cU9hbGNNUE5oeUl6NmdfQ0tfME5qcVh0TS1nMjJZdXR6REtpcFF4cmgzVHhfa3lzSDc3S09KVGQxTzZUZw?oc=5",
+      "source": "인더스트리뉴스",
+      "date": "Thu, 07 May 2026 07:00:00 GMT"
     }
   ]
 }

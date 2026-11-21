@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:19:00+00:00",
+  "updated_at": "2026-11-21T03:08:06+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 3001905.0,
@@ -49,6 +49,15 @@
   ],
   "consensus_rows": [
     {
+      "firm": "BNK투자",
+      "date": "2026-11-20",
+      "target": 1050000,
+      "prev_target": 1650000,
+      "chg": -36.36,
+      "opinion": "보유",
+      "prev_opinion": "보유"
+    },
+    {
       "firm": "한국투자",
       "date": "2026-11-18",
       "target": 3200000,
@@ -67,6 +76,15 @@
       "prev_opinion": "매수"
     },
     {
+      "firm": "LS",
+      "date": "2026-11-16",
+      "target": 2400000,
+      "prev_target": 2400000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
       "firm": "NH투자",
       "date": "2026-11-16",
       "target": 3400000,
@@ -83,15 +101,6 @@
       "chg": -14.29,
       "opinion": "BUY",
       "prev_opinion": "BUY"
-    },
-    {
-      "firm": "LS",
-      "date": "2026-11-16",
-      "target": 2400000,
-      "prev_target": 2400000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "하나",
@@ -218,15 +227,6 @@
       "chg": -20.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "BNK투자",
-      "date": "2026-10-28",
-      "target": 1650000,
-      "prev_target": 1480000,
-      "chg": 11.49,
-      "opinion": "보유",
-      "prev_opinion": "보유"
     }
   ],
   "ticker": "000660",
