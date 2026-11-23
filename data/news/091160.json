@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-22T02:06:41+00:00",
+  "updated_at": "2026-11-23T15:52:59+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
   "items": [
+    {
+      "title": "[EZ 해부] ETF 396조 시대, KODEX 1위 수성...상위 10개 상품에 41.8조 유입",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EbmdKOTU4aEFIOFk1cHBrd1hMYUVYbnJQWlFrUXpNRTZxNlFSOFREak95alhkeEY5enJTdmlnMDdsTTM2eU1DYlVRVTEwSkxKcUxXdDRVOGZXU3FWY3c5S19oRHBtTW5BeE5memFn?oc=5",
+      "source": "이지경제",
+      "date": "Mon, 23 Nov 2026 07:43:22 GMT"
+    },
     {
       "title": "[이코노미플러스]코스피 9개월여 만에 5,000선 하회···개인은 이틀째 레버리지 ETF 매수",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80Qkw5dVhxMjU4RjRxczlNOUZ1dVZPaGp2NTBKQWpUWXlQQUFBbmVTSHFvWTFQV3FwVDdlZUlqS2ZhS1VWeTVoaE45Vk11NGlSbF9VWWVoWEF6Y0U?oc=5",
@@ -15,24 +21,6 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJakZ2d1VwcjJQME05bUpTOGhxdGhHMTNLTDhheTNNNnR5emFOczhXZ2t1MDVvTkx1bDdFSGstVWxfeXVka01ZUXlPRDBwbWpRYVNRajUxOUdoNUnSAWBBVV95cUxQY3Rrcmx2WjJxMlRYbDh6RnpySHFEZXd0TVNzYXZSMXNabFJxQk1MdlU5S0Q3UmVfVVh3eXp0WS1XUGpsb1pHUEhmc0MwSThMbGFEcmYxN3p6dlRsdXlWSUQ?oc=5",
       "source": "연합뉴스",
       "date": "Tue, 17 Nov 2026 07:58:40 GMT"
-    },
-    {
-      "title": "결국 무덤된 레버리지… 일반 반도체 36% 벌 때, 2배 ETF '마이너스'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jNmNMUGtWXzJ1MHczU19nZFREQlN0ak40MWVXa3NicnhjUll6REllTjlmWmM2aFBqRWVGdWc3X011LXByRm1iY0R1Z2RPcE5BYzBKekhJS19XbDI3X1RFZ2U0bFJZanRyUE9PNXhPemfSAXRBVV95cUxPSVJKYk1mMVJwblhyYlZsY0lUZGxMOTZwN1ZhMzhZTHJuWXBVazRGYzRpdHRGeDNaUkx4TWNKUWlBQWNvX3J3ekJwMnVqaXNWbi1ZOWZHdVlZQVpqaWRfaU9ST2x0b3ZzanYycnc4cjluSXBrTA?oc=5",
-      "source": "IT조선",
-      "date": "Sun, 15 Nov 2026 21:10:00 GMT"
-    },
-    {
-      "title": "반도체 ETF 폭락할 때… 인도 ETF는 ‘두 자릿수’ 수익률",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00MGxBZC1LaXBid0RJU3BTRFRGNFJKTUdMY3BlVjNNSk5ESlFNOGkzTW5rZHpoRm1RQXZrczI5aDBVRGZZT0dfUWptWkNyUFM1ZWFJRndTTmMzNDJfZXRWaFUxRnROSXpVc1RMSk5n?oc=5",
-      "source": "아시아투데이",
-      "date": "Sun, 15 Nov 2026 08:44:44 GMT"
-    },
-    {
-      "title": "[ETF 시황] 반도체레버리지 ETF 17% 폭락…인버스 16% 급등",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sMjlHa3NrenhuTnlOR3dMU3NrelBGaDRKNU9fQ29wWEVrWHB3MlFhWUg3ZVZ4cjY1MjZRejZiV0dBSElWTFg0YjVKRUxIa2RMaUlOWVFYQzJMcnRH?oc=5",
-      "source": "뉴스핌",
-      "date": "Mon, 16 Nov 2026 07:07:00 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스 담고 월배당까지…삼성운용, ‘KODEX 반도체타겟위클리커버드콜’ 출시",
@@ -53,16 +41,22 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "코스피 5,000선 붕괴에도 개인은 레버리지 ETF 순매수",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBDTjBzWWQ5VXJaY2t3dE1TZ0ZzWXp3TnpsSmpwSGZVck1zN1FIS3U2T2Z4OVUyb0FKbVRwLWNxR1pFSEVHbkVkLU1HVndSaVpKb25GRmxjOXQzaWpRZjZMMGtuVzRNLWk3MUpOZ0pNT1hueHc?oc=5",
-      "source": "스페셜타임스",
-      "date": "Tue, 17 Nov 2026 08:46:57 GMT"
-    },
-    {
-      "title": "같은 반도체 ETF인데 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42SWdLM0M2R1htdTlOXzdNNmN0cW44c3czeDUxRXg0UkpMbDJFRE01SkN1YjF3NFh1dDVlV2NCRWNiWnZJeVEwM1NOVlZ6SkdOMnhHMlY1anhSRkhJUUZqTEIwdTlYZVBiUVpYRmN3YjhKUQ?oc=5",
+      "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합) | KB의 생각",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE03NFBEQnE5N3p2UGRybG05clZWNE85TlhVeVJVUnRDRnc5RGVMOU5BcEcxa1VCV242VkQ2UGg0aXh2SHlVRF81WXpGemtZN21qTDZYbEhuRG1LQk9RNThSZWVjakVZbW5naEdHb0pkVUdyUQ?oc=5",
       "source": "KB Think",
       "date": "Fri, 29 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "삼성자산운용, '반도체 성장'에 '월 2회 배당' 더했다…KODEX 커버드콜 솔루션 제시",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FZTdGOEZCT0JPdFIwRy1CVXQzcDVSU0hnWFFveXJSSkFvUFFmZmp6YmlwTy1IVGwyekc4UHBnTmZxdF9hQlJZd3B2QmlEc0hFZWhKTw?oc=5",
+      "source": "더밸류뉴스",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "[ETF 시황] 코스닥·반도체 ETF 강세…2차전지·건설 테마는 약세",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwcC1rSXR1LWRCbmtJUUxlYXFKaHRicTFVSnZmRU54SDRXY1p3OTlpdXBzY213Wk5iZTNUdGdoU1g4NVZ1SHdJbHVFamtNWmxOdzFzYi1kT0VCcjIz?oc=5",
+      "source": "뉴스핌",
+      "date": "Tue, 29 Sep 2026 07:00:00 GMT"
     },
     {
       "title": "삼성자산운용 ‘KODEX 반도체 ETF’, 순자산 3조 돌파",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IMkl4NTdzLWZvYWxucFItdGc2RVl3Mk5wNTktUFJ0bVFJdEo1NGxwQ2ZiWEhmM0ZHb2NhMFdCbDh2Zm94SlNiS1RramtfWjRVMTFhYlVn?oc=5",
       "source": "헤럴드경제",
       "date": "Tue, 05 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "반도체 월배당 ETF 경쟁 본격화…`KODEX 반도체타겟위클리커버드콜` 전략은?",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBObk00eWR0NzNhSjl6NDlsU1VreEFPZ2hnVWFoUnJVNm91eDNtdWdjODlta055QUZiTlR6WFF1UEt3S2ZYWi02ZXVCazRhT0pqM1NsSXVqRkctSVViVm1uZHJR?oc=5",
+      "source": "매일신문",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
     }
   ]
 }
