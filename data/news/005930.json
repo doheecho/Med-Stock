@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-11-23T15:52:55+00:00",
+  "updated_at": "2026-11-23T19:26:08+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
+    {
+      "title": "삼성 준감위, 삼성전자 주주환원·증여세 논란 이번 주 심의",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsYzdxYTRZQjVzMk80ajFQWVp5ZXo3RTlfa3J2R0pwUlFJSXFuOUZxZlF5YmpzR0g4YXpBSHdVT1dPVFFSR3E0RUx2RHh1Vzg0RWp2VDRjb3dvNVg3ckdPMnFGbURIWXNLYmxjS2JyYUc?oc=5",
+      "source": "연합인포맥스",
+      "date": "Sun, 22 Nov 2026 22:52:31 GMT"
+    },
     {
       "title": "삼성글로벌리서치, 사장단 인사 단행…김원준 대표 사장 승진",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0yXzBOazU5Vzc2NFNFTmhQcDRxTWFIVllxUUl2YjdXNFlVVndqbTVIS240RTExQm5aOGktblJtUnZuNlp5SEZnbzQ0eEZGUQ?oc=5",
@@ -23,46 +29,10 @@
       "date": "Mon, 23 Nov 2026 02:07:26 GMT"
     },
     {
-      "title": "\"삼성전자 700조 저평가, 손절 말고 버티세요\"…재무제표 뜯어보니[부꾸미]",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pRkMzckl3eFF6Q3dvZEpsMUF3SnBMY0VuM08wR25IdFlIUVJJNV9jOUFSckVGbUdWck52QmZ2cER6SWZZblozbkhhNkNFc1ExTDFxOVlJYzY5ZEQ0X2Rpcmltenhta2t0?oc=5",
-      "source": "머니투데이",
-      "date": "Sat, 21 Nov 2026 06:30:00 GMT"
-    },
-    {
-      "title": "삼성전자 MX 수장 내려놓은 노태문, 사내 메일서 “부품값 급등에 어려웠던 해”",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWjEwTVBRcnhOS0hraXdYVm9TTGFjZmlaT2R5UnlOd240NVZjbXdIaUIxeFlOSjBYR0oxbVFIaUxxVlp2clFmVVhSdmg3b2UwYmJjYmNYRk5lSm5nY3JBam80WndlXzhVLWYxeUoyNVF5TjRPRlBJV1h2dzZTNFM1QmJn0gGWAUFVX3lxTE8yUWoybzNxWlZqbzRKZFJ3S2hNTkFsa3dSWTM0SmFYbmhVYnR1a3QxRkl4d2x4cmZUZDJydF9HbGs0WlRfdjg5QkJmRENPVEs1ZExBS3A0akpfRjgtaEFyZjhMWnlGVGtPa011Y1ZZYm9va2d0bnFybWxwRXB0REZoYWdlTmpFbHlUdFdkcmo5c0s2VDVTQQ?oc=5",
-      "source": "Chosunbiz",
-      "date": "Mon, 23 Nov 2026 08:58:00 GMT"
-    },
-    {
-      "title": "삼성전자, '부문장은 미래·사업부장은 실적'…이번 주 임원 인사로 세대교체 잇는다",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1UamswU2lPYndfeENteHRodlJKZnNoaXhvdGhaX2txdzEzV1UtWlJLeGN4LVRHdEFDLTJ5eU9OZWdJQ1FjMXBRZDlud1VqQQ?oc=5",
-      "source": "전자신문",
-      "date": "Sun, 22 Nov 2026 05:00:00 GMT"
-    },
-    {
-      "title": "삼성-SK 잇단 금요일 인사 뒤엔 ‘안정 속 쇄신’ [재계팀의 비즈워치]",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9wRzVxaDdaSlVvbjFjNXB0a0NlMk4xSEFEYlVNU2dfY2MwUkRBR3RzQi1XLThjTWRLVDM3RDRtZlpTV004V3QzYmVsWkVaVm5GeDRnbDlEZDl1MzhnT0RaTF8zWTlfUUdlOVoyR3RwSHRSQXozUmfSAWZBVV95cUxNUHJvSlg5ZmZxZ3pHV3dZcHZRNm9aOHhodjF6dHBmY1k3Y21TbTdwVUpFOVprY3RFNC1YVHB3cmVoakctNmVqZ2xCY0JsQlFtOUV1aFZQVzUwSjBjLU1SZDdfZnV3SFE?oc=5",
-      "source": "동아일보",
-      "date": "Mon, 23 Nov 2026 15:30:00 GMT"
-    },
-    {
-      "title": "\"AI주 급락에도 삼전·닉스 매수\"…美 반도체 투자자의 선택",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xVXhDeXltY1pRaHdLU2JZNDZObTB1MVRQRmVQenNhNlRnMENNb3BqZFZfazdsMklCZ2lTN2s3NUpTYW5tclFoa3FRMW90YU5CSzVFcWdyYW96NC1JS19OQ9IBeEFVX3lxTE5XdVVoMXg5RElqa1NiT1plVnJEc0liOE42MTRHM2puNzlEM2laM0tTRFY2SXhBTW5JNE1zOExEd3UzOEptbzRaNml2TGJGWGhpX05UZEZ2cklETlFxNEhOTmMxaXlLNXFmanY2ZXUtalBVZjN2d1J2cg?oc=5",
-      "source": "뉴시스",
-      "date": "Mon, 23 Nov 2026 15:01:00 GMT"
-    },
-    {
-      "title": "삼성 준감위, 삼성전자 주주환원·증여세 논란 이번 주 심의",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsYzdxYTRZQjVzMk80ajFQWVp5ZXo3RTlfa3J2R0pwUlFJSXFuOUZxZlF5YmpzR0g4YXpBSHdVT1dPVFFSR3E0RUx2RHh1Vzg0RWp2VDRjb3dvNVg3ckdPMnFGbURIWXNLYmxjS2JyYUc?oc=5",
-      "source": "연합인포맥스",
-      "date": "Sun, 22 Nov 2026 22:52:31 GMT"
-    },
-    {
-      "title": "중국 생산증가에 2028년 범용 D램값 19% 하락 전망, 삼성전자·SK하이닉스 수익성 HBM이 가른다",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvbjByaV81NVFBdmlJdTc3elJGT1FDUVZLX0ZVSGlhYVU3TG8zRzc5ZTM4Y1gxM29XcTk3eElHa2xNeU15WjBKNzk4YUJCTVowMDdTdEtSN2RGUnktb2N4YXg3T2M5QmFuY0E4VDBYbTU5TVU?oc=5",
+      "title": "AI 데이터서버 가격 높아져도 수요 강력, 삼성전자 SK하이닉스 호황 지속 청신호",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OczdZM09qMHRzV1JwVW5KNDdDVlN3TU5PSDRob2Y5UEh0aDVCMWRrYndxQ1Q3RmMtTkk0NWd2eXg2TXE2MnBLRnJ3bkkwN2p6X285VGNjMWo5aWJ6eE4tendnLTVoSFdCSE44cC1EV3FaUkU?oc=5",
       "source": "비즈니스포스트",
-      "date": "Mon, 23 Nov 2026 06:24:10 GMT"
+      "date": "Mon, 23 Nov 2026 02:37:31 GMT"
     },
     {
       "title": "삼성전자·SK하이닉스, 배당 확대…3분기 누적 배당성향 상승",
@@ -77,22 +47,52 @@
       "date": "Mon, 23 Nov 2026 00:45:00 GMT"
     },
     {
+      "title": "삼성전자 MX 수장 내려놓은 노태문, 사내 메일서 “부품값 급등에 어려웠던 해”",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWjEwTVBRcnhOS0hraXdYVm9TTGFjZmlaT2R5UnlOd240NVZjbXdIaUIxeFlOSjBYR0oxbVFIaUxxVlp2clFmVVhSdmg3b2UwYmJjYmNYRk5lSm5nY3JBam80WndlXzhVLWYxeUoyNVF5TjRPRlBJV1h2dzZTNFM1QmJn0gGWAUFVX3lxTE8yUWoybzNxWlZqbzRKZFJ3S2hNTkFsa3dSWTM0SmFYbmhVYnR1a3QxRkl4d2x4cmZUZDJydF9HbGs0WlRfdjg5QkJmRENPVEs1ZExBS3A0akpfRjgtaEFyZjhMWnlGVGtPa011Y1ZZYm9va2d0bnFybWxwRXB0REZoYWdlTmpFbHlUdFdkcmo5c0s2VDVTQQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Mon, 23 Nov 2026 08:58:00 GMT"
+    },
+    {
+      "title": "삼성전자, '부문장은 미래·사업부장은 실적'…이번 주 임원 인사로 세대교체 잇는다",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1UamswU2lPYndfeENteHRodlJKZnNoaXhvdGhaX2txdzEzV1UtWlJLeGN4LVRHdEFDLTJ5eU9OZWdJQ1FjMXBRZDlud1VqQQ?oc=5",
+      "source": "전자신문",
+      "date": "Sun, 22 Nov 2026 05:00:00 GMT"
+    },
+    {
+      "title": "\"AI를 주머니에\" 새 수장 온 삼성전자 MX, AI·폴더블에 힘줄까 - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hX1lhVWRaeXdBWmk0WlFBVktvYm8zVVpEajBGN0pBVHkxU1dCdnpMWktoa3VoS0xodDdUcjJYckwzMmdQSnFoRy1GaVNmVDZHSlBoMDJFYU1QLVZUbC1mWmhNN1luaGPSAWxBVV95cUxOSWJYT1owaGFNOGNIcS1UU3Y2SkhPcWtIaGM4YTJsc28zN3gwV1ZqQ1I3V3hCek5JSWNBRHJZajFoLU05cHIwLUxTX0VGeWdqT0NSMS1sSHREUGdHNUtnbk0zaFg5cC1wcjVkQ20?oc=5",
+      "source": "머니투데이",
+      "date": "Mon, 23 Nov 2026 07:06:51 GMT"
+    },
+    {
+      "title": "[속보]삼성전자 3.1%·SK하닉 2.5% 하락 마감",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1IUVp5Y09xTXF2U1pROVJTYmxnVVBZa1E3ckpkUV9oQjh1RjdHN2lwQ2lEcHc5d2J5TmtKQVZxNEV1NnlEOFNXMnI5MHJzNG84MDBzNWl1SnJ1c0xabkh4RdIBeEFVX3lxTE8tNjMwSElPNTlPVTVINE9ISXZacUx0ZEx5RmpRaDBJNE52Q1NqRDJQSGV5Rndydzl6cTJiSmIzOFI0MkVZV0tjLS1JejVRNjJGQ2NzWkRRWHZSRm01UFlaTDZmVGhwR3NHbkZWQkxDUndGTnREMzhCMg?oc=5",
+      "source": "뉴시스",
+      "date": "Mon, 23 Nov 2026 06:31:10 GMT"
+    },
+    {
       "title": "칩플레이션에 삼성전자 내년 갤럭시Z9도 카메라·메모리 사양 동결 전망, 최원준 판매량보다 수익성에 방점 찍나",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1IcHRRZzJlVjNacUthVDNrY05lYTdCZDJKb1daNVRDZ3pWUG80NE9NeFM3dFJ0Nm9KYmJNbllOdXVLeXZ1SkVZa25fdkNIbjNjY3YySWNfOF9HUjFKTG9kUXNwSTZweXdleXNiZEd6RGZ0ZUE?oc=5",
       "source": "비즈니스포스트",
       "date": "Mon, 23 Nov 2026 07:38:21 GMT"
     },
     {
-      "title": "“삼성전자 43만원도 비싸다”…씨티그룹, 목표가 또 하향 [머니+]",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YUGh3MkRmSktMMzdoM053N1M3TEpmeDY1aXJJejdsX3RJWDR6MTNPYTZ0YWdwRzJDWXBpY1lYNk9vQVJKR1QzWTFrZGNNTHNMZzhzVGpCYVVKSWc?oc=5",
-      "source": "에너지경제신문",
-      "date": "Mon, 23 Nov 2026 00:29:09 GMT"
+      "title": "[단독] 삼성, 中 시안팹 고도화…AIDC용 낸드 생산 5배 늘린다",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBScUc5ektOYkw0eHRLcmczRTR0blBSUENHT3hKVF85NXJGNEpsRjl3RVRQNEZRWHZDNEJ4dmRZR1Y0RUZadkZIaWlyR1BGT3A5UWfSAVNBVV95cUxPU0lGNHVaTW9ZekszeGhzVnJKTlFFT2d5X0RYZk9JMExhZV9WdDRPN2hqT0hROURKZnBSa1hVaTRCQ0tpa0tGcTF2Qy1kVlk5eFVvVQ?oc=5",
+      "source": "서울경제",
+      "date": "Mon, 23 Nov 2026 08:11:04 GMT"
     },
     {
       "title": "삼성전자, '삼성 TV 플러스'서 다이나믹 듀오 콘서트 무료 생중계",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50MEo3TW13SGFoajV5d0duNVZ2UVdzbkJ2eEJ5cGFsTEw2czhTcFRCbnBGWFlTNER1LWJoUndHY2VvMTBWQlRCOUFBNTVoLVZ1SUZKMHVn?oc=5",
       "source": "지디넷코리아",
       "date": "Mon, 23 Nov 2026 00:31:14 GMT"
+    },
+    {
+      "title": "삼성전자, K팝 이어 힙합 공연 생중계…FAST 콘텐츠 강화",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1nd1NlaktwN3FLSGt3aHdBM1U2TVlnRGMzdUhkZFVDTmVGRUNIR2dXeUZFbmtJeWZqTWJGa21SSHZ3dnJiSlRvdWJyaV95NjdVcW1oblpDYlA3UFdq?oc=5",
+      "source": "뉴스핌",
+      "date": "Sun, 22 Nov 2026 23:24:00 GMT"
     }
   ]
 }
