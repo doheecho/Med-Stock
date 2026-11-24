@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T19:26:03+00:00",
+  "updated_at": "2026-11-24T15:46:45+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 2973333.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-23",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -24,7 +24,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 3017665,
+      "target": 3003050,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     },
@@ -49,6 +49,24 @@
   ],
   "consensus_rows": [
     {
+      "firm": "하나",
+      "date": "2026-11-23",
+      "target": 2800000,
+      "prev_target": 2800000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "미래에셋",
+      "date": "2026-11-20",
+      "target": 3100000,
+      "prev_target": 3100000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "BNK투자",
       "date": "2026-11-20",
       "target": 1050000,
@@ -62,15 +80,6 @@
       "date": "2026-11-18",
       "target": 3200000,
       "prev_target": 3200000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
-      "firm": "미래에셋",
-      "date": "2026-11-17",
-      "target": 3100000,
-      "prev_target": 3100000,
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
@@ -99,15 +108,6 @@
       "target": 1800000,
       "prev_target": 2100000,
       "chg": -14.29,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "하나",
-      "date": "2026-11-12",
-      "target": 2800000,
-      "prev_target": 3600000,
-      "chg": -22.22,
       "opinion": "BUY",
       "prev_opinion": "BUY"
     },

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T19:25:58+00:00",
+  "updated_at": "2026-11-24T15:46:40+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 465714.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-23",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,7 +18,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 467571,
+      "target": 465286,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -43,6 +43,24 @@
   ],
   "consensus_rows": [
     {
+      "firm": "하나",
+      "date": "2026-11-23",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
+    {
+      "firm": "미래에셋",
+      "date": "2026-11-20",
+      "target": 400000,
+      "prev_target": 400000,
+      "chg": 0.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
       "firm": "한국투자",
       "date": "2026-11-18",
       "target": 440000,
@@ -52,13 +70,13 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "미래에셋",
-      "date": "2026-11-17",
-      "target": 400000,
-      "prev_target": 400000,
+      "firm": "LS",
+      "date": "2026-11-16",
+      "target": 450000,
+      "prev_target": 450000,
       "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "NH투자",
@@ -75,24 +93,6 @@
       "target": 290000,
       "prev_target": 350000,
       "chg": -17.14,
-      "opinion": "BUY",
-      "prev_opinion": "BUY"
-    },
-    {
-      "firm": "LS",
-      "date": "2026-11-16",
-      "target": 450000,
-      "prev_target": 450000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "하나",
-      "date": "2026-11-12",
-      "target": 400000,
-      "prev_target": 480000,
-      "chg": -16.67,
       "opinion": "BUY",
       "prev_opinion": "BUY"
     },

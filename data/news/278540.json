@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T19:26:14+00:00",
+  "updated_at": "2026-11-24T15:46:53+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "market": "KRX",
@@ -21,12 +21,6 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOU1RDWmZsQWFHd0d2amttVzdBcWY4d0piRVowR3dlNzAwUzliVjZkTU01S2QyNFluZVd3b0RDdDVGZVNxUGRRNHVtWk5ESzloREVOdHJqRXE0dW1qZ2FaLW5HbU1XRHk5TXlrdE85SGUxLXdzdXI3NkF3R1pndkZhLUVqb1l3TE030gGcAUFVX3lxTE5WNmZlUjZPd3ZyaTFSVExpalF3Zko1UEx4TGtHSjdsQlM1NnNkakNiUkIwSnFScEN4UjNzNF9la3ozRHNRYkNnR0pEd0pTVHBsMlpDdGVoRXdZNERINHlORUNlcm4zR2NKQWdZaTFjWlpCUDRKRmRGWkRVb1J6WER5TlZkVEY1VlRvSXNDcnhUZjM4TGFERklNa21JTg?oc=5",
       "source": "Chosunbiz",
       "date": "Sat, 08 Apr 2023 07:00:00 GMT"
-    },
-    {
-      "title": "삼성운용, KODEX ETF 7종 보수 인하···\"상품 경쟁력 강화\"",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BbEhldEo4bEpDeVRuVHNtdW1Jc3c3ejVCcDFPTXpCZ3hnZUdVUkxWY0ZHTzcwTjNyeXJIeFlfT1RWeGx2Z2t1ekoyRGFRM2FIeThvMl8zanNnbXlkdHFYa3NtSnNNV0kzVGc?oc=5",
-      "source": "서울파이낸스",
-      "date": "Thu, 06 Oct 2022 07:00:00 GMT"
     },
     {
       "title": "삼성자산운용, 미국 대표지수 환헷지형 ETF 등 7종 보수 인하",
@@ -63,6 +57,12 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02NnBKY0xzZGw2eTdLVVFBUFBQZ05ISWZ2ZzhPdDk2M004WGpYcXp0Y2FBWEllV2tPVjg4cm1XREJSZ2xueW9iUkNNMmwzaVgyWVJCY0NuYlhEWGFBUEd4RXQzWVdlNnNVNzF6c1pSTXBKUWM?oc=5",
       "source": "파이낸셜포스트",
       "date": "Wed, 23 Oct 2019 07:00:00 GMT"
+    },
+    {
+      "title": "국장엔 없어서…코스피 3배 ETF 美증시서 산다",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMc0FxQVFOU29Xa003UnU1SWVNNEJNak1ybnVGbU1DVU13QlJvUE95UWVheW5FOHBUOVg1YnhVOTE4WVFpVUxmSzMyeWlFa1Z4VkE?oc=5",
+      "source": "매일경제",
+      "date": "Wed, 20 Nov 2024 08:00:00 GMT"
     }
   ]
 }

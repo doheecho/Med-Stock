@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-23T19:26:06+00:00",
+  "updated_at": "2026-11-24T15:46:47+00:00",
   "source": "yfinance",
   "target_high": 3000.0,
   "target_low": 361.0,
-  "target_avg": 1561.9111,
+  "target_avg": 1550.2444,
   "target_median": 1550.0,
   "num_analysts": 45,
   "opinion": "strong_buy",
   "opinion_score": 1.3469,
-  "current_price": 708.79,
+  "current_price": 626.035,
   "analyst_targets": [
     {
       "firm": "최고",
@@ -17,7 +17,7 @@
     },
     {
       "firm": "평균",
-      "target": 1561.9111,
+      "target": 1550.2444,
       "url": "https://finance.yahoo.com/quote/MU/analysis"
     },
     {
