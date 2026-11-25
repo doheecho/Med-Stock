@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-11-25T04:52:33+00:00",
+  "updated_at": "2026-11-25T15:29:08+00:00",
   "ticker": "000660",
   "name": "SK하이닉스",
   "market": "KRX",
   "items": [
+    {
+      "title": "[단독] SK하이닉스 용인 사업장서 노동자 추락 사망",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBvMldiTU4ta3hsVGR6ejdueHVIRmgzeTdFREFsaG5nSlFDVGVReHA1clZpLVR4ZHcxRlZYNl9vTFNxMlJPMDc5QTlQdFdZMTRMdFE?oc=5",
+      "source": "경인일보",
+      "date": "Wed, 25 Nov 2026 05:09:11 GMT"
+    },
+    {
+      "title": "SK하이닉스 \"3D D램 첫 제품은 100층부터, 4~5년 내 양산 목표\"",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0zV2VEUFIzMU5NMHFQeEMxWUpXWktMWnZjRTlrclNuQmMtQzE5dl90dGRlc2ZZOW9FQmRFbnE5YkV3TE4wVU5wSl9SalJQa2VRN2ZZU0szMW1JaHBWYkloS1RJdVNTdw?oc=5",
+      "source": "디일렉",
+      "date": "Wed, 25 Nov 2026 08:44:52 GMT"
+    },
+    {
+      "title": "“하이닉스 2028년 이익 급감”…반도체 저승사자의 섬뜩한 예측[머니닥터 시장진단]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oM25HNEt2ZndDMFJPNFVQOU5USEVmaEdoZWE1eWp5dnR2LUlIbDJOcmRQZmJrMU9VMEkzbjhaUFlUZVRTS2RlcFdMazZTdnhTVnc?oc=5",
+      "source": "매일경제 마켓",
+      "date": "Wed, 25 Nov 2026 11:06:13 GMT"
+    },
     {
       "title": "SK하이닉스 폭락 두 번 맞힌 애널리스트, 또 “더 떨어진다” 경고",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQWlVNUZZc1gxcnFxem5Za2dZQlFwRnRrRW42OGh6VUFIVmtDaEFudlk0Uk5tOHhtc0dYVHc1REVfekpYYnNOOUx2MnJmazZyQWdnUzBTalljQdIBX0FVX3lxTE9WcXZWMkx1dmVRWmU3OHhTQm8wekQtTWR0QVJfb21TQ3dRYzhVNTB1dHpIOG1CZEhJbXJSeG43WW5OVERWbm55TC16UEJXang1X1h0TFlrTUFraElrUFl3?oc=5",
@@ -11,34 +29,28 @@
       "date": "Mon, 23 Nov 2026 07:30:00 GMT"
     },
     {
-      "title": "“하이닉스 2028년 이익 급감” … 반도체 저승사자의 섬뜩한 예측",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE44ZXNMLUpzOWc2UzVhaE1lUUtfQ3pwT0RndzE5SGRkcTJQWTZja3ZuS1NDLVNqWkdVaDJSand0Y21Eb19BbEFnWEZSTXRlcHhvbkE?oc=5",
-      "source": "매일경제",
-      "date": "Tue, 24 Nov 2026 01:22:28 GMT"
+      "title": "“올랐다가 폭삭”…삼전닉스 개미들 멘붕, 증권가도 의견 ‘분분’",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1yaWFQWkF5MzVEa200WXRnV1hzYi1Wd1dEV2taUGtkTXM5WXd1b2YzWkZJZDBkalkxcXRUWkl3WHhEY2JDVzczVjZIRTU5a2lpSkVWS2Flemd6Mm1mWXlQYm9va3ZrQVpHaEdNUThmaEZXVFE?oc=5",
+      "source": "마켓인",
+      "date": "Wed, 25 Nov 2026 15:00:03 GMT"
     },
     {
-      "title": "\"400만닉스는 커녕 100만닉스도 위태\"…폭락 맞춘 BNK의 경고 [종목+]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHRWM0RHhDTnpwSU9JQU1nV0o4bEFyc2Q0S0VqQmFoaUJMZF9vUFBLQUowWXRqWWJIZEw3dFRHU3o1aUZZRm1VY2NmMEdLcmx5NXZpNWp0TktHQQ?oc=5",
-      "source": "한국경제",
-      "date": "Tue, 24 Nov 2026 13:00:01 GMT"
+      "title": "SK하이닉스, 밸류업 이행 현황 공시…100조 주주환원 재확인",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBwT0xZVWpNSktvR0c0c0NMUFlEb09FdkNRV3NFX2NsNDZ5T2pYOGx2Wkd6X01YU3o4OFk0TjFlWXpTQm9rWHJtUl96c0RmUzFMRkhXODYxeDl6U1BUbF96dlZwT3dzQVgzNFV3cmZ1QmM?oc=5",
+      "source": "연합인포맥스",
+      "date": "Wed, 25 Nov 2026 09:29:32 GMT"
     },
     {
-      "title": "윤풍영 SK하이닉스 사장, 자사주 1500주 매입…16억 규모",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SNUJhbjhxY0VMQlVmcDRKUndnNXJab1p2dzg4RXJuS3hjSGRocWFyYlk2UU1Ecnhmbk9PZHBqRTNqN3l3cjhmZkRhNmxsbkloS21QSGExZFdmQQ?oc=5",
-      "source": "한국경제",
-      "date": "Mon, 23 Nov 2026 07:45:09 GMT"
+      "title": "SK스퀘어 | 배당수입 환원율 30%→60% 상향, 2027년 대규모 주주환원의 조건",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSGpkbFBkUjNDY3B4dXVnYzRRV2hkcEZ4OEFzdU5OR1VHVFBZZWZBU2VwNFY3UjBjWFJJY0EybmtOMzlFSEpkU0NCYVFVRWRTS1g0b3gxdjFaMk1oOG45cTUwWGJzMmNJMF9qdkF5OGRmU1lGSFc2LUUtcU1OWS1zOUtUUXpkZndj?oc=5",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "Tue, 24 Nov 2026 06:24:00 GMT"
     },
     {
-      "title": "SK하이닉스 사장 윤풍영, 16억 들여 자사주 1500주 매입",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aN3J5VkszUHZMOWpVV3RldXRxZHRwaFdhVWpPQU4wU1pVanpuRHBnM1JDOTdaaEhHT2RUZlFoSlcweHVaUUNybEFOUGdrQ3luLW5qLTZiOE10UVJaQ3lnemdZeWxQMU91TjZSTS1mOVpCYWc?oc=5",
-      "source": "비즈니스포스트",
-      "date": "Mon, 23 Nov 2026 06:41:04 GMT"
-    },
-    {
-      "title": "젠슨 황 복귀 전날...타이밍 기가 막혔던 SK하이닉스 사장의 자사주 매입",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LUzJJNm5DMDJLMWMza0NtU0ktX1g0NlVMQmFtQVBjWVNBYjQ4V052S2ZoUHRqUDRfeTNHZUNiTWZtSmtaaEZHMG83ajdXVExicldzY29EZEhLQm8?oc=5",
-      "source": "경기일보",
-      "date": "Tue, 24 Nov 2026 01:53:59 GMT"
+      "title": "SK하이닉스, 주주환원 35조 더 남았다…매 분기 자사주 매입·소각",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Zd2pzQmxjVU5aRy1zSG1sNU5HbE5acXpQRl9OMkc1ZDBrYWh1dkZEQ1FkT2t0NEdLTF9UdWhEbDNxMnhVT3Y0bUUtRDdjN0JGNG1MTTh2WXpJR0xV?oc=5",
+      "source": "뉴스핌",
+      "date": "Wed, 25 Nov 2026 09:03:00 GMT"
     },
     {
       "title": "내년 몸값 2배 넘게 뛴다...빅테크 참전에 요동치는 HBM 패권",
@@ -47,52 +59,40 @@
       "date": "Tue, 24 Nov 2026 21:07:43 GMT"
     },
     {
-      "title": "손정의, 1조달러에 SK하이닉스 인수?...왜 멈췄나",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5zM0MtZWJ3MERnamJDTGFrSDhZREoyTXAtWnhiSzFUQUUyRlY4ZTRLQlFMclF2VUdpSE4tRmwwSklkZnZ5RGxTM3dNYTZIUXljSThzMHNB?oc=5",
+      "title": "자사주 한도 풀었지만…SK하이닉스 '그대로'·동참도 '잠잠' - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TQ1NGQzR2RzBWaGhfUVY3NmRzbnNkSzFTR1I4RU8xcFFXLUFFLWJpblp5S2tSUEpUUFJJVFh0Y0cxaWxkTlBJSjgyN0RpQ3FJRnNWdm1lUlZYdXo5SnBWOWJCcmxmT1910gFuQVVfeXFMT2ktQXVHMFhaSDdkOUgwcWpBZFBTeW5vT3dveWs2VFRUb04yUHF1M3ZWeDh0a1IwWTc5TDZYVnNiOGZORl9MWV8tWmhqR3V1RWlYNmdMbk1IY2x1TWIwRWg4THpHeExWOC10NjNUMEE?oc=5",
+      "source": "머니투데이",
+      "date": "Wed, 25 Nov 2026 08:08:01 GMT"
+    },
+    {
+      "title": "\"TSMC 3나노·GPU 설계 경험자 모집\"…SK하이닉스, HBM·HBF 로직 인재 확보 나서",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2TGJSN0h3ODhZNnAyLWFGeDV3X0NKZldaV3lJWU5XTVJ1Y2l1MHVsVHlWVlFNN01MeEoyZFdCbGxKSk9rM2VGMHdUNVZvbTFKMi1jaG8wc1JrV2I3ckRLeNIBeEFVX3lxTE8xVUFHd0FCMEUxTmFhVzRQYkZKTG9iVGJnY3FMU2EtZTFRcVdKaTNLQzRHWVA1cWl3d1Vja2p0ZXJxTVNlS2p6Y01TQWtIZFBpZ3VfUHA4Wm1XbG55WHZWWmxzZjlnV2MzMEJoc3hQQW53SHdOazBpdw?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 25 Nov 2026 08:31:06 GMT"
+    },
+    {
+      "title": "설상가상 삼전닉스…50억원 이상 큰손 고객 연말 절세 매물 '주의보'",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PY2w2dHpmZ0dSTjBXc0RiM3N4MzEyZXR5WXVYdXBMbmFKZnBkbi1GUDdkekZ5dEl0TGczV2NIQnNzOUR6M01MZHh1Wm9FU19TLV8yMDFuNzJoZw?oc=5",
+      "source": "한국경제",
+      "date": "Wed, 25 Nov 2026 06:39:52 GMT"
+    },
+    {
+      "title": "“키옥시아 지분 안 팔것”…SK하닉 ‘한일 낸드 동맹’",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LRmMzVFhRUHIybDJ5a0kyVWMtdmxReUdROUhnQlRyenVDamJ0NjUxQTFEcEp4TG1wV3pDQ3c5TE5aUlBLSzluUWRVQV9iYmF0YUHSAVNBVV95cUxPYVp3YnpHNnJhaHJ4RXlZRVRxcWJxdzJqbFJaRERWRTVBOEZRMTFYMFluTS1KOGpVX2pmeXF6US0tUUpueVJEaGFCMUNjNDJ3VVBLdw?oc=5",
+      "source": "서울경제",
+      "date": "Wed, 25 Nov 2026 08:58:36 GMT"
+    },
+    {
+      "title": "日언론 “키옥시아 ‘간접 최대주주’ 하이닉스…낸드분야 지배력 노릴것”",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rMW1IeHgzT2F3OGNhU3lSR1BObzJVX3dEdjN5ZkR1a2dyT1FwRnNQbkpGTk9ESTFEZEQ5Q25NUE1KXzUtWUhHME02MERCRURLdmZKWF9B?oc=5",
       "source": "매일경제",
-      "date": "Mon, 23 Nov 2026 05:07:14 GMT"
+      "date": "Wed, 25 Nov 2026 01:13:20 GMT"
     },
     {
-      "title": "\"SK하이닉스 통째로 사겠다\"…손정의, 1조달러 인수 자금 알아봤다",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WX21peUJXQW0zcTRPcHp6ZTRqVlNFbGl5bkhlVjBwUDllMnVzTklDUGFMOHVoX3lENFlaUnlEa3lkMnR2YUpUdHhXWTJya0NKYlE2ZkhnTmxSdGF0RTFUczB3?oc=5",
-      "source": "매일신문",
-      "date": "Mon, 23 Nov 2026 00:04:59 GMT"
-    },
-    {
-      "title": "“손정의, 하이닉스 1조달러에 인수 검토”… SK측 “아는바 없다”",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ocEJWZ3E2NDZDMnp6SXF3cFIwTy1xZWRudGtkQllKWWtrcUE2MzdNeHAtbzI0STR4M3V4TWVaXzIwRFdhRElsbkRZd0dIYXVKbGhEUFFmNjU1ZmNWRXo4bHFLMkl1cXQyS2YzMEl3VkNqeDhvVFHSAWZBVV95cUxPcXpOcVZrazJlekxUbjJNc3dtbk53MlZlcU52S1h5djhKaGEtbEgxX0toWE5xSU45V3JiXzNqZFFqclJOamU1S1pZMUxuWV96WmxqWmFyZzRIWWs3a2dNZDB4ZnZpdUE?oc=5",
-      "source": "동아일보",
-      "date": "Sun, 22 Nov 2026 15:30:00 GMT"
-    },
-    {
-      "title": "엔비디아 꺾이자 삼전 18만·하이닉스 110만원 깨져…코스피 4800선 출발",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBOdE5vMk53T2RtY21XeThYT2VndTdGR2UyNUxxZnptWkVrdFpFZTl3QTVlcUxtRHBCZ2pFVldQVldLNUNLVktROTFIVTJFQVdLa0E?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Wed, 25 Nov 2026 00:12:03 GMT"
-    },
-    {
-      "title": "하루 만에 무너진 '5천피'…삼성전자·SK하이닉스 7% 급락",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aMnVGQXdTN2J6SWpGS0haZnFjWjV0RzNZNE5HT0xlb2ZjanRGLVJRVzgxZ1ZZeVBpeU94RVlqemlaRkFKOGx3U3ktX09aNkRTaXNGLWdSVFB5b0FjS2lBY29vREE1YmdKTWlZ?oc=5",
-      "source": "주간조선",
-      "date": "Wed, 25 Nov 2026 01:02:08 GMT"
-    },
-    {
-      "title": "코스피, 하루 만에 5000선 반납…삼전·하닉 6%대 뚝",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1LeEVWdHVVNXN5a18yOHZRMTV0c0VNdFVYVmZyUGEweFctMXJkVy0wN2FrZ2ZVNEZTcDU1aGVheXh3ODZIdGkxVlpKTHc3UQ?oc=5",
-      "source": "전자신문",
-      "date": "Wed, 25 Nov 2026 00:21:30 GMT"
-    },
-    {
-      "title": "SK하이닉스가 키운 소부장 협력사, 9년만에 누적매출 8000억 넘어",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuYXVvV2VHTGdPTXlxbEtYYTMwamFteThFZ09qMVFENUEwZmp0aElvemhySTVCQVNybEQtYmtibFp1b3BDOU1GdkN4bGtBZG1kX21JNnN1YXdDUUdRUnBTN0h1Z2NFdzFhU0oyZ1lWQ2pkNmo0ZUHSAWZBVV95cUxNT3pWY19nbVZSQ2owMXRSTzVBRDl5SjAtY3dxT1NjTklqTnNHdmVpVVpyVVdYT29HUWRMX29BWUJvYkIybVR5S2ZKaHlVck1hTm0waURVdHJQa0VyelI4QUlzclFFdEE?oc=5",
-      "source": "동아일보",
-      "date": "Tue, 24 Nov 2026 06:37:00 GMT"
-    },
-    {
-      "title": "대기업 이익잉여금 1862조원⋯삼성전자 419조•SK하이닉스 267조원",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KNzYwV0NZQ0dVYWNEaGtTODRua2ZWbUI3d2pSZGswaXc2Rno3bmM0ZXA5Q2hfQ1I1ZW5KOEhnYkhzeWU3QWRoTUQ0NjA1bEFxcUtpNVltLTZQQQ?oc=5",
-      "source": "브릿지경제",
-      "date": "Tue, 24 Nov 2026 22:18:00 GMT"
+      "title": "[SK·키옥시아 관계 재편]② 생산엔 제약, 기술선 가교…샌디스크 변수",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5lal9aMld6ZEk5SEo2MnQtRDU0RFVGS3F4cFZfelRIckNTQ0M3TEdmV2xDVzBoRlFmTkJiQlp1Vng3d1dEVzlxcVJBMk5qWEQ1QUJmR3RwN0VVRUliMllIWnZUZ3VWeWcy0gFsQVVfeXFMUGdmbXNwNmdrZ2huNlJhejY1N1JPcVc2cmZKb1QwUS1rdk9xc1FDRDJDbWExTG1FdVdZRk9CLTYwcnh6NC1HeDRERk5zUTJ2Mkk4ZEx0NjVXTjhseHRJOWF5dkIwdnFVTDhFdzhx?oc=5",
+      "source": "블로터",
+      "date": "Wed, 25 Nov 2026 05:07:12 GMT"
     }
   ]
 }

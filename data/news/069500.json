@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T04:52:36+00:00",
+  "updated_at": "2026-11-25T15:29:11+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
@@ -11,16 +11,16 @@
       "date": "Wed, 25 Nov 2026 00:56:37 GMT"
     },
     {
-      "title": "李 대통령의 투자 성적표는…코스피 2배 수익·코스닥은 원금 손실",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE11WFlWX0QzaUZGNVNpQzdyMUdDcTRSdGNiRk1uREpCOExZZ2xZYWlGbTFoWVZhSXdzd1A0X3kwTTUtWGk3S3ZvVmE0bF8tRmFSQXhYVVhPTC1FejlR?oc=5",
-      "source": "뉴스핌",
-      "date": "Tue, 24 Nov 2026 05:36:00 GMT"
-    },
-    {
       "title": "주가급락에도 노후자금 반도체 선호 여전…ETF 순매수 지속",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9sOWs2TzNwdGxpWXFuR1JfVm1BUzBpMzEya1dDQjJZaWliWkltckNkUzVLWEIxeTBWN1FoeWlhZU9pVFJsMV80YVNzSTRXbUVKV1E?oc=5",
       "source": "매일경제 마켓",
       "date": "Sun, 22 Nov 2026 20:55:01 GMT"
+    },
+    {
+      "title": "李 대통령의 투자 성적표는…코스피 2배 수익·코스닥은 원금 손실",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE11WFlWX0QzaUZGNVNpQzdyMUdDcTRSdGNiRk1uREpCOExZZ2xZYWlGbTFoWVZhSXdzd1A0X3kwTTUtWGk3S3ZvVmE0bF8tRmFSQXhYVVhPTC1FejlR?oc=5",
+      "source": "뉴스핌",
+      "date": "Tue, 24 Nov 2026 05:36:00 GMT"
     },
     {
       "title": "대통령은 투자 고수?…폭락장에도 李가 산 ETF ‘107.6% 수익’",
@@ -77,12 +77,6 @@
       "date": "Tue, 14 Jul 2026 07:00:00 GMT"
     },
     {
-      "title": "미래 S&P500vs삼성 코스피200…ETF 왕좌 놓고 초접전[ETF업&다운]",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DM2cxMndYUDVoNlo2QjNuc1poaXJpakF5ajItVEFKeUhhdjNWXzZybzhkQXJ6WTc1M004MEhtWmpWU0FaUkNDd2dUWWxNS3FBd1dkMFNYOWtLLU9BMElF?oc=5",
-      "source": "뉴스1",
-      "date": "Mon, 16 Nov 2026 21:00:00 GMT"
-    },
-    {
       "title": "삼성운용 KODEX 200타겟위클리커버드콜, 순자산 5조 넘었다",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wSmU0X3NJaXpMaGdNb3hQSzRGbDBDd0k3T2p3dmpfOXVaQ1k5RF84UndEanU2cU9hbGNNUE5oeUl6NmdfQ0tfME5qcVh0TS1nMjJZdXR6REtpcFF4cmgzVHhfa3lzSDc3S09KVGQxTzZUZw?oc=5",
       "source": "인더스트리뉴스",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xN0Y1N3Q1SnVveFNwS3pNOFQ3dS1uTzhCdG9MdW9yZl9QSldXZTExZV93S0xESnhzLU9YNU5MbmhBU2JGVF94c2lhVUNYeDdwaDdxVGFzS0pBeW5nZURwSU5iVkFRQ1BF0gFuQVVfeXFMTUpIUVl4YzkzRkJjSDN4R0J4Wno2YTlPNjhwUENNeEdaQWlkMDZ1bjhoSzRZY09fdl95ek9GMmd2RU0zTGQyc1NFb2ljRkxha1p4M2JYXzdlRTJodGdCR08tYk9oOVRuVFBUbVc2R1E?oc=5",
       "source": "머니투데이",
       "date": "Wed, 08 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "KODEX 200커버드콜액티브, 한달만에 순자산 5000억 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Gd2dXaVhOT1JOSnNCTWd3Yjlzbm80Q3Rla3JIcXZOV0puWlJtRk9HYXFwWWctMzR6R0RnWHpLLXBNWU1NOVVtSUVXZVR5eVhLOW8xRDBlZU9lZw?oc=5",
+      "source": "한국경제",
+      "date": "Thu, 13 Aug 2026 07:00:00 GMT"
     }
   ]
 }
