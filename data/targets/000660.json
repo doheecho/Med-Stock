@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-24T19:02:07+00:00",
+  "updated_at": "2026-11-25T04:52:28+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
-  "target_avg": 2973333.0,
+  "target_avg": 2929091.0,
   "target_high": 3100000,
   "target_low": 2300000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -23,16 +23,22 @@
       "url": "https://finance.naver.com/research/company_read.naver?nid=97222"
     },
     {
-      "firm": "야후 평균",
-      "target": 3003050,
-      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
-      "src": "yahoo"
-    },
-    {
       "firm": "대신증권",
       "target": 3000000,
       "date": "2026-10-29",
       "url": "https://finance.naver.com/research/company_read.naver?nid=97239"
+    },
+    {
+      "firm": "야후 평균",
+      "target": 2977665,
+      "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
+      "src": "yahoo"
+    },
+    {
+      "firm": "컨센서스 평균",
+      "target": 2929091,
+      "date": "2026-11-24",
+      "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "iM증권",
@@ -48,6 +54,24 @@
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-11-24",
+      "target": 3000000,
+      "prev_target": 3000000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "다올투자",
+      "date": "2026-11-24",
+      "target": 2000000,
+      "prev_target": 4200000,
+      "chg": -52.38,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "하나",
       "date": "2026-11-23",
@@ -85,15 +109,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "LS",
-      "date": "2026-11-16",
-      "target": 2400000,
-      "prev_target": 2400000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "NH투자",
       "date": "2026-11-16",
       "target": 3400000,
@@ -110,6 +125,15 @@
       "chg": -14.29,
       "opinion": "BUY",
       "prev_opinion": "BUY"
+    },
+    {
+      "firm": "LS",
+      "date": "2026-11-16",
+      "target": 2400000,
+      "prev_target": 2400000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "유진투자",
@@ -146,15 +170,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-11-10",
-      "target": 3000000,
-      "prev_target": 3000000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "DS투자",
@@ -211,20 +226,20 @@
       "prev_opinion": "BUY"
     },
     {
-      "firm": "SK",
-      "date": "2026-10-29",
-      "target": 4000000,
-      "prev_target": 4000000,
-      "chg": 0.0,
-      "opinion": "매수",
-      "prev_opinion": "매수"
-    },
-    {
       "firm": "IBK투자",
       "date": "2026-10-29",
       "target": 3200000,
       "prev_target": 4000000,
       "chg": -20.0,
+      "opinion": "매수",
+      "prev_opinion": "매수"
+    },
+    {
+      "firm": "SK",
+      "date": "2026-10-29",
+      "target": 4000000,
+      "prev_target": 4000000,
+      "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
     }

@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-24T19:02:02+00:00",
+  "updated_at": "2026-11-25T04:52:22+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
-  "target_avg": 465714.0,
-  "target_high": 535571,
+  "target_avg": 458182.0,
+  "target_high": 526909,
   "target_low": 370000,
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,7 +18,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 465286,
+      "target": 459029,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -36,12 +36,30 @@
     },
     {
       "firm": "야후 하단",
-      "target": 290000,
+      "target": 213000,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     }
   ],
   "consensus_rows": [
+    {
+      "firm": "대신",
+      "date": "2026-11-24",
+      "target": 500000,
+      "prev_target": 500000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "다올투자",
+      "date": "2026-11-24",
+      "target": 300000,
+      "prev_target": 585000,
+      "chg": -48.72,
+      "opinion": "BUY",
+      "prev_opinion": "BUY"
+    },
     {
       "firm": "하나",
       "date": "2026-11-23",
@@ -70,15 +88,6 @@
       "prev_opinion": "매수"
     },
     {
-      "firm": "LS",
-      "date": "2026-11-16",
-      "target": 450000,
-      "prev_target": 450000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
       "firm": "NH투자",
       "date": "2026-11-16",
       "target": 530000,
@@ -95,6 +104,15 @@
       "chg": -17.14,
       "opinion": "BUY",
       "prev_opinion": "BUY"
+    },
+    {
+      "firm": "LS",
+      "date": "2026-11-16",
+      "target": 450000,
+      "prev_target": 450000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
     },
     {
       "firm": "유진투자",
@@ -131,15 +149,6 @@
       "chg": 0.0,
       "opinion": "매수",
       "prev_opinion": "매수"
-    },
-    {
-      "firm": "대신",
-      "date": "2026-11-10",
-      "target": 500000,
-      "prev_target": 500000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
     },
     {
       "firm": "DS투자",
