@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-11-25T15:29:11+00:00",
+  "updated_at": "2026-11-25T18:08:35+00:00",
   "ticker": "069500",
   "name": "KODEX 200",
   "market": "KRX",
   "items": [
     {
-      "title": "\"반등 온다\" 레버리지 ETF에 6000억 유입…코스닥150레버리지 1위",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KQW1KQmZnclF0akdBbU0yRUhkZU5SSFp4M1BocGhhUmtONXFzX212NThPd2piOVVXQUdLeHpFUERyTXNCbHNITElRT191VGhwTThSUTk4S2ZsOVhzMjNrU9IBeEFVX3lxTE1BZ3J4bnlqN2xBdW9qejRNcHZiLXdFbDZROGh4RXUxS2ZMV0t3c0l5Zkh5a2RlblNPU1BuenhRaG9rNTM4Z1RodnFBVlVZZFhJdW4zWFFEWVh1YWgyUkY5RjlDVEFsR2dTTVFEaHJ5Y0VxNlUwdlhHWA?oc=5",
-      "source": "뉴시스",
-      "date": "Wed, 25 Nov 2026 00:56:37 GMT"
-    },
-    {
       "title": "주가급락에도 노후자금 반도체 선호 여전…ETF 순매수 지속",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9sOWs2TzNwdGxpWXFuR1JfVm1BUzBpMzEya1dDQjJZaWliWkltckNkUzVLWEIxeTBWN1FoeWlhZU9pVFJsMV80YVNzSTRXbUVKV1E?oc=5",
       "source": "매일경제 마켓",
       "date": "Sun, 22 Nov 2026 20:55:01 GMT"
+    },
+    {
+      "title": "\"반등 온다\" 레버리지 ETF에 6000억 유입…코스닥150레버리지 1위",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KQW1KQmZnclF0akdBbU0yRUhkZU5SSFp4M1BocGhhUmtONXFzX212NThPd2piOVVXQUdLeHpFUERyTXNCbHNITElRT191VGhwTThSUTk4S2ZsOVhzMjNrU9IBeEFVX3lxTE1BZ3J4bnlqN2xBdW9qejRNcHZiLXdFbDZROGh4RXUxS2ZMV0t3c0l5Zkh5a2RlblNPU1BuenhRaG9rNTM4Z1RodnFBVlVZZFhJdW4zWFFEWVh1YWgyUkY5RjlDVEFsR2dTTVFEaHJ5Y0VxNlUwdlhHWA?oc=5",
+      "source": "뉴시스",
+      "date": "Wed, 25 Nov 2026 00:56:37 GMT"
     },
     {
       "title": "李 대통령의 투자 성적표는…코스피 2배 수익·코스닥은 원금 손실",
@@ -35,16 +35,16 @@
       "date": "Wed, 11 Nov 2026 08:00:00 GMT"
     },
     {
-      "title": "[ETF머니플로우-11월3주] KODEX 코스닥150 2주 연속 1위…커버드콜 매수 '희비'",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB5V3BMSXZ0bFBMeDVEQU5ydFhZZUYxR0FlVGhhc25JQzFqeERlanpyaVJ4bW03YzN5T0pCS3Q4TFlkUFFQQzFPM2VZSkp0YW5pa2puNTN1M01rYnp1cm9kek1jUU1pYVBYcXdLZ0VsWVc?oc=5",
-      "source": "신아일보",
-      "date": "Sat, 21 Nov 2026 05:00:00 GMT"
-    },
-    {
       "title": "[EZ 해부] ETF 396조 시대, KODEX 1위 수성...상위 10개 상품에 41.8조 유입",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EbmdKOTU4aEFIOFk1cHBrd1hMYUVYbnJQWlFrUXpNRTZxNlFSOFREak95alhkeEY5enJTdmlnMDdsTTM2eU1DYlVRVTEwSkxKcUxXdDRVOGZXU3FWY3c5S19oRHBtTW5BeE5memFn?oc=5",
       "source": "이지경제",
       "date": "Mon, 23 Nov 2026 07:43:22 GMT"
+    },
+    {
+      "title": "[ETF머니플로우-11월3주] KODEX 코스닥150 2주 연속 1위…커버드콜 매수 '희비'",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB5V3BMSXZ0bFBMeDVEQU5ydFhZZUYxR0FlVGhhc25JQzFqeERlanpyaVJ4bW03YzN5T0pCS3Q4TFlkUFFQQzFPM2VZSkp0YW5pa2puNTN1M01rYnp1cm9kek1jUU1pYVBYcXdLZ0VsWVc?oc=5",
+      "source": "신아일보",
+      "date": "Sat, 21 Nov 2026 05:00:00 GMT"
     },
     {
       "title": "'하락 베팅'에 날벼락…곱버스 장중 16% 급락",
