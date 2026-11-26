@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T18:08:24+00:00",
+  "updated_at": "2026-11-26T04:08:31+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/005930/total",
   "target_avg": 458182.0,
@@ -8,7 +8,7 @@
   "approx_band": false,
   "opinion": "매수",
   "opinion_score": 4.0,
-  "as_of": "2026-11-24",
+  "as_of": "2026-11-25",
   "analyst_targets": [
     {
       "firm": "야후 상단",
@@ -18,7 +18,7 @@
     },
     {
       "firm": "야후 평균",
-      "target": 459029,
+      "target": 455167,
       "url": "https://finance.yahoo.com/quote/005930.KS/analysis",
       "src": "yahoo"
     },
@@ -47,6 +47,15 @@
       "date": "2026-11-24",
       "target": 500000,
       "prev_target": 500000,
+      "chg": 0.0,
+      "opinion": "Buy",
+      "prev_opinion": "Buy"
+    },
+    {
+      "firm": "유안타",
+      "date": "2026-11-24",
+      "target": 690000,
+      "prev_target": 690000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
@@ -128,15 +137,6 @@
       "date": "2026-11-11",
       "target": 500000,
       "prev_target": 500000,
-      "chg": 0.0,
-      "opinion": "Buy",
-      "prev_opinion": "Buy"
-    },
-    {
-      "firm": "유안타",
-      "date": "2026-11-11",
-      "target": 690000,
-      "prev_target": 690000,
       "chg": 0.0,
       "opinion": "Buy",
       "prev_opinion": "Buy"
