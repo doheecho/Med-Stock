@@ -1,14 +1,32 @@
 {
-  "updated_at": "2026-11-26T15:00:28+00:00",
+  "updated_at": "2026-11-26T17:52:30+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
+      "title": "Micron Stocks Fall 4.53% as TrendForce Cuts 2027 Memory Forecasts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-fall-4-53-172600974.html",
+      "source": "GuruFocus.com",
+      "date": "2026-11-26T17:26:00Z"
+    },
+    {
       "title": "Dow Jones Futures Rise With U.S. Markets Shut; Look For This Bullish Signal",
       "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
       "source": "Investor's Business Daily",
-      "date": "2026-11-26T14:07:10Z"
+      "date": "2026-11-26T17:17:34Z"
+    },
+    {
+      "title": "This AI Investing Prodigy Lost 65% in a Single Quarter and Is Still Up 88.5% in 2026. Here’s the Lesson for Investors.",
+      "url": "https://247wallst.com/investing/2026/11/26/this-ai-investing-prodigy-lost-65-in-a-single-quarter-and-is-still-up-88-5-in-2026-heres-the-lesson-for-investors/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-26T16:55:13Z"
+    },
+    {
+      "title": "SK Hynix Just Revealed the Next Generation of DRAM. Can It Beat Micron in the Next Memory Supercycle?",
+      "url": "https://247wallst.com/investing/2026/11/26/sk-hynix-just-revealed-the-next-generation-of-dram-can-it-beat-micron-in-the-next-memory-supercycle/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-26T16:44:25Z"
     },
     {
       "title": "Jim Cramer Says Micron Stock Is “Comically Cheap” at About 3 Times Earnings",
@@ -45,24 +63,6 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-taiwan-investment-113553440.html",
       "source": "GuruFocus.com",
       "date": "2026-11-26T11:35:53Z"
-    },
-    {
-      "title": "Micron and Sandisk Are Two of the Cheapest AI Chip Stocks to Own",
-      "url": "https://finance.yahoo.com/technology/ai/articles/micron-sandisk-two-cheapest-ai-112351523.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-26T11:23:51Z"
-    },
-    {
-      "title": "Micron Stock Has Lost Half Its Value Since June",
-      "url": "https://www.trefis.com/stock/mu/articles/629190/micron-stock-has-lost-half-its-value-since-june/2026-11-26",
-      "source": "Trefis",
-      "date": "2026-11-26T11:17:24Z"
-    },
-    {
-      "title": "Nvidia, AMD and Micron Stocks Plunge as AI Selloff Deepens",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-amd-micron-stocks-plunge-110624788.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-26T11:06:24Z"
     }
   ]
 }
