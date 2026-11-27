@@ -1,20 +1,56 @@
 {
-  "updated_at": "2026-11-26T17:52:30+00:00",
+  "updated_at": "2026-11-27T04:07:29+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
+      "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
+      "source": "Investor's Business Daily",
+      "date": "2026-11-27T03:56:23Z"
+    },
+    {
+      "title": "Micron (MU) Has Secured $32 Billion in Customer Commitments. Here’s Why That Matters",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-secured-32-billion-031249719.html",
+      "source": "Insider Monkey",
+      "date": "2026-11-27T03:12:49Z"
+    },
+    {
+      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Semiconductor Stock Through 2030, This Would Be It.",
+      "url": "https://www.fool.com/investing/2026/11/26/not-nvidia-not-micron-if-i-could-buy-and-hold-only-1-artificial-intelligence-ai-semiconductor-stock-through-2030-this-would-be-it/",
+      "source": "Motley Fool",
+      "date": "2026-11-26T23:14:44Z"
+    },
+    {
+      "title": "Why It’s Hard to Write Off Micron (MU) Even with a Memory Peak in Sight",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-hard-write-off-micron-210000375.html",
+      "source": "TipRanks",
+      "date": "2026-11-26T21:00:00Z"
+    },
+    {
+      "title": "5 Most Oversold Semiconductor Stocks to Buy for 2027",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-most-oversold-semiconductor-stocks-194738573.html",
+      "source": "Insider Monkey",
+      "date": "2026-11-26T19:47:38Z"
+    },
+    {
+      "title": "Sandisk Trades at Under 3x Earnings After an 8-for-1 Split and a 70% Crash. Why SNDK Stock Isn’t Doomed Despite NAND Price Warnings.",
+      "url": "https://www.barchart.com/story/news/9022920/sandisk-trades-at-under-3x-earnings-after-an-8-for-1-split-and-a-70-crash-why-sndk-stock-isnt-doomed-despite-nand-price-warnings",
+      "source": "Barchart",
+      "date": "2026-11-26T19:30:03Z"
+    },
+    {
+      "title": "Micron Stock Faces Surprising New Threat From Huawei",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-faces-surprising-threat-180348513.html",
+      "source": "GuruFocus.com",
+      "date": "2026-11-26T18:03:48Z"
+    },
+    {
       "title": "Micron Stocks Fall 4.53% as TrendForce Cuts 2027 Memory Forecasts",
       "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-fall-4-53-172600974.html",
       "source": "GuruFocus.com",
       "date": "2026-11-26T17:26:00Z"
-    },
-    {
-      "title": "Dow Jones Futures Rise With U.S. Markets Shut; Look For This Bullish Signal",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
-      "source": "Investor's Business Daily",
-      "date": "2026-11-26T17:17:34Z"
     },
     {
       "title": "This AI Investing Prodigy Lost 65% in a Single Quarter and Is Still Up 88.5% in 2026. Here’s the Lesson for Investors.",
@@ -27,42 +63,6 @@
       "url": "https://247wallst.com/investing/2026/11/26/sk-hynix-just-revealed-the-next-generation-of-dram-can-it-beat-micron-in-the-next-memory-supercycle/",
       "source": "24/7 Wall St.",
       "date": "2026-11-26T16:44:25Z"
-    },
-    {
-      "title": "Jim Cramer Says Micron Stock Is “Comically Cheap” at About 3 Times Earnings",
-      "url": "https://247wallst.com/investing/2026/11/26/jim-cramer-says-micron-stock-is-comically-cheap-at-about-3-times-earnings/",
-      "source": "24/7 Wall St.",
-      "date": "2026-11-26T13:53:39Z"
-    },
-    {
-      "title": "Is Micron Stock a Buy After HPE Said Memory Will Stay Scarce Into 2028?",
-      "url": "https://www.fool.com/investing/2026/11/26/is-micron-stock-a-buy-after-hpe-said-memory-will-stay-scarce-into-2028/",
-      "source": "Motley Fool",
-      "date": "2026-11-26T13:37:02Z"
-    },
-    {
-      "title": "Micron May Now Face a Threat From Two Chinese Rivals but Shouldn’t Sweat It",
-      "url": "https://www.barrons.com/articles/micron-stock-memory-threat-china-ddf1a907?siteid=yhoof2&yptr=yahoo",
-      "source": "Barrons.com",
-      "date": "2026-11-26T13:01:00Z"
-    },
-    {
-      "title": "Micron Can’t Stop Sliding. UBS Cut Its Target, but Still Sees 83% Upside",
-      "url": "https://www.tikr.com/blog/micron-cant-stop-sliding-ubs-cut-its-target-but-still-sees-83-upside?ref=yahoofinance&tlnk=yf-261126-5mxg7gm6",
-      "source": "TIKR",
-      "date": "2026-11-26T12:21:03Z"
-    },
-    {
-      "title": "Tepper Trims Alphabet by ~46% and Dumps Broadcom & AMD While Backing Micron and Oracle",
-      "url": "https://247wallst.com/investing/2026/11/26/tepper-trims-alphabet-by-46-and-dumps-broadcom-amd-while-backing-micron-and-oracle/",
-      "source": "24/7 Wall St.",
-      "date": "2026-11-26T12:15:05Z"
-    },
-    {
-      "title": "Micron's $50 Billion Taiwan Investment Faces Fresh Labor Risk",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-taiwan-investment-113553440.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-26T11:35:53Z"
     }
   ]
 }
