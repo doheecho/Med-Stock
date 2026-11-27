@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T14:55:57+00:00",
+  "updated_at": "2026-11-27T17:37:40+00:00",
   "ticker": "091160",
   "name": "KODEX 반도체",
   "market": "KRX",
@@ -29,16 +29,16 @@
       "date": "Mon, 07 Sep 2026 07:00:00 GMT"
     },
     {
-      "title": "코스닥·반도체 탈출한 개미들… 美 지수 ETF에 꽂혔다",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzUWdKZVoyeUdrOEZ4MW1JZHNmazZjRVRVdjduRHlRN2sycjhGT3BKX05sNFZwa3VBYWpXM2xlVDkxMkRIeHI3andVcjNIZkVJTVVVbFdaODNlWkxDNWthbEplSkIyV2lBZlZmU0FZdmvSAXRBVV95cUxQTGgtT2VDNjdrV3YyaVY2TjV5MUNFQ2hkMEM3Wm1qbDhOOU9nTHFKbnRWLVFlc09EQXpDajViQ1dzdWFUZnAwTkpUZHlUb2U0ZDluWnUySjhNVUtjcWVaR002TEY1YS1vMDRxZXE0NzJTV0hUaA?oc=5",
-      "source": "IT조선",
-      "date": "Mon, 12 Oct 2026 07:00:00 GMT"
-    },
-    {
       "title": "단일종목 레버리지 규제 첫날, 다른 레버리지 ETF로 자금 ‘대이동’",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fcklHUkFGeWZhdUhpeWJ3SENUVWFkWEVIZlNnRUd6OS05Y01jTFlLcUN6ZllDMFFobUpyY2lJVnVXVk85Nk9BRWg3a0wzQjk3c3R3NldSeVY5ZFlVRUw2RHZubDY1LWJTREc0d21qVXBqZ9IBdkFVX3lxTE1nSkh3RzBPTUdTbEVHOUEtbC0tRE1lT1J1N29ncHl1Q3BjUzYwTUw5czRZM0IxamdBQTg1eGRnRU16T2R4NlBjNlZhVDRqbHlwbHRBYnVxRVhscmgyWDc2Ynk3YkZuTU1LSlNvTFZZbjJoazF1VEE?oc=5",
       "source": "시사저널e",
       "date": "Fri, 31 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "title": "코스닥·반도체 탈출한 개미들… 美 지수 ETF에 꽂혔다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzUWdKZVoyeUdrOEZ4MW1JZHNmazZjRVRVdjduRHlRN2sycjhGT3BKX05sNFZwa3VBYWpXM2xlVDkxMkRIeHI3andVcjNIZkVJTVVVbFdaODNlWkxDNWthbEplSkIyV2lBZlZmU0FZdmvSAXRBVV95cUxQTGgtT2VDNjdrV3YyaVY2TjV5MUNFQ2hkMEM3Wm1qbDhOOU9nTHFKbnRWLVFlc09EQXpDajViQ1dzdWFUZnAwTkpUZHlUb2U0ZDluWnUySjhNVUtjcWVaR002TEY1YS1vMDRxZXE0NzJTV0hUaA?oc=5",
+      "source": "IT조선",
+      "date": "Mon, 12 Oct 2026 07:00:00 GMT"
     },
     {
       "title": "단일종목 레버리지 조이자 지수형과 반도체로 우회…규제 사각지대 점검 필요",
@@ -71,12 +71,6 @@
       "date": "Mon, 11 May 2026 07:00:00 GMT"
     },
     {
-      "title": "'KODEX 반도체 단일종목 레버리지' 2종, 상장 2주 만에 자금 유입",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aVzcxWWpEYWV0ZGd5eENmSlZVRXdJZU5RMWVCZFpEWS1qVXBOTURjV0MzdXNNVmtuLXNDalN4ckk2c04ycEFPX2NZODNyRDlaUDdmMXFJOWFJZjJa?oc=5",
-      "source": "뉴스핌",
-      "date": "Thu, 11 Jun 2026 07:00:00 GMT"
-    },
-    {
       "title": "같은 반도체 ETF, 수익률 '극과 극'…삼전 뛰는데 역주행 레버리지도(종합) | KB의 생각",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE03NFBEQnE5N3p2UGRybG05clZWNE85TlhVeVJVUnRDRnc5RGVMOU5BcEcxa1VCV242VkQ2UGg0aXh2SHlVRF81WXpGemtZN21qTDZYbEhuRG1LQk9RNThSZWVjakVZbW5naEdHb0pkVUdyUQ?oc=5",
       "source": "KB Think",
@@ -93,6 +87,12 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqSkFsZzBSbTJ5N0hiRUxfWlBwMnFIczJZU01TRHF4RjJxSWlCSS1uRTZJY1FnUUVpMVc1aXVEeEM4dXVyT250enRLQWNnMmRMVmxudmgwOFZ6QQ?oc=5",
       "source": "한국경제",
       "date": "Thu, 07 May 2026 07:00:00 GMT"
+    },
+    {
+      "title": "'반도체·월배당' 둘 다 잡는 'KODEX반도체타겟위클리커버드콜' 출시",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1CbGVwTElPN1hMdU13RnhRV05UZFg4bTRKcWFlZHJ3a0hhS3VTVHY0cTZjNjNiSzZ3d1JscFNfSUt1ZG5WRElUcGdUQi1lbFVodWg5UnpiZS1fZ0h3Mkcw?oc=5",
+      "source": "뉴스1",
+      "date": "Mon, 11 May 2026 07:00:00 GMT"
     }
   ]
 }
