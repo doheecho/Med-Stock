@@ -1,13 +1,6 @@
 {
-  "updated_at": "2026-11-27T04:07:01+00:00",
+  "updated_at": "2026-11-27T14:55:31+00:00",
   "rows": [
-    {
-      "t": "2026-10-16",
-      "institution": 2010635055,
-      "foreign": -2836998450,
-      "individual": 1333557225,
-      "etc_corp": -507193830
-    },
     {
       "t": "2026-10-19",
       "institution": -2485133600,
@@ -210,12 +203,19 @@
       "foreign": 66791790,
       "individual": -386814285,
       "etc_corp": 12909780
+    },
+    {
+      "t": "2026-11-27",
+      "institution": 706734900,
+      "foreign": -1531056375,
+      "individual": 829785525,
+      "etc_corp": -5464050
     }
   ],
   "summary": {
-    "foreign_20d": 2411800290,
-    "institution_20d": -2899336505,
-    "individual_20d": 471813890
+    "foreign_20d": -362675925,
+    "institution_20d": 1194152155,
+    "individual_20d": -832386985
   },
   "source": "naver(trend)",
   "note": "개인·기관·외국인은 네이버 실측 순매수수량×종가. 기타법인 등은 하루 순매수 합이 0이 되도록 한 잔차 추정치.",

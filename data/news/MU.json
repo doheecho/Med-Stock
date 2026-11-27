@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-11-27T04:07:29+00:00",
+  "updated_at": "2026-11-27T14:55:54+00:00",
   "ticker": "MU",
   "name": "마이크론 테크놀로지",
   "market": "US",
   "items": [
     {
+      "title": "He was right about AI and still lost $35 billion",
+      "url": "https://finance.yahoo.com/video/ai-still-lost-35-billion-120000023.html",
+      "source": "Yahoo Finance Video",
+      "date": "2026-11-27T12:00:00Z"
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html",
+      "source": "Yahoo Finance",
+      "date": "2026-11-27T09:11:52Z"
+    },
+    {
+      "title": "How Leopold Aschenbrenner made a $225 million bet on AI infrastructure",
+      "url": "https://finance.yahoo.com/video/leopold-aschenbrenner-made-225-million-143000764.html",
+      "source": "Yahoo Finance Video",
+      "date": "2026-11-27T14:30:00Z"
+    },
+    {
+      "title": "Kioxia Stock Has Soared 21% in Two Days After an Nvidia SSD Test",
+      "url": "https://247wallst.com/investing/2026/11/27/kioxia-stock-has-soared-21-in-two-days-after-an-nvidia-ssd-test/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-27T14:28:28Z"
+    },
+    {
+      "title": "SanDisk Jumps 10% as Investors Return to Beaten-Down Memory Stocks; Micron and SK Hynix Rise 6% Despite TrendForce DRAM Warning",
+      "url": "https://247wallst.com/investing/2026/11/27/sandisk-jumps-10-as-investors-return-to-beaten-down-memory-stocks-micron-and-sk-hynix-rise-6-despite-trendforce-dram-warning/",
+      "source": "24/7 Wall St.",
+      "date": "2026-11-27T13:58:40Z"
+    },
+    {
+      "title": "SNDK, MU, WDC, Other Memory Stocks Rally As Investors Return To Beaten-Down AI Names",
+      "url": "https://stocktwits.com/news-articles/markets/equity/sndk-mu-wdc-other-memory-stocks-rally-as-investors-return-to-beaten-down-ai-names/cNbCupeR9ND",
+      "source": "Stocktwits",
+      "date": "2026-11-27T13:19:21Z"
+    },
+    {
       "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
       "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
       "source": "Investor's Business Daily",
-      "date": "2026-11-27T03:56:23Z"
+      "date": "2026-11-27T13:06:54Z"
     },
     {
-      "title": "Micron (MU) Has Secured $32 Billion in Customer Commitments. Here’s Why That Matters",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-secured-32-billion-031249719.html",
-      "source": "Insider Monkey",
-      "date": "2026-11-27T03:12:49Z"
+      "title": "David Tepper, George Soros and 2 Other Famous Investors Own Micron. Here’s Who Bought and Sold Recently",
+      "url": "https://www.tikr.com/blog/micron-stock-david-tepper-george-soros-investors?ref=yahoofinance&tlnk=yf-261127-3fj98j3p",
+      "source": "TIKR",
+      "date": "2026-11-27T12:25:49Z"
     },
     {
-      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Semiconductor Stock Through 2030, This Would Be It.",
-      "url": "https://www.fool.com/investing/2026/11/26/not-nvidia-not-micron-if-i-could-buy-and-hold-only-1-artificial-intelligence-ai-semiconductor-stock-through-2030-this-would-be-it/",
-      "source": "Motley Fool",
-      "date": "2026-11-26T23:14:44Z"
+      "title": "SpaceX Stock Jumps Thanks to AI Rally. Why It Should Be Rising Even More.",
+      "url": "https://www.barrons.com/articles/spacex-stock-ai-rally-113e9386?siteid=yhoof2&yptr=yahoo",
+      "source": "Barrons.com",
+      "date": "2026-11-27T12:18:00Z"
     },
     {
-      "title": "Why It’s Hard to Write Off Micron (MU) Even with a Memory Peak in Sight",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-hard-write-off-micron-210000375.html",
-      "source": "TipRanks",
-      "date": "2026-11-26T21:00:00Z"
-    },
-    {
-      "title": "5 Most Oversold Semiconductor Stocks to Buy for 2027",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/5-most-oversold-semiconductor-stocks-194738573.html",
-      "source": "Insider Monkey",
-      "date": "2026-11-26T19:47:38Z"
-    },
-    {
-      "title": "Sandisk Trades at Under 3x Earnings After an 8-for-1 Split and a 70% Crash. Why SNDK Stock Isn’t Doomed Despite NAND Price Warnings.",
-      "url": "https://www.barchart.com/story/news/9022920/sandisk-trades-at-under-3x-earnings-after-an-8-for-1-split-and-a-70-crash-why-sndk-stock-isnt-doomed-despite-nand-price-warnings",
-      "source": "Barchart",
-      "date": "2026-11-26T19:30:03Z"
-    },
-    {
-      "title": "Micron Stock Faces Surprising New Threat From Huawei",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-faces-surprising-threat-180348513.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-26T18:03:48Z"
-    },
-    {
-      "title": "Micron Stocks Fall 4.53% as TrendForce Cuts 2027 Memory Forecasts",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-fall-4-53-172600974.html",
-      "source": "GuruFocus.com",
-      "date": "2026-11-26T17:26:00Z"
-    },
-    {
-      "title": "This AI Investing Prodigy Lost 65% in a Single Quarter and Is Still Up 88.5% in 2026. Here’s the Lesson for Investors.",
-      "url": "https://247wallst.com/investing/2026/11/26/this-ai-investing-prodigy-lost-65-in-a-single-quarter-and-is-still-up-88-5-in-2026-heres-the-lesson-for-investors/",
-      "source": "24/7 Wall St.",
-      "date": "2026-11-26T16:55:13Z"
-    },
-    {
-      "title": "SK Hynix Just Revealed the Next Generation of DRAM. Can It Beat Micron in the Next Memory Supercycle?",
-      "url": "https://247wallst.com/investing/2026/11/26/sk-hynix-just-revealed-the-next-generation-of-dram-can-it-beat-micron-in-the-next-memory-supercycle/",
-      "source": "24/7 Wall St.",
-      "date": "2026-11-26T16:44:25Z"
+      "title": "MARKETS LIVE: US stock futures jump ahead of shortened Black Friday trading session",
+      "url": "https://www.proactiveinvestors.com/companies/news/1102556/markets-live-us-stock-futures-jump-ahead-of-shortened-black-friday-trading-session-1102556.html",
+      "source": "Proactive",
+      "date": "2026-11-27T11:57:00Z"
     }
   ]
 }
