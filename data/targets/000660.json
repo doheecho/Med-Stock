@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T17:37:32+00:00",
+  "updated_at": "2026-11-28T03:50:49+00:00",
   "source": "naver(consensus)",
   "url": "https://m.stock.naver.com/domestic/stock/000660/total",
   "target_avg": 2929091.0,
@@ -30,15 +30,9 @@
     },
     {
       "firm": "야후 평균",
-      "target": 2977665,
+      "target": 2957152,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
-    },
-    {
-      "firm": "컨센서스 평균",
-      "target": 2929091,
-      "date": "2026-11-26",
-      "url": "https://finance.naver.com/item/coinfo.naver?code=000660"
     },
     {
       "firm": "iM증권",
@@ -48,7 +42,7 @@
     },
     {
       "firm": "야후 하단",
-      "target": 1575000,
+      "target": 1350000,
       "url": "https://finance.yahoo.com/quote/000660.KS/analysis",
       "src": "yahoo"
     }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T17:38:24+00:00",
+  "updated_at": "2026-11-28T03:51:42+00:00",
   "ticker": "278540",
   "name": "KODEX MSCI Korea TR",
   "base_index": "MSCI Korea TR Index",
@@ -8,7 +8,7 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "weight": 33.98,
+      "weight": 33.83,
       "price": 179500.0,
       "prev": 171500.0,
       "change": 8000.0,
@@ -17,7 +17,7 @@
     {
       "code": "000660",
       "name": "SK하이닉스",
-      "weight": 24.65,
+      "weight": 24.74,
       "price": 1111000.0,
       "prev": 1055000.0,
       "change": 56000.0,
@@ -26,7 +26,7 @@
     {
       "code": "005935",
       "name": "삼성전자우",
-      "weight": 4.66,
+      "weight": 4.7,
       "price": 145500.0,
       "prev": 137000.0,
       "change": 8500.0,
@@ -35,7 +35,7 @@
     {
       "code": "402340",
       "name": "SK스퀘어",
-      "weight": 2.55,
+      "weight": 2.56,
       "price": 687000.0,
       "prev": 649000.0,
       "change": 38000.0,
@@ -44,7 +44,7 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "weight": 2.07,
+      "weight": 1.97,
       "price": 145500.0,
       "prev": 145500.0,
       "change": 0.0,
@@ -60,27 +60,27 @@
       "change_pct": 4.84
     },
     {
-      "code": "055550",
-      "name": "신한지주",
-      "weight": 1.49,
-      "price": 84000.0,
-      "prev": 84700.0,
-      "change": -700.0,
-      "change_pct": -0.83
-    },
-    {
       "code": "005380",
       "name": "현대차",
-      "weight": 1.46,
+      "weight": 1.45,
       "price": 270500.0,
       "prev": 259500.0,
       "change": 11000.0,
       "change_pct": 4.24
     },
     {
+      "code": "055550",
+      "name": "신한지주",
+      "weight": 1.41,
+      "price": 84000.0,
+      "prev": 84700.0,
+      "change": -700.0,
+      "change_pct": -0.83
+    },
+    {
       "code": "068270",
       "name": "셀트리온",
-      "weight": 1.38,
+      "weight": 1.35,
       "price": 221000.0,
       "prev": 216500.0,
       "change": 4500.0,
@@ -89,7 +89,7 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "weight": 1.35,
+      "weight": 1.28,
       "price": 118400.0,
       "prev": 119300.0,
       "change": -900.0,

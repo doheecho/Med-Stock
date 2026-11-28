@@ -1,20 +1,62 @@
 {
-  "updated_at": "2026-11-27T17:37:35+00:00",
+  "updated_at": "2026-11-28T03:50:54+00:00",
   "ticker": "005930",
   "name": "삼성전자",
   "market": "KRX",
   "items": [
     {
+      "title": "삼성전자·SK하이닉스 장기공급계약 '물음표'…장부에 받은 돈이 없다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NT1hlbmtET1VLb3pxMUtHZ0xUR0VZNjZsajFSSGFJTnFkZ05YMGlJQ2V1Q3RGTHFBX2ZGRGNSUDZQd1U5WW5oTXBaeVQ3bjR3Mnh5U25ET3NSbFh2SzRyLXZGNG9QSnYzT1ktdWctLXU?oc=5",
+      "source": "연합인포맥스",
+      "date": "Thu, 26 Nov 2026 05:09:00 GMT"
+    },
+    {
+      "title": "삼성전자·SK하이닉스 메모리 장기계약 확대…마이크론 공시가 짚은 재고 위험",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaTB0V0RSbFBXOG5raHcxZDR1N3QyQngxaXZpNkN2SV9mR3NRcjQyZmVFRmVOWEdNNERRRzBKQmpKUjRWZFR3NVpzUGhTV2hZSjRvNEtaUU82dFN3T0VTZlkyVUF3WTc4cUFheENaaVBKUlEtcjFHb2llLWRORkNRb3VuTWFNdVhl?oc=5",
+      "source": "글로벌이코노믹",
+      "date": "Fri, 27 Nov 2026 23:40:45 GMT"
+    },
+    {
+      "title": "\"삼성전자 4만원까지 떨어질 수도\"…전문가 전망 나왔다",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLWWdfQU90OS1hVmlqUllYOVRsb0t6Z0VjbDJueWdsZkNDVlgtNW1abGF6ZFB5MS04bW9hVXo0SlRobVItUC1lSmlXSEhKM0ZkV09JUXpPcFpRZw?oc=5",
+      "source": "한국경제",
+      "date": "Fri, 27 Nov 2026 22:49:52 GMT"
+    },
+    {
+      "title": "삼성전자 30조 원 배당...이재용 배당금 4,488억 원 [자막뉴스]",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JelBHZko1U0xPMUE5c2M3NU1QNzJMbUFSR0tibnVyR0t4bGp2V2VyZmhQNldQNkR4YXE0aFpuVjA4TzFFcWgtclpybk5qMFd3dDdhT2oyZzB0b3ZxVmc?oc=5",
+      "source": "YTN",
+      "date": "Fri, 27 Nov 2026 03:43:00 GMT"
+    },
+    {
+      "title": "삼성전자, 냉난방공조 사업 강화…가전·공조 두 사업팀 체제로 재편",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvYnl2ZUZlM1M4djBZRmRHa2l5RXZydXpyYWt4cDVUTk1VMDV1TVFncXp5UXdQTl9qTGRmUmt3Q2MtUWpCUWt3ZTB6V3NKQlJBakVxdjQyVVgzVVNfeVV1NE80MUJEcGpJMEE?oc=5",
+      "source": "냉동공조저널",
+      "date": "Sat, 28 Nov 2026 01:49:49 GMT"
+    },
+    {
+      "title": "삼성전자, 인수합병 속도 낸다…M&A 전담조직 신설",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOZmVOaldxeG1aYUpNZlR6bVY2ZlRJeHo2TGRib2dONmFMZGx0d2pQV1FKOUkwRkEyUjJsRGFTRWtmX1NQOFVNLTMxcUNOYWxiZGo1bzV6VkpUbGpWc2Q5ejhOY25IMDFqYk5MLXRrcGY?oc=5",
+      "source": "연합인포맥스",
+      "date": "Thu, 26 Nov 2026 11:39:00 GMT"
+    },
+    {
+      "title": "삼성 MX사업부, 개발실→개발1·2실 개편...개발1실, SW 담당",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10c2F3eHFBSEI5akd4YVE5V1VKLXR2TkJTVFpHWlV5N01tU0IzcVZmTmpWZlhGUUVwNV94VkVzLTcyNU1raDJqV08wSUtvZUFMY1g4bXdn?oc=5",
+      "source": "지디넷코리아",
+      "date": "Fri, 27 Nov 2026 07:10:59 GMT"
+    },
+    {
+      "title": "17만원대 삼성전자 아직 바닥 아니다?…‘4만전자’ 가능성 있다",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE84YmRGVUkwakExLVh4cmpFa1dPZlFmMVlTNFVoeWx1SkRrek9ldnVfS250eUZYTzg1bEdZcHpUd2s1UW11MzBtMmlkd21OUTJDVHRpWG42REVUd2NyMTh1NkpjVUtlSWk3ZFVr?oc=5",
+      "source": "주간조선",
+      "date": "Sat, 28 Nov 2026 02:00:00 GMT"
+    },
+    {
       "title": "[단독] 삼성 “반도체 공장 무인화”… 로봇팀 꾸렸다",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBfT1Y2NFVhaFlmOF9zYl8ya3o1UXZ3ZjUxWVZ6MTNPblNWa0l6SVhLd0l6SUZ1NWlYT1Fza2IxS3pEN1lIWS1kMlZJbV9Fdw?oc=5",
       "source": "전자신문",
       "date": "Thu, 26 Nov 2026 07:00:00 GMT"
-    },
-    {
-      "title": "삼성전자 로봇에 힘주자 관련주 줄줄이 급등…제닉스로보틱스 상한가",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IcmtybFpIT2xFemNmUE1PLV9EVF81LVJNUmhYYnYwMlRVeFhpUG5oQlQxaU9oTC03cHZwTUJ2dUxlRHRIU3RFSmhhVEVXdllwRWc?oc=5",
-      "source": "매일경제 마켓",
-      "date": "Fri, 27 Nov 2026 01:02:44 GMT"
     },
     {
       "title": "삼성전자, M&A 전담조직 신설에…'로봇 빅딜' 기대감 솔솔",
@@ -23,76 +65,34 @@
       "date": "Fri, 27 Nov 2026 02:46:23 GMT"
     },
     {
-      "title": "삼성전자, 오늘 30조 배당…이재용 회장 4488억",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE42ZXJ1alF4TGNiUWlSTTZYbnVEaXVKZVFITTN0RXpCaUM0MFJfbkZ1OGRycm9sclRQVE9JbW1vMGUxRC11Ui1jRlkwVUtEMTRFel8tWUs5NlA4RTY5ZnF1aERIUlNxZnVZR0E?oc=5",
-      "source": "한겨레",
-      "date": "Fri, 27 Nov 2026 04:50:00 GMT"
+      "title": "[특징주] 삼성전자 휴머노이드 공개 기대감에…로봇주 上",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUklyMEQ3WUthYW9ZaHg1eWkwLVpVU2ljT3QxRXNOVE8xdVRlRkROM25say1xMFJzQU5TWnFLNVB0TnBLd29CSHFjdmZLZzFWSGhveThKTXpWZGc1cWt0aHZqT01wZVBmUXhnbmpVaVJSWnJ6eTVvVEZvNlQyMHhWWDY1S3BqV2010gGcAUFVX3lxTE03WkIyMzJDdDRrWTNiTGtGSVFqVEhpRjh1a3M1YXI0RlpWQnE3dFZjdFA5TGM3UVJ5YXkyVXl5bGlZR0U4YmN3MUthcjhyZ1FMNXRTZ0FRZHlmTGx6UGl1ZHdCOWNqbTdOOTVnLXVDQTljU0puaFlSQ0E4MjlRXzZLSUwwQ0dHV0k5TzFzd3JvbWl3Y19qSlAzNWU5RQ?oc=5",
+      "source": "Chosunbiz",
+      "date": "Fri, 27 Nov 2026 00:42:00 GMT"
     },
     {
-      "title": "갤럭시 경험 나누고, 고객 혜택 더하고 삼성전자 ‘갤럭시 연말 페스타’ 진행",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcjQ3TDdBUzBMamZIRk04MXVaUC1MZVVnelNYNjZrTnhTaDZGSmZQZUhDRk5nZV9HMmx2SGJ4MUh1X2RDTGF3V2tqdWNKTnNYeWdVdHN3TmVCSWdTWThiUFFuVUNzZ0FMOTlUOVptY24xWHFZblBYcm9YdlQxTGxzTlRxdzZtRURRLTd6MzZB?oc=5",
-      "source": "조선일보",
-      "date": "Fri, 27 Nov 2026 15:36:18 GMT"
-    },
-    {
-      "title": "삼성전자, DX부문 M&A·공조 조직 강화",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0NzNlYkhkcUZlcU5wZWRkdUlCdGZ5RmlpRTNfM0RTeWdGeE9uTEZRWVUzMWVMaS1zRXZURDZEWFJBc0lkbFJZbkxmRnlFZ2t5b0tWbXBn?oc=5",
+      "title": "엑시콘, 반도체 검사장비 국책과제 특허 삼성전자와 공유",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4cHlpZk9VNWc5d0xaVjBDRGpHaC0zQkN4WDV3QzBIcy1UVW1pM0ItTVBLVW9XeklMMHNQOGNuVFpsQzBqbVF1dEJsODFIc3B6ZjBfazdB?oc=5",
       "source": "지디넷코리아",
-      "date": "Thu, 26 Nov 2026 09:09:39 GMT"
+      "date": "Fri, 27 Nov 2026 13:14:42 GMT"
     },
     {
-      "title": "“머스크 ‘삼성전자 칩 장기구매’ 제안에···이재용 ‘뭐 더 해줄 건데’”",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jeldUcml1NkFUek5ZUjNwTGlPT1k4TEViZU0wbVNTcWJYaklfU2dYdzFteFlzWTFLUDV0WlhGM29mRkFLZmxSTmlYSVFyeTRsYzEyVzVUZXo3Z9IBX0FVX3lxTFBsckhmZkFWOEE0MFIxM1lndkhpeUpETkY1LVQzU1V1MGcxOU1mS0ttbWhoRC1ORmVzWlVXQlFZRVZJemJMc09vYW1mQmJ2eHNwTVZVeVZxY0FIYzc0WVNz?oc=5",
-      "source": "경향신문",
-      "date": "Thu, 26 Nov 2026 11:08:00 GMT"
-    },
-    {
-      "title": "\"머스크도 줄 섰다\"는데…삼성전자 주가는 왜 '지지부진'할까",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tT01zLUNaajJEVGFoTVJfcW9kSVcwaUpnY3dUcXpxeHJfU1hZQjU4V19Nd0RrZ3NnMDdQaXc5UEJhOWpnQTZhWmJ3RkY1R2NXT2FGbkRKdDN3Unh4THlUZNIBeEFVX3lxTE1ja2tsRldpcW5yYVYyWHUtVmNZek45VXN1UlNEelVLbzIzRl9GZGxVZ3RzZGxmekhWQzExV0tqSW0xYkhhU0QxRFNiN0JWUXZuaE1HZjM4eGlCRmh5MFlrUHoxUkh1Wk1UX0RZeGVZdmhSUE0yX2QzUg?oc=5",
-      "source": "뉴시스",
-      "date": "Thu, 26 Nov 2026 22:30:00 GMT"
-    },
-    {
-      "title": "머스크도 애타는 삼성전자 반도체…이재용 \"뭘 더 해줄 수 있나?\"",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XdGgxYW9KckQ1VjNISFBDcmtKYkNobXJVcDdELXY3YjlVWUNqbFBDZmRrbkdMdzN1SXJEdmM3WS0zOWxmWGZPVVhwaGxQcmtXQjNRTkxuRXQzTF9hb19OdTJyZm8yZWV1MDA0?oc=5",
-      "source": "주간조선",
-      "date": "Thu, 26 Nov 2026 17:59:36 GMT"
-    },
-    {
-      "title": "삼성·SK 웃을 때 셔터 내렸다…중국 전자상가서 벌어지는 일",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BdDk5N1A0eUZ4dHhlZnJnaDE1SkNmVTg0aUpvZnVkbFh2YVpBY1Fjb0RabDgxMW43eklDYWRFNFc2dmdHNFExbi0zTU5zQ1FHWDJzaWxB?oc=5",
-      "source": "중앙일보",
-      "date": "Thu, 26 Nov 2026 20:00:00 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스 장기공급계약 '물음표'…장부에 받은 돈이 없다",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NT1hlbmtET1VLb3pxMUtHZ0xUR0VZNjZsajFSSGFJTnFkZ05YMGlJQ2V1Q3RGTHFBX2ZGRGNSUDZQd1U5WW5oTXBaeVQ3bjR3Mnh5U25ET3NSbFh2SzRyLXZGNG9QSnYzT1ktdWctLXU?oc=5",
-      "source": "연합인포맥스",
-      "date": "Thu, 26 Nov 2026 05:09:00 GMT"
-    },
-    {
-      "title": "[특징주] 삼성전자, 장 초반 소폭 상승…SK하이닉스는 0.5%↓",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqclQ5QW5kZlVVRjEwLXZkVDdKZWVHckdLRTB5dXQ4SzlWOGR6Z2d1SzgtaktWM0dsNFVPeFBLOHlSbUZXWVJyeWpIY05sUHZHSGJtMXM1b2xyTzDSAWBBVV95cUxPdlVQbUxRWGpZUmxLcjhDZWJWMk01VXBLVkRTM0RVTXZfcGlVcFE1eWR1QUhOR0p0MFk0RFEtcnYyZVlXOXpfaDJtTWJMbmJFYXRYZENJM21uRmkzc2xQblk?oc=5",
-      "source": "연합뉴스",
-      "date": "Fri, 27 Nov 2026 00:11:15 GMT"
-    },
-    {
-      "title": "삼성전자·SK하이닉스, 중국 YMTC 메모리 기술 일부 도입…Nikkei Asia",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yUVBwNUdmZlpuNWxVR0FmTkRob3JZMU5iOXdDX01uT0ZEOEs1SmNEaXhfSUJ6RDlLS1BuYjY2eDM4VEFnQzFNczN5Um1wTllNQnpaajFHLWs3UjJIWWtiZ1NMWFdpbXY5cG4xOWxuVTk?oc=5",
+      "title": "’AI 고점론’ 고개 들지만…삼성전자는 흔들리지 않는다 By FinancialPost",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5CcHVEdkJZWjNEVEdWMmw2a3JzdnotUXg2cUtGeVgxYnplRnVoNU5hb1lVMVhPUk1SYlVmTUd1dFdneG5WWmtsdFVLNENEdkhCaG44bmRJTkRZSzZ4UFZ4M2JEZmh4azFmX0NIUC1XYU0?oc=5",
       "source": "Investing.com 한국어",
-      "date": "Fri, 27 Nov 2026 00:15:00 GMT"
+      "date": "Fri, 27 Nov 2026 22:51:00 GMT"
     },
     {
-      "title": "삼성전자 \"AI 인프라용 SSD 수요 폭발 예상치 못했다\"",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnaURVd2h4aGxzVlpORXNXTTZOS2g1Wmp0TmdvZTUwWmRZVVgzX1BEbUZWMWVvVFo3cVMyNy05ajhYT0dyb2Y2U1VBa2d0NzFONGNSNmFR?oc=5",
-      "source": "지디넷코리아",
-      "date": "Fri, 27 Nov 2026 05:05:51 GMT"
+      "title": "삼성전자 트라이폴드2 정규 라인업 편입 추진, 최원준 초고가 폴더블 시장성 입증 과제 안아",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SU2s4OGtNanFJWlZ2R0lPeTlTeEU3MEt4YVJrSUhEaUtlOFlnNlJWNW44RHBQUWZETGtILThmUG9jeXRkc255WXY1emtxYk1YbUh6bml3NXI5NlktVFRRa1RYQ2w3OVVjbjNxVEgtamVRa2s?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Fri, 27 Nov 2026 07:35:43 GMT"
     },
     {
-      "title": "삼성전자 취약계층에 185억 기부…연말 나눔 온기 더한다 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KQXUzNDB3ZmN3YzNWSlllcWRMYnNFQzNQampnd2VMVm1TWnN2NnhPWEdkTjhodHJhVXdmYlNDU21fbnktVWRXdVZpd1lIdm83SEdGVGlYS0hrYkJiZE1aQkFfZVh4WUJwbmxWN9IBckFVX3lxTFAxQmkzWEVLNTQwcDNwWWY1SDJsTE8yYUd0c1hDaEVXMXg5Nk4xRmNSSlRZN2dQVkVGbXJDVnk0X0NhYm1zREJxUS1nZ3JTMTRVUWdpalNtMzlWd3REV1RlN2R1TzcySHVGX1pkSm5EQXlUUQ?oc=5",
-      "source": "머니투데이",
-      "date": "Fri, 27 Nov 2026 08:56:17 GMT"
+      "title": "3분기 미국 스마트폰 출하량 9% 감소, 삼성전자 시장점유율은 1%포인트 올라",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5oakhlRXI5eU1YTjhnWE1iejk2dmp3QjJaZm41WlB1ZmNWUXhSRHVsbGExeDBGUGw1b3FDQU1yalBJcUliWV9WYTB5NjlnZVZFdWN3NnlaRHNKTFpZb3pXOVNESmltSHdvWlZFQ29md1hjR3c?oc=5",
+      "source": "비즈니스포스트",
+      "date": "Fri, 27 Nov 2026 04:54:22 GMT"
     }
   ]
 }
